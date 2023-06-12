@@ -19,16 +19,16 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
       
       <h3 className="text-2xl text-left">Regulatorik</h3>
 
-      <div className="grid grid-cols-3 gap-4 mt-12">
+      <div className="grid grid-cols-3 gap-4 mt-12 mb-12">
 
-        <a href='/mica'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-8">
+        <a href='/micaintroduction'>
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-8">
           <h4 className="text-lg font-bold text-center">MiCA</h4>
         </div>
         </a>
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-4 ml-4">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-4 ml-4">
           <h4 className="text-lg font-bold text-center">BaFin</h4>
           
         </div>
@@ -36,7 +36,7 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
 
 
         <a href='/introduction'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 ml-8">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 ml-8">
           <h4 className="text-lg font-bold text-center">Deutsche Gesetzgebung</h4>
           
         </div>
@@ -50,16 +50,16 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
 
       <h3 className="text-2xl text-left">Technische Anforderungen</h3>
 
-      <div className="grid grid-cols-3 gap-4 mt-12">
+      <div className="grid grid-cols-3 gap-4 mt-12 mb-12">
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-8">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-8">
           <h4 className="text-lg font-bold text-center">...</h4>
         </div>
         </a>
 
         <a href='/introduction'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-4 ml-4">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-4 ml-4">
           <h4 className="text-lg font-bold text-center">...</h4>
           
         </div>
@@ -67,7 +67,7 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
 
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 ml-8">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 ml-8">
           <h4 className="text-lg font-bold text-center">...</h4>
           
         </div>
@@ -81,16 +81,16 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
 
       <h3 className="text-2xl text-left">Adaption in der Gesellschaft</h3>
 
-      <div className="grid grid-cols-3 gap-4 mt-12">
+      <div className="grid grid-cols-3 gap-4 mt-12 mb-12">
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-8">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-8">
           <h4 className="text-lg font-bold text-center">Studie</h4>
         </div>
         </a>
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 mr-4 ml-4">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 mr-4 ml-4">
           <h4 className="text-lg font-bold text-center">...</h4>
           
         </div>
@@ -98,7 +98,7 @@ aus der Literatur, Umfragen, Experteninterviews und Webrecherche.
 
 
         <a href='/'>
-        <div className="rounded-lg bg-[#F6FFDE] p-4 border-2 border-gray-950 space-y-8 ml-8">
+        <div className="rounded-lg bg-[#F6FFDE] p-6 border-2 border-gray-950 space-y-8 ml-8">
           <h4 className="text-lg font-bold text-center">...</h4>
           
         </div>
