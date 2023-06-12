@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href='/introduction'><span className="hover-underline">Einstieg</span></a>
         </div>
         <div className="relative hover:text-gray-800">
-          <span className="hover-underline">Anwendung, Geschäftsmodelle &amp; Fallstudien</span>
+        <a href='/integrationoverview'><span className="hover-underline">Anwendung, Geschäftsmodelle &amp; Fallstudien</span></a>
         </div>
       </div>
     </nav>
