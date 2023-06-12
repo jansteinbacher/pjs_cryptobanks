@@ -27,15 +27,15 @@ const Hero = () => {
 
 
           <div className="flex-1 flex items-center justify-center">
+            <a href='/integrationoverview'>
             <div className="bg-white p-4 rounded-lg hover:underline">
-            <div className="rounded-full bg-gray-100 p-4">
-            <h2 className="text-center text-3xl">Anwendung, Geschäftsmodelle &amp; Fallstudien</h2>
-          </div>
-          <img src={BusinessModel} alt="BusinessModel" className="mt-4 mx-auto w-32 transform scale-100 hover:scale-110 transition-transform duration-300" />
+              <div className="rounded-full bg-gray-100 p-4">
+                <h2 className="text-center text-3xl">Anwendung, Geschäftsmodelle &amp; Fallstudien</h2>
+              </div>
+              <img src={BusinessModel} alt="BusinessModel" className="mt-4 mx-auto w-32 transform scale-100 hover:scale-110 transition-transform duration-300" />
        
             </div>
-
-            
+            </a>         
           </div>
           
         </div>
