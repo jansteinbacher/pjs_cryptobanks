@@ -12,13 +12,16 @@ const Navbar = () => {
       </a>
       <div className="flex items-center space-x-12 mr-12">
         <div className="relative hover:text-gray-800">
-          <a href='/'><span className="hover-underline">About</span></a>
+          <a href='/#kurse'><span className="hover-underline">Kurse</span></a>
         </div>
         <div className="relative hover:text-gray-800">
-          <a href='/introduction'><span className="hover-underline">Einstieg</span></a>
+          <a href='/#decisiontree'><span className="hover-underline">Individueller Lernplan</span></a>
         </div>
         <div className="relative hover:text-gray-800">
-        <a href='/integrationoverview'><span className="hover-underline">Anwendung, Geschäftsmodelle &amp; Fallstudien</span></a>
+        <a href='/#glossar'><span className="hover-underline">Glossar</span></a>
+        </div>
+        <div className="relative hover:text-gray-800">
+        <a href='/#about'><span className="hover-underline">Über das Projekt</span></a>
         </div>
       </div>
     </nav>

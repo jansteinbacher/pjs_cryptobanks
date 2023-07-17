@@ -4,10 +4,10 @@ import Github from '../images/github.png';
 
 const Section = () => {
   return (
-    <div>
+    <div id='about'>
       <div className="flex items-center">
         <div className="w-3/4 ml-32 mr-20">
-          <h2 className="text-2xl font-bold">About the project</h2>
+          <h2 className="text-2xl font-bold">Über das Projekt</h2>
           <p className="mt-4 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

@@ -19,7 +19,7 @@ const IntegrationOverview = () => {
         </div>
         <div class=" bg-gray-100 snap-start h-screen w-screen flex flex-col justify-center items-center">
           <h1 id="text" class="text-7xl font bold">
-            Awendung von Cryptoassets
+            Anwendung von Cryptoassets
           </h1>
           <p class="text-2xl text-center mx-64 mt-8">
             Kryptoassets haben das Potenzial, in verschiedenen Bereichen des
