@@ -16,7 +16,8 @@ import {
   IntroductionBlockchain,
   IntroductionCryptoAssets,
   IntroductionToken,
-  IntroductionTrade
+  IntroductionTrade,
+  CourseEndBeginner,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -35,14 +36,15 @@ const App = () => (
               <DecisionTreeMainPage />
               <Overview />
               <About />
-              
             </>
           }
         />
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/course-beginner" element={<CourseBeginner />} />
-        <Route path="/course-beginner-article" element={<CourseBeginnerArticle />} />
-
+        <Route
+          path="/course-beginner-article"
+          element={<CourseBeginnerArticle />}
+        />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
 
@@ -53,13 +55,31 @@ const App = () => (
           element={<IntegrationOverview2 />}
         />
 
-        <Route path="/articles/IntroductionBlockchain" element={<IntroductionBlockchain />} />
-        <Route path="/articles/IntroductionCryptoAssets" element={<IntroductionCryptoAssets />} />
-        <Route path="/articles/IntroductionToken" element={<IntroductionToken />} />
-        <Route path="/articles/IntroductionTrade" element={<IntroductionTrade />} />
-
-
-
+        <Route
+          path="/articles/IntroductionBlockchain"
+          element={<IntroductionBlockchain />}
+        />
+        <Route
+          path="/articles/IntroductionCryptoAssets"
+          element={<IntroductionCryptoAssets />}
+        />
+        <Route
+          path="/articles/IntroductionToken"
+          element={<IntroductionToken />}
+        />
+        <Route
+          path="/articles/IntroductionTrade"
+          element={<IntroductionTrade />}
+        />
+        <Route
+          path="/articles/CourseEndBeginner"
+          element={
+            <>
+              <CourseEndBeginner />
+              <DecisionTreeMainPage />
+            </>
+          }
+        />
       </Routes>
     </Router>
 
