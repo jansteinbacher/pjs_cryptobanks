@@ -18,3 +18,4 @@ export { default as IntroductionCryptoAssets } from "./courseofbeginner/Introduc
 export { default as IntroductionBlockchain } from "./courseofbeginner/IntroductionBlockchain";
 export { default as IntroductionToken } from "./courseofbeginner/IntroductionToken";
 export { default as IntroductionTrade } from "./courseofbeginner/IntroductionTrade";
+export { default as CourseEndBeginner } from "./courseofbeginner/CourseEndBeginner";

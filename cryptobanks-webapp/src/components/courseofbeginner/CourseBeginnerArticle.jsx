@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import Blockchain from './IntroductionBlockchain';
-import Cryptoassets from './IntroductionCryptoAssets';
-import Token from './IntroductionToken';
-import Trade from './IntroductionTrade';
+import React, { useState } from "react";
+import Blockchain from "./IntroductionBlockchain";
+import Cryptoassets from "./IntroductionCryptoAssets";
+import Token from "./IntroductionToken";
+import Trade from "./IntroductionTrade";
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const sections = [Cryptoassets, Blockchain, Token, Trade];
-  const progress = ((sectionIndex + 1) / (sections.length)) * 100;
+  const progress = ((sectionIndex + 1) / sections.length) * 100;
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
       // Navigate to /course-beginner when reaching the last section
-      window.location.href = '/course-beginner';
+      window.location.href = "/course-beginner";
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       window.scrollTo(0, 0); // Scroll to the top
@@ -20,9 +20,7 @@ const CourseBeginnerArticle = () => {
   };
 
   const handlePreviousSection = () => {
-    setSectionIndex((prevIndex) =>
-      prevIndex === 0 ? 0 : prevIndex - 1
-    );
+    setSectionIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
     window.scrollTo(0, 0); // Scroll to the top
   };
 
@@ -32,7 +30,7 @@ const CourseBeginnerArticle = () => {
 
   return (
     <div className="max-w-screen-lg mx-auto p-4">
-      <h3 className=' text-xl mb-2'>Kursfortschritt {progress}%</h3>
+      <h3 className=" text-xl mb-2">Kursfortschritt {progress}%</h3>
       <div className="flex items-center justify-center mb-8">
         <div className="w-full bg-gray-300 rounded overflow-hidden h-2">
           <div
@@ -55,10 +53,10 @@ const CourseBeginnerArticle = () => {
         )}
         {isLastSection ? (
           <a
-            href="/course-beginner"
+            href="/articles/CourseEndBeginner"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4"
           >
-            Zur Übersicht
+            Kurs abschließen
           </a>
         ) : (
           <button
