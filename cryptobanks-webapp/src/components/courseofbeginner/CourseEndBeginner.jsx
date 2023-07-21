@@ -1,12 +1,22 @@
 import Regulation from "../../images/regulation.png";
 import BusinessModel from "../../images/businessModel.png";
+import CourseCompleted from "../../images/firework_course_completed.mp4";
 
 const CourseEndBeginner = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="bg-white px-20 py-4 rounded-lg mb-4">
         <div className="mb-10">
-          <h2 className="text-4xl font-bold mb-4">Herzlichen Glückwunsch!</h2>
+          <div className="flex items-center justify-center mb-6">
+          <video autoPlay loop muted className="w-1/2">
+            <source
+              src={CourseCompleted} // Replace "your-video-source.mp4" with the URL of your video file
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          </div>
+
           <p className="text-lg mb-4">
             Sie haben den Kurs erfolgreich abgeschlossen.
           </p>

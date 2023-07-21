@@ -3,10 +3,11 @@ import Blockchain from "./IntroductionBlockchain";
 import Cryptoassets from "./IntroductionCryptoAssets";
 import Token from "./IntroductionToken";
 import Trade from "./IntroductionTrade";
+import Quiz from "./CourseBeginnerQuiz";
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
-  const sections = [Cryptoassets, Blockchain, Token, Trade];
+  const sections = [Cryptoassets, Blockchain, Token, Trade, Quiz];
   const progress = ((sectionIndex + 1) / sections.length) * 100;
 
   const handleNextSection = () => {

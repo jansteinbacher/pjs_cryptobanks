@@ -19,3 +19,4 @@ export { default as IntroductionBlockchain } from "./courseofbeginner/Introducti
 export { default as IntroductionToken } from "./courseofbeginner/IntroductionToken";
 export { default as IntroductionTrade } from "./courseofbeginner/IntroductionTrade";
 export { default as CourseEndBeginner } from "./courseofbeginner/CourseEndBeginner";
+export { default as CourseBeginnerQuiz } from "./courseofbeginner/CourseBeginnerQuiz";
