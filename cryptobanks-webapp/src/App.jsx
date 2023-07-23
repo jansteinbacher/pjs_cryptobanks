@@ -2,9 +2,8 @@ import {
   Navbar,
   Hero,
   About,
-  Introduction,
   Footer,
-  CourseBeginner,
+  CourseOverview,
   IntegrationOverview,
   MicaIntroduction,
   IntegrationOverview2,
@@ -39,13 +38,13 @@ const App = () => (
             </>
           }
         />
-        <Route path="/introduction" element={<Introduction />} />
-        <Route path="/course-beginner" element={<CourseBeginner />} />
+        <Route path="/course-overview" element={<CourseOverview />} />
         <Route
-          path="/course-beginner-article"
+          path="/course-beginner"
           element={<CourseBeginnerArticle />}
         />
 
+        <Route path="/decisiontreestart" element={<DecisionTreeMainPage />} />
         <Route path="/decisiontree" element={<DecisionTree />} />
 
         <Route path="/integrationoverview" element={<IntegrationOverview />} />
