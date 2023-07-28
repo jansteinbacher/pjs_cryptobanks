@@ -75,7 +75,6 @@ const App = () => (
           element={
             <>
               <CourseEndBeginner />
-              <DecisionTreeMainPage />
             </>
           }
         />
