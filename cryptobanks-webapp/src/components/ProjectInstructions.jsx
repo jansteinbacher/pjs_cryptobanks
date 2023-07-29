@@ -164,7 +164,7 @@ const ProjectInstructions = () => {
             <img
               src={Crypto}
               alt="Crypto Hero"
-              className="w-1/2 md:w-3/4 rounded-lg"
+              className="w-full md:w-3/4 rounded-lg "
             />
           </div>
         </div>
