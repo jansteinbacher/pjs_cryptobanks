@@ -128,16 +128,30 @@ const ProjectInstructions = () => {
               </ul>
             </div>
 
-            {/* Tooltip step 2 */}
-            <div className={isTooltipStep2Visible ? "bg-white text-black px-4 py-2 border border-gray-400 rounded mt-2 md:mt-0 ml-0 md:ml-12 hidden md:block" : "bg-white text-white px-4 py-2 border border-white rounded mt-2 md:mt-0 ml-0 md:ml-12 hidden md:block"}>
-              <p className='text-center'>Entscheide dich</p>
-              <p className='text-center'>für eine Option:</p>
-              <div className='flex items-center justify-center'>
-                <button className={isTooltipStep2Visible ? "bg-blue-500 text-white font-semibold py-2 px-4 rounded mt-2" : "bg-white text-white font-semibold py-2 px-4 rounded mt-2"} onClick={handleTooltipClickStep2}>
-                  Wählen
-                </button>
+                        {/* Tooltip step 2 */}
+            <div className="relative">
+              {isTooltipStep2Visible && (
+                <span className="absolute top-0 right-1 mt-2 ml-2">
+                  {/* Add the animated span here */}
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                  </span>
+                  {/* End of animated span */}
+                </span>
+              )}
+              <div className={isTooltipStep2Visible ? "bg-white text-black px-4 py-2 border border-gray-400 rounded mt-2 md:mt-0 ml-0 md:ml-12 hidden md:block" : "bg-white text-white px-4 py-2 border border-white rounded mt-2 md:mt-0 ml-0 md:ml-12 hidden md:block"}>
+                <p className='text-center'>Entscheide dich</p>
+                <p className='text-center'>für eine Option:</p>
+                <div className='flex items-center justify-center'>
+                  <button className={isTooltipStep2Visible ? "bg-blue-500 text-white font-semibold py-2 px-4 rounded mt-2" : "bg-white text-white font-semibold py-2 px-4 rounded mt-2"} onClick={handleTooltipClickStep2}>
+                    Wählen
+                  </button>
+                </div>
               </div>
             </div>
+
+
           </div>
 
           <div className='flex'>
@@ -153,8 +167,20 @@ const ProjectInstructions = () => {
             </a>
 
             {/* Tooltip step 3 */}
+            <div className="relative">
+              {isTooltipStep3Visible && (
+                <span className="absolute top-0 right-1 mt-2 ml-2">
+                  {/* Add the animated span here */}
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                  </span>
+                  {/* End of animated span */}
+                </span>
+              )}
             <div className={isTooltipStep3Visible ? "bg-white text-black px-4 py-2 border border-gray-400 rounded ml-4 hidden md:block" : "bg-white text-white px-4 py-2 border border-white rounded ml-4 hidden md:block"}>
               <p className='text-center'>&#8592; Gelange zu deinem ausgewählten Bereich.</p>
+            </div>
             </div>
           </div>
         </div>
@@ -164,7 +190,7 @@ const ProjectInstructions = () => {
             <img
               src={Crypto}
               alt="Crypto Hero"
-              className="w-full md:w-3/4 rounded-lg "
+              className="w-full md:w-3/4 rounded-lg animate-wiggle animate-thrice"
             />
           </div>
         </div>
