@@ -2,7 +2,6 @@ import React from 'react';
 import UndrawSurvey from "../../images/undraw_survey.png";
 import UndrawConnectedWorld from "../../images/undraw_connected_world.png";
 
-
 const TableOfContents = () => {
   return (
     <div className="">
@@ -104,7 +103,7 @@ const IntroductionTrade = () => {
   };
 
   return (
-    <div className='ml-20 mr-20'>
+    <div className='mx-2 md:mx-20'>
       <h2 className="text-2xl font-bold mb-12">Integration von Kryptoassets und Kryptowährungen in traditionelle Bankensysteme</h2>
 
       <TableOfContents />

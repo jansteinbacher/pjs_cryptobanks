@@ -101,9 +101,9 @@ const Quiz = () => {
     }, [currentQuestionIndex, questions.length]);
   
     return (
-      <div className="flex">
-        <div className="w-3/4">
-          <h2 className="text-2xl font-bold mb-4">Abschlussquiz</h2>
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-3/4 p-4 md:pr-8">
+          <h2 className="text-3xl font-bold mb-4">🧠 Abschlussquiz</h2>
           <div className="mb-8">
             {!quizFinished ? (
               // Render the question and options if there are more questions to display
@@ -112,7 +112,7 @@ const Quiz = () => {
                 {questions[currentQuestionIndex].options.map((option, index) => (
                   <button
                     key={index}
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 mr-2"
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mb-2 rounded"
                     onClick={() => handleAnswerSelect(index)}
                   >
                     {option}
@@ -122,28 +122,27 @@ const Quiz = () => {
             ) : (
               // Show the final score and appropriate message after all questions are answered
               <>
-                <h3 className="text-xl font-bold mb-2">Quiz beendet!</h3>
+                <h3 className="text-xl font-bold mb-2">🏆 Quiz beendet!</h3>
                 {percentageCorrect >= 50 ? (
-                  <p>Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet.</p>
+                  <p>Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet. 🎉🥳</p>
                 ) : (
-                    <>
-                  <p>Versuche es noch einmal. Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet.</p>
-                  <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-                  onClick={restartQuiz}
+                  <>
+                    <p>Versuche es noch einmal. Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet. 🙌</p>
+                    <button
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mt-4 rounded"
+                      onClick={restartQuiz}
                     >
-                  Quiz neu starten
-                </button>
-                    </>
+                      Quiz neu starten
+                    </button>
+                  </>
                 )}
-                
               </>
             )}
           </div>
         </div>
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4 p-4 md:pl-8">
           <div className="bg-gray-200 p-4 rounded">
-            <h3 className="text-xl font-bold mb-4">Quiz Fortschritt</h3>
+            <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
             <p>Beantwortete Fragen: {userAnswers.filter((answer) => answer !== null).length}</p>
             <p>Richtige Antworten: {numCorrectAnswers}</p>
             <p>Verbleibende Fragen: {questions.length - currentQuestionIndex}</p>

@@ -4,23 +4,19 @@ import { Link } from 'react-router-dom';
 function Question({ question, answers, updateAnswer }) {
   return (
     <div className="flex flex-col items-center">
-  <p className="text-xl mb-8 text-center">{question}</p>
-  <div className="flex space-x-4">
-    {answers.map((answer) => (
-      <button
-        key={answer}
-        onClick={() => updateAnswer(answer)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        {answer}
-      </button>
-    ))}
-  </div>
-</div>
-
-    
-
-
+      <p className="text-xl mb-8 text-center">{question}</p>
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        {answers.map((answer) => (
+          <button
+            key={answer}
+            onClick={() => updateAnswer(answer)}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            {answer}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -66,67 +62,63 @@ function DecisionTree() {
         <Question
           question={currentQuestionData.question}
           answers={currentQuestionData.answers}
-          updateAnswer={(answer) => handleAnswerUpdate(currentQuestionData.stateKey, answer)}
+          updateAnswer={(answer) =>
+            handleAnswerUpdate(currentQuestionData.stateKey, answer)
+          }
         />
       ) : (
         <div>
-          {answers.kryptoassets === 'Ja' && 
-
-              <li className='mb-8'>
+          {answers.kryptoassets === 'Ja' && (
+            <li className="mb-8">
               <strong>Kryptoassets</strong>
               <ul className="list-disc pl-6 mt-4">
                 <li>
-                  <Link className='hover:underline' to="/articles/introductioncryptoassets">Einführung in Kryptoassets</Link>
+                  <Link className="hover:underline" to="/articles/introductioncryptoassets">Einführung in Kryptoassets</Link>
                 </li>
                 <li>
-                  <Link className='hover:underline'  to="/articles/introductionblockchain">Grundlagen der Blockchain-Technologie</Link>
+                  <Link className="hover:underline"  to="/articles/introductionblockchain">Grundlagen der Blockchain-Technologie</Link>
                 </li>
                 <li>
-                  <Link className='hover:underline'  to="/articles/introductiontoken">Token</Link>
+                  <Link className="hover:underline"  to="/articles/introductiontoken">Token</Link>
                 </li>
                 <li>
-                  <Link className='hover:underline'  to="/articles/introductiontrade">Handel mit Kryptowährungen</Link>
+                  <Link className="hover:underline"  to="/articles/introductiontrade">Handel mit Kryptowährungen</Link>
                 </li>
               </ul>
-              </li>
-
-          }
-          {answers.regulatorik === 'Ja' && 
-          
-            <li className='mb-8'>
-            <strong>Regulatorik</strong>
-            <ul className="list-disc pl-6 mt-4">
-              <li>
-                <Link className='hover:underline' to="/">Übersicht verschiedener Regulierungen in Deutschland</Link>
-              </li>
-              <li>
-                <Link className='hover:underline'  to="/">Herausforderungen bei der Integration von Kryptoassets</Link>
-              </li>
-              <li>
-                <Link className='hover:underline'  to="/">Globale Regulierungen</Link>
-              </li>
-            </ul>
             </li>
-            
-          }
-          {answers.geschaeftsmodelle === 'Ja' && 
-          
-          <li className='mb-8'>
-            <strong>Geschäftsmodelle</strong>
-            <ul className="list-disc pl-6 mt-4">
-              <li>
-                <Link className='hover:underline' to="/">Marktreife verschiedener Kryptoassets-Dienstleistungen</Link>
-              </li>
-              <li>
-                <Link className='hover:underline'  to="/">Geschäftsmodellinnovation</Link>
-              </li>
-              <li>
-                <Link className='hover:underline'  to="/">Handlungsempfehlungen aus Experteninterviews</Link>
-              </li>
-            </ul>
+          )}
+          {answers.regulatorik === 'Ja' && (
+            <li className="mb-8">
+              <strong>Regulatorik</strong>
+              <ul className="list-disc pl-6 mt-4">
+                <li>
+                  <Link className="hover:underline" to="/">Übersicht verschiedener Regulierungen in Deutschland</Link>
+                </li>
+                <li>
+                  <Link className="hover:underline"  to="/">Herausforderungen bei der Integration von Kryptoassets</Link>
+                </li>
+                <li>
+                  <Link className="hover:underline"  to="/">Globale Regulierungen</Link>
+                </li>
+              </ul>
             </li>
-
-          }
+          )}
+          {answers.geschaeftsmodelle === 'Ja' && (
+            <li className="mb-8">
+              <strong>Geschäftsmodelle</strong>
+              <ul className="list-disc pl-6 mt-4">
+                <li>
+                  <Link className="hover:underline" to="/">Marktreife verschiedener Kryptoassets-Dienstleistungen</Link>
+                </li>
+                <li>
+                  <Link className="hover:underline"  to="/">Geschäftsmodellinnovation</Link>
+                </li>
+                <li>
+                  <Link className="hover:underline"  to="/">Handlungsempfehlungen aus Experteninterviews</Link>
+                </li>
+              </ul>
+            </li>
+          )}
         </div>
       )}
     </div>

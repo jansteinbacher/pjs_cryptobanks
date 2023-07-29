@@ -108,6 +108,9 @@ const Overview = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center">
+      <hr className="w-4/5 border-t-2 border-gray-400 my-8 mb-16" />
+      </div>
     </div>
   );
 };

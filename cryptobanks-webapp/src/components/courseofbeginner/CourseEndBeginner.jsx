@@ -19,26 +19,25 @@ const CourseEndBeginner = () => {
   };
 
   return (
-    <div className="px-20">
-      <div className="flex flex-col space-y-4">
-        <div className="flex items-center justify-center space-x-4">
-          <button
-            className={`${
-              isSummaryVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
-            } rounded px-4 py-2 font-semibold text-lg`}
-            onClick={handleButtonSectionVisibility2}
-          >
-            Zusammenfassung
-          </button>
-          <button
-            className={`${
-              isCourseMaterialVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
-            } rounded px-4 py-2 font-semibold text-lg`}
-            onClick={handleButtonSectionVisibility1}
-          >
-            Weitere Informationsquellen
-          </button>
-        </div>
+    <div className="px-8 md:px-20 py-4 md:py-8">
+      <div className="flex flex-col md:items-center md:justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        <button
+          className={`${
+            isSummaryVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
+          } rounded px-4 py-2 font-semibold text-lg`}
+          onClick={handleButtonSectionVisibility2}
+        >
+          📝 Zusammenfassung
+        </button>
+        <button
+          className={`${
+            isCourseMaterialVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
+          } rounded px-4 py-2 font-semibold text-lg`}
+          onClick={handleButtonSectionVisibility1}
+        >
+          📚 Weitere Informationsquellen
+        </button>
+      </div>
 
         {isSummaryVisible && (
           <div className="bg-white p-8 rounded-lg space-y-8">
@@ -48,7 +47,7 @@ const CourseEndBeginner = () => {
                   Hier ist eine kurze Zusammenfassung der gelernten Inhalte:
                 </h2>
                 <ul className="list-disc mt-4 space-y-2">
-                  <li>Neben Kryptowährungen wie Bitcoin existieren auch Tokens als digitale Vermögenswerte auf Blockchain-Basis</li>
+                  <li>Neben Kryptowährungen wie Bitcoin existieren auch Tokens als digitale Vermögenswerte auf Blockchain-Basis.</li>
                   <li>Punkt 2</li>
                   <li>Punkt 3</li>
                 </ul>
@@ -66,7 +65,7 @@ const CourseEndBeginner = () => {
             <div className="lg:flex space-x-8">
               <div className="text-center lg:w-2/3">
                 <h3 className="text-lg font-semibold">Weitere Kurse:</h3>
-                <img src={BusinessModel} alt="Business Model" className="w-64 rounded-lg mx-auto mt-4" />
+                <img src={BusinessModel} alt="Business Model" className="w-32 md:w-64 rounded-lg mx-auto mt-4" />
                 <Link to="/course1">
                   <button className="bg-blue-500 text-white rounded px-4 py-2 mt-4">Lernplan</button>
                 </Link>
@@ -74,7 +73,7 @@ const CourseEndBeginner = () => {
 
               <div className="text-center lg:w-2/3">
                 <h3 className="text-lg font-semibold">Kurs 2</h3>
-                <img src={Regulation} alt="Regulation" className="w-64 rounded-lg mx-auto mt-4" />
+                <img src={Regulation} alt="Regulation" className="w-32 md:w-64 rounded-lg mx-auto mt-4" />
                 <Link to="/course2">
                   <button className="bg-blue-500 text-white rounded px-4 py-2 mt-4">Lernplan</button>
                 </Link>
@@ -93,8 +92,7 @@ const CourseEndBeginner = () => {
           </div>
         )}
 
-
-{isCourseMaterialVisible && (
+        {isCourseMaterialVisible && (
           <div className="bg-white p-8 rounded-lg space-y-4">
             <div>
               <h3 className="text-xl font-semibold">Zusätzliche Materialien:</h3>
@@ -126,7 +124,7 @@ const CourseEndBeginner = () => {
           </div>
         )}
       </div>
-    </div>
+    
   );
 };
 

@@ -4,6 +4,8 @@ import Chart from 'react-apexcharts';
 
 const IntroductionBlockchain = () => {
   const [chartData, setChartData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,8 +71,11 @@ const IntroductionBlockchain = () => {
         };
 
         setChartData(data);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching Bitcoin price data:', error);
+        setError('Error fetching Bitcoin price data.');
+        setLoading(false);
       }
     };
 
@@ -78,14 +83,18 @@ const IntroductionBlockchain = () => {
   }, []);
 
   return (
-    <div className='mr-20 ml-20'>
+    <div className='mx-2 md:mx-20'>
       <h2 className="text-2xl font-bold mb-4">Grundlagen der Blockchain-Technologie</h2>
       <h3 className="text-xl font-bold mb-4">Bitcoin Preis in den letzten 12 Monaten</h3>
-      {chartData ? (
-        <Chart options={chartData.options} series={chartData.series} type="line" height={350} />
-      ) : (
-        <p>Loading chart data...</p>
-      )}
+      <div className='w-full'>
+        {loading ? (
+          <p>Loading chart data...</p>
+        ) : error ? (
+          <p>{error}</p>
+        ) : chartData ? (
+          <Chart options={chartData.options} series={chartData.series} type="line" height={350} />
+        ) : null}
+      </div>
     </div>
   );
 };
