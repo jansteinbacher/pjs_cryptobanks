@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import BeginnerVideo from '../images/beginner_video.mp4'; 
-import IntermediateVideo from '../images/fortgeschrittener_video.mp4'; 
+import IntermediateVideo from '../images/Szene_Simone.mp4'; 
 import ExperteVideo from '../images/experte_video.mp4'; 
 import './CourseOverview.css'
 
