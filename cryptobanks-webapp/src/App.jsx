@@ -2,21 +2,23 @@ import {
   Navbar,
   Hero,
   About,
+  Startpage,
   Footer,
   CourseOverview,
   IntegrationOverview,
   MicaIntroduction,
   IntegrationOverview2,
-  DecisionTreeMainPage,
   Overview,
   CourseBeginnerArticle,
   DecisionTree,
-  ProjectInstructions,
   IntroductionBlockchain,
   IntroductionCryptoAssets,
   IntroductionToken,
   IntroductionTrade,
   CourseEndBeginner,
+  DragAndDrop,
+  Einstufungsquiz,
+  News,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -30,11 +32,10 @@ const App = () => (
           path="/"
           element={
             <>
-              <ProjectInstructions />
               <Hero />
-              <DecisionTreeMainPage />
-              <Overview />
+              <Startpage />
               <About />
+
             </>
           }
         />
@@ -44,7 +45,6 @@ const App = () => (
           element={<CourseBeginnerArticle />}
         />
 
-        <Route path="/decisiontreestart" element={<DecisionTreeMainPage />} />
         <Route path="/decisiontree" element={<DecisionTree />} />
 
         <Route path="/integrationoverview" element={<IntegrationOverview />} />
@@ -52,6 +52,26 @@ const App = () => (
         <Route
           path="/integrationoverview2"
           element={<IntegrationOverview2 />}
+        />
+
+        <Route
+          path="/dnd"
+          element={<DragAndDrop />}
+        />
+
+        <Route
+          path="/overview"
+          element={<Overview />}
+        />
+
+        <Route
+          path="/news"
+          element={<News />}
+        />    
+
+        <Route
+          path="/einstufungsquiz"
+          element={<Einstufungsquiz />}
         />
 
         <Route

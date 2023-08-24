@@ -9,29 +9,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col sm:flex-row justify-between items-center p-4 mb-12">
+    <nav className="flex flex-col sm:flex-row justify-between items-center p-4">
       <div className="flex items-center">
         <a href="/" className="mb-4 sm:mb-0">
           <div className="text-xl flex items-center">
             <img className="w-12 h-auto mr-4" src={Crypto} alt="Crypto" />
-            <span className="text-center">Cryptobanks - Dein Weg zum Krypto-Experten</span>
+            <span className="text-center">Cryptobanks</span>
           </div>
         </a>
       </div>
 
       {/* Navigation items for laptops */}
       <div className="hidden sm:flex flex-col mt-4 sm:flex-row sm:mt-0 sm:space-x-12">
-        <a href="/#kurse">
-          <span className="hover-underline text-center border-b border-transparent hover:border-blue-500">Kurse</span>
+        <a href="/course-overview">
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Kurse</span>
         </a>
-        <a href="/#decisiontree">
-          <span className="hover-underline text-center border-b border-transparent hover:border-blue-500">Individueller Lernplan</span>
+        <a href="/decisiontree">
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Individueller Lernplan</span>
         </a>
-        <a href="/#overview">
-          <span className="hover-underline text-center border-b border-transparent hover:border-blue-500">Übersicht</span>
+        <a href="/overview">
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Übersicht</span>
+        </a>
+        <a href="/news">
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">News</span>
         </a>
         <a href="/#about">
-          <span className="hover-underline text-center border-b border-transparent hover:border-blue-500">Über das Projekt</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Über das Projekt</span>
         </a>
       </div>
 
@@ -79,14 +82,17 @@ const Navbar = () => {
       {/* Navigation items for smartphones */}
       {isMenuOpen && (
         <div className="flex flex-col mt-4 sm:hidden">
-          <a href="/#kurse">
+          <a href="/course-overview">
             <span className="hover-underline text-center">Kurse</span>
           </a>
-          <a href="/#decisiontree">
+          <a href="/decisiontree">
             <span className="hover-underline text-center">Individueller Lernplan</span>
           </a>
-          <a href="/#overview">
+          <a href="/overview">
             <span className="hover-underline text-center">Übersicht</span>
+          </a>
+          <a href="/news">
+            <span className="hover-underline text-center">News</span>
           </a>
           <a href="/#about">
             <span className="hover-underline text-center">Über das Projekt</span>

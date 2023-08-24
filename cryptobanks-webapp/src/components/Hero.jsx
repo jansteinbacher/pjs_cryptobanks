@@ -1,61 +1,77 @@
 import React from 'react';
-import Crypto from "../images/cryptocurrencies.png";
-import Regulation from "../images/regulation.png";
-import BusinessModel from "../images/businessModel.png";
+import KursIcon from '../images/Kurs_Icon.png';
+import IndividuellIcon from '../images/Individuell_Icon.png';
+import GlossarIcon from '../images/Glossar_Icon.png';
 
 const Hero = () => {
   return (
-    <div id='kurse' className="bg-white py-8">
-      <div className="container mx-auto px-4">
-        <h2 className='text-2xl text-bold text-center mb-4 font-bold'>Kurse</h2>
-        <p className='text-xl text-center mb-4'>
-          Hier findest du unsere vorgefertigten Kurse.
-        </p>
-        <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8">
-          <div className="flex-1 flex flex-col items-center justify-center">
-            <a href='/course-beginner'>
-              <div className="bg-white p-4 rounded-lg hover:underline">
-                <div className="rounded-full p-4">
-                  <h2 className="text-center text-2xl ">Kryptoassets und Kryptowährungen</h2>
-                </div>
-                <img src={Crypto} alt="Crypto" className="mt-4 mx-auto w-32 transform scale-100 hover:scale-110 transition-transform duration-300" />
-              </div>
-            </a>
-            <p className='text-center'>
-              Eine informative Einführung in Kryptoassets und Kryptowährungen, die die vielversprechende Zukunft der digitalen Finanzwelt beleuchtet.
-            </p>
-          </div>
-
-          <div className="flex-1 flex flex-col items-center justify-center">
-            <a href='/integrationoverview'>
-              <div className="bg-white p-4 rounded-lg hover:underline">
-                <div className="rounded-full p-4">
-                  <h2 className="text-center text-2xl">Adaptionsmöglichkeiten und Geschäftsmodelle</h2>
-                </div>
-                <img src={BusinessModel} alt="BusinessModel" className="mt-4 mx-auto w-32 transform scale-100 hover:scale-110 transition-transform duration-300" />
-              </div>
-            </a>
-            <p className='text-center'>
-              Dieser Kurs beleuchtet die Adaptionsmöglichkeiten von Kryptoassets in einer traditionellen Bank und die daraus entstehenden Geschäftsmodelle.
-            </p>
-          </div>
-
-          <div className="flex-1 flex flex-col items-center justify-center">
-            <a href='/integrationoverview'>
-              <div className="bg-white p-4 rounded-lg hover:underline">
-                <div className="rounded-full p-4">
-                  <h2 className="text-center text-2xl">Regulatorik und technologische Grundlagen</h2>
-                </div>
-                <img src={Regulation} alt="BusinessModel" className="mt-4 mx-auto w-32 transform scale-100 hover:scale-110 transition-transform duration-300" />
-              </div>
-            </a>
-            <p className='text-center'>
-              Dieser Kurs gibt einen Überblick über die aktuelle Regulatorik mit Fokus auf Deutschland und stellt technologische Grundlagen dar.
-            </p>
-          </div>
+    <div className="bg-white">
+      <div className="container mx-auto py-12 px-12 max-w-screen-lg">
+        <div className="text-center md:text-left mb-8">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kryptoinformationen für Mitarbeitende im Bankenwesen
+          </h1>
+          <p className="text-xl text-gray-400">
+            Werde ein <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>! Wähle aus verschiedenen Lernmöglichkeiten!
+          </p>
         </div>
-        <div className='flex items-center justify-center mt-12 mb-4'>
-          <hr className="w-3/5 border-t-2 border-gray-400 my-8" />
+        <div>
+          <p className="text-xl font-semibold text-gray-800 text-center">
+            Wie möchtest du deinen Weg beschreiten?
+          </p>
+          <div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-3">
+            {/* Column 1 */}
+            <a
+              href="/course-overview"
+              className="block p-8 border rounded-md hover:bg-green-200 transition"
+            >
+              <img
+                src={KursIcon}
+                alt="Kursübersicht"
+                className="w-24 h-24 mx-auto mb-4"
+              />
+              <h2 className="text-lg font-semibold text-gray-800">
+                Kursübersicht
+              </h2>
+              <p className="mt-3 text-gray-600">
+                Absolviere vorgefertigte Kurse von Beginner bis Experte.
+              </p>
+            </a>
+
+            {/* Column 2 */}
+            <a
+              href="/decisiontree"
+              className="block p-8 border rounded-md hover:bg-green-200 transition"
+            >
+              <img
+                src={IndividuellIcon}
+                alt="Individuell"
+                className="w-24 h-24 mx-auto mb-4"
+              />
+              <h2 className="text-lg font-semibold text-gray-800">
+                Eigenen Kurs
+              </h2>
+              <p className="mt-3 text-gray-600">
+                Erstelle deinen eigenen Kurs aus verschiedenen Lerneinheiten!
+              </p>
+            </a>
+
+            {/* Column 3 */}
+            <a
+              href="/glossar"
+              className="block p-8 border rounded-md hover:bg-green-200 transition"
+            >
+              <img
+                src={GlossarIcon}
+                alt="Glossar"
+                className="w-24 h-24 mx-auto mb-4"
+              />
+              <h2 className="text-lg font-semibold text-gray-800">Glossar</h2>
+              <p className="mt-3 text-gray-600">
+                Erhalte direkten Zugriff auf verschiedene Lerneinheiten!
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
