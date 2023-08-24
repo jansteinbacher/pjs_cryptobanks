@@ -8,10 +8,10 @@ const Hero = () => {
     <div className="bg-white">
       <div className="container mx-auto py-12 px-12 max-w-screen-lg">
         <div className="text-center md:text-left mb-8">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
             Kryptoinformationen für Mitarbeitende im Bankenwesen
           </h1>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-400 ">
             Werde ein <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>! Wähle aus verschiedenen Lernmöglichkeiten!
           </p>
         </div>

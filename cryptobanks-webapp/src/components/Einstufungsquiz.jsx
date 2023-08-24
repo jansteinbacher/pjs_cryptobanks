@@ -114,10 +114,10 @@ const Quiz = () => {
   }
   
     return (
-        <div className="container mx-auto py-12 px-12 max-w-screen-lg">
-            <h2 className="text-3xl font-bold mb-4">🧠 Einstufungsquiz</h2>
-            <div className='flex items-center justify-center'>
-          <div className="w-full md:w-2/3 p-4 md:pr-8 bg-gray-100 rounded-lg">
+      <div className="container mx-auto py-6 px-4 md:px-12 max-w-screen-lg">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">🧠 Einstufungsquiz</h2>
+      <div className='flex flex-col items-center'>
+        <div className="w-full p-4 md:pr-8 bg-gray-100 rounded-lg">
             
             <div className="mb-8">
               {!quizFinished ? (
@@ -159,8 +159,8 @@ const Quiz = () => {
                 </>
               )}
             </div>
-      </div>
-      <div className="w-full md:w-1/3 p-4 md:pl-8">
+            </div>
+        <div className="w-full p-4 md:pl-8 mt-4">
         <div className="bg-gray-200 p-4 rounded">
           <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
           <p>Beantwortete Fragen: {userAnswers.filter((answer) => answer !== null).length}</p>
