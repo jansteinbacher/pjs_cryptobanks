@@ -61,7 +61,7 @@ const CourseBeginnerArticle = () => {
       <h3 className="text-xl mb-2">Kursfortschritt {progress.toFixed(0)}%</h3>
       <div className="flex items-center justify-center mb-8">
         <div className="w-full bg-gray-300 rounded overflow-hidden h-2">
-          <div className="bg-blue-500 h-full" style={{ width: `${progress}%` }}></div>
+          <div className="bg-green-400 h-full" style={{ width: `${progress}%` }}></div>
         </div>
       </div>
 
@@ -79,14 +79,14 @@ const CourseBeginnerArticle = () => {
         {isLastSection ? (
           <a
             href="/articles/CourseEndBeginner"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Kurs abschließen
           </a>
         ) : (
           <button
             onClick={handleNextSection}
-            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`}
+            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
           >
             Nächster Artikel
           </button>

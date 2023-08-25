@@ -19,14 +19,14 @@
 
 .reward-banner {
   position: fixed;
-  top: 50px;
+  top: 60px;
   right: 20px;
-  background-color: #3b82f6;
+  background-color: #66bb6a;
   color: white;
   padding: 8px 12px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  animation: slideIn 1s, slideOut 1s 3s;
+  animation: slideIn 1.5s, slideOut 3s 5s;
   /* The banner will slide in for 1 second, stay for 1 second, and then slide out in 1 second after 2 seconds delay */
 }

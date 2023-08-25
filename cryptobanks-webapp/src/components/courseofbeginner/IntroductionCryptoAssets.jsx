@@ -2,33 +2,30 @@ import React, { useState } from 'react';
 
 
 
-const Sources = ({sources}) => {
+const Sources = ({ sources}) => {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
     setShowSources(!showSources);
   };
 
-
-
   return (
-      <div className="sources border border-gray-400 rounded p-4">
-        <button className="text-lg font-semibold" onClick={toggleSources}>
-          Quellen:
-        </button>
-        {showSources && (
-          <div className="source-list leading-relaxed mt-4">
-            <ul>
-              {sources.map((source, index) => (
-                <li id={index+1} key={index}>
-                  [{index + 1}] {source}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-  
+    <div className="sources border border-gray-400 rounded p-4">
+      <button className="text-lg font-semibold" id="sources" onClick={toggleSources}>
+        Quellen:
+      </button>
+      {showSources && (
+        <div className="source-list leading-relaxed mt-4">
+          <ul>
+            {sources.map((source, index) => (
+              <li id={index + 1} key={index}>
+                [{index + 1}] {source}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
   );
 };
 
@@ -69,9 +66,8 @@ const CryptoAssets = () =>{
         Der geschichtliche Hintergrund zu Kryptoassets (Satoshi Nagamoto)
      </h2>
      <p className='mb-8 text-justify'>
-     Seit der Einführung von der Kryptowährung Bitcoin (BTC) 2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto<a href='#1'>[1]</a> skizziert wurden, hat sich die Welt der blockchainbasierten digitalen Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms Satoshi Nakamoto unbekannt. Seine Identität unterliegt vielen Mythen und Theorien. Es ist möglich, dass seine Identität für immer unbekannt bleibt.
-     Inzwischen ist die Zahl an verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision Nakamotos war es traditionelle Fiat-Währungen zukünftig durch kryptografiegestützte, digitale Währungen ­– auch Kryptowährungen genannt ­– zu ersetzen. [2],[3]
-     Die ursprüngliche Vision Nakamhat sich mittlerweile hin zu einem umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die allgemein als Krypto-Assets bezeichnet werden. Diese Krypto-Assets umfassen nun ein breites Anwendungsspektrum, dass nicht nur die ursprünglichen Idee der digitalen Währung aufgreift. Es erweitert diese um eine umfassendere Palette an kryptografischer Lösungen, darunter tokenisierte Mechanismen zur Automatisierung rechtlicher Verträge (Smart Contracts) und sogar die Schaffung unveränderlicher Besitznachweise für digitale Kunst (Non-Fungible Tokens, NFTs). [4]
+     Seit der Einführung von der Kryptowährung Bitcoin (BTC) 2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto<a href='#sources'>[1]</a> skizziert wurden, hat sich die Welt der blockchainbasierten digitalen Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms Satoshi Nakamoto unbekannt. Seine Identität unterliegt vielen Mythen und Theorien. Es ist möglich, dass seine Identität für immer unbekannt bleibt.
+     Inzwischen ist die Zahl an verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision Nakamotos war es traditionelle Fiat-Währungen zukünftig durch kryptografiegestützte, digitale Währungen ­– auch Kryptowährungen genannt ­– zu ersetzen.<a href='#sources'>[2]</a>, <a href='#sources'>[3]</a> Die ursprüngliche Vision Nakamhat sich mittlerweile hin zu einem umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die allgemein als Krypto-Assets bezeichnet werden. Diese Krypto-Assets umfassen nun ein breites Anwendungsspektrum, dass nicht nur die ursprünglichen Idee der digitalen Währung aufgreift. Es erweitert diese um eine umfassendere Palette an kryptografischer Lösungen, darunter tokenisierte Mechanismen zur Automatisierung rechtlicher Verträge (Smart Contracts) und sogar die Schaffung unveränderlicher Besitznachweise für digitale Kunst (Non-Fungible Tokens, NFTs). <a href='#sources'>[4]</a> 
      Mehr dazu in Kapitel 3 „Arten von Kryptoassets und ihre Verbindung zu traditionellen Finanzprodukten”.
      </p>
 
@@ -80,7 +76,7 @@ const CryptoAssets = () =>{
      </h2>
      <p className='mb-8 text-justify'>
      Nach § 1 Abs. 11 S. 4 KWG ist ein Kryptowert ein digitaler, von keiner öffentlichen Stelle unterstützter Wert ohne gesetzlichen Status einer Währung, der gleichwohl als Tausch-, 
-     Zahlungs- oder Anlagegegenstand akzeptiert wird und elektronisch übertragen, gespeichert und gehandelt werden kann. [5] Ähnlich, – nur mit Bezug zur Distributed-Ledger-Technologie (DLT) – 
+     Zahlungs- oder Anlagegegenstand akzeptiert wird und elektronisch übertragen, gespeichert und gehandelt werden kann.<a href='#sources'>[5]</a> Ähnlich, – nur mit Bezug zur Distributed-Ledger-Technologie (DLT) – 
      definiert die EU-Verordnung über Märkte in Kryptowerte (sog. MiCA).
      </p>
 
@@ -88,9 +84,9 @@ const CryptoAssets = () =>{
         Blockchain - Was ist das?
      </h2>
      <p className='mb-8 text-justify'>
-     Aufmerksam Lesende sollten bereits wissen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in einem White Paper beschrieben wurde. Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden.[6],[7]
-     Mittels der Blockchain-Technologie können Daten, wie beispielweise Transaktionen, in einer verteilten Infrastruktur ohne eine zentrale Instanz nachvollziehbar und manipulationssicher verwaltet werden. Sie basiert auf Kryptographie, um Daten zu sichern und die Identität der Anwendenden zu überprüfen. [8]
-     Die Blockchain-Technologie basiert auf einem Peer-to-Peer Netzwerk. Dies bedeutet, dass es nicht auf einer zentralen Behörde fundiert, welche den System verwaltet. Die Computer, die zu dem Peer-to-Peer Netzwerk gehören, sind meist dezentral verteilt und werden in der Fachliteratur teils auch als Full Nodes bezeichnet. [9]
+     Aufmerksam Lesende sollten bereits wissen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in einem White Paper beschrieben wurde. Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden.<a href='#sources'>[6]</a>, <a href='#sources'>[7]</a> 
+     Mittels der Blockchain-Technologie können Daten, wie beispielweise Transaktionen, in einer verteilten Infrastruktur ohne eine zentrale Instanz nachvollziehbar und manipulationssicher verwaltet werden. Sie basiert auf Kryptographie, um Daten zu sichern und die Identität der Anwendenden zu überprüfen.<a href='#sources'>[8]</a> 
+     Die Blockchain-Technologie basiert auf einem Peer-to-Peer Netzwerk. Dies bedeutet, dass es nicht auf einer zentralen Behörde fundiert, welche den System verwaltet. Die Computer, die zu dem Peer-to-Peer Netzwerk gehören, sind meist dezentral verteilt und werden in der Fachliteratur teils auch als Full Nodes bezeichnet.<a href='#sources'>[9]</a> 
      Es gibt zwei verschiedene Arten der Blockchain, die Permissioned Blockchain und die Permissionless Blockchain. Mehr dazu in Kapitel 2. 
 
      </p>
@@ -101,10 +97,10 @@ const CryptoAssets = () =>{
      <p className='mb-8 text-justify'>
      Tokenisierung wird als der Digitalisierungsprozess eines materiellen oder immateriellen Vermögenswertes definiert. Es besteht die Möglichkeit 
      jeden Vermögenswert oder jedes Recht in Form eines Token zu speichern. Dieser Token wird algorithmisch erzeugt, digital dargestellt und kann 
-     über ein Blockchain-Netzwerk gehandelt werden [10],[11].
+     über ein Blockchain-Netzwerk gehandelt werden.<a href='#sources'>[10]</a>,<a href='#sources'>[11]</a>
      Wichtig ist jedoch, dass hierbei die unterschiedlichen Rechtslagen und Rahmenbedingungen eines Landes zu berücksichtigen ist, in dem der Token den 
-     Vermögenswert darstellt. Nur wenn die zuständigen Landesbehörden das Konzept der Tokenisierung anerkennen, kann dieser unter gesetzlichem Rahmen wirksam sein  [12]. 
-     Ethereum Request for Comments (ERC) ist ein bekannter Standard für die Erstellung tokenisierter Formen virtueller Vermögenswerte  [13]. 
+     Vermögenswert darstellt. Nur wenn die zuständigen Landesbehörden das Konzept der Tokenisierung anerkennen, kann dieser unter gesetzlichem Rahmen wirksam sein  <a href='#sources'>[12]</a>. 
+     Ethereum Request for Comments (ERC) ist ein bekannter Standard für die Erstellung tokenisierter Formen virtueller Vermögenswerte  <a href='#sources'>[13]</a>. 
 
      </p>
 
@@ -113,9 +109,9 @@ const CryptoAssets = () =>{
      </h2>
      <p className='mb-8 text-justify'>
      Token unterscheiden sich von Coins. Während der Coin primär als Zahlungsmittel verwendet wird und eine rein digitale Währung darstellt, habenToken  breitere Anwendungsmöglichkeiten. 
-     Sie sind daher nicht als „klassischer“ Coin  einzustufen (vgl. Gusmann und Weisenberger 2018)[14]. Die wohl bekanntesten Coins sind der Bitcoin, basierend auf der Bitcoin-Blockchain, und der Ethercoin, 
+     Sie sind daher nicht als „klassischer“ Coin  einzustufen (vgl. Gusmann und Weisenberger 2018)<a href='#sources'>[14]</a>. Die wohl bekanntesten Coins sind der Bitcoin, basierend auf der Bitcoin-Blockchain, und der Ethercoin, 
      der Coin der Ethereum-Blockchain. Coins, die nach der ersten Kryptowährung, dem Bitcoin, auf den Markt gekommen sind, bezeichnet man auch als Bitcoin Alternative oder Alt Coin. Token und Coin stehen in einem 
-     engen Zusammenhang, denn die Transaktionskosten der Token werden mit Coins gezahlt [15].
+     engen Zusammenhang, denn die Transaktionskosten der Token werden mit Coins gezahlt <a href='#sources'>[15]</a>.
 
      </p>
 
@@ -124,7 +120,7 @@ const CryptoAssets = () =>{
 
 
 
-    <Sources sources={articlesources} />
+    <Sources sources={articlesources}/>
     </div>
 
   );
