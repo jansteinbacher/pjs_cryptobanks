@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import CryptoAssetsDefinition from '../../images/courseBeginner/CryptoAssetsDefinition.png';
+import Nagamoto from '../../images/courseBeginner/nagamoto.png';
+import Rocket from '../../images/courseBeginner/rocket.png';
+import Currencies from '../../images/courseBeginner/currencies.png';
+import Token from '../../images/courseBeginner/token.png';
 
 
 
@@ -54,6 +59,14 @@ const CryptoAssets = () =>{
      <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
             Grundverständnis zu Kryptoassets
      </h1>
+     <p>
+      Hallo und herzlich willkommen im Beginner-Kurs zu Kryptoassets! 
+      Du hast dich für diesen Kurs entschieden, da du ein grundlegendes Verständnis zum Thema Kryptoassets erhalten möchtest? Zudem interessierst du dich für die Einbindung von Kryptoassets in traditionelle Finanzprodukte und möchtest Kundenbedürfnisse im Bereich Kryptoassets verstehen? Dann ist der Beginner-Kurs genau das richtige für dich. 
+      Aus der Perspeltive von Bernd, dem Geschäftsführer der fikitven Silberbach & Söhne Bank tauchst du in die Welt der Kryptoassets ein. 
+      Nach Abschluss des Kurses hast du zu folgenden Bereichen Wissen erlangen können: 
+
+
+     </p>
      <ul className='mb-8 list-disc ml-4'>
       <li>Der geschichtliche Hintergrund zu Kryptoassets (Satoshi Nagamoto)</li>
       <li>Definition Kryptoassets</li>
@@ -63,8 +76,37 @@ const CryptoAssets = () =>{
      </ul>
 
      <h2 className="text-lg font-semibold text-gray-800 mb-4">
+     Bernds Entdeckung der Krypto-Welt: Ein Blick über den Horizont der Tradition 
+     </h2>
+     <p className='mb-8 text-justify'>
+      Bernd ist seit über zwei Jahrzehnten ein fester Bestandteil der traditionellen, lokalen Silberbach & Söhne Bank. 
+      Er kennt die Welt der klassischen Finanzprodukte in- und auswendig. Doch tief in ihm regt sich Neugier, als er von der aufkommenden Welt der Kryptoassets hört. 
+      Ein Bereich, der weit über seine bisherigen Kenntnisse hinausgeht und doch das Potenzial hat, die Finanzlandschaft zu verändern.
+
+      Lerne Bernd jetzt näher kennen und entdecke gemeinsam mit ihm die Welt der Kryptoassets:
+
+
+      Voller Neugierde macht sich Bernd auf die Suche nach Informationen zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. 
+      In der Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu dem Thema mitbekommen. Er hatte die beiden beauftragt sich 
+      ebenfalls mit dem Thema Kryptoassets auseinanderzusetzen, um ein breites Wissen zu Kryptoassets zu bekommen und letzlich eine fundierte 
+      Entscheidung für oder gegen die Integration von Kryptoassets in seine Bank zu treffen. 
+      Bernd konnte nicht widerstehen, sich in das Gespräch einzubringen. "Entschuldigt, dass ich mich einmische, aber ich habe auch viele Fragen. 
+      Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen in Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht sicher, wer oder was das ist." 
+      Simone lächelte und erklärte: "Nakamoto ist der Pseudonym eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer hinter diesem Namen steckt. 
+      Es ist wie eine mysteriöse Figur, die die Krypto-Revolution gestartet hat." Tobias fügte hinzu: 
+      "Genau, Nakamoto veröffentlichte das Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel geblieben."
+     </p>
+
+    
+
+     <h2 className="text-lg font-semibold text-gray-800 mb-4">
         Der geschichtliche Hintergrund zu Kryptoassets (Satoshi Nagamoto)
      </h2>
+     <div className='flex justify-center items-center'>
+     <img src={Nagamoto} alt="Nagamoto" className="w-full md:w-1/2 mb-4" />
+     </div>
+    
+
      <p className='mb-8 text-justify'>
      Seit der Einführung von der Kryptowährung Bitcoin (BTC) 2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto<a href='#sources'>[1]</a> skizziert wurden, hat sich die Welt der blockchainbasierten digitalen Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms Satoshi Nakamoto unbekannt. Seine Identität unterliegt vielen Mythen und Theorien. Es ist möglich, dass seine Identität für immer unbekannt bleibt.
      Inzwischen ist die Zahl an verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision Nakamotos war es traditionelle Fiat-Währungen zukünftig durch kryptografiegestützte, digitale Währungen ­– auch Kryptowährungen genannt ­– zu ersetzen.<a href='#sources'>[2]</a>, <a href='#sources'>[3]</a> Die ursprüngliche Vision Nakamhat sich mittlerweile hin zu einem umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die allgemein als Krypto-Assets bezeichnet werden. Diese Krypto-Assets umfassen nun ein breites Anwendungsspektrum, dass nicht nur die ursprünglichen Idee der digitalen Währung aufgreift. Es erweitert diese um eine umfassendere Palette an kryptografischer Lösungen, darunter tokenisierte Mechanismen zur Automatisierung rechtlicher Verträge (Smart Contracts) und sogar die Schaffung unveränderlicher Besitznachweise für digitale Kunst (Non-Fungible Tokens, NFTs). <a href='#sources'>[4]</a> 
@@ -75,6 +117,13 @@ const CryptoAssets = () =>{
         Definition Kryptoassets
      </h2>
      <p className='mb-8 text-justify'>
+     Nach der Pause öffnete Bernd seinen Laptop und begann mit einer simplen Google-Suche: "Was sind Kryptoassets?" Innerhalb von Sekunden erschienen zahlreiche Ergebnisse. 
+     Er stieß auf eine Definition, die ihm einen klaren Überblick verschaffte.
+     </p>
+     <div className='flex justify-center items-center'>
+     <img src={CryptoAssetsDefinition} alt="CloudDefinition" className="w-full md:w-1/2 mb-4" />
+     </div>
+     <p className='mb-8 text-justify'>
      Nach § 1 Abs. 11 S. 4 KWG ist ein Kryptowert ein digitaler, von keiner öffentlichen Stelle unterstützter Wert ohne gesetzlichen Status einer Währung, der gleichwohl als Tausch-, 
      Zahlungs- oder Anlagegegenstand akzeptiert wird und elektronisch übertragen, gespeichert und gehandelt werden kann.<a href='#sources'>[5]</a> Ähnlich, – nur mit Bezug zur Distributed-Ledger-Technologie (DLT) – 
      definiert die EU-Verordnung über Märkte in Kryptowerte (sog. MiCA).
@@ -84,7 +133,12 @@ const CryptoAssets = () =>{
         Blockchain - Was ist das?
      </h2>
      <p className='mb-8 text-justify'>
-     Aufmerksam Lesende sollten bereits wissen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in einem White Paper beschrieben wurde. Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden.<a href='#sources'>[6]</a>, <a href='#sources'>[7]</a> 
+      Während seiner Recherche stößt Bernd auf den Bergriff Blockchain. Doch was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß Bernd inzwischen, 
+      dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in dem Whitepaper beschrieben wurde. 
+      Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser 
+      Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden. <a href='#sources'>[6]</a>, <a href='#sources'>[7]</a> 
+     </p>
+     <p className='mb-8 text-justify'>
      Mittels der Blockchain-Technologie können Daten, wie beispielweise Transaktionen, in einer verteilten Infrastruktur ohne eine zentrale Instanz nachvollziehbar und manipulationssicher verwaltet werden. Sie basiert auf Kryptographie, um Daten zu sichern und die Identität der Anwendenden zu überprüfen.<a href='#sources'>[8]</a> 
      Die Blockchain-Technologie basiert auf einem Peer-to-Peer Netzwerk. Dies bedeutet, dass es nicht auf einer zentralen Behörde fundiert, welche den System verwaltet. Die Computer, die zu dem Peer-to-Peer Netzwerk gehören, sind meist dezentral verteilt und werden in der Fachliteratur teils auch als Full Nodes bezeichnet.<a href='#sources'>[9]</a> 
      Es gibt zwei verschiedene Arten der Blockchain, die Permissioned Blockchain und die Permissionless Blockchain. Mehr dazu in Kapitel 2. 
@@ -94,6 +148,13 @@ const CryptoAssets = () =>{
      <h2 className="text-lg font-semibold text-gray-800 mb-4">
         Tokenisierung
      </h2>
+     <p className='mb-8 text-justify'>
+     Bernds Wissensreise führte ihn immer tiefer in die Welt der Kryptoassets. Doch bei einem bestimmten Begriff hatte er noch einige Fragezeichen 
+     im Kopf: "Tokenisierung". Dieses Wort war in vielen Zusammenhängen gefallen, aber er konnte es nirgends zuordnen.
+     </p>
+     <div className='flex justify-center items-center'>
+     <img src={Currencies} alt="Token" className="w-full md:w-1/2 mb-4" />
+     </div>
      <p className='mb-8 text-justify'>
      Tokenisierung wird als der Digitalisierungsprozess eines materiellen oder immateriellen Vermögenswertes definiert. Es besteht die Möglichkeit 
      jeden Vermögenswert oder jedes Recht in Form eines Token zu speichern. Dieser Token wird algorithmisch erzeugt, digital dargestellt und kann 
@@ -107,15 +168,35 @@ const CryptoAssets = () =>{
      <h2 className="text-lg font-semibold text-gray-800 mb-4">
       Coin vs. Token
      </h2>
+     <div className='flex justify-center items-center'>
+     <img src={Token} alt="Token" className="w-full md:w-1/2 mb-4" />
+     </div>
      <p className='mb-8 text-justify'>
+     Bernd hat inzwischen bereits einige Informationen auf seiner Wissensreise durch de Welt der Kryptoassets sammeln können. Doch es gibt immer noch Aspekte, die ihm nicht vollständig klar sind. Ein solcher Aspekt ist der Unterschied zwischen "Coin" und "Token". Er wusste, dass es wichtig ist, diese Begriffe zu verstehen, um die Vielfalt der Kryptoassets zu erfassen.
+      Bernd tippt also "Unterschied zwischen Coin und Token" in die Suchleiste ein. Die Suchergebnisse führen ihn zu einer klaren Erklärung. <br/>
+
      Token unterscheiden sich von Coins. Während der Coin primär als Zahlungsmittel verwendet wird und eine rein digitale Währung darstellt, habenToken  breitere Anwendungsmöglichkeiten. 
      Sie sind daher nicht als „klassischer“ Coin  einzustufen (vgl. Gusmann und Weisenberger 2018)<a href='#sources'>[14]</a>. Die wohl bekanntesten Coins sind der Bitcoin, basierend auf der Bitcoin-Blockchain, und der Ethercoin, 
      der Coin der Ethereum-Blockchain. Coins, die nach der ersten Kryptowährung, dem Bitcoin, auf den Markt gekommen sind, bezeichnet man auch als Bitcoin Alternative oder Alt Coin. Token und Coin stehen in einem 
      engen Zusammenhang, denn die Transaktionskosten der Token werden mit Coins gezahlt <a href='#sources'>[15]</a>.
-
+      <br/>
+      Mit einem tiefen Verständnis für den Unterschied zwischen Coins und Tokens setzte Bernd seinen Weg des Lernens und Entdeckens fort. Er wusste, dass jedes Puzzleteilchen, das er verstand, ihn näher an die vollständige Erkenntnis der Welt der Kryptoassets heranbrachte.
      </p>
 
-     
+     <h2 className="text-lg font-semibold text-gray-800 mb-4">
+      Bereit für deine erste Wissenschallenge?
+     </h2>
+     <div className='flex justify-center items-center'>
+     <img src={Rocket} alt="Token" className="w-full md:w-1/2 mb-4" />
+     </div>
+     <p className='mb-8 text-justify'>
+      Hey Du!      <br/>
+      Du hast inzwischen die Grundlagen zu Kryptoassets gelernt und dein Wissen erweitert  – das ist wirklich beeindruckend! Jetzt ist es an der Zeit, dein Können auf die Probe zu stellen. Denke daran, dass wahres Verstehen erst durch Anwendung erreicht wird. Das folgende Quiz hat zum Ziel dein Wissen zu festigen. Du hast nun die Gelegenheit, dein erworbenes Wissen unter Beweis zu stellen. Worauf wartest du noch?
+
+      Drücke auf den “Weiter”- Button und zeige dir selbst, wie viel du erreicht hast. Wir glauben an dich! Los geht's! 
+     </p>
+
+
 
 
 

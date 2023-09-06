@@ -19,7 +19,7 @@ import {
   DragAndDrop,
   Einstufungsquiz,
   News,
-  CourseBeginnerQuiz,
+  Myths,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -61,9 +61,11 @@ const App = () => (
         />
 
         <Route
-          path="/quiz"
-          element={<CourseBeginnerQuiz />}
+          path="/myths"
+          element={<Myths />}
         />
+
+       
 
         <Route
           path="/overview"

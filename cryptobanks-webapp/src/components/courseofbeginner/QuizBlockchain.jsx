@@ -3,64 +3,46 @@ import React, { useState, useEffect } from 'react';
 const Quiz = () => {
     const questions = [
         {
-          question: 'Was versteht man unter Kryptowährungen?',
+          question: 'Welche Arten von Blockchain gibt es?',
           options: [
-            'Digitale Währungen, die auf Kryptografie basieren',
-            'Physische Münzen mit eingebauter Technologie',
-            'Ein Börsenindex für den Handel mit Aktien',
-            'Eine Art Kreditkarte für internationale Zahlungen',
+            'Zentrale und dezentrale Blockchain.',
+            'Kryptografische und nicht-kryptografische Blockchain.',
+            'Permissioned und permissionless Blockchain.',
+            'Hyperledger und Ethereum Blockchain.',
+          ],
+          correctAnswerIndex: 2,
+        },
+        {
+          question: 'Welche Bedeutung hat “Proof of Stake”?',
+          options: [
+            'Proof of Stake erfordert von den Teilnehmern, komplexe mathematische Rätsel zu lösen, um die Blockchain zu sichern.',
+            'Im Proof of Stake-Verfahren werden Blöcke basierend auf der verbrauchten Energiemenge zur Validierung ausgewählt.',
+            'Ein Konsensmechanismus, bei dem Teilnehmer Kryptoassets als Einsatz verwenden, um Transaktionen in einer Blockchain zu validieren.',
+            'Proof of Stake ist ein Konsensmechanismus in der Blockchain, bei dem Teilnehmer Münzen besitzen und halten, um Transaktionen zu validieren.',
+          ],
+          correctAnswerIndex: 3,
+        },
+        {
+          question: 'Was is der Unterschied von Distributed Ledger Technology (DLT) und Blockchain?',
+          options: [
+            'DLT ermöglicht die gemeinsame Datenverwaltung in einem verteilten Netzwerk, während Blockchain speziell auf die Verkettung von Blöcken fokussiert ist.',
+            'Der Hauptunterschied zwischen DLT und Blockchain liegt darin, dass DLT auf zentralisierten Servern basiert, während Blockchain dezentral ist.',
+            'In einer Blockchain können nur bestimmte, vertrauenswürdige Teilnehmer Transaktionen durchführen, während DLT allen Benutzern offensteht.',
+            'DLT und Blockchain sind identische Begriffe und können austauschbar verwendet werden.',
           ],
           correctAnswerIndex: 0,
         },
         {
-          question: 'Was ist Bitcoin?',
+          question: 'Welche Anwendungsbereiche haben Blockchain-Technologien?',
           options: [
-            'Eine digitale Währung, die auf Blockchain-Technologie basiert',
-            'Eine neue Form von physischem Bargeld',
-            'Ein Aktienindex für Technologieunternehmen',
-            'Eine Art virtuelles Sammelalbum',
+            'Finanzsektor',
+            'Supply-Chain Management',
+            'Smarte Verträge',
+            'Alle oben genannten Möglichkeiten.',
           ],
-          correctAnswerIndex: 0,
+          correctAnswerIndex: 3,
         },
-        {
-          question: 'Was sind Token im Zusammenhang mit Blockchain?',
-          options: [
-            'Digitale Vermögenswerte, die auf einer bestehenden Blockchain ausgegeben werden',
-            'Physische Gegenstände, die in der virtuellen Realität gehandelt werden',
-            'Ein Index für den Handel mit Kryptowährungen',
-            'Eine Art geheime Passwörter für die Authentifizierung',
-          ],
-          correctAnswerIndex: 0,
-        },
-        {
-          question: 'Wie wird eine Bitcoin-Transaktion verifiziert und in die Blockchain eingefügt?',
-          options: [
-            'Durch Mining, bei dem Rechenleistung verwendet wird, um komplexe mathematische Probleme zu lösen',
-            'Durch die physische Übergabe von Bitcoin-Münzen',
-            'Durch den Kauf von Bitcoin-Aktien an der Börse',
-            'Durch das Drucken einer physischen Quittung für die Transaktion',
-          ],
-          correctAnswerIndex: 0,
-        },
-        {
-          question: 'Welche Bedeutung hat der Begriff "Dezentralisierung" in Bezug auf Kryptowährungen?',
-          options: [
-            'Das Fehlen einer zentralen Autorität oder einer Kontrollinstanz, die die Kryptowährung steuert',
-            'Der Handel mit Kryptowährungen an verschiedenen Börsenplätzen',
-            'Die Kombination mehrerer Kryptowährungen zu einem neuen digitalen Vermögenswert',
-            'Die geheime Verschlüsselung von Kryptowährungstransaktionen',
-          ],
-          correctAnswerIndex: 0,
-        },
-
-        {
-          question: 'Was passt zusammen?',
-          pairs: [
-            { text: 'Smart Contract', options: ['Select an option','Ethereum', 'Hardware', 'Software'], correctOptionIndex: 2 },
-            { text: 'Proof of Work', options: ['Select an option','Konsensalgorithmus', 'Identitätsprüfung', 'Passwort'], correctOptionIndex: 2 },
-            // Add more pairs here...
-          ],
-        },
+        
         
         // Add more questions here...
       ];
@@ -143,19 +125,22 @@ const Quiz = () => {
       }, [currentQuestionIndex, questions.length]);
         
           return (
-            <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-3/4 p-4 md:pr-8">
-                <h2 className="text-3xl font-bold mb-4">🧠 Abschlussquiz</h2>
+            <div className="container mx-auto py-6 px-4 md:px-12 max-w-screen-lg ">
+              <div className="w-full p-4 md:pr-8 ">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">🧠 Quiz</h2>
                 <div className="mb-8">
                   {!quizFinished ? (
                     <>
-                      <h3 className="text-xl font-bold mb-2">{questions[currentQuestionIndex].question}</h3>
+                      <h3 className="text-xl font-bold mb-8">{questions[currentQuestionIndex].question}</h3>
+                      <div className="space-y-4">
                       {questions[currentQuestionIndex].options ? (
                         // For standard multiple-choice questions
                         questions[currentQuestionIndex].options.map((option, index) => (
                           <button
                             key={index}
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mb-2 rounded"
+                            className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
+                              answered ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
                             onClick={() => handleAnswerSelect(index)}
                           >
                             {option}
@@ -181,9 +166,10 @@ const Quiz = () => {
                           </div>
                         ))
                       )}
+                      </div>
                       {questions[currentQuestionIndex].pairs && (
                         <button
-                          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mt-4 rounded"
+                          className="bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-4 mt-4 rounded"
                           onClick={checkPairAnswers}
                         >
                           Check Pairs
@@ -193,14 +179,14 @@ const Quiz = () => {
                   ) : (
                   // Show the final score and appropriate message after all questions are answered
                   <>
-                    <h3 className="text-xl font-bold mb-2">🏆 Quiz beendet!</h3>
+                    <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
                     {percentageCorrect >= 50 ? (
                       <p>Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet. 🎉🥳</p>
                     ) : (
                       <>
                         <p>Versuche es noch einmal. Du hast {numCorrectAnswers} von {questions.length} Fragen richtig beantwortet. 🙌</p>
                         <button
-                          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mt-4 rounded"
+                          className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-4 rounded"
                           onClick={restartQuiz}
                         >
                           Quiz neu starten
@@ -211,9 +197,9 @@ const Quiz = () => {
                 )}
               </div>
             </div>
-            <div className="w-full md:w-1/4 p-4 md:pl-8">
-              <div className="bg-gray-200 p-4 rounded">
-                <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
+            <div className="w-full p-4 md:pl-8 mt-4">
+            <div className="bg-gray-200 p-4 rounded">
+               <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
                 <p>Beantwortete Fragen: {userAnswers.filter((answer) => answer !== null).length}</p>
                 <p>Richtige Antworten: {numCorrectAnswers}</p>
                 <p>Verbleibende Fragen: {questions.length - currentQuestionIndex}</p>

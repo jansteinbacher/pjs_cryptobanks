@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Challenges from '../../images/courseBeginner/challenges.png';
+import Challenges from '../images/courseBeginner/challenges.png';
 
 
 

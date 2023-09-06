@@ -3,15 +3,22 @@
 import React, { useState, useEffect } from "react";
 import "./CourseBeginnerArticle.css"; // Import the CSS file here
 import Cryptoassets from "./IntroductionCryptoAssets";
-import Blockchain from "./IntroductionBlockchain";
+import IntroBlockchain from "./IntroductionBlockchain";
 import Token from "./IntroductionToken";
 import Trade from "./IntroductionTrade";
-import Quiz from "./CourseBeginnerQuiz";
+import QuizAssets from "./QuizAssets";
+import QuizBlockchain from "./QuizBlockchain";
+import QuizToken from "./QuizToken";
+import QuizTrade from "./QuizTrade";
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
-  const sections = [Cryptoassets, Blockchain, Token, Trade, Quiz];
+
+
+  const sections = [Cryptoassets, QuizAssets, IntroBlockchain, QuizBlockchain, Token, QuizToken, Trade, QuizTrade];
+
+
   const [scrollProgress, setScrollProgress] = useState(0);
   const progress = ((sectionIndex / sections.length)) * 100 + scrollProgress* 100/sections.length ;
 
