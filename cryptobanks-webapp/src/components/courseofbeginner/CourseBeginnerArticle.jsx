@@ -15,12 +15,21 @@ const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
-
-  const sections = [Cryptoassets, QuizAssets, IntroBlockchain, QuizBlockchain, Token, QuizToken, Trade, QuizTrade];
-
+  const sections = [
+    Cryptoassets,
+    QuizAssets,
+    IntroBlockchain,
+    QuizBlockchain,
+    Token,
+    QuizToken,
+    Trade,
+    QuizTrade,
+  ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
-  const progress = ((sectionIndex / sections.length)) * 100 + scrollProgress* 100/sections.length ;
+  const progress =
+    (sectionIndex / sections.length) * 100 +
+    (scrollProgress * 100) / sections.length;
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
@@ -54,7 +63,7 @@ const CourseBeginnerArticle = () => {
     const updateScrollProgress = () => {
       const scrollPosition = window.scrollY;
       const maxScroll = document.body.clientHeight - window.innerHeight;
-      const scrollPercentage = (scrollPosition / maxScroll);
+      const scrollPercentage = scrollPosition / maxScroll;
       setScrollProgress(scrollPercentage);
     };
 
@@ -68,7 +77,10 @@ const CourseBeginnerArticle = () => {
       <h3 className="text-xl mb-2">Kursfortschritt {progress.toFixed(0)}%</h3>
       <div className="flex items-center justify-center mb-8">
         <div className="w-full bg-gray-300 rounded overflow-hidden h-2">
-          <div className="bg-green-400 h-full" style={{ width: `${progress}%` }}></div>
+          <div
+            className="bg-green-400 h-full"
+            style={{ width: `${progress}%` }}
+          ></div>
         </div>
       </div>
 
@@ -80,7 +92,7 @@ const CourseBeginnerArticle = () => {
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
-            Vorheriger Artikel
+            Zurück
           </button>
         )}
         {isLastSection ? (
@@ -95,7 +107,7 @@ const CourseBeginnerArticle = () => {
             onClick={handleNextSection}
             className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
           >
-            Nächster Artikel
+            Weiter
           </button>
         )}
       </div>
