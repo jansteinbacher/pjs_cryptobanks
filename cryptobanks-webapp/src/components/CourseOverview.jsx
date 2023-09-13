@@ -17,7 +17,7 @@ const courses = [
     ],
     duration: "2 Stunden",
     lastUpdated: "August 10, 2023",
-    course_link: "/course-beginner",
+    course_link: "/course-beginner-introduction",
     video_link: BeginnerVideo,
   },
   {
