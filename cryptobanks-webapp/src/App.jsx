@@ -20,6 +20,7 @@ import {
   Einstufungsquiz,
   News,
   Myths,
+  CourseBeginnerIntroduction,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -36,15 +37,11 @@ const App = () => (
               <Hero />
               <Startpage />
               <About />
-
             </>
           }
         />
         <Route path="/course-overview" element={<CourseOverview />} />
-        <Route
-          path="/course-beginner"
-          element={<CourseBeginnerArticle />}
-        />
+        <Route path="/course-beginner" element={<CourseBeginnerArticle />} />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
 
@@ -55,31 +52,19 @@ const App = () => (
           element={<IntegrationOverview2 />}
         />
 
-        <Route
-          path="/dnd"
-          element={<DragAndDrop />}
-        />
+        <Route path="/dnd" element={<DragAndDrop />} />
+
+        <Route path="/myths" element={<Myths />} />
+
+        <Route path="/overview" element={<Overview />} />
+
+        <Route path="/news" element={<News />} />
+
+        <Route path="/einstufungsquiz" element={<Einstufungsquiz />} />
 
         <Route
-          path="/myths"
-          element={<Myths />}
-        />
-
-       
-
-        <Route
-          path="/overview"
-          element={<Overview />}
-        />
-
-        <Route
-          path="/news"
-          element={<News />}
-        />    
-
-        <Route
-          path="/einstufungsquiz"
-          element={<Einstufungsquiz />}
+          path="/course-beginner-introduction"
+          element={<CourseBeginnerIntroduction />}
         />
 
         <Route
