@@ -1,27 +1,44 @@
-import React from 'react';
-import KursIcon from '../images/Kurs_Icon.png';
-import IndividuellIcon from '../images/Individuell_Icon.png';
-import GlossarIcon from '../images/Glossar_Icon.png';
+import React from "react";
+import KursIcon from "../images/Kurs_Icon.png";
+import IndividuellIcon from "../images/Individuell_Icon.png";
+import Header from "../images/header.jpg";
+import GlossarIcon from "../images/Glossar_Icon.png";
 
 const Hero = () => {
   return (
     <div className="bg-white">
-      <div className="container mx-auto py-12 px-12 max-w-screen-lg">
-        <div className="text-center md:text-left mb-8">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
-            Kryptoinformationen für Mitarbeitende im Bankenwesen
-          </h1>
-          <p className="text-xl text-gray-400 ">
-            Werde ein <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>! Wähle aus verschiedenen Lernmöglichkeiten!
-          </p>
+      <div
+        className="bg-cover bg-center relative" // Verwenden Sie relative Positionierung
+        style={{
+          backgroundImage: `url(${Header})`,
+          minHeight: "60vh", // Stellen Sie sicher, dass die Höhe ausreichend ist
+        }}
+      >
+        <div className="absolute inset-0 flex flex-col justify-center items-start text-white">
+          {/* Den Text linksbündig ausrichten und horizontal weiter links von der Mitte zentrieren */}
+          <div
+            className="text-left mb-8 max-w-xl mx-auto"
+            style={{ marginLeft: "20%" }}
+          >
+            <h1 className="text-2xl md:text-4xl font-bold text-gray-200 mb-4 tracking-tight">
+              Kryptoinformationen für Mitarbeitende im Bankenwesen
+            </h1>
+            <p className="text-xl text-gray-300">
+              Werde ein{" "}
+              <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>!
+              Wähle aus verschiedenen Lernmöglichkeiten!
+            </p>
+          </div>
         </div>
+      </div>
+      <div className="container mx-auto py-12 px-12 max-w-screen-xl">
         <div>
-          <p className="text-xl font-semibold text-gray-800 text-center">
+          <p className="text-2xl font-semibold text-gray-800 mb-8 text-center">
             Wie möchtest du deinen Weg beschreiten?
           </p>
           <div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-3">
             {/* Column 1 */}
-            <a
+            <div
               href="/course-overview"
               className="block p-8 border rounded-md hover:bg-green-200 transition"
             >
@@ -36,13 +53,17 @@ const Hero = () => {
               <p className="mt-3 text-gray-600">
                 Absolviere vorgefertigte Kurse von Beginner bis Experte.
               </p>
-            </a>
+
+              <a
+                href="/course-overview"
+                className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
+              >
+                Zu den Kursen &rarr;
+              </a>
+            </div>
 
             {/* Column 2 */}
-            <a
-              href="/decisiontree"
-              className="block p-8 border rounded-md hover:bg-green-200 transition"
-            >
+            <div className="block p-8 border rounded-md hover:bg-green-200 transition">
               <img
                 src={IndividuellIcon}
                 alt="Individuell"
@@ -54,13 +75,16 @@ const Hero = () => {
               <p className="mt-3 text-gray-600">
                 Erstelle deinen eigenen Kurs aus verschiedenen Lerneinheiten!
               </p>
-            </a>
+              <a
+                href="/course-overview"
+                className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
+              >
+                Kurs erstellen &rarr;
+              </a>
+            </div>
 
             {/* Column 3 */}
-            <a
-              href="/glossar"
-              className="block p-8 border rounded-md hover:bg-green-200 transition"
-            >
+            <div className="block p-8 border rounded-md hover:bg-green-200 transition">
               <img
                 src={GlossarIcon}
                 alt="Glossar"
@@ -70,7 +94,13 @@ const Hero = () => {
               <p className="mt-3 text-gray-600">
                 Erhalte direkten Zugriff auf verschiedene Lerneinheiten!
               </p>
-            </a>
+              <a
+                href="/course-overview"
+                className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
+              >
+                Zum Glossar &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </div>
