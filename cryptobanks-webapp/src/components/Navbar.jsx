@@ -22,29 +22,35 @@ const Navbar = () => {
       {/* Navigation items for laptops */}
       <div className="hidden sm:flex flex-col mt-4 sm:flex-row sm:mt-0 sm:space-x-12">
         <a href="/course-overview">
-          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Kurse</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
+            Kurse
+          </span>
         </a>
         <a href="/decisiontree">
-          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Individueller Lernplan</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
+            Individueller Lernplan
+          </span>
         </a>
         <a href="/overview">
-          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Übersicht</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
+            Übersicht
+          </span>
         </a>
         <a href="/news">
-          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">News</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
+            News
+          </span>
         </a>
         <a href="/#about">
-          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">Über das Projekt</span>
+          <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
+            Über das Projekt
+          </span>
         </a>
       </div>
 
-
       {/* Button for mobile devices */}
       <div className="sm:hidden flex items-center">
-        <button
-          className="block focus:outline-none"
-          onClick={handleMenuToggle}
-        >
+        <button className="block focus:outline-none" onClick={handleMenuToggle}>
           {isMenuOpen ? (
             <svg
               className="h-6 w-6 text-gray-800"
@@ -86,7 +92,9 @@ const Navbar = () => {
             <span className="hover-underline text-center">Kurse</span>
           </a>
           <a href="/decisiontree">
-            <span className="hover-underline text-center">Individueller Lernplan</span>
+            <span className="hover-underline text-center">
+              Individueller Lernplan
+            </span>
           </a>
           <a href="/overview">
             <span className="hover-underline text-center">Übersicht</span>
@@ -95,7 +103,9 @@ const Navbar = () => {
             <span className="hover-underline text-center">News</span>
           </a>
           <a href="/#about">
-            <span className="hover-underline text-center">Über das Projekt</span>
+            <span className="hover-underline text-center">
+              Über das Projekt
+            </span>
           </a>
         </div>
       )}
