@@ -95,7 +95,7 @@ const Hero = () => {
                 Erhalte direkten Zugriff auf verschiedene Lerneinheiten!
               </p>
               <a
-                href="/course-overview"
+                href="/overview"
                 className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
               >
                 Zum Glossar &rarr;
