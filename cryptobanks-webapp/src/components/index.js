@@ -17,10 +17,9 @@ export { default as News } from "./News";
 export { default as CourseOverview } from "./CourseOverview";
 export { default as CourseBeginnerArticle } from "./courseofbeginner/CourseBeginnerArticle";
 export {default as CourseBeginnerIntroduction } from "./courseofbeginner/CourseBeginnerIntroduction";
-export { default as IntroductionCryptoAssets } from "./courseofbeginner/IntroductionCryptoAssets";
-export { default as IntroductionBlockchain } from "./courseofbeginner/IntroductionBlockchain";
-export { default as IntroductionToken } from "./courseofbeginner/IntroductionToken";
-export { default as IntroductionTrade } from "./courseofbeginner/IntroductionTrade";
+
+export { default as IntroductionCryptoAssetsPartOne } from "./courseofbeginner/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1";
+
 export { default as CourseEndBeginner } from "./courseofbeginner/CourseEndBeginner";
 export { default as Einstufungsquiz} from "./Einstufungsquiz";
 
