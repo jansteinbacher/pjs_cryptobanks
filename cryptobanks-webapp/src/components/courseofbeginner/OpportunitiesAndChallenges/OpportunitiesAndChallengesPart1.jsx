@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Challenges from "../../images/courseBeginner/challenges.png";
+import Challenges from "../../../images/courseBeginner/challenges.png";
 
 const Sources = ({ sources }) => {
   const [showSources, setShowSources] = useState(false);
@@ -32,7 +32,7 @@ const Sources = ({ sources }) => {
   );
 };
 
-const IntroTrade = () => {
+const OpportunitiesAndChallengesPart1 = () => {
   const articlesources = [
     "vgl. Meisner, H. (2021). Neue Herausforderungen in der Finanzsphäre. In: Finanzwirtschaft in der Internetökonomie. Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-33715-5_7",
     "vgl. Kerscher, D. (2013). Bitcoin: Funktionsweise. Risiken und Chancen der digitalen Währung. Kemacon Verlag, Leipzig",
@@ -127,39 +127,9 @@ const IntroTrade = () => {
         />
       </div>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-        Zukunftsaussichten von Kryptoassets
-      </h2>
-      <p className="mb-8 text-justify">
-        Kryptoassets, wie Security Token Offerings (STOs) bieten die Möglichkeit
-        einer neuen Art von Kapitalbeschaffung. Daneben können Non-Fungible
-        Tokens (NFTs) den Handel und Investition in reale oder bisher illiquide
-        Vermögenswerte ermöglichen. Zudem eröffnet es die Tür für Investitionen
-        in neu gegründete kleine und mittlere Unternehmen (KMU) durch den Kauf
-        von tokenisierten Anleihen oder Aktien. [7]
-      </p>
-
-      <p className="mb-8 text-justify">
-        Tokenisierung ermöglicht die digitale Darstellung und Aufteilung von
-        Vermögenswerten. Dabei können die Nennwerte der Tokens flexibel
-        angepasst werden, um den Bedürfnissen der Investoren besser gerecht zu
-        werden. Außerdem können die Einnahmeströme aus Vermögenswerten
-        automatisch unter den Inhabern der Tokens aufgeteilt werden. [8]
-      </p>
-
-      <p className="mb-8 text-justify">
-        Smart Contracts können bestimmte Aufgaben im MBO (Mid- and Back-Office)
-        automatisieren und deutlich beschleunigen. Gleichzeitig kann der Bedarf
-        an Intermediäre, wie zentralen Clearingstellen, reduziert werden. Des
-        Weiteren führen atomare Trades zu einer erheblichen Reduzierung des
-        Gegenparteirisikos. Dabei ermöglichen Smart Contracts den Austausch von
-        Vermögenswerten (Security Tokens) mit Zahlungsmittel (Payment Tokens) in
-        Echtzeit [9]
-      </p>
-
       <Sources sources={articlesources} />
     </div>
   );
 };
 
-export default IntroTrade;
+export default OpportunitiesAndChallengesPart1;

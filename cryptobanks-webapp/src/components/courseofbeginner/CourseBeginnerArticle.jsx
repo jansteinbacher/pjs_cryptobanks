@@ -2,28 +2,54 @@
 
 import React, { useState, useEffect } from "react";
 import "./CourseBeginnerArticle.css"; // Import the CSS file here
-import Cryptoassets from "./IntroductionCryptoAssets";
-import IntroBlockchain from "./IntroductionBlockchain";
-import Token from "./IntroductionToken";
-import Trade from "./IntroductionTrade";
-import QuizAssets from "./QuizAssets";
-import QuizBlockchain from "./QuizBlockchain";
-import QuizToken from "./QuizToken";
-import QuizTrade from "./QuizTrade";
+import IntroductionCryptoAssetsQuiz from "./IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz";
+import IntroductionBlockchainQuiz from "./IntroductionBlockchain/IntroductionBlockchainQuiz";
+import TypesOfCryptoAssetsQuiz from "./TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz";
+import OpportunitiesAndChallengesQuiz from "./OpportunitiesAndChallenges/OpportunitiesAndChallengesQuiz";
+import IntroductionCryptoAssetsPart1 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart1";
+import IntroductionCryptoAssetsPart2 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart2";
+import IntroductionCryptoAssetsPart3 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart3";
+import IntroductionCryptoAssetsPart4 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart4";
+import IntroductionCryptoAssetsPart5 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart5";
+import IntroductionCryptoAssetsPart6 from "./IntroductionCryptoAssets/IntroductionCryptoAssetsPart6";
+import IntroductionBlockchainPart1 from "./IntroductionBlockchain/IntroductionBlockchainPart1";
+import IntroductionBlockchainPart2 from "./IntroductionBlockchain/IntroductionBlockchainPart2";
+import IntroductionBlockchainPart3 from "./IntroductionBlockchain/IntroductionBlockchainPart3";
+import IntroductionBlockchainPart4 from "./IntroductionBlockchain/IntroductionBlockchainPart4";
+import TypesOfCryptoAssetsPart1 from "./TypesOfCryptoAssets/TypesOfCryptoAssetsPart1";
+import TypesOfCryptoAssetsPart2 from "./TypesOfCryptoAssets/TypesOfCryptoAssetsPart2";
+import TypesOfCryptoAssetsPart3 from "./TypesOfCryptoAssets/TypesOfCryptoAssetsPart3";
+import TypesOfCryptoAssetsPart4 from "./TypesOfCryptoAssets/TypesOfCryptoAssetsPart4";
+import TypesOfCryptoAssetsPart5 from "./TypesOfCryptoAssets/TypesOfCryptoAssetsPart5";
+import OpportunitiesAndChallengesPart1 from "./OpportunitiesAndChallenges/OpportunitiesAndChallengesPart1";
+import OpportunitiesAndChallengesPart2 from "./OpportunitiesAndChallenges/OpportunitiesAndChallengesPart2";
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    Cryptoassets,
-    QuizAssets,
-    IntroBlockchain,
-    QuizBlockchain,
-    Token,
-    QuizToken,
-    Trade,
-    QuizTrade,
+    IntroductionCryptoAssetsPart1,
+    IntroductionCryptoAssetsPart2,
+    IntroductionCryptoAssetsPart3,
+    IntroductionCryptoAssetsPart4,
+    IntroductionCryptoAssetsPart5,
+    IntroductionCryptoAssetsPart6,
+    IntroductionCryptoAssetsQuiz,
+    IntroductionBlockchainPart1,
+    IntroductionBlockchainPart2,
+    IntroductionBlockchainPart3,
+    IntroductionBlockchainPart4,
+    IntroductionBlockchainQuiz,
+    TypesOfCryptoAssetsPart1,
+    TypesOfCryptoAssetsPart2,
+    TypesOfCryptoAssetsPart3,
+    TypesOfCryptoAssetsPart4,
+    TypesOfCryptoAssetsPart5,
+    TypesOfCryptoAssetsQuiz,
+    OpportunitiesAndChallengesPart1,
+    OpportunitiesAndChallengesPart2,
+    OpportunitiesAndChallengesQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);

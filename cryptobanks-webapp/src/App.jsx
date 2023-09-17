@@ -11,16 +11,13 @@ import {
   Overview,
   CourseBeginnerArticle,
   DecisionTree,
-  IntroductionBlockchain,
-  IntroductionCryptoAssets,
-  IntroductionToken,
-  IntroductionTrade,
   CourseEndBeginner,
   DragAndDrop,
   Einstufungsquiz,
   News,
   Myths,
   CourseBeginnerIntroduction,
+  IntroductionCryptoAssetsPartOne,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -68,21 +65,10 @@ const App = () => (
         />
 
         <Route
-          path="/articles/IntroductionBlockchain"
-          element={<IntroductionBlockchain />}
+          path="/articles/IntroductionCryptoAssetsPartOne"
+          element={<IntroductionCryptoAssetsPartOne />}
         />
-        <Route
-          path="/articles/IntroductionCryptoAssets"
-          element={<IntroductionCryptoAssets />}
-        />
-        <Route
-          path="/articles/IntroductionToken"
-          element={<IntroductionToken />}
-        />
-        <Route
-          path="/articles/IntroductionTrade"
-          element={<IntroductionTrade />}
-        />
+
         <Route
           path="/articles/CourseEndBeginner"
           element={
