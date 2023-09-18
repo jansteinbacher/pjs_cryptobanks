@@ -17,7 +17,9 @@ import {
   News,
   Myths,
   CourseBeginnerIntroduction,
-  IntroductionCryptoAssetsPartOne,
+  CourseAdvancedArticle,
+  CourseAdvancedIntroduction,
+  CourseAdvancedEnd,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -39,6 +41,7 @@ const App = () => (
         />
         <Route path="/course-overview" element={<CourseOverview />} />
         <Route path="/course-beginner" element={<CourseBeginnerArticle />} />
+        <Route path="/course-advanced" element={<CourseAdvancedArticle />} />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
 
@@ -65,8 +68,13 @@ const App = () => (
         />
 
         <Route
-          path="/articles/IntroductionCryptoAssetsPartOne"
-          element={<IntroductionCryptoAssetsPartOne />}
+          path="/course-advanced-introduction"
+          element={<CourseAdvancedIntroduction />}
+        />
+
+        <Route
+          path="/articles/course-advanced-end"
+          element={<CourseAdvancedEnd />}
         />
 
         <Route

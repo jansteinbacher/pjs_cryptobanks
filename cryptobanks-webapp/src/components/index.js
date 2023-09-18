@@ -18,6 +18,10 @@ export { default as CourseOverview } from "./CourseOverview";
 export { default as CourseBeginnerArticle } from "./courseofbeginner/CourseBeginnerArticle";
 export {default as CourseBeginnerIntroduction } from "./courseofbeginner/CourseBeginnerIntroduction";
 
+export {default as CourseAdvancedIntroduction } from "./courseofadvanced/CourseAdvancedIntroduction";
+export {default as CourseAdvancedEnd } from "./courseofadvanced/CourseAdvancedEnd";
+export {default as CourseAdvancedArticle } from "./courseofadvanced/CourseAdvancedArticle";
+
 export { default as IntroductionCryptoAssetsPartOne } from "./courseofbeginner/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1";
 
 export { default as CourseEndBeginner } from "./courseofbeginner/CourseEndBeginner";
