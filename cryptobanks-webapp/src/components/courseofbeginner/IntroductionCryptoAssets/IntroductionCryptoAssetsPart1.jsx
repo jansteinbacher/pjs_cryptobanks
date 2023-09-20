@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nagamoto from "../../../images/courseBeginner/nagamoto.png";
+import Bernd from "../../../images/courseBeginner/charakterBernd.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -80,14 +81,15 @@ const IntroductionCryptoAssetsPart1 = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Der geschichtliche Hintergrund zu Kryptoassets (Satoshi Nakamoto)
       </h2>
-      <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
+      <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
+        <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
+        <p className="italic text-justify flex-grow">
           Voller Neugierde macht sich Bernd auf die Suche nach Informationen zum
           Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der
           Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu dem
           Thema mitbekommen. Er hatte die beiden beauftragt sich ebenfalls mit
           dem Thema Kryptoassets auseinanderzusetzen, um ein breites Wissen zu
-          Kryptoassets zu bekommen und letzlich eine fundierte Entscheidung für
+          Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung für
           oder gegen die Integration von Kryptoassets in seine Bank zu treffen.
           Bernd konnte nicht widerstehen, sich in das Gespräch einzubringen.
           "Entschuldigt, dass ich mich einmische, aber ich habe auch viele
