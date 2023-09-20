@@ -1,4 +1,4 @@
-import dltvideo from "../../images/courseBeginner/DLT.mp4";
+import SimoneVideo from "../videos/courseOfBeginner/characterSimoneIntroduction.mp4";
 
 const CourseAdvancedIntroduction = () => {
   return (
@@ -7,15 +7,19 @@ const CourseAdvancedIntroduction = () => {
         Willkommen im Fortgeschrittenen-Kurs
       </h1>
       <p className="mb-12">
-        Hallo und herzlich willkommen im Fortgeshrittenen-Kurs zu Kryptoassets!
-        Du hast dich für diesen Kurs entschieden, da du ein grundlegendes
-        Verständnis zum Thema Kryptoassets erhalten möchtest? Zudem
-        interessierst du dich für die Einbindung von Kryptoassets in
-        traditionelle Finanzprodukte und möchtest Kundenbedürfnisse im Bereich
-        Kryptoassets verstehen? Dann ist der Beginner-Kurs genau das richtige
-        für dich. Aus der Perspeltive von Bernd, dem Geschäftsführer der
-        fikitven Silberbach & Söhne Bank tauchst du in die Welt der Kryptoassets
-        ein.
+        Hallo und herzlich willkommen im Fortgeschrittenen-Kurs zu Kryptoassets!
+        Du hast dich für diesen Kurs entschieden, weil du bereits über ein
+        grundlegendes Verständnis von Kryptoassets verfügst und nun tiefer in
+        die Materie eintauchen möchtest. Du möchtest verstehen, wie die
+        regulatorische Landschaft auf nationaler und internationaler Ebene
+        aussieht und wie sie Kryptoassets beeinflusst? Du interessierst dich für
+        die Vielfalt der Kryptoasset-Dienstleistungen, die auf dem Markt
+        verfügbar sind? Du möchtest einen umfassenden Einblick in die aktuellen
+        Trends und die gesellschaftliche Akzeptanz von Kryptoassets erhalten?
+        Dann bist du im Fortgeschrittenen-Kurs genau richtig. In diesem Kurs
+        werden wir gemeinsam in die tiefere Welt der Kryptoassets eintauchen,
+        und zwar aus der Perspektive von Simone, einer Projektmanagerin der
+        fiktiven Silberbach & Söhne Bank.
       </p>
 
       <div className="p-4 mb-12 bg-green-200 rounded-lg">
@@ -39,7 +43,7 @@ const CourseAdvancedIntroduction = () => {
         </p>
         <div>
           <video controls className="w-full h-full rounded-lg">
-            <source src={dltvideo} type="video/mp4" />
+            <source src={SimoneVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

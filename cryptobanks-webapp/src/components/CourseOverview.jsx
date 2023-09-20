@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import BeginnerVideo from "../images/beginner_video.mp4";
-import IntermediateVideo from "../images/Szene_Simone.mp4";
-import ExperteVideo from "../images/experte_video.mp4";
+import BeginnerVideo from "./videos/courseOverview/courseBeginnerIntroduction.mp4";
+import AdvancedVideo from "./videos/courseOverview/courseAdvancedIntroduction.mp4";
+import ExpertVideo from "./videos/courseOverview/courseExpertIntroduction.mp4";
 import "./CourseOverview.css";
 
 const courses = [
@@ -26,13 +26,13 @@ const courses = [
     points: [
       "Bekomme ein Verständnis für die regulatorische Landschaft auf nationaler und internationaler Ebene ",
       "Lernen potenzielle Kryptoasset-Diensleistungen kennen",
-      "Erhalte einen Einblick in die Adoption von Kryptoassets unter Studierenden",
+      "Erhalte einen Einblick in die Adoption und Trends von Kryptoassets in der Gesellschaft",
       "Überprüfung des Gelerneten mithilfe eines Quiz",
     ],
-    duration: "3 Stunden",
+    duration: "2 Stunden",
     lastUpdated: "August 10, 2023",
     course_link: "/course-advanced-introduction",
-    video_link: IntermediateVideo,
+    video_link: AdvancedVideo,
   },
   {
     id: 3,
@@ -41,13 +41,13 @@ const courses = [
       "Lerne die Grundlagen der Kryptoasset-Verwahrung kennen",
       "Bekomme ein Verständnis für verschiedene Arten von Verwahrlösungen",
       "Erhalte einen Einblick in die Regulatorik zur Kryptoverwahrung",
-      "Setze dich mit den Herausforderungen und Zukunftsaussichten von Kryptoassets auseinander",
+      "Setze dich mit den Herausforderungen und Zukunftsaussichten der Kryptoverwahrung auseinander",
       "Überprüfung des Gelerneten mithilfe eines Quiz",
     ],
-    duration: "5 Stunden",
+    duration: "2 Stunden",
     lastUpdated: "August 10, 2023",
     course_link: "/course-beginner",
-    video_link: ExperteVideo,
+    video_link: ExpertVideo,
   },
 ];
 
@@ -71,7 +71,7 @@ const CourseOverview = () => {
 
   return (
     <div className="bg-white">
-      <div className="max-w-screen-lg mx-auto mb-12 px-4 md:px-0">
+      <div className="max-w-screen-lg mx-auto mb-12 py-12 px-4 md:px-0">
         <div className="flex flex-col items-center justify-center space-y-4 mb-8">
           <h1 className="text-3xl font-bold text-center text-gray-800">
             Unsere Kursübersicht

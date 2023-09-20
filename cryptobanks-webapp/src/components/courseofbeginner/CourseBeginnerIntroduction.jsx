@@ -1,4 +1,4 @@
-import dltvideo from "../../images/courseBeginner/DLT.mp4";
+import BerndVideo from "../videos/courseOfBeginner/characterBerndIntroduction.mp4";
 
 const CourseBeginnerIntroduction = () => {
   return (
@@ -14,8 +14,7 @@ const CourseBeginnerIntroduction = () => {
         möchtest Kundenbedürfnisse im Bereich Kryptoassets verstehen? Dann ist
         der Beginner-Kurs genau das richtige für dich. Aus der Perspeltive von
         Bernd, dem Geschäftsführer der fikitven Silberbach & Söhne Bank tauchst
-        du in die Welt der Kryptoassets ein. Seine Geschichte erfährst du
-        jeweils im farblich hinterlegten Text.
+        du in die Welt der Kryptoassets ein.
       </p>
 
       <div className="p-4 mb-12 bg-green-200 rounded-lg">
@@ -31,13 +30,13 @@ const CourseBeginnerIntroduction = () => {
           Ein Bereich, der weit über seine bisherigen Kenntnisse hinausgeht und
           doch das Potenzial hat, die Finanzlandschaft zu verändern.
         </p>
-        <p className=" italic text-justify mb-8">
+        <p className=" italic text-justify font-semibold mb-8">
           Lerne Bernd jetzt näher kennen und entdecke gemeinsam mit ihm die Welt
           der Kryptoassets:
         </p>
         <div>
           <video controls className="w-full h-full rounded-lg">
-            <source src={dltvideo} type="video/mp4" />
+            <source src={BerndVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
