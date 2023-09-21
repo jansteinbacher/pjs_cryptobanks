@@ -57,22 +57,24 @@ const IntroductionBlockchainPart1 = () => {
       </h2>
       <div className="p-4 mb-8 bg-green-200 rounded-lg">
         <p className=" italic text-justify">
-          Bernd hat nun ein solides Verständnis für Kryptoassets aufbauen
-          können. Um sein Wissen zu vertiefen, beginnt Bernd, sich mit der
-          zugrundeliegenden Technologie der Blockchain auseinanderzusetzen.
+          Bernd hat in den letzten Wochen viel über Kryptoassets und Token
+          gelernt, aber er hat immer noch viele Fragen zur zugrundeliegenden
+          Technologie. Er weiß, dass die Blockchain eine entscheidende Rolle in
+          diesem Bereich spielt, versteht jedoch nicht wirklich, wie sie
+          funktioniert. Um sein Wissen zu vertiefen, trifft er sich gerade mit
+          seinem Kollegen Tobias, der in seiner Hochschulzeit viel zu der
+          Blockchain-Technologie geforscht hat.
         </p>
       </div>
       <p className="mb-8">
-        Eine der grundlegenden Technologien hinter Kryptoassets ist die
-        Blockchain. Durch die Blockchain-Technologie können Transaktionen,
-        beispielsweise im Zahlungsverkehr mit Kryptowährungen, vertrauenswürdig
-        und transparent ohne Einbeziehung einer zentralen Instanz überprüft
-        werden. Bernd lernt, dass die Blockchain eine dezentrale, verteilte
-        digitale Datenbank ist. Sie speichert Informationen in Blöcken und
-        verknüpft diese Blöcke in einer chronologischen Reihenfolge, um eine
-        unveränderliche Kette zu erstellen. Er sieht, dass die Blockchain auf
-        verschiedenen Konsensmechanismen beruhen kann, darunter Proof of Work
-        (PoW) und Proof of Stake (PoS).
+        Die Blockchain-Technologie stellt eine der grundlegenden Säulen hinter
+        Kryptoassets dar. Sie ermöglicht es, Transaktionen in Kryptowährungen
+        und anderen Anwendungen in einer vertrauenswürdigen und transparenten
+        Weise abzuwickeln, ohne dass eine zentrale Behörde oder Institution
+        benötigt wird. Die Essenz der Blockchain besteht darin, eine dezentrale
+        und verteilte digitale Datenbank zu schaffen, die Informationen in
+        Blöcken speichert und diese Blöcke in einer chronologischen Reihenfolge
+        miteinander verknüpft, wodurch eine unveränderliche Kette entsteht.
       </p>
 
       <p className="font-semibold text-gray-600 mb-4">

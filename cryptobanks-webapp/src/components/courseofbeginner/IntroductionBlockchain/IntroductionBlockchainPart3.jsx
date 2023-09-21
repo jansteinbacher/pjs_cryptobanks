@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import dltvideo from "../../../images/courseBeginner/DLT.mp4";
+import ConsensMechanism from "../../../images/courseBeginner/consensMechanism.jpg";
 const Sources = ({ sources }) => {
   const [showSources, setShowSources] = useState(false);
 
@@ -31,7 +31,7 @@ const Sources = ({ sources }) => {
   );
 };
 
-const IntroductionBlockchainPart3 = () => {
+const IntroductionBlockchainPart2 = () => {
   const articlesources = [
     "Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].",
     "Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.",
@@ -42,41 +42,60 @@ const IntroductionBlockchainPart3 = () => {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-        Abgrenzung zur Distributed-Ledger-Technologie
+        Konsensmechanismus
       </h2>
       <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
-          Während seiner Recherche zu Blochchain trifft Bernd häufig auf den
-          Bergriff Distributed Ledger Technology (DLT). Ist Blockchain und DLT
-          das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT
-          Anwendung? Wird es auch in seiner Branche, der Finanzbranche
-          verwendet?
+        <p className=" italic text-justify">
+          Bernd ist beeindruckt von dieser Erklärung, aber er hat immer noch
+          Fragen: "Und wie wird sichergestellt, dass die Informationen in der
+          Blockchain echt sind?"
         </p>
       </div>
+      <div className="flex justify-center items-center">
+        <img
+          src={ConsensMechanism}
+          alt="Regulation of Crypto Assets"
+          className="w-full md:w-1/2"
+        />
+      </div>
+      <div className="flex items-center justify-center mb-12">
+        <a
+          className="font-semibold text-sm"
+          href="https://www.freepik.com/free-vector/effective-coworking-colleagues-togetherness-workers-collaboration-teamwork-regulation-workflow-efficiency-increase-team-members-arranging-mechanism_11667074.htm#query=consens%20mechanism&position=11&from_view=search&track=ais"
+        >
+          Bild von vectorjuice auf Freepik
+        </a>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        Proof of Work
+      </h3>
+
       <p className="mb-12 text-justify">
-        Die Blockchain-Technologie und die Distributed Ledger Technology (DLT)
-        teilen den Ansatz der dezentralisierten Datenverwaltung, bieten jedoch
-        unterschiedliche Umsetzungen. Beide ermöglichen verteilte
-        Datenspeicherung und Transaktionstransparenz, wobei die Blockchain
-        spezifisch Transaktionen in Blöcken verknüpft, während DLT eine breitere
-        Palette von Technologien umfasst. Der Unterschied erstreckt sich auch
-        auf die angewendeten Konsensmechanismen – Proof of Work oder Proof of
-        Stake in der Blockchain im Vergleich zu verschiedenen Ansätzen in der
-        DLT. Letztendlich vereinen sie das Ziel der erhöhten Sicherheit und
-        Transparenz, aber bieten unterschiedliche Wege, um die Bedürfnisse
-        verschiedener Branchen anzusprechen.
+        Proof of Work (PoW) ist ein Konsensmechanismus, der zum Beispiel im
+        Bitcoin-Netzwerk verwendet wird. Miner lösen komplexe mathematische
+        Rätsel, um neue Blöcke zur Blockchain hinzuzufügen. Dies erfordert
+        erhebliche Rechenleistung und Energieaufwand. Der erste Miner, der das
+        Rätsel löst, erhält die Belohnung und validiert die Transaktionen im
+        Block.
       </p>
 
-      <div className="flex justify-center items-center mb-12">
-        <video controls className="w-full md:w-1/2 h-full rounded-lg">
-          <source src={dltvideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        Proof of Stake
+      </h3>
+      <p className="mb-12 text-justify">
+        Proof of Stake (PoS) wird in Kryptowährungen wie Ethereum und Cardano
+        eingesetzt. Statt Rechenleistung setzen Teilnehmer Kryptowährung als
+        Stake ein. Zum Beispiel können Inhaber von Ethereum Token ihre Coins als
+        Einsatz verwenden, um Blöcke zu erstellen. Die Wahrscheinlichkeit,
+        ausgewählt zu werden, hängt von der Menge der gestakten Coins ab. PoS
+        fördert den Kryptowährungsbesitz und reduziert den Energieverbrauch im
+        Vergleich zu PoW.
+      </p>
 
       <Sources sources={articlesources} />
     </div>
   );
 };
 
-export default IntroductionBlockchainPart3;
+export default IntroductionBlockchainPart2;

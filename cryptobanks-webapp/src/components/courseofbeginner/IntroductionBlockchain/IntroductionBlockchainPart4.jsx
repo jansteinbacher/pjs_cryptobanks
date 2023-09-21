@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import dltvideo from "../../../images/courseBeginner/DLT.mp4";
 const Sources = ({ sources }) => {
   const [showSources, setShowSources] = useState(false);
 
@@ -31,7 +31,7 @@ const Sources = ({ sources }) => {
   );
 };
 
-const IntroductionBlockchainPart4 = () => {
+const IntroductionBlockchainPart3 = () => {
   const articlesources = [
     "Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].",
     "Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.",
@@ -42,61 +42,41 @@ const IntroductionBlockchainPart4 = () => {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-        Anwendungsbereiche
+        Abgrenzung zur Distributed-Ledger-Technologie
       </h2>
-      <div className="p-4 mb-12 bg-green-200 rounded-lg">
-        <p className=" italic text-justify">
-          Bernd ist von der Blockchain-Technologie fasziniert und beginnt nun,
-          sich für ihre möglichen Anwendungsbereiche zu interessieren. Während
-          seiner Recherche stößt er auf ein informativen Blogartikel, der
-          verschiedene Anwendungsfälle dieser Technologie vorstellt.
+      <div className="p-4 mb-8 bg-green-200 rounded-lg">
+        <p className="italic text-justify">
+          Während seiner Recherche zu Blochchain trifft Bernd häufig auf den
+          Bergriff Distributed Ledger Technology (DLT). Ist Blockchain und DLT
+          das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT
+          Anwendung? Wird es auch in seiner Branche, der Finanzbranche
+          verwendet?
         </p>
       </div>
-      <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Tokenisierung
-      </h3>
       <p className="mb-12 text-justify">
-        Die Tokenisierung ist eine Anwendung der Blockchain-Technologie, bei der
-        digitale Vermögenswerte in tokenisierter Form auf einer dezentralen
-        Blockchain-Plattform erstellt und verwaltet werden. Dies ermöglicht die
-        Umwandlung physischer oder virtueller Vermögenswerte in digitale Tokens,
-        die in der Blockchain registriert und nachverfolgt werden können. Diese
-        Technologie steigert auch die Liquidität und den Handel erheblich. Zum
-        Beispiel kann eine Immobilie in viele kleine Tokens aufgeteilt werden,
-        wodurch Anleger Bruchteile dieser Vermögenswerte kaufen und verkaufen
-        können.
+        Die Blockchain-Technologie und die Distributed Ledger Technology (DLT)
+        teilen den Ansatz der dezentralisierten Datenverwaltung, bieten jedoch
+        unterschiedliche Umsetzungen. Beide ermöglichen verteilte
+        Datenspeicherung und Transaktionstransparenz, wobei die Blockchain
+        spezifisch Transaktionen in Blöcken verknüpft, während DLT eine breitere
+        Palette von Technologien umfasst. Der Unterschied erstreckt sich auch
+        auf die angewendeten Konsensmechanismen – Proof of Work oder Proof of
+        Stake in der Blockchain im Vergleich zu verschiedenen Ansätzen in der
+        DLT. Letztendlich vereinen sie das Ziel der erhöhten Sicherheit und
+        Transparenz, aber bieten unterschiedliche Wege, um die Bedürfnisse
+        verschiedener Branchen anzusprechen.
       </p>
-      <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Smarte Verträge und dezentrales Finanzwesen
-      </h3>
-      <p className="mb-12 text-justify">
-        Mit dem Aufkommen vieler neuerer Blockchains wie Ethereum ist es
-        möglich, Anwendungen auf der Blockchain mithilfe von sogenannten Smart
-        Contracts zu erstellen. Ein Smart Contract ist ein selbstausführender
-        Code, der eine Aktion auslöst, sobald vordefinierte Bedingungen erfüllt
-        sind. Sie tragen zur Dezentralisierung des Finanzwesens bei, indem sie
-        die Vermittler, die traditionell zur Entscheidungsfindung notwendig
-        sind, ersetzen. Um Informationen von außerhalb der Blockchain zu
-        beziehen, nutzen Smart Contracts sogenannte Orakel, die diese Daten
-        bereitstellen. [5]
-      </p>
-      <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Transportwesen und Supply-Chain-Management
-      </h3>
-      <p className="mb-12 text-justify">
-        Im Transportwesen und im Supply-Chain Management ermöglicht die
-        Blockchain-Technologie die lückenlose Nachverfolgung von Produkten
-        entlang der Lieferkette, was zu erhöhter Transparenz und Authentizität
-        führt. Ebenso erleichtert die Blockchain den grenzüberschreitenden
-        Handel, indem sie den Austausch von Informationen und Dokumenten
-        zwischen verschiedenen Ländern rationalisiert. Im Bereich der
-        Frachtverfolgung können Transporte und Lieferungen in Echtzeit verfolgt
-        werden, was die Effizienz und Sicherheit verbessert.
-      </p>
+
+      <div className="flex justify-center items-center mb-12">
+        <video controls className="w-full md:w-1/2 h-full rounded-lg">
+          <source src={dltvideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <Sources sources={articlesources} />
     </div>
   );
 };
 
-export default IntroductionBlockchainPart4;
+export default IntroductionBlockchainPart3;
