@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Bernd from "../../../images/courseBeginner/charakterBernd.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -64,8 +65,9 @@ const IntroductionCryptoAssetsPart3 = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Blockchain - Was ist das?
       </h2>
-      <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
+      <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
+        <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
+        <p className="italic text-justify flex-grow">
           Während seiner Recherche stößt Bernd auf den Bergriff Blockchain. Doch
           was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß Bernd
           inzwischen, dass die Blockchain-Technologie von mutmaßlich einer oder

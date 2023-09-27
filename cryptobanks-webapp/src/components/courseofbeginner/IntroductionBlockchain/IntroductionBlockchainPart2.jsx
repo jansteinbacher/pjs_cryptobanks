@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TypesOfBlockchain from "../../../images/courseBeginner/typesOfBlockchain.jpg";
 const Sources = ({ sources }) => {
   const [showSources, setShowSources] = useState(false);
 
@@ -43,6 +44,29 @@ const IntroductionBlockchainPart2 = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Permissioned vs. Permissionless
       </h2>
+      <div className="p-4 mb-8 bg-green-200 rounded-lg">
+        <p className=" italic text-justify">
+          Während sie gemeinsam eine Tasse Kaffee genießen, fragt Bernd Tobias:
+          "Tobias, ich habe gehört, dass es verschiedene Arten von Blockchains
+          gibt. Kannst du mir erklären, was den Unterschied zwischen ihnen
+          ausmacht?"
+        </p>
+      </div>
+      <div className="flex justify-center items-center">
+        <img
+          src={TypesOfBlockchain}
+          alt="Regulation of Crypto Assets"
+          className="w-full md:w-1/2"
+        />
+      </div>
+      <div className="flex items-center justify-center mb-12">
+        <a
+          className="font-semibold text-sm"
+          href="https://www.freepik.com/free-vector/security-concept-illustration-people-holding-chain_3226083.htm#query=permissioned%20vs%20permissionless%20blockchain&position=1&from_view=search&track=ais"
+        >
+          Bild von rawpixel.com auf Freepik
+        </a>
+      </div>
       <p className="mb-12 text-justify">
         Die Blockchain-Technologie umfasst Permissioned und Permissionless
         Blockchains. Beide sind dezentral und transparent. Permissioned

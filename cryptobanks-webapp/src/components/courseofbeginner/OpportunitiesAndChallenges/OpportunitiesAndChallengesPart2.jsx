@@ -33,15 +33,12 @@ const Sources = ({ sources }) => {
 
 const OpportunitiesAndChallengesPart2 = () => {
   const articlesources = [
-    "vgl. Meisner, H. (2021). Neue Herausforderungen in der Finanzsphäre. In: Finanzwirtschaft in der Internetökonomie. Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-33715-5_7",
-    "vgl. Kerscher, D. (2013). Bitcoin: Funktionsweise. Risiken und Chancen der digitalen Währung. Kemacon Verlag, Leipzig",
-    "vgl. https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/ ",
-    "vgl. Meisner, H. (2021). Neue Herausforderungen in der Finanzsphäre. In: Finanzwirtschaft in der Internetökonomie. Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-33715-5_7",
-    "Gorton, Gary B. and Zhang, Jeffery, Bank Runs During Crypto Winter (May 12, 2023). U of Michigan Law & Econ Research Paper, Available at SSRN: https://ssrn.com/abstract=4447703 or http://dx.doi.org/10.2139/ssrn.4447703",
-    "vgl. de Vries, Alex, Ulrich Gallersdörfer, Lena Klaaßen, and Christian Stoll (2022). Revisiting Bitcoin’s carbon footprint. In: Joule 6, S. 498–502.",
-    "vgl. Porsche Consulting",
-    "ebd.",
-    "ebd.",
+    "H. Meisner, “Neue Herausforderungen in der Finanzsphäre,” in Finanzwirtschaft in der Internetökonomie. Wiesbaden: Springer Gabler, 2021, pp. 179–218.",
+    "D. Kerscher, Bitcoin: Funktionsweise, Risiken und Chancen der digitalen Währung. Dingolfing: Kemacon UG, 2014",
+    "I. Allison, “Divisions in Sam Bankman-Fried’s Crypto Empire Blur on His Trading Titan Alameda’s Balance Sheet,” The Atlanta Journal Constitution, Nov. 2, 2022. [Online], Available: https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/. [Accessed Sept. 22, 2023].",
+    "G. B. Gorton and J. Zhang, Bank Runs During Crypto Winter. To be published.  [Online]. Available: http://dx.doi.org/10.2139/ssrn.4447703. [Accessed: Sept. 22, 2023].",
+    "A. de Vries, U. Gallersdörfer, L. Klaaßen, C. Stoll, “Revisiting Bitcoin’s carbon footprint,” Joule, vol. 6, pp. 498–502, 2022.",
+    "M. Tewes, M. Bauer, G. Holz, “Security Tokenization,” Porsche Consulting, 2023. [Online]. Available: https://www.porsche-consulting.com/sites/default/files/2023-07/digital_assets_c_porsche_consulting_2023_0.pdf. [Accessed: Sept. 22, 2023].",
   ];
 
   return (
@@ -55,7 +52,7 @@ const OpportunitiesAndChallengesPart2 = () => {
         Tokens (NFTs) den Handel und Investition in reale oder bisher illiquide
         Vermögenswerte ermöglichen. Zudem eröffnet es die Tür für Investitionen
         in neu gegründete kleine und mittlere Unternehmen (KMU) durch den Kauf
-        von tokenisierten Anleihen oder Aktien. [7]
+        von tokenisierten Anleihen oder Aktien <a href="#sources">[6]</a>.
       </p>
 
       <p className="mb-8 text-justify">
@@ -63,7 +60,8 @@ const OpportunitiesAndChallengesPart2 = () => {
         Vermögenswerten. Dabei können die Nennwerte der Tokens flexibel
         angepasst werden, um den Bedürfnissen der Investoren besser gerecht zu
         werden. Außerdem können die Einnahmeströme aus Vermögenswerten
-        automatisch unter den Inhabern der Tokens aufgeteilt werden. [8]
+        automatisch unter den Inhabern der Tokens aufgeteilt werden{" "}
+        <a href="#sources">[6]</a>.
       </p>
 
       <p className="mb-8 text-justify">
@@ -73,7 +71,7 @@ const OpportunitiesAndChallengesPart2 = () => {
         Weiteren führen atomare Trades zu einer erheblichen Reduzierung des
         Gegenparteirisikos. Dabei ermöglichen Smart Contracts den Austausch von
         Vermögenswerten (Security Tokens) mit Zahlungsmittel (Payment Tokens) in
-        Echtzeit [9]
+        Echtzeit <a href="#sources">[6]</a>.
       </p>
 
       <Sources sources={articlesources} />

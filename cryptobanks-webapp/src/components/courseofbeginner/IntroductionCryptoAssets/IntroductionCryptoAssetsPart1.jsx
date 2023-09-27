@@ -45,21 +45,18 @@ const Sources = ({ sources }) => {
 
 const IntroductionCryptoAssetsPart1 = () => {
   const articlesources = [
-    "vgl. Nakamoto (2008)",
-    "Nakamoto, S. 2008. Bitcoin: A peer-to-peer electronic cash system, 9 https:// bitco in. org/ bitco in. pdf.",
-    "Olbrecht, A., Pieters, G. Crypto-Currencies and Crypto-Assets: An Introduction. Eastern Econ J 49, 201–205 .2023. https://doi.org/10.1057/s41302-023-00246-1",
-    "ebd.",
+    "S. Nakamoto, “A peer-to-peer electronic cash system,” bitcoin.org, 2008. [Online]. Available: https://bitcoin.org/en/bitcoin-paper. [Accessed Sept. 21, 2023].",
+    "A. Olbrecht and G. Pieters, “Crypto-currencies and crypto-assets: An introduction,” Eastern Economic Journal, vol. 49, no. 2, pp. 201–205, 2023.",
     "Vgl. dazu RENNING, BKR 2020, 23, 24; MAUME, in: Maume/Maute, Kryptowerte-HdB, 1 Aufl, 2020, § 12, 19 ff.; zur steuerrechtlichen Einordnung PRINZ, StuB 2019, 257, 257 ff.",
-    "Nakamoto, S. 2008. Bitcoin: A peer-to-peer electronic cash system, 9 https:// bitco in. org/ bitco in. pdf.",
-    "Treiblmaier, H. 2020. „Toward More Rigorous Blockchain Research: Recommendations for Writing Blockchain Case Studies,” in: Treiblmaier, H., Clohessy, T. (eds) Blockchain and Distributed Ledger Technology Use Cases. Progress in IS. Springer, Cham. https://doi.org/10.1007/978-3-030-44337-5_1",
-    "Bundesamt für Sicherheit in der Informationstechnik. 2023. Blockchain und Kryptowährungen. Retrieved from https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html",
-    "Jain, S.M. 2023. „Blockchain.,” In: A Brief Introduction to Web3. Apress, Berkeley, CA. https://doi.org/10.1007/978-1-4842-8975-4_2",
-    "Baum, A. 2020. „Tokenisation–the future of real estate investment.,” The Future of Real Estate Initiative, 61.",
-    "Christodoulou, K., Katelaris, L., Themistocleous, M., Christodoulou, P. und Iosif, E. 2022. „NFTs and the Metaverse Revolution: Research Perspectives and Open Challenges.,” in: Lacity, M.C.,",
-    "Zheng, M., Sandner, P. 2022. „Asset Tokenization of Real Estate in Europe.,” In: Lacity, M.C., Treiblmaier, H. (eds) Blockchains and the Token Economy. Technology, Work and Globaliza-tion. Palgrave Macmillan, Cham. https://doi.org/10.1007/978-3-030-95108-5_7",
-    "Christodoulou, K., Katelaris, L., Themistocleous, M., Christodoulou, P. und Iosif, E. 2022. „NFTs and the Metaverse Revolution: Research Perspectives and Open Challenges.,” in: Lacity, M.C.",
-    "vgl. Gusmann A, Weisenberger F. 2018. Initial Coin Offerings, Tokens im Kontext der Shared Economy.BearingPoint",
-    "Hönig, M. 2020. Funktionsweise von Coins und Token. In: ICO und Kryptowährungen. Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-27688-1_4",
+    "S. Nakamoto, “A peer-to-peer electronic cash system,” Bitcoin, https://bitcoin.org/en/bitcoin-paper (accessed Sep. 21, 2023).",
+    "H. Treiblmaier, “Toward more rigorous blockchain research: Recommendations for writing Blockchain Case Studies,” Progress in IS, vol. 2, no. 3. pp. 1–15, 2020.",
+    "Bundesamt für Sicherheit in der Informationstechnik, “Blockchain Macht Daten Praktisch Unveränderbar,” Bundesamt für Sicherheit in der Informationstechnik. [Online]. Available: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html. [Accessed Sept. 21, 2023].",
+    "S. M. Jain, “Blockchain,” in A Brief Introduction to Web3. Berkley, CA: Apress, 2022, pp. 11–26",
+    "A. Baum, “Tokenization—The Future of Real Estate Investment?,” The Journal of Portfolio Management, vol. 47, no. 10, pp. 41–61, 2021.",
+    "K. Christodoulou, L. Katelaris, M. Themistocleous, P. Christodoulou, and E. Iosif, “NFTs and the Metaverse Revolution: Research Perspectives and open challenges,” in Blockchains and the Token Economy, M. C. Lacity, H. Treibmeier, Eds. Cham: Palgrave Macmillan, 2022, pp. 139–178.",
+    "M. Zheng and P. Sander, “Asset Tokenization of Real Estate in Europe.,” in Blockchains and the Token Economy, M. C. Lacity, H. Treibmeier, Eds. Cham: Palgrave Macmillan, 2022, pp. 139–178.",
+    "A Gussmann und F. Weisenberger, “Initial Coin Offerings, Tokens im Kontext der Shared Economy,“ BearingPoint, Frankfurt/Main, Germany, 2018. [Online]. Available: https://www.bearingpoint.com/files/Initial_Coin_Offerings.pdf?download=0&itemId=517162. [Accessed Sept. 21, 2023]",
+    "M. Hönig, “Funktionsweise von Coins und token,” in ICO und Kryptowährungen. Wiesbaden: Springer Gabler, 2019, pp. 33–40.",
   ];
 
   return (
@@ -110,26 +107,25 @@ const IntroductionCryptoAssetsPart1 = () => {
 
       <p className="mb-12 text-justify">
         Seit der Einführung von der Kryptowährung Bitcoin (BTC) 2009, basierend
-        auf Konzepten, die im Whitepaper von Satoshi Nakamoto
-        <a href="#sources">[1]</a> skizziert wurden, hat sich die Welt der
-        blockchainbasierten digitalen Token rasant entwickelt. Bis heute ist die
-        Identität des Pseudonyms Satoshi Nakamoto unbekannt. Seine Identität
-        unterliegt vielen Mythen und Theorien. Es ist möglich, dass seine
-        Identität für immer unbekannt bleibt. Inzwischen ist die Zahl an
-        verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision
-        Nakamotos war es traditionelle Fiatwährungen zukünftig durch
-        kryptografiegestützte, digitale Währungen ­– auch Kryptowährungen
-        genannt ­– zu ersetzen.<a href="#sources">[2]</a>,{" "}
-        <a href="#sources">[3]</a> Die ursprüngliche Vision Nakamotos hat sich
-        mittlerweile hin zu einem umfassenden Ökosystem kryptografischer
-        Vermögenswerte entwickelt, die allgemein als Kryptoassets bezeichnet
-        werden. Diese Kryptoassets umfassen nun ein breites Anwendungsspektrum,
-        dass nicht nur die ursprünglichen Idee der digitalen Währung aufgreift.
-        Es erweitert diese um eine umfassendere Palette an kryptografischer
-        Lösungen, darunter tokenisierte Mechanismen zur Automatisierung
-        rechtlicher Verträge (Smart Contracts) und sogar die Schaffung
-        unveränderlicher Besitznachweise für digitale Kunst (Non-Fungible
-        Tokens, NFTs). <a href="#sources">[4]</a>
+        auf Konzepten, die im Whitepaper von Satoshi Nakamoto skizziert wurden,
+        hat sich die Welt der blockchainbasierten digitalen Token rasant
+        entwickelt. Bis heute ist die Identität des Pseudonyms Satoshi Nakamoto
+        unbekannt <a href="#sources">[1]</a>. Seine Identität unterliegt vielen
+        Mythen und Theorien. Es ist möglich, dass seine Identität für immer
+        unbekannt bleibt. Inzwischen ist die Zahl an verschiedenen Token
+        weltweit auf über 22.000 angewachsen. Die Vision Nakamotos war es
+        traditionelle Fiatwährungen zukünftig durch kryptografiegestützte,
+        digitale Währungen ­– auch Kryptowährungen genannt ­– zu ersetzen{" "}
+        <a href="#sources">[1]</a>, <a href="#sources">[2]</a>. Die
+        ursprüngliche Vision Nakamotos hat sich mittlerweile hin zu einem
+        umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die
+        allgemein als Kryptoassets bezeichnet werden. Diese Kryptoassets
+        umfassen nun ein breites Anwendungsspektrum, dass nicht nur die
+        ursprünglichen Idee der digitalen Währung aufgreift. Es erweitert diese
+        um eine umfassendere Palette an kryptografischer Lösungen, darunter
+        tokenisierte Mechanismen zur Automatisierung rechtlicher Verträge (Smart
+        Contracts) und sogar die Schaffung unveränderlicher Besitznachweise für
+        digitale Kunst (Non-Fungible Tokens, NFTs) <a href="#sources">[2]</a>.
         Mehr dazu in Kapitel 3 „Arten von Kryptoassets und ihre Verbindung zu
         traditionellen Finanzprodukten”.
       </p>

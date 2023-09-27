@@ -34,10 +34,10 @@ const Sources = ({ sources }) => {
 
 const IntroductionBlockchainPart1 = () => {
   const articlesources = [
-    "Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].",
-    "Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.",
-    "Nakamoto, S. 2008. A peer-to-peer electronic cash system. https://bitcoin.org/bitcoin.pdf. [abgerufen am 24.08.2023].",
-    "Bundesamt für Sicherheit in der Informationstechnik. 2023. Blockchain macht Daten praktisch unveränderbar. https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html. [abgerufen am 24.08.2023].]",
+    "S. Ray, “The difference between Blockchains &amp; Distributed Ledger Technology,” Medium, https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92 (accessed Sep. 22, 2023).",
+    "A. Sunyaev, “Distributed Ledger Technology,” Internet Computing, pp. 265–299, 2020. doi:10.1007/978-3-030-34957-8_9",
+    "S. Nakamoto, “A peer-to-peer electronic cash system,” Bitcoin, https://bitcoin.org/en/bitcoin-paper (accessed Sep. 21, 2023).",
+    "“Blockchain Macht Daten Praktisch Unveränderbar,” Bundesamt für Sicherheit in der Informationstechnik, https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html (accessed Sep. 21, 2023).",
   ];
 
   return (
@@ -57,22 +57,24 @@ const IntroductionBlockchainPart1 = () => {
       </h2>
       <div className="p-4 mb-8 bg-green-200 rounded-lg">
         <p className=" italic text-justify">
-          Bernd hat nun ein solides Verständnis für Kryptoassets aufbauen
-          können. Um sein Wissen zu vertiefen, beginnt Bernd, sich mit der
-          zugrundeliegenden Technologie der Blockchain auseinanderzusetzen.
+          Bernd hat in den letzten Wochen viel über Kryptoassets und Token
+          gelernt, aber er hat immer noch viele Fragen zur zugrundeliegenden
+          Technologie. Er weiß, dass die Blockchain eine entscheidende Rolle in
+          diesem Bereich spielt, versteht jedoch nicht wirklich, wie sie
+          funktioniert. Um sein Wissen zu vertiefen, trifft er sich gerade mit
+          seinem Kollegen Tobias, der in seiner Hochschulzeit viel zu der
+          Blockchain-Technologie geforscht hat.
         </p>
       </div>
       <p className="mb-8">
-        Eine der grundlegenden Technologien hinter Kryptoassets ist die
-        Blockchain. Durch die Blockchain-Technologie können Transaktionen,
-        beispielsweise im Zahlungsverkehr mit Kryptowährungen, vertrauenswürdig
-        und transparent ohne Einbeziehung einer zentralen Instanz überprüft
-        werden. Bernd lernt, dass die Blockchain eine dezentrale, verteilte
-        digitale Datenbank ist. Sie speichert Informationen in Blöcken und
-        verknüpft diese Blöcke in einer chronologischen Reihenfolge, um eine
-        unveränderliche Kette zu erstellen. Er sieht, dass die Blockchain auf
-        verschiedenen Konsensmechanismen beruhen kann, darunter Proof of Work
-        (PoW) und Proof of Stake (PoS).
+        Die Blockchain-Technologie stellt eine der grundlegenden Säulen hinter
+        Kryptoassets dar. Sie ermöglicht es, Transaktionen in Kryptowährungen
+        und anderen Anwendungen in einer vertrauenswürdigen und transparenten
+        Weise abzuwickeln, ohne dass eine zentrale Behörde oder Institution
+        benötigt wird. Die Essenz der Blockchain besteht darin, eine dezentrale
+        und verteilte digitale Datenbank zu schaffen, die Informationen in
+        Blöcken speichert und diese Blöcke in einer chronologischen Reihenfolge
+        miteinander verknüpft, wodurch eine unveränderliche Kette entsteht.
       </p>
 
       <p className="font-semibold text-gray-600 mb-4">
