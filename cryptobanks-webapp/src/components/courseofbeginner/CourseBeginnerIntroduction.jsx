@@ -17,7 +17,7 @@ const CourseBeginnerIntroduction = () => {
         du in die Welt der Kryptoassets ein.
       </p>
 
-      <div className="p-4 mb-12 bg-green-200 rounded-lg">
+      <div className="p-6 mb-12 bg-green-200 rounded-lg">
         <h2 className="text-2xl font-semibold text-gray-800 mb-8">
           Bernds Entdeckung der Krypto-Welt: Ein Blick über den Horizont der
           Tradition

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Bernd from "../../../images/courseBeginner/charakterBernd.png";
 import Token from "../../../images/courseBeginner/token.png";
 const Sources = ({ sources }) => {
   const [showSources, setShowSources] = useState(false);
@@ -64,8 +65,9 @@ const IntroductionCryptoAssetsPart5 = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Coin vs. Token
       </h2>
-      <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
+      <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
+        <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
+        <p className="italic text-justify flex-grow">
           Bernd hat inzwischen bereits einige Informationen auf seiner
           Wissensreise durch de Welt der Kryptoassets sammeln können. Doch es
           gibt immer noch Aspekte, die ihm nicht vollständig klar sind. Ein

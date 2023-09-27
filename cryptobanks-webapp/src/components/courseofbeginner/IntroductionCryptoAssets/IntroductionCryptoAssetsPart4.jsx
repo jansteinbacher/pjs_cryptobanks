@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Bernd from "../../../images/courseBeginner/charakterBernd.png";
 import Currencies from "../../../images/courseBeginner/currencies.png";
 
 const Sources = ({ sources }) => {
@@ -65,8 +66,9 @@ const IntroductionCryptoAssetsPart4 = () => {
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Tokenisierung
       </h2>
-      <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
+      <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
+        <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
+        <p className="italic text-justify flex-grow">
           Bernds Wissensreise führte ihn immer tiefer in die Welt der
           Kryptoassets. Doch bei einem bestimmten Begriff hatte er noch einige
           Fragezeichen im Kopf: "Tokenisierung". Dieses Wort war in vielen

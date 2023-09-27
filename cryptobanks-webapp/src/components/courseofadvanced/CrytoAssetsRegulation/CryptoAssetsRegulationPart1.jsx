@@ -34,10 +34,9 @@ const Sources = ({ sources }) => {
 
 const CryptoAssetsRegulationPart1 = () => {
   const articlesources = [
-    "Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].",
-    "Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.",
-    "Nakamoto, S. 2008. A peer-to-peer electronic cash system. https://bitcoin.org/bitcoin.pdf. [abgerufen am 24.08.2023].",
-    "Bundesamt für Sicherheit in der Informationstechnik. 2023. Blockchain macht Daten praktisch unveränderbar. https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html. [abgerufen am 24.08.2023].]",
+    "Deloitte, “The future of Crypto-Assets in a Regulated environment,” deloitte.com, 2021. [Online]. Available: https://www2.deloitte.com/nl/nl/pages/risk/articles/the-future-of-crypto-assets-in-a-regulated-environment.html. [Accessed: Sept. 22, 2023].",
+    "C. Boeth, “Krypto-Assets im Investment Management - Regulatorischer Rahmen von Krypto Assets und Anwendungsmöglichkeiten der Technologie für Investment Manager,” deloitte.com, 2021. [Online]. Available: https://www2.deloitte.com/de/de/pages/financial-services/articles/krypto-assets-im-investment-management-regulatory.html. [Accessed: Sept. 22, 2023].",
+    "Bundesanstalt für Finanzdienstleistungsaufsicht, “Europäische MiCA-Verordnung: Regel-Fundament für Kryptowerte,” Bundesanstalt für Finanzdienstleistungsaufsicht. [Online]. Available: https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Fachartikel/2023/fa_bj_2305_Mica.html. [Accessed Sept. 21, 2023].",
   ];
 
   return (
@@ -98,7 +97,8 @@ const CryptoAssetsRegulationPart1 = () => {
         geschaffen, die es anderen Plattformen ermöglicht, ihre
         Krypto-Vermögenswerte nach Abschluss des Handels zu verwalten. Einige
         Privatbanken bieten separate Dienste an, die es ihren Kunden erlauben,
-        Krypto-Vermögenswerte zu kaufen und zu verkaufen. [1]
+        Krypto-Vermögenswerte zu kaufen und zu verkaufen{" "}
+        <a href="#sources">[1]</a>.
       </p>
 
       <Sources sources={articlesources} />

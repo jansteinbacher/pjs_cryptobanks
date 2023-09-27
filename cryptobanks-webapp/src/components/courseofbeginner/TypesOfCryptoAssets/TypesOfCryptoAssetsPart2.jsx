@@ -35,20 +35,17 @@ const Sources = ({ sources }) => {
 
 const TypesOfCryptoAssetsPart2 = () => {
   const articlesources = [
-    "Arslanian, H., Fischer, F. 2019. „The Continuing Evolution of Crypto-assets.,” In: The Future of Finance. Palgrave Macmillan, Cham. https://doi.org/10.1007/978-3-030-14533-0_17",
-    "ebd.",
-    "ebd.",
-    "https://www.coinbase.com/trade/asset-categories/currencies",
-    "PwC. 2019. „Crypto assets under Basel IV: Capital treatment of cryptocurrencies and other tokens.,” Retrieved from https://digital.PwC-tools.de/basel-iv/crypto-assets/",
-    "Europäische Zentralbank. 2023. “Digitaler Euro - European Central Bank”. Retrieved from https://www.ecb.europa.eu/paym/digital_euro/html/index.de.html",
-    "https://www.coinbase.com/trade/asset-categories/stablecoins",
-    "Arslanian, H., Fischer, F. 2019. „The Continuing Evolution of Crypto-assets.,” In: The Future of Finance. Palgrave Macmillan, Cham. https://doi.org/10.1007/978-3-030-14533-0_17",
-    "https://www.blockchain.com/explorer/assets/sand",
-    "Steidl, V., Wenz, D. 2023. “Utility Token » Bitcoin2Go Wiki”. Retrieved from https://bitcoin-2go.de/wiki/utility-token/",
-    "https://www.bafin.de/DE/PublikationenDaten/Datenbanken/Kryptowertpapiere/kryptowerte_node.html",
+    "H. Arslanian and H. Fischer, “The Continuing Evolution of Crypto-assets.,” in The Future of Finance. Cham: Palgrave Macmillan, 2019, pp-217–230.",
+    "“Währungen,” coinbase.com. [Online]. Available: https://www.coinbase.com/trade/asset-categories/currencies. [Accessed Sept. 12, 2023].",
+    "PwC, “Crypto assets under Basel IV: Capital treatment of cryptocurrencies and other tokens.,” PwC, 2019. [Online]. Available: https://digital.pwc-tools.de/basel-iv/crypto-assets/. [Accessed: Sept. 22, 2023].",
+    "Europäische Zentralbank, “Digitaler Euro - European Central Bank,” PwC, 2023. [Online]. Available: https://www.ecb.europa.eu/paym/digital_euro/html/index.de.html. [Accessed: Sept. 22, 2023].",
+    "“Stablecoins,” coinbase.com. [Online]. Available: https://www.coinbase.com/trade/asset-categories/stablecoins. [Accessed Sept. 12, 2023].",
+    "“Sandbox,” blockchain.com. [Online]. Available: https://www.blockchain.com/explorer/assets/sand. [Accessed Sept. 12, 2023].",
+    "V. Steidl und D. Wenz, “Utility Token,” bitcoin-2go.de, 2023. [Online]. Available: https://bitcoin-2go.de/wiki/utility-token/. [Accessed: Sept. 22, 2023].",
+    "Bundesanstalt für Finanzdienstleistungsaufsicht, “Kryptowertpapierliste nach eWpG.,” Bundesanstalt für Finanzdienstleistungsaufsicht, Sept. 7, 2023. [Online]. Available: https://www.bafin.de/DE/PublikationenDaten/Datenbanken/Kryptowertpapiere/kryptowerte_node.html. [Accessed: Sept. 22, 2023].",
     "Wertpapierhandelsgesetz. 2023. Retrieved from https://www.gesetze-im-intenet.de/wphg/index.html",
-    "https://www.blockchain.com/explorer/nfts",
-    "Boeth, C. “Krypto-Assets im Investment Management - Regulatorischer Rahmen von Krypto Assets und Anwendungsmöglichkeiten der Technologie für Investment Manager”. Retrieved from https://www2.deloitte.com/de/de/pages/financial-services/articles/krypto-assets-im-investment-management-regulatory.html ",
+    "“Tops NFTs,” blockchain.com. [Online]. Available: https://www.blockchain.com/explorer/nfts. [Accessed Sept. 12, 2023].",
+    "C. Boeth, “Krypto-Assets im Investment Management - Regulatorischer Rahmen von Krypto Assets und Anwendungsmöglichkeiten der Technologie für Investment Manager,” deloitte.com, 2021. [Online]. Available: https://www2.deloitte.com/de/de/pages/financial-services/articles/krypto-assets-im-investment-management-regulatory.html. [Accessed: Sept. 22, 2023].",
   ];
 
   const [hovered, setHovered] = useState(false);
@@ -96,14 +93,15 @@ const TypesOfCryptoAssetsPart2 = () => {
               Bekanntesten sind Bitcoin und Ethereum. Zentralbanken, wie die
               EZB, sind außerdem gerade dabei über die Einführung einer
               virtuellen Zentralbankwährung (Central Bank Digital Currency -
-              CBDC), wie den digitalen Euro, zu diskutieren. [5][6]{" "}
+              CBDC), wie den digitalen Euro, zu diskutieren{" "}
+              <a href="#sources">[3]</a>, <a href="#sources">[4]</a>.
             </p>
           </div>
         )}
       </div>
       <div className="flex items-center justify-center mb-12">
         <p className="text-sm font-semibold">
-          Handelsseite Kryptowährungen [4]
+          Handelsseite Kryptowährungen <a href="#sources">[2]</a>
         </p>
       </div>
       <div className="p-4 mb-12 bg-green-200 rounded-lg">
@@ -136,13 +134,15 @@ const TypesOfCryptoAssetsPart2 = () => {
               umzuwandeln, ohne das Krypto-Ökosystem verlassen zu müssen.
               Insbesondere angesichts der starken Schwankungen von Kryptoassets
               wie Bitcoin ist das Ziel von Stablecoins Preisstabilität zu
-              erreichen. [8]
+              erreichen <a href="#sources">[1]</a>.
             </p>
           </div>
         )}
       </div>
       <div className="flex items-center justify-center mb-12">
-        <p className="text-sm font-semibold">Handelsseite Stablecoins [7]</p>
+        <p className="text-sm font-semibold">
+          Handelsseite Stablecoins <a href="#sources">[5]</a>
+        </p>
       </div>
       <Sources sources={articlesources} />
     </div>

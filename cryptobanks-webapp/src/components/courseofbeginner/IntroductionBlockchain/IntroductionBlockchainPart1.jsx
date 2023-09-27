@@ -34,10 +34,10 @@ const Sources = ({ sources }) => {
 
 const IntroductionBlockchainPart1 = () => {
   const articlesources = [
-    "Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].",
-    "Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.",
-    "Nakamoto, S. 2008. A peer-to-peer electronic cash system. https://bitcoin.org/bitcoin.pdf. [abgerufen am 24.08.2023].",
-    "Bundesamt für Sicherheit in der Informationstechnik. 2023. Blockchain macht Daten praktisch unveränderbar. https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html. [abgerufen am 24.08.2023].]",
+    "S. Ray, “The difference between Blockchains &amp; Distributed Ledger Technology,” Medium, https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92 (accessed Sep. 22, 2023).",
+    "A. Sunyaev, “Distributed Ledger Technology,” Internet Computing, pp. 265–299, 2020. doi:10.1007/978-3-030-34957-8_9",
+    "S. Nakamoto, “A peer-to-peer electronic cash system,” Bitcoin, https://bitcoin.org/en/bitcoin-paper (accessed Sep. 21, 2023).",
+    "“Blockchain Macht Daten Praktisch Unveränderbar,” Bundesamt für Sicherheit in der Informationstechnik, https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html (accessed Sep. 21, 2023).",
   ];
 
   return (
