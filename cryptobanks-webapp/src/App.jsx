@@ -20,6 +20,10 @@ import {
   CourseAdvancedArticle,
   CourseAdvancedIntroduction,
   CourseAdvancedEnd,
+  CourseCryptoAssets,
+  CourseBlockchain,
+  CourseCryptoAssetServices,
+  CourseCryptoAssetsRegulation,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -44,6 +48,16 @@ const App = () => (
         <Route path="/course-advanced" element={<CourseAdvancedArticle />} />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
+        <Route path="/course-cryptoassets" element={<CourseCryptoAssets />} />
+        <Route path="/course-blockchain" element={<CourseBlockchain />} />
+        <Route
+          path="/course-cryptoassetservices"
+          element={<CourseCryptoAssetServices />}
+        />
+        <Route
+          path="/course-cryptoassetsregulation"
+          element={<CourseCryptoAssetsRegulation />}
+        />
 
         <Route path="/integrationoverview" element={<IntegrationOverview />} />
         <Route path="/micaintroduction" element={<MicaIntroduction />} />

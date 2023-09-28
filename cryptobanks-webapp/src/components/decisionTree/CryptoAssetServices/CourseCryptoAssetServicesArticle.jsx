@@ -1,27 +1,20 @@
 // CourseBeginnerArticle.js
 
 import React, { useState, useEffect } from "react";
-import "./CourseAdvancedArticle.css";
-import CryptoAssetsRegulationPart1 from "./CrytoAssetRegulation/CryptoAssetsRegulationPart1";
-import CryptoAssetsRegulationPart2 from "./CrytoAssetRegulation/CryptoAssetsRegulationPart2";
-import CryptoAssetsRegulationQuiz from "./CrytoAssetRegulation/CryptoAssetsRegulationQuiz";
-import CryptoAssetServicesPart1 from "./CryptoAssetServices/CryptoAssetServicesPart1";
-import CryptoAssetServicesPart2 from "./CryptoAssetServices/CryptoAssetServicesPart2";
-import CryptoAssetServicesPart3 from "./CryptoAssetServices/CryptoAssetServicesPart3";
-import CryptoAssetServicesPart4 from "./CryptoAssetServices/CryptoAssetServicesPart4";
-import CryptoAssetServicesPart5 from "./CryptoAssetServices/CryptoAssetServicesPart5";
-import CryptoAssetServicesPart6 from "./CryptoAssetServices/CryptoAssetServicesPart6";
-import CryptoAssetServicesQuiz from "./CryptoAssetServices/CryptoAssetServicesQuiz";
-import CryptoAssetsAdoption from "./CryptoAssetsAdoption/CryptoAssetsAdoption";
+import "./CourseCryptoAssetServicesArticle.css";
+import CryptoAssetServicesPart1 from "./CryptoAssetServicesPart1";
+import CryptoAssetServicesPart2 from "./CryptoAssetServicesPart2";
+import CryptoAssetServicesPart3 from "./CryptoAssetServicesPart3";
+import CryptoAssetServicesPart4 from "./CryptoAssetServicesPart4";
+import CryptoAssetServicesPart5 from "./CryptoAssetServicesPart5";
+import CryptoAssetServicesPart6 from "./CryptoAssetServicesPart6";
+import CryptoAssetServicesQuiz from "./CryptoAssetServicesQuiz";
 
-const CourseAdvancedArticle = () => {
+const CourseCryptoAssetServices = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    CryptoAssetsRegulationPart1,
-    CryptoAssetsRegulationPart2,
-    CryptoAssetsRegulationQuiz,
     CryptoAssetServicesPart1,
     CryptoAssetServicesPart2,
     CryptoAssetServicesPart3,
@@ -29,7 +22,6 @@ const CourseAdvancedArticle = () => {
     CryptoAssetServicesPart5,
     CryptoAssetServicesPart6,
     CryptoAssetServicesQuiz,
-    CryptoAssetsAdoption,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -39,7 +31,7 @@ const CourseAdvancedArticle = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = "/course-advanced";
+      window.location.href = "/course-cryptoassetservices";
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -103,10 +95,10 @@ const CourseAdvancedArticle = () => {
         )}
         {isLastSection ? (
           <a
-            href="/articles/course-advanced-end"
+            href="/decisiontree"
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Kurs abschließen
+            Zurück zur Übersicht
           </a>
         ) : (
           <button
@@ -130,4 +122,4 @@ const CourseAdvancedArticle = () => {
   );
 };
 
-export default CourseAdvancedArticle;
+export default CourseCryptoAssetServices;

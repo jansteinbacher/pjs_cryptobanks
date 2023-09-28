@@ -27,5 +27,9 @@ export { default as IntroductionCryptoAssetsPartOne } from "./courseofbeginner/I
 export { default as CourseEndBeginner } from "./courseofbeginner/CourseEndBeginner";
 export { default as Einstufungsquiz} from "./Einstufungsquiz";
 
+export { default as CourseCryptoAssets } from "./decisionTree/IntroductionCryptoAssets/CourseCryptoAssetsArticle";
+export { default as CourseBlockchain } from "./decisionTree/IntroductionBlockchain/CourseBlockchainArticle";
+export { default as CourseCryptoAssetServices } from "./decisionTree/CryptoAssetServices/CourseCryptoAssetServicesArticle";
+export { default as CourseCryptoAssetsRegulation } from "./decisionTree/CryptoAssetRegulation/CourseCryptoAssetsRegulationArticle";
 
 export { default as Myths} from "./Myths";

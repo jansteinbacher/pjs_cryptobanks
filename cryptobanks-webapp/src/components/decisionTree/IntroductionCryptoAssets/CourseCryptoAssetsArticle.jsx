@@ -1,35 +1,41 @@
-// CourseBeginnerArticle.js
-
 import React, { useState, useEffect } from "react";
-import "./CourseAdvancedArticle.css";
-import CryptoAssetsRegulationPart1 from "./CrytoAssetRegulation/CryptoAssetsRegulationPart1";
-import CryptoAssetsRegulationPart2 from "./CrytoAssetRegulation/CryptoAssetsRegulationPart2";
-import CryptoAssetsRegulationQuiz from "./CrytoAssetRegulation/CryptoAssetsRegulationQuiz";
-import CryptoAssetServicesPart1 from "./CryptoAssetServices/CryptoAssetServicesPart1";
-import CryptoAssetServicesPart2 from "./CryptoAssetServices/CryptoAssetServicesPart2";
-import CryptoAssetServicesPart3 from "./CryptoAssetServices/CryptoAssetServicesPart3";
-import CryptoAssetServicesPart4 from "./CryptoAssetServices/CryptoAssetServicesPart4";
-import CryptoAssetServicesPart5 from "./CryptoAssetServices/CryptoAssetServicesPart5";
-import CryptoAssetServicesPart6 from "./CryptoAssetServices/CryptoAssetServicesPart6";
-import CryptoAssetServicesQuiz from "./CryptoAssetServices/CryptoAssetServicesQuiz";
-import CryptoAssetsAdoption from "./CryptoAssetsAdoption/CryptoAssetsAdoption";
+import "./CourseCryptoAssetsArticle.css";
+import IntroductionCryptoAssetsQuiz from "./IntroductionCryptoAssetsQuiz";
+import TypesOfCryptoAssetsQuiz from "./TypesOfCryptoAssetsQuiz";
+import OpportunitiesAndChallengesQuiz from "./OpportunitiesAndChallengesQuiz";
+import IntroductionCryptoAssetsPart1 from "./IntroductionCryptoAssetsPart1";
+import IntroductionCryptoAssetsPart2 from "./IntroductionCryptoAssetsPart2";
+import IntroductionCryptoAssetsPart3 from "./IntroductionCryptoAssetsPart3";
+import IntroductionCryptoAssetsPart4 from "./IntroductionCryptoAssetsPart4";
+import IntroductionCryptoAssetsPart5 from "./IntroductionCryptoAssetsPart5";
+import TypesOfCryptoAssetsPart1 from "./TypesOfCryptoAssetsPart1";
+import TypesOfCryptoAssetsPart2 from "./TypesOfCryptoAssetsPart2";
+import TypesOfCryptoAssetsPart3 from "./TypesOfCryptoAssetsPart3";
+import TypesOfCryptoAssetsPart4 from "./TypesOfCryptoAssetsPart4";
+import TypesOfCryptoAssetsPart5 from "./TypesOfCryptoAssetsPart5";
+import OpportunitiesAndChallengesPart1 from "./OpportunitiesAndChallengesPart1";
+import OpportunitiesAndChallengesPart2 from "./OpportunitiesAndChallengesPart2";
 
-const CourseAdvancedArticle = () => {
+const CourseCryptoAssets = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    CryptoAssetsRegulationPart1,
-    CryptoAssetsRegulationPart2,
-    CryptoAssetsRegulationQuiz,
-    CryptoAssetServicesPart1,
-    CryptoAssetServicesPart2,
-    CryptoAssetServicesPart3,
-    CryptoAssetServicesPart4,
-    CryptoAssetServicesPart5,
-    CryptoAssetServicesPart6,
-    CryptoAssetServicesQuiz,
-    CryptoAssetsAdoption,
+    IntroductionCryptoAssetsPart1,
+    IntroductionCryptoAssetsPart2,
+    IntroductionCryptoAssetsPart3,
+    IntroductionCryptoAssetsPart4,
+    IntroductionCryptoAssetsPart5,
+    IntroductionCryptoAssetsQuiz,
+    TypesOfCryptoAssetsPart1,
+    TypesOfCryptoAssetsPart2,
+    TypesOfCryptoAssetsPart3,
+    TypesOfCryptoAssetsPart4,
+    TypesOfCryptoAssetsPart5,
+    TypesOfCryptoAssetsQuiz,
+    OpportunitiesAndChallengesPart1,
+    OpportunitiesAndChallengesPart2,
+    OpportunitiesAndChallengesQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -39,7 +45,7 @@ const CourseAdvancedArticle = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = "/course-advanced";
+      window.location.href = "/course-cryptoassets";
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -103,10 +109,10 @@ const CourseAdvancedArticle = () => {
         )}
         {isLastSection ? (
           <a
-            href="/articles/course-advanced-end"
+            href="/decisiontree"
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Kurs abschließen
+            Zurück zur Übersicht
           </a>
         ) : (
           <button
@@ -130,4 +136,4 @@ const CourseAdvancedArticle = () => {
   );
 };
 
-export default CourseAdvancedArticle;
+export default CourseCryptoAssets;

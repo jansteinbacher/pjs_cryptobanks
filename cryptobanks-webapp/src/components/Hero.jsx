@@ -23,7 +23,7 @@ const Hero = () => {
             <h1 className="text-2xl md:text-4xl font-bold text-gray-200 mb-4 tracking-tight">
               Kryptoinformationen für Mitarbeitende im Bankenwesen
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-2xl text-gray-300">
               Werde ein{" "}
               <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>!
               Wähle aus verschiedenen Lernmöglichkeiten!
@@ -70,13 +70,13 @@ const Hero = () => {
                 className="w-24 h-24 mx-auto mb-4"
               />
               <h2 className="text-lg font-semibold text-gray-800">
-                Eigenen Kurs
+                Individueller Lernplan
               </h2>
               <p className="mt-3 text-gray-600">
                 Erstelle deinen eigenen Kurs aus verschiedenen Lerneinheiten!
               </p>
               <a
-                href="/course-overview"
+                href="/decisiontree"
                 className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
               >
                 Kurs erstellen &rarr;
