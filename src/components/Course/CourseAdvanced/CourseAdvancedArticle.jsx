@@ -1,41 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import './CourseCryptoAssetsArticle.css';
-import IntroductionCryptoAssetsQuiz from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz';
-import TypesOfCryptoAssetsQuiz from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz';
-import OpportunitiesAndChallengesQuiz from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesQuiz';
-import IntroductionCryptoAssetsPart1 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1';
-import IntroductionCryptoAssetsPart2 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart2';
-import IntroductionCryptoAssetsPart3 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart3';
-import IntroductionCryptoAssetsPart4 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart4';
-import IntroductionCryptoAssetsPart5 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart5';
-import TypesOfCryptoAssetsPart1 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart1';
-import TypesOfCryptoAssetsPart2 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart2';
-import TypesOfCryptoAssetsPart3 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart3';
-import TypesOfCryptoAssetsPart4 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart4';
-import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart5';
-import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart1';
-import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart2';
+// CourseBeginnerArticle.js
 
-const CourseCryptoAssets = () => {
+import React, { useState, useEffect } from 'react';
+import './CourseAdvancedArticle.css';
+import CryptoAssetsRegulationPart1 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart1';
+import CryptoAssetsRegulationPart2 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart2';
+import CryptoAssetsRegulationQuiz from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationQuiz';
+import CryptoAssetServicesPart1 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart1';
+import CryptoAssetServicesPart2 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart2';
+import CryptoAssetServicesPart3 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart3';
+import CryptoAssetServicesPart4 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart4';
+import CryptoAssetServicesPart5 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart5';
+import CryptoAssetServicesPart6 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart6';
+import CryptoAssetServicesQuiz from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesQuiz';
+import CryptoAssetsAdoption from '../../LearningUnit/CryptoAssetsAdoption/CryptoAssetsAdoption';
+
+const CourseAdvancedArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    IntroductionCryptoAssetsPart1,
-    IntroductionCryptoAssetsPart2,
-    IntroductionCryptoAssetsPart3,
-    IntroductionCryptoAssetsPart4,
-    IntroductionCryptoAssetsPart5,
-    IntroductionCryptoAssetsQuiz,
-    TypesOfCryptoAssetsPart1,
-    TypesOfCryptoAssetsPart2,
-    TypesOfCryptoAssetsPart3,
-    TypesOfCryptoAssetsPart4,
-    TypesOfCryptoAssetsPart5,
-    TypesOfCryptoAssetsQuiz,
-    OpportunitiesAndChallengesPart1,
-    OpportunitiesAndChallengesPart2,
-    OpportunitiesAndChallengesQuiz,
+    CryptoAssetsRegulationPart1,
+    CryptoAssetsRegulationPart2,
+    CryptoAssetsRegulationQuiz,
+    CryptoAssetServicesPart1,
+    CryptoAssetServicesPart2,
+    CryptoAssetServicesPart3,
+    CryptoAssetServicesPart4,
+    CryptoAssetServicesPart5,
+    CryptoAssetServicesPart6,
+    CryptoAssetServicesQuiz,
+    CryptoAssetsAdoption,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -45,7 +39,7 @@ const CourseCryptoAssets = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-cryptoassets';
+      window.location.href = '/course-advanced?from=advanced-course';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -109,10 +103,10 @@ const CourseCryptoAssets = () => {
         )}
         {isLastSection ? (
           <a
-            href="/decisiontree"
+            href="/articles/course-advanced-end"
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Zurück zur Übersicht
+            Kurs abschließen
           </a>
         ) : (
           <button
@@ -136,4 +130,4 @@ const CourseCryptoAssets = () => {
   );
 };
 
-export default CourseCryptoAssets;
+export default CourseAdvancedArticle;

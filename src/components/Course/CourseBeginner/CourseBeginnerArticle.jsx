@@ -1,6 +1,9 @@
+// CourseBeginnerArticle.js
+
 import React, { useState, useEffect } from 'react';
-import './CourseCryptoAssetsArticle.css';
+import './CourseBeginnerArticle.css'; // Import the CSS file here
 import IntroductionCryptoAssetsQuiz from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz';
+import IntroductionBlockchainQuiz from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainQuiz';
 import TypesOfCryptoAssetsQuiz from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz';
 import OpportunitiesAndChallengesQuiz from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesQuiz';
 import IntroductionCryptoAssetsPart1 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1';
@@ -8,6 +11,11 @@ import IntroductionCryptoAssetsPart2 from '../../LearningUnit/IntroductionCrypto
 import IntroductionCryptoAssetsPart3 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart3';
 import IntroductionCryptoAssetsPart4 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart4';
 import IntroductionCryptoAssetsPart5 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart5';
+import IntroductionCryptoAssetsPart6 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart6';
+import IntroductionBlockchainPart1 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart1';
+import IntroductionBlockchainPart2 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart2';
+import IntroductionBlockchainPart3 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart3';
+import IntroductionBlockchainPart4 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart4';
 import TypesOfCryptoAssetsPart1 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart1';
 import TypesOfCryptoAssetsPart2 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart2';
 import TypesOfCryptoAssetsPart3 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart3';
@@ -16,7 +24,7 @@ import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/Typ
 import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart1';
 import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart2';
 
-const CourseCryptoAssets = () => {
+const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -26,7 +34,13 @@ const CourseCryptoAssets = () => {
     IntroductionCryptoAssetsPart3,
     IntroductionCryptoAssetsPart4,
     IntroductionCryptoAssetsPart5,
+    IntroductionCryptoAssetsPart6,
     IntroductionCryptoAssetsQuiz,
+    IntroductionBlockchainPart1,
+    IntroductionBlockchainPart2,
+    IntroductionBlockchainPart3,
+    IntroductionBlockchainPart4,
+    IntroductionBlockchainQuiz,
     TypesOfCryptoAssetsPart1,
     TypesOfCryptoAssetsPart2,
     TypesOfCryptoAssetsPart3,
@@ -45,7 +59,7 @@ const CourseCryptoAssets = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-cryptoassets';
+      window.location.href = '/course-beginner';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -109,10 +123,10 @@ const CourseCryptoAssets = () => {
         )}
         {isLastSection ? (
           <a
-            href="/decisiontree"
+            href="/articles/CourseEndBeginner"
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Zurück zur Übersicht
+            Kurs abschließen
           </a>
         ) : (
           <button
@@ -136,4 +150,4 @@ const CourseCryptoAssets = () => {
   );
 };
 
-export default CourseCryptoAssets;
+export default CourseBeginnerArticle;
