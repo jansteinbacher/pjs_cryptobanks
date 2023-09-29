@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./CourseBlockchainArticle.css";
-import IntroductionBlockchainPart1 from "./IntroductionBlockchainPart1";
-import IntroductionBlockchainPart2 from "./IntroductionBlockchainPart2";
-import IntroductionBlockchainPart3 from "./IntroductionBlockchainPart3";
-import IntroductionBlockchainPart4 from "./IntroductionBlockchainPart4";
-import IntroductionBlockchainQuiz from "./IntroductionBlockchainQuiz";
+import React, { useState, useEffect } from 'react';
+import './CourseBlockchainArticle.css';
+import IntroductionBlockchainPart1 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart1';
+import IntroductionBlockchainPart2 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart2';
+import IntroductionBlockchainPart3 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart3';
+import IntroductionBlockchainPart4 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart4';
+import IntroductionBlockchainQuiz from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainQuiz';
 
 const CourseBlockchain = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -25,7 +25,7 @@ const CourseBlockchain = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = "/course-blockchain";
+      window.location.href = '/course-blockchain';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -59,9 +59,9 @@ const CourseBlockchain = () => {
       setScrollProgress(scrollPercentage);
     };
 
-    window.addEventListener("scroll", updateScrollProgress);
+    window.addEventListener('scroll', updateScrollProgress);
 
-    return () => window.removeEventListener("scroll", updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
 
   return (

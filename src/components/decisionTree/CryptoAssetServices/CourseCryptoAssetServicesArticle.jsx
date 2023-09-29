@@ -1,14 +1,14 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from "react";
-import "./CourseCryptoAssetServicesArticle.css";
-import CryptoAssetServicesPart1 from "./CryptoAssetServicesPart1";
-import CryptoAssetServicesPart2 from "./CryptoAssetServicesPart2";
-import CryptoAssetServicesPart3 from "./CryptoAssetServicesPart3";
-import CryptoAssetServicesPart4 from "./CryptoAssetServicesPart4";
-import CryptoAssetServicesPart5 from "./CryptoAssetServicesPart5";
-import CryptoAssetServicesPart6 from "./CryptoAssetServicesPart6";
-import CryptoAssetServicesQuiz from "./CryptoAssetServicesQuiz";
+import React, { useState, useEffect } from 'react';
+import './CourseCryptoAssetServicesArticle.css';
+import CryptoAssetServicesPart1 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart1';
+import CryptoAssetServicesPart2 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart2';
+import CryptoAssetServicesPart3 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart3';
+import CryptoAssetServicesPart4 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart4';
+import CryptoAssetServicesPart5 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart5';
+import CryptoAssetServicesPart6 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart6';
+import CryptoAssetServicesQuiz from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesQuiz';
 
 const CourseCryptoAssetServices = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -31,7 +31,7 @@ const CourseCryptoAssetServices = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = "/course-cryptoassetservices";
+      window.location.href = '/course-cryptoassetservices';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -65,9 +65,9 @@ const CourseCryptoAssetServices = () => {
       setScrollProgress(scrollPercentage);
     };
 
-    window.addEventListener("scroll", updateScrollProgress);
+    window.addEventListener('scroll', updateScrollProgress);
 
-    return () => window.removeEventListener("scroll", updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
 
   return (

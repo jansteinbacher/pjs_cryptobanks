@@ -1,10 +1,10 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from "react";
-import "./CourseCryptoAssetsRegulationArticle.css";
-import CryptoAssetsRegulationPart1 from "./CryptoAssetsRegulationPart1";
-import CryptoAssetsRegulationPart2 from "./CryptoAssetsRegulationPart2";
-import CryptoAssetsRegulationQuiz from "./CryptoAssetsRegulationQuiz";
+import React, { useState, useEffect } from 'react';
+import './CourseCryptoAssetsRegulationArticle.css';
+import CryptoAssetsRegulationPart1 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart1';
+import CryptoAssetsRegulationPart2 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart2';
+import CryptoAssetsRegulationQuiz from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationQuiz';
 
 const CourseCryptoAssetsRegulation = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -23,7 +23,7 @@ const CourseCryptoAssetsRegulation = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = "/course-cryptoassetsregulation";
+      window.location.href = '/course-cryptoassetsregulation';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -57,9 +57,9 @@ const CourseCryptoAssetsRegulation = () => {
       setScrollProgress(scrollPercentage);
     };
 
-    window.addEventListener("scroll", updateScrollProgress);
+    window.addEventListener('scroll', updateScrollProgress);
 
-    return () => window.removeEventListener("scroll", updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
 
   return (
