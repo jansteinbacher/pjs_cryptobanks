@@ -1,37 +1,72 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Overview = () => {
   // Replace this with your glossary data
   const glossaryData = [
     {
-      term: "Anwendungsfälle",
-      explanation: "Lerne potenzielle Anwendungsfälle von Kryptoassets kennen.",
-      link: "/articles/IntroductionCryptoAssets",
+      term: 'Kryptoasset-Dienstleistungen',
+      explanation: 'Lerne potenzielle Kryptoasset-Dienstleistungen kennen.',
+      link: '/crypto-asset-services?from=overview',
     },
     {
-      term: "Blockchain und Distributed-Ledger-Technologie",
+      term: 'Blockchain und Distributed-Ledger-Technologie',
       explanation:
-        "Erfahre mehr über die zugrunde liegende Technologie für Kryptoassets.",
-      link: "/articles/IntroductionCryptoAssets",
+        'Erfahre mehr über die zugrunde liegende Technologie für Kryptoassets.',
+      link: '/introduction-blockchain?from-overview',
     },
     {
-      term: "Herausforderungen und Zukunftsaussichten",
+      term: 'Herausforderungen und Zukunftsaussichten',
       explanation:
-        "Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Einführung von Kryptoassets auf.",
-      link: "/banana-page",
+        'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Einführung von Kryptoassets auf.',
+      link: '/opportunities-challenges-crypto-assets?from-overview',
     },
     {
-      term: "Kryptoassets",
-      explanation: "Baue ein Grundverständnis für Kryptoassets auf.",
-      link: "/carrot-page",
+      term: 'Kryptoassets',
+      explanation: 'Baue ein Grundverständnis für Kryptoassets auf.',
+      link: '/introduction-crypto-assets?from-overview',
     },
     {
-      term: "Regulatorik",
-      explanation: "Bekomme einen Überblick über die aktuelle Regulatorik.",
-      link: "/grapes-page",
+      term: 'Arten von Kryptoassets',
+      explanation: 'Lerne verschiedene Arten von Kryptoassets kennen.',
+      link: '/types-of-crypto-assets?from-overview',
+    },
+    {
+      term: 'Regulatorik',
+      explanation:
+        'Bekomme einen Überblick über die Regulatorik auf nationaler und internationaler Ebene.',
+      link: '/crypto-asset-regulation?from-overview',
+    },
+    {
+      term: 'Trend und Adoption in der Gesellschaft',
+      explanation:
+        'Erhalte einen Einblick in Trends und die Adoption von Kryptoassets in der Gesellschaft.',
+      link: '/grapes-page',
+    },
+    {
+      term: 'Grundlagen der Kryptoassets-Verwahrung',
+      explanation:
+        'Bekomme ein Verständnis für die Grundlagen der Kryptoasset-Verwahrung.',
+      link: '/grapes-page',
+    },
+    {
+      term: 'Arten von Kryptoasset-Verwahrlösungen',
+      explanation: 'Lerne verschiedene Kryptoasset-Verwahrlösungen kennen.',
+      link: '/grapes-page',
+    },
+    {
+      term: 'Regulatorik zur Kryptoasset-Verwahrung',
+      explanation:
+        'Erhalte einen Einblick in die Regulatorik zur Kryptoasset-Verwahrung.',
+      link: '/grapes-page',
+    },
+    {
+      term: 'Herausforderungen und Zukunftsaussichten zur Kryptoasset-Verwahrung',
+      explanation:
+        'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Kryptoasset-Verwahrung.',
+      link: '/grapes-page',
     },
 
     // Add more terms here
@@ -47,7 +82,7 @@ const Overview = () => {
       .filter(
         (item) =>
           item.term.toLowerCase().includes(input.toLowerCase()) &&
-          input.trim() !== ""
+          input.trim() !== ''
       )
       .map((item) => item.term);
 
@@ -57,7 +92,7 @@ const Overview = () => {
 
   // Function to handle search input
   const handleSearch = (e) => {
-    setSelectedLetter(""); // Clear the selected letter when searching
+    setSelectedLetter(''); // Clear the selected letter when searching
     setSearchQuery(e.target.value);
 
     // Update search suggestions
@@ -65,15 +100,15 @@ const Overview = () => {
   };
 
   const handleReset = () => {
-    setSelectedLetter("");
-    setSearchQuery("");
+    setSelectedLetter('');
+    setSearchQuery('');
   };
 
   // State to track the selected alphabet letter
-  const [selectedLetter, setSelectedLetter] = useState("");
+  const [selectedLetter, setSelectedLetter] = useState('');
 
   // State to track the search query
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Function to set the selected alphabet letter
   const handleSelectLetter = (letter) => {
@@ -83,7 +118,7 @@ const Overview = () => {
   // Function to filter glossary data based on the selected alphabet letter and search query
   const filteredData = glossaryData.filter(
     (item) =>
-      (selectedLetter === "" ||
+      (selectedLetter === '' ||
         item.term.charAt(0).toLowerCase() === selectedLetter.toLowerCase()) &&
       item.term.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -97,14 +132,14 @@ const Overview = () => {
       className="container mx-auto py-12 px-12 max-w-screen-xl"
     >
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-8 tracking-tight">
-        Glossar
+        Lerneinheiten
       </h1>
       <p className="mb-12">
-        Nutze unsere intuitive Suchfunktion, um gezielt nach Lerneinheiten zu
-        suchen, die deinen Interessen und Bedürfnissen entsprechen. Du kannst
-        entweder nach dem Anfangsbuchstaben des Themas filtern oder einfach den
-        Begriff eingeben, nach dem du suchst. Unsere Suchvorschläge helfen dir
-        dabei, die passenden Lerneinheiten zu finden.
+        Nutze die Suchfunktion, um gezielt nach Lerneinheiten zu suchen, die
+        deinen Interessen und Bedürfnissen entsprechen. Du kannst entweder nach
+        dem Anfangsbuchstaben des Themas filtern oder einfach den Begriff
+        eingeben, nach dem du suchst. Unsere Suchvorschläge helfen dir dabei,
+        die passenden Lerneinheiten zu finden.
       </p>
       {/* Search box */}
       <div className="flex justify-center">
@@ -121,7 +156,7 @@ const Overview = () => {
           {showSuggestions && (
             <ul
               className="list-none p-2 bg-white border border-gray-300 absolute"
-              style={{ width: "100%", left: "0" }}
+              style={{ width: '100%', left: '0' }}
             >
               {searchSuggestions.map((suggestion) => (
                 <li
@@ -160,7 +195,7 @@ const Overview = () => {
                 <li
                   key={letter}
                   className={`cursor-pointer ${
-                    selectedLetter === letter ? "text-blue-500" : "text-black"
+                    selectedLetter === letter ? 'text-blue-500' : 'text-black'
                   }`}
                   onClick={() => handleSelectLetter(letter)}
                 >
@@ -175,7 +210,11 @@ const Overview = () => {
         <div className="w-3/4 p-4">
           <div className="flex flex-col">
             {filteredData.map((item) => (
-              <div key={item.term} id={item.term} className="mb-8">
+              <div
+                key={item.term}
+                id={item.term}
+                className="mb-8 border rounded p-4 bg-gray-100"
+              >
                 <h2 className="text-2xl font-bold">
                   <Link
                     to={item.link}

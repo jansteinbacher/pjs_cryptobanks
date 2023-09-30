@@ -1,8 +1,8 @@
-import React from "react";
-import KursIcon from "../images/Kurs_Icon.png";
-import IndividuellIcon from "../images/Individuell_Icon.png";
-import Header from "../images/header.jpg";
-import GlossarIcon from "../images/Glossar_Icon.png";
+import React from 'react';
+import KursIcon from '../images/Kurs_Icon.png';
+import IndividuellIcon from '../images/Individuell_Icon.png';
+import Header from '../images/header.jpg';
+import GlossarIcon from '../images/Glossar_Icon.png';
 
 const Hero = () => {
   return (
@@ -11,20 +11,20 @@ const Hero = () => {
         className="bg-cover bg-center relative" // Verwenden Sie relative Positionierung
         style={{
           backgroundImage: `url(${Header})`,
-          minHeight: "60vh", // Stellen Sie sicher, dass die Höhe ausreichend ist
+          minHeight: '60vh', // Stellen Sie sicher, dass die Höhe ausreichend ist
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white">
           {/* Den Text linksbündig ausrichten und horizontal weiter links von der Mitte zentrieren */}
           <div
             className="text-left mb-8 max-w-xl mx-auto"
-            style={{ marginLeft: "20%" }}
+            style={{ marginLeft: '20%' }}
           >
             <h1 className="text-2xl md:text-4xl font-bold text-gray-200 mb-4 tracking-tight">
               Kryptoinformationen für Mitarbeitende im Bankenwesen
             </h1>
             <p className="text-2xl text-gray-300">
-              Werde ein{" "}
+              Werde ein{' '}
               <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>!
               Wähle aus verschiedenen Lernmöglichkeiten!
             </p>
@@ -87,10 +87,12 @@ const Hero = () => {
             <div className="block p-8 border rounded-md hover:bg-green-200 transition">
               <img
                 src={GlossarIcon}
-                alt="Glossar"
+                alt="Lerneinheiten"
                 className="w-24 h-24 mx-auto mb-4"
               />
-              <h2 className="text-lg font-semibold text-gray-800">Glossar</h2>
+              <h2 className="text-lg font-semibold text-gray-800">
+                Lerneinheiten
+              </h2>
               <p className="mt-3 text-gray-600">
                 Erhalte direkten Zugriff auf verschiedene Lerneinheiten!
               </p>
@@ -98,7 +100,7 @@ const Hero = () => {
                 href="/overview"
                 className="inline-flex items-center mt-4 space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
               >
-                Zum Glossar &rarr;
+                Zur Übersicht &rarr;
               </a>
             </div>
           </div>

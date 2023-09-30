@@ -95,18 +95,19 @@ const CryptoAssetServicesPart1 = () => {
           Bild von myriammira auf Freepik
         </a>
       </div>
-
-      <div className="p-4 mb-8 bg-green-200 rounded-lg">
-        <p className=" italic text-justify">
-          Am ersten Stand präsentieren die Aussteller Simone den Krypto-Handel,
-          die es Investoren ermöglicht, Kryptowährungen mühelos zu erwerben und
-          zu veräußern. Dies erinnert Simone an ein vergangenes Projekt, bei dem
-          sie aktiv an der Integration von Kauf- und Verkaufsoptionen für ETFs
-          in einer Online-Banking-App beteiligt war. Gespannt verfolgt sie
-          aufmerksam die Ausführungen der Unternehmensvertreter
-        </p>
-      </div>
-
+      {isComingFromPreviousPage && (
+        <div className="p-4 mb-8 bg-green-200 rounded-lg">
+          <p className=" italic text-justify">
+            Am ersten Stand präsentieren die Aussteller Simone den
+            Krypto-Handel, die es Investoren ermöglicht, Kryptowährungen mühelos
+            zu erwerben und zu veräußern. Dies erinnert Simone an ein
+            vergangenes Projekt, bei dem sie aktiv an der Integration von Kauf-
+            und Verkaufsoptionen für ETFs in einer Online-Banking-App beteiligt
+            war. Gespannt verfolgt sie aufmerksam die Ausführungen der
+            Unternehmensvertreter
+          </p>
+        </div>
+      )}
       <p className="mb-8">
         Die Bank bietet den Handel von führenden Kryptoassets an. Neben
         klassischen Coins, wie Bitcoin (BTC) oder Ethereum (ETH) werden auch

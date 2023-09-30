@@ -1,22 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import './CourseCryptoAssetsArticle.css';
-import IntroductionCryptoAssetsQuiz from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz';
-import TypesOfCryptoAssetsQuiz from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz';
-import OpportunitiesAndChallengesQuiz from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesQuiz';
-import IntroductionCryptoAssetsPart1 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1';
-import IntroductionCryptoAssetsPart2 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart2';
-import IntroductionCryptoAssetsPart3 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart3';
-import IntroductionCryptoAssetsPart4 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart4';
-import IntroductionCryptoAssetsPart5 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart5';
-import TypesOfCryptoAssetsPart1 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart1';
-import TypesOfCryptoAssetsPart2 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart2';
-import TypesOfCryptoAssetsPart3 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart3';
-import TypesOfCryptoAssetsPart4 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart4';
-import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart5';
-import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart1';
-import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallenges/OpportunitiesAndChallengesPart2';
+import '../../../course.css';
+import IntroductionCryptoAssetsQuiz from './IntroductionCryptoAssetsQuiz';
+import IntroductionCryptoAssetsPart1 from './IntroductionCryptoAssetsPart1';
+import IntroductionCryptoAssetsPart2 from './IntroductionCryptoAssetsPart2';
+import IntroductionCryptoAssetsPart3 from './IntroductionCryptoAssetsPart3';
+import IntroductionCryptoAssetsPart4 from './IntroductionCryptoAssetsPart4';
+import IntroductionCryptoAssetsPart5 from './IntroductionCryptoAssetsPart5';
 
-const CourseCryptoAssets = () => {
+const IntroductionCryptoAssets = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -27,15 +18,6 @@ const CourseCryptoAssets = () => {
     IntroductionCryptoAssetsPart4,
     IntroductionCryptoAssetsPart5,
     IntroductionCryptoAssetsQuiz,
-    TypesOfCryptoAssetsPart1,
-    TypesOfCryptoAssetsPart2,
-    TypesOfCryptoAssetsPart3,
-    TypesOfCryptoAssetsPart4,
-    TypesOfCryptoAssetsPart5,
-    TypesOfCryptoAssetsQuiz,
-    OpportunitiesAndChallengesPart1,
-    OpportunitiesAndChallengesPart2,
-    OpportunitiesAndChallengesQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -45,7 +27,7 @@ const CourseCryptoAssets = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-cryptoassets';
+      window.location.href = '/introduction-crypto-assets?from=decisiontree';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -61,6 +43,12 @@ const CourseCryptoAssets = () => {
   const SectionComponent = sections[sectionIndex];
   const isLastSection = sectionIndex === sections.length - 1;
   const isFirstSection = sectionIndex === 0;
+
+  const isComingFromPreviousPage =
+    window.location.search.includes('from=decisiontree');
+  const buttonDestination = isComingFromPreviousPage
+    ? '/decisiontree'
+    : '/overview';
 
   useEffect(() => {
     if (showRewardBanner) {
@@ -109,7 +97,7 @@ const CourseCryptoAssets = () => {
         )}
         {isLastSection ? (
           <a
-            href="/decisiontree"
+            href={buttonDestination}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Zurück zur Übersicht
@@ -136,4 +124,4 @@ const CourseCryptoAssets = () => {
   );
 };
 
-export default CourseCryptoAssets;
+export default IntroductionCryptoAssets;

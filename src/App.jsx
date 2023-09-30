@@ -20,12 +20,14 @@ import {
   CourseAdvancedArticle,
   CourseAdvancedIntroduction,
   CourseAdvancedEnd,
-  CourseCryptoAssets,
-  CourseBlockchain,
-  CourseCryptoAssetServices,
-  CourseCryptoAssetsRegulation,
-} from "./components";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+  IntroductionCryptoAssets,
+  IntroductionBlockchain,
+  CryptoAssetServices,
+  CryptoAssetRegulation,
+  TypesOfCryptoAssets,
+  OpportunitiesAndChallengesCryptoAssets,
+} from './components';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => (
   <div>
@@ -48,15 +50,29 @@ const App = () => (
         <Route path="/course-advanced" element={<CourseAdvancedArticle />} />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
-        <Route path="/course-cryptoassets" element={<CourseCryptoAssets />} />
-        <Route path="/course-blockchain" element={<CourseBlockchain />} />
         <Route
-          path="/course-cryptoassetservices"
-          element={<CourseCryptoAssetServices />}
+          path="/introduction-crypto-assets"
+          element={<IntroductionCryptoAssets />}
         />
         <Route
-          path="/course-cryptoassetsregulation"
-          element={<CourseCryptoAssetsRegulation />}
+          path="/introduction-blockchain"
+          element={<IntroductionBlockchain />}
+        />
+        <Route
+          path="/crypto-asset-services"
+          element={<CryptoAssetServices />}
+        />
+        <Route
+          path="/crypto-asset-regulation"
+          element={<CryptoAssetRegulation />}
+        />
+        <Route
+          path="/types-of-crypto-assets"
+          element={<TypesOfCryptoAssets />}
+        />
+        <Route
+          path="/opportunities-challenges-crypto-assets"
+          element={<OpportunitiesAndChallengesCryptoAssets />}
         />
 
         <Route path="/integrationoverview" element={<IntegrationOverview />} />
