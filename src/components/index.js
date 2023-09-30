@@ -7,7 +7,7 @@ export { default as Footer } from "./Footer";
 export { default as IntegrationOverview } from "./IntegrationOverview";
 export { default as IntegrationOverview2 } from "./IntegrationOverview2";
 export { default as MicaIntroduction } from "./MicaIntroduction";
-export { default as Overview } from "./Overview";
+export { default as Overview } from "./Overview/Overview";
 export { default as DragAndDrop } from "./DragAndDrop"; 
 
 export { default as DecisionTree } from "./DecisionTree/DecisionTree";
@@ -26,9 +26,11 @@ export {default as CourseAdvancedArticle } from "./Course/CourseAdvanced/CourseA
 export { default as CourseEndBeginner } from "./Course/CourseBeginner/CourseBeginnerEnd";
 export { default as Einstufungsquiz} from "./Einstufungsquiz";
 
-export { default as CourseCryptoAssets } from "./DecisionTree/IntroductionCryptoAssets/CourseCryptoAssetsArticle";
-export { default as CourseBlockchain } from "./DecisionTree/IntroductionBlockchain/CourseBlockchainArticle";
-export { default as CourseCryptoAssetServices } from "./DecisionTree/CryptoAssetServices/CourseCryptoAssetServicesArticle";
-export { default as CourseCryptoAssetsRegulation } from "./DecisionTree/CryptoAssetRegulation/CourseCryptoAssetsRegulationArticle";
+export { default as IntroductionCryptoAssets } from "./LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsArticle";
+export { default as IntroductionBlockchain } from "./LearningUnit/IntroductionBlockchain/IntroductionBlockchainArticle";
+export { default as CryptoAssetServices } from "./LearningUnit/CryptoAssetServices/CryptoAssetServicesArticle";
+export { default as CryptoAssetRegulation } from "./LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationArticle";
+export { default as TypesOfCryptoAssets } from "./LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsArticle"
+export { default as OpportunitiesAndChallengesCryptoAssets } from "./LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsArticle"
 
 export { default as Myths} from "./Myths";

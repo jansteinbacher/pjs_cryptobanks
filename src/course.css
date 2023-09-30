@@ -1,0 +1,33 @@
+/* rewardBanner.css */
+@keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .reward-banner {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #66bb6a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    animation: slideIn 1.5s, slideOut 3s 5s;
+    /* The banner will slide in for 1 second, stay for 1 second, and then slide out in 1 second after 2 seconds delay */
+  }
+  

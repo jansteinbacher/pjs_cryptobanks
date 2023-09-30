@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import './CourseBlockchainArticle.css';
-import IntroductionBlockchainPart1 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart1';
-import IntroductionBlockchainPart2 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart2';
-import IntroductionBlockchainPart3 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart3';
-import IntroductionBlockchainPart4 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart4';
-import IntroductionBlockchainQuiz from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainQuiz';
+// CourseBeginnerArticle.js
 
-const CourseBlockchain = () => {
+import React, { useState, useEffect } from 'react';
+import '../../../course.css';
+import CryptoAssetServicesPart1 from './CryptoAssetServicesPart1';
+import CryptoAssetServicesPart2 from './CryptoAssetServicesPart2';
+import CryptoAssetServicesPart3 from './CryptoAssetServicesPart3';
+import CryptoAssetServicesPart4 from './CryptoAssetServicesPart4';
+import CryptoAssetServicesPart5 from './CryptoAssetServicesPart5';
+import CryptoAssetServicesPart6 from './CryptoAssetServicesPart6';
+import CryptoAssetServicesQuiz from './CryptoAssetServicesQuiz';
+
+const CourseCryptoAssetServices = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    IntroductionBlockchainPart1,
-    IntroductionBlockchainPart2,
-    IntroductionBlockchainPart3,
-    IntroductionBlockchainPart4,
-    IntroductionBlockchainQuiz,
+    CryptoAssetServicesPart1,
+    CryptoAssetServicesPart2,
+    CryptoAssetServicesPart3,
+    CryptoAssetServicesPart4,
+    CryptoAssetServicesPart5,
+    CryptoAssetServicesPart6,
+    CryptoAssetServicesQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -25,7 +31,7 @@ const CourseBlockchain = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-blockchain';
+      window.location.href = '/crypto-asset-services';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -41,6 +47,12 @@ const CourseBlockchain = () => {
   const SectionComponent = sections[sectionIndex];
   const isLastSection = sectionIndex === sections.length - 1;
   const isFirstSection = sectionIndex === 0;
+
+  const isComingFromPreviousPage =
+    window.location.search.includes('from=decisiontree');
+  const buttonDestination = isComingFromPreviousPage
+    ? '/decisiontree'
+    : '/overview';
 
   useEffect(() => {
     if (showRewardBanner) {
@@ -89,7 +101,7 @@ const CourseBlockchain = () => {
         )}
         {isLastSection ? (
           <a
-            href="/decisiontree"
+            href={buttonDestination}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Zurück zur Übersicht
@@ -116,4 +128,4 @@ const CourseBlockchain = () => {
   );
 };
 
-export default CourseBlockchain;
+export default CourseCryptoAssetServices;

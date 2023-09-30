@@ -1,19 +1,17 @@
-// CourseBeginnerArticle.js
-
 import React, { useState, useEffect } from 'react';
-import './CourseCryptoAssetsRegulationArticle.css';
-import CryptoAssetsRegulationPart1 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart1';
-import CryptoAssetsRegulationPart2 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationPart2';
-import CryptoAssetsRegulationQuiz from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetsRegulationQuiz';
+import '../../../course.css';
+import OpportunitiesAndChallengesQuiz from './OpportunitiesAndChallengesCryptoAssetsQuiz';
+import OpportunitiesAndChallengesPart1 from './OpportunitiesAndChallengesCryptoAssetsPart1';
+import OpportunitiesAndChallengesPart2 from './OpportunitiesAndChallengesCryptoAssetsPart2';
 
-const CourseCryptoAssetsRegulation = () => {
+const OpportunitiesAndChallengesCryptoAssets = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    CryptoAssetsRegulationPart1,
-    CryptoAssetsRegulationPart2,
-    CryptoAssetsRegulationQuiz,
+    OpportunitiesAndChallengesPart1,
+    OpportunitiesAndChallengesPart2,
+    OpportunitiesAndChallengesQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -23,7 +21,8 @@ const CourseCryptoAssetsRegulation = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-cryptoassetsregulation';
+      window.location.href =
+        '/opportunities-challenges-crypto-assets?from=decisiontree';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -39,6 +38,12 @@ const CourseCryptoAssetsRegulation = () => {
   const SectionComponent = sections[sectionIndex];
   const isLastSection = sectionIndex === sections.length - 1;
   const isFirstSection = sectionIndex === 0;
+
+  const isComingFromPreviousPage =
+    window.location.search.includes('from=decisiontree');
+  const buttonDestination = isComingFromPreviousPage
+    ? '/decisiontree'
+    : '/overview';
 
   useEffect(() => {
     if (showRewardBanner) {
@@ -87,7 +92,7 @@ const CourseCryptoAssetsRegulation = () => {
         )}
         {isLastSection ? (
           <a
-            href="/decisiontree"
+            href={buttonDestination}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Zurück zur Übersicht
@@ -114,4 +119,4 @@ const CourseCryptoAssetsRegulation = () => {
   );
 };
 
-export default CourseCryptoAssetsRegulation;
+export default OpportunitiesAndChallengesCryptoAssets;

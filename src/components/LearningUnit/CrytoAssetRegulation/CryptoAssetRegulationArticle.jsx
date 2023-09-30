@@ -2,19 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import '../../../course.css';
-import CryptoAssetsRegulationPart1 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationPart1';
-import CryptoAssetsRegulationPart2 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationPart2';
-import CryptoAssetsRegulationQuiz from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationQuiz';
-import CryptoAssetServicesPart1 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart1';
-import CryptoAssetServicesPart2 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart2';
-import CryptoAssetServicesPart3 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart3';
-import CryptoAssetServicesPart4 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart4';
-import CryptoAssetServicesPart5 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart5';
-import CryptoAssetServicesPart6 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart6';
-import CryptoAssetServicesQuiz from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesQuiz';
-import CryptoAssetsAdoption from '../../LearningUnit/CryptoAssetsAdoption/CryptoAssetsAdoption';
+import CryptoAssetsRegulationPart1 from './CryptoAssetRegulationPart1';
+import CryptoAssetsRegulationPart2 from './CryptoAssetRegulationPart2';
+import CryptoAssetsRegulationQuiz from './CryptoAssetRegulationQuiz';
 
-const CourseAdvancedArticle = () => {
+const CryptoAssetRegulation = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -22,14 +14,6 @@ const CourseAdvancedArticle = () => {
     CryptoAssetsRegulationPart1,
     CryptoAssetsRegulationPart2,
     CryptoAssetsRegulationQuiz,
-    CryptoAssetServicesPart1,
-    CryptoAssetServicesPart2,
-    CryptoAssetServicesPart3,
-    CryptoAssetServicesPart4,
-    CryptoAssetServicesPart5,
-    CryptoAssetServicesPart6,
-    CryptoAssetServicesQuiz,
-    CryptoAssetsAdoption,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -39,7 +23,7 @@ const CourseAdvancedArticle = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-advanced?from=advanced-course';
+      window.location.href = '/crypto-asset-regulation';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -55,6 +39,12 @@ const CourseAdvancedArticle = () => {
   const SectionComponent = sections[sectionIndex];
   const isLastSection = sectionIndex === sections.length - 1;
   const isFirstSection = sectionIndex === 0;
+
+  const isComingFromPreviousPage =
+    window.location.search.includes('from=decisiontree');
+  const buttonDestination = isComingFromPreviousPage
+    ? '/decisiontree'
+    : '/overview';
 
   useEffect(() => {
     if (showRewardBanner) {
@@ -103,10 +93,10 @@ const CourseAdvancedArticle = () => {
         )}
         {isLastSection ? (
           <a
-            href="/articles/course-advanced-end"
+            href={buttonDestination}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Kurs abschließen
+            Zurück zur Übersicht
           </a>
         ) : (
           <button
@@ -130,4 +120,4 @@ const CourseAdvancedArticle = () => {
   );
 };
 
-export default CourseAdvancedArticle;
+export default CryptoAssetRegulation;
