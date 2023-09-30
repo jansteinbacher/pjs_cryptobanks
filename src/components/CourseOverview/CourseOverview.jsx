@@ -70,7 +70,7 @@ const CourseOverview = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white h-screen w-screen">
       <div className="max-w-screen-lg mx-auto mb-12 py-12 px-4 md:px-0">
         <div className="flex flex-col items-center justify-center space-y-4 mb-8">
           <h1 className="text-3xl font-bold text-center text-gray-800">
