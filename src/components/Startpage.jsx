@@ -39,7 +39,7 @@ const Startpage = () => {
               Umfrage unter Studierenden zum Thema Kryptoassets
             </p>
             <a
-              href="/interviews"
+              href="/survey"
               className="inline-flex items-center space-x-2 bg-green-400 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-500 transition"
             >
               Zur Umfrage &rarr;

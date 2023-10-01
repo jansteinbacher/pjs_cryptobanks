@@ -5,14 +5,10 @@ import {
   Startpage,
   Footer,
   CourseOverview,
-  IntegrationOverview,
-  MicaIntroduction,
-  IntegrationOverview2,
   Overview,
   CourseBeginnerArticle,
   DecisionTree,
   CourseEndBeginner,
-  DragAndDrop,
   Einstufungsquiz,
   News,
   Myths,
@@ -26,6 +22,11 @@ import {
   CryptoAssetRegulation,
   TypesOfCryptoAssets,
   OpportunitiesAndChallengesCryptoAssets,
+  Survey,
+  Interviews,
+  CourseExpertArticle,
+  CourseExpertIntroduction,
+  CourseExpertEnd,
 } from './components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -48,6 +49,7 @@ const App = () => (
         <Route path="/course-overview" element={<CourseOverview />} />
         <Route path="/course-beginner" element={<CourseBeginnerArticle />} />
         <Route path="/course-advanced" element={<CourseAdvancedArticle />} />
+        <Route path="/course-expert" element={<CourseExpertArticle />} />
 
         <Route path="/decisiontree" element={<DecisionTree />} />
         <Route
@@ -75,20 +77,17 @@ const App = () => (
           element={<OpportunitiesAndChallengesCryptoAssets />}
         />
 
-        <Route path="/integrationoverview" element={<IntegrationOverview />} />
-        <Route path="/micaintroduction" element={<MicaIntroduction />} />
-        <Route
-          path="/integrationoverview2"
-          element={<IntegrationOverview2 />}
-        />
 
-        <Route path="/dnd" element={<DragAndDrop />} />
 
-        <Route path="/myths" element={<Myths />} />
+        <Route path="/mythbusters" element={<Myths />} />
+
+        <Route path="/interviews" element={<Interviews />} />
 
         <Route path="/overview" element={<Overview />} />
 
         <Route path="/news" element={<News />} />
+
+        <Route path="/survey" element={<Survey />} />
 
         <Route path="/einstufungsquiz" element={<Einstufungsquiz />} />
 
@@ -105,6 +104,16 @@ const App = () => (
         <Route
           path="/articles/course-advanced-end"
           element={<CourseAdvancedEnd />}
+        />
+
+        <Route
+          path="/course-expert-introduction"
+          element={<CourseExpertIntroduction />}
+        />    
+
+        <Route
+          path="/articles/course-expert-end"
+          element={<CourseExpertEnd />}
         />
 
         <Route

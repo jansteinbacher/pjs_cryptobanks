@@ -4,15 +4,14 @@ export { default as Startpage } from "./Startpage";
 export { default as About } from "./About";
 
 export { default as Footer } from "./Footer";
-export { default as IntegrationOverview } from "./IntegrationOverview";
-export { default as IntegrationOverview2 } from "./IntegrationOverview2";
-export { default as MicaIntroduction } from "./MicaIntroduction";
 export { default as Overview } from "./Overview/Overview";
 export { default as DragAndDrop } from "./DragAndDrop"; 
 
 export { default as DecisionTree } from "./decisionTree/DecisionTree";
 
 export { default as News } from "./News";
+export { default as Survey } from "./Survey";
+export { default as Interviews } from "./Interviews";
 
 export { default as CourseOverview } from "./CourseOverview/CourseOverview";
 export { default as CourseBeginnerArticle } from "./Course/CourseBeginner/CourseBeginnerArticle";
@@ -21,6 +20,10 @@ export {default as CourseBeginnerIntroduction } from "./Course/CourseBeginner/Co
 export {default as CourseAdvancedIntroduction } from "./Course/CourseAdvanced/CourseAdvancedIntroduction";
 export {default as CourseAdvancedEnd } from "./Course/CourseAdvanced/CourseAdvancedEnd";
 export {default as CourseAdvancedArticle } from "./Course/CourseAdvanced/CourseAdvancedArticle";
+
+export {default as CourseExpertIntroduction } from "./Course/CourseExpert/CourseExpertIntroduction";
+export {default as CourseExpertEnd } from "./Course/CourseExpert/CourseExpertEnd";
+export {default as CourseExpertArticle } from "./Course/CourseExpert/CourseExpertArticle";
 
 
 export { default as CourseEndBeginner } from "./Course/CourseBeginner/CourseBeginnerEnd";
