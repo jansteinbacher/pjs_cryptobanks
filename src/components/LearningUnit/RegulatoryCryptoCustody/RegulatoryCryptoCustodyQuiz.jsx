@@ -4,48 +4,39 @@ const ApplicationAreaQuiz = () => {
   const questions = [
     {
       question:
-        "Was kennzeichnet den Ansatz des Self-Custody bei der Aufbewahrung von Kryptoassets?",
+        "Was muss erfüllt sein, damit ein Kryptoverwahrgeschäft rechtlich definiert ist?",
       options: [
-        "Die Kontrolle über private Schlüssel wird an eine dritte Partei abgegeben.",
-        "Es gibt keine Notwendigkeit, private Schlüssel zu verwenden.",
-        "Der Nutzer trägt die gesamte Verantwortung für die Sicherheit des privaten Schlüssels.",
-        "Kryptoassets werden automatisch verschlüsselt und geschützt.",
+        "Die Nutzung von Kryptoassets als Zahlungsmittel.",
+        "Die Speicherung von Kryptoassets auf persönlichen Computern.",
+        "Die Aufbewahrung, Verwaltung und Sicherung von Kryptoassets oder geheimen kryptografischen Schlüsseln im Auftrag von Dritten.",
+        "Die Verwendung von Kryptoassets für den Tausch von physischen Gütern.",
       ],
       correctAnswerIndex: 2,
     },
+
     {
       question:
-        "Welche Verwendungssituation ist typisch für Hot Wallets?",
+        "Was umfasst die Definition von Kryptowerten im Kreditwesengesetz?",
       options: [
-        "Langfristige Speicherung von Kryptoassets.",
-        "Gelegentliche Transaktionen mit größerem Vermögen.",
-        "Sicherung großer Mengen an Kryptoassets.",
-        "Hochsichere Verwahrung von Kryptoassets.",
-      ],
-      correctAnswerIndex: 1,
-    },
-    {
-      question:
-        "Welche Art von Gerät speichert den privaten Schlüssel bei einer Hardware-Wallet?",
-      options: [
-        "Cloud-Server",
-        "Physische Festplatte",
-        "Blockchain-Netzwerk",
-        "Mobiltelefon",
-      ],
-      correctAnswerIndex: 1,
-    },
-    {
-      question:
-        "Wie funktioniert die Multi-Signature-Technologie?",
-      options: [
-        "Es braucht eine spezifische Teilmenge der Teilnehmer, um das Ergebnis zu reproduzieren",
-        "Es braucht mehrere private Schlüssel um eine Transaktion zu autorisieren",
-        "Mehrere Schlüssel können alleine auf ein Wallet zugreifen",
-        "Jeder Teilnehmer an einer kryptografischen Operation besitzt ein Teil desprivaten Schlüssels",
+        "Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden.",
+        "Digitale Darstellungen von Werten, die von natürlichen oder juristischen Personen garantiert werden.",
+        "Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden und von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.",
+        "Digitale Darstellungen von Werten, die nicht von Zentralbanken emittiert oder garantiert werden, jedoch von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.",
       ],
       correctAnswerIndex: 3,
     },
+
+    {
+      question:
+        "Warum ist die Bewertung von Kryptoassets kompliziert?",
+      options: [
+        "Weil der Markt für Kryptoassets nicht volatil ist.",
+        "Weil es klare und etablierte Preise für Kryptoassets gibt.",
+        "Weil die Marktpreise von Kryptoassets oft schwanken und keine festen Preise existieren.",
+        "Weil Kryptoassets nicht bewertet werden müssen nach IFRS.",
+      ],
+      correctAnswerIndex: 2,
+    }
     
   ];
 

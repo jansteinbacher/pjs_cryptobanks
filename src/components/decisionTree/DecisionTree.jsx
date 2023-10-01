@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+//TODO: Links should open in new window 
+//Download Document with Lernplan
+//Make it prettier
+
 function Question({ question, answers, updateAnswer }) {
   return (
     <div
@@ -13,7 +17,7 @@ function Question({ question, answers, updateAnswer }) {
           <button
             key={answer}
             onClick={() => updateAnswer(answer)}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             {answer}
           </button>

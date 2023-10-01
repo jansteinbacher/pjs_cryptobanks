@@ -13,6 +13,11 @@ import ApplicationAreaPart4 from '../../LearningUnit/ApplicationAreas/Applicatio
 import ApplicationAreaPart5 from '../../LearningUnit/ApplicationAreas/ApplicationAreaPart5';
 import ApplicationAreaPart6 from '../../LearningUnit/ApplicationAreas/ApplicationAreaPart6';
 import ApplicationAreaQuiz from '../../LearningUnit/ApplicationAreas/ApplicationAreaQuiz';
+import RegulatoryCryptoCustodyPart1 from '../../LearningUnit/RegulatoryCryptoCustody/RegulatoryCryptoCustodyPart1.jsx';
+import RegulatoryCryptoCustodyPart2 from '../../LearningUnit/RegulatoryCryptoCustody/RegulatoryCryptoCustodyPart2.jsx';
+import RegulatoryCryptoCustodyQuiz from '../../LearningUnit/RegulatoryCryptoCustody/RegulatoryCryptoCustodyQuiz.jsx';
+import CryptoCustodyChallengesPart1 from '../../LearningUnit/CryptoCustodyChallenges/CryptoCustodyChallengesPart1';
+import CryptoCustodyChallengesPart2 from '../../LearningUnit/CryptoCustodyChallenges/CryptoCustodyChallengesPart2';
 
 
 
@@ -33,6 +38,11 @@ const CourseExpertArticle = () => {
     ApplicationAreaPart5,
     ApplicationAreaPart6,
     ApplicationAreaQuiz,
+    RegulatoryCryptoCustodyPart1,
+    RegulatoryCryptoCustodyPart2,
+    RegulatoryCryptoCustodyQuiz,
+    CryptoCustodyChallengesPart1,
+    CryptoCustodyChallengesPart2,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Anwendungsbereiche from '../../../images/courseExpert/overviewAnwendungsbereiche.png';
+import Bitcoinhold from '../../../images/courseExpert/bitcoinhold.png';
 
 
 
@@ -34,7 +34,7 @@ const Sources = ({ sources }) => {
   );
 };
 
-const RegulatoryCryptoCustodyPart1 = () => {
+const RegulatoryCryptoCustodyPart2 = () => {
   const articlesources = [
     "vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.",
 "vgl. Di Nicola, Vincenzo, Riccardo Longo, Federico Mazzone und Gaetano Russo (2020). Resilient Custody of Crypto-Assets, and Threshold Multisignatures. In: Mathematics 8.10, S. 1773.",
@@ -55,9 +55,7 @@ const RegulatoryCryptoCustodyPart1 = () => {
 "vgl. Ricci, S., Dzurenda, P., Casanova-Marqués, R., Cika, P. Marrella, A., ua. (2022). Threshold Signature for Privacy-Preserving Blockchain. In:  Business Process Management: Blockchain, Robotic Process Automation, and Central and Eastern Europe Forum. BPM 2022. Lecture Notes in Business Information Processing 459. Springer, Cham.",
   ]
 
-  const isComingFromPreviousPage = window.location.search.includes(
-    'from=expert-course'
-  );
+  
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -65,37 +63,64 @@ const RegulatoryCryptoCustodyPart1 = () => {
       Anwedungsbereiche - Arten von Verwahrlösungen
       </h1>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-          Simone hat Tobias beauftragt, sich intensiver mit verschiedenen Lösungen zur Verwahrung von Kryptoassets 
-          auseinanderzusetzen. Dies bildet den Auftakt zur Integration von Kryptoassets in das hauseigene Bankensystem. 
-          Um einen ersten Einblick in die Kryptoasset-Verwahrung zu gewinnen, untersucht Tobias, die Verwahrlösung, 
-          welche er privat zur Investition in Kryptoassets nutzt. Hierbei macht er Gebrauch von seinem intelligenten 
-          Browser-Plugin, das es ihm ermöglicht, mit der Maus über Webseiteninhalte zu fahren und weitere Informationen 
-          abzurufen.
-          </p>
-        </div>
-      )}
+      <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+      Verwahren, Verwalten und Sichern von Kryptowerten
+      </h2>
+
+      <div className="flex justify-center items-center mb-8">
+        <img
+          src={Bitcoinhold}
+          alt="Bitcoin hold by man in suit"
+          className="w-full md:w-1/2"
+        />
+      </div>
+
+      
 
       <p className="mb-8">
-      Die sichere Verwahrung von Kryptoassets bildet einen essenziellen Grundpfeiler für die sich entwickelnde 
-      Kryptoasset-Wirtschaft. Ganz gleich, ob es sich um Kryptowährungen, NFTs oder Security Tokens handelt – 
-      die Gewährleistung einer sicheren Aufbewahrung des privaten Schlüssels sowie die authentifizierte Genehmigung 
-      und Signierung von Transaktionen sind grundlegend. Die Kryptoasset-Verwahrlösungen können in mehrerer Klassen 
-      eingeteilt werden, basierend auf fünf Schlüsseldimensionen oder Perspektiven. <a href="#sources">[1]</a> Im Folgenden werden die einzelnen
-       Klassen näher beleuchtet.
+      Diese Regelungen beziehen sich auf das Verwalten, Verwahren und Sichern von Kryptowerten sowie privaten 
+      kryptografischen Schlüsseln, die für die Aufbewahrung, Speicherung oder Übertragung von Kryptowerten genutzt werden. 
+      Für eine Erlaubnis nach § 32 Abs. 1 Satz 1 KWG reicht es aus, wenn einer der genannten Aspekte erfüllt ist. 
+      Es ist nicht zwingend erforderlich, dass die Verwahrung, Verwaltung und Sicherung simultan stattfinden.
+      Verwahrung impliziert die Aufbewahrung von Kryptowerten für Dritte als Dienstleistung. Dies betrifft 
+      insbesondere Anbieter, die Kryptowerte ihrer Kunden gesammelt aufbewahren, ohne dass die Kunden selbst 
+      über die kryptografischen Schlüssel informiert sind. Verwalten umfasst die kontinuierliche Ausübung 
+      der Rechte im Zusammenhang mit den Kryptowerten. 
+      Unter Sicherung fällt sowohl die digitale Speicherung der privaten kryptografischen Schlüssel Dritter 
+      als Dienstleistung als auch die physische Aufbewahrung von Datenträgern (z. B. USB-Sticks oder Papiere), 
+      auf denen solche Schlüssel gespeichert sind. Reiner Speicherplatz ohne explizite Dienstleistung zur 
+      Schlüsselspeicherung, wie von Webhosting- oder Cloudspeicher-Anbietern, ist nicht einschlägig.
+      Nicht erfasst ist die reine Herstellung oder der Vertrieb von Hardware oder Software zur Kryptowert-Sicherung, 
+      die von Nutzern eigenverantwortlich genutzt wird, sofern Anbieter keinen direkten Zugriff auf die verwahrten 
+      Kryptowerte oder Schlüssel haben.
+      Entscheidend ist die Möglichkeit des Zugriffs auf öffentliche Adressen, unter denen Kryptowerte dezentral 
+      gespeichert sind, durch die Verwahrung der privaten kryptografischen Schlüssel.<a href="#sources">[4]</a>
+
         
       </p>
 
 
-      <div className="flex justify-center items-center mb-8">
-        <img
-          src={Anwendungsbereiche}
-          alt="Anwendungsbereiche"
-          className="w-full md:w-1/2"
-        />
-      </div>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+      Ausblick
+      </h2>
+
+      <p className="mb-8">
+      Es bleibt noch unklar, ob die erweiterte Definition von Kryptowerten lediglich die bereits von der BaFin 
+      praktizierte Verwaltungspraxis aufgreift – bei der bestimmte Kryptowerte wie Currency-Token und Security-Token 
+      als Finanzinstrumente klassifiziert werden und Aktivitäten damit erlaubnispflichtig sind – oder ob auch 
+      Utility-Token (digitale Gutscheine) unter den neuen Kryptowertbegriff fallen.
+      Dennoch ist es für Unternehmen, die mit digitalen Vermögenswerten handeln, dringend ratsam, die von ihnen 
+      angebotenen Dienstleistungen genau zu prüfen oder prüfen zu lassen. Der Handel ohne erforderliche 
+      BaFin-Erlaubnis könnte mit einer erheblichen Strafe von bis zu fünf Jahren Freiheitsentzug belegt werden. 
+      Es ist wichtig zu beachten, dass Unwissenheit grundsätzlich keine 
+      Schutz vor rechtlichen Konsequenzen bietet. <a href="#sources">[5]</a>
+
+        
+      </p>
+
+
+
+      
       
 
       
@@ -107,4 +132,4 @@ const RegulatoryCryptoCustodyPart1 = () => {
   );
 };
 
-export default RegulatoryCryptoCustodyPart1;
+export default RegulatoryCryptoCustodyPart2;

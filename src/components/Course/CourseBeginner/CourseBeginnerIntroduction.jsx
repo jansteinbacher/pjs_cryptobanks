@@ -12,7 +12,7 @@ const CourseBeginnerIntroduction = () => {
         zum Thema Kryptoassets erhalten möchtest? Zudem interessierst du dich
         für die Einbindung von Kryptoassets in traditionelle Finanzprodukte und
         möchtest Kundenbedürfnisse im Bereich Kryptoassets verstehen? Dann ist
-        der Beginner-Kurs genau das richtige für dich. Aus der Perspeltive von
+        der Beginner-Kurs genau das Richtige für dich. Aus der Perspektive von
         Bernd, dem Geschäftsführer der fikitven Silberbach & Söhne Bank tauchst
         du in die Welt der Kryptoassets ein.
       </p>

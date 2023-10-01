@@ -12,6 +12,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${Header})`,
           minHeight: '60vh', // Stellen Sie sicher, dass die Höhe ausreichend ist
+          
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white">
