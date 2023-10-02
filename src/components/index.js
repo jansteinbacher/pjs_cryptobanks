@@ -7,7 +7,7 @@ export { default as Footer } from "./Footer";
 export { default as Overview } from "./Overview/Overview";
 export { default as DragAndDrop } from "./DragAndDrop"; 
 
-export { default as DecisionTree } from "./decisionTree/DecisionTree";
+export { default as DecisionTree } from "./DecisionTree/DecisionTree";
 
 export { default as News } from "./News";
 export { default as Survey } from "./Survey";
