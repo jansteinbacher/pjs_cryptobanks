@@ -6,6 +6,7 @@ import IntroductionCryptoAssetsPart2 from './IntroductionCryptoAssetsPart2';
 import IntroductionCryptoAssetsPart3 from './IntroductionCryptoAssetsPart3';
 import IntroductionCryptoAssetsPart4 from './IntroductionCryptoAssetsPart4';
 import IntroductionCryptoAssetsPart5 from './IntroductionCryptoAssetsPart5';
+import IntroductionCryptoAssetsExpert from './IntroductionCryptoAssetsExpert';
 
 const IntroductionCryptoAssets = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -17,6 +18,7 @@ const IntroductionCryptoAssets = () => {
     IntroductionCryptoAssetsPart3,
     IntroductionCryptoAssetsPart4,
     IntroductionCryptoAssetsPart5,
+    IntroductionCryptoAssetsExpert,
     IntroductionCryptoAssetsQuiz,
   ];
 

@@ -23,6 +23,10 @@ import TypesOfCryptoAssetsPart4 from '../../LearningUnit/TypesOfCryptoAssets/Typ
 import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart5';
 import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart1';
 import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart2';
+import IntroductionCryptoAssetsExpert from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsExpert';
+import IntroductionBlockchainExpert from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainExpert';
+import TypesOfCryptoAssetsExpert from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsExpert';
+import OpportunitiesAndChallengesCryptoAssetsExpert from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsExpert';
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -34,21 +38,25 @@ const CourseBeginnerArticle = () => {
     IntroductionCryptoAssetsPart3,
     IntroductionCryptoAssetsPart4,
     IntroductionCryptoAssetsPart5,
+    IntroductionCryptoAssetsExpert,
     IntroductionCryptoAssetsPart6,
     IntroductionCryptoAssetsQuiz,
     IntroductionBlockchainPart1,
     IntroductionBlockchainPart2,
     IntroductionBlockchainPart3,
     IntroductionBlockchainPart4,
+    IntroductionBlockchainExpert,
     IntroductionBlockchainQuiz,
     TypesOfCryptoAssetsPart1,
     TypesOfCryptoAssetsPart2,
     TypesOfCryptoAssetsPart3,
     TypesOfCryptoAssetsPart4,
     TypesOfCryptoAssetsPart5,
+    TypesOfCryptoAssetsExpert,
     TypesOfCryptoAssetsQuiz,
     OpportunitiesAndChallengesPart1,
     OpportunitiesAndChallengesPart2,
+    OpportunitiesAndChallengesCryptoAssetsExpert,
     OpportunitiesAndChallengesQuiz,
   ];
 
