@@ -36,4 +36,9 @@ export { default as CryptoAssetRegulation } from "./LearningUnit/CrytoAssetRegul
 export { default as TypesOfCryptoAssets } from "./LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsArticle"
 export { default as OpportunitiesAndChallengesCryptoAssets } from "./LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsArticle"
 
+export { default as CryptoCustodyApplicationAreas } from "./LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasArticle"
+export { default as CryptoCustodyChallenges } from "./LearningUnit/CryptoCustodyChallenges/CryptoCustodyChallengesArticle"
+export { default as CryptoCustodyRegulation } from "./LearningUnit/CryptoCustodyRegulation/CryptoCustodyRegulationArticle"
+export { default as IntroductionCryptoCustody } from "./LearningUnit/IntroductionCryptoCustody/IntroductionCryptoCustodyArticle"
+
 export { default as Myths} from "./Myths";

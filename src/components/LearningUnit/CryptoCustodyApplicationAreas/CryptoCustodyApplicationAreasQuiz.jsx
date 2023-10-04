@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ApplicationAreaQuiz = () => {
+const CryptoCustodyApplicationAreasQuiz = () => {
   const questions = [
     {
       question:
@@ -241,4 +241,4 @@ const ApplicationAreaQuiz = () => {
   );
 };
 
-export default ApplicationAreaQuiz;
+export default CryptoCustodyApplicationAreasQuiz;

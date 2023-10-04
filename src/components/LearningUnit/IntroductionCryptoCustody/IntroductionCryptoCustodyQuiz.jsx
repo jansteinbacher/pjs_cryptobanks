@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-const CryptoCustodyQuiz = () => {
+const IntroductionCryptoCustodyQuiz = () => {
   const questions = [
     {
-      question:
-        "Warum sind private Schlüssel bei Krypto-Assets wichtig?",
+      question: 'Warum sind private Schlüssel bei Krypto-Assets wichtig?',
       options: [
-        "Sie ermöglichen den Zugang zu Zentralbankreserven.",
-        "Sie sind erforderlich, um Krypto-Assets zu erzeugen.",
-        "Private Schlüssel ermöglichen den Zugang und die Verfügungsgewalt über Kryptoassets.",
-        "Private Schlüssel dienen als Identifikationsmerkmal für Steuerzwecke.",
+        'Sie ermöglichen den Zugang zu Zentralbankreserven.',
+        'Sie sind erforderlich, um Krypto-Assets zu erzeugen.',
+        'Private Schlüssel ermöglichen den Zugang und die Verfügungsgewalt über Kryptoassets.',
+        'Private Schlüssel dienen als Identifikationsmerkmal für Steuerzwecke.',
       ],
       correctAnswerIndex: 2,
     },
-    
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -125,7 +123,7 @@ const CryptoCustodyQuiz = () => {
                         <button
                           key={index}
                           className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                            answered ? "opacity-50 cursor-not-allowed" : ""
+                            answered ? 'opacity-50 cursor-not-allowed' : ''
                           }`}
                           onClick={() => handleAnswerSelect(index)}
                         >
@@ -143,7 +141,7 @@ const CryptoCustodyQuiz = () => {
                               value={
                                 userAnswers[currentQuestionIndex]?.[
                                   pairIndex
-                                ] || ""
+                                ] || ''
                               }
                               onChange={(event) =>
                                 handlePairAnswerSelect(event, pairIndex)
@@ -175,13 +173,13 @@ const CryptoCustodyQuiz = () => {
               <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
               {percentageCorrect >= 50 ? (
                 <p>
-                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{" "}
+                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
                   {questions.length} Fragen richtig beantwortet. 🎉🥳
                 </p>
               ) : (
                 <>
                   <p>
-                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{" "}
+                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
                     {questions.length} Fragen richtig beantwortet. 🙌
                   </p>
                   <button
@@ -200,7 +198,7 @@ const CryptoCustodyQuiz = () => {
         <div className="bg-gray-200 p-4 rounded">
           <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
           <p>
-            Beantwortete Fragen:{" "}
+            Beantwortete Fragen:{' '}
             {userAnswers.filter((answer) => answer !== null).length}
           </p>
           <p>Richtige Antworten: {numCorrectAnswers}</p>
@@ -211,4 +209,4 @@ const CryptoCustodyQuiz = () => {
   );
 };
 
-export default CryptoCustodyQuiz;
+export default IntroductionCryptoCustodyQuiz;

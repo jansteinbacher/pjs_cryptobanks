@@ -31,7 +31,7 @@ const Sources = ({ sources }) => {
   );
 };
 
-const ApplicationAreaPart2 = () => {
+const CryptoCustodyApplicationAreasPart2 = () => {
   const articlesources = [
     'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
     'vgl. Di Nicola, Vincenzo, Riccardo Longo, Federico Mazzone und Gaetano Russo (2020). Resilient Custody of Crypto-Assets, and Threshold Multisignatures. In: Mathematics 8.10, S. 1773.',
@@ -119,4 +119,4 @@ const ApplicationAreaPart2 = () => {
   );
 };
 
-export default ApplicationAreaPart2;
+export default CryptoCustodyApplicationAreasPart2;

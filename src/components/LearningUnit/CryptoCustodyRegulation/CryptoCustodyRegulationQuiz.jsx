@@ -1,43 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-const ApplicationAreaQuiz = () => {
+const CryptoCustodyRegulationQuiz = () => {
   const questions = [
     {
       question:
-        "Was muss erfüllt sein, damit ein Kryptoverwahrgeschäft rechtlich definiert ist?",
+        'Was muss erfüllt sein, damit ein Kryptoverwahrgeschäft rechtlich definiert ist?',
       options: [
-        "Die Nutzung von Kryptoassets als Zahlungsmittel.",
-        "Die Speicherung von Kryptoassets auf persönlichen Computern.",
-        "Die Aufbewahrung, Verwaltung und Sicherung von Kryptoassets oder geheimen kryptografischen Schlüsseln im Auftrag von Dritten.",
-        "Die Verwendung von Kryptoassets für den Tausch von physischen Gütern.",
+        'Die Nutzung von Kryptoassets als Zahlungsmittel.',
+        'Die Speicherung von Kryptoassets auf persönlichen Computern.',
+        'Die Aufbewahrung, Verwaltung und Sicherung von Kryptoassets oder geheimen kryptografischen Schlüsseln im Auftrag von Dritten.',
+        'Die Verwendung von Kryptoassets für den Tausch von physischen Gütern.',
       ],
       correctAnswerIndex: 2,
     },
 
     {
       question:
-        "Was umfasst die Definition von Kryptowerten im Kreditwesengesetz?",
+        'Was umfasst die Definition von Kryptowerten im Kreditwesengesetz?',
       options: [
-        "Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden.",
-        "Digitale Darstellungen von Werten, die von natürlichen oder juristischen Personen garantiert werden.",
-        "Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden und von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.",
-        "Digitale Darstellungen von Werten, die nicht von Zentralbanken emittiert oder garantiert werden, jedoch von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.",
+        'Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden.',
+        'Digitale Darstellungen von Werten, die von natürlichen oder juristischen Personen garantiert werden.',
+        'Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden und von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.',
+        'Digitale Darstellungen von Werten, die nicht von Zentralbanken emittiert oder garantiert werden, jedoch von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.',
       ],
       correctAnswerIndex: 3,
     },
 
     {
-      question:
-        "Warum ist die Bewertung von Kryptoassets kompliziert?",
+      question: 'Warum ist die Bewertung von Kryptoassets kompliziert?',
       options: [
-        "Weil der Markt für Kryptoassets nicht volatil ist.",
-        "Weil es klare und etablierte Preise für Kryptoassets gibt.",
-        "Weil die Marktpreise von Kryptoassets oft schwanken und keine festen Preise existieren.",
-        "Weil Kryptoassets nicht bewertet werden müssen nach IFRS.",
+        'Weil der Markt für Kryptoassets nicht volatil ist.',
+        'Weil es klare und etablierte Preise für Kryptoassets gibt.',
+        'Weil die Marktpreise von Kryptoassets oft schwanken und keine festen Preise existieren.',
+        'Weil Kryptoassets nicht bewertet werden müssen nach IFRS.',
       ],
       correctAnswerIndex: 2,
-    }
-    
+    },
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -149,7 +147,7 @@ const ApplicationAreaQuiz = () => {
                         <button
                           key={index}
                           className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                            answered ? "opacity-50 cursor-not-allowed" : ""
+                            answered ? 'opacity-50 cursor-not-allowed' : ''
                           }`}
                           onClick={() => handleAnswerSelect(index)}
                         >
@@ -167,7 +165,7 @@ const ApplicationAreaQuiz = () => {
                               value={
                                 userAnswers[currentQuestionIndex]?.[
                                   pairIndex
-                                ] || ""
+                                ] || ''
                               }
                               onChange={(event) =>
                                 handlePairAnswerSelect(event, pairIndex)
@@ -199,13 +197,13 @@ const ApplicationAreaQuiz = () => {
               <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
               {percentageCorrect >= 50 ? (
                 <p>
-                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{" "}
+                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
                   {questions.length} Fragen richtig beantwortet. 🎉🥳
                 </p>
               ) : (
                 <>
                   <p>
-                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{" "}
+                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
                     {questions.length} Fragen richtig beantwortet. 🙌
                   </p>
                   <button
@@ -224,7 +222,7 @@ const ApplicationAreaQuiz = () => {
         <div className="bg-gray-200 p-4 rounded">
           <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
           <p>
-            Beantwortete Fragen:{" "}
+            Beantwortete Fragen:{' '}
             {userAnswers.filter((answer) => answer !== null).length}
           </p>
           <p>Richtige Antworten: {numCorrectAnswers}</p>
@@ -235,4 +233,4 @@ const ApplicationAreaQuiz = () => {
   );
 };
 
-export default ApplicationAreaQuiz;
+export default CryptoCustodyRegulationQuiz;

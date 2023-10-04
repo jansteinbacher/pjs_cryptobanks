@@ -27,6 +27,10 @@ import {
   CourseExpertArticle,
   CourseExpertIntroduction,
   CourseExpertEnd,
+  CryptoCustodyApplicationAreas,
+  CryptoCustodyChallenges,
+  CryptoCustodyRegulation,
+  IntroductionCryptoCustody,
 } from './components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -76,8 +80,22 @@ const App = () => (
           path="/opportunities-challenges-crypto-assets"
           element={<OpportunitiesAndChallengesCryptoAssets />}
         />
-
-
+        <Route
+          path="/crypto-custody-application-areas"
+          element={<CryptoCustodyApplicationAreas />}
+        />
+        <Route
+          path="/crypto-custody-challenges"
+          element={<CryptoCustodyChallenges />}
+        />
+        <Route
+          path="/crypto-custody-regulation"
+          element={<CryptoCustodyRegulation />}
+        />
+        <Route
+          path="/introduction-crypto-custody"
+          element={<IntroductionCryptoCustody />}
+        />
 
         <Route path="/mythbusters" element={<Myths />} />
 
@@ -109,7 +127,7 @@ const App = () => (
         <Route
           path="/course-expert-introduction"
           element={<CourseExpertIntroduction />}
-        />    
+        />
 
         <Route
           path="/articles/course-expert-end"
