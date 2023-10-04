@@ -49,24 +49,24 @@ const Overview = () => {
       term: 'Grundlagen der Kryptoassets-Verwahrung',
       explanation:
         'Bekomme ein Verständnis für die Grundlagen der Kryptoasset-Verwahrung.',
-      link: '/grapes-page',
+      link: '/introduction-crypto-custody?from-overview',
     },
     {
       term: 'Arten von Kryptoasset-Verwahrlösungen',
       explanation: 'Lerne verschiedene Kryptoasset-Verwahrlösungen kennen.',
-      link: '/grapes-page',
+      link: '/crypto-custody-application-areas?from-overview',
     },
     {
       term: 'Regulatorik zur Kryptoasset-Verwahrung',
       explanation:
         'Erhalte einen Einblick in die Regulatorik zur Kryptoasset-Verwahrung.',
-      link: '/grapes-page',
+      link: '/crypto-custody-regulation?from-overview',
     },
     {
       term: 'Herausforderungen und Zukunftsaussichten zur Kryptoasset-Verwahrung',
       explanation:
         'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Kryptoasset-Verwahrung.',
-      link: '/grapes-page',
+      link: '/crypto-custody-challenges?from-overview',
     },
 
     // Add more terms here

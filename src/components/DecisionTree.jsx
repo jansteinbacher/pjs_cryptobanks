@@ -175,9 +175,34 @@ function DecisionTree() {
                 <li>
                   <Link
                     className="hover:underline"
-                    to="/course-cryptoassetssafeguarding"
+                    to="/introduction-crypto-custody?from=decisiontree"
                   >
-                    Einführung in die Kryptoasset-Verwahrung
+                    Einführung in die Kryptoasset-Verwahrung (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-application-areas?from=decisiontree"
+                  >
+                    Arten von Verwahrlösungen (Dauer 1 Stunde)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-regulation?from=decisiontree"
+                  >
+                    Regulatorik zu Kryptoasset-Verwahrung (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-challenges?from=decisiontree"
+                  >
+                    Herausforderungen und Zukunftsaussichten der
+                    Kryptoasset-Verwahrung (Dauer 30 Minuten)
                   </Link>
                 </li>
               </ul>
