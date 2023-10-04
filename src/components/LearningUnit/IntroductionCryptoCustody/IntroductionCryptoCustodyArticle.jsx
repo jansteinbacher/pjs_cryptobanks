@@ -2,44 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import '../../../course.css';
-import CryptoCustodyPart1 from '../../LearningUnit/IntroductionCryptoCustody/IntroductionCryptoCustodyPart1';
-import CryptoCustodyPart2 from '../../LearningUnit/IntroductionCryptoCustody/IntroductionCryptoCustodyPart2';
-import CryptoCustodyPart3 from '../../LearningUnit/IntroductionCryptoCustody/IntroductionCryptoCustodyPart3';
-import CryptoCustodyQuiz from '../../LearningUnit/IntroductionCryptoCustody/IntroductionCryptoCustodyQuiz';
-import ApplicationAreaPart1 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart1';
-import ApplicationAreaPart2 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart2';
-import ApplicationAreaPart3 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart3';
-import ApplicationAreaPart4 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart4';
-import ApplicationAreaPart5 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart5';
-import ApplicationAreaPart6 from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasPart6';
-import ApplicationAreaQuiz from '../../LearningUnit/CryptoCustodyApplicationAreas/CryptoCustodyApplicationAreasQuiz';
-import RegulatoryCryptoCustodyPart1 from '../../LearningUnit/CryptoCustodyRegulation/CryptoCustodyRegulationPart1.jsx';
-import RegulatoryCryptoCustodyPart2 from '../../LearningUnit/CryptoCustodyRegulation/CryptoCustodyRegulationPart2.jsx';
-import RegulatoryCryptoCustodyQuiz from '../../LearningUnit/CryptoCustodyRegulation/CryptoCustodyRegulationQuiz.jsx';
-import CryptoCustodyChallengesPart1 from '../../LearningUnit/CryptoCustodyChallenges/CryptoCustodyChallengesPart1';
-import CryptoCustodyChallengesPart2 from '../../LearningUnit/CryptoCustodyChallenges/CryptoCustodyChallengesPart2';
+import IntroductionCryptoCustodyPart1 from './IntroductionCryptoCustodyPart1';
+import IntroductionCryptoCustodyPart2 from './IntroductionCryptoCustodyPart2';
+import IntroductionCryptoCustodyPart3 from './IntroductionCryptoCustodyPart3';
+import IntroductionCryptoCustodyQuiz from './IntroductionCryptoCustodyQuiz';
 
-const CourseExpertArticle = () => {
+const IntroductionCryptoCustody = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
   const sections = [
-    CryptoCustodyPart1,
-    CryptoCustodyPart2,
-    CryptoCustodyPart3,
-    CryptoCustodyQuiz,
-    ApplicationAreaPart1,
-    ApplicationAreaPart2,
-    ApplicationAreaPart3,
-    ApplicationAreaPart4,
-    ApplicationAreaPart5,
-    ApplicationAreaPart6,
-    ApplicationAreaQuiz,
-    RegulatoryCryptoCustodyPart1,
-    RegulatoryCryptoCustodyPart2,
-    RegulatoryCryptoCustodyQuiz,
-    CryptoCustodyChallengesPart1,
-    CryptoCustodyChallengesPart2,
+    IntroductionCryptoCustodyPart1,
+    IntroductionCryptoCustodyPart2,
+    IntroductionCryptoCustodyPart3,
+    IntroductionCryptoCustodyQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -49,7 +25,7 @@ const CourseExpertArticle = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-expert?from=expert-course';
+      window.location.href = '/introduction-crypto-custody?from=decisiontree';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -65,6 +41,12 @@ const CourseExpertArticle = () => {
   const SectionComponent = sections[sectionIndex];
   const isLastSection = sectionIndex === sections.length - 1;
   const isFirstSection = sectionIndex === 0;
+
+  const isComingFromPreviousPage =
+    window.location.search.includes('from=decisiontree');
+  const buttonDestination = isComingFromPreviousPage
+    ? '/decisiontree'
+    : '/overview';
 
   useEffect(() => {
     if (showRewardBanner) {
@@ -113,10 +95,10 @@ const CourseExpertArticle = () => {
         )}
         {isLastSection ? (
           <a
-            href="/articles/course-advanced-end"
+            href={buttonDestination}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
-            Kurs abschließen
+            Zurück zur Übersicht
           </a>
         ) : (
           <button
@@ -140,4 +122,4 @@ const CourseExpertArticle = () => {
   );
 };
 
-export default CourseExpertArticle;
+export default IntroductionCryptoCustody;

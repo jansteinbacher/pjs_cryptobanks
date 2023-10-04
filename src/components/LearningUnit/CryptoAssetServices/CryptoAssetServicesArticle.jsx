@@ -31,7 +31,7 @@ const CourseCryptoAssetServices = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/crypto-asset-services';
+      window.location.href = '/crypto-asset-services?from=decisiontree';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);

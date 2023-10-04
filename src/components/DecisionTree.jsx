@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-//TODO: Links should open in new window 
+//TODO: Links should open in new window
 //Download Document with Lernplan
 //Make it prettier
 
@@ -94,8 +94,28 @@ function DecisionTree() {
               <strong>Kryptoassets</strong>
               <ul className="list-disc pl-6 mt-4">
                 <li>
-                  <Link className="hover:underline" to="/course-cryptoassets">
-                    Einführung in Kryptoassets (Dauer 2 Stunden)
+                  <Link
+                    className="hover:underline"
+                    to="/introduction-crypto-assets?from=decisiontree"
+                  >
+                    Einführung in Kryptoassets (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/types-of-crypto-assets?from=decisiontree"
+                  >
+                    Arten von Kryptoassets (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/opportunities-challenges-crypto-assets?from=decisiontree"
+                  >
+                    Herausforderungen und Zukunftsaussichten von Kryptoassets
+                    (Dauer 30 Minuten)
                   </Link>
                 </li>
               </ul>
@@ -106,7 +126,10 @@ function DecisionTree() {
               <strong>Blockchain-Technologie</strong>
               <ul className="list-disc pl-6 mt-4">
                 <li>
-                  <Link className="hover:underline" to="/course-blockchain">
+                  <Link
+                    className="hover:underline"
+                    to="/introduction-blockchain?from=decisiontree"
+                  >
                     Einführung in die Blockchain-Technologie (Dauer 30 Minuten)
                   </Link>
                 </li>
@@ -120,7 +143,7 @@ function DecisionTree() {
                 <li>
                   <Link
                     className="hover:underline"
-                    to="/course-cryptoassetsregulation"
+                    to="/crypto-asset-regulation?from=decisiontree"
                   >
                     Regulatorische Landschaft auf nationaler und internationaler
                     Ebene (Dauer 30 Minuten)
@@ -136,7 +159,7 @@ function DecisionTree() {
                 <li>
                   <Link
                     className="hover:underline"
-                    to="/course-cryptoassetservices"
+                    to="/crypto-asset-services?from=decisiontree"
                   >
                     Potenzielle Anwendungsfelder von Kryptoassets (Dauer 30
                     Minuten)
@@ -152,9 +175,34 @@ function DecisionTree() {
                 <li>
                   <Link
                     className="hover:underline"
-                    to="/course-cryptoassetssafeguarding"
+                    to="/introduction-crypto-custody?from=decisiontree"
                   >
-                    Einführung in die Kryptoasset-Verwahrung
+                    Einführung in die Kryptoasset-Verwahrung (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-application-areas?from=decisiontree"
+                  >
+                    Arten von Verwahrlösungen (Dauer 1 Stunde)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-regulation?from=decisiontree"
+                  >
+                    Regulatorik zu Kryptoasset-Verwahrung (Dauer 30 Minuten)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    to="/crypto-custody-challenges?from=decisiontree"
+                  >
+                    Herausforderungen und Zukunftsaussichten der
+                    Kryptoasset-Verwahrung (Dauer 30 Minuten)
                   </Link>
                 </li>
               </ul>

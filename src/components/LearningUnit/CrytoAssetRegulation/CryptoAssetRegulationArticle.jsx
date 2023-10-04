@@ -23,7 +23,7 @@ const CryptoAssetRegulation = () => {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/crypto-asset-regulation';
+      window.location.href = '/crypto-asset-regulation?from=decisiontree';
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);

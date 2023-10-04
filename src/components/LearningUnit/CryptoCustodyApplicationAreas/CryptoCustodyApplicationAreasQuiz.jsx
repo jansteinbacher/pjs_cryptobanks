@@ -1,19 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-const CryptoCustodyQuiz = () => {
+const CryptoCustodyApplicationAreasQuiz = () => {
   const questions = [
     {
       question:
-        "Warum sind private Schlüssel bei Krypto-Assets wichtig?",
+        'Was kennzeichnet den Ansatz des Self-Custody bei der Aufbewahrung von Kryptoassets?',
       options: [
-        "Sie ermöglichen den Zugang zu Zentralbankreserven.",
-        "Sie sind erforderlich, um Krypto-Assets zu erzeugen.",
-        "Private Schlüssel ermöglichen den Zugang und die Verfügungsgewalt über Kryptoassets.",
-        "Private Schlüssel dienen als Identifikationsmerkmal für Steuerzwecke.",
+        'Die Kontrolle über private Schlüssel wird an eine dritte Partei abgegeben.',
+        'Es gibt keine Notwendigkeit, private Schlüssel zu verwenden.',
+        'Der Nutzer trägt die gesamte Verantwortung für die Sicherheit des privaten Schlüssels.',
+        'Kryptoassets werden automatisch verschlüsselt und geschützt.',
       ],
       correctAnswerIndex: 2,
     },
-    
+    {
+      question: 'Welche Verwendungssituation ist typisch für Hot Wallets?',
+      options: [
+        'Langfristige Speicherung von Kryptoassets.',
+        'Gelegentliche Transaktionen mit größerem Vermögen.',
+        'Sicherung großer Mengen an Kryptoassets.',
+        'Hochsichere Verwahrung von Kryptoassets.',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question:
+        'Welche Art von Gerät speichert den privaten Schlüssel bei einer Hardware-Wallet?',
+      options: [
+        'Cloud-Server',
+        'Physische Festplatte',
+        'Blockchain-Netzwerk',
+        'Mobiltelefon',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question: 'Wie funktioniert die Multi-Signature-Technologie?',
+      options: [
+        'Es braucht eine spezifische Teilmenge der Teilnehmer, um das Ergebnis zu reproduzieren',
+        'Es braucht mehrere private Schlüssel um eine Transaktion zu autorisieren',
+        'Mehrere Schlüssel können alleine auf ein Wallet zugreifen',
+        'Jeder Teilnehmer an einer kryptografischen Operation besitzt ein Teil desprivaten Schlüssels',
+      ],
+      correctAnswerIndex: 3,
+    },
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -125,7 +155,7 @@ const CryptoCustodyQuiz = () => {
                         <button
                           key={index}
                           className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                            answered ? "opacity-50 cursor-not-allowed" : ""
+                            answered ? 'opacity-50 cursor-not-allowed' : ''
                           }`}
                           onClick={() => handleAnswerSelect(index)}
                         >
@@ -143,7 +173,7 @@ const CryptoCustodyQuiz = () => {
                               value={
                                 userAnswers[currentQuestionIndex]?.[
                                   pairIndex
-                                ] || ""
+                                ] || ''
                               }
                               onChange={(event) =>
                                 handlePairAnswerSelect(event, pairIndex)
@@ -175,13 +205,13 @@ const CryptoCustodyQuiz = () => {
               <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
               {percentageCorrect >= 50 ? (
                 <p>
-                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{" "}
+                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
                   {questions.length} Fragen richtig beantwortet. 🎉🥳
                 </p>
               ) : (
                 <>
                   <p>
-                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{" "}
+                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
                     {questions.length} Fragen richtig beantwortet. 🙌
                   </p>
                   <button
@@ -200,7 +230,7 @@ const CryptoCustodyQuiz = () => {
         <div className="bg-gray-200 p-4 rounded">
           <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
           <p>
-            Beantwortete Fragen:{" "}
+            Beantwortete Fragen:{' '}
             {userAnswers.filter((answer) => answer !== null).length}
           </p>
           <p>Richtige Antworten: {numCorrectAnswers}</p>
@@ -211,4 +241,4 @@ const CryptoCustodyQuiz = () => {
   );
 };
 
-export default CryptoCustodyQuiz;
+export default CryptoCustodyApplicationAreasQuiz;
