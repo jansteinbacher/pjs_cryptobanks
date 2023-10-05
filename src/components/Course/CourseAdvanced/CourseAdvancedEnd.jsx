@@ -48,7 +48,6 @@ const CourseAdvancedEnd = () => {
               <div className="text-center">
                 <div className="flex flex-col items-center">
                   <FaFilePdf className="text-5xl text-green-400 mb-2" />{' '}
-                  {/* Icon für PDF-Download */}
                   <a
                     href="src/images/Kryptoassets.pdf"
                     className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
@@ -61,7 +60,6 @@ const CourseAdvancedEnd = () => {
               <div className="text-center mt-8">
                 <div className="flex flex-col items-center">
                   <PiCertificate className="text-5xl text-green-400 mb-2" />{' '}
-                  {/* Icon für Zertifikat */}
                   <a
                     href="/weitere-ressourcen"
                     className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
@@ -107,7 +105,7 @@ const CourseAdvancedEnd = () => {
                 alt="Regulation"
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
-              <Link to="/course2">
+              <Link to="/course-advanced-introduction">
                 <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
                   Zum Experten Kurs
                 </button>
