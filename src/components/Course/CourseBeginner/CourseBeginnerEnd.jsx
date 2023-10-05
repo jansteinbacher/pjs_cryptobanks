@@ -5,6 +5,7 @@ import BusinessModel from '../../../images/businessModel.png';
 import CourseCompleted from '../../../images/firework_course_completed.mp4';
 import { FaFilePdf } from 'react-icons/fa';
 import { PiCertificate } from 'react-icons/pi';
+import Zusammenfassung from '../../../images/Kryptoassets.pdf';
 
 const CourseEndBeginner = () => {
   const [isSummaryVisible, setSummaryVisible] = useState(true);
@@ -50,12 +51,13 @@ const CourseEndBeginner = () => {
                   <FaFilePdf className="text-5xl text-green-400 mb-2" />{' '}
                   {/* Icon für PDF-Download */}
                   <a
-                    href="src/images/Kryptoassets.pdf"
-                    className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
-                    download
-                  >
-                    Zusammenfassung herunterladen
-                  </a>
+                  href={Zusammenfassung}
+                  className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
+                  download="Kryptoassets.pdf"
+                >
+                  Zusammenfassung herunterladen
+                </a>
+
                 </div>
               </div>
               <div className="text-center mt-8">
@@ -72,7 +74,7 @@ const CourseEndBeginner = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <video autoPlay loop muted className="w-full">
+              <video autoPlay muted className="w-full">
                 <source src={CourseCompleted} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
