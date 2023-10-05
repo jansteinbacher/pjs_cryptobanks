@@ -12,7 +12,9 @@ const CourseExpertIntroduction = () => {
         tiefer in die Welt der praktischen Anwendungsfälle einzutauchen. In
         diesem Abschnitt werden wir uns mit einem konkreten Anwendungsfall
         befassen, der die Grundlage für viele weitere spannende Aspekte bildet:
-        die Kryptoasset-Verwahrung.
+        die Kryptoasset-Verwahrung. In diesem Kurs werden wir gemeinsam in die
+        tiefere Welt der Kryptoassets eintauchen, und zwar aus der Perspektive
+        von Tobias, einem Produktmanager der fiktiven Silberbach & Söhne Bank.
       </p>
 
       <div className="p-4 mb-12 bg-green-200 rounded-lg">

@@ -33,9 +33,9 @@ const CourseAdvancedIntroduction = () => {
           Geschäftbereich zu evaluieren. Da Simone bereits über fundierte
           Grundkenntnisse zu Kryptoassets verfügt, machte sie sich daran, ein
           tieferes Verständnis für das wichtige Thema der Kryptoregulierung zu
-          entwickeln. Sie war sich bewusst, dass die Integration von
+          entwickeln. Sie ist sich bewusst, dass die Integration von
           Kryptoassets in die traditionelle Finanzwelt regulatorische Aspekte
-          mit sich brachte, die es zu verstehen galt.
+          mit sich bringt, die es zu verstehen gilt.
         </p>
         <p className=" italic text-justify mb-8">
           Lerne Simone jetzt näher kennen und entdecke gemeinsam mit ihr die
