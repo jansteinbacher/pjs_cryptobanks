@@ -34,15 +34,9 @@ const Sources = ({ sources }) => {
 
 const CryptoCustodyChallengesPart2 = () => {
   const articlesources = [
-    'Jaroucheh, Z. und Baraq G. 2023. Crypto Assets Custody: Taxonomy, Components, and Open Challenges. in: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 5',
-    'ebd.',
-    'ebd.',
-    'ebd.',
-    'ebd.',
-    'ebd.',
-    'ebd.',
-    'Reindl, T. 2023. Nasdaq: Kryptoverwahrung noch für dieses Jahr geplant. https://www.btc-echo.de/schlagzeilen/nasdaq-kryptoverwahrung-noch-im-zweiten-quartal-geplant-161586/. [abgerufen am 28.08.2023].',
-    'Thuo, C. 2023. US-Ausschuss verabschiedet Gesetz zur Krypto-Verwahrung – Chancer-Vorverkauf beschleunigt sich. https://invezz.com/de/news/2023/07/31/us-ausschuss-gesetz-krypto-verwahrung-chancer-vorverkauf-beschleunigt/ [abgerufen am 28.08.2023].',
+    'Z. Jaroucheh and G. Baraq, “Crypto Assets Custody: Taxonomy, Components, and Open Challenges,” 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), Dubai, United Arab Emirates, 2023, pp. 1-6.',
+    'T. Reindl, “Nasdaq: Kryptoverwahrung noch für dieses Jahr geplant,” BTC-ECHO, Mar. 24, 2023. [Online]. Available: https://www.btc-echo.de/schlagzeilen/nasdaq-kryptoverwahrung-noch-im-zweiten-quartal-geplant-161586/. [Accessed: Sept. 29, 2023].',
+    'C. Thuo, “US-Ausschuss verabschiedet Gesetz zur Krypto-Verwahrung – Chancer-Vorverkauf beschleunigt sich,” invezz.com, Jul. 31, 2023. [Online]. Available: https://invezz.com/de/news/2023/07/31/us-ausschuss-gesetz-krypto-verwahrung-chancer-vorverkauf-beschleunigt/. [Accessed: Sept. 29, 2023]',
   ];
 
   return (
@@ -80,7 +74,7 @@ const CryptoCustodyChallengesPart2 = () => {
         soll eine sichere Verwahrungslösung den Grundbaustein für das
         tokenisierte Wirtschaftssystem bilden. Während die Gewährleistung von
         Sicherheit garantiert werden soll, soll auch eine maximale Effizienz bei
-        Kryptoabwicklungen existieren. <a href="#sources">[2]</a>
+        Kryptoabwicklungen existieren <a href="#sources">[1]</a>.
       </p>
 
       <div className="flex justify-center items-center">
@@ -93,7 +87,7 @@ const CryptoCustodyChallengesPart2 = () => {
         Verwahrungsdienstleistungen für Bitcoin und Ethereum zur Verfügung
         gestellt wird. Das Finanzdienstleistungsunternehmen Nasdaq stellt sich
         dabei der Aufgabe die notwendigen technologischen Strukturen und
-        regulatorischen Einwilligungen zu erlangen. <a href="#sources">[3]</a>
+        regulatorischen Einwilligungen zu erlangen <a href="#sources">[2]</a>.
       </p>
 
       <p className="mb-8">
@@ -102,8 +96,8 @@ const CryptoCustodyChallengesPart2 = () => {
         verwahren. Damit soll dem Nutzer die Macht und Privatsphäre bei der
         Verwaltung seiner eigenen digitalen Assets überlassen werden. Durch die
         Möglichkeit der eigenständigen Verwaltung soll eine breitere Akzeptanz
-        in Bezug auf digitale Assets geschaffen werden.{' '}
-        <a href="#sources">[4]</a>
+        in Bezug auf digitale Assets geschaffen werden{' '}
+        <a href="#sources">[3]</a>.
       </p>
 
       <Sources sources={articlesources} />

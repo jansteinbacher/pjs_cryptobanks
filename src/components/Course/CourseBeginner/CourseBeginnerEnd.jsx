@@ -49,7 +49,6 @@ const CourseEndBeginner = () => {
               <div className="text-center">
                 <div className="flex flex-col items-center">
                   <FaFilePdf className="text-5xl text-green-400 mb-2" />{' '}
-                  {/* Icon für PDF-Download */}
                   <a
                   href={Zusammenfassung}
                   className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
@@ -63,7 +62,6 @@ const CourseEndBeginner = () => {
               <div className="text-center mt-8">
                 <div className="flex flex-col items-center">
                   <PiCertificate className="text-5xl text-green-400 mb-2" />{' '}
-                  {/* Icon für Zertifikat */}
                   <a
                     href="/weitere-ressourcen"
                     className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
@@ -109,7 +107,7 @@ const CourseEndBeginner = () => {
                 alt="Regulation"
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
-              <Link to="/course2">
+              <Link to="/course-advanced-introduction">
                 <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
                   Zum Fortgeschrittenen Kurs
                 </button>
@@ -144,7 +142,19 @@ const CourseEndBeginner = () => {
               <p className="mt-4 font-semibold">
                 Lektion 1: Grundverständnis zu Kryptoassets
               </p>
-              <ul className="list-disc mt-2 space-y-2 ml-6"></ul>
+              <ul className="list-disc mt-2 space-y-2 ml-6">
+                <li>
+                  Marktkapitalisierung von Kryptowährungen:{' '}
+                  <a
+                    className="hover:underline"
+                    href="https://www.statista.com/statistics/730876/cryptocurrency-maket-value/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://www.statista.com/statistics/730876/cryptocurrency-maket-value/
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="mb-8">
               <p className="mt-4 font-semibold">

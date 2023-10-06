@@ -34,23 +34,10 @@ const Sources = ({ sources }) => {
 
 const CryptoCustodyRegulationPart2 = () => {
   const articlesources = [
-    'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
-    'vgl. Di Nicola, Vincenzo, Riccardo Longo, Federico Mazzone und Gaetano Russo (2020). Resilient Custody of Crypto-Assets, and Threshold Multisignatures. In: Mathematics 8.10, S. 1773.',
-    'ebd.',
-    'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
-    'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
-    'vgl. Di Nicola, Vincenzo, Riccardo Longo, Federico Mazzone und Gaetano Russo (2020). Resilient Custody of Crypto-Assets, and Threshold Multisignatures. In: Mathematics 8.10, S. 1773.',
-    'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
-    'ebd.',
-    'vgl. Suratkar, Saurabh, Mahesh Shirole und Sunil Bhirud (2023). Cryptocurrency Wallet: A Reviews. In: 2020 4th International Conference on Computer, Communication and Signal Processing (ICCCSP), S. 1-7.',
-    'ebd.',
-    'vgl. Jaroucheh, Zakwan und Baraq Ghaleb (2023). Crypto Assets Custody: Taxonomy, Components, and Open Challenges. In: 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), S. 1-6.',
-    'vgl. Suratkar, Saurabh, Mahesh Shirole und Sunil Bhirud (2023). Cryptocurrency Wallet: A Reviews. In: 2020 4th International Conference on Computer, Communication and Signal Processing (ICCCSP), S. 1-7.',
-    'vgl. Cabrera-Gutierrez, Antonio J., Encarnacion Castillo, Antonio Escobar-Molero, Jose A. Alvarez-Bermejo, Diego P. Morales und Luis Parrilla (2022). Integration of Hardware Security Modules and Permissioned Blockchain in Industrial IoT Networks. In: IEEE access, 2022 10, S. 114331-114345',
-    'vgl. Rezaeighaleh, Hossein und Cliff C. Zou (2019). Integration of Hardware Security Modules and Permissioned Blockchain in Industrial IoT Networks. In: 2019 IEEE Global Communications Conference (GLOBECOM)',
-    'vgl. A. Shamir (1979). How to share a secret. In: Communications of the ACM 22.11, S. 612–613',
-    'vgl. Han, Jongbeen, Mansub Song; Hyeonsang Eom, Yongseok Son (2021). An efficient multi-signature wallet in blockchain using bloom filter. In: Proceedings of the 36th Annual ACM Symposium on Applied Computing, S. 273–281',
-    'vgl. Ricci, S., Dzurenda, P., Casanova-Marqués, R., Cika, P. Marrella, A., ua. (2022). Threshold Signature for Privacy-Preserving Blockchain. In:  Business Process Management: Blockchain, Robotic Process Automation, and Central and Eastern Europe Forum. BPM 2022. Lecture Notes in Business Information Processing 459. Springer, Cham.',
+    'Bundesministerium der Justiz. (2023, Febr. 22). “Gesetz über das Kreditwesen,”  [Online]. Available: https://www.gesetze-im-internet.de/kredwg/index.html. [Accessed: Sept. 29, 2023].',
+    'BaFin. “Kryptoverwahrgeschäft,” BaFin, 2022. [Online]. Available: https://www.bafin.de/DE/Aufsicht/FinTech/Geschaeftsmodelle/DLT_Blockchain_Krypto/Kryptoverwahrgeschaeft/Kryptoverwahrgeschaeft_artikel.html. [Accessed: Sept. 29, 2023].',
+    'BaFin. “Merkblatt: Hinweise zum Tatbestand des Kryptoverwahrgeschäfts,” BaFin, 2020. [Online]. Available: https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_200302_kryptoverwahrgeschaeft.html. [Accessed: Sept. 29, 2023].',
+    'Rödl & Partner. “Kryptoverwahrgeschäft als neuer KWG-Tatbestand,” Rödl & Partner, 2020. [Online]. Available: https://www.roedl.de/themen/aufsichtsrecht/kryptoverwahrgeschaeft-kwg-tatbestand-rechtsaenderungen. [Accessed: Sept. 29, 2023].',
   ];
 
   return (
@@ -95,7 +82,7 @@ const CryptoCustodyRegulationPart2 = () => {
         Zugriff auf die verwahrten Kryptowerte oder Schlüssel haben.
         Entscheidend ist die Möglichkeit des Zugriffs auf öffentliche Adressen,
         unter denen Kryptowerte dezentral gespeichert sind, durch die Verwahrung
-        der privaten kryptografischen Schlüssel.<a href="#sources">[4]</a>
+        der privaten kryptografischen Schlüssel <a href="#sources">[3]</a>.
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Ausblick</h2>
@@ -113,7 +100,7 @@ const CryptoCustodyRegulationPart2 = () => {
         BaFin-Erlaubnis könnte mit einer erheblichen Strafe von bis zu fünf
         Jahren Freiheitsentzug belegt werden. Es ist wichtig zu beachten, dass
         Unwissenheit grundsätzlich keine Schutz vor rechtlichen Konsequenzen
-        bietet. <a href="#sources">[5]</a>
+        bietet <a href="#sources">[4]</a>.
       </p>
 
       <Sources sources={articlesources} />

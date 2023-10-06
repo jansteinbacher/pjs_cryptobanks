@@ -34,11 +34,10 @@ const Sources = ({ sources }) => {
 
 const CryptoCustodyRegulationPart1 = () => {
   const articlesources = [
-    '§ 1 Abs. 1a Satz 2 Nr. 6 KWG.',
-    'BaFin. 2022. Kryptoverwahrgeschäft. https://www.bafin.de/DE/Aufsicht/FinTech/Geschaeftsmodelle/DLT_Blockchain_Krypto/Kryptoverwahrgeschaeft/Kryptoverwahrgeschaeft_artikel.html. [abgerufen am 27.08.2023].',
-    'BaFin. 2020. Merkblatt: Hinweise zum Tatbestand des Kryptoverwahrgeschäfts, https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_200302_kryptoverwahrgeschaeft.html. [abgerufen am 27.08.2023]',
-    'ebd.',
-    'Rödl & Partner. 2020. Kryptoverwahrgeschäft als neuer KWG-Tatbestand. https://www.roedl.de/themen/aufsichtsrecht/kryptoverwahrgeschaeft-kwg-tatbestand-rechtsaenderungen. [abgerufen am 27.08.2023]',
+    'Bundesministerium der Justiz. (2023, Febr. 22). “Gesetz über das Kreditwesen,”  [Online]. Available: https://www.gesetze-im-internet.de/kredwg/index.html. [Accessed: Sept. 29, 2023].',
+    'BaFin. “Kryptoverwahrgeschäft,” BaFin, 2022. [Online]. Available: https://www.bafin.de/DE/Aufsicht/FinTech/Geschaeftsmodelle/DLT_Blockchain_Krypto/Kryptoverwahrgeschaeft/Kryptoverwahrgeschaeft_artikel.html. [Accessed: Sept. 29, 2023].',
+    'BaFin. “Merkblatt: Hinweise zum Tatbestand des Kryptoverwahrgeschäfts,” BaFin, 2020. [Online]. Available: https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_200302_kryptoverwahrgeschaeft.html. [Accessed: Sept. 29, 2023].',
+    'Rödl & Partner. “Kryptoverwahrgeschäft als neuer KWG-Tatbestand,” Rödl & Partner, 2020. [Online]. Available: https://www.roedl.de/themen/aufsichtsrecht/kryptoverwahrgeschaeft-kwg-tatbestand-rechtsaenderungen. [Accessed: Sept. 29, 2023].',
   ];
 
   const isComingFromPreviousPage =
@@ -86,8 +85,8 @@ const CryptoCustodyRegulationPart1 = () => {
         von Kryptowerten oder privaten kryptografischen Schlüsseln, die dazu
         dienen, Kryptowerte zu halten, zu speichern oder darüber zu verfügen,
         für andere oder Sicherung von privaten kryptografischen Schlüsseln, die
-        dazu dienen, für andere Kryptowertpapiere zu halten.”{' '}
-        <a href="#sources">[1]</a>
+        dazu dienen, für andere Kryptowertpapiere zu halten”{' '}
+        <a href="#sources">[1]</a>.
       </p>
 
       <p className="mb-8">
@@ -155,8 +154,8 @@ const CryptoCustodyRegulationPart1 = () => {
         auf die dynamische Entwicklung von Kryptoassets und ihre zunehmende
         Bedeutung als potenzielle Finanzinstrumente. Banken müssen die
         Definition berücksichtigen, um ihre Rechnungslegung und Bilanzierung
-        korrekt zu handhaben und den rechtlichen Anforderungen gerecht zu
-        werden. <a href="#sources">[3]</a>
+        korrekt zu handhaben und den rechtlichen Anforderungen gerecht zu werden{' '}
+        <a href="#sources">[3]</a>.
       </p>
 
       <Sources sources={articlesources} />
