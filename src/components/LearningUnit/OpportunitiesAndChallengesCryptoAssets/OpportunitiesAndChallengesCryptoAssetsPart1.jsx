@@ -40,8 +40,6 @@ const OpportunitiesAndChallengesPart1 = () => {
     'G. B. Gorton and J. Zhang, Bank Runs During Crypto Winter. To be published.  [Online]. Available: http://dx.doi.org/10.2139/ssrn.4447703. [Accessed: Sept. 22, 2023].',
     'A. de Vries, U. Gallersdörfer, L. Klaaßen, C. Stoll, “Revisiting Bitcoin’s carbon footprint,” Joule, vol. 6, pp. 498–502, 2022.',
     'M. Tewes, M. Bauer, G. Holz, “Security Tokenization,” Porsche Consulting, 2023. [Online]. Available: https://www.porsche-consulting.com/sites/default/files/2023-07/digital_assets_c_porsche_consulting_2023_0.pdf. [Accessed: Sept. 22, 2023].',
-    'ebd.',
-    'ebd.',
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
