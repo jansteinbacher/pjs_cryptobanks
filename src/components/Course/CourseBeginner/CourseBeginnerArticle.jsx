@@ -2,31 +2,33 @@
 
 import React, { useState, useEffect } from 'react';
 import '../../../course.css';
-import IntroductionCryptoAssetsQuiz from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz';
-import IntroductionBlockchainQuiz from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainQuiz';
-import TypesOfCryptoAssetsQuiz from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz';
-import OpportunitiesAndChallengesQuiz from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsQuiz';
-import IntroductionCryptoAssetsPart1 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1';
-import IntroductionCryptoAssetsPart2 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart2';
-import IntroductionCryptoAssetsPart3 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart3';
-import IntroductionCryptoAssetsPart4 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart4';
-import IntroductionCryptoAssetsPart5 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart5';
-import IntroductionCryptoAssetsPart6 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart6';
-import IntroductionBlockchainPart1 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart1';
-import IntroductionBlockchainPart2 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart2';
-import IntroductionBlockchainPart3 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart3';
-import IntroductionBlockchainPart4 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart4';
-import TypesOfCryptoAssetsPart1 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart1';
-import TypesOfCryptoAssetsPart2 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart2';
-import TypesOfCryptoAssetsPart3 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart3';
-import TypesOfCryptoAssetsPart4 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart4';
-import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart5';
-import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart1';
-import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart2';
-import IntroductionCryptoAssetsExpert from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsExpert';
-import IntroductionBlockchainExpert from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainExpert';
-import TypesOfCryptoAssetsExpert from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsExpert';
-import OpportunitiesAndChallengesCryptoAssetsExpert from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsExpert';
+import {
+  IntroductionCryptoAssetsPart1,
+  IntroductionCryptoAssetsPart2,
+  IntroductionCryptoAssetsPart3,
+  IntroductionCryptoAssetsPart4,
+  IntroductionCryptoAssetsPart5,
+  IntroductionCryptoAssetsPart6,
+  IntroductionCryptoAssetsExpert,
+  IntroductionCryptoAssetsQuiz,
+  IntroductionBlockchainPart1,
+  IntroductionBlockchainPart2,
+  IntroductionBlockchainPart3,
+  IntroductionBlockchainPart4,
+  IntroductionBlockchainExpert,
+  IntroductionBlockchainQuiz,
+  TypesOfCryptoAssetsPart1,
+  TypesOfCryptoAssetsPart2,
+  TypesOfCryptoAssetsPart3,
+  TypesOfCryptoAssetsPart4,
+  TypesOfCryptoAssetsPart5,
+  TypesOfCryptoAssetsExpert,
+  TypesOfCryptoAssetsQuiz,
+  OpportunitiesAndChallengesPart1,
+  OpportunitiesAndChallengesPart2,
+  OpportunitiesAndChallengesCryptoAssetsExpert,
+  OpportunitiesAndChallengesCryptoAssetsQuiz,
+} from '../../LearningUnit';
 
 const CourseBeginnerArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -57,7 +59,7 @@ const CourseBeginnerArticle = () => {
     OpportunitiesAndChallengesPart1,
     OpportunitiesAndChallengesPart2,
     OpportunitiesAndChallengesCryptoAssetsExpert,
-    OpportunitiesAndChallengesQuiz,
+    OpportunitiesAndChallengesCryptoAssetsQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);

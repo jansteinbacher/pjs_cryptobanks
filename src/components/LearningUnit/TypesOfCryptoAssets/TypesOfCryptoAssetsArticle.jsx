@@ -7,7 +7,7 @@ import TypesOfCryptoAssetsPart3 from './TypesOfCryptoAssetsPart3';
 import TypesOfCryptoAssetsPart4 from './TypesOfCryptoAssetsPart4';
 import TypesOfCryptoAssetsPart5 from './TypesOfCryptoAssetsPart5';
 
-const TypesOfCryptoAssets = () => {
+const TypesOfCryptoAssetsArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -124,4 +124,4 @@ const TypesOfCryptoAssets = () => {
   );
 };
 
-export default TypesOfCryptoAssets;
+export default TypesOfCryptoAssetsArticle;

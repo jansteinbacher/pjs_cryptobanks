@@ -6,7 +6,7 @@ import IntroductionBlockchainPart3 from './IntroductionBlockchainPart3';
 import IntroductionBlockchainPart4 from './IntroductionBlockchainPart4';
 import IntroductionBlockchainQuiz from './IntroductionBlockchainQuiz';
 
-const IntroductionBlockchain = () => {
+const IntroductionBlockchainArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -122,4 +122,4 @@ const IntroductionBlockchain = () => {
   );
 };
 
-export default IntroductionBlockchain;
+export default IntroductionBlockchainArticle;

@@ -10,7 +10,7 @@ import CryptoCustodyApplicationAreasPart5 from './CryptoCustodyApplicationAreasP
 import CryptoCustodyApplicationAreasPart6 from './CryptoCustodyApplicationAreasPart6';
 import CryptoCustodyApplicationAreasQuiz from './CryptoCustodyApplicationAreasQuiz';
 
-const CryptoCustodyApplicationAreas = () => {
+const CryptoCustodyApplicationAreasArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -129,4 +129,4 @@ const CryptoCustodyApplicationAreas = () => {
   );
 };
 
-export default CryptoCustodyApplicationAreas;
+export default CryptoCustodyApplicationAreasArticle;

@@ -10,7 +10,7 @@ import CryptoAssetServicesPart5 from './CryptoAssetServicesPart5';
 import CryptoAssetServicesPart6 from './CryptoAssetServicesPart6';
 import CryptoAssetServicesQuiz from './CryptoAssetServicesQuiz';
 
-const CourseCryptoAssetServices = () => {
+const CourseCryptoAssetServicesArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -128,4 +128,4 @@ const CourseCryptoAssetServices = () => {
   );
 };
 
-export default CourseCryptoAssetServices;
+export default CourseCryptoAssetServicesArticle;

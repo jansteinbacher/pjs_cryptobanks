@@ -5,7 +5,7 @@ import '../../../course.css';
 import CryptoCustodyChallengesPart1 from './CryptoCustodyChallengesPart1';
 import CryptoCustodyChallengesPart2 from './CryptoCustodyChallengesPart2';
 
-const CryptoCustodyChallenges = () => {
+const CryptoCustodyChallengesArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -115,4 +115,4 @@ const CryptoCustodyChallenges = () => {
   );
 };
 
-export default CryptoCustodyChallenges;
+export default CryptoCustodyChallengesArticle;

@@ -6,7 +6,7 @@ import CryptoCustodyRegulationPart1 from './CryptoCustodyRegulationPart1';
 import CryptoCustodyRegulationPart2 from './CryptoCustodyRegulationPart2';
 import CryptoCustodyRegulationQuiz from './CryptoCustodyRegulationQuiz';
 
-const CryptoCustodyRegulation = () => {
+const CryptoCustodyRegulationArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -120,4 +120,4 @@ const CryptoCustodyRegulation = () => {
   );
 };
 
-export default CryptoCustodyRegulation;
+export default CryptoCustodyRegulationArticle;

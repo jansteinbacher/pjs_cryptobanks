@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import '../../../course.css';
-import CryptoAssetsRegulationPart1 from './CryptoAssetRegulationPart1';
-import CryptoAssetsRegulationPart2 from './CryptoAssetRegulationPart2';
-import CryptoAssetsRegulationQuiz from './CryptoAssetRegulationQuiz';
+import CryptoAssetsRegulationPart1 from './CryptoAssetsRegulationPart1';
+import CryptoAssetsRegulationPart2 from './CryptoAssetsRegulationPart2';
+import CryptoAssetsRegulationQuiz from './CryptoAssetsRegulationQuiz';
 
-const CryptoAssetRegulation = () => {
+const CryptoAssetsRegulationArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -120,4 +120,4 @@ const CryptoAssetRegulation = () => {
   );
 };
 
-export default CryptoAssetRegulation;
+export default CryptoAssetsRegulationArticle;

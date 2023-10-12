@@ -4,7 +4,7 @@ import OpportunitiesAndChallengesQuiz from './OpportunitiesAndChallengesCryptoAs
 import OpportunitiesAndChallengesPart1 from './OpportunitiesAndChallengesCryptoAssetsPart1';
 import OpportunitiesAndChallengesPart2 from './OpportunitiesAndChallengesCryptoAssetsPart2';
 
-const OpportunitiesAndChallengesCryptoAssets = () => {
+const OpportunitiesAndChallengesCryptoAssetsArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -119,4 +119,4 @@ const OpportunitiesAndChallengesCryptoAssets = () => {
   );
 };
 
-export default OpportunitiesAndChallengesCryptoAssets;
+export default OpportunitiesAndChallengesCryptoAssetsArticle;

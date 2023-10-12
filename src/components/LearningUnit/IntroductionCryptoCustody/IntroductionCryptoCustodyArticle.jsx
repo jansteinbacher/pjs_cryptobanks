@@ -7,7 +7,7 @@ import IntroductionCryptoCustodyPart2 from './IntroductionCryptoCustodyPart2';
 import IntroductionCryptoCustodyPart3 from './IntroductionCryptoCustodyPart3';
 import IntroductionCryptoCustodyQuiz from './IntroductionCryptoCustodyQuiz';
 
-const IntroductionCryptoCustody = () => {
+const IntroductionCryptoCustodyArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -122,4 +122,4 @@ const IntroductionCryptoCustody = () => {
   );
 };
 
-export default IntroductionCryptoCustody;
+export default IntroductionCryptoCustodyArticle;

@@ -8,7 +8,7 @@ import {
   Overview,
   CourseBeginnerArticle,
   DecisionTree,
-  CourseEndBeginner,
+  CourseBeginnerEnd,
   Einstufungsquiz,
   News,
   Myths,
@@ -16,21 +16,21 @@ import {
   CourseAdvancedArticle,
   CourseAdvancedIntroduction,
   CourseAdvancedEnd,
-  IntroductionCryptoAssets,
-  IntroductionBlockchain,
-  CryptoAssetServices,
-  CryptoAssetRegulation,
-  TypesOfCryptoAssets,
-  OpportunitiesAndChallengesCryptoAssets,
+  IntroductionCryptoAssetsArticle,
+  IntroductionBlockchainArticle,
+  CryptoAssetServicesArticle,
+  CryptoAssetsRegulationArticle,
+  TypesOfCryptoAssetsArticle,
+  OpportunitiesAndChallengesCryptoAssetsArticle,
   Survey,
   Interviews,
   CourseExpertArticle,
   CourseExpertIntroduction,
   CourseExpertEnd,
-  CryptoCustodyApplicationAreas,
-  CryptoCustodyChallenges,
-  CryptoCustodyRegulation,
-  IntroductionCryptoCustody,
+  CryptoCustodyApplicationAreasArticle,
+  CryptoCustodyChallengesArticle,
+  CryptoCustodyRegulationArticle,
+  IntroductionCryptoCustodyArticle,
 } from './components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -58,43 +58,43 @@ const App = () => (
         <Route path="/decisiontree" element={<DecisionTree />} />
         <Route
           path="/introduction-crypto-assets"
-          element={<IntroductionCryptoAssets />}
+          element={<IntroductionCryptoAssetsArticle />}
         />
         <Route
           path="/introduction-blockchain"
-          element={<IntroductionBlockchain />}
+          element={<IntroductionBlockchainArticle />}
         />
         <Route
           path="/crypto-asset-services"
-          element={<CryptoAssetServices />}
+          element={<CryptoAssetServicesArticle />}
         />
         <Route
           path="/crypto-asset-regulation"
-          element={<CryptoAssetRegulation />}
+          element={<CryptoAssetsRegulationArticle />}
         />
         <Route
           path="/types-of-crypto-assets"
-          element={<TypesOfCryptoAssets />}
+          element={<TypesOfCryptoAssetsArticle />}
         />
         <Route
           path="/opportunities-challenges-crypto-assets"
-          element={<OpportunitiesAndChallengesCryptoAssets />}
+          element={<OpportunitiesAndChallengesCryptoAssetsArticle />}
         />
         <Route
           path="/crypto-custody-application-areas"
-          element={<CryptoCustodyApplicationAreas />}
+          element={<CryptoCustodyApplicationAreasArticle />}
         />
         <Route
           path="/crypto-custody-challenges"
-          element={<CryptoCustodyChallenges />}
+          element={<CryptoCustodyChallengesArticle />}
         />
         <Route
           path="/crypto-custody-regulation"
-          element={<CryptoCustodyRegulation />}
+          element={<CryptoCustodyRegulationArticle />}
         />
         <Route
           path="/introduction-crypto-custody"
-          element={<IntroductionCryptoCustody />}
+          element={<IntroductionCryptoCustodyArticle />}
         />
 
         <Route path="/mythbusters" element={<Myths />} />
@@ -138,7 +138,7 @@ const App = () => (
           path="/articles/CourseEndBeginner"
           element={
             <>
-              <CourseEndBeginner />
+              <CourseBeginnerEnd />
             </>
           }
         />

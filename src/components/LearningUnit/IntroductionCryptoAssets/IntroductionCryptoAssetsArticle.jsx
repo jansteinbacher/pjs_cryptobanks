@@ -8,7 +8,7 @@ import IntroductionCryptoAssetsPart4 from './IntroductionCryptoAssetsPart4';
 import IntroductionCryptoAssetsPart5 from './IntroductionCryptoAssetsPart5';
 import IntroductionCryptoAssetsExpert from './IntroductionCryptoAssetsExpert';
 
-const IntroductionCryptoAssets = () => {
+const IntroductionCryptoAssetsArticle = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -126,4 +126,4 @@ const IntroductionCryptoAssets = () => {
   );
 };
 
-export default IntroductionCryptoAssets;
+export default IntroductionCryptoAssetsArticle;
