@@ -1,36 +1,36 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-const CryptoAssetsRegulationQuiz = () => {
+function CryptoAssetsRegulationQuiz() {
   const questions = [
     {
       question:
-        "Wie fortgeschritten ist die Regulatorische Landschaft im Bezug auf Kryptoassets?",
+        'Wie fortgeschritten ist die Regulatorische Landschaft im Bezug auf Kryptoassets?',
       options: [
-        "Es gibt bisher noch keine Gesetze.",
-        "Die derzeitigen Gesetze konzentrieren sich hauptsächlich auf die Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CTF) .",
-        "Ein EU-Regulierungsrahmen ist bereits in Kraft getreten.",
-        "Regulatorik ist in der Philosophie von Kryptoassets ausgeschlossen und findet daher keine Anwendung.",
+        'Es gibt bisher noch keine Gesetze.',
+        'Die derzeitigen Gesetze konzentrieren sich hauptsächlich auf die Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CTF) .',
+        'Ein EU-Regulierungsrahmen ist bereits in Kraft getreten.',
+        'Regulatorik ist in der Philosophie von Kryptoassets ausgeschlossen und findet daher keine Anwendung.',
       ],
       correctAnswerIndex: 1,
     },
     {
       question:
-        "Welche Regulatorik tritt bereits oder in naher Zukunft in Kraft?",
+        'Welche Regulatorik tritt bereits oder in naher Zukunft in Kraft?',
       options: [
-        "MiFID II / MiFIR.",
-        "MiCA.",
-        "eWpG.",
-        "Alle oben genannten Punkte.",
+        'MiFID II / MiFIR.',
+        'MiCA.',
+        'eWpG.',
+        'Alle oben genannten Punkte.',
       ],
       correctAnswerIndex: 3,
     },
     {
-      question: "Wozu dient die MiCA-Verordnung?",
+      question: 'Wozu dient die MiCA-Verordnung?',
       options: [
-        "Mit MiCA wird ein ganzheitlicher Regulierungsrahmen in der EU geschaffen. ",
-        "MiCA stellt eine weitere deutsche Verordnung dar.",
-        "Mit MiCA unterliegen Kryptoasset-Dienstleister weniger Verpflichtungen.",
-        "Alle oben genannten Punkte.",
+        'Mit MiCA wird ein ganzheitlicher Regulierungsrahmen in der EU geschaffen. ',
+        'MiCA stellt eine weitere deutsche Verordnung dar.',
+        'Mit MiCA unterliegen Kryptoasset-Dienstleister weniger Verpflichtungen.',
+        'Alle oben genannten Punkte.',
       ],
       correctAnswerIndex: 1,
     },
@@ -40,12 +40,12 @@ const CryptoAssetsRegulationQuiz = () => {
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState(
-    Array(questions.length).fill(null)
+    Array(questions.length).fill(null),
   );
   const [answered, setAnswered] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
   const [pairResults, setPairResults] = useState(
-    Array(questions.length).fill([])
+    Array(questions.length).fill([]),
   );
   const numPairs = questions[currentQuestionIndex]?.pairs?.length || 0;
 
@@ -74,7 +74,7 @@ const CryptoAssetsRegulationQuiz = () => {
     ].pairs.map(
       (pair, pairIndex) =>
         userAnswers[currentQuestionIndex]?.[pairIndex] ===
-        pair.correctOptionIndex
+        pair.correctOptionIndex,
     );
     setPairResults(newPairResults);
 
@@ -90,25 +90,23 @@ const CryptoAssetsRegulationQuiz = () => {
 
   const handlePairAnswerSelect = (event, pairIndex) => {
     const newUserAnswers = [...userAnswers];
-    const selectedOptionIndex = parseInt(event.target.value);
+    const selectedOptionIndex = parseInt(event.target.value, 10);
     newUserAnswers[currentQuestionIndex] =
       newUserAnswers[currentQuestionIndex] || []; // Initialize the array if it's not already
     newUserAnswers[currentQuestionIndex][pairIndex] = selectedOptionIndex;
     setUserAnswers(newUserAnswers);
   };
 
-  const numCorrectAnswers = userAnswers
-    .map((userAnswer, index) => {
-      if (questions[index].options) {
-        return userAnswer === questions[index].correctAnswerIndex ? 1 : 0;
-      } else {
-        return (
-          pairResults[index]?.filter((result) => result === true)?.length /
-            numPairs || 0
-        );
-      }
-    })
-    .reduce((acc, val) => acc + val, 0);
+  const numCorrectAnswers = userAnswers.reduce((acc, userAnswer, index) => {
+    if (questions[index].options) {
+      return acc + (userAnswer === questions[index].correctAnswerIndex ? 1 : 0);
+    }
+
+    const pairResult = pairResults[index];
+    const trueCount =
+      pairResult?.filter((result) => result === true)?.length || 0;
+    return acc + trueCount / numPairs;
+  }, 0);
 
   const percentageCorrect = (numCorrectAnswers / questions.length) * 100;
 
@@ -142,48 +140,53 @@ const CryptoAssetsRegulationQuiz = () => {
               <div className="space-y-4">
                 {questions[currentQuestionIndex].options
                   ? // For standard multiple-choice questions
-                    questions[currentQuestionIndex].options.map(
-                      (option, index) => (
-                        <button
-                          key={index}
-                          className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                            answered ? "opacity-50 cursor-not-allowed" : ""
-                          }`}
-                          onClick={() => handleAnswerSelect(index)}
-                        >
-                          {option}
-                        </button>
-                      )
-                    )
+                    questions[currentQuestionIndex].options.map((option) => (
+                      <button
+                        type="button"
+                        key={option.id} // Use a unique identifier as the key
+                        className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
+                          answered ? 'opacity-50 cursor-not-allowed' : ''
+                        }`}
+                        onClick={() => handleAnswerSelect(option.id)} // Use a unique identifier for the handler
+                      >
+                        {option.text}
+                      </button>
+                    ))
                   : // For new text-dropdown pairs
                     questions[currentQuestionIndex].pairs.map(
                       (pair, pairIndex) => (
-                        <div key={pairIndex} className="flex mb-2">
+                        <div key={pair.id} className="flex mb-2">
+                          {' '}
+                          {/* Use a unique identifier as the key */}
                           <div className="w-1/2 pr-2">{pair.text}</div>
                           <div className="w-1/2 pl-2">
                             <select
                               value={
                                 userAnswers[currentQuestionIndex]?.[
                                   pairIndex
-                                ] || ""
+                                ] || ''
                               }
                               onChange={(event) =>
                                 handlePairAnswerSelect(event, pairIndex)
                               }
                             >
-                              {pair.options.map((option, optionIndex) => (
-                                <option key={optionIndex} value={optionIndex}>
-                                  {option}
+                              {pair.options.map((option) => (
+                                <option key={option.id} value={option.id}>
+                                  {' '}
+                                  {/* Use a unique identifier as the key */}
+                                  {option.text}
                                 </option>
                               ))}
                             </select>
                           </div>
                         </div>
-                      )
+                      ),
                     )}
               </div>
+
               {questions[currentQuestionIndex].pairs && (
                 <button
+                  type="button"
                   className="bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-4 mt-4 rounded"
                   onClick={checkPairAnswers}
                 >
@@ -197,16 +200,17 @@ const CryptoAssetsRegulationQuiz = () => {
               <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
               {percentageCorrect >= 50 ? (
                 <p>
-                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{" "}
+                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
                   {questions.length} Fragen richtig beantwortet. 🎉🥳
                 </p>
               ) : (
                 <>
                   <p>
-                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{" "}
+                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
                     {questions.length} Fragen richtig beantwortet. 🙌
                   </p>
                   <button
+                    type="button"
                     className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-4 rounded"
                     onClick={restartQuiz}
                   >
@@ -222,7 +226,7 @@ const CryptoAssetsRegulationQuiz = () => {
         <div className="bg-gray-200 p-4 rounded">
           <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
           <p>
-            Beantwortete Fragen:{" "}
+            Beantwortete Fragen:{' '}
             {userAnswers.filter((answer) => answer !== null).length}
           </p>
           <p>Richtige Antworten: {numCorrectAnswers}</p>
@@ -231,6 +235,6 @@ const CryptoAssetsRegulationQuiz = () => {
       </div>
     </div>
   );
-};
+}
 
 export default CryptoAssetsRegulationQuiz;

@@ -5,13 +5,11 @@ export { default as About } from './About';
 
 export { default as Footer } from './Footer';
 
-export { default as DragAndDrop } from './DragAndDrop';
-
 export { default as News } from './News';
 export { default as Survey } from './Survey';
 export { default as Interviews } from './Interviews';
 
-export { CourseOverview } from './CourseOverview';
+export { default as CourseOverview } from './CourseOverview/CourseOverview';
 export { default as DecisionTree } from './DecisionTree';
 export { default as Overview } from './Overview/Overview';
 

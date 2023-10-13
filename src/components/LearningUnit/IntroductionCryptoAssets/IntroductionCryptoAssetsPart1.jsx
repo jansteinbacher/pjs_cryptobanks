@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Nagamoto from '../../../images/courseBeginner/nagamoto.png';
 import Bernd from '../../../images/courseBeginner/charakterBernd.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -14,26 +13,19 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
       >
-        {showSources ? (
-          <>
-            Quellen einklappen <FontAwesomeIcon icon={faArrowDown} />
-          </>
-        ) : (
-          <>
-            Quellen ausklappen <FontAwesomeIcon icon={faArrowRight} />
-          </>
-        )}
+        Quellen:
       </button>
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -41,9 +33,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const IntroductionCryptoAssetsPart1 = () => {
+function IntroductionCryptoAssetsPart1() {
   const articlesources = [
     'S. Nakamoto, “A peer-to-peer electronic cash system,” bitcoin.org, 2008. [Online]. Available: https://bitcoin.org/en/bitcoin-paper. [Accessed Sept. 21, 2023].',
     'A. Olbrecht and G. Pieters, “Crypto-currencies and crypto-assets: An introduction,” Eastern Economic Journal, vol. 49, no. 2, pp. 201–205, 2023.',
@@ -59,7 +58,7 @@ const IntroductionCryptoAssetsPart1 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -93,17 +92,17 @@ const IntroductionCryptoAssetsPart1 = () => {
             Wissen zu Kryptoassets zu bekommen und letztlich eine fundierte
             Entscheidung für oder gegen die Integration von Kryptoassets in
             seine Bank zu treffen. Bernd konnte nicht widerstehen, sich in das
-            Gespräch einzubringen. "Entschuldigt, dass ich mich einmische, aber
-            ich habe auch viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe
-            diesen Namen in Zusammenhang mit Kryptoassets gehört, aber ich bin
-            mir nicht sicher, wer oder was das ist." Simone lächelte und
-            erklärte: "Nakamoto ist der Pseudonym eines unbekannten Schöpfers
-            von Bitcoin. Niemand weiß wirklich, wer hinter diesem Namen steckt.
-            Es ist wie eine mysteriöse Figur, die die Krypto-Revolution
-            gestartet hat." Tobias fügte hinzu: "Genau, Nakamoto veröffentlichte
-            das Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das
-            Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel
-            geblieben."
+            Gespräch einzubringen. &ldquo;Entschuldigt, dass ich mich einmische,
+            aber ich habe auch viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich
+            habe diesen Namen in Zusammenhang mit Kryptoassets gehört, aber ich
+            bin mir nicht sicher, wer oder was das ist.&rdquo; Simone lächelte
+            und erklärte: &ldquo;Nakamoto ist der Pseudonym eines unbekannten
+            Schöpfers von Bitcoin. Niemand weiß wirklich, wer hinter diesem
+            Namen steckt. Es ist wie eine mysteriöse Figur, die die
+            Krypto-Revolution gestartet hat.&rdquo; Tobias fügte hinzu:
+            &ldquo;Genau, Nakamoto veröffentlichte das Whitepaper für Bitcoin im
+            Jahr 2008 und startete 2009 das Bitcoin-Netzwerk. Aber seitdem ist
+            seine Identität ein Rätsel geblieben.&rdquo;
           </p>
         </div>
       )}
@@ -138,6 +137,6 @@ const IntroductionCryptoAssetsPart1 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default IntroductionCryptoAssetsPart1;

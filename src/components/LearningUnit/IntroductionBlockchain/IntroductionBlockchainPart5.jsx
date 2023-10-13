@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -10,6 +11,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -19,9 +21,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -29,9 +31,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const IntroductionBlockchainPart4 = () => {
+function IntroductionBlockchainPart4() {
   const articlesources = [
     'Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].',
     'Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.',
@@ -40,7 +49,7 @@ const IntroductionBlockchainPart4 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -53,9 +62,9 @@ const IntroductionBlockchainPart4 = () => {
           <p className=" italic text-justify">
             Während Bernd sich intensiv mit dem Thema Blockchain
             auseinandersetzt, stolpert er immer wieder über den Begriff
-            "Distributed Ledger Technology" (DLT). Er ist sich nicht sicher, ob
-            Blockchain und DLT dasselbe sind, und beschließt, Tobias nach dessen
-            Meinung zu fragen.
+            &ldquo;Distributed Ledger Technology&rdquo; (DLT). Er ist sich nicht
+            sicher, ob Blockchain und DLT dasselbe sind, und beschließt, Tobias
+            nach dessen Meinung zu fragen.
           </p>
         </div>
       )}
@@ -104,6 +113,6 @@ const IntroductionBlockchainPart4 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default IntroductionBlockchainPart4;

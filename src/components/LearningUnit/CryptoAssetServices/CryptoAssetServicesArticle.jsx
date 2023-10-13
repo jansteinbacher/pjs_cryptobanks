@@ -1,6 +1,6 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
 import CryptoAssetServicesPart1 from './CryptoAssetServicesPart1';
 import CryptoAssetServicesPart2 from './CryptoAssetServicesPart2';
@@ -10,7 +10,7 @@ import CryptoAssetServicesPart5 from './CryptoAssetServicesPart5';
 import CryptoAssetServicesPart6 from './CryptoAssetServicesPart6';
 import CryptoAssetServicesQuiz from './CryptoAssetServicesQuiz';
 
-const CourseCryptoAssetServicesArticle = () => {
+function CourseCryptoAssetServicesArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -59,8 +59,15 @@ const CourseCryptoAssetServicesArticle = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -84,7 +91,7 @@ const CourseCryptoAssetServicesArticle = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -93,6 +100,7 @@ const CourseCryptoAssetServicesArticle = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -108,8 +116,9 @@ const CourseCryptoAssetServicesArticle = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -126,6 +135,6 @@ const CourseCryptoAssetServicesArticle = () => {
       )}
     </div>
   );
-};
+}
 
 export default CourseCryptoAssetServicesArticle;

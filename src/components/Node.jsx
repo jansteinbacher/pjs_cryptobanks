@@ -1,6 +1,6 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-const Node = ({ nodeData, onInputChange, onSubmitAnswer, onShowAnswer }) => {
+function Node({ nodeData, onInputChange, onSubmitAnswer, onShowAnswer }) {
   const handleInputChange = (event) => {
     onInputChange(nodeData.name, event.target.value);
   };
@@ -25,16 +25,32 @@ const Node = ({ nodeData, onInputChange, onSubmitAnswer, onShowAnswer }) => {
         />
       )}
       {!nodeData.showAnswer && (
-        <button onClick={handleSubmitAnswer}>Submit Answer</button>
+        <button type="button" onClick={handleSubmitAnswer}>
+          Submit Answer
+        </button>
       )}
       {nodeData.showAnswer && (
         <div>
           Correct Answer: {nodeData.correctAnswer}
-          <button onClick={handleShowAnswer}>Show Answer</button>
+          <button type="button" onClick={handleShowAnswer}>
+            Show Answer
+          </button>
         </div>
       )}
     </div>
   );
+}
+
+Node.propTypes = {
+  nodeData: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    input: PropTypes.string,
+    showAnswer: PropTypes.bool.isRequired,
+    correctAnswer: PropTypes.string,
+  }).isRequired,
+  onInputChange: PropTypes.func.isRequired,
+  onSubmitAnswer: PropTypes.func.isRequired,
+  onShowAnswer: PropTypes.func.isRequired,
 };
 
 export default Node;

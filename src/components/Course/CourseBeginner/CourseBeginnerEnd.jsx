@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaFilePdf } from 'react-icons/fa';
+import { PiCertificate } from 'react-icons/pi';
 import Regulation from '../../../images/regulation.png';
 import BusinessModel from '../../../images/businessModel.png';
 import CourseCompleted from '../../../images/firework_course_completed.mp4';
-import { FaFilePdf } from 'react-icons/fa';
-import { PiCertificate } from 'react-icons/pi';
 import Zusammenfassung from '../../../images/Kryptoassets.pdf';
 
-const CourseEndBeginner = () => {
+function CourseEndBeginner() {
   const [isSummaryVisible, setSummaryVisible] = useState(true);
   const [isCourseMaterialVisible, setCourseMaterialVisible] = useState(false);
 
@@ -25,6 +25,7 @@ const CourseEndBeginner = () => {
     <div className="px-8 md:px-20 py-4 md:py-8">
       <div className="flex flex-col md:items-center md:justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <button
+          type="button"
           className={`${
             isSummaryVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
           } rounded px-4 py-2 font-semibold text-lg`}
@@ -33,6 +34,7 @@ const CourseEndBeginner = () => {
           📝 Zusammenfassung
         </button>
         <button
+          type="button"
           className={`${
             isCourseMaterialVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
           } rounded px-4 py-2 font-semibold text-lg`}
@@ -50,13 +52,12 @@ const CourseEndBeginner = () => {
                 <div className="flex flex-col items-center">
                   <FaFilePdf className="text-5xl text-green-400 mb-2" />{' '}
                   <a
-                  href={Zusammenfassung}
-                  className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
-                  download="Kryptoassets.pdf"
-                >
-                  Zusammenfassung herunterladen
-                </a>
-
+                    href={Zusammenfassung}
+                    className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
+                    download="Kryptoassets.pdf"
+                  >
+                    Zusammenfassung herunterladen
+                  </a>
                 </div>
               </div>
               <div className="text-center mt-8">
@@ -92,7 +93,10 @@ const CourseEndBeginner = () => {
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
               <Link to="/course-overview">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Zur Kursübersicht
                 </button>
               </Link>
@@ -108,7 +112,10 @@ const CourseEndBeginner = () => {
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
               <Link to="/course-advanced-introduction">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Zum Fortgeschrittenen Kurs
                 </button>
               </Link>
@@ -123,7 +130,10 @@ const CourseEndBeginner = () => {
                 Informationen aus, die du erlernen möchtest.
               </p>
               <Link to="/decisiontree">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Individuellen Lernplan erstellen
                 </button>
               </Link>
@@ -229,6 +239,6 @@ const CourseEndBeginner = () => {
       )}
     </div>
   );
-};
+}
 
 export default CourseEndBeginner;

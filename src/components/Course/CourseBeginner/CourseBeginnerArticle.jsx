@@ -1,6 +1,6 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
 import {
   IntroductionCryptoAssetsPart1,
@@ -30,7 +30,7 @@ import {
   OpportunitiesAndChallengesCryptoAssetsQuiz,
 } from '../../LearningUnit';
 
-const CourseBeginnerArticle = () => {
+function CourseBeginnerArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -91,8 +91,15 @@ const CourseBeginnerArticle = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -116,7 +123,7 @@ const CourseBeginnerArticle = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -125,6 +132,7 @@ const CourseBeginnerArticle = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -140,8 +148,9 @@ const CourseBeginnerArticle = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -158,6 +167,6 @@ const CourseBeginnerArticle = () => {
       )}
     </div>
   );
-};
+}
 
 export default CourseBeginnerArticle;

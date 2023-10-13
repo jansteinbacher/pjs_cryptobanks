@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import ConsensMechanism from '../../../images/courseBeginner/consensMechanism.jpg';
-const Sources = ({ sources }) => {
+
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -10,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -19,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -29,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const IntroductionBlockchainPart2 = () => {
+function IntroductionBlockchainPart2() {
   const articlesources = [
     'Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].',
     'Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.',
@@ -40,7 +50,7 @@ const IntroductionBlockchainPart2 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -52,8 +62,8 @@ const IntroductionBlockchainPart2 = () => {
         <div className="p-4 mb-8 bg-green-200 rounded-lg">
           <p className=" italic text-justify">
             Bernd ist beeindruckt von dieser Erklärung, aber er hat immer noch
-            Fragen: "Und wie wird sichergestellt, dass die Informationen in der
-            Blockchain echt sind?"
+            Fragen: &ldquo;Und wie wird sichergestellt, dass die Informationen
+            in der Blockchain echt sind?&rdquo;
           </p>
         </div>
       )}
@@ -102,6 +112,6 @@ const IntroductionBlockchainPart2 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default IntroductionBlockchainPart2;

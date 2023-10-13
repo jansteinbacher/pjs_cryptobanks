@@ -1,10 +1,9 @@
-import React from 'react';
 import KursIcon from '../images/Kurs_Icon.png';
 import IndividuellIcon from '../images/Individuell_Icon.png';
 import Header from '../images/header.jpg';
 import GlossarIcon from '../images/Glossar_Icon.png';
 
-const Hero = () => {
+function Hero() {
   return (
     <div className="bg-white">
       <div
@@ -12,7 +11,6 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${Header})`,
           minHeight: '60vh', // Stellen Sie sicher, dass die Höhe ausreichend ist
-          
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white">
@@ -107,9 +105,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
-};
+}
 
 export default Hero;

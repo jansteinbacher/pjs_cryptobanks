@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Overview = () => {
+function Overview() {
   // Replace this with your glossary data
   const glossaryData = [
     {
@@ -76,13 +76,19 @@ const Overview = () => {
   const [searchSuggestions, setSearchSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
+  // State to track the selected alphabet letter
+  const [selectedLetter, setSelectedLetter] = useState('');
+
+  // State to track the search query
+  const [searchQuery, setSearchQuery] = useState('');
+
   // Function to update search suggestions
   const updateSearchSuggestions = (input) => {
     const suggestions = glossaryData
       .filter(
         (item) =>
           item.term.toLowerCase().includes(input.toLowerCase()) &&
-          input.trim() !== ''
+          input.trim() !== '',
       )
       .map((item) => item.term);
 
@@ -104,12 +110,6 @@ const Overview = () => {
     setSearchQuery('');
   };
 
-  // State to track the selected alphabet letter
-  const [selectedLetter, setSelectedLetter] = useState('');
-
-  // State to track the search query
-  const [searchQuery, setSearchQuery] = useState('');
-
   // Function to set the selected alphabet letter
   const handleSelectLetter = (letter) => {
     setSelectedLetter(letter);
@@ -120,7 +120,7 @@ const Overview = () => {
     (item) =>
       (selectedLetter === '' ||
         item.term.charAt(0).toLowerCase() === selectedLetter.toLowerCase()) &&
-      item.term.toLowerCase().includes(searchQuery.toLowerCase())
+      item.term.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   // Sort the filtered data alphabetically
@@ -162,12 +162,16 @@ const Overview = () => {
                 <li
                   key={suggestion}
                   className="cursor-pointer hover:bg-gray-200 p-2"
-                  onClick={() => {
-                    setSearchQuery(suggestion);
-                    setShowSuggestions(false);
-                  }}
                 >
-                  {suggestion}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery(suggestion);
+                      setShowSuggestions(false);
+                    }}
+                  >
+                    {suggestion}
+                  </button>
                 </li>
               ))}
             </ul>
@@ -177,6 +181,7 @@ const Overview = () => {
       {/* Reset icon */}
       <div className="flex justify-center">
         <button
+          type="button"
           onClick={handleReset}
           className="text-blue-500 hover:underline cursor-pointer mb-4"
         >
@@ -192,7 +197,8 @@ const Overview = () => {
             {Array.from(Array(26)).map((_, index) => {
               const letter = String.fromCharCode(65 + index);
               return (
-                <li
+                <button
+                  type="button"
                   key={letter}
                   className={`cursor-pointer ${
                     selectedLetter === letter ? 'text-blue-500' : 'text-black'
@@ -200,7 +206,7 @@ const Overview = () => {
                   onClick={() => handleSelectLetter(letter)}
                 >
                   {letter}
-                </li>
+                </button>
               );
             })}
           </ul>
@@ -234,6 +240,6 @@ const Overview = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Overview;
