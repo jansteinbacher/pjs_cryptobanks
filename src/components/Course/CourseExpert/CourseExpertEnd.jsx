@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaFilePdf } from 'react-icons/fa';
+import { PiCertificate } from 'react-icons/pi';
 import Regulation from '../../../images/regulation.png';
 import BusinessModel from '../../../images/businessModel.png';
 import CourseCompleted from '../../../images/firework_course_completed.mp4';
-import { FaFilePdf } from 'react-icons/fa';
-import { PiCertificate } from 'react-icons/pi';
 
-const CourseExpertEnd = () => {
+function CourseExpertEnd() {
   const [isSummaryVisible, setSummaryVisible] = useState(true);
   const [isCourseMaterialVisible, setCourseMaterialVisible] = useState(false);
 
@@ -24,6 +24,7 @@ const CourseExpertEnd = () => {
     <div className="px-8 md:px-20 py-4 md:py-8">
       <div className="flex flex-col md:items-center md:justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <button
+          type="button"
           className={`${
             isSummaryVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
           } rounded px-4 py-2 font-semibold text-lg`}
@@ -32,6 +33,7 @@ const CourseExpertEnd = () => {
           📝 Zusammenfassung
         </button>
         <button
+          type="button"
           className={`${
             isCourseMaterialVisible ? 'bg-green-400 text-white' : 'bg-gray-200'
           } rounded px-4 py-2 font-semibold text-lg`}
@@ -92,7 +94,10 @@ const CourseExpertEnd = () => {
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
               <Link to="/course-overview">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Zur Kursübersicht
                 </button>
               </Link>
@@ -108,7 +113,10 @@ const CourseExpertEnd = () => {
                 className="w-32 md:w-64 rounded-lg mx-auto mt-4"
               />
               <Link to="/course2">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Zum Experten Kurs
                 </button>
               </Link>
@@ -123,7 +131,10 @@ const CourseExpertEnd = () => {
                 Informationen aus, die du erlernen möchtest.
               </p>
               <Link to="/decisiontree">
-                <button className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4">
+                <button
+                  type="button"
+                  className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
+                >
                   Individuellen Lernplan erstellen
                 </button>
               </Link>
@@ -143,7 +154,7 @@ const CourseExpertEnd = () => {
                 Lektion 1: Regulatorische Landschaft auf nationaler und
                 internationaler Ebene
               </p>
-              <ul className="list-disc mt-2 space-y-2 ml-6"></ul>
+              <ul className="list-disc mt-2 space-y-2 ml-6" />
             </div>
             <div className="mb-8">
               <p className="mt-4 font-semibold">
@@ -168,13 +179,13 @@ const CourseExpertEnd = () => {
               <p className="mt-4 font-semibold">
                 Lektion 3: Trends & Anwendung in der Gesellschaft
               </p>
-              <ul className="list-disc mt-2 space-y-2 ml-6"></ul>
+              <ul className="list-disc mt-2 space-y-2 ml-6" />
             </div>
           </div>
         </div>
       )}
     </div>
   );
-};
+}
 
 export default CourseExpertEnd;

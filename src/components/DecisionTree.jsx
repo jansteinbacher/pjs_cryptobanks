@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-//TODO: Links should open in new window
-//Download Document with Lernplan
-//Make it prettier
+// TODO: Links should open in new window
+// Download Document with Lernplan
+// Make it prettier
 
 function Question({ question, answers, updateAnswer }) {
   return (
@@ -16,6 +17,7 @@ function Question({ question, answers, updateAnswer }) {
         {answers.map((answer) => (
           <button
             key={answer}
+            type="button" // Add this line
             onClick={() => updateAnswer(answer)}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
@@ -26,6 +28,11 @@ function Question({ question, answers, updateAnswer }) {
     </div>
   );
 }
+Question.propTypes = {
+  question: PropTypes.string.isRequired,
+  answers: PropTypes.arrayOf(PropTypes.string).isRequired,
+  updateAnswer: PropTypes.func.isRequired,
+};
 
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);

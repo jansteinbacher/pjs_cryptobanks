@@ -1,34 +1,36 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
-import IntroductionCryptoAssetsQuiz from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsQuiz';
-import IntroductionBlockchainQuiz from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainQuiz';
-import TypesOfCryptoAssetsQuiz from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsQuiz';
-import OpportunitiesAndChallengesQuiz from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsQuiz';
-import IntroductionCryptoAssetsPart1 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart1';
-import IntroductionCryptoAssetsPart2 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart2';
-import IntroductionCryptoAssetsPart3 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart3';
-import IntroductionCryptoAssetsPart4 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart4';
-import IntroductionCryptoAssetsPart5 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart5';
-import IntroductionCryptoAssetsPart6 from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsPart6';
-import IntroductionBlockchainPart1 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart1';
-import IntroductionBlockchainPart2 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart2';
-import IntroductionBlockchainPart3 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart3';
-import IntroductionBlockchainPart4 from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainPart4';
-import TypesOfCryptoAssetsPart1 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart1';
-import TypesOfCryptoAssetsPart2 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart2';
-import TypesOfCryptoAssetsPart3 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart3';
-import TypesOfCryptoAssetsPart4 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart4';
-import TypesOfCryptoAssetsPart5 from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsPart5';
-import OpportunitiesAndChallengesPart1 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart1';
-import OpportunitiesAndChallengesPart2 from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsPart2';
-import IntroductionCryptoAssetsExpert from '../../LearningUnit/IntroductionCryptoAssets/IntroductionCryptoAssetsExpert';
-import IntroductionBlockchainExpert from '../../LearningUnit/IntroductionBlockchain/IntroductionBlockchainExpert';
-import TypesOfCryptoAssetsExpert from '../../LearningUnit/TypesOfCryptoAssets/TypesOfCryptoAssetsExpert';
-import OpportunitiesAndChallengesCryptoAssetsExpert from '../../LearningUnit/OpportunitiesAndChallengesCryptoAssets/OpportunitiesAndChallengesCryptoAssetsExpert';
+import {
+  IntroductionCryptoAssetsPart1,
+  IntroductionCryptoAssetsPart2,
+  IntroductionCryptoAssetsPart3,
+  IntroductionCryptoAssetsPart4,
+  IntroductionCryptoAssetsPart5,
+  IntroductionCryptoAssetsPart6,
+  IntroductionCryptoAssetsExpert,
+  IntroductionCryptoAssetsQuiz,
+  IntroductionBlockchainPart1,
+  IntroductionBlockchainPart2,
+  IntroductionBlockchainPart3,
+  IntroductionBlockchainPart4,
+  IntroductionBlockchainExpert,
+  IntroductionBlockchainQuiz,
+  TypesOfCryptoAssetsPart1,
+  TypesOfCryptoAssetsPart2,
+  TypesOfCryptoAssetsPart3,
+  TypesOfCryptoAssetsPart4,
+  TypesOfCryptoAssetsPart5,
+  TypesOfCryptoAssetsExpert,
+  TypesOfCryptoAssetsQuiz,
+  OpportunitiesAndChallengesPart1,
+  OpportunitiesAndChallengesPart2,
+  OpportunitiesAndChallengesCryptoAssetsExpert,
+  OpportunitiesAndChallengesCryptoAssetsQuiz,
+} from '../../LearningUnit';
 
-const CourseBeginnerArticle = () => {
+function CourseBeginnerArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -57,7 +59,7 @@ const CourseBeginnerArticle = () => {
     OpportunitiesAndChallengesPart1,
     OpportunitiesAndChallengesPart2,
     OpportunitiesAndChallengesCryptoAssetsExpert,
-    OpportunitiesAndChallengesQuiz,
+    OpportunitiesAndChallengesCryptoAssetsQuiz,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -89,8 +91,15 @@ const CourseBeginnerArticle = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -114,7 +123,7 @@ const CourseBeginnerArticle = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -123,6 +132,7 @@ const CourseBeginnerArticle = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -138,8 +148,9 @@ const CourseBeginnerArticle = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -156,6 +167,6 @@ const CourseBeginnerArticle = () => {
       )}
     </div>
   );
-};
+}
 
 export default CourseBeginnerArticle;

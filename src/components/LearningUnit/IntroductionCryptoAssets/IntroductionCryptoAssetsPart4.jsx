@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import Currencies from '../../../images/courseBeginner/currencies.png';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -14,26 +13,19 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
       >
-        {showSources ? (
-          <>
-            Quellen einklappen <FontAwesomeIcon icon={faArrowDown} />
-          </>
-        ) : (
-          <>
-            Quellen ausklappen <FontAwesomeIcon icon={faArrowRight} />
-          </>
-        )}
+        Quellen:
       </button>
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -41,8 +33,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
-const IntroductionCryptoAssetsPart4 = () => {
+
+function IntroductionCryptoAssetsPart4() {
   const articlesources = [
     'S. Nakamoto, “A peer-to-peer electronic cash system,” bitcoin.org, 2008. [Online]. Available: https://bitcoin.org/en/bitcoin-paper. [Accessed Sept. 21, 2023].',
     'A. Olbrecht and G. Pieters, “Crypto-currencies and crypto-assets: An introduction,” Eastern Economic Journal, vol. 49, no. 2, pp. 201–205, 2023.',
@@ -58,7 +58,7 @@ const IntroductionCryptoAssetsPart4 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -72,8 +72,9 @@ const IntroductionCryptoAssetsPart4 = () => {
           <p className="italic text-justify flex-grow">
             Bernds Wissensreise führte ihn immer tiefer in die Welt der
             Kryptoassets. Doch bei einem bestimmten Begriff hatte er noch einige
-            Fragezeichen im Kopf: "Tokenisierung". Dieses Wort war in vielen
-            Zusammenhängen gefallen, aber er konnte es nirgends zuordnen.
+            Fragezeichen im Kopf: &ldquo;Tokenisierung&rdquo;. Dieses Wort war
+            in vielen Zusammenhängen gefallen, aber er konnte es nirgends
+            zuordnen.
           </p>
         </div>
       )}
@@ -99,5 +100,5 @@ const IntroductionCryptoAssetsPart4 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 export default IntroductionCryptoAssetsPart4;

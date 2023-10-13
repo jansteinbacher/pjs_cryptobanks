@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -10,6 +11,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -19,9 +21,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -29,9 +31,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const OpportunitiesAndChallengesPart2 = () => {
+function OpportunitiesAndChallengesPart2() {
   const articlesources = [
     'H. Meisner, “Neue Herausforderungen in der Finanzsphäre,” in Finanzwirtschaft in der Internetökonomie. Wiesbaden: Springer Gabler, 2021, pp. 179–218.',
     'D. Kerscher, Bitcoin: Funktionsweise, Risiken und Chancen der digitalen Währung. Dingolfing: Kemacon UG, 2014',
@@ -77,6 +86,6 @@ const OpportunitiesAndChallengesPart2 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default OpportunitiesAndChallengesPart2;

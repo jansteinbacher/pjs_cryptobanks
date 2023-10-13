@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Crypto from "../images/crypto.png";
+import { useState } from 'react';
+import Crypto from '../images/crypto.png';
 
-const Navbar = () => {
+function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -50,7 +50,11 @@ const Navbar = () => {
 
       {/* Button for mobile devices */}
       <div className="sm:hidden flex items-center">
-        <button className="block focus:outline-none" onClick={handleMenuToggle}>
+        <button
+          type="button"
+          className="block focus:outline-none"
+          onClick={handleMenuToggle}
+        >
           {isMenuOpen ? (
             <svg
               className="h-6 w-6 text-gray-800"
@@ -64,7 +68,7 @@ const Navbar = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-              ></path>
+              />
             </svg>
           ) : (
             <svg
@@ -79,7 +83,7 @@ const Navbar = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
+              />
             </svg>
           )}
         </button>
@@ -111,6 +115,6 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
+}
 
 export default Navbar;

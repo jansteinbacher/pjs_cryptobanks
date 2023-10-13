@@ -1,13 +1,13 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
 import IntroductionCryptoCustodyPart1 from './IntroductionCryptoCustodyPart1';
 import IntroductionCryptoCustodyPart2 from './IntroductionCryptoCustodyPart2';
 import IntroductionCryptoCustodyPart3 from './IntroductionCryptoCustodyPart3';
 import IntroductionCryptoCustodyQuiz from './IntroductionCryptoCustodyQuiz';
 
-const IntroductionCryptoCustody = () => {
+function IntroductionCryptoCustodyArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -53,8 +53,15 @@ const IntroductionCryptoCustody = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -78,7 +85,7 @@ const IntroductionCryptoCustody = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -87,6 +94,7 @@ const IntroductionCryptoCustody = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -102,8 +110,9 @@ const IntroductionCryptoCustody = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -120,6 +129,6 @@ const IntroductionCryptoCustody = () => {
       )}
     </div>
   );
-};
+}
 
-export default IntroductionCryptoCustody;
+export default IntroductionCryptoCustodyArticle;

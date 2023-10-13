@@ -1,6 +1,6 @@
 import TobiasVideo from '../../../videos/characterTobiasIntroduction.mp4';
 
-const CourseExpertIntroduction = () => {
+function CourseExpertIntroduction() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-8 tracking-tight">
@@ -25,7 +25,7 @@ const CourseExpertIntroduction = () => {
           Tobias ist seit mehreren Jahren als Produktmanager in der Bank tätig.
           Simone hat ihm die spannende Aufgabe übertragen, die
           Kryptoasset-Verwahrung als ein neues Finanzprodukt in das Bankensystem
-          zu integrieren. Aufgrund von Tobias' bereits fundierten
+          zu integrieren. Aufgrund von Tobias bereits fundierten
           Grundkenntnissen im Bereich Kryptoassets, hat er sich entschlossen,
           sein Verständnis für die Kryptoasset-Verwahrung noch weiter zu
           vertiefen.
@@ -35,6 +35,7 @@ const CourseExpertIntroduction = () => {
           Kryptoasset-Verwahrung:
         </p>
         <div>
+          {/* eslint-disable jsx-a11y/media-has-caption */}
           <video controls className="w-full h-full rounded-lg">
             <source src={TobiasVideo} type="video/mp4" />
             Your browser does not support the video tag.
@@ -43,13 +44,16 @@ const CourseExpertIntroduction = () => {
       </div>
       <div className="flex justify-center items-center">
         <a href="/course-expert?from=expert-course">
-          <button className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded">
+          <button
+            type="button"
+            className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
+          >
             Beginne die Reise
           </button>
         </a>
       </div>
     </div>
   );
-};
+}
 
 export default CourseExpertIntroduction;

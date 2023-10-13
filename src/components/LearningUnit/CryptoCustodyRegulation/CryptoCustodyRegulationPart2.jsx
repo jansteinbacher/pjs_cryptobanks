@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Bitcoinhold from '../../../images/courseExpert/bitcoinhold.png';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -11,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -20,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -30,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const CryptoCustodyRegulationPart2 = () => {
+function CryptoCustodyRegulationPart2() {
   const articlesources = [
     'Bundesministerium der Justiz. (2023, Febr. 22). “Gesetz über das Kreditwesen,”  [Online]. Available: https://www.gesetze-im-internet.de/kredwg/index.html. [Accessed: Sept. 29, 2023].',
     'BaFin. “Kryptoverwahrgeschäft,” BaFin, 2022. [Online]. Available: https://www.bafin.de/DE/Aufsicht/FinTech/Geschaeftsmodelle/DLT_Blockchain_Krypto/Kryptoverwahrgeschaeft/Kryptoverwahrgeschaeft_artikel.html. [Accessed: Sept. 29, 2023].',
@@ -106,6 +115,6 @@ const CryptoCustodyRegulationPart2 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default CryptoCustodyRegulationPart2;

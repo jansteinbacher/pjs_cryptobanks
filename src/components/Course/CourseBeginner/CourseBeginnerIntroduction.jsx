@@ -1,6 +1,6 @@
 import BerndVideo from '../../../videos/characterBerndIntroduction.mp4';
 
-const CourseBeginnerIntroduction = () => {
+function CourseBeginnerIntroduction() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-8 tracking-tight">
@@ -35,6 +35,7 @@ const CourseBeginnerIntroduction = () => {
           der Kryptoassets:
         </p>
         <div>
+          {/* eslint-disable jsx-a11y/media-has-caption */}
           <video controls className="w-full h-full rounded-lg">
             <source src={BerndVideo} type="video/mp4" />
             Your browser does not support the video tag.
@@ -43,13 +44,16 @@ const CourseBeginnerIntroduction = () => {
       </div>
       <div className="flex justify-center items-center">
         <a href="/course-beginner?from=beginner-course">
-          <button className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded">
+          <button
+            type="button"
+            className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
+          >
             Beginne die Reise
           </button>
         </a>
       </div>
     </div>
   );
-};
+}
 
 export default CourseBeginnerIntroduction;

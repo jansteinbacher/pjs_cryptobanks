@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const News = () => {
+function News() {
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState('crypto&lang=en');
 
   useEffect(() => {
-    fetch(`https://gnews.io/api/v4/search?q=${query}&token=5247b3e888209f2ccee89baa0b2d86c0`)
-      .then(response => response.json())
-      .then(data => setArticles(data.articles))
-      .catch(error => console.error('Error fetching news:', error));
+    fetch(
+      `https://gnews.io/api/v4/search?q=${query}&token=5247b3e888209f2ccee89baa0b2d86c0`,
+    )
+      .then((response) => response.json())
+      .then((data) => setArticles(data.articles))
+      .catch((error) => console.error('Error fetching news:', error));
   }, [query]);
 
   return (
@@ -16,16 +18,22 @@ const News = () => {
       <h1 className="text-4xl font-bold mb-4">News aus der Kryptowelt</h1>
       <div className="flex space-x-4 mb-4">
         <button
+          type="button"
           className={`px-4 py-2 rounded-lg font-semibold ${
-            query === 'crypto&lang=en' ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-700'
+            query === 'crypto&lang=en'
+              ? 'bg-green-500 text-white'
+              : 'bg-gray-300 text-gray-700'
           }`}
           onClick={() => setQuery('crypto&lang=en')}
         >
           Aus aller Welt
         </button>
         <button
+          type="button"
           className={`px-4 py-2 rounded-lg font-semibold ${
-            query === 'Krypto Deutschland&lang=de' ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-700'
+            query === 'Krypto Deutschland&lang=de'
+              ? 'bg-green-500 text-white'
+              : 'bg-gray-300 text-gray-700'
           }`}
           onClick={() => setQuery('Krypto Deutschland&lang=de')}
         >
@@ -33,7 +41,7 @@ const News = () => {
         </button>
       </div>
       <div className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
-        {articles.map(article => (
+        {articles.map((article) => (
           <a
             key={article.url}
             href={article.url}
@@ -46,13 +54,15 @@ const News = () => {
             <div className="mt-2 flex items-center">
               <span className="text-gray-400">{article.source.name}</span>
               <span className="mx-2 text-gray-400">&middot;</span>
-              <span className="text-gray-400">{new Date(article.publishedAt).toDateString()}</span>
+              <span className="text-gray-400">
+                {new Date(article.publishedAt).toDateString()}
+              </span>
             </div>
           </a>
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default News;

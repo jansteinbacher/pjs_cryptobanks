@@ -1,20 +1,21 @@
 // CourseBeginnerArticle.js
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
-import CryptoAssetsRegulationPart1 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationPart1';
-import CryptoAssetsRegulationPart2 from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationPart2';
-import CryptoAssetsRegulationQuiz from '../../LearningUnit/CrytoAssetRegulation/CryptoAssetRegulationQuiz';
-import CryptoAssetServicesPart1 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart1';
-import CryptoAssetServicesPart2 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart2';
-import CryptoAssetServicesPart3 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart3';
-import CryptoAssetServicesPart4 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart4';
-import CryptoAssetServicesPart5 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart5';
-import CryptoAssetServicesPart6 from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesPart6';
-import CryptoAssetServicesQuiz from '../../LearningUnit/CryptoAssetServices/CryptoAssetServicesQuiz';
-import CryptoAssetsAdoption from '../../LearningUnit/CryptoAssetsAdoption/CryptoAssetsAdoption';
+import {
+  CryptoAssetsRegulationPart1,
+  CryptoAssetsRegulationPart2,
+  CryptoAssetsRegulationQuiz,
+  CryptoAssetServicesPart1,
+  CryptoAssetServicesPart2,
+  CryptoAssetServicesPart3,
+  CryptoAssetServicesPart4,
+  CryptoAssetServicesPart5,
+  CryptoAssetServicesPart6,
+  CryptoAssetServicesQuiz,
+} from '../../LearningUnit';
 
-const CourseAdvancedArticle = () => {
+function CourseAdvancedArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -29,7 +30,6 @@ const CourseAdvancedArticle = () => {
     CryptoAssetServicesPart5,
     CryptoAssetServicesPart6,
     CryptoAssetServicesQuiz,
-    CryptoAssetsAdoption,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -61,8 +61,15 @@ const CourseAdvancedArticle = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -86,7 +93,7 @@ const CourseAdvancedArticle = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -95,6 +102,7 @@ const CourseAdvancedArticle = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -110,8 +118,9 @@ const CourseAdvancedArticle = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -128,6 +137,6 @@ const CourseAdvancedArticle = () => {
       )}
     </div>
   );
-};
+}
 
 export default CourseAdvancedArticle;

@@ -1,13 +1,33 @@
-import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS,CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+);
 
-const BarChart = () => {
+function BarChart() {
   // Sample data for the bar chart
   const data = {
-    labels: ['Category A', 'Category B', 'Category C', 'Category D', 'Category E'],
+    labels: [
+      'Category A',
+      'Category B',
+      'Category C',
+      'Category D',
+      'Category E',
+    ],
     datasets: [
       {
         label: 'Data Set 1',
@@ -50,6 +70,6 @@ const BarChart = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BarChart;

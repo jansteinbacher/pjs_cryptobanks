@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import NFT from '../../../images/courseBeginner/nft.png';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -11,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -20,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -30,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const TypesOfCryptoAssetsPart5 = () => {
+function TypesOfCryptoAssetsPart5() {
   const articlesources = [
     'H. Arslanian and H. Fischer, “The Continuing Evolution of Crypto-assets.,” in The Future of Finance. Cham: Palgrave Macmillan, 2019, pp-217–230.',
     '“Währungen,” coinbase.com. [Online]. Available: https://www.coinbase.com/trade/asset-categories/currencies. [Accessed Sept. 12, 2023].',
@@ -58,7 +67,7 @@ const TypesOfCryptoAssetsPart5 = () => {
   };
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -113,6 +122,6 @@ const TypesOfCryptoAssetsPart5 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default TypesOfCryptoAssetsPart5;

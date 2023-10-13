@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Blockchain from '../../../images/courseBeginner/blockchain.png';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -11,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -20,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -30,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const IntroductionBlockchainPart1 = () => {
+function IntroductionBlockchainPart1() {
   const articlesources = [
     'S. Ray, “The difference between Blockchains &amp; Distributed Ledger Technology,” Medium, https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92 (accessed Sep. 22, 2023).',
     'A. Sunyaev, “Distributed Ledger Technology,” Internet Computing, pp. 265–299, 2020. doi:10.1007/978-3-030-34957-8_9',
@@ -41,7 +50,7 @@ const IntroductionBlockchainPart1 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course'
+    'from=beginner-course',
   );
 
   return (
@@ -107,6 +116,6 @@ const IntroductionBlockchainPart1 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default IntroductionBlockchainPart1;

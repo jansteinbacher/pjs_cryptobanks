@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
 import IntroductionCryptoAssetsQuiz from './IntroductionCryptoAssetsQuiz';
 import IntroductionCryptoAssetsPart1 from './IntroductionCryptoAssetsPart1';
@@ -8,7 +8,7 @@ import IntroductionCryptoAssetsPart4 from './IntroductionCryptoAssetsPart4';
 import IntroductionCryptoAssetsPart5 from './IntroductionCryptoAssetsPart5';
 import IntroductionCryptoAssetsExpert from './IntroductionCryptoAssetsExpert';
 
-const IntroductionCryptoAssets = () => {
+function IntroductionCryptoAssetsArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -57,8 +57,15 @@ const IntroductionCryptoAssets = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -82,7 +89,7 @@ const IntroductionCryptoAssets = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -91,6 +98,7 @@ const IntroductionCryptoAssets = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -106,8 +114,9 @@ const IntroductionCryptoAssets = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -124,6 +133,6 @@ const IntroductionCryptoAssets = () => {
       )}
     </div>
   );
-};
+}
 
-export default IntroductionCryptoAssets;
+export default IntroductionCryptoAssetsArticle;

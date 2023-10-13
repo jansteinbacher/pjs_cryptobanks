@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../../course.css';
 import TypesOfCryptoAssetsQuiz from './TypesOfCryptoAssetsQuiz';
 import TypesOfCryptoAssetsPart1 from './TypesOfCryptoAssetsPart1';
@@ -7,7 +7,7 @@ import TypesOfCryptoAssetsPart3 from './TypesOfCryptoAssetsPart3';
 import TypesOfCryptoAssetsPart4 from './TypesOfCryptoAssetsPart4';
 import TypesOfCryptoAssetsPart5 from './TypesOfCryptoAssetsPart5';
 
-const TypesOfCryptoAssets = () => {
+function TypesOfCryptoAssetsArticle() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
@@ -55,8 +55,15 @@ const TypesOfCryptoAssets = () => {
       const timer = setTimeout(() => {
         setShowRewardBanner(false);
       }, 4000);
-      return () => clearTimeout(timer);
+
+      // Always return a cleanup function, even if it's empty
+      return () => {
+        clearTimeout(timer);
+      };
     }
+
+    // If showRewardBanner is false, still return an empty cleanup function
+    return () => {};
   }, [showRewardBanner]);
 
   useEffect(() => {
@@ -80,7 +87,7 @@ const TypesOfCryptoAssets = () => {
           <div
             className="bg-green-400 h-full"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
 
@@ -89,6 +96,7 @@ const TypesOfCryptoAssets = () => {
       <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
         {!isFirstSection && (
           <button
+            type="button"
             onClick={handlePreviousSection}
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
@@ -104,8 +112,9 @@ const TypesOfCryptoAssets = () => {
           </a>
         ) : (
           <button
+            type="button"
             onClick={handleNextSection}
-            className={`bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded`}
+            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -122,6 +131,6 @@ const TypesOfCryptoAssets = () => {
       )}
     </div>
   );
-};
+}
 
-export default TypesOfCryptoAssets;
+export default TypesOfCryptoAssetsArticle;

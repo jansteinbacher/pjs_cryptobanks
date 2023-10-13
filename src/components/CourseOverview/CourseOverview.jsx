@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import BeginnerVideo from '../../videos/courseBeginnerIntroduction.mp4';
 import AdvancedVideo from '../../videos/courseAdvancedIntroduction.mp4';
 import ExpertVideo from '../../videos/courseExpertIntroduction.mp4';
@@ -51,7 +51,7 @@ const courses = [
   },
 ];
 
-const CourseOverview = () => {
+function CourseOverview() {
   const [selectedCourse, setSelectedCourse] = useState(courses[0]);
   const [showFloatingBar, setShowFloatingBar] = useState(false);
 
@@ -82,6 +82,7 @@ const CourseOverview = () => {
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4">
             {courses.map((course) => (
               <button
+                type="button"
                 key={course.id}
                 className={`course-button ${
                   selectedCourse.id === course.id ? 'selected' : ''
@@ -115,6 +116,7 @@ const CourseOverview = () => {
               Was Du in diesem Video lernen wirst:
             </h2>
             <div className="md:w-full h-64 md:h-auto">
+              {/* eslint-disable jsx-a11y/media-has-caption */}
               <video
                 key={selectedCourse.id}
                 controls
@@ -134,7 +136,10 @@ const CourseOverview = () => {
         </div>
         <div className="flex justify-center mt-8">
           <a href={selectedCourse.course_link}>
-            <button className="bg-green-400 hover:bg-green-300 text-white font-bold py-2 px-4 rounded">
+            <button
+              type="button"
+              className="bg-green-400 hover:bg-green-300 text-white font-bold py-2 px-4 rounded"
+            >
               Starte den Kurs &rarr;
             </button>
           </a>
@@ -146,6 +151,7 @@ const CourseOverview = () => {
               Du bist dir nicht sicher über Deinen Kenntnisstand? Mache jetzt
               ein kurzes Quiz und erhalte eine Empfehlung.
               <button
+                type="button"
                 className="ml-4 text-white "
                 onClick={dismissFloatingBar}
                 aria-label="Schließen"
@@ -155,7 +161,10 @@ const CourseOverview = () => {
             </p>
             <div className="flex justify-center items-center">
               <a href="/einstufungsquiz">
-                <button className="bg-white text-green-400 font-bold py-2 px-4 rounded ">
+                <button
+                  type="button"
+                  className="bg-white text-green-400 font-bold py-2 px-4 rounded "
+                >
                   Zum Quiz
                 </button>
               </a>
@@ -165,6 +174,6 @@ const CourseOverview = () => {
       </div>
     </div>
   );
-};
+}
 
 export default CourseOverview;

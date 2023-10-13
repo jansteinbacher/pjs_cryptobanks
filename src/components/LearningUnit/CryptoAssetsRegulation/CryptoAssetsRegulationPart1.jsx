@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Regulation from '../../../images/courseAdvanced/regulation.jpg';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -11,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -20,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -30,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const CryptoAssetsRegulationPart1 = () => {
+function CryptoAssetsRegulationPart1() {
   const articlesources = [
     'Deloitte, “The future of Crypto-Assets in a Regulated environment,” deloitte.com, 2021. [Online]. Available: https://www2.deloitte.com/nl/nl/pages/risk/articles/the-future-of-crypto-assets-in-a-regulated-environment.html. [Accessed: Sept. 22, 2023].',
     'C. Boeth, “Krypto-Assets im Investment Management - Regulatorischer Rahmen von Krypto Assets und Anwendungsmöglichkeiten der Technologie für Investment Manager,” deloitte.com, 2021. [Online]. Available: https://www2.deloitte.com/de/de/pages/financial-services/articles/krypto-assets-im-investment-management-regulatory.html. [Accessed: Sept. 22, 2023].',
@@ -40,7 +49,7 @@ const CryptoAssetsRegulationPart1 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=advanced-course'
+    'from=advanced-course',
   );
 
   return (
@@ -110,6 +119,6 @@ const CryptoAssetsRegulationPart1 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default CryptoAssetsRegulationPart1;

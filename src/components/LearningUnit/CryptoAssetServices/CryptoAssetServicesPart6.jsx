@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Handshake from '../../../images/courseAdvanced/handshake.jpg';
 
-const Sources = ({ sources }) => {
+function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
   const toggleSources = () => {
@@ -11,6 +12,7 @@ const Sources = ({ sources }) => {
   return (
     <div className="sources border border-gray-400 rounded p-4">
       <button
+        type="button"
         className="text-lg font-semibold"
         id="sources"
         onClick={toggleSources}
@@ -20,9 +22,9 @@ const Sources = ({ sources }) => {
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
-            {sources.map((source, index) => (
-              <li id={index + 1} key={index}>
-                [{index + 1}] {source}
+            {sources.map((source) => (
+              <li key={source.id}>
+                [{source.id}] {source.text}
               </li>
             ))}
           </ul>
@@ -30,9 +32,16 @@ const Sources = ({ sources }) => {
       )}
     </div>
   );
+}
+
+Sources.propTypes = {
+  sources: PropTypes.shape({
+    map: PropTypes.func,
+    length: PropTypes.number,
+  }).isRequired,
 };
 
-const CryptoAssetServicesPart6 = () => {
+function CryptoAssetServicesPart6() {
   const articlesources = [
     'Bank Frick, “Bank Frick expands its range of crypto assets and now offers trading and custodian services for Cardano, Polkadot and Tezos,” bankfrick.li, 2022. [Online]. Available: https://www.bankfrick.li/en/news-and-insights/bank-frick-expands-its-range-crypto-assets-and-now-offers-trading-and-custodian-services-cardano. [Accessed: Sept. 22, 2023].',
     'Bank Frick, “Bank Frick bietet neu Staking als Service für digitale Vermögenswerte an,” bankfrick.li, 2023. [Online]. Available: https://www.bankfrick.li/de/news-und-insights/bank-frick-bietet-neu-staking-als-service-fuer-digitale-vermoegenswerte-an. [Accessed: Sept. 22, 2023].',
@@ -48,7 +57,7 @@ const CryptoAssetServicesPart6 = () => {
   ];
 
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=advanced-course'
+    'from=advanced-course',
   );
 
   return (
@@ -63,9 +72,9 @@ const CryptoAssetServicesPart6 = () => {
             wertvolle Einblicke in potenzielle Krypto-Dienstleistungen gewonnen.
             Während sie auf dem Weg zum Restaurant ist, fällt ihr Blick auf
             einen weiteren Stand, der ihre Aufmerksamkeit sofort einfängt. Auf
-            dem Banner steht: "Kredite auf Blockchain-Infrastruktur". Getrieben
-            von ihrer Neugierde spricht sie die Aussteller an, um mehr darüber
-            zu erfahren.
+            dem Banner steht: &ldquo;Kredite auf Blockchain-Infrastruktur&rdquo.
+            Getrieben von ihrer Neugierde spricht sie die Aussteller an, um mehr
+            darüber zu erfahren.
           </p>
         </div>
       )}
@@ -94,6 +103,6 @@ const CryptoAssetServicesPart6 = () => {
       <Sources sources={articlesources} />
     </div>
   );
-};
+}
 
 export default CryptoAssetServicesPart6;

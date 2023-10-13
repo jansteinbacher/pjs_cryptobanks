@@ -1,6 +1,6 @@
-import Rocket from "../../../images/courseBeginner/rocket.png";
+import Rocket from '../../../images/courseBeginner/rocket.png';
 
-const IntroductionCryptoAssetsPart6 = () => {
+function IntroductionCryptoAssetsPart6() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
@@ -23,10 +23,10 @@ const IntroductionCryptoAssetsPart6 = () => {
           zum Ziel dein Wissen zu festigen. Du hast nun die Gelegenheit, dein
           erworbenes Wissen unter Beweis zu stellen. Worauf wartest du noch?
           Drücke auf den “Weiter”- Button und zeige dir selbst, wie viel du
-          erreicht hast. Wir glauben an dich! Los geht's!
+          erreicht hast. Wir glauben an dich! Los geht&apos;s!
         </p>
       </div>
     </div>
   );
-};
+}
 export default IntroductionCryptoAssetsPart6;
