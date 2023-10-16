@@ -85,6 +85,7 @@ import {
 import {
   CryptoCustodyRegulationPart1,
   CryptoCustodyRegulationPart2,
+  CryptoCustodyRegulationQuiz,
   CryptoCustodyRegulationArticle,
 } from './CryptoCustodyRegulation';
 
@@ -148,5 +149,6 @@ export {
   CryptoCustodyApplicationAreasArticle,
   CryptoCustodyRegulationPart1,
   CryptoCustodyRegulationPart2,
+  CryptoCustodyRegulationQuiz,
   CryptoCustodyRegulationArticle,
 };

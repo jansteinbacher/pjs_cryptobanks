@@ -118,14 +118,8 @@ function App() {
             path="/course-expert-introduction"
             element={<CourseExpertIntroduction />}
           />
-          <Route
-            path="/articles/course-expert-end"
-            element={<CourseExpertEnd />}
-          />
-          <Route
-            path="/articles/CourseBeginnerEnd"
-            element={<CourseBeginnerEnd />}
-          />
+          <Route path="/course-expert-end" element={<CourseExpertEnd />} />
+          <Route path="/course-beginner-end" element={<CourseBeginnerEnd />} />
         </Routes>
       </Router>
       <Footer />
