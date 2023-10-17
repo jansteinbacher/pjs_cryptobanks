@@ -1,4 +1,4 @@
-import CourseModule from '../../CourseStructure/CourseModule';
+import { CourseModule } from '../../CourseStructure';
 
 import {
   IntroductionCryptoCustodyPart1,
