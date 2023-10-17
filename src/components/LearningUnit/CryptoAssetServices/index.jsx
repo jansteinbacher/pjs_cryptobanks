@@ -5,4 +5,4 @@ export { default as CryptoAssetServicesPart4 } from './CryptoAssetServicesPart4'
 export { default as CryptoAssetServicesPart5 } from './CryptoAssetServicesPart5';
 export { default as CryptoAssetServicesPart6 } from './CryptoAssetServicesPart6';
 export { default as CryptoAssetServicesQuiz } from './CryptoAssetServicesQuiz';
-export { default as CryptoAssetServicesArticle } from './CryptoAssetServicesArticle';
+export { default as CryptoAssetServicesModule } from './CryptoAssetServicesModule';

@@ -1,66 +1,12 @@
-// CourseBeginnerArticle.js
-
 import { useState, useEffect } from 'react';
-import '../../../course.css';
-import {
-  IntroductionCryptoAssetsPart1,
-  IntroductionCryptoAssetsPart2,
-  IntroductionCryptoAssetsPart3,
-  IntroductionCryptoAssetsPart4,
-  IntroductionCryptoAssetsPart5,
-  IntroductionCryptoAssetsPart6,
-  IntroductionCryptoAssetsExpert,
-  IntroductionCryptoAssetsQuiz,
-  IntroductionBlockchainPart1,
-  IntroductionBlockchainPart2,
-  IntroductionBlockchainPart3,
-  IntroductionBlockchainPart4,
-  IntroductionBlockchainExpert,
-  IntroductionBlockchainQuiz,
-  TypesOfCryptoAssetsPart1,
-  TypesOfCryptoAssetsPart2,
-  TypesOfCryptoAssetsPart3,
-  TypesOfCryptoAssetsPart4,
-  TypesOfCryptoAssetsPart5,
-  TypesOfCryptoAssetsExpert,
-  TypesOfCryptoAssetsQuiz,
-  OpportunitiesAndChallengesPart1,
-  OpportunitiesAndChallengesPart2,
-  OpportunitiesAndChallengesCryptoAssetsExpert,
-  OpportunitiesAndChallengesCryptoAssetsQuiz,
-} from '../../LearningUnit';
+import PropTypes from 'prop-types';
+import '../Module.css';
 
-function CourseBeginnerArticle() {
+function CourseModule({ sectionContent, courseURL, completionRedirectURL }) {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
 
-  const sections = [
-    IntroductionCryptoAssetsPart1,
-    IntroductionCryptoAssetsPart2,
-    IntroductionCryptoAssetsPart3,
-    IntroductionCryptoAssetsPart4,
-    IntroductionCryptoAssetsPart5,
-    IntroductionCryptoAssetsExpert,
-    IntroductionCryptoAssetsPart6,
-    IntroductionCryptoAssetsQuiz,
-    IntroductionBlockchainPart1,
-    IntroductionBlockchainPart2,
-    IntroductionBlockchainPart3,
-    IntroductionBlockchainPart4,
-    IntroductionBlockchainExpert,
-    IntroductionBlockchainQuiz,
-    TypesOfCryptoAssetsPart1,
-    TypesOfCryptoAssetsPart2,
-    TypesOfCryptoAssetsPart3,
-    TypesOfCryptoAssetsPart4,
-    TypesOfCryptoAssetsPart5,
-    TypesOfCryptoAssetsExpert,
-    TypesOfCryptoAssetsQuiz,
-    OpportunitiesAndChallengesPart1,
-    OpportunitiesAndChallengesPart2,
-    OpportunitiesAndChallengesCryptoAssetsExpert,
-    OpportunitiesAndChallengesCryptoAssetsQuiz,
-  ];
+  const sections = sectionContent;
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const progress =
@@ -69,7 +15,7 @@ function CourseBeginnerArticle() {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/course-beginner';
+      window.location.href = courseURL;
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -134,14 +80,14 @@ function CourseBeginnerArticle() {
           <button
             type="button"
             onClick={handlePreviousSection}
-            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-gray-500 hover-bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
             Zurück
           </button>
         )}
         {isLastSection ? (
           <a
-            href="/articles/CourseEndBeginner"
+            href={completionRedirectURL}
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Kurs abschließen
@@ -150,7 +96,7 @@ function CourseBeginnerArticle() {
           <button
             type="button"
             onClick={handleNextSection}
-            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+            className="bg-green-400 hover-bg-green-600 text-white font-bold py-2 px-4 rounded"
           >
             Weiter
           </button>
@@ -169,4 +115,10 @@ function CourseBeginnerArticle() {
   );
 }
 
-export default CourseBeginnerArticle;
+CourseModule.propTypes = {
+  sectionContent: PropTypes.arrayOf(PropTypes.element).isRequired,
+  courseURL: PropTypes.string.isRequired,
+  completionRedirectURL: PropTypes.string.isRequired,
+};
+
+export default CourseModule;

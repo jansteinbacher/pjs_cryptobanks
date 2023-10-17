@@ -1,29 +1,29 @@
 import {
-  CourseBeginnerArticle,
+  CourseBeginnerModule,
   CourseBeginnerEnd,
   CourseBeginnerIntroduction,
 } from './CourseBeginner';
 
 import {
-  CourseAdvancedArticle,
+  CourseAdvancedModule,
   CourseAdvancedEnd,
   CourseAdvancedIntroduction,
 } from './CourseAdvanced';
 
 import {
-  CourseExpertArticle,
+  CourseExpertModule,
   CourseExpertEnd,
   CourseExpertIntroduction,
 } from './CourseExpert';
 
 export {
-  CourseBeginnerArticle,
+  CourseBeginnerModule,
   CourseBeginnerEnd,
   CourseBeginnerIntroduction,
-  CourseAdvancedArticle,
+  CourseAdvancedModule,
   CourseAdvancedEnd,
   CourseAdvancedIntroduction,
-  CourseExpertArticle,
+  CourseExpertModule,
   CourseExpertEnd,
   CourseExpertIntroduction,
 };

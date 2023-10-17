@@ -4,4 +4,4 @@ export { default as IntroductionBlockchainPart3 } from './IntroductionBlockchain
 export { default as IntroductionBlockchainPart4 } from './IntroductionBlockchainPart4';
 export { default as IntroductionBlockchainExpert } from './IntroductionBlockchainExpert';
 export { default as IntroductionBlockchainQuiz } from './IntroductionBlockchainQuiz';
-export { default as IntroductionBlockchainArticle } from './IntroductionBlockchainArticle';
+export { default as IntroductionBlockchainModule } from './IntroductionBlockchainModule';

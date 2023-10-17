@@ -1,22 +1,10 @@
 import { useState, useEffect } from 'react';
-import '../../../course.css';
-import IntroductionBlockchainPart1 from './IntroductionBlockchainPart1';
-import IntroductionBlockchainPart2 from './IntroductionBlockchainPart2';
-import IntroductionBlockchainPart3 from './IntroductionBlockchainPart3';
-import IntroductionBlockchainPart4 from './IntroductionBlockchainPart4';
-import IntroductionBlockchainQuiz from './IntroductionBlockchainQuiz';
+import PropTypes from 'prop-types';
+import './Module.css';
 
-function IntroductionBlockchainArticle() {
+function Module({ sections, pagePath }) {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
-
-  const sections = [
-    IntroductionBlockchainPart1,
-    IntroductionBlockchainPart2,
-    IntroductionBlockchainPart3,
-    IntroductionBlockchainPart4,
-    IntroductionBlockchainQuiz,
-  ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const progress =
@@ -25,7 +13,7 @@ function IntroductionBlockchainArticle() {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = '/introduction-blockchain?from=decisiontree';
+      window.location.href = `${pagePath}?from=decisiontree`;
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -131,4 +119,9 @@ function IntroductionBlockchainArticle() {
   );
 }
 
-export default IntroductionBlockchainArticle;
+Module.propTypes = {
+  sections: PropTypes.arrayOf(PropTypes.element).isRequired,
+  pagePath: PropTypes.string.isRequired,
+};
+
+export default Module;

@@ -7,7 +7,7 @@ import {
   IntroductionCryptoAssetsPart6,
   IntroductionCryptoAssetsExpert,
   IntroductionCryptoAssetsQuiz,
-  IntroductionCryptoAssetsArticle,
+  IntroductionCryptoAssetsModule,
 } from './IntroductionCryptoAssets';
 
 import {
@@ -17,7 +17,7 @@ import {
   IntroductionBlockchainPart4,
   IntroductionBlockchainExpert,
   IntroductionBlockchainQuiz,
-  IntroductionBlockchainArticle,
+  IntroductionBlockchainModule,
 } from './IntroductionBlockchain';
 
 import {
@@ -28,7 +28,7 @@ import {
   TypesOfCryptoAssetsPart5,
   TypesOfCryptoAssetsExpert,
   TypesOfCryptoAssetsQuiz,
-  TypesOfCryptoAssetsArticle,
+  TypesOfCryptoAssetsModule,
 } from './TypesOfCryptoAssets';
 
 import {
@@ -36,14 +36,14 @@ import {
   OpportunitiesAndChallengesPart2,
   OpportunitiesAndChallengesCryptoAssetsExpert,
   OpportunitiesAndChallengesCryptoAssetsQuiz,
-  OpportunitiesAndChallengesCryptoAssetsArticle,
+  OpportunitiesAndChallengesCryptoAssetsModule,
 } from './OpportunitiesAndChallengesCryptoAssets';
 
 import {
   CryptoAssetsRegulationPart1,
   CryptoAssetsRegulationPart2,
   CryptoAssetsRegulationQuiz,
-  CryptoAssetsRegulationArticle,
+  CryptoAssetsRegulationModule,
 } from './CryptoAssetsRegulation';
 
 import {
@@ -54,7 +54,7 @@ import {
   CryptoAssetServicesPart5,
   CryptoAssetServicesPart6,
   CryptoAssetServicesQuiz,
-  CryptoAssetServicesArticle,
+  CryptoAssetServicesModule,
 } from './CryptoAssetServices';
 
 import {
@@ -62,7 +62,7 @@ import {
   IntroductionCryptoCustodyPart2,
   IntroductionCryptoCustodyPart3,
   IntroductionCryptoCustodyQuiz,
-  IntroductionCryptoCustodyArticle,
+  IntroductionCryptoCustodyModule,
 } from './IntroductionCryptoCustody';
 
 import {
@@ -73,20 +73,20 @@ import {
   CryptoCustodyApplicationAreasPart5,
   CryptoCustodyApplicationAreasPart6,
   CryptoCustodyApplicationAreasQuiz,
-  CryptoCustodyApplicationAreasArticle,
+  CryptoCustodyApplicationAreasModule,
 } from './CryptoCustodyApplicationAreas';
 
 import {
   CryptoCustodyChallengesPart1,
   CryptoCustodyChallengesPart2,
-  CryptoCustodyChallengesArticle,
+  CryptoCustodyChallengesModule,
 } from './CryptoCustodyChallenges';
 
 import {
   CryptoCustodyRegulationPart1,
   CryptoCustodyRegulationPart2,
   CryptoCustodyRegulationQuiz,
-  CryptoCustodyRegulationArticle,
+  CryptoCustodyRegulationModule,
 } from './CryptoCustodyRegulation';
 
 export {
@@ -98,14 +98,14 @@ export {
   IntroductionCryptoAssetsPart6,
   IntroductionCryptoAssetsExpert,
   IntroductionCryptoAssetsQuiz,
-  IntroductionCryptoAssetsArticle,
+  IntroductionCryptoAssetsModule,
   IntroductionBlockchainPart1,
   IntroductionBlockchainPart2,
   IntroductionBlockchainPart3,
   IntroductionBlockchainPart4,
   IntroductionBlockchainExpert,
   IntroductionBlockchainQuiz,
-  IntroductionBlockchainArticle,
+  IntroductionBlockchainModule,
   TypesOfCryptoAssetsPart1,
   TypesOfCryptoAssetsPart2,
   TypesOfCryptoAssetsPart3,
@@ -113,16 +113,16 @@ export {
   TypesOfCryptoAssetsPart5,
   TypesOfCryptoAssetsExpert,
   TypesOfCryptoAssetsQuiz,
-  TypesOfCryptoAssetsArticle,
+  TypesOfCryptoAssetsModule,
   OpportunitiesAndChallengesPart1,
   OpportunitiesAndChallengesPart2,
   OpportunitiesAndChallengesCryptoAssetsExpert,
   OpportunitiesAndChallengesCryptoAssetsQuiz,
-  OpportunitiesAndChallengesCryptoAssetsArticle,
+  OpportunitiesAndChallengesCryptoAssetsModule,
   CryptoAssetsRegulationPart1,
   CryptoAssetsRegulationPart2,
   CryptoAssetsRegulationQuiz,
-  CryptoAssetsRegulationArticle,
+  CryptoAssetsRegulationModule,
   CryptoAssetServicesPart1,
   CryptoAssetServicesPart2,
   CryptoAssetServicesPart3,
@@ -130,12 +130,12 @@ export {
   CryptoAssetServicesPart5,
   CryptoAssetServicesPart6,
   CryptoAssetServicesQuiz,
-  CryptoAssetServicesArticle,
+  CryptoAssetServicesModule,
   IntroductionCryptoCustodyPart1,
   IntroductionCryptoCustodyPart2,
   IntroductionCryptoCustodyPart3,
   IntroductionCryptoCustodyQuiz,
-  IntroductionCryptoCustodyArticle,
+  IntroductionCryptoCustodyModule,
   CryptoCustodyApplicationAreasPart1,
   CryptoCustodyApplicationAreasPart2,
   CryptoCustodyApplicationAreasPart3,
@@ -145,10 +145,10 @@ export {
   CryptoCustodyApplicationAreasQuiz,
   CryptoCustodyChallengesPart1,
   CryptoCustodyChallengesPart2,
-  CryptoCustodyChallengesArticle,
-  CryptoCustodyApplicationAreasArticle,
+  CryptoCustodyChallengesModule,
+  CryptoCustodyApplicationAreasModule,
   CryptoCustodyRegulationPart1,
   CryptoCustodyRegulationPart2,
   CryptoCustodyRegulationQuiz,
-  CryptoCustodyRegulationArticle,
+  CryptoCustodyRegulationModule,
 };

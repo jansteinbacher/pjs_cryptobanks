@@ -5,4 +5,4 @@ export { default as TypesOfCryptoAssetsPart4 } from './TypesOfCryptoAssetsPart4'
 export { default as TypesOfCryptoAssetsPart5 } from './TypesOfCryptoAssetsPart5';
 export { default as TypesOfCryptoAssetsExpert } from './TypesOfCryptoAssetsExpert';
 export { default as TypesOfCryptoAssetsQuiz } from './TypesOfCryptoAssetsQuiz';
-export { default as TypesOfCryptoAssetsArticle } from './TypesOfCryptoAssetsArticle';
+export { default as TypesOfCryptoAssetsModule } from './TypesOfCryptoAssetsModule';

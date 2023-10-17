@@ -1,3 +1,3 @@
 export { default as CourseAdvancedIntroduction } from './CourseAdvancedIntroduction';
-export { default as CourseAdvancedArticle } from './CourseAdvancedArticle';
+export { default as CourseAdvancedModule } from './CourseAdvancedModule';
 export { default as CourseAdvancedEnd } from './CourseAdvancedEnd';
