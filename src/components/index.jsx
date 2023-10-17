@@ -14,13 +14,13 @@ export { default as DecisionTree } from './DecisionTree';
 export { default as Overview } from './Overview/Overview';
 
 export {
-  CourseBeginnerArticle,
+  CourseBeginnerModule,
   CourseBeginnerIntroduction,
   CourseBeginnerEnd,
-  CourseAdvancedArticle,
+  CourseAdvancedModule,
   CourseAdvancedIntroduction,
   CourseAdvancedEnd,
-  CourseExpertArticle,
+  CourseExpertModule,
   CourseExpertIntroduction,
   CourseExpertEnd,
 } from './Course';
@@ -28,16 +28,16 @@ export {
 export { default as Einstufungsquiz } from './Einstufungsquiz';
 
 export {
-  IntroductionCryptoAssetsArticle,
-  IntroductionBlockchainArticle,
-  CryptoAssetServicesArticle,
-  CryptoAssetsRegulationArticle,
-  TypesOfCryptoAssetsArticle,
-  OpportunitiesAndChallengesCryptoAssetsArticle,
-  CryptoCustodyApplicationAreasArticle,
-  CryptoCustodyChallengesArticle,
-  CryptoCustodyRegulationArticle,
-  IntroductionCryptoCustodyArticle,
+  IntroductionCryptoAssetsModule,
+  IntroductionBlockchainModule,
+  CryptoAssetServicesModule,
+  CryptoAssetsRegulationModule,
+  TypesOfCryptoAssetsModule,
+  OpportunitiesAndChallengesCryptoAssetsModule,
+  CryptoCustodyApplicationAreasModule,
+  CryptoCustodyChallengesModule,
+  CryptoCustodyRegulationModule,
+  IntroductionCryptoCustodyModule,
 } from './LearningUnit';
 
 export { default as Myths } from './Myths';

@@ -5,4 +5,4 @@ export { default as CryptoCustodyApplicationAreasPart4 } from './CryptoCustodyAp
 export { default as CryptoCustodyApplicationAreasPart5 } from './CryptoCustodyApplicationAreasPart5';
 export { default as CryptoCustodyApplicationAreasPart6 } from './CryptoCustodyApplicationAreasPart6';
 export { default as CryptoCustodyApplicationAreasQuiz } from './CryptoCustodyApplicationAreasQuiz';
-export { default as CryptoCustodyApplicationAreasArticle } from './CryptoCustodyApplicationAreasArticle';
+export { default as CryptoCustodyApplicationAreasModule } from './CryptoCustodyApplicationAreasModule';

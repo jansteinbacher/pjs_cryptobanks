@@ -6,4 +6,4 @@ export { default as IntroductionCryptoAssetsPart5 } from './IntroductionCryptoAs
 export { default as IntroductionCryptoAssetsPart6 } from './IntroductionCryptoAssetsPart6';
 export { default as IntroductionCryptoAssetsExpert } from './IntroductionCryptoAssetsExpert';
 export { default as IntroductionCryptoAssetsQuiz } from './IntroductionCryptoAssetsQuiz';
-export { default as IntroductionCryptoAssetsArticle } from './IntroductionCryptoAssetsArticle';
+export { default as IntroductionCryptoAssetsModule } from './IntroductionCryptoAssetsModule';

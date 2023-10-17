@@ -8,31 +8,31 @@ import {
   Footer,
   CourseOverview,
   Overview,
-  CourseBeginnerArticle,
+  CourseBeginnerModule,
   DecisionTree,
   CourseBeginnerEnd,
   Einstufungsquiz,
   News,
   Myths,
   CourseBeginnerIntroduction,
-  CourseAdvancedArticle,
+  CourseAdvancedModule,
   CourseAdvancedIntroduction,
   CourseAdvancedEnd,
-  IntroductionCryptoAssetsArticle,
-  IntroductionBlockchainArticle,
-  CryptoAssetServicesArticle,
-  CryptoAssetsRegulationArticle,
-  TypesOfCryptoAssetsArticle,
-  OpportunitiesAndChallengesCryptoAssetsArticle,
+  IntroductionCryptoAssetsModule,
+  IntroductionBlockchainModule,
+  CryptoAssetServicesModule,
+  CryptoAssetsRegulationModule,
+  TypesOfCryptoAssetsModule,
+  OpportunitiesAndChallengesCryptoAssetsModule,
   Survey,
   Interviews,
-  CourseExpertArticle,
+  CourseExpertModule,
   CourseExpertIntroduction,
   CourseExpertEnd,
-  CryptoCustodyApplicationAreasArticle,
-  CryptoCustodyChallengesArticle,
-  CryptoCustodyRegulationArticle,
-  IntroductionCryptoCustodyArticle,
+  CryptoCustodyApplicationAreasModule,
+  CryptoCustodyChallengesModule,
+  CryptoCustodyRegulationModule,
+  IntroductionCryptoCustodyModule,
 } from './components';
 
 function App() {
@@ -52,49 +52,49 @@ function App() {
             }
           />
           <Route path="/course-overview" element={<CourseOverview />} />
-          <Route path="/course-beginner" element={<CourseBeginnerArticle />} />
-          <Route path="/course-advanced" element={<CourseAdvancedArticle />} />
-          <Route path="/course-expert" element={<CourseExpertArticle />} />
+          <Route path="/course-beginner" element={<CourseBeginnerModule />} />
+          <Route path="/course-advanced" element={<CourseAdvancedModule />} />
+          <Route path="/course-expert" element={<CourseExpertModule />} />
           <Route path="/decisiontree" element={<DecisionTree />} />
           <Route
             path="/introduction-crypto-assets"
-            element={<IntroductionCryptoAssetsArticle />}
+            element={<IntroductionCryptoAssetsModule />}
           />
           <Route
             path="/introduction-blockchain"
-            element={<IntroductionBlockchainArticle />}
+            element={<IntroductionBlockchainModule />}
           />
           <Route
             path="/crypto-asset-services"
-            element={<CryptoAssetServicesArticle />}
+            element={<CryptoAssetServicesModule />}
           />
           <Route
             path="/crypto-asset-regulation"
-            element={<CryptoAssetsRegulationArticle />}
+            element={<CryptoAssetsRegulationModule />}
           />
           <Route
             path="/types-of-crypto-assets"
-            element={<TypesOfCryptoAssetsArticle />}
+            element={<TypesOfCryptoAssetsModule />}
           />
           <Route
             path="/opportunities-challenges-crypto-assets"
-            element={<OpportunitiesAndChallengesCryptoAssetsArticle />}
+            element={<OpportunitiesAndChallengesCryptoAssetsModule />}
           />
           <Route
             path="/crypto-custody-application-areas"
-            element={<CryptoCustodyApplicationAreasArticle />}
+            element={<CryptoCustodyApplicationAreasModule />}
           />
           <Route
             path="/crypto-custody-challenges"
-            element={<CryptoCustodyChallengesArticle />}
+            element={<CryptoCustodyChallengesModule />}
           />
           <Route
             path="/crypto-custody-regulation"
-            element={<CryptoCustodyRegulationArticle />}
+            element={<CryptoCustodyRegulationModule />}
           />
           <Route
             path="/introduction-crypto-custody"
-            element={<IntroductionCryptoCustodyArticle />}
+            element={<IntroductionCryptoCustodyModule />}
           />
           <Route path="/mythbusters" element={<Myths />} />
           <Route path="/interviews" element={<Interviews />} />
@@ -110,16 +110,14 @@ function App() {
             path="/course-advanced-introduction"
             element={<CourseAdvancedIntroduction />}
           />
-          <Route
-            path="/articles/course-advanced-end"
-            element={<CourseAdvancedEnd />}
-          />
+
           <Route
             path="/course-expert-introduction"
             element={<CourseExpertIntroduction />}
           />
           <Route path="/course-expert-end" element={<CourseExpertEnd />} />
           <Route path="/course-beginner-end" element={<CourseBeginnerEnd />} />
+          <Route path="/course-advanced-end" element={<CourseAdvancedEnd />} />
         </Routes>
       </Router>
       <Footer />
