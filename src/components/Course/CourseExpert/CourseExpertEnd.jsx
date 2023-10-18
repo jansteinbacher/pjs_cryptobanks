@@ -3,8 +3,8 @@ import { CourseEnd } from '../../CourseStructure';
 function CourseExpertEnd() {
   return (
     <CourseEnd
-      summaryDownloadLink="src/images/Kryptoassets.pdf"
-      certificateDownloadLink="src/images/Kryptoassets.pdf"
+      summaryDownloadLink="src/downloads/courseSummaries/summaryExpertCourse.pdf"
+      certificateDownloadLink="src/downloads/certificates/certificateExpertCourse.pdf"
       followingCourseLink="/course-expert-introduction"
       followingCourseDescription="Wiederhole den Expertenkurs"
       furtherContent={

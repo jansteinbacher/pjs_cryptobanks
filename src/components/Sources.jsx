@@ -1,12 +1,5 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
-
-// Define the generateUniqueId function before using it
-function generateUniqueId() {
-  // You can use a library like uuid or generate a unique ID as needed
-  // For simplicity, we'll generate a basic unique ID here.
-  return Math.random().toString(36).substring(2, 9);
-}
+import PropTypes from 'prop-types';
 
 function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
@@ -23,13 +16,16 @@ function Sources({ sources }) {
         id="sources"
         onClick={toggleSources}
       >
-        Quellen:
+        Quellen {showSources ? 'ausblenden' : 'anzeigen'}
+        {showSources ? '↓' : '→'}
       </button>
       {showSources && (
         <div className="source-list leading-relaxed mt-4">
           <ul>
             {sources.map((source) => (
-              <li key={generateUniqueId()}>{source}</li>
+              <li key={source.id} className="mb-4">
+                [{source.id}] {source.text}
+              </li>
             ))}
           </ul>
         </div>
@@ -39,7 +35,12 @@ function Sources({ sources }) {
 }
 
 Sources.propTypes = {
-  sources: PropTypes.arrayOf(PropTypes.string).isRequired,
+  sources: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default Sources;
