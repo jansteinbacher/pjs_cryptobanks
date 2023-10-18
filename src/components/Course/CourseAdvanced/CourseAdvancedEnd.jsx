@@ -3,8 +3,8 @@ import { CourseEnd } from '../../CourseStructure';
 function CourseAdvancedEnd() {
   return (
     <CourseEnd
-      summaryDownloadLink="src/images/Kryptoassets.pdf"
-      certificateDownloadLink="src/images/Kryptoassets.pdf"
+      summaryDownloadLink="src/downloads/courseSummaries/summaryAdvancedCourse.pdf"
+      certificateDownloadLink="src/downloads/certificates/certificateAdvancedCourse.pdf"
       followingCourseLink="/course-advanced-introduction"
       followingCourseDescription="Zum Fortgeschrittenenkurs"
       furtherContent={
