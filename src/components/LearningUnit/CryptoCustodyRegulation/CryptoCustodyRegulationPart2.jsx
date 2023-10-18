@@ -1,54 +1,7 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import Bitcoinhold from '../../../images/courseExpert/bitcoinhold.png';
-
-function Sources({ sources }) {
-  const [showSources, setShowSources] = useState(false);
-
-  const toggleSources = () => {
-    setShowSources(!showSources);
-  };
-
-  return (
-    <div className="sources border border-gray-400 rounded p-4">
-      <button
-        type="button"
-        className="text-lg font-semibold"
-        id="sources"
-        onClick={toggleSources}
-      >
-        Quellen:
-      </button>
-      {showSources && (
-        <div className="source-list leading-relaxed mt-4">
-          <ul>
-            {sources.map((source) => (
-              <li key={source.id}>
-                [{source.id}] {source.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
-Sources.propTypes = {
-  sources: PropTypes.shape({
-    map: PropTypes.func,
-    length: PropTypes.number,
-  }).isRequired,
-};
+import CryptoCustodyRegulationSources from './CryptoCustodyRegulationSources';
 
 function CryptoCustodyRegulationPart2() {
-  const articlesources = [
-    'Bundesministerium der Justiz. (2023, Febr. 22). “Gesetz über das Kreditwesen,”  [Online]. Available: https://www.gesetze-im-internet.de/kredwg/index.html. [Accessed: Sept. 29, 2023].',
-    'BaFin. “Kryptoverwahrgeschäft,” BaFin, 2022. [Online]. Available: https://www.bafin.de/DE/Aufsicht/FinTech/Geschaeftsmodelle/DLT_Blockchain_Krypto/Kryptoverwahrgeschaeft/Kryptoverwahrgeschaeft_artikel.html. [Accessed: Sept. 29, 2023].',
-    'BaFin. “Merkblatt: Hinweise zum Tatbestand des Kryptoverwahrgeschäfts,” BaFin, 2020. [Online]. Available: https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_200302_kryptoverwahrgeschaeft.html. [Accessed: Sept. 29, 2023].',
-    'Rödl & Partner. “Kryptoverwahrgeschäft als neuer KWG-Tatbestand,” Rödl & Partner, 2020. [Online]. Available: https://www.roedl.de/themen/aufsichtsrecht/kryptoverwahrgeschaeft-kwg-tatbestand-rechtsaenderungen. [Accessed: Sept. 29, 2023].',
-  ];
-
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
@@ -112,7 +65,7 @@ function CryptoCustodyRegulationPart2() {
         bietet <a href="#sources">[4]</a>.
       </p>
 
-      <Sources sources={articlesources} />
+      <CryptoCustodyRegulationSources />
     </div>
   );
 }

@@ -1,56 +1,7 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import Challenges from '../../../images/courseBeginner/challenges.png';
+import OpportunitiesAndChallengesCryptoAssetsSources from './OpportunitiesAndChallengesCryptoAssetsSources';
 
-function Sources({ sources }) {
-  const [showSources, setShowSources] = useState(false);
-
-  const toggleSources = () => {
-    setShowSources(!showSources);
-  };
-
-  return (
-    <div className="sources border border-gray-400 rounded p-4">
-      <button
-        type="button"
-        className="text-lg font-semibold"
-        id="sources"
-        onClick={toggleSources}
-      >
-        Quellen:
-      </button>
-      {showSources && (
-        <div className="source-list leading-relaxed mt-4">
-          <ul>
-            {sources.map((source) => (
-              <li key={source.id}>
-                [{source.id}] {source.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
-Sources.propTypes = {
-  sources: PropTypes.shape({
-    map: PropTypes.func,
-    length: PropTypes.number,
-  }).isRequired,
-};
-
-function OpportunitiesAndChallengesPart1() {
-  const articlesources = [
-    'H. Meisner, “Neue Herausforderungen in der Finanzsphäre,” in Finanzwirtschaft in der Internetökonomie. Wiesbaden: Springer Gabler, 2021, pp. 179–218.',
-    'D. Kerscher, Bitcoin: Funktionsweise, Risiken und Chancen der digitalen Währung. Dingolfing: Kemacon UG, 2014',
-    'I. Allison, “Divisions in Sam Bankman-Fried’s Crypto Empire Blur on His Trading Titan Alameda’s Balance Sheet,” The Atlanta Journal Constitution, Nov. 2, 2022. [Online], Available: https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/. [Accessed Sept. 22, 2023].',
-    'G. B. Gorton and J. Zhang, Bank Runs During Crypto Winter. To be published.  [Online]. Available: http://dx.doi.org/10.2139/ssrn.4447703. [Accessed: Sept. 22, 2023].',
-    'A. de Vries, U. Gallersdörfer, L. Klaaßen, C. Stoll, “Revisiting Bitcoin’s carbon footprint,” Joule, vol. 6, pp. 498–502, 2022.',
-    'M. Tewes, M. Bauer, G. Holz, “Security Tokenization,” Porsche Consulting, 2023. [Online]. Available: https://www.porsche-consulting.com/sites/default/files/2023-07/digital_assets_c_porsche_consulting_2023_0.pdf. [Accessed: Sept. 22, 2023].',
-  ];
-
+function TypesOfCryptoAssetsSources() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
@@ -141,9 +92,9 @@ function OpportunitiesAndChallengesPart1() {
         />
       </div>
 
-      <Sources sources={articlesources} />
+      <OpportunitiesAndChallengesCryptoAssetsSources />
     </div>
   );
 }
 
-export default OpportunitiesAndChallengesPart1;
+export default TypesOfCryptoAssetsSources;

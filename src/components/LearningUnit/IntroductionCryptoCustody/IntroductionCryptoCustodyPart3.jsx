@@ -1,53 +1,6 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-
-function Sources({ sources }) {
-  const [showSources, setShowSources] = useState(false);
-
-  const toggleSources = () => {
-    setShowSources(!showSources);
-  };
-
-  return (
-    <div className="sources border border-gray-400 rounded p-4">
-      <button
-        type="button"
-        className="text-lg font-semibold"
-        id="sources"
-        onClick={toggleSources}
-      >
-        Quellen:
-      </button>
-      {showSources && (
-        <div className="source-list leading-relaxed mt-4">
-          <ul>
-            {sources.map((source) => (
-              <li key={source.id}>
-                [{source.id}] {source.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
-Sources.propTypes = {
-  sources: PropTypes.shape({
-    map: PropTypes.func,
-    length: PropTypes.number,
-  }).isRequired,
-};
+import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
 
 function IntroductionCryptoCustodyPart3() {
-  const articlesources = [
-    'Z. Jaroucheh and G. Baraq, “Crypto Assets Custody: Taxonomy, Components, and Open Challenges,” 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), Dubai, United Arab Emirates, 2023, pp. 1-6.',
-    'Y. Lindell, “Fast Secure Multiparty ECDSA with Practical Distributed Key Generation and Applications to Cryptocurrency Custody,” in Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security, A. Nof, Ed., New York, NY, United States: Association for Computing Machinery, Oct. 2018, pp. 1837–1854.',
-    'S.-F. Hsieh and G. Brennan, “Issues, risks, and challenges for auditing crypto asset transactions,” International Journal of Accounting Information Systems, p. 100569, Aug. 2022.',
-    'J. Han, M. Song, H. Eom, Y. Son,  Mansub Song; Hyeonsang Eom and Yongseok Son “An efficient multi-signature wallet in blockchain using bloom filter,” Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC 21), Association for Computing Machinery, New York, NY, USA, pp. 273–281, 2021',
-  ];
-
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
 
@@ -87,7 +40,7 @@ function IntroductionCryptoCustodyPart3() {
         </div>
       )}
 
-      <Sources sources={articlesources} />
+      <IntroductionCryptoCustodySources />
     </div>
   );
 }

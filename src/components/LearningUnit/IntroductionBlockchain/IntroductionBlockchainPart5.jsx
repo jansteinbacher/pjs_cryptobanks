@@ -1,53 +1,6 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-
-function Sources({ sources }) {
-  const [showSources, setShowSources] = useState(false);
-
-  const toggleSources = () => {
-    setShowSources(!showSources);
-  };
-
-  return (
-    <div className="sources border border-gray-400 rounded p-4">
-      <button
-        type="button"
-        className="text-lg font-semibold"
-        id="sources"
-        onClick={toggleSources}
-      >
-        Quellen:
-      </button>
-      {showSources && (
-        <div className="source-list leading-relaxed mt-4">
-          <ul>
-            {sources.map((source) => (
-              <li key={source.id}>
-                [{source.id}] {source.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
-Sources.propTypes = {
-  sources: PropTypes.shape({
-    map: PropTypes.func,
-    length: PropTypes.number,
-  }).isRequired,
-};
+import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 
 function IntroductionBlockchainPart4() {
-  const articlesources = [
-    'Ray, S. 2018.The Difference Between Blockchains & Distributed Ledger Technology. in: Towards Data Science. https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92. [abgerufen am 24.08.2023].',
-    'Sunyaev, A. und Sunyaev, A. 2020. Distributed ledger technology. Internet computing: Principles of distributed systems and emerging internet-based technologies, S. 265-299.',
-    'Nakamoto, S. 2008. A peer-to-peer electronic cash system. https://bitcoin.org/bitcoin.pdf. [abgerufen am 24.08.2023].',
-    'Bundesamt für Sicherheit in der Informationstechnik. 2023. Blockchain macht Daten praktisch unveränderbar. https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html. [abgerufen am 24.08.2023].]',
-  ];
-
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
@@ -110,7 +63,7 @@ function IntroductionBlockchainPart4() {
         werden, was die Effizienz und Sicherheit verbessert.
       </p>
 
-      <Sources sources={articlesources} />
+      <IntroductionBlockchainSources />
     </div>
   );
 }

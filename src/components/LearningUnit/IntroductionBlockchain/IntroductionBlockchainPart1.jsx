@@ -1,54 +1,7 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import Blockchain from '../../../images/courseBeginner/blockchain.png';
-
-function Sources({ sources }) {
-  const [showSources, setShowSources] = useState(false);
-
-  const toggleSources = () => {
-    setShowSources(!showSources);
-  };
-
-  return (
-    <div className="sources border border-gray-400 rounded p-4">
-      <button
-        type="button"
-        className="text-lg font-semibold"
-        id="sources"
-        onClick={toggleSources}
-      >
-        Quellen:
-      </button>
-      {showSources && (
-        <div className="source-list leading-relaxed mt-4">
-          <ul>
-            {sources.map((source) => (
-              <li key={source.id}>
-                [{source.id}] {source.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
-Sources.propTypes = {
-  sources: PropTypes.shape({
-    map: PropTypes.func,
-    length: PropTypes.number,
-  }).isRequired,
-};
+import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 
 function IntroductionBlockchainPart1() {
-  const articlesources = [
-    'S. Ray, “The difference between Blockchains &amp; Distributed Ledger Technology,” Medium, https://towardsdatascience.com/the-difference-between-blockchains-distributed-ledger-technology-42715a0fa92 (accessed Sep. 22, 2023).',
-    'A. Sunyaev, “Distributed Ledger Technology,” Internet Computing, pp. 265–299, 2020. doi:10.1007/978-3-030-34957-8_9',
-    'S. Nakamoto, “A peer-to-peer electronic cash system,” Bitcoin, https://bitcoin.org/en/bitcoin-paper (accessed Sep. 21, 2023).',
-    '“Blockchain Macht Daten Praktisch Unveränderbar,” Bundesamt für Sicherheit in der Informationstechnik, https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Blockchain-Kryptowaehrung/blockchain-kryptowaehrung_node.html (accessed Sep. 21, 2023).',
-  ];
-
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
@@ -113,7 +66,7 @@ function IntroductionBlockchainPart1() {
         />
       </div>
 
-      <Sources sources={articlesources} />
+      <IntroductionBlockchainSources />
     </div>
   );
 }
