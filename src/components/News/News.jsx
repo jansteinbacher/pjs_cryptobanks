@@ -12,7 +12,7 @@ function News() {
     )
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
-      
+      .catch((error) => console.error('Error fetching news:', error));
   }, [query]);
 
   return (
