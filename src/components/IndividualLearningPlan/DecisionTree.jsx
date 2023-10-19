@@ -1,38 +1,10 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Question from './Question';
 
 // TODO: Links should open in new window
 // Download Document with Lernplan
 // Make it prettier
-
-function Question({ question, answers, updateAnswer }) {
-  return (
-    <div
-      id="decisiontree"
-      className="container mx-auto py-12 px-12 max-w-screen-xl h-screen w-screen flex flex-col justify-center items-center mt-[-8rem]"
-    >
-      <p className="text-xl mb-8 text-center">{question}</p>
-      <div className="flex flex-col justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-        {answers.map((answer) => (
-          <button
-            key={answer}
-            type="button" // Add this line
-            onClick={() => updateAnswer(answer)}
-            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
-          >
-            {answer}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-Question.propTypes = {
-  question: PropTypes.string.isRequired,
-  answers: PropTypes.arrayOf(PropTypes.string).isRequired,
-  updateAnswer: PropTypes.func.isRequired,
-};
 
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -221,17 +193,4 @@ function DecisionTree() {
   );
 }
 
-function App() {
-  return (
-    <div className="container mx-auto mt-10 p-4">
-      <h1 className="text-2xl font-bold mb-4">Individueller Lernplan</h1>
-      <p className="mb-8">
-        Beantworte die Fragen und erhalte individuell auf dich zugeschnittenen
-        Lerneinheiten.
-      </p>
-      <DecisionTree />
-    </div>
-  );
-}
-
-export default App;
+export default DecisionTree;

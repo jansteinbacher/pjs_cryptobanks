@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../Module.css';
+import NavigationButtons from './NavigationButtons';
+import ProgressBar from './ProgressBar';
+import RewardBanner from './RewardBanner';
+import getCompletionRedirectURL from './CompletionRedirect';
 
-function CourseModule({ sectionContent, courseURL, completionRedirectURL }) {
+function Module({ sections, pagePath }) {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [showRewardBanner, setShowRewardBanner] = useState(false);
-
-  const sections = sectionContent;
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const progress =
@@ -15,7 +17,7 @@ function CourseModule({ sectionContent, courseURL, completionRedirectURL }) {
 
   const handleNextSection = () => {
     if (sectionIndex === sections.length - 1) {
-      window.location.href = courseURL;
+      window.location.href = pagePath;
     } else {
       setSectionIndex((prevIndex) => prevIndex + 1);
       setShowRewardBanner(true);
@@ -61,64 +63,34 @@ function CourseModule({ sectionContent, courseURL, completionRedirectURL }) {
     return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
 
+  const completionRedirectURL = getCompletionRedirectURL(
+    new URLSearchParams(window.location.search).get('from'),
+  );
+
   return (
     <div className="max-w-screen-lg mx-auto p-2 md:p-4">
       <h3 className="text-xl mb-2">Kursfortschritt {progress.toFixed(0)}%</h3>
-      <div className="flex items-center justify-center mb-8">
-        <div className="w-full bg-gray-300 rounded overflow-hidden h-2">
-          <div
-            className="bg-green-400 h-full"
-            style={{ width: `${progress}%` }}
-          />
-        </div>
-      </div>
+
+      <ProgressBar progress={progress} />
 
       <SectionComponent />
 
-      <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
-        {!isFirstSection && (
-          <button
-            type="button"
-            onClick={handlePreviousSection}
-            className="bg-gray-500 hover-bg-gray-700 text-white font-bold py-2 px-4 rounded"
-          >
-            Zurück
-          </button>
-        )}
-        {isLastSection ? (
-          <a
-            href={completionRedirectURL}
-            className="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
-          >
-            Kurs abschließen
-          </a>
-        ) : (
-          <button
-            type="button"
-            onClick={handleNextSection}
-            className="bg-green-400 hover-bg-green-600 text-white font-bold py-2 px-4 rounded"
-          >
-            Weiter
-          </button>
-        )}
-      </div>
+      <NavigationButtons
+        isFirstSection={isFirstSection}
+        isLastSection={isLastSection}
+        handlePreviousSection={handlePreviousSection}
+        buttonDestination={completionRedirectURL}
+        handleNextSection={handleNextSection}
+      />
 
-      {showRewardBanner && (
-        <div className="reward-banner">
-          <span className="mr-2" role="img" aria-label="Achievement Icon">
-            🏆
-          </span>
-          Glückwunsch! Sie haben den {sectionIndex}. Artikel abgeschlossen.
-        </div>
-      )}
+      {showRewardBanner && <RewardBanner sectionIndex={sectionIndex} />}
     </div>
   );
 }
 
-CourseModule.propTypes = {
-  sectionContent: PropTypes.arrayOf(PropTypes.element).isRequired,
-  courseURL: PropTypes.string.isRequired,
-  completionRedirectURL: PropTypes.string.isRequired,
+Module.propTypes = {
+  sections: PropTypes.arrayOf(PropTypes.element).isRequired,
+  pagePath: PropTypes.string.isRequired,
 };
 
-export default CourseModule;
+export default Module;

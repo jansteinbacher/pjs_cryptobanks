@@ -1,4 +1,4 @@
-import { CourseModule } from '../../CourseStructure';
+import Module from '../../Module';
 
 import {
   IntroductionCryptoCustodyPart1,
@@ -40,11 +40,7 @@ function CourseExpertModule() {
   ];
 
   return (
-    <CourseModule
-      sectionContent={sections}
-      courseURL="/course-expert?from=expert-course"
-      completionRedirectURL="/course-expert-end"
-    />
+    <Module sections={sections} pagePath="/course-expert?from=expert-course" />
   );
 }
 

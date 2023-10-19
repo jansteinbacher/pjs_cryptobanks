@@ -9,7 +9,7 @@ import {
   CourseOverview,
   Overview,
   CourseBeginnerModule,
-  DecisionTree,
+  IndividualLearningPlan,
   CourseBeginnerEnd,
   Einstufungsquiz,
   News,
@@ -55,7 +55,7 @@ function App() {
           <Route path="/course-beginner" element={<CourseBeginnerModule />} />
           <Route path="/course-advanced" element={<CourseAdvancedModule />} />
           <Route path="/course-expert" element={<CourseExpertModule />} />
-          <Route path="/decisiontree" element={<DecisionTree />} />
+          <Route path="/decisiontree" element={<IndividualLearningPlan />} />
           <Route
             path="/introduction-crypto-assets"
             element={<IntroductionCryptoAssetsModule />}
