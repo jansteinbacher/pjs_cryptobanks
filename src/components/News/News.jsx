@@ -12,6 +12,7 @@ function News() {
     )
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
+      // eslint-disable-line no-console
       .catch((error) => console.error('Error fetching news:', error));
   }, [query]);
 
