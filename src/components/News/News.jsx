@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import NewsHeader from './NewsHeader';
 import NewsArticle from './NewsArticle';
 
@@ -7,9 +7,7 @@ function News() {
   const [query, setQuery] = useState('crypto&lang=en');
 
   useEffect(() => {
-    fetch(
-      `https://gnews.io/api/v4/search?q=${query}&token=5247b3e888209f2ccee89baa0b2d86c0`,
-    )
+    fetch(`https://gnews.io/api/v4/search?q=${query}&token=5247b3e888209f2ccee89baa0b2d86c0`)
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error('Error fetching news:', error));
