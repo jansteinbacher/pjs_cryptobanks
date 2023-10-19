@@ -1,4 +1,4 @@
-import { CourseModule } from '../../CourseStructure';
+import Module from '../../Module';
 
 import {
   IntroductionCryptoAssetsPart1,
@@ -58,10 +58,9 @@ function CourseBeginnerModule() {
   ];
 
   return (
-    <CourseModule
-      sectionContent={sections}
-      courseURL="/course-beginner?from=beginner-course"
-      completionRedirectURL="/course-beginner-end"
+    <Module
+      sections={sections}
+      pagePath="/course-beginner?from=beginner-course"
     />
   );
 }

@@ -1,4 +1,4 @@
-import { CourseModule } from '../../CourseStructure';
+import Module from '../../Module';
 
 import {
   CryptoAssetsRegulationPart1,
@@ -28,10 +28,9 @@ function CourseAdvancedModule() {
   ];
 
   return (
-    <CourseModule
-      sectionContent={sections}
-      courseURL="/course-advanced?from=advanced-course"
-      completionRedirectURL="/course-advanced-end"
+    <Module
+      sections={sections}
+      pagePath="/course-advanced?from=advanced-course"
     />
   );
 }
