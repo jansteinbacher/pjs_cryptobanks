@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import CourseButton from './CourseButton';
+import CourseDetails from './CourseDetails';
+import FloatingBar from './FloatingBar';
 import BeginnerVideo from '../../videos/courseBeginnerIntroduction.mp4';
 import AdvancedVideo from '../../videos/courseAdvancedIntroduction.mp4';
 import ExpertVideo from '../../videos/courseExpertIntroduction.mp4';
@@ -81,59 +84,16 @@ function CourseOverview() {
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4">
             {courses.map((course) => (
-              <button
-                type="button"
+              <CourseButton
                 key={course.id}
-                className={`course-button ${
-                  selectedCourse.id === course.id ? 'selected' : ''
-                } rounded-full py-2 px-4 md:px-6 font-semibold text-sm md:text-base ${
-                  selectedCourse.id === course.id
-                    ? 'bg-green-400 text-white'
-                    : 'bg-gray-200 text-gray-800'
-                } hover:bg-green-300 hover:text-white transition-colors duration-300 ease-in-out`}
-                onClick={() => setSelectedCourse(course)}
-              >
-                {course.name}
-              </button>
+                course={course}
+                isSelected={selectedCourse.id === course.id}
+                onClick={setSelectedCourse}
+              />
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-4 bg-gray-100 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              {selectedCourse.name}
-            </h2>
-            <ul className="list-disc list-inside text-gray-700">
-              {selectedCourse.points.map((point) => (
-                <li key={point} className="mb-2">
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="p-4 bg-gray-100 rounded-lg">
-            <h2 className="mb-4 font-bold text-xl text-gray-800">
-              Was Du in diesem Video lernen wirst:
-            </h2>
-            <div className="md:w-full h-64 md:h-auto">
-              {/* eslint-disable jsx-a11y/media-has-caption */}
-              <video
-                key={selectedCourse.id}
-                controls
-                className="w-full h-full rounded-lg"
-              >
-                <source src={selectedCourse.video_link} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="mt-4 text-gray-700">
-              <p>
-                <span className="font-semibold">Dauer:</span>{' '}
-                {selectedCourse.duration}
-              </p>
-            </div>
-          </div>
-        </div>
+        <CourseDetails selectedCourse={selectedCourse} />
         <div className="flex justify-center mt-8">
           <a href={selectedCourse.course_link}>
             <button
@@ -145,32 +105,7 @@ function CourseOverview() {
           </a>
         </div>
 
-        {showFloatingBar && (
-          <div className="fixed bottom-0 p-4 bg-green-300 text-white rounded-t-lg ">
-            <p className="text-center font-bold mb-2">
-              Du bist dir nicht sicher über Deinen Kenntnisstand? Mache jetzt
-              ein kurzes Quiz und erhalte eine Empfehlung.
-              <button
-                type="button"
-                className="ml-4 text-white "
-                onClick={dismissFloatingBar}
-                aria-label="Schließen"
-              >
-                &#x2716;
-              </button>
-            </p>
-            <div className="flex justify-center items-center">
-              <a href="/einstufungsquiz">
-                <button
-                  type="button"
-                  className="bg-white text-green-400 font-bold py-2 px-4 rounded "
-                >
-                  Zum Quiz
-                </button>
-              </a>
-            </div>
-          </div>
-        )}
+        {showFloatingBar && <FloatingBar onDismiss={dismissFloatingBar} />}
       </div>
     </div>
   );
