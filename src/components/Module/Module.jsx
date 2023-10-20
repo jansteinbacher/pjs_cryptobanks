@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import '../Module.css';
+import './Module.css';
 import NavigationButtons from './NavigationButtons';
 import ProgressBar from './ProgressBar';
 import RewardBanner from './RewardBanner';
