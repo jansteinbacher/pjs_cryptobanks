@@ -89,7 +89,7 @@ function Module({ sections, pagePath }) {
 }
 
 Module.propTypes = {
-  sections: PropTypes.arrayOf(PropTypes.element).isRequired,
+  sections: PropTypes.arrayOf(PropTypes.elementType).isRequired,
   pagePath: PropTypes.string.isRequired,
 };
 
