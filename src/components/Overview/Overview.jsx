@@ -144,6 +144,8 @@ function Overview() {
         handleSearch={handleSearch}
         searchSuggestions={searchSuggestions}
         showSuggestions={showSuggestions}
+        setSearchQuery={setSearchQuery}
+        setShowSuggestions={setShowSuggestions}
       />
 
       <div className="flex justify-center">

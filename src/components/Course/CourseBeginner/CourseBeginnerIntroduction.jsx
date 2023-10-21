@@ -1,4 +1,4 @@
-import { CourseIntroduction } from '../../CourseStructure';
+import CourseIntroduction from '../../CourseIntroduction';
 import BerndVideo from '../../../videos/characterBerndIntroduction.mp4';
 
 function CourseBeginnerIntroduction() {

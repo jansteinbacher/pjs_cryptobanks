@@ -1,4 +1,4 @@
-import { CourseEnd } from '../../CourseStructure';
+import CourseEnd from '../../CourseEnd';
 
 function CourseExpertEnd() {
   return (

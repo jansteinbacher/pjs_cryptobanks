@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import {
-  Navbar,
+  NavigationBar,
   Hero,
   About,
-  Startpage,
+  Homepage,
   Footer,
   CourseOverview,
   Overview,
   CourseBeginnerModule,
   IndividualLearningPlan,
   CourseBeginnerEnd,
-  Einstufungsquiz,
+  AssessmentQuiz,
   News,
   Myths,
   CourseBeginnerIntroduction,
@@ -38,7 +38,7 @@ import {
 function App() {
   return (
     <div>
-      <Navbar />
+      <NavigationBar />
       <Router>
         <Routes>
           <Route
@@ -46,7 +46,7 @@ function App() {
             element={
               <>
                 <Hero />
-                <Startpage />
+                <Homepage />
                 <About />
               </>
             }
@@ -101,7 +101,7 @@ function App() {
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
           <Route path="/survey" element={<Survey />} />
-          <Route path="/einstufungsquiz" element={<Einstufungsquiz />} />
+          <Route path="/assessment-quiz" element={<AssessmentQuiz />} />
           <Route
             path="/course-beginner-introduction"
             element={<CourseBeginnerIntroduction />}

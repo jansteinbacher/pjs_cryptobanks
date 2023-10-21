@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import QuizQuestion from './QuizQuestion';
+import QuizResult from './QuizResult';
+import QuizProgress from './QuizProgress';
 
 function Quiz({ questions }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -89,23 +92,12 @@ function Quiz({ questions }) {
         <div className="mb-8">
           {!quizFinished ? (
             <>
-              <h3 className="text-xl font-bold mb-8">
-                {questions[currentQuestionIndex].question}
-              </h3>
-              <div className="space-y-4">
-                {questions[currentQuestionIndex].options.map((option) => (
-                  <button
-                    type="button"
-                    key={option.id}
-                    className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                      answered ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                    onClick={() => handleAnswerSelect(option.id)}
-                  >
-                    {option.text}
-                  </button>
-                ))}
-              </div>
+              <QuizQuestion
+                question={questions[currentQuestionIndex].question}
+                options={questions[currentQuestionIndex].options}
+                answered={answered}
+                handleAnswerSelect={handleAnswerSelect}
+              />
               {questions[currentQuestionIndex].pairs && (
                 <button
                   type="button"
@@ -117,42 +109,22 @@ function Quiz({ questions }) {
               )}
             </>
           ) : (
-            <>
-              <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
-              {percentageCorrect >= 50 ? (
-                <p>
-                  Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
-                  {questions.length} Fragen richtig beantwortet. 🎉🥳
-                </p>
-              ) : (
-                <>
-                  <p>
-                    Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
-                    {questions.length} Fragen richtig beantwortet. 🙌
-                  </p>
-                  <button
-                    type="button"
-                    className="bg-green-500 hover-bg-green-700 text-white font-bold py-3 px-4 rounded"
-                    onClick={restartQuiz}
-                  >
-                    Quiz neu starten
-                  </button>
-                </>
-              )}
-            </>
+            <QuizResult
+              percentageCorrect={percentageCorrect}
+              numCorrectAnswers={numCorrectAnswers}
+              questions={questions}
+              restartQuiz={restartQuiz}
+            />
           )}
         </div>
       </div>
       <div className="w-full p-4 md:pl-8 mt-4">
-        <div className="bg-gray-200 p-4 rounded">
-          <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
-          <p>
-            Beantwortete Fragen:{' '}
-            {userAnswers.filter((answer) => answer !== null).length}
-          </p>
-          <p>Richtige Antworten: {numCorrectAnswers}</p>
-          <p>Verbleibende Fragen: {questions.length - currentQuestionIndex}</p>
-        </div>
+        <QuizProgress
+          userAnswers={userAnswers}
+          numCorrectAnswers={numCorrectAnswers}
+          questions={questions}
+          currentQuestionIndex={currentQuestionIndex}
+        />
       </div>
     </div>
   );
@@ -169,11 +141,7 @@ Quiz.propTypes = {
         }),
       ).isRequired,
       correctAnswerIndex: PropTypes.number.isRequired,
-      pairs: PropTypes.arrayOf(
-        PropTypes.shape({
-          // Define pair prop types here
-        }),
-      ),
+      pairs: PropTypes.arrayOf(PropTypes.shape({})),
     }),
   ).isRequired,
 };

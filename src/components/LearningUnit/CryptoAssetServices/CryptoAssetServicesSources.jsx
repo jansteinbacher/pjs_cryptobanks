@@ -1,4 +1,4 @@
-import Sources from '../../Sources';
+import Sources from '../../Sources/Sources';
 
 const sources = [
   {

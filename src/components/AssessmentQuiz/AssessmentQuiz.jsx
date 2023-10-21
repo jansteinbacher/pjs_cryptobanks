@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
+import AssessmentQuestion from './AssessmentQuestion';
+import AssessmentProgress from './AssessmentProgress';
+import AssessmentSummary from './AssessmentSummary';
 
-function Quiz() {
+function AssessmentQuiz() {
   const questions = [
     {
       question: 'Was versteht man unter Kryptowährungen?',
@@ -54,15 +57,14 @@ function Quiz() {
       ],
       correctAnswerIndex: 0,
     },
-    // Add more questions here...
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState(
     Array(questions.length).fill(null),
   );
-  const [answered, setAnswered] = useState(false); // Track if the current question is answered
-  const [quizFinished, setQuizFinished] = useState(false); // Track if all questions are answered
+  const [answered, setAnswered] = useState(false);
+  const [quizFinished, setQuizFinished] = useState(false);
 
   const handleAnswerSelect = (answerIndex) => {
     if (!answered) {
@@ -102,15 +104,15 @@ function Quiz() {
 
   if (percentageCorrect < 30) {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Beginnerkurs.`;
-    recommendedCourseLink = '/beginnercourse';
+    recommendedCourseLink = '/beginner-course-introduction';
     recommendedCourseText = 'Beginnerkurs';
   } else if (percentageCorrect >= 30 && percentageCorrect < 50) {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Fortgeschrittenenkurs.`;
-    recommendedCourseLink = '/intermediatecourse';
+    recommendedCourseLink = '/advanced-course-introduction';
     recommendedCourseText = 'Fortgeschrittener Kurs';
   } else {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Expertenkurs.`;
-    recommendedCourseLink = '/expertcourse';
+    recommendedCourseLink = '/expert-course-introduction';
     recommendedCourseText = 'Expertenkurs';
   }
 
@@ -123,70 +125,33 @@ function Quiz() {
         <div className="w-full p-4 md:pr-8 bg-gray-100 rounded-lg">
           <div className="mb-8">
             {!quizFinished ? (
-              <>
-                <h3 className="text-xl font-bold mb-8">
-                  {questions[currentQuestionIndex].question}
-                </h3>
-                <div className="flex items-center justify-center">
-                  <div className="space-y-4">
-                    {questions[currentQuestionIndex].options.map((option) => (
-                      <button
-                        key={option.id}
-                        type="button" // Add this line
-                        className={`bg-green-400 hover:bg-green-600 text-white w-[85%] font-bold py-3 px-4 rounded ${
-                          answered ? 'opacity-50 cursor-not-allowed' : ''
-                        }`}
-                        onClick={() => handleAnswerSelect(option.id)}
-                        disabled={answered}
-                      >
-                        {option}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </>
+              <AssessmentQuestion
+                key={currentQuestionIndex}
+                id={`question_${currentQuestionIndex}`}
+                question={questions[currentQuestionIndex].question}
+                options={questions[currentQuestionIndex].options}
+                handleAnswerSelect={handleAnswerSelect}
+                answered={answered}
+              />
             ) : (
-              // Show the final score and appropriate message after all questions are answered
-              <>
-                <p className="text-lg mt-4">{recommendationText}</p>
-                <div className="flex space-x-4 mt-2">
-                  <a href={recommendedCourseLink}>
-                    <button
-                      type="button"
-                      className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-4 rounded"
-                    >
-                      {recommendedCourseText}
-                    </button>
-                  </a>
-                  <a href="/course-overview">
-                    <button
-                      type="button"
-                      className="bg-gray-400 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded"
-                    >
-                      Kursübersicht
-                    </button>
-                  </a>
-                </div>
-              </>
+              <AssessmentSummary
+                recommendationText={recommendationText}
+                recommendedCourseLink={recommendedCourseLink}
+                recommendedCourseText={recommendedCourseText}
+              />
             )}
           </div>
         </div>
         <div className="w-full p-4 md:pl-8 mt-4">
-          <div className="bg-gray-200 p-4 rounded">
-            <h3 className="text-xl font-bold mb-4">📈 Quiz Fortschritt</h3>
-            <p>
-              Beantwortete Fragen:{' '}
-              {userAnswers.filter((answer) => answer !== null).length}
-            </p>
-            <p>Richtige Antworten: {numCorrectAnswers}</p>
-            <p>
-              Verbleibende Fragen: {questions.length - currentQuestionIndex}
-            </p>
-          </div>
+          <AssessmentProgress
+            numAnswered={userAnswers.filter((answer) => answer !== null).length}
+            numCorrect={numCorrectAnswers}
+            remainingQuestions={questions.length - currentQuestionIndex}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export default Quiz;
+export default AssessmentQuiz;
