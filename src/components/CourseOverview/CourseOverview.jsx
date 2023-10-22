@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import CourseButton from './CourseButton';
 import CourseDetails from './CourseDetails';
-import FloatingBar from './FloatingBar';
 import BeginnerVideo from '../../videos/courseBeginnerIntroduction.mp4';
 import AdvancedVideo from '../../videos/courseAdvancedIntroduction.mp4';
 import ExpertVideo from '../../videos/courseExpertIntroduction.mp4';
@@ -56,21 +55,6 @@ const courses = [
 
 function CourseOverview() {
   const [selectedCourse, setSelectedCourse] = useState(courses[0]);
-  const [showFloatingBar, setShowFloatingBar] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowFloatingBar(true);
-    }, 2000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  const dismissFloatingBar = () => {
-    setShowFloatingBar(false);
-  };
 
   return (
     <div className="bg-white h-screen w-screen">
@@ -93,6 +77,17 @@ function CourseOverview() {
             ))}
           </div>
         </div>
+        <div className="flex justify-center items-center space-x-8 mt-4 mb-8">
+          <p>Du bist dir nicht sicher über Deinen Kenntnisstand?</p>
+          <a href="/einstufungsquiz">
+            <button
+              type="button"
+              className="bg-green-400 hover:bg-green-300 text-white font-bold py-2 px-4 rounded"
+            >
+              Zum Einstufungsquiz
+            </button>
+          </a>
+        </div>
         <CourseDetails selectedCourse={selectedCourse} />
         <div className="flex justify-center mt-8">
           <a href={selectedCourse.course_link}>
@@ -104,8 +99,6 @@ function CourseOverview() {
             </button>
           </a>
         </div>
-
-        {showFloatingBar && <FloatingBar onDismiss={dismissFloatingBar} />}
       </div>
     </div>
   );
