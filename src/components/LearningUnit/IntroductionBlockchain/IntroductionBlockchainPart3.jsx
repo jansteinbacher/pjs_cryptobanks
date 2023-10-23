@@ -46,7 +46,7 @@ function IntroductionBlockchainPart2() {
         Rätsel, um neue Blöcke zur Blockchain hinzuzufügen. Dies erfordert
         erhebliche Rechenleistung und Energieaufwand. Der erste Miner, der das
         Rätsel löst, erhält die Belohnung und validiert die Transaktionen im
-        Block.
+        Block<a href="#sources"> [4]</a>.
       </p>
 
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
@@ -59,7 +59,7 @@ function IntroductionBlockchainPart2() {
         Einsatz verwenden, um Blöcke zu erstellen. Die Wahrscheinlichkeit,
         ausgewählt zu werden, hängt von der Menge der gestakten Coins ab. PoS
         fördert den Kryptowährungsbesitz und reduziert den Energieverbrauch im
-        Vergleich zu PoW.
+        Vergleich zu PoW<a href="#sources"> [4]</a>.
       </p>
 
       <IntroductionBlockchainSources />

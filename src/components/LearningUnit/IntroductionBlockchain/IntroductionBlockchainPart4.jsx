@@ -33,7 +33,7 @@ function IntroductionBlockchainPart3() {
         Stake in der Blockchain im Vergleich zu verschiedenen Ansätzen in der
         DLT. Letztendlich vereinen sie das Ziel der erhöhten Sicherheit und
         Transparenz, aber bieten unterschiedliche Wege, um die Bedürfnisse
-        verschiedener Branchen anzusprechen.
+        verschiedener Branchen anzusprechen <a href="#sources"> [5]</a>.
       </p>
 
       <div className="flex justify-center items-center mb-12">

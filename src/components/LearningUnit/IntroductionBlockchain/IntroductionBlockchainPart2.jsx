@@ -44,33 +44,8 @@ function IntroductionBlockchainPart2() {
         wie Skalierbarkeit und Privatsphäre. Permissioned Blockchains passen in
         geschlossene Umgebungen wie Unternehmensanwendungen. Permissionless
         Blockchains sind ideal für offene, dezentrale Anwendungen wie
-        Kryptowährungen und DeFi.
-      </p>
-
-      <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Proof of Work
-      </h3>
-
-      <p className="mb-12 text-justify">
-        Proof of Work (PoW) ist ein Konsensmechanismus, der zum Beispiel im
-        Bitcoin-Netzwerk verwendet wird. Miner lösen komplexe mathematische
-        Rätsel, um neue Blöcke zur Blockchain hinzuzufügen. Dies erfordert
-        erhebliche Rechenleistung und Energieaufwand. Der erste Miner, der das
-        Rätsel löst, erhält die Belohnung und validiert die Transaktionen im
-        Block.
-      </p>
-
-      <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Proof of Stake
-      </h3>
-      <p className="mb-12 text-justify">
-        Proof of Stake (PoS) wird in Kryptowährungen wie Ethereum und Cardano
-        eingesetzt. Statt Rechenleistung setzen Teilnehmer Kryptowährung als
-        Stake ein. Zum Beispiel können Inhaber von Ethereum Token ihre Coins als
-        Einsatz verwenden, um Blöcke zu erstellen. Die Wahrscheinlichkeit,
-        ausgewählt zu werden, hängt von der Menge der gestakten Coins ab. PoS
-        fördert den Kryptowährungsbesitz und reduziert den Energieverbrauch im
-        Vergleich zu PoW.
+        Kryptowährungen und DeFi
+        <a href="#sources"> [3]</a>.
       </p>
 
       <IntroductionBlockchainSources />

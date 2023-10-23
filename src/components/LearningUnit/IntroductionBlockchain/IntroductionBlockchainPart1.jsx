@@ -42,11 +42,13 @@ function IntroductionBlockchainPart1() {
         benötigt wird. Die Essenz der Blockchain besteht darin, eine dezentrale
         und verteilte digitale Datenbank zu schaffen, die Informationen in
         Blöcken speichert und diese Blöcke in einer chronologischen Reihenfolge
-        miteinander verknüpft, wodurch eine unveränderliche Kette entsteht.
+        miteinander verknüpft, wodurch eine unveränderliche Kette entsteht
+        <a href="#sources"> [1]</a>.
       </p>
 
       <p className="font-semibold text-gray-600 mb-4">
-        Herausstellungsmerkmale der Blockchain-Technologie:
+        Herausstellungsmerkmale der Blockchain-Technologie
+        <a href="#sources"> [2]</a>:
       </p>
 
       <ul className="mb-8 list-disc ml-4">

@@ -1,6 +1,6 @@
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 
-function IntroductionBlockchainPart4() {
+function IntroductionBlockchainPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
@@ -33,7 +33,7 @@ function IntroductionBlockchainPart4() {
         Technologie steigert auch die Liquidität und den Handel erheblich. Zum
         Beispiel kann eine Immobilie in viele kleine Tokens aufgeteilt werden,
         wodurch Anleger Bruchteile dieser Vermögenswerte kaufen und verkaufen
-        können.
+        können<a href="#sources"> [1]</a>.
       </p>
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Smarte Verträge und dezentrales Finanzwesen
@@ -47,7 +47,8 @@ function IntroductionBlockchainPart4() {
         die Vermittler, die traditionell zur Entscheidungsfindung notwendig
         sind, ersetzen. Um Informationen von außerhalb der Blockchain zu
         beziehen, nutzen Smart Contracts sogenannte Orakel, die diese Daten
-        bereitstellen. [5]
+        bereitstellen
+        <a href="#sources"> [1]</a>.
       </p>
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Transportwesen und Supply-Chain-Management
@@ -60,7 +61,8 @@ function IntroductionBlockchainPart4() {
         Handel, indem sie den Austausch von Informationen und Dokumenten
         zwischen verschiedenen Ländern rationalisiert. Im Bereich der
         Frachtverfolgung können Transporte und Lieferungen in Echtzeit verfolgt
-        werden, was die Effizienz und Sicherheit verbessert.
+        werden, was die Effizienz und Sicherheit verbessert
+        <a href="#sources"> [6]</a>.
       </p>
 
       <IntroductionBlockchainSources />
@@ -68,4 +70,4 @@ function IntroductionBlockchainPart4() {
   );
 }
 
-export default IntroductionBlockchainPart4;
+export default IntroductionBlockchainPart5;

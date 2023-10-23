@@ -3,6 +3,7 @@ import IntroductionBlockchainPart1 from './IntroductionBlockchainPart1';
 import IntroductionBlockchainPart2 from './IntroductionBlockchainPart2';
 import IntroductionBlockchainPart3 from './IntroductionBlockchainPart3';
 import IntroductionBlockchainPart4 from './IntroductionBlockchainPart4';
+import IntroductionBlockchainPart5 from './IntroductionBlockchainPart5';
 import IntroductionBlockchainQuiz from './IntroductionBlockchainQuiz';
 
 function IntroductionBlockchainModule() {
@@ -11,6 +12,7 @@ function IntroductionBlockchainModule() {
     IntroductionBlockchainPart2,
     IntroductionBlockchainPart3,
     IntroductionBlockchainPart4,
+    IntroductionBlockchainPart5,
     IntroductionBlockchainQuiz,
   ];
 
