@@ -34,6 +34,9 @@ function TypesOfCryptoAssetsPart3() {
           </p>
         </div>
       )}
+      <p className="mb-8 font-bold">
+        Fahre mit deiner Maus über das Bild und erfahre mehr!
+      </p>
       <div
         className="flex justify-center items-center relative"
         onMouseEnter={handleMouseEnter}
