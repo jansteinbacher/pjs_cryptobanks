@@ -28,9 +28,9 @@ function TypesOfCryptoAssetsPart3() {
             Nachdem Bernd sich mehrere Kryptowährungen (Payment Tokens)
             angeschaut hat, stößt er auf ein Kryptoasset, welches sich von denen
             zuvor unterscheidet. Er fragt sich, unter welcher Kategorie der
-            Token Uniswap fällt. Laut der Beschreibung kann der Eigentümer damit
-            an den Entscheidungen über den Betrieb der gleichnamigen Plattform
-            “Uniswap” teilnehmen.
+            Token The Sandbox fällt. Laut der Beschreibung kann der Eigentümer
+            damit an den Entscheidungen über den Betrieb der gleichnamigen
+            Plattform “The Sandbox” teilnehmen.
           </p>
         </div>
       )}
