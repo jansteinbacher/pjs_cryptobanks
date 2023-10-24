@@ -104,15 +104,15 @@ function AssessmentQuiz() {
 
   if (percentageCorrect < 30) {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Beginnerkurs.`;
-    recommendedCourseLink = '/beginner-course-introduction';
+    recommendedCourseLink = '/course-beginner-introduction';
     recommendedCourseText = 'Beginnerkurs';
   } else if (percentageCorrect >= 30 && percentageCorrect < 50) {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Fortgeschrittenenkurs.`;
-    recommendedCourseLink = '/advanced-course-introduction';
+    recommendedCourseLink = '/course-advanced-introduction';
     recommendedCourseText = 'Fortgeschrittener Kurs';
   } else {
     recommendationText = `Du hast ${percentageCorrect}% der Fragen richtig beantwortet und wir empfehlen dir den Expertenkurs.`;
-    recommendedCourseLink = '/expert-course-introduction';
+    recommendedCourseLink = '/course-expert-introduction';
     recommendedCourseText = 'Expertenkurs';
   }
 
