@@ -1,4 +1,5 @@
 import CourseEnd from '../../CourseEnd';
+import CourseCompletedVideo from '../../../videos/fireworkCourseCompleted.mp4';
 
 function CourseExpertEnd() {
   return (
@@ -7,6 +8,7 @@ function CourseExpertEnd() {
       certificateDownloadLink="src/downloads/certificates/certificateExpertCourse.pdf"
       followingCourseLink="/course-expert-introduction"
       followingCourseDescription="Wiederhole den Expertenkurs"
+      celebrationVideoSource={CourseCompletedVideo}
       furtherContent={
         <div>
           <h2 className="text-2xl font-semibold mb-8">
