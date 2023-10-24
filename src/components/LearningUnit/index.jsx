@@ -90,6 +90,20 @@ import {
   CryptoCustodyRegulationModule,
 } from './CryptoCustodyRegulation';
 
+import {
+  CryptoAssetsAdoption1,
+  CryptoAssetsAdoption2,
+  CryptoAssetsAdoption3,
+  CryptoAssetsAdoption4,
+  CryptoAssetsAdoption5,
+  CryptoAssetsAdoption6,
+  CryptoAssetsAdoption7,
+  CryptoAssetsAdoption8,
+  CryptoAssetsAdoption9,
+  CryptoAssetsAdoption10,
+  CryptoAssetsAdoptionQuiz,
+} from './CryptoAssetsAdoption';
+
 export {
   IntroductionCryptoAssetsPart1,
   IntroductionCryptoAssetsPart2,
@@ -153,4 +167,15 @@ export {
   CryptoCustodyRegulationPart2,
   CryptoCustodyRegulationQuiz,
   CryptoCustodyRegulationModule,
+  CryptoAssetsAdoption1,
+  CryptoAssetsAdoption2,
+  CryptoAssetsAdoption3,
+  CryptoAssetsAdoption4,
+  CryptoAssetsAdoption5,
+  CryptoAssetsAdoption6,
+  CryptoAssetsAdoption7,
+  CryptoAssetsAdoption8,
+  CryptoAssetsAdoption9,
+  CryptoAssetsAdoption10,
+  CryptoAssetsAdoptionQuiz,
 };

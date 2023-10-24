@@ -11,6 +11,17 @@ import {
   CryptoAssetServicesPart5,
   CryptoAssetServicesPart6,
   CryptoAssetServicesQuiz,
+  CryptoAssetsAdoption1,
+  CryptoAssetsAdoption2,
+  CryptoAssetsAdoption3,
+  CryptoAssetsAdoption4,
+  CryptoAssetsAdoption5,
+  CryptoAssetsAdoption6,
+  CryptoAssetsAdoption7,
+  CryptoAssetsAdoption8,
+  CryptoAssetsAdoption9,
+  CryptoAssetsAdoption10,
+  CryptoAssetsAdoptionQuiz,
 } from '../../LearningUnit';
 
 function CourseAdvancedModule() {
@@ -25,6 +36,17 @@ function CourseAdvancedModule() {
     CryptoAssetServicesPart5,
     CryptoAssetServicesPart6,
     CryptoAssetServicesQuiz,
+    CryptoAssetsAdoption1,
+    CryptoAssetsAdoption2,
+    CryptoAssetsAdoption3,
+    CryptoAssetsAdoption4,
+    CryptoAssetsAdoption5,
+    CryptoAssetsAdoption6,
+    CryptoAssetsAdoption7,
+    CryptoAssetsAdoption8,
+    CryptoAssetsAdoption9,
+    CryptoAssetsAdoption10,
+    CryptoAssetsAdoptionQuiz,
   ];
 
   return (

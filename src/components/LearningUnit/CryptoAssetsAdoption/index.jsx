@@ -1,0 +1,11 @@
+export { default as CryptoAssetsAdoption1 } from './CryptoAssetsAdoption1';
+export { default as CryptoAssetsAdoption2 } from './CryptoAssetsAdoption2';
+export { default as CryptoAssetsAdoption3 } from './CryptoAssetsAdoption3';
+export { default as CryptoAssetsAdoption4 } from './CryptoAssetsAdoption4';
+export { default as CryptoAssetsAdoption5 } from './CryptoAssetsAdoption5';
+export { default as CryptoAssetsAdoption6 } from './CryptoAssetsAdoption6';
+export { default as CryptoAssetsAdoption7 } from './CryptoAssetsAdoption7';
+export { default as CryptoAssetsAdoption8 } from './CryptoAssetsAdoption8';
+export { default as CryptoAssetsAdoption9 } from './CryptoAssetsAdoption9';
+export { default as CryptoAssetsAdoption10 } from './CryptoAssetsAdoption10';
+export { default as CryptoAssetsAdoptionQuiz } from './CryptoAssetsAdoptionQuiz';
