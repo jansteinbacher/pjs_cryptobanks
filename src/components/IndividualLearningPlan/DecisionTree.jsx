@@ -1,10 +1,7 @@
+// DecisionTree.js
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Question from './Question';
-
-// TODO: Links should open in new window
-// Download Document with Lernplan
-// Make it prettier
+import ResourceList from './ResourceList';
 
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -69,123 +66,106 @@ function DecisionTree() {
       ) : (
         <div>
           {answers.kryptoassets === 'Nein' && (
-            <li className="mb-8">
-              <strong>Kryptoassets</strong>
-              <ul className="list-disc pl-6 mt-4">
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/introduction-crypto-assets?from=decisiontree"
-                  >
-                    Einführung in Kryptoassets (Dauer 30 Minuten)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/types-of-crypto-assets?from=decisiontree"
-                  >
-                    Arten von Kryptoassets (Dauer 30 Minuten)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/opportunities-challenges-crypto-assets?from=decisiontree"
-                  >
-                    Herausforderungen und Zukunftsaussichten von Kryptoassets
-                    (Dauer 30 Minuten)
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ResourceList
+              title="Kryptoassets"
+              links={[
+                {
+                  id: '1',
+                  to: '/introduction-crypto-assets?from=decisiontree',
+                  label: 'Einführung in Kryptoassets',
+                  duration: '30 Minuten',
+                },
+                {
+                  id: '2',
+                  to: '/types-of-crypto-assets?from=decisiontree',
+                  label: 'Arten von Kryptoassets',
+                  duration: '30 Minuten',
+                },
+                {
+                  id: '3',
+                  to: '/opportunities-challenges-crypto-assets?from=decisiontree',
+                  label:
+                    'Herausforderungen und Zukunftsaussichten von Kryptoassets',
+                  duration: '30 Minuten',
+                },
+              ]}
+            />
           )}
+
           {answers.blockchain === 'Ja' && (
-            <li className="mb-8">
-              <strong>Blockchain-Technologie</strong>
-              <ul className="list-disc pl-6 mt-4">
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/introduction-blockchain?from=decisiontree"
-                  >
-                    Einführung in die Blockchain-Technologie (Dauer 30 Minuten)
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ResourceList
+              title="Blockchain-Technologie"
+              links={[
+                {
+                  id: '4',
+                  to: '/introduction-blockchain?from=decisiontree',
+                  label: 'Einführung in die Blockchain-Technologie',
+                  duration: '30 Minuten',
+                },
+              ]}
+            />
           )}
+
           {answers.regulatorik === 'Ja' && (
-            <li className="mb-8">
-              <strong>Regulatorik</strong>
-              <ul className="list-disc pl-6 mt-4">
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/crypto-asset-regulation?from=decisiontree"
-                  >
-                    Regulatorische Landschaft auf nationaler und internationaler
-                    Ebene (Dauer 30 Minuten)
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ResourceList
+              title="Regulatorik"
+              links={[
+                {
+                  id: '5',
+                  to: '/crypto-asset-regulation?from=decisiontree',
+                  label:
+                    'Regulatorische Landschaft auf nationaler und internationaler Ebene',
+                  duration: '30 Minuten',
+                },
+              ]}
+            />
           )}
+
           {answers.anwendungsmöglichkeiten === 'Ja' && (
-            <li className="mb-8">
-              <strong>Anwendungsmöglichkeiten</strong>
-              <ul className="list-disc pl-6 mt-4">
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/crypto-asset-services?from=decisiontree"
-                  >
-                    Potenzielle Anwendungsfelder von Kryptoassets (Dauer 30
-                    Minuten)
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ResourceList
+              title="Anwendungsmöglichkeiten"
+              links={[
+                {
+                  id: '6',
+                  to: '/crypto-asset-services?from=decisiontree',
+                  label: 'Potenzielle Anwendungsfelder von Kryptoassets',
+                  duration: '30 Minuten',
+                },
+              ]}
+            />
           )}
+
           {answers.verwahrung === 'Ja' && (
-            <li className="mb-8">
-              <strong>Kryptoasset-Verwahrung</strong>
-              <ul className="list-disc pl-6 mt-4">
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/introduction-crypto-custody?from=decisiontree"
-                  >
-                    Einführung in die Kryptoasset-Verwahrung (Dauer 30 Minuten)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/crypto-custody-application-areas?from=decisiontree"
-                  >
-                    Arten von Verwahrlösungen (Dauer 1 Stunde)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/crypto-custody-regulation?from=decisiontree"
-                  >
-                    Regulatorik zu Kryptoasset-Verwahrung (Dauer 30 Minuten)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="hover:underline"
-                    to="/crypto-custody-challenges?from=decisiontree"
-                  >
-                    Herausforderungen und Zukunftsaussichten der
-                    Kryptoasset-Verwahrung (Dauer 30 Minuten)
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ResourceList
+              title="Kryptoasset-Verwahrung"
+              links={[
+                {
+                  id: '7',
+                  to: '/introduction-crypto-custody?from=decisiontree',
+                  label: 'Einführung in die Kryptoasset-Verwahrung',
+                  duration: '30 Minuten',
+                },
+                {
+                  id: '8',
+                  to: '/crypto-custody-application-areas?from=decisiontree',
+                  label: 'Arten von Verwahrlösungen',
+                  duration: '1 Stunde',
+                },
+                {
+                  id: '9',
+                  to: '/crypto-custody-regulation?from=decisiontree',
+                  label: 'Regulatorik zu Kryptoasset-Verwahrung',
+                  duration: '30 Minuten',
+                },
+                {
+                  id: '10',
+                  to: '/crypto-custody-challenges?from=decisiontree',
+                  label:
+                    'Herausforderungen und Zukunftsaussichten der Kryptoasset-Verwahrung',
+                  duration: '30 Minuten',
+                },
+              ]}
+            />
           )}
         </div>
       )}

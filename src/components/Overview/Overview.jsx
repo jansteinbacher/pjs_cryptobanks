@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import SearchBox from './SearchBox';
-import AlphabetNavigation from './AlphabeticalNavigation';
 import LearningUnitTile from './LearningUnitTile';
 
 function Overview() {
@@ -110,11 +109,6 @@ function Overview() {
     setSearchQuery('');
   };
 
-  // Function to set the selected alphabet letter
-  const handleSelectLetter = (letter) => {
-    setSelectedLetter(letter);
-  };
-
   // Function to filter learning units based on the selected alphabet letter and search query
   const filteredData = learningUnits.filter(
     (item) =>
@@ -159,21 +153,15 @@ function Overview() {
       </div>
 
       <div className="flex justify-center">
-        <AlphabetNavigation
-          selectedLetter={selectedLetter}
-          handleSelectLetter={handleSelectLetter}
-        />
-        <div className="w-3/4 p-4">
-          <div className="flex flex-col">
-            {filteredData.map((item) => (
-              <LearningUnitTile
-                key={item.term}
-                term={item.term}
-                explanation={item.explanation}
-                link={item.link}
-              />
-            ))}
-          </div>
+        <div className="flex flex-col">
+          {filteredData.map((item) => (
+            <LearningUnitTile
+              key={item.term}
+              term={item.term}
+              explanation={item.explanation}
+              link={item.link}
+            />
+          ))}
         </div>
       </div>
 

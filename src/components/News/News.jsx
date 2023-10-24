@@ -12,7 +12,6 @@ function News() {
     )
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
-      /* eslint-disable no-console */
       .catch((error) => console.error('Error fetching news:', error));
   }, [query]);
 
@@ -22,9 +21,13 @@ function News() {
         <NewsHeader query={query} setQuery={setQuery} />
       </div>
       <div className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
-        {articles.map((article) => (
-          <NewsArticle key={article.url} article={article} />
-        ))}
+        {articles && articles.length > 0 ? (
+          articles.map((article) => (
+            <NewsArticle key={article.url} article={article} />
+          ))
+        ) : (
+          <p>Keine Artikel vorhanden. Versuche die Webseite neu zu laden</p>
+        )}
       </div>
     </div>
   );

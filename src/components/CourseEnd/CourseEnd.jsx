@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import SummarySection from './SummarySection';
-import CourseMaterialSection from './CourseMaterialSection';
+import CourseCelebrationVideo from './CourseCelebrationVideo';
 import BackToCourseOverviewLink from './BackToCourseOverviewLink';
 import NextCourseLink from './NextCourseLink';
 import IndividualLearningPlanLink from './IndividualLearningPlanLink';
@@ -13,6 +13,7 @@ function CourseEnd({
   followingCourseLink,
   followingCourseDescription,
   furtherContent,
+  celebrationVideoSource,
 }) {
   const [isSummaryVisible, setSummaryVisible] = useState(true);
   const [isCourseMaterialVisible, setCourseMaterialVisible] = useState(false);
@@ -57,7 +58,7 @@ function CourseEnd({
               summaryDownloadLink={summaryDownloadLink}
               certificateDownloadLink={certificateDownloadLink}
             />
-            <CourseMaterialSection />
+            <CourseCelebrationVideo videoSource={celebrationVideoSource} />
           </div>
           <hr className="border-t-2 border-gray-400" />
           <div className="lg:flex space-x-8">
@@ -86,6 +87,7 @@ CourseEnd.propTypes = {
   followingCourseLink: PropTypes.string.isRequired,
   followingCourseDescription: PropTypes.string.isRequired,
   furtherContent: PropTypes.node.isRequired,
+  celebrationVideoSource: PropTypes.string.isRequired,
 };
 
 export default CourseEnd;

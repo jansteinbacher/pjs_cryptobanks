@@ -22,7 +22,7 @@ function Homepage() {
           description="Umfrage unter Studierenden zum Thema Kryptoassets"
           linkText="Zur Umfrage"
           linkUrl="/survey"
-          width="64"
+          width="32"
           isIconOnRight
         />
         <HomepageSection

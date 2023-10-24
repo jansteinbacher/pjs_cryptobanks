@@ -43,7 +43,7 @@ function TypesOfCryptoAssetsPart1() {
       )}
 
       <p className="mb-8 font-bold">
-        Fahre mit deiner Maus über die Bilder und erfahre mehr!
+        Fahre mit deiner Maus über das Bild und erfahre mehr!
       </p>
 
       <div

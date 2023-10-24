@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CourseButton from './CourseButton';
 import CourseDetails from './CourseDetails';
+import AssessmentQuizButton from './AssessmentQuizButton';
 import BeginnerVideo from '../../videos/courseBeginnerIntroduction.mp4';
 import AdvancedVideo from '../../videos/courseAdvancedIntroduction.mp4';
 import ExpertVideo from '../../videos/courseExpertIntroduction.mp4';
@@ -77,17 +78,7 @@ function CourseOverview() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-8 mt-4 mb-8">
-          <p>Du bist dir nicht sicher über Deinen Kenntnisstand?</p>
-          <a href="/einstufungsquiz">
-            <button
-              type="button"
-              className="bg-green-400 hover:bg-green-300 text-white font-bold py-2 px-4 rounded"
-            >
-              Zum Einstufungsquiz
-            </button>
-          </a>
-        </div>
+        <AssessmentQuizButton />
         <CourseDetails selectedCourse={selectedCourse} />
         <div className="flex justify-center mt-8">
           <a href={selectedCourse.course_link}>

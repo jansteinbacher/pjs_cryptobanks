@@ -58,27 +58,37 @@ function IntroductionCryptoAssetsPart1() {
 
       <p className="mb-12 text-justify">
         Seit der Einführung von der Kryptowährung Bitcoin (BTC) 2009, basierend
-        auf Konzepten, die im Whitepaper von Satoshi Nakamoto skizziert wurden,
-        hat sich die Welt der blockchainbasierten digitalen Token rasant
-        entwickelt. Bis heute ist die Identität des Pseudonyms Satoshi Nakamoto
-        unbekannt <a href="#sources">[1]</a>. Seine Identität unterliegt vielen
-        Mythen und Theorien. Es ist möglich, dass seine Identität für immer
-        unbekannt bleibt. Inzwischen ist die Zahl an verschiedenen Token
-        weltweit auf über 22.000 angewachsen. Die Vision Nakamotos war es
-        traditionelle Fiatwährungen zukünftig durch kryptografiegestützte,
-        digitale Währungen ­– auch Kryptowährungen genannt ­– zu ersetzen{' '}
+        auf Konzepten, die im{' '}
+        <span className="font-bold">Whitepaper von Satoshi Nakamoto</span>{' '}
+        skizziert wurden, hat sich die Welt der blockchainbasierten digitalen
+        Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms
+        Satoshi Nakamoto unbekannt <a href="#sources">[1]</a>. Seine Identität
+        unterliegt vielen Mythen und Theorien. Es ist möglich, dass seine
+        Identität für immer unbekannt bleibt.
+        <br />
+        <br />
+        Inzwischen ist die Zahl an verschiedenen Token weltweit auf über 22.000
+        angewachsen. Die Vision Nakamotos war es traditionelle Fiatwährungen
+        zukünftig durch{' '}
+        <span className="font-bold">
+          kryptografiegestützte, digitale Währungen
+        </span>{' '}
+        ­– auch Kryptowährungen genannt ­– zu ersetzen{' '}
         <a href="#sources">[1]</a>, <a href="#sources">[2]</a>. Die
         ursprüngliche Vision Nakamotos hat sich mittlerweile hin zu einem
         umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die
-        allgemein als Kryptoassets bezeichnet werden. Diese Kryptoassets
-        umfassen nun ein breites Anwendungsspektrum, dass nicht nur die
-        ursprünglichen Idee der digitalen Währung aufgreift. Es erweitert diese
-        um eine umfassendere Palette an kryptografischer Lösungen, darunter
-        tokenisierte Mechanismen zur Automatisierung rechtlicher Verträge (Smart
-        Contracts) und sogar die Schaffung unveränderlicher Besitznachweise für
-        digitale Kunst (Non-Fungible Tokens, NFTs) <a href="#sources">[2]</a>.
-        Mehr dazu in Kapitel 3 „Arten von Kryptoassets und ihre Verbindung zu
-        traditionellen Finanzprodukten”.
+        allgemein als Kryptoassets bezeichnet werden.
+        <br />
+        <br />
+        Diese Kryptoassets umfassen nun ein{' '}
+        <span className="font-bold">breites Anwendungsspektrum</span>, dass
+        nicht nur die ursprünglichen Idee der digitalen Währung aufgreift. Es
+        erweitert diese um eine umfassendere Palette an kryptografischer
+        Lösungen, darunter tokenisierte Mechanismen zur Automatisierung
+        rechtlicher Verträge (Smart Contracts) und sogar die Schaffung
+        unveränderlicher Besitznachweise für digitale Kunst (Non-Fungible
+        Tokens, NFTs) <a href="#sources">[2]</a>. Mehr dazu in Kapitel 3 „Arten
+        von Kryptoassets und ihre Verbindung zu traditionellen Finanzprodukten”.
       </p>
       <IntroductionCryptoAssetsSources />
     </div>

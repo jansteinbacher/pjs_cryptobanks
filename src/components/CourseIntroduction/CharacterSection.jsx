@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import VideoPlayer from './VideoPlayer';
 
 function CharacterSection({ title, text, invitation, videoSource }) {
   return (
@@ -7,7 +6,11 @@ function CharacterSection({ title, text, invitation, videoSource }) {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">{title}</h2>
       <p className="italic text-justify mb-4">{text}</p>
       <p className="italic text-justify font-semibold mb-8">{invitation}</p>
-      <VideoPlayer videoSource={videoSource} />
+      {/* eslint-disable jsx-a11y/media-has-caption */}
+      <video controls className="w-full h-full rounded-lg">
+        <source src={videoSource} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
