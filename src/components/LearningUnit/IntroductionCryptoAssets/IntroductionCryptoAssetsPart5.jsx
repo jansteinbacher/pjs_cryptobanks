@@ -1,6 +1,7 @@
 import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import Token from '../../../images/courseBeginner/token.png';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
+import Chapter15Audio from '../../../audio/chapter15.mp3';
 
 function IntroductionCryptoAssetsPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
@@ -29,20 +30,30 @@ function IntroductionCryptoAssetsPart5() {
         </div>
       )}
       <div className="flex justify-center mb-8 items-center">
-        <img src={Token} alt="Token" className="w-full md:w-1/2 mb-4" />
+        <img src={Token} alt="Token" className="w-full md:w-3/4 mb-4" />
       </div>
-      <p className="mb-12 italic text-justify">
-        Token unterscheiden sich von Coins. Während der Coin primär als
-        Zahlungsmittel verwendet wird und eine rein digitale Währung darstellt,
-        habenToken breitere Anwendungsmöglichkeiten. Sie sind daher nicht als
-        „klassischer“ Coin einzustufen (vgl. Gusmann und Weisenberger 2018){' '}
-        <a href="#sources">[10]</a>. Die wohl bekanntesten Coins sind der
-        Bitcoin, basierend auf der Bitcoin-Blockchain, und der Ethercoin, der
-        Coin der Ethereum-Blockchain. Coins, die nach der ersten Kryptowährung,
-        dem Bitcoin, auf den Markt gekommen sind, bezeichnet man auch als
-        Bitcoin Alternative oder Alt Coin. Token und Coin stehen in einem engen
-        Zusammenhang, denn die Transaktionskosten der Token werden mit Coins
-        gezahlt <a href="#sources">[11]</a>.
+      <div className="flex justify-center items-center mb-8">
+        {/* eslint-disable jsx-a11y/media-has-caption */}
+        <audio controls>
+          <source src={Chapter15Audio} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p className="mb-12 text-justify">
+        <strong>Token</strong> unterscheiden sich von <strong>Coins</strong>.
+        Während der Coin primär als Zahlungsmittel verwendet wird und eine rein
+        digitale Währung darstellt, haben Token breitere
+        Anwendungsmöglichkeiten. Sie sind daher nicht als „klassischer“ Coin
+        einzustufen <a href="#sources">[10]</a>. <br />
+        Die wohl bekanntesten Coins sind der Bitcoin, basierend auf der
+        Bitcoin-Blockchain, und der Ethercoin, der Coin der Ethereum-Blockchain.{' '}
+        <br />
+        Coins, die nach der ersten Kryptowährung, dem Bitcoin, auf den Markt
+        gekommen sind, bezeichnet man auch als Bitcoin Alternative oder Alt
+        Coin. <br />
+        Token und Coin stehen in einem engen Zusammenhang, denn die
+        Transaktionskosten der Token werden mit Coins gezahlt{' '}
+        <a href="#sources">[11]</a>.
         <br />
         Mit einem tiefen Verständnis für den Unterschied zwischen Coins und
         Tokens setzte Bernd seinen Weg des Lernens und Entdeckens fort. Er

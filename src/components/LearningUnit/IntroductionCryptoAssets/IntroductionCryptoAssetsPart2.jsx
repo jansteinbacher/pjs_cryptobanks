@@ -1,6 +1,7 @@
 import CryptoAssetsDefinition from '../../../images/courseBeginner/CryptoAssetsDefinition.png';
 import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
+import Chapter12Audio from '../../../audio/chapter12.mp3';
 
 function IntroductionCryptoAssetsPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
@@ -29,6 +30,13 @@ function IntroductionCryptoAssetsPart2() {
           alt="CloudDefinition"
           className="w-full md:w-1/2 mb-8"
         />
+      </div>
+      <div className="flex justify-center items-center mb-8">
+        {/* eslint-disable jsx-a11y/media-has-caption */}
+        <audio controls>
+          <source src={Chapter12Audio} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
       <p className="mb-12 text-justify">
         Nach § 1 Abs. 11 S. 4 KWG ist ein Kryptowert ein digitaler, von keiner
