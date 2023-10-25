@@ -1,7 +1,7 @@
 import Image1 from '../../../images/courseAdvanced/Investitionsrisiko.png';
 import Image2 from '../../../images/courseAdvanced/InstitutionKryptoasset-Investitionen.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart8() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -88,4 +88,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart8;

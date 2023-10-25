@@ -1,6 +1,6 @@
 import stateofknowledge from '../../../images/courseAdvanced/Vertiefung_Wissensstand.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -47,4 +47,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart3;

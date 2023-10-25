@@ -1,6 +1,6 @@
 import Image1 from '../../../images/courseAdvanced/verbesserungsvorschlaege.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart9() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -58,4 +58,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart9;

@@ -1,30 +1,23 @@
-import PropTypes from 'prop-types';
+import NavigationLink from './NavigationLink';
 
-function NavLinks() {
+const links = [
+  { id: 1, to: '/course-overview', text: 'Kurse' },
+  { id: 2, to: '/decisiontree', text: 'Individueller Lernplan' },
+  { id: 3, to: '/overview', text: 'Übersicht' },
+  { id: 4, to: '/news', text: 'News' },
+  { id: 5, to: '/#about', text: 'Über das Projekt' },
+];
+
+function NavigationLinks() {
   return (
     <div className="sm:flex flex-col mt-4 sm:flex-row sm:mt-0 sm:space-x-12">
-      <NavLink to="/course-overview">Kurse</NavLink>
-      <NavLink to="/decisiontree">Individueller Lernplan</NavLink>
-      <NavLink to="/overview">Übersicht</NavLink>
-      <NavLink to="/news">News</NavLink>
-      <NavLink to="/#about">Über das Projekt</NavLink>
+      {links.map((link) => (
+        <NavigationLink key={link.id} to={link.to}>
+          {link.text}
+        </NavigationLink>
+      ))}
     </div>
   );
 }
 
-function NavLink({ to, children }) {
-  return (
-    <a href={to}>
-      <span className="hover-underline text-center border-b border-transparent hover:border-green-500">
-        {children}
-      </span>
-    </a>
-  );
-}
-
-NavLink.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
-};
-
-export default NavLinks;
+export default NavigationLinks;
