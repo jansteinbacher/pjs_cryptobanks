@@ -11,6 +11,7 @@ function DecisionTree() {
     anwendungsmöglichkeiten: null,
     verwahrung: null,
     blockchain: null,
+    adoption: null,
   });
 
   const questions = [
@@ -40,6 +41,12 @@ function DecisionTree() {
         'Möchtest du mehr über die Verwahrung von Kryptoassets erfahren?',
       answers: ['Ja', 'Nein'],
       stateKey: 'verwahrung',
+    },
+    {
+      question:
+        'Möchtest du mehr über Adoption von Kryptoassets unter Studierenden erfahren?',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'adoption',
     },
   ];
 
@@ -163,6 +170,19 @@ function DecisionTree() {
                   label:
                     'Herausforderungen und Zukunftsaussichten der Kryptoasset-Verwahrung',
                   duration: '30 Minuten',
+                },
+              ]}
+            />
+          )}
+          {answers.adoption === 'Ja' && (
+            <ResourceList
+              title="Adoption von Kryptoassets"
+              links={[
+                {
+                  id: '11',
+                  to: '/crypto-assets-adoption?from=decisiontree',
+                  label: 'Adoption von Kryptoassets unter Studierenden',
+                  duration: '45 Minuten',
                 },
               ]}
             />

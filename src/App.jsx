@@ -33,6 +33,7 @@ import {
   CryptoCustodyChallengesModule,
   CryptoCustodyRegulationModule,
   IntroductionCryptoCustodyModule,
+  CryptoAssetsAdoptionModule,
 } from './components';
 
 function App() {
@@ -95,6 +96,10 @@ function App() {
           <Route
             path="/introduction-crypto-custody"
             element={<IntroductionCryptoCustodyModule />}
+          />
+          <Route
+            path="/crypto-assets-adoption"
+            element={<CryptoAssetsAdoptionModule />}
           />
           <Route path="/mythbusters" element={<Myths />} />
           <Route path="/interviews" element={<Interviews />} />

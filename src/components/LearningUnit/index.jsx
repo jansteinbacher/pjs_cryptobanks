@@ -102,6 +102,7 @@ import {
   CryptoAssetsAdoptionPart9,
   CryptoAssetsAdoptionPart10,
   CryptoAssetsAdoptionQuiz,
+  CryptoAssetsAdoptionModule,
 } from './CryptoAssetsAdoption';
 
 export {
@@ -178,4 +179,5 @@ export {
   CryptoAssetsAdoptionPart9,
   CryptoAssetsAdoptionPart10,
   CryptoAssetsAdoptionQuiz,
+  CryptoAssetsAdoptionModule,
 };
