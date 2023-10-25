@@ -43,8 +43,8 @@ function Overview() {
     {
       term: 'Trend und Adoption in der Gesellschaft',
       explanation:
-        'Erhalte einen Einblick in Trends und die Adoption von Kryptoassets in der Gesellschaft.',
-      link: '/grapes-page',
+        'Erhalte einen Einblick in die Adoption von Kryptoassets unter Studierenden.',
+      link: '/crypto-assets-adoption?from=overview',
     },
     {
       term: 'Grundlagen der Kryptoassets-Verwahrung',

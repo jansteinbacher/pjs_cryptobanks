@@ -9,3 +9,4 @@ export { default as CryptoAssetsAdoptionPart8 } from './CryptoAssetsAdoptionPart
 export { default as CryptoAssetsAdoptionPart9 } from './CryptoAssetsAdoptionPart9';
 export { default as CryptoAssetsAdoptionPart10 } from './CryptoAssetsAdoptionPart10';
 export { default as CryptoAssetsAdoptionQuiz } from './CryptoAssetsAdoptionQuiz';
+export { default as CryptoAssetsAdoptionModule } from './CryptoAssetsAdoptionModule';
