@@ -1,7 +1,7 @@
 import Knockledge from '../../../images/courseAdvanced/Wissensauspraegung_Kryptoassets_1.png';
 import Knockledge2 from '../../../images/courseAdvanced/Kryptoassets_Kenntnisse.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -69,4 +69,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart2;

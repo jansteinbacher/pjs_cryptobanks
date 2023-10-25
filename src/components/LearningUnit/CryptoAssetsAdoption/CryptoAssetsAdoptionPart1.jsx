@@ -1,6 +1,6 @@
 import Popularity from '../../../images/courseAdvanced/Bekanntheitsgrad Kryptoassets und Blockchain 1.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -86,4 +86,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart1;

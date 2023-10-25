@@ -1,7 +1,7 @@
 import Image1 from '../../../images/courseAdvanced/Informationsakquise_Kryptoassets.png';
 import Image2 from '../../../images/courseAdvanced/Bank-Beratungsangebote.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -71,4 +71,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart4;

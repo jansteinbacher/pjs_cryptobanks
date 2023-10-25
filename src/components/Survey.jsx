@@ -1,14 +1,14 @@
 import {
-  CryptoAssetsAdoption1,
-  CryptoAssetsAdoption2,
-  CryptoAssetsAdoption3,
-  CryptoAssetsAdoption4,
-  CryptoAssetsAdoption5,
-  CryptoAssetsAdoption6,
-  CryptoAssetsAdoption7,
-  CryptoAssetsAdoption8,
-  CryptoAssetsAdoption9,
-  CryptoAssetsAdoption10,
+  CryptoAssetsAdoptionPart1,
+  CryptoAssetsAdoptionPart2,
+  CryptoAssetsAdoptionPart3,
+  CryptoAssetsAdoptionPart4,
+  CryptoAssetsAdoptionPart5,
+  CryptoAssetsAdoptionPart6,
+  CryptoAssetsAdoptionPart7,
+  CryptoAssetsAdoptionPart8,
+  CryptoAssetsAdoptionPart9,
+  CryptoAssetsAdoptionPart10,
 } from './LearningUnit';
 
 function Survey() {
@@ -55,34 +55,34 @@ function Survey() {
         </ul>
       </div>
       <div id="1">
-        <CryptoAssetsAdoption1 />
+        <CryptoAssetsAdoptionPart1 />
       </div>
       <div id="2">
-        <CryptoAssetsAdoption2 />
+        <CryptoAssetsAdoptionPart2 />
       </div>
       <div id="3">
-        <CryptoAssetsAdoption3 />
+        <CryptoAssetsAdoptionPart3 />
       </div>
       <div id="4">
-        <CryptoAssetsAdoption4 />
+        <CryptoAssetsAdoptionPart4 />
       </div>
       <div id="5">
-        <CryptoAssetsAdoption5 />
+        <CryptoAssetsAdoptionPart5 />
       </div>
       <div id="6">
-        <CryptoAssetsAdoption6 />
+        <CryptoAssetsAdoptionPart6 />
       </div>
       <div id="7">
-        <CryptoAssetsAdoption7 />
+        <CryptoAssetsAdoptionPart7 />
       </div>
       <div id="8">
-        <CryptoAssetsAdoption8 />
+        <CryptoAssetsAdoptionPart8 />
       </div>
       <div id="9">
-        <CryptoAssetsAdoption9 />
+        <CryptoAssetsAdoptionPart9 />
       </div>
       <div id="10">
-        <CryptoAssetsAdoption10 />
+        <CryptoAssetsAdoptionPart10 />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import Image1 from '../../../images/courseAdvanced/Art_WeiseBankberatung.png';
 import Image2 from '../../../images/courseAdvanced/Aufbereitung_Informationen.png';
 
-function CryptoAssetsAdoption() {
+function CryptoAssetsAdoptionPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
@@ -86,4 +86,4 @@ function CryptoAssetsAdoption() {
   );
 }
 
-export default CryptoAssetsAdoption;
+export default CryptoAssetsAdoptionPart5;
