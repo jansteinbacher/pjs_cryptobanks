@@ -1,4 +1,4 @@
-function Section() {
+function About() {
   return (
     <div
       id="about"
@@ -29,4 +29,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default About;
