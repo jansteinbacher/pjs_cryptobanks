@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import BusinessModel from '../../images/businessModel.png';
+import CourseIcon from '../../images/courseIcon.png';
 
 function BackToCourseOverviewLink() {
   return (
     <div className="text-center lg:w-2/3">
       <h3 className="text-xl font-semibold">Zurück zur Kursübersicht</h3>
       <img
-        src={BusinessModel}
+        src={CourseIcon}
         alt="Business Model"
         className="w-32 md:w-64 rounded-lg mx-auto mt-4"
       />
