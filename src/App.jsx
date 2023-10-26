@@ -101,7 +101,7 @@ function App() {
             path="/crypto-assets-adoption"
             element={<CryptoAssetsAdoptionModule />}
           />
-          <Route path="/mythbusters" element={<Myths />} />
+          <Route path="/factcheck" element={<Myths />} />
           <Route path="/interviews" element={<Interviews />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
