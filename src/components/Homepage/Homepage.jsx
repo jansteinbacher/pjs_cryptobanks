@@ -35,10 +35,10 @@ function Homepage() {
         />
         <HomepageSection
           image={Myth}
-          title="Myth Busters"
-          description="In der Welt von Krypto gibt es einige Mythen. Wir untersuchen diese und zeigen auf, was daran wahr ist und was doch nur ein Mythos bleibt."
+          title="Fact Check"
+          description="In der Welt von Krypto gibt es einige Vorurteile. Wir untersuchen diese und zeigen auf, was daran richtig ist und was man besser in einen Kontext setzen sollte."
           linkText="Zum Artikel"
-          linkUrl="/mythbusters"
+          linkUrl="/factcheck"
           width="32"
           isIconOnRight
         />

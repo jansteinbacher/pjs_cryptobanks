@@ -24,7 +24,6 @@ import {
   CryptoAssetsRegulationModule,
   TypesOfCryptoAssetsModule,
   OpportunitiesAndChallengesCryptoAssetsModule,
-  Survey,
   Interviews,
   CourseExpertModule,
   CourseExpertIntroduction,
@@ -106,11 +105,11 @@ function App() {
             path="/crypto-assets-expert-interview"
             element={<CryptoAssetsExpertInterviewModule />}
           />
-          <Route path="/mythbusters" element={<Myths />} />
+          <Route path="/factcheck" element={<Myths />} />
           <Route path="/interviews" element={<Interviews />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
-          <Route path="/survey" element={<Survey />} />
+          <Route path="/survey" element={<CryptoAssetsAdoptionModule />} />
           <Route path="/assessment-quiz" element={<AssessmentQuiz />} />
           <Route
             path="/course-beginner-introduction"

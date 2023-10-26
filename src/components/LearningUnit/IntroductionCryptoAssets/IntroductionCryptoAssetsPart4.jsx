@@ -1,6 +1,7 @@
 import Bernd from '../../../images/courseBeginner/charakterBernd.png';
-import Currencies from '../../../images/courseBeginner/currencies.png';
+import Currencies from '../../../images/courseBeginner/currencies.jpg';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
+import Chapter14Audio from '../../../audio/chapter14.mp3';
 
 function IntroductionCryptoAssetsPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
@@ -27,21 +28,35 @@ function IntroductionCryptoAssetsPart4() {
       <div className="flex mb-8 justify-center items-center">
         <img src={Currencies} alt="Token" className="w-full md:w-1/2 mb-4" />
       </div>
+      <p className="text-center mb-4">
+        Höre dir den folgenden Text als Audio an:
+      </p>
+      <div className="flex justify-center items-center mb-8">
+        {/* eslint-disable jsx-a11y/media-has-caption */}
+        <audio controls>
+          <source src={Chapter14Audio} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
       <p className="mb-12 text-justify">
-        Tokenisierung wird als der Digitalisierungsprozess eines materiellen
-        oder immateriellen Vermögenswertes definiert. Es besteht die Möglichkeit
-        jeden Vermögenswert oder jedes Recht in Form eines Token zu speichern.
+        <strong>Tokenisierung</strong> wird als der Digitalisierungsprozess
+        eines materiellen oder immateriellen Vermögenswertes definiert. Es
+        besteht die Möglichkeit jeden Vermögenswert oder jedes Recht in Form
+        eines Token zu speichern.
+        <br />
         Dieser Token wird algorithmisch erzeugt, digital dargestellt und kann
         über ein Blockchain-Netzwerk gehandelt werden.
         <a href="#sources">[7]</a>,<a href="#sources">[8]</a>
+        <br />
         Wichtig ist jedoch, dass hierbei die unterschiedlichen Rechtslagen und
         Rahmenbedingungen eines Landes zu berücksichtigen ist, in dem der Token
-        den Vermögenswert darstellt. Nur wenn die zuständigen Landesbehörden das
-        Konzept der Tokenisierung anerkennen, kann dieser unter gesetzlichem
-        Rahmen wirksam sein <a href="#sources">[9]</a>. Ethereum Request for
-        Comments (ERC) ist ein bekannter Standard für die Erstellung
-        tokenisierter Formen virtueller Vermögenswerte{' '}
-        <a href="#sources">[10]</a>.
+        den Vermögenswert darstellt.
+        <br /> Nur wenn die zuständigen Landesbehörden das Konzept der
+        Tokenisierung anerkennen, kann dieser unter gesetzlichem Rahmen wirksam
+        sein <a href="#sources">[9]</a>. <br />
+        <strong>Ethereum Request for Comments (ERC)</strong> ist ein bekannter
+        Standard für die Erstellung tokenisierter Formen virtueller
+        Vermögenswerte <a href="#sources">[10]</a>.
       </p>
       <IntroductionCryptoAssetsSources />
     </div>

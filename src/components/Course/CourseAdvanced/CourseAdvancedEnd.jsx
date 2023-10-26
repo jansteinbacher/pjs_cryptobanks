@@ -4,8 +4,8 @@ import CourseCompletedVideo from '../../../videos/fireworkCourseCompleted.mp4';
 function CourseAdvancedEnd() {
   return (
     <CourseEnd
-      summaryDownloadLink="src/downloads/courseSummaries/summaryAdvancedCourse.pdf"
-      certificateDownloadLink="src/downloads/certificates/certificateAdvancedCourse.pdf"
+      summaryDownloadLink="/downloads/courseSummaries/summaryAdvancedCourse.pdf"
+      certificateDownloadLink="/downloads/certificates/certificateAdvancedCourse.pdf"
       followingCourseLink="/course-advanced-introduction"
       followingCourseDescription="Zum Fortgeschrittenenkurs"
       celebrationVideoSource={CourseCompletedVideo}

@@ -10,14 +10,14 @@ function MythsCryptoAssets() {
   const [myths, setMyths] = useState([
     {
       id: uuidv4(),
-      title: 'Mythos 1: Hoher Energieverbrauch',
+      title: 'Fact Check 1: Hoher Energieverbrauch',
       content:
         'Ein häufiger Mythos ist, dass Kryptoassets wie Bitcoin aufgrund ihres hohen Energieverbrauchs umweltschädlich sind. Tatsächlich ist der Energieverbrauch ein wichtiger Aspekt, aber es gibt Bestrebungen, den Konsensmechanismus zu ändern und effizientere Lösungen zu entwickeln.',
       isOpen: false,
     },
     {
       id: uuidv4(),
-      title: 'Mythos 2: Volatilität',
+      title: 'Fact Check 2: Volatilität',
       content:
         'Ein weiterer Mythos betrifft die Volatilität von Kryptowährungen. Obwohl Kryptoasset-Preise schwanken können, haben sie auch das Potenzial für beträchtliche Gewinne und sind Teil eines sich entwickelnden Finanzmarktes.',
       isOpen: false,
@@ -40,7 +40,7 @@ function MythsCryptoAssets() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
-        Mythen über Kryptoassets
+        Fact Check zu Kryptoassets
       </h1>
 
       {/* Introduction */}

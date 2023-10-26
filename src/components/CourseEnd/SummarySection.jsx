@@ -10,6 +10,7 @@ function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
         icon={<FaFilePdf />}
         downloadLink={summaryDownloadLink}
         text="Zusammenfassung herunterladen"
+        openInNewTab
       />
 
       <div className="mt-8">
@@ -17,6 +18,7 @@ function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
           icon={<PiCertificate />}
           downloadLink={certificateDownloadLink}
           text="Zertifikat herunterladen"
+          openInNewTab
         />
       </div>
     </div>

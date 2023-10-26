@@ -4,8 +4,8 @@ import CourseCompletedVideo from '../../../videos/fireworkCourseCompleted.mp4';
 function CourseExpertEnd() {
   return (
     <CourseEnd
-      summaryDownloadLink="src/downloads/courseSummaries/summaryExpertCourse.pdf"
-      certificateDownloadLink="src/downloads/certificates/certificateExpertCourse.pdf"
+      summaryDownloadLink="/downloads/courseSummaries/summaryExpertCourse.pdf"
+      certificateDownloadLink="/downloads/certificates/certificateExpertCourse.pdf"
       followingCourseLink="/course-expert-introduction"
       followingCourseDescription="Wiederhole den Expertenkurs"
       celebrationVideoSource={CourseCompletedVideo}
