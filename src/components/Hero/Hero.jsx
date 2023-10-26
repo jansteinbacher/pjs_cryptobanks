@@ -1,5 +1,5 @@
 import FeatureCard from './FeatureCard';
-import KursIcon from '../../images/Kurs_Icon.png';
+import CourseIcon from '../../images/courseIcon.png';
 import IndividuellIcon from '../../images/Individuell_Icon.png';
 import Header from '../../images/header.jpg';
 import GlossarIcon from '../../images/Glossar_Icon.png';
@@ -38,7 +38,7 @@ function Hero() {
           <div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-3">
             {/* Column 1 */}
             <FeatureCard
-              image={KursIcon}
+              image={CourseIcon}
               title="Kursübersicht"
               description="Absolviere vorgefertigte Kurse von Beginner bis Experte."
               linkText="Zu den Kursen"

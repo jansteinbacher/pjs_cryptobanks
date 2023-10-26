@@ -6,7 +6,7 @@ import DownloadButton from '../DownloadButton';
 
 function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
   return (
-    <div className="lg:w-1/2">
+    <div className="lg:w-1/2 mx-auto px-40">
       <div className="text-center">
         <div className="flex justify-center space-x-4 mb-16">
           <DownloadButton
