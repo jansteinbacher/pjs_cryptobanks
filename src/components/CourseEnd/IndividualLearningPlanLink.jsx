@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function IndividualLearningPlanLink() {
   return (
     <div className="text-center lg:w-1/3">
-      <h3 className="text-lg font-semibold">
+      <h3 className="text-xl font-semibold">
         Lerninhalte individuell auswählen
       </h3>
       <p className="mt-4">

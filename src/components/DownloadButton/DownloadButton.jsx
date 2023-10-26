@@ -26,7 +26,7 @@ function DownloadButton({ icon, downloadLink, text }) {
         <button
           type="button"
           onClick={downloadPdf}
-          className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover-bg-green-500 transition duration-300"
+          className="bg-green-400 text-white hover:bg-green-500 rounded px-4 py-2 mt-4"
         >
           {text}
         </button>

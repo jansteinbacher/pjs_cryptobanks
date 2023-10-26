@@ -5,7 +5,7 @@ import Regulation from '../../images/regulation.png';
 function NextCourseLink({ followingCourseLink, followingCourseDescription }) {
   return (
     <div className="text-center lg:w-2/3">
-      <h3 className="text-lg font-semibold">Werde zum Krypto-Experte</h3>
+      <h3 className="text-xl font-semibold">Werde zum Krypto-Experte</h3>
       <img
         src={Regulation}
         alt="Regulation"
