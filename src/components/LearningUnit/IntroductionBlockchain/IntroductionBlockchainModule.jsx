@@ -5,6 +5,7 @@ import IntroductionBlockchainPart3 from './IntroductionBlockchainPart3';
 import IntroductionBlockchainPart4 from './IntroductionBlockchainPart4';
 import IntroductionBlockchainPart5 from './IntroductionBlockchainPart5';
 import IntroductionBlockchainQuiz from './IntroductionBlockchainQuiz';
+import IntroductionBlockchainExpert from './IntroductionBlockchainExpert';
 
 function IntroductionBlockchainModule() {
   const sections = [
@@ -14,6 +15,7 @@ function IntroductionBlockchainModule() {
     IntroductionBlockchainPart4,
     IntroductionBlockchainPart5,
     IntroductionBlockchainQuiz,
+    IntroductionBlockchainExpert,
   ];
 
   return <Module sections={sections} pagePath="/introduction-blockchain" />;

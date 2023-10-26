@@ -5,6 +5,7 @@ import TypesOfCryptoAssetsPart2 from './TypesOfCryptoAssetsPart2';
 import TypesOfCryptoAssetsPart3 from './TypesOfCryptoAssetsPart3';
 import TypesOfCryptoAssetsPart4 from './TypesOfCryptoAssetsPart4';
 import TypesOfCryptoAssetsPart5 from './TypesOfCryptoAssetsPart5';
+import TypesOfCryptoAssetsExpert from './TypesOfCryptoAssetsExpert';
 
 function TypesOfCryptoAssetsModule() {
   const sections = [
@@ -14,6 +15,7 @@ function TypesOfCryptoAssetsModule() {
     TypesOfCryptoAssetsPart4,
     TypesOfCryptoAssetsPart5,
     TypesOfCryptoAssetsQuiz,
+    TypesOfCryptoAssetsExpert,
   ];
 
   return <Module sections={sections} pagePath="/types-of-crypto-assets" />;
