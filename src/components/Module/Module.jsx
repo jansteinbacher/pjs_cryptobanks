@@ -68,8 +68,8 @@ function Module({ sections, pagePath }) {
   );
 
   return (
-    <div className="max-w-screen-lg mx-auto p-2 md:p-4">
-      <h3 className="text-xl mb-2">Kursfortschritt {progress.toFixed(0)}%</h3>
+    <div className="max-w-screen-lg mx-auto p-2 md:p-4 min-h-screen">
+      <h3 className="text-xl mb-2">Fortschritt {progress.toFixed(0)}%</h3>
 
       <ProgressBar progress={progress} />
 

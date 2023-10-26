@@ -4,8 +4,10 @@ const links = [
   { id: 1, to: '/course-overview', text: 'Kurse' },
   { id: 2, to: '/decisiontree', text: 'Individueller Lernplan' },
   { id: 3, to: '/overview', text: 'Übersicht' },
-  { id: 4, to: '/news', text: 'News' },
-  { id: 5, to: '/#about', text: 'Über das Projekt' },
+  { id: 4, to: '/crypto-assets-expert-interview', text: 'Experteninterviews' },
+  { id: 5, to: '/crypto-assets-adoption', text: 'Umfrage' },
+  { id: 6, to: '/news', text: 'News' },
+  { id: 7, to: '/#about', text: 'Über das Projekt' },
 ];
 
 function NavigationLinks() {

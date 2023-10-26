@@ -86,7 +86,7 @@ function Quiz({ questions }) {
   return (
     <div className="container mx-auto py-6 px-4 md:px-12 max-w-screen-lg">
       <div className="w-full p-4 md:pr-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
           🧠 Quiz
         </h2>
         <div className="mb-8">

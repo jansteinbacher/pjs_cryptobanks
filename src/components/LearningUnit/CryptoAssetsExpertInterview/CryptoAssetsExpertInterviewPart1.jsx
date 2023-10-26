@@ -1,9 +1,18 @@
+import ExpertInterviewIntroductionVideo from '../../../videos/expertInterviewIntroduction.mp4';
+
 function CryptoAssetsExpertInterviewPart1() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
         Experteninterviews
       </h1>
+      <div className="flex justify-center items-center mb-12">
+        {/* eslint-disable jsx-a11y/media-has-caption */}
+        <video controls className="w-full h-full rounded-lg">
+          <source src={ExpertInterviewIntroductionVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <p className="mb-8 text-justify">
         Die folgenden Experteninterviews dienen dir als Quelle für fundierte

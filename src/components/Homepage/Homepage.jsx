@@ -1,6 +1,6 @@
 import HomepageSection from './HomepageSection';
-import Experten from '../../images/Experten.png';
-import Umfrage from '../../images/Umfrage.png';
+import ExpertInterview from '../../images/expertInterview.png';
+import Survey from '../../images/survey.png';
 import News from '../../images/news.png';
 import Myth from '../../images/myth.png';
 
@@ -9,7 +9,7 @@ function Homepage() {
     <div className="bg-white">
       <div className="container mx-auto py-12 px-12 max-w-screen-xl">
         <HomepageSection
-          image={Experten}
+          image={ExpertInterview}
           title="Experteninterviews"
           description="Wichtig ist das richtige Risikomanagement!"
           linkText="Zu den Experteninterviews"
@@ -17,11 +17,11 @@ function Homepage() {
           width="32"
         />
         <HomepageSection
-          image={Umfrage}
+          image={Survey}
           title="Umfrage"
           description="Umfrage unter Studierenden zum Thema Kryptoassets"
           linkText="Zur Umfrage"
-          linkUrl="/survey"
+          linkUrl="/crypto-assets-adoption"
           width="32"
           isIconOnRight
         />

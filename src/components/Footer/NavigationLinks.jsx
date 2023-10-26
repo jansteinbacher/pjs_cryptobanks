@@ -7,7 +7,22 @@ function NavigationLinks() {
       text: 'Individueller Kurs',
       href: '/decisiontree',
     },
-    { id: 'learningUnits', text: 'Lerneinheiten', href: '/overview' },
+    { id: 'overview', text: 'Übersicht', href: '/overview' },
+    {
+      id: 'expertInterviews',
+      text: 'Experteninterviews',
+      href: '/crypto-assets-expert-interview',
+    },
+    {
+      id: 'survey',
+      text: 'Umfrage',
+      href: '/crypto-assets-adoption',
+    },
+    {
+      id: 'news',
+      text: 'News',
+      href: '/news',
+    },
   ];
 
   return (

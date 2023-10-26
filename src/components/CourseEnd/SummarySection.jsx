@@ -1,48 +1,38 @@
 import { FaFilePdf } from 'react-icons/fa';
 import { PiCertificate } from 'react-icons/pi';
+import { VscChecklist } from 'react-icons/vsc';
 import PropTypes from 'prop-types';
+import DownloadButton from '../DownloadButton';
 
 function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
-  const openSummary = () => {
-    // Construct the full URL to your PDF file
-    const fullPdfUrl = summaryDownloadLink;
-
-    // Open the PDF in a new tab
-    window.open(fullPdfUrl, '_blank');
-  };
-  const openCertificate = () => {
-    // Construct the full URL to your PDF file
-    const fullPdfUrl = certificateDownloadLink;
-
-    // Open the PDF in a new tab
-    window.open(fullPdfUrl, '_blank');
-  };
   return (
     <div className="lg:w-1/2">
       <div className="text-center">
-        <div className="flex flex-col items-center">
-          <FaFilePdf className="text-5xl text-green-400 mb-2" />
-          <button
-            type="button"
-            onClick={openSummary}
-            className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
-          >
-            Zusammenfassung herunterladen
-          </button>
+        <div className="flex justify-center space-x-4 mb-16">
+          <DownloadButton
+            icon={<FaFilePdf />}
+            downloadLink={summaryDownloadLink}
+            text="Zusammenfassung herunterladen"
+          />
+          <DownloadButton
+            icon={<PiCertificate />}
+            downloadLink={certificateDownloadLink}
+            text="Zertifikat herunterladen"
+          />
         </div>
       </div>
-      <div className="text-center mt-8">
-        <div className="flex flex-col items-center">
-          <PiCertificate className="text-5xl text-green-400 mb-2" />
-          <button
-            type="button"
-            onClick={openCertificate}
-            className="inline-block px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition duration-300"
-          >
-            Zertifikat herunterladen
-          </button>
-        </div>
-      </div>
+      <h3 className="text-xl text-center font-semibold mb-4">Checkliste:</h3>
+      <p className="mb-8 text-center">
+        Du möchstest direkt starten und deiner Bank helfen
+        Kryptoasset-Dienstleisungen anzubieten? Hier findest du eine Checkliste
+        für dich und deine Bank als Download.
+      </p>
+
+      <DownloadButton
+        icon={<VscChecklist />}
+        downloadLink="downloads/checklist.pdf"
+        text="Checkliste herunterladen"
+      />
     </div>
   );
 }

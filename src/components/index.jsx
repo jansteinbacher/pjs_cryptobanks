@@ -6,7 +6,6 @@ export { default as About } from './About';
 export { default as Footer } from './Footer';
 
 export { default as News } from './News';
-export { default as Survey } from './Survey';
 
 export { default as CourseOverview } from './CourseOverview';
 export { default as IndividualLearningPlan } from './IndividualLearningPlan';
