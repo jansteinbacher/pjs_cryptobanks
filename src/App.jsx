@@ -108,7 +108,7 @@ function App() {
 
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
-          <Route path="/survey" element={<CryptoAssetsAdoptionModule />} />
+
           <Route path="/assessment-quiz" element={<AssessmentQuiz />} />
           <Route
             path="/course-beginner-introduction"
