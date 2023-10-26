@@ -69,6 +69,12 @@ function Overview() {
         'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Kryptoasset-Verwahrung.',
       link: '/crypto-custody-challenges?from=overview',
     },
+    {
+      term: 'Expertenmeinungen zur Implementation von Kryptoassets ins Bankwesen',
+      explanation:
+        'Erfahre mehr über die Meinungen von Experten zur Integration von Kryptoassets ins traditionelle Bankwesen',
+      link: '/crypto-assets-expert-interview?from=overview',
+    },
   ];
 
   // State to track search suggestions and show/hide flag

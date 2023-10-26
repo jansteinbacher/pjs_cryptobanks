@@ -6,19 +6,20 @@ import ResourceList from './ResourceList';
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({
-    kryptoassets: null,
-    regulatorik: null,
-    anwendungsmöglichkeiten: null,
+    cryptoAssets: null,
+    regulation: null,
+    cryptoAssetsServices: null,
     verwahrung: null,
     blockchain: null,
     adoption: null,
+    interview: null,
   });
 
   const questions = [
     {
       question: 'Hast du dich bereits mit Kryptoassets beschäftigt?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'kryptoassets',
+      stateKey: 'cryptoAssets',
     },
     {
       question:
@@ -29,12 +30,12 @@ function DecisionTree() {
     {
       question: 'Möchtest Du mehr über Regulatorik erfahren?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'regulatorik',
+      stateKey: 'regulation',
     },
     {
       question: 'Möchtest du mehr über Anwendungsmöglichkeiten erfahren?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'anwendungsmöglichkeiten',
+      stateKey: 'cryptoAssetsServices',
     },
     {
       question:
@@ -47,6 +48,12 @@ function DecisionTree() {
         'Möchtest du mehr über Adoption von Kryptoassets unter Studierenden erfahren?',
       answers: ['Ja', 'Nein'],
       stateKey: 'adoption',
+    },
+    {
+      question:
+        'Interessieren dich Expertenmeinungen zur Integration von Kryptoassets ins Bankwesen?',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'interview',
     },
   ];
 
@@ -72,7 +79,7 @@ function DecisionTree() {
         />
       ) : (
         <div>
-          {answers.kryptoassets === 'Nein' && (
+          {answers.cryptoAssets === 'Nein' && (
             <ResourceList
               title="Kryptoassets"
               links={[
@@ -113,7 +120,7 @@ function DecisionTree() {
             />
           )}
 
-          {answers.regulatorik === 'Ja' && (
+          {answers.regulation === 'Ja' && (
             <ResourceList
               title="Regulatorik"
               links={[
@@ -128,7 +135,7 @@ function DecisionTree() {
             />
           )}
 
-          {answers.anwendungsmöglichkeiten === 'Ja' && (
+          {answers.cryptoAssetsServices === 'Ja' && (
             <ResourceList
               title="Anwendungsmöglichkeiten"
               links={[
@@ -183,6 +190,20 @@ function DecisionTree() {
                   to: '/crypto-assets-adoption?from=decisiontree',
                   label: 'Adoption von Kryptoassets unter Studierenden',
                   duration: '45 Minuten',
+                },
+              ]}
+            />
+          )}
+          {answers.interview === 'Ja' && (
+            <ResourceList
+              title="Expertenmeinungen"
+              links={[
+                {
+                  id: '12',
+                  to: '/crypto-assets-expert-interview?from=decisiontree',
+                  label:
+                    'Expertenmeinungen zur Integration von Kryptoassets ins Bankwesen',
+                  duration: '1 Stunde',
                 },
               ]}
             />
