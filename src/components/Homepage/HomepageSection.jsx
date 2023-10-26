@@ -7,11 +7,10 @@ function HomepageSection({
   linkText,
   linkUrl,
   isIconOnRight,
-  width,
 }) {
   const imageElement = (
     <div className="md:col-span-1 flex justify-center">
-      <img src={image} alt={title} className={`w-${width} h-auto p-2`} />
+      <img src={image} alt={title} className="w-32 h-auto p-2" />
     </div>
   );
 
@@ -43,7 +42,6 @@ HomepageSection.propTypes = {
   linkText: PropTypes.string.isRequired,
   linkUrl: PropTypes.string.isRequired,
   isIconOnRight: PropTypes.bool,
-  width: PropTypes.string.isRequired,
 };
 
 HomepageSection.defaultProps = {
