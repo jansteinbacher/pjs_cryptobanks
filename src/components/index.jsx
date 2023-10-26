@@ -39,6 +39,7 @@ export {
   CryptoCustodyRegulationModule,
   IntroductionCryptoCustodyModule,
   CryptoAssetsAdoptionModule,
+  CryptoAssetsExpertInterviewModule,
 } from './LearningUnit';
 
 export { default as Myths } from './Myths';

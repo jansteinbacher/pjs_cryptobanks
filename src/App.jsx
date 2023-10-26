@@ -34,6 +34,7 @@ import {
   CryptoCustodyRegulationModule,
   IntroductionCryptoCustodyModule,
   CryptoAssetsAdoptionModule,
+  CryptoAssetsExpertInterviewModule,
 } from './components';
 
 function App() {
@@ -100,6 +101,10 @@ function App() {
           <Route
             path="/crypto-assets-adoption"
             element={<CryptoAssetsAdoptionModule />}
+          />
+          <Route
+            path="/crypto-assets-expert-interview"
+            element={<CryptoAssetsExpertInterviewModule />}
           />
           <Route path="/mythbusters" element={<Myths />} />
           <Route path="/interviews" element={<Interviews />} />

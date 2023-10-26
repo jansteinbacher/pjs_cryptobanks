@@ -13,7 +13,7 @@ function Homepage() {
           title="Experteninterviews"
           description="Wichtig ist das richtige Risikomanagement!"
           linkText="Zu den Experteninterviews"
-          linkUrl="/interviews"
+          linkUrl="/crypto-assets-expert-interview"
           width="32"
         />
         <HomepageSection

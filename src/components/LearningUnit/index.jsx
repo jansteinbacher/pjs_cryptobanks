@@ -105,6 +105,11 @@ import {
   CryptoAssetsAdoptionModule,
 } from './CryptoAssetsAdoption';
 
+import {
+  CryptoAssetsExpertInterviewPart1,
+  CryptoAssetsExpertInterviewModule,
+} from './CryptoAssetsExpertInterview';
+
 export {
   IntroductionCryptoAssetsPart1,
   IntroductionCryptoAssetsPart2,
@@ -180,4 +185,6 @@ export {
   CryptoAssetsAdoptionPart10,
   CryptoAssetsAdoptionQuiz,
   CryptoAssetsAdoptionModule,
+  CryptoAssetsExpertInterviewPart1,
+  CryptoAssetsExpertInterviewModule,
 };
