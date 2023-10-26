@@ -117,8 +117,8 @@ function AssessmentQuiz() {
   }
 
   return (
-    <div className="container mx-auto py-6 px-4 md:px-12 max-w-screen-lg">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+    <div className="container mx-auto py-6 px-4 md:px-12 min-h-screen max-w-screen-lg">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
         🧠 Einstufungsquiz
       </h2>
       <div className="flex flex-col items-center">
