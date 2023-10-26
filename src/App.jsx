@@ -24,7 +24,6 @@ import {
   CryptoAssetsRegulationModule,
   TypesOfCryptoAssetsModule,
   OpportunitiesAndChallengesCryptoAssetsModule,
-  Interviews,
   CourseExpertModule,
   CourseExpertIntroduction,
   CourseExpertEnd,
@@ -33,6 +32,7 @@ import {
   CryptoCustodyRegulationModule,
   IntroductionCryptoCustodyModule,
   CryptoAssetsAdoptionModule,
+  CryptoAssetsExpertInterviewModule,
 } from './components';
 
 function App() {
@@ -100,8 +100,12 @@ function App() {
             path="/crypto-assets-adoption"
             element={<CryptoAssetsAdoptionModule />}
           />
+          <Route
+            path="/crypto-assets-expert-interview"
+            element={<CryptoAssetsExpertInterviewModule />}
+          />
           <Route path="/factcheck" element={<Myths />} />
-          <Route path="/interviews" element={<Interviews />} />
+
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
           <Route path="/survey" element={<CryptoAssetsAdoptionModule />} />

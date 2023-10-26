@@ -7,7 +7,6 @@ export { default as Footer } from './Footer';
 
 export { default as News } from './News';
 export { default as Survey } from './Survey';
-export { default as Interviews } from './Interviews';
 
 export { default as CourseOverview } from './CourseOverview';
 export { default as IndividualLearningPlan } from './IndividualLearningPlan';
@@ -39,6 +38,7 @@ export {
   CryptoCustodyRegulationModule,
   IntroductionCryptoCustodyModule,
   CryptoAssetsAdoptionModule,
+  CryptoAssetsExpertInterviewModule,
 } from './LearningUnit';
 
 export { default as Myths } from './Myths';
