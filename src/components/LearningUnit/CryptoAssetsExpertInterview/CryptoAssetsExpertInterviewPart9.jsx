@@ -18,7 +18,6 @@ function CryptoAssetsExpertInterviewPart9() {
           icon={<FaFilePdf />}
           downloadLink="downloads/expertInterviews.pdf"
           text="Experteninterviews herunterladen"
-          openInNewTab
         />
       </div>
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Checkliste:</h2>
@@ -32,7 +31,6 @@ function CryptoAssetsExpertInterviewPart9() {
           icon={<VscChecklist />}
           downloadLink="downloads/checklist.pdf"
           text="Checkliste herunterladen"
-          openInNewTab
         />
       </div>
     </div>
