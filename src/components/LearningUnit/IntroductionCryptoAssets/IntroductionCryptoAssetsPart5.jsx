@@ -32,6 +32,9 @@ function IntroductionCryptoAssetsPart5() {
       <div className="flex justify-center mb-8 items-center">
         <img src={Token} alt="Token" className="w-full md:w-3/4 mb-4" />
       </div>
+      <p className="text-center mb-4">
+        Höre dir den folgenden Text als Audio an:
+      </p>
       <div className="flex justify-center items-center mb-8">
         {/* eslint-disable jsx-a11y/media-has-caption */}
         <audio controls>
