@@ -1,68 +1,279 @@
-// DecisionTree.js
 import { useState } from 'react';
 import Question from './Question';
-import ResourceList from './ResourceList';
+import Module from '../Module';
+import IndividualLearningStart from './IndividualLearningStart';
+import {
+  IntroductionCryptoAssetsPart1,
+  IntroductionCryptoAssetsPart2,
+  IntroductionCryptoAssetsPart3,
+  IntroductionCryptoAssetsPart4,
+  IntroductionCryptoAssetsPart5,
+  IntroductionCryptoAssetsPart6,
+  IntroductionCryptoAssetsExpert,
+  IntroductionCryptoAssetsQuiz,
+  IntroductionBlockchainPart1,
+  IntroductionBlockchainPart2,
+  IntroductionBlockchainPart3,
+  IntroductionBlockchainPart4,
+  IntroductionBlockchainPart5,
+  IntroductionBlockchainExpert,
+  IntroductionBlockchainQuiz,
+  TypesOfCryptoAssetsPart1,
+  TypesOfCryptoAssetsPart2,
+  TypesOfCryptoAssetsPart3,
+  TypesOfCryptoAssetsPart4,
+  TypesOfCryptoAssetsPart5,
+  TypesOfCryptoAssetsExpert,
+  TypesOfCryptoAssetsQuiz,
+  OpportunitiesAndChallengesPart1,
+  OpportunitiesAndChallengesPart2,
+  OpportunitiesAndChallengesCryptoAssetsExpert,
+  OpportunitiesAndChallengesCryptoAssetsQuiz,
+  CryptoAssetsRegulationPart1,
+  CryptoAssetsRegulationPart2,
+  CryptoAssetsRegulationQuiz,
+  CryptoAssetServicesPart1,
+  CryptoAssetServicesPart2,
+  CryptoAssetServicesPart3,
+  CryptoAssetServicesPart4,
+  CryptoAssetServicesPart5,
+  CryptoAssetServicesPart6,
+  CryptoAssetServicesQuiz,
+  CryptoAssetsAdoptionPart1,
+  CryptoAssetsAdoptionPart2,
+  CryptoAssetsAdoptionPart3,
+  CryptoAssetsAdoptionPart4,
+  CryptoAssetsAdoptionPart5,
+  CryptoAssetsAdoptionPart6,
+  CryptoAssetsAdoptionPart7,
+  CryptoAssetsAdoptionPart8,
+  CryptoAssetsAdoptionPart9,
+  CryptoAssetsAdoptionPart10,
+  CryptoAssetsAdoptionQuiz,
+  IntroductionCryptoCustodyPart1,
+  IntroductionCryptoCustodyPart2,
+  IntroductionCryptoCustodyPart3,
+  IntroductionCryptoCustodyQuiz,
+  CryptoCustodyApplicationAreasPart1,
+  CryptoCustodyApplicationAreasPart2,
+  CryptoCustodyApplicationAreasPart3,
+  CryptoCustodyApplicationAreasPart4,
+  CryptoCustodyApplicationAreasPart5,
+  CryptoCustodyApplicationAreasPart6,
+  CryptoCustodyApplicationAreasQuiz,
+  CryptoCustodyRegulationPart1,
+  CryptoCustodyRegulationPart2,
+  CryptoCustodyRegulationQuiz,
+  CryptoCustodyChallengesPart1,
+  CryptoCustodyChallengesPart2,
+} from '../LearningUnit';
 
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState({
-    cryptoAssets: null,
-    regulation: null,
-    cryptoAssetsServices: null,
-    verwahrung: null,
-    blockchain: null,
-    adoption: null,
-    interview: null,
-  });
+  const [sections, setSections] = useState([IndividualLearningStart]);
 
   const questions = [
     {
-      question: 'Hast du dich bereits mit Kryptoassets beschäftigt?',
+      question: 'Möchtest du eine Übersicht zu Kryptoassets bekommen?',
       answers: ['Ja', 'Nein'],
       stateKey: 'cryptoAssets',
     },
     {
       question:
-        'Möchtest du mehr über die zugrundeliegende Blockchain-Technologie erfahren?',
+        'Möchtest du eine Einführung zur Blockchain-Technologie bekommen?',
       answers: ['Ja', 'Nein'],
       stateKey: 'blockchain',
     },
     {
-      question: 'Möchtest Du mehr über Regulatorik erfahren?',
+      question:
+        'Möchtest du herausfinden, wie Kryptoassets in Verbindung zu traditionellen Assets stehen?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'regulation',
+      stateKey: 'typesOfCryptoAssets',
     },
     {
-      question: 'Möchtest du mehr über Anwendungsmöglichkeiten erfahren?',
+      question:
+        'Möchtest du mehr über die Herausforderungen und Zukunftsaussichten von Kryptoassetes erfahren?',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'opportunitiesAndChallengesCryptoAssets',
+    },
+    {
+      question:
+        'Möchtest du mehr über die Regulatorik von Kryptoassetes erfahren? (Vorkenntnisse benötigt)',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'cryptoAssetsRegulation',
+    },
+    {
+      question:
+        'Möchtest du mehr über die Krypto-Dienstleistungen erfahren? (Vorkenntnisse benötigt)',
       answers: ['Ja', 'Nein'],
       stateKey: 'cryptoAssetsServices',
     },
     {
       question:
-        'Möchtest du mehr über die Verwahrung von Kryptoassets erfahren?',
+        'Möchtest du die Ergebnisse einer Umfrage zum Thema Adaption von Kryptoassets sehen?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'verwahrung',
+      stateKey: 'cryptoAssetsSurvey',
     },
     {
       question:
-        'Möchtest du mehr über Adoption von Kryptoassets unter Studierenden erfahren?',
+        'Möchtest du mehr über die Grundlagen der Kryptoverwahrung erfahren?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'adoption',
+      stateKey: 'cryptoAssetsCustody',
     },
     {
       question:
-        'Interessieren dich Expertenmeinungen zur Integration von Kryptoassets ins Bankwesen?',
+        'Möchtest du mehr über die verschiedenen Arten der Kryptoverwahrlösungen erfahren?',
       answers: ['Ja', 'Nein'],
-      stateKey: 'interview',
+      stateKey: 'cryptoAssetsCustodyAreas',
+    },
+    {
+      question:
+        'Möchtest du mehr über die Regulatorik der Kryptoverwahrlösungen erfahren?',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'cryptoAssetsCustodyRegulation',
+    },
+    {
+      question:
+        'Möchtest du mehr über die Herausforderungen von Kryptoverwahrlösungen erfahren?',
+      answers: ['Ja', 'Nein'],
+      stateKey: 'cryptoAssetsCustodyChallenges',
     },
   ];
 
   const handleAnswerUpdate = (stateKey, answer) => {
-    setAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [stateKey]: answer,
-    }));
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+    if (answer === 'Ja' && stateKey === 'cryptoAssets') {
+      const newSections = [
+        ...sections,
+        IntroductionCryptoAssetsPart1,
+        IntroductionCryptoAssetsPart2,
+        IntroductionCryptoAssetsPart3,
+        IntroductionCryptoAssetsPart4,
+        IntroductionCryptoAssetsPart5,
+        IntroductionCryptoAssetsPart6,
+        IntroductionCryptoAssetsExpert,
+        IntroductionCryptoAssetsQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'blockchain') {
+      const newSections = [
+        ...sections,
+        IntroductionBlockchainPart1,
+        IntroductionBlockchainPart2,
+        IntroductionBlockchainPart3,
+        IntroductionBlockchainPart4,
+        IntroductionBlockchainPart5,
+        IntroductionBlockchainExpert,
+        IntroductionBlockchainQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'typesOfCryptoAssets') {
+      const newSections = [
+        ...sections,
+        TypesOfCryptoAssetsPart1,
+        TypesOfCryptoAssetsPart2,
+        TypesOfCryptoAssetsPart3,
+        TypesOfCryptoAssetsPart4,
+        TypesOfCryptoAssetsPart5,
+        TypesOfCryptoAssetsExpert,
+        TypesOfCryptoAssetsQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (
+      answer === 'Ja' &&
+      stateKey === 'opportunitiesAndChallengesCryptoAssets'
+    ) {
+      const newSections = [
+        ...sections,
+        OpportunitiesAndChallengesPart1,
+        OpportunitiesAndChallengesPart2,
+        OpportunitiesAndChallengesCryptoAssetsExpert,
+        OpportunitiesAndChallengesCryptoAssetsQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsRegulation') {
+      const newSections = [
+        ...sections,
+        CryptoAssetsRegulationPart1,
+        CryptoAssetsRegulationPart2,
+        CryptoAssetsRegulationQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsServices') {
+      const newSections = [
+        ...sections,
+        CryptoAssetServicesPart1,
+        CryptoAssetServicesPart2,
+        CryptoAssetServicesPart3,
+        CryptoAssetServicesPart4,
+        CryptoAssetServicesPart5,
+        CryptoAssetServicesPart6,
+        CryptoAssetServicesQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsSurvey') {
+      const newSections = [
+        ...sections,
+        CryptoAssetsAdoptionPart1,
+        CryptoAssetsAdoptionPart2,
+        CryptoAssetsAdoptionPart3,
+        CryptoAssetsAdoptionPart4,
+        CryptoAssetsAdoptionPart5,
+        CryptoAssetsAdoptionPart6,
+        CryptoAssetsAdoptionPart7,
+        CryptoAssetsAdoptionPart8,
+        CryptoAssetsAdoptionPart9,
+        CryptoAssetsAdoptionPart10,
+        CryptoAssetsAdoptionQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsCustody') {
+      const newSections = [
+        ...sections,
+        IntroductionCryptoCustodyPart1,
+        IntroductionCryptoCustodyPart2,
+        IntroductionCryptoCustodyPart3,
+        IntroductionCryptoCustodyQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsCustodyAreas') {
+      const newSections = [
+        ...sections,
+        CryptoCustodyApplicationAreasPart1,
+        CryptoCustodyApplicationAreasPart2,
+        CryptoCustodyApplicationAreasPart3,
+        CryptoCustodyApplicationAreasPart4,
+        CryptoCustodyApplicationAreasPart5,
+        CryptoCustodyApplicationAreasPart6,
+        CryptoCustodyApplicationAreasQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsCustodyRegulation') {
+      const newSections = [
+        ...sections,
+        CryptoCustodyRegulationPart1,
+        CryptoCustodyRegulationPart2,
+        CryptoCustodyRegulationQuiz,
+      ];
+      setSections(newSections);
+    }
+    if (answer === 'Ja' && stateKey === 'cryptoAssetsCustodyChallenges') {
+      const newSections = [
+        ...sections,
+        CryptoCustodyChallengesPart1,
+        CryptoCustodyChallengesPart2,
+      ];
+      setSections(newSections);
+    }
   };
 
   const currentQuestionData = questions[currentQuestion];
@@ -78,137 +289,11 @@ function DecisionTree() {
           }
         />
       ) : (
-        <div>
-          {answers.cryptoAssets === 'Nein' && (
-            <ResourceList
-              title="Kryptoassets"
-              links={[
-                {
-                  id: '1',
-                  to: '/introduction-crypto-assets?from=decisiontree',
-                  label: 'Einführung in Kryptoassets',
-                  duration: '30 Minuten',
-                },
-                {
-                  id: '2',
-                  to: '/types-of-crypto-assets?from=decisiontree',
-                  label: 'Arten von Kryptoassets',
-                  duration: '30 Minuten',
-                },
-                {
-                  id: '3',
-                  to: '/opportunities-challenges-crypto-assets?from=decisiontree',
-                  label:
-                    'Herausforderungen und Zukunftsaussichten von Kryptoassets',
-                  duration: '30 Minuten',
-                },
-              ]}
-            />
-          )}
-
-          {answers.blockchain === 'Ja' && (
-            <ResourceList
-              title="Blockchain-Technologie"
-              links={[
-                {
-                  id: '4',
-                  to: '/introduction-blockchain?from=decisiontree',
-                  label: 'Einführung in die Blockchain-Technologie',
-                  duration: '30 Minuten',
-                },
-              ]}
-            />
-          )}
-
-          {answers.regulation === 'Ja' && (
-            <ResourceList
-              title="Regulatorik"
-              links={[
-                {
-                  id: '5',
-                  to: '/crypto-asset-regulation?from=decisiontree',
-                  label:
-                    'Regulatorische Landschaft auf nationaler und internationaler Ebene',
-                  duration: '30 Minuten',
-                },
-              ]}
-            />
-          )}
-
-          {answers.cryptoAssetsServices === 'Ja' && (
-            <ResourceList
-              title="Anwendungsmöglichkeiten"
-              links={[
-                {
-                  id: '6',
-                  to: '/crypto-asset-services?from=decisiontree',
-                  label: 'Potenzielle Anwendungsfelder von Kryptoassets',
-                  duration: '30 Minuten',
-                },
-              ]}
-            />
-          )}
-
-          {answers.verwahrung === 'Ja' && (
-            <ResourceList
-              title="Kryptoasset-Verwahrung"
-              links={[
-                {
-                  id: '7',
-                  to: '/introduction-crypto-custody?from=decisiontree',
-                  label: 'Einführung in die Kryptoasset-Verwahrung',
-                  duration: '30 Minuten',
-                },
-                {
-                  id: '8',
-                  to: '/crypto-custody-application-areas?from=decisiontree',
-                  label: 'Arten von Verwahrlösungen',
-                  duration: '1 Stunde',
-                },
-                {
-                  id: '9',
-                  to: '/crypto-custody-regulation?from=decisiontree',
-                  label: 'Regulatorik zu Kryptoasset-Verwahrung',
-                  duration: '30 Minuten',
-                },
-                {
-                  id: '10',
-                  to: '/crypto-custody-challenges?from=decisiontree',
-                  label:
-                    'Herausforderungen und Zukunftsaussichten der Kryptoasset-Verwahrung',
-                  duration: '30 Minuten',
-                },
-              ]}
-            />
-          )}
-          {answers.adoption === 'Ja' && (
-            <ResourceList
-              title="Adoption von Kryptoassets"
-              links={[
-                {
-                  id: '11',
-                  to: '/crypto-assets-adoption?from=decisiontree',
-                  label: 'Adoption von Kryptoassets unter Studierenden',
-                  duration: '45 Minuten',
-                },
-              ]}
-            />
-          )}
-          {answers.interview === 'Ja' && (
-            <ResourceList
-              title="Expertenmeinungen"
-              links={[
-                {
-                  id: '12',
-                  to: '/crypto-assets-expert-interview?from=decisiontree',
-                  label:
-                    'Expertenmeinungen zur Integration von Kryptoassets ins Bankwesen',
-                  duration: '1 Stunde',
-                },
-              ]}
-            />
-          )}
-        </div>
+        <Module
+          key={sections.length}
+          sections={sections}
+          pagePath="/decisiontree?from=individual-course"
+        />
       )}
     </div>
   );

@@ -5,7 +5,7 @@ function NavigationLinks() {
     {
       id: 'individual-course',
       text: 'Individueller Kurs',
-      href: '/decisiontree',
+      href: '/decisiontree?from=individual-course',
     },
     { id: 'overview', text: 'Übersicht', href: '/overview' },
     {

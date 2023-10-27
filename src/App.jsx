@@ -9,7 +9,7 @@ import {
   CourseOverview,
   Overview,
   CourseBeginnerModule,
-  IndividualLearningPlan,
+  IndividualLearningPlanComponent,
   CourseBeginnerEnd,
   AssessmentQuiz,
   News,
@@ -33,6 +33,7 @@ import {
   IntroductionCryptoCustodyModule,
   CryptoAssetsAdoptionModule,
   CryptoAssetsExpertInterviewModule,
+  IndividualLearningPlanEnd,
 } from './components';
 
 function App() {
@@ -55,7 +56,10 @@ function App() {
           <Route path="/course-beginner" element={<CourseBeginnerModule />} />
           <Route path="/course-advanced" element={<CourseAdvancedModule />} />
           <Route path="/course-expert" element={<CourseExpertModule />} />
-          <Route path="/decisiontree" element={<IndividualLearningPlan />} />
+          <Route
+            path="/decisiontree"
+            element={<IndividualLearningPlanComponent />}
+          />
           <Route
             path="/introduction-crypto-assets"
             element={<IntroductionCryptoAssetsModule />}
@@ -126,6 +130,11 @@ function App() {
           <Route path="/course-expert-end" element={<CourseExpertEnd />} />
           <Route path="/course-beginner-end" element={<CourseBeginnerEnd />} />
           <Route path="/course-advanced-end" element={<CourseAdvancedEnd />} />
+
+          <Route
+            path="/individual-course-end"
+            element={<IndividualLearningPlanEnd />}
+          />
         </Routes>
       </Router>
       <Footer />

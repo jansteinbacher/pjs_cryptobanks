@@ -8,7 +8,6 @@ export { default as Footer } from './Footer';
 export { default as News } from './News';
 
 export { default as CourseOverview } from './CourseOverview';
-export { default as IndividualLearningPlan } from './IndividualLearningPlan';
 export { default as Overview } from './Overview';
 
 export {
@@ -41,3 +40,6 @@ export {
 } from './LearningUnit';
 
 export { default as Myths } from './Myths';
+
+export { default as IndividualLearningPlanEnd } from './IndividualLearningPlan/IndividualLearningPlanEnd';
+export { default as IndividualLearningPlanComponent } from './IndividualLearningPlan/IndividualLearningPlanComponent';

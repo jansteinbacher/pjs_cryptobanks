@@ -14,6 +14,9 @@ function getCompletionRedirectURL(fromParam) {
   if (fromParam === 'expert-course') {
     return '/course-expert-end';
   }
+  if (fromParam === 'individual-course') {
+    return '/individual-course-end';
+  }
   return '/';
 }
 

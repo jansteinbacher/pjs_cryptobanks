@@ -51,7 +51,7 @@ function Hero() {
               title="Individueller Lernplan"
               description="Erstelle deinen eigenen Kurs aus verschiedenen Lerneinheiten!"
               linkText="Kurs erstellen"
-              linkUrl="/decisiontree"
+              linkUrl="/decisiontree?from=individual-course"
             />
 
             {/* Column 3 */}

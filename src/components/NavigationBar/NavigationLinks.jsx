@@ -2,7 +2,11 @@ import NavigationLink from './NavigationLink';
 
 const links = [
   { id: 1, to: '/course-overview', text: 'Kurse' },
-  { id: 2, to: '/decisiontree', text: 'Individueller Lernplan' },
+  {
+    id: 2,
+    to: '/decisiontree?from=individual-course',
+    text: 'Individueller Lernplan',
+  },
   { id: 3, to: '/overview', text: 'Übersicht' },
   { id: 4, to: '/crypto-assets-expert-interview', text: 'Experteninterviews' },
   { id: 5, to: '/crypto-assets-adoption', text: 'Umfrage' },
