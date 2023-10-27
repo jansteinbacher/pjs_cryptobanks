@@ -60,6 +60,11 @@ function Credits() {
             Opinion icons created by noomtah - Flaticon
           </a>
         </li>
+        <li>
+          <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">
+            Goal icons created by Freepik - Flaticon
+          </a>
+        </li>
       </ul>
     </div>
   );
