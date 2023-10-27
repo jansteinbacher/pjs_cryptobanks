@@ -13,7 +13,7 @@ import {
   CourseBeginnerEnd,
   AssessmentQuiz,
   News,
-  Myths,
+  FactCheck,
   CourseBeginnerIntroduction,
   CourseAdvancedModule,
   CourseAdvancedIntroduction,
@@ -109,7 +109,7 @@ function App() {
             path="/crypto-assets-expert-interview"
             element={<CryptoAssetsExpertInterviewModule />}
           />
-          <Route path="/factcheck" element={<Myths />} />
+          <Route path="/factcheck" element={<FactCheck />} />
 
           <Route path="/overview" element={<Overview />} />
           <Route path="/news" element={<News />} />
