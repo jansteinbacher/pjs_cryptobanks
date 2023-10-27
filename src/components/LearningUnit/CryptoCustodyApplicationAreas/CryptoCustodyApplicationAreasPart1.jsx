@@ -1,9 +1,15 @@
 import Anwendungsbereiche from '../../../images/courseExpert/overviewAnwendungsbereiche.png';
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Simone hat Tobias beauftragt, sich intensiver mit verschiedenen Lösungen zur Verwahrung von Kryptoassets auseinanderzusetzen. Dies bildet den Auftakt zur Integration von Kryptoassets in das hauseigene Bankensystem.',
+    'Um einen ersten Einblick in die Kryptoasset-Verwahrung zu gewinnen, untersucht Tobias, die Verwahrlösung, welche er privat zur Investition in Kryptoassets nutzt. Hierbei macht er Gebrauch von seinem intelligenten Browser-Plugin, das es ihm ermöglicht, mit der Maus über Webseiteninhalte zu fahren und weitere Informationen abzurufen.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,21 +17,7 @@ function CryptoCustodyApplicationAreasPart1() {
         Anwedungsbereiche - Arten von Verwahrlösungen
       </h1>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Simone hat Tobias beauftragt, sich intensiver mit verschiedenen
-            Lösungen zur Verwahrung von Kryptoassets auseinanderzusetzen. Dies
-            bildet den Auftakt zur Integration von Kryptoassets in das
-            hauseigene Bankensystem. Um einen ersten Einblick in die
-            Kryptoasset-Verwahrung zu gewinnen, untersucht Tobias, die
-            Verwahrlösung, welche er privat zur Investition in Kryptoassets
-            nutzt. Hierbei macht er Gebrauch von seinem intelligenten
-            Browser-Plugin, das es ihm ermöglicht, mit der Maus über
-            Webseiteninhalte zu fahren und weitere Informationen abzurufen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-8">
         Die sichere Verwahrung von Kryptoassets bildet einen essenziellen

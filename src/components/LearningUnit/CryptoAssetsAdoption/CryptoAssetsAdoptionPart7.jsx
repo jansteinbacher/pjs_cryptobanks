@@ -1,10 +1,16 @@
 import Image1 from '../../../images/courseAdvanced/Getaetigte_Investitionen.png';
 import Image2 from '../../../images/courseAdvanced/EigeneErfahrungKryptoassets.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart7() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const leoStory = [
+    'Für den folgenden Bereich erweisen sich vor allem die Teilnehmer, die bereits in Kryptoassets schon einmal investiert haben, als besonders interessant für Leo. Er möchte nämlich herausfinden, welche die meistgenutzten digitalen Assets sind.',
+    'Zudem interessiert ihn die persönliche Erfahrung der Investoren mit den Kryptoassets. Dies ermöglicht ihm Präferenzen der Kunden oder Trends im Kryptomarkt zu identifizieren und somit konkrete Empfehlungen zur Einbindung der digitalen Assets in die eigene Bank geben.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -12,20 +18,7 @@ function CryptoAssetsAdoptionPart7() {
         Investitionen in Kryptoassets
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Für den folgenden Bereich erweisen sich vor allem die Teilnehmer,
-            die bereits in Kryptoassets schon einmal investiert haben, als
-            besonders interessant für Leo. Er möchte nämlich herausfinden,
-            welche die meistgenutzten digitalen Assets sind. Zudem interessiert
-            ihn die persönliche Erfahrung der Investoren mit den Kryptoassets.
-            Dies ermöglicht ihm Präferenzen der Kunden oder Trends im
-            Kryptomarkt zu identifizieren und somit konkrete Empfehlungen zur
-            Einbindung der digitalen Assets in die eigene Bank geben.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStory} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image1}

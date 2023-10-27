@@ -1,30 +1,23 @@
-import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import Currencies from '../../../images/courseBeginner/currencies.jpg';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter14Audio from '../../../audio/chapter14.mp3';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionCryptoAssetsPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Bernds Wissensreise führte ihn immer tiefer in die Welt der Kryptoassets. Doch bei einem bestimmten Begriff hatte er noch einige Fragezeichen im Kopf: “Tokenisierung”. Dieses Wort war in vielen Zusammenhängen gefallen, aber er konnte es nirgends zuordnen.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Tokenisierung
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
-          <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Bernds Wissensreise führte ihn immer tiefer in die Welt der
-            Kryptoassets. Doch bei einem bestimmten Begriff hatte er noch einige
-            Fragezeichen im Kopf: &ldquo;Tokenisierung&rdquo;. Dieses Wort war
-            in vielen Zusammenhängen gefallen, aber er konnte es nirgends
-            zuordnen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex mb-8 justify-center items-center">
         <img src={Currencies} alt="Token" className="w-full md:w-1/2 mb-4" />
       </div>

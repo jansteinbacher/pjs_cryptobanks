@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import AssetCategories from '../../../images/courseBeginner/assetcategories.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsPart1() {
   const [hovered, setHovered] = useState(false);
@@ -18,29 +19,19 @@ function TypesOfCryptoAssetsPart1() {
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Mit einem Grundverständnis für Kryptoassets begibt sich Bernd auf die weitere Suche nach realen Kryptoassets. Schnell gelangt er auf verschiedene Kryptoasset-Handelsbörsen und -Übersichtsseiten, auf der verschiedene Token und Coins aufgelistet sind.',
+    'Er fühlt sich erstmal erschlagen von der großen Menge an Kryptoassets, in welche er investieren kann. Jedoch hat Bernd von Tobias einen schlauen Helfer in seinen Internetbrowser installiert bekommen. Jetzt muss er nur noch mit der Maus über die einzelnen Webseiteninhalte fahren und erhält zusätzliche Informationen.',
+    'Mit Tatendrang beginnt Bernd sich durch die verschiedenen Reiter der Webseiten zu klicken, um mehr zu erfahren.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
         Arten von Kryptoassets und ihre Verbindung zu traditionellen
         Finanzprodukten
       </h1>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Mit einem Grundverständnis für Kryptoassets begibt sich Bernd auf
-            die weitere Suche nach realen Kryptoassets. Schnell gelangt er auf
-            verschiedene Kryptoasset-Handelsbörsen und -Übersichtsseiten, auf
-            der verschiedene Token und Coins aufgelistet sind. Er fühlt sich
-            erstmal erschlagen von der großen Menge an Kryptoassets, in welche
-            er investieren kann. Jedoch hat Bernd von Tobias einen schlauen
-            Helfer in seinen Internetbrowser installiert bekommen. Jetzt muss er
-            nur noch mit der Maus über die einzelnen Webseiteninhalte fahren und
-            erhält zusätzliche Informationen. Mit Tatendrang beginnt Bernd sich
-            durch die verschiedenen Reiter der Webseiten zu klicken, um mehr zu
-            erfahren.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
 
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Stablecoin from '../../../images/courseBeginner/stablecoin.png';
 import CurrencyPrices from '../../../images/courseBeginner/currencyprices.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsPart2() {
   const [hovered, setHovered] = useState(false);
@@ -18,22 +19,22 @@ function TypesOfCryptoAssetsPart2() {
     'from=beginner-course',
   );
 
+  const berndStoryPart1 = [
+    'Unter dem Reiter “Kryptowährungen” auf einer Kryptoasset-Handelsbörse fällt Bernds Blick sofort auf den Namen “Bitcoin”.',
+    'Er erinnert sich an sein Gespräch mit Simone und Tobias zurück über Satoshi Nakamoto dem Erfinder von Bitcoin. Unter Bitcoin findet er noch weitere Währungen wie “Dodgecoin”, “SHIBA INU” oder auch “Litecoin”.',
+  ];
+
+  const berndStoryPart2 = [
+    'Bernd klickt sich weiter durch die einzelnen Reiter der Handelsbörse und stößt auf den Begriff Stablecoins. Er wundert sich, inwiefern sich diese von den Kryptowährungen unterscheidet.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Payment Token
       </h2>
       {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Unter dem Reiter “Kryptowährungen” auf einer
-            Kryptoasset-Handelsbörse fällt Bernds Blick sofort auf den Namen
-            “Bitcoin”. Er erinnert sich an sein Gespräch mit Simone und Tobias
-            zurück über Satoshi Nakamoto dem Erfinder von Bitcoin. Unter Bitcoin
-            findet er noch weitere Währungen wie “Dodgecoin”, “SHIBA INU” oder
-            auch “Litecoin”.
-          </p>
-        </div>
+        <StoryBoxBernd paragraphs={berndStoryPart1} />
       )}
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!
@@ -70,13 +71,9 @@ function TypesOfCryptoAssetsPart2() {
           Handelsseite Kryptowährungen <a href="#sources">[2]</a>
         </p>
       </div>
-      <div className="p-4 mb-12 bg-green-200 rounded-lg">
-        <p className="italic text-justify">
-          Bernd klickt sich weiter durch die einzelnen Reiter der Handelsbörse
-          und stößt auf den Begriff Stablecoins. Er wundert sich, inwiefern sich
-          diese von den Kryptowährungen unterscheidet
-        </p>
-      </div>
+      {isComingFromPreviousPage && (
+        <StoryBoxBernd paragraphs={berndStoryPart2} />
+      )}
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!
       </p>

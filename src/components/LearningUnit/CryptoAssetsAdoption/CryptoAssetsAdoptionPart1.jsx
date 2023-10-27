@@ -1,36 +1,31 @@
 import Popularity from '../../../images/courseAdvanced/Bekanntheitsgrad Kryptoassets und Blockchain 1.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
 
+  const leoStoryPart1 = [
+    'Um die Akzeptanz von Kryptoassets in der Gesellschaft herauszufinden, beauftragt Simone den Werkstudenten Leo eine Umfrage durchzuführen.',
+    'Mittels der Umfrage soll aufgezeigt werden, inwieweit Kryptoassets bereits in den Mainstream vorgedrungen sind und welche Faktoren die Akzeptanz in der Gesellschaft beeinflussen. Da gerade junge Leute für diese Thematik sehr zu begeistern sind, leitet Leo die Umfrage an seine Kommilitonen:innen bzw. an die Kurse, die er momentan belegt, weiter.',
+  ];
+
+  const leoStoryPart2 = [
+    'Zunächst möchte Leo erst einmal herausfinden wie viele Studenten überhaupt schon einmal etwas von den Begriffen “Blockchain” und “Kryptoassets” gehört haben. Er kommt dabei zu folgenden Ergebnissen:',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
-      {isComingFromPreviousPage && (
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
-          Adaption von Kryptoassets in der Gesellschaft: Studie unter
-          Studierenden
-        </h1>
-      )}
+      <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
+        Adaption von Kryptoassets in der Gesellschaft: Studie unter Studierenden
+      </h1>
+
       <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight">
         Bekanntheitsgrad von Kryptoassets
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Um die Akzeptanz von Kryptoassets in der Gesellschaft
-            herauszufinden, beauftragt Simone den Werkstudenten Leo eine Umfrage
-            durchzuführen. Mittels der Umfrage soll aufgezeigt werden, inwieweit
-            Kryptoassets bereits in den Mainstream vorgedrungen sind und welche
-            Faktoren die Akzeptanz in der Gesellschaft beeinflussen. Da gerade
-            junge Leute für diese Thematik sehr zu begeistern sind, leitet Leo
-            die Umfrage an seine Kommilitonen:innen bzw. an die Kurse, die er
-            momentan belegt, weiter.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart1} />}
       <p className="mb-8">
         <strong>Demographische Aspekte:</strong>
         <br />
@@ -43,16 +38,7 @@ function CryptoAssetsAdoptionPart1() {
         Die Mehrheit, 66%, gab an männlich zu sein, während 34% davon weilblich
         sind.
       </p>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Zunächst möchte Leo erst einmal herausfinden wie viele Studenten
-            überhaupt schon einmal etwas von den Begriffen “Blockchain” und
-            “Kryptoassets” gehört haben. Er kommt dabei zu folgenden
-            Ergebnissen:
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart2} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Popularity}

@@ -1,34 +1,23 @@
-import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import Token from '../../../images/courseBeginner/token.png';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter15Audio from '../../../audio/chapter15.mp3';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionCryptoAssetsPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Bernd hat inzwischen bereits einige Informationen auf seiner Wissensreise durch de Welt der Kryptoassets sammeln können. Doch es gibt immer noch Aspekte, die ihm nicht vollständig klar sind.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Coin vs. Token
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
-          <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Bernd hat inzwischen bereits einige Informationen auf seiner
-            Wissensreise durch de Welt der Kryptoassets sammeln können. Doch es
-            gibt immer noch Aspekte, die ihm nicht vollständig klar sind. Ein
-            solcher Aspekt ist der Unterschied zwischen &ldquo;Coin&rdquo; und
-            &ldquo;Token&rdquo;. Er wusste, dass es wichtig ist, diese Begriffe
-            zu verstehen, um die Vielfalt der Kryptoassets zu erfassen. Bernd
-            tippt also &ldquo;Unterschied zwischen Coin und Token&rdquo; in die
-            Suchleiste ein. Die Suchergebnisse führen ihn zu einer klaren
-            Erklärung.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center mb-8 items-center">
         <img src={Token} alt="Token" className="w-full md:w-3/4 mb-4" />
       </div>

@@ -1,12 +1,21 @@
 import Nakamoto from '../../../images/courseBeginner/nakamoto.jpg';
-import Bernd from '../../../images/courseBeginner/charakterBernd.png';
+
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter1Audio from '../../../audio/chapter11.mp3';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionCryptoAssetsPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
+
+  const berndStory = [
+    'Voller Neugierde macht sich Bernd auf die Suche nach Informationen zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu dem Thema mitbekommen.',
+    'Er hatte die beiden beauftragt sich ebenfalls mit dem Thema Kryptoassets auseinanderzusetzen, um ein breites Wissen zu Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung für oder gegen die Integration von Kryptoassets in seine Bank zu treffen. Bernd konnte nicht widerstehen, sich in das Gespräch einzubringen.',
+    '"Entschuldigt, dass ich mich einmische, aber ich habe auch viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen in Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht sicher, wer oder was das ist."',
+    'Simone lächelte und erklärte: "Nakamoto ist der Pseudonym eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur, die die Krypto-Revolution gestartet hat."',
+    'Tobias fügte hinzu: "Genau, Nakamoto veröffentlichte das Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel geblieben."',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -27,35 +36,7 @@ function IntroductionCryptoAssetsPart1() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Der geschichtliche Hintergrund zu Kryptoassets (Satoshi Nakamoto)
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
-          <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Voller Neugierde macht sich Bernd auf die Suche nach Informationen
-            zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der
-            Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu
-            dem Thema mitbekommen. <br />
-            Er hatte die beiden beauftragt sich ebenfalls mit dem Thema
-            Kryptoassets auseinanderzusetzen, um ein breites Wissen zu
-            Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung
-            für oder gegen die Integration von Kryptoassets in seine Bank zu
-            treffen. Bernd konnte nicht widerstehen, sich in das Gespräch
-            einzubringen. <br />
-            &ldquo;Entschuldigt, dass ich mich einmische, aber ich habe auch
-            viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen
-            in Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht
-            sicher, wer oder was das ist.&rdquo; <br />
-            Simone lächelte und erklärte: &ldquo;Nakamoto ist der Pseudonym
-            eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer
-            hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur, die
-            die Krypto-Revolution gestartet hat.&rdquo; <br />
-            Tobias fügte hinzu: &ldquo;Genau, Nakamoto veröffentlichte das
-            Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das
-            Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel
-            geblieben.&rdquo;
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center items-center">
         <img src={Nakamoto} alt="Nagamoto" className="w-full md:w-1/2 mb-8" />
       </div>

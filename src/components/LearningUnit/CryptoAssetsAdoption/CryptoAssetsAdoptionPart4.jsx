@@ -1,10 +1,15 @@
 import Image1 from '../../../images/courseAdvanced/Informationsakquise_Kryptoassets.png';
 import Image2 from '../../../images/courseAdvanced/Bank-Beratungsangebote.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const leoStory = [
+    'Leo erkennt, dass bei der Art und Weise zur Akquirierung von Informationen bezüglich Kryptoassets die Beratung durch einen Bankmitarbeiter am wenigsten gefragt ist. Dennoch möchte er wissen, ob die Befragten grundsätzlich Interesse an Bank-Beratungsangeboten zu Kryptoassets haben. Dabei kommt er zu folgenden Ergebnissen:',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -27,17 +32,7 @@ function CryptoAssetsAdoptionPart4() {
         würden sich über einen Podcast, 20% über einen Online Kurs und 16% über
         ein Finanzmagazin informieren.
       </p>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Leo erkennt, dass bei der Art und Weise zur Akquirierung von
-            Informationen bezüglich Kryptoassets die Beratung durch einen
-            Bankmitarbeiter am wenigsten gefragt ist. Dennoch möchte er wissen,
-            ob die Befragten grundsätzlich Interesse an Bank-Beratungsangeboten
-            zu Kryptoassets haben. Dabei kommt er zu folgenden Ergebnissen:
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStory} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image2}

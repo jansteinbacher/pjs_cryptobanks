@@ -1,8 +1,13 @@
 import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function IntroductionCryptoCustodyPart3() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Mittels dieser grundlegenden Begriffe erhält Tobias einen initialen und wertvollen Einblick in die Thematik. Diese zugrundeliegenden Informationen haben nun sein Interesse geweckt, die vielfältigen Anwendungsbereiche von Kryptoverwahrungen zu erkunden und zu verstehen.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -28,17 +33,7 @@ function IntroductionCryptoCustodyPart3() {
         Verwahrungsunternehmen, die privaten Schlüssel sicher aufzubewahren.
       </p>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Mittels dieser grundlegenden Begriffe erhält Tobias einen initialen
-            und wertvollen Einblick in die Thematik. Diese zugrundeliegenden
-            Informationen haben nun sein Interesse geweckt, die vielfältigen
-            Anwendungsbereiche von Kryptoverwahrungen zu erkunden und zu
-            verstehen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <IntroductionCryptoCustodySources />
     </div>

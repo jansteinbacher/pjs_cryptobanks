@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NFT from '../../../images/courseBeginner/nft.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsPart5() {
   const [hovered, setHovered] = useState(false);
@@ -17,26 +18,17 @@ function TypesOfCryptoAssetsPart5() {
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Nach Stunden der Recherche erinnert sich Bernd an ein Gespräch mit seinem Freund Heiko, der als Künstler sein Lebensunterhalt verdient. Dieser hatte ihm von digitalen Kunstwerken erzählt, die ausschließlich durch den Computer erschaffen werden. Zudem mache er sich Sorgen, dass er dadurch sein Job als Künstler an den Nagel hängen müsse.',
+    'Bernd macht sich auf die Suche nach diesen digitalen Kunstwerken und findet diese auf einer Überssichtsseite unter dem Reiter “NFT”. Als ihm Bilder von Affenköpfen entgegenblicken, fragt er sich, was nun so spannend daran sein soll.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Non-Fungible Token (NFT)
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Nach Stunden der Recherche erinnert sich Bernd an ein Gespräch mit
-            seinem Freund Heiko, der als Künstler sein Lebensunterhalt verdient.
-            Dieser hatte ihm von digitalen Kunstwerken erzählt, die
-            ausschließlich durch den Computer erschaffen werden. Zudem mache er
-            sich Sorgen, dass er dadurch sein Job als Künstler an den Nagel
-            hängen müsse. Bernd macht sich auf die Suche nach diesen digitalen
-            Kunstwerken und findet diese auf einer Überssichtsseite unter dem
-            Reiter “NFT”. Als ihm Bilder von Affenköpfen entgegenblicken, fragt
-            er sich, was nun so spannend daran sein soll.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!
       </p>

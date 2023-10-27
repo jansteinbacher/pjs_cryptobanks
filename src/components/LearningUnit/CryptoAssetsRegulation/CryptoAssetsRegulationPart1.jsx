@@ -1,10 +1,16 @@
 import Regulation from '../../../images/courseAdvanced/regulation.jpg';
 import CryptoAssetsRegulationSources from './CryptoAssetsRegulationSources';
+import { StoryBoxSimone } from '../../StoryBox';
 
 function CryptoAssetsRegulationPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const simoneStory = [
+    'Um ihr Wissen auf diesem Gebiet zu vertiefen, trifft sich Simone mit ihrer Freundin Julia, einer Rechtsanwältin für Aufsichtsrecht und Investmentfonds mit Fokus auf Themen rund um Krypto & Distributed Ledger Technology (DLT). Julia war bekannt für ihre Expertise in regulatorischen Angelegenheiten im Bereich der Kryptoassets, und Simone war gespannt darauf, von ihrer Erfahrung zu profitieren.',
+    'Julia teilte erste Einblicke in die aktuellen Debatten über die Klassifizierung von Kryptoassets, die Regelungen und die Verpflichtungen. Sie erklärte, wie diese Aspekte die Legitimität und den reibungslosen Betrieb der Kryptoindustrie beeinflussen könnten.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -15,22 +21,7 @@ function CryptoAssetsRegulationPart1() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Regulatorische Landschaft
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Um ihr Wissen auf diesem Gebiet zu vertiefen, trifft sich Simone mit
-            ihrer Freundin Julia, einer Rechtsanwältin für Aufsichtsrecht und
-            Investmentfonds mit Fokus auf Themen rund um Krypto & Distributed
-            Ledger Technology (DLT). Julia war bekannt für ihre Expertise in
-            regulatorischen Angelegenheiten im Bereich der Kryptoassets, und
-            Simone war gespannt darauf, von ihrer Erfahrung zu profitieren.
-            Julia teilte erste Einblicke in die aktuellen Debatten über die
-            Klassifizierung von Kryptoassets, die Regelungen und die
-            Verpflichtungen. Sie erklärte, wie diese Aspekte die Legitimität und
-            den reibungslosen Betrieb der Kryptoindustrie beeinflussen könnten.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
       <div className="flex justify-center items-center">
         <img
           src={Regulation}

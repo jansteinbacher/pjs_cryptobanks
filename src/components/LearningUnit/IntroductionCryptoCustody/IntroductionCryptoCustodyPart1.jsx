@@ -1,9 +1,14 @@
 import Regulation from '../../../images/courseAdvanced/cryptoassetSafekeeping.jpg';
 import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function IntroductionCryptoCustodyPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Simone beauftragt Tobias , erstmal nach einer allgemeinen Definition und grundlegenden Begriffen der Kryptoverwahrung zu recherchieren. Während seiner Recherche stößt Tobias auf eine präzise Definition der Kryptoverwahrung durch die BaFin.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,26 +16,7 @@ function IntroductionCryptoCustodyPart1() {
         Definition und Grundlagen der Kryptoverwahrung
       </h1>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Tobias, ein weiterer Mitarbeiter der Silberbach & Söhne Bank und
-            Kollege von Simone und Bernd, ist als Leiter im Technologie- und
-            Innovationsmanagement-Bereich tätig. Dank seiner Affinität zu
-            Kryptowährungen verfügt er bereits über umfassendes Wissen im
-            Bereich der Kryptoassets. Dennoch gibt es Aspekte der
-            Kryptoverwahrung, bei denen er noch Wissenslücken hat. Er informiert
-            Simone über sein Interesse, sich tiefergehend mit der sicheren
-            Aufbewahrung von Kryptoassets auseinanderzusetzen, um in diesem
-            Bereich ein vertieftes Verständnis zu erlangen. Infolgedessen
-            beauftragt Simone ihn freundlicherweise, erstmal nach einer
-            allgemeinen Definition und grundlegenden Begriffen der
-            Kryptoverwahrung zu recherchieren. Während seiner Recherche stößt
-            Tobias auf eine präzise Definition der Kryptoverwahrung durch die
-            BaFin.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
       <div className="flex justify-center items-center">
         <img
           src={Regulation}
