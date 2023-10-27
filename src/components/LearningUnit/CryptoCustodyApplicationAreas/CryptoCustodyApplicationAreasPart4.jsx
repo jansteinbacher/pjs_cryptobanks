@@ -28,13 +28,13 @@ function CryptoCustodyApplicationAreasPart4() {
         </div>
       )}
 
-      <p className="mb-8">
-        Eine Hot Wallet ist direkt mit dem Internet verbunden und ermöglicht
-        somit einen bequemen und sofortigen Zugriff auf Kryptoassets. Dieser
-        Verbindungstyp wird typischerweise für alltägliche Transaktionen
-        genutzt, bei denen eine einfache Erreichbarkeit vonnöten ist. Hot
-        Wallets gibt es in verschiedenen Ausführungen. Sie lassen sich in
-        Software Wallets unterscheiden, die auf Computern oder mobilen
+      <p className="mb-4 text-justify">
+        Eine <strong>Hot Wallet</strong> ist direkt mit dem Internet verbunden
+        und ermöglicht somit einen bequemen und sofortigen Zugriff auf
+        Kryptoassets. Dieser Verbindungstyp wird typischerweise für alltägliche
+        Transaktionen genutzt, bei denen eine einfache Erreichbarkeit vonnöten
+        ist. Hot Wallets gibt es in verschiedenen Ausführungen. Sie lassen sich
+        in Software Wallets unterscheiden, die auf Computern oder mobilen
         Endgeräten installiert werden, und Web Wallets, die über den Browser
         zugänglich sind. Allerdings birgt die kontinuierliche Internetverbindung
         das Risiko von Cyberattacken, weshalb es ratsam ist, nur eine begrenzte
@@ -42,23 +42,23 @@ function CryptoCustodyApplicationAreasPart4() {
         <a href="#sources">[3]</a>.
       </p>
 
-      <p className="mb-8">
-        Im Kontrast dazu ist die Cold Wallet nicht mit dem Internet verbunden
-        und daher im Vergleich zu Hot Wallets sicherer vor potenziellen
-        Cyberangriffen. Aus diesem Grund werden Cold Wallets bevorzugt, um
-        größere Mengen an Kryptoassets sicher aufzubewahren. Diese Variante der
-        Aufbewahrung zeigt verschiedene Ausprägungen, insbesondere Hardware
-        Wallets und Paper Wallets. Während bei Hardware Wallets der private
-        Schlüssel auf einem physischen Gerät gesichert wird, erfolgt bei Paper
-        Wallets die Speicherung des Schlüssels durch das Drucken des Schlüssels
-        auf einem Stück Papier <a href="#sources">[3]</a>.
+      <p className="mb-4 text-justify">
+        Im Kontrast dazu ist die <strong>Cold Wallet</strong> nicht mit dem
+        Internet verbunden und daher im Vergleich zu Hot Wallets sicherer vor
+        potenziellen Cyberangriffen. Aus diesem Grund werden Cold Wallets
+        bevorzugt, um größere Mengen an Kryptoassets sicher aufzubewahren. Diese
+        Variante der Aufbewahrung zeigt verschiedene Ausprägungen, insbesondere
+        Hardware Wallets und Paper Wallets. Während bei Hardware Wallets der
+        private Schlüssel auf einem physischen Gerät gesichert wird, erfolgt bei
+        Paper Wallets die Speicherung des Schlüssels durch das Drucken des
+        Schlüssels auf einem Stück Papier <a href="#sources">[3]</a>.
       </p>
 
-      <p className="mb-8">
-        Eine Zwischenlösung stellt die Warm Wallet dar. Diese vereint die
-        Zugänglichkeit von Hot Wallet mit der Sicherheit der Cold Wallet.
-        Demnach sind diese Verwahrlösungen mit dem Internet verbunden, bieten
-        aber Sicherheitsmaßnahmen gegen Cyberangriffen{' '}
+      <p className="mb-12 text-justify">
+        Eine Zwischenlösung stellt die <strong>Warm Wallet</strong> dar. Diese
+        vereint die Zugänglichkeit von Hot Wallet mit der Sicherheit der Cold
+        Wallet. Demnach sind diese Verwahrlösungen mit dem Internet verbunden,
+        bieten aber Sicherheitsmaßnahmen gegen Cyberangriffen{' '}
         <a href="#sources">[1]</a>.
       </p>
 

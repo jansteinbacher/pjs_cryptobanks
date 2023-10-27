@@ -14,14 +14,16 @@ function IntroductionCryptoCustodyPart2() {
         <img src={Wallet} alt="Wallet" className="w-full md:w-1/2" />
       </div>
 
-      <p className="mb-8">
-        Unter einer Wallet versteht man eine Finanzanwendung, die die Verwaltung
-        digitaler Assets ermöglicht. Um eine Transaktion durchzuführen muss
-        innerhalb der Wallet eine digitale Signatur vorgenommen werden, damit
-        die eigene Identität und folglich auch der Auftrag bestätigt werden
-        kann. Diese Unterschrift wird anhand von sogenannten “private” oder
-        “public keys” realisiert <a href="#sources">[4]</a>. Auf die Signaturen
-        wird in der folgenden Lektion noch genauer eingegangen.
+      <p className="mb-12 text-justify">
+        Unter einer <strong>Wallet</strong> versteht man eine Finanzanwendung,
+        die die Verwaltung digitaler Assets ermöglicht. Um eine Transaktion
+        durchzuführen muss innerhalb der Wallet eine{' '}
+        <strong>digitale Signatur</strong> vorgenommen werden, damit die eigene
+        Identität und folglich auch der Auftrag bestätigt werden kann. Diese
+        Unterschrift wird anhand von sogenannten <strong>“private”</strong> oder
+        <strong>“public keys”</strong> realisiert <a href="#sources">[4]</a>.
+        Auf die Signaturen wird in der folgenden Lektion noch genauer
+        eingegangen.
       </p>
 
       <IntroductionCryptoCustodySources />

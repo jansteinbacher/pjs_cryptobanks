@@ -24,30 +24,32 @@ function CryptoCustodyApplicationAreasPart6() {
         </div>
       )}
 
-      <p className="mb-8">
-        Bei Shamirs Secret Sharing (SSS) wird ein Geheimnis in mehrere Teile,
-        gennant “Shares” unter eine Gruppe von Teilnehmern verteilt, wobei nur
-        eine spezifische Teilmenge von Teilnehmern das Geheimnis rekonstruieren
-        können. Für die Rekonstruktion des Geheimnis benötigt es eine bestimmte
-        Anzahl an Shares, die “Schwelle”. Dabei wird die Schwelle so gewählt,
-        dass nur qualifizierte Teilnehmer, die genügenden Shares besitzen{' '}
-        <a href="#sources">[6].</a>
+      <p className="mb-4 text-justify">
+        Bei <strong>Shamirs Secret Sharing (SSS)</strong> wird ein Geheimnis in
+        mehrere Teile, gennant “Shares” unter eine Gruppe von Teilnehmern
+        verteilt, wobei nur eine spezifische Teilmenge von Teilnehmern das
+        Geheimnis rekonstruieren können. Für die Rekonstruktion des Geheimnis
+        benötigt es eine bestimmte Anzahl an Shares, die “Schwelle”. Dabei wird
+        die Schwelle so gewählt, dass nur qualifizierte Teilnehmer, die
+        genügenden Shares besitzen <a href="#sources">[6].</a>
       </p>
 
-      <p className="mb-8">
-        Im Gegensatz dazu erfordert Multi Signature (MultiSig) mehrere private
-        Schlüssel, um eine Transaktion zu autorisieren. Dieses Verfahren
-        ermöglicht mehrere Anwendungen, unter anderem die Aufteilung der
-        Verantwortung für den Besitz von Kryptoassets unter meheren Personen,
-        die Vermeidung eines einzelnen Angriffspunkt und die Möglichkeit der
-        Wiederherstellung bei Verlust eines privaten Schlüssels (Seeds){' '}
-        <a href="#sources">[7]</a>.
+      <p className="mb-4 text-justify">
+        Im Gegensatz dazu erfordert <strong>Multi Signature (MultiSig)</strong>{' '}
+        mehrere private Schlüssel, um eine Transaktion zu autorisieren. Dieses
+        Verfahren ermöglicht mehrere Anwendungen, unter anderem die Aufteilung
+        der Verantwortung für den Besitz von Kryptoassets unter meheren
+        Personen, die Vermeidung eines einzelnen Angriffspunkt und die
+        Möglichkeit der Wiederherstellung bei Verlust eines privaten Schlüssels
+        (Seeds) <a href="#sources">[7]</a>.
       </p>
 
-      <p className="mb-8">
-        Die Treshhold-Signature lässt sich nochmal weiter untergliedern in die
-        “Threshold Cryptography” und die “Multiparty Computation” (MPC). Die
-        Threshold Cryptography ermöglicht einer Gruppe von Teilnehmern gemeinsam
+      <p className="mb-12 text-justify">
+        Die <strong>Treshhold-Signature</strong> lässt sich nochmal weiter
+        untergliedern in die
+        <strong>“Threshold Cryptography”</strong> und die{' '}
+        <strong>“Multiparty Computation” (MPC)</strong>. Die Threshold
+        Cryptography ermöglicht einer Gruppe von Teilnehmern gemeinsam
         kryptografische Operationen durchzuführen, indem jeder ein Teil des
         privaten Schlüssels benutzt. Demnach erstellt eine Gruppe von
         Unterzeichnern auf einer Art Signaturschema eine Signatur auf einer

@@ -26,16 +26,16 @@ function CryptoCustodyChallengesPart1() {
         </div>
       )}
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Herausforderungen
       </h2>
       <div className="flex justify-center items-center">
         <img src={Challenge} alt="Challenge" className="w-full md:w-1/2" />
       </div>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">Regulierung</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Regulierung</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Die Vielfalt und teilweise fehlende Klarheit über die regulatorischen
         Rahmenbedingungen stellen auch eine Herausforderung für die Verwahrung
         von Kryptoassets dar. Die Verwahrer müssen sich den dauerhaft ändernden
@@ -45,17 +45,17 @@ function CryptoCustodyChallengesPart1() {
         <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">Datenschutz</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Datenschutz</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Auch der Schutz der Daten von den jeweiligen Nutzern muss von den
         Verwahrungsstellen gewährleistet werden. Hierfür werden sie verpflichtet
         die Regulatorien zum Datenschutz einzuhalten <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">Kosten</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Kosten</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Wie bereits erwähnt, ergeben sich bereits einige Kosten aus der
         Einhaltung der Regulatorien. Darüber hinaus entstehen noch weitere
         Kosten aus der Identifikation einer Balance aus wettbewerbsfähigen
@@ -63,9 +63,9 @@ function CryptoCustodyChallengesPart1() {
         und potentiellen Risiken <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">Sicherheit</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Sicherheit</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Die ständige Verbesserung der Sicherheit von Kryptoverwahrungs-Systemen
         stellt eine weitere Herausforderung dar. Um Hacker und Cyber-Bedrohungen
         fernzuhalten, müssen Maßnahmen zur sicheren Verwaltung privater
@@ -73,30 +73,28 @@ function CryptoCustodyChallengesPart1() {
         eingesetzt werden <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-        Versicherung
-      </h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Versicherung</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Des Weiteren müssen Versicherungsprodukte geschaffen werden, die
         speziell auf die Kryptoverwahrung ausgerichtet sind{' '}
         <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Skalierbarkeit
       </h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Durch die wachsende Nachfrage in Bezug auf Kryptoverwahrung und der
         zunehmenden Komlexität auf dem Kryptoassets-Markt ist auch der Umgang
         mit dem starken Wachstum eine beträchtliche Schwierigkeit{' '}
         <a href="#sources">[1]</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-8">Transparenz</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">Transparenz</h2>
 
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Zuletzt ist die Schaffung von Transparenz noch eine weitere
         Herausforderung. Hier soll dafür gesorgt werden mehr Klarheit in den
         Bereichen Reporting, Auditing, Verantwortlichkeiten und der Überwachung
