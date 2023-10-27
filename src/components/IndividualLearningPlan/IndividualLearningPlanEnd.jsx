@@ -9,7 +9,7 @@ function IndividualLearningPlanEnd() {
       <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight text-center">
         Vielen Dank für die Teilnahme an deinem individuellen Kurs!
       </h2>
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 flex items-center justify-center">
         <video autoPlay loop muted className="w-full">
           <source src={CelebrationVideo} type="video/mp4" />
           Your browser does not support the video tag.
