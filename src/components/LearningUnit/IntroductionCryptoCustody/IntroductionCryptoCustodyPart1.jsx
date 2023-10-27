@@ -35,22 +35,27 @@ function IntroductionCryptoCustodyPart1() {
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Definition</h2>
 
-      <p className="mb-8">
-        Bei der Verwendung von Kryptoassets spielt die sichere Verwahrung eine
-        bedeutende Rolle. Um den Schutz der Assets vor Verlust, Manipulation
-        oder Diebstahl zu gewährleisten bieten bestimmte
-        Verwahrungsorganisationen dabei die Dienstleistungen an, die privaten
-        Schlüssel der Nutzer aufzubewahren und Transaktionen zu genehmigen{' '}
-        <a href="#sources">[1]</a>,<a href="#sources">[2]</a>. Aufgrund der
-        Risiken und Komplexität die Kryptoassets mit sich bringen, müssen neue
-        Prozesse, Verfahren und eine neue Infrastruktur geschaffen werden, um
+      <p className="mb-4 text-justify">
+        Bei der Verwendung von Kryptoassets spielt die sichere{' '}
+        <strong>Verwahrung</strong> eine bedeutende Rolle. Um den Schutz der
+        Assets vor Verlust, Manipulation oder Diebstahl zu gewährleisten bieten
+        bestimmte Verwahrungsorganisationen dabei die Dienstleistungen an, die
+        privaten Schlüssel der Nutzer aufzubewahren und Transaktionen zu
+        genehmigen <a href="#sources">[1]</a>,<a href="#sources">[2]</a>.{' '}
+      </p>
+      <p className="mb-4 text-justify">
+        Aufgrund der Risiken und Komplexität die Kryptoassets mit sich bringen,
+        müssen neue Prozesse, Verfahren und eine{' '}
+        <strong>neue Infrastruktur</strong> geschaffen werden, um
         Kundenbedürfnisse zu befriedigen und Sicherheit zu garantieren
-        <a href="#sources">[3]</a>,<a href="#sources">[1]</a>. Zwischen den
-        Kundenbedürfnissen und der Sicherheit soll infolgedessen die richtige
-        Balance hergestellt werden. Die Sicherstellung des privaten Schlüssels
-        bringt jedoch auch Probleme in Sachen Kosten, Skalierbarkeit,
-        Flexibilität bei der Regulatorik und Benutzerfreundlichkeit mit sich{' '}
-        <a href="#sources">[1]</a>.
+        <a href="#sources">[3]</a>,<a href="#sources">[1]</a>.{' '}
+      </p>
+      <p className="mb-12 text-justify">
+        Zwischen den Kundenbedürfnissen und der Sicherheit soll infolgedessen
+        die richtige Balance hergestellt werden. Die Sicherstellung des{' '}
+        <strong>privaten Schlüssels </strong> bringt jedoch auch Probleme in
+        Sachen Kosten, Skalierbarkeit, Flexibilität bei der Regulatorik und
+        Benutzerfreundlichkeit mit sich <a href="#sources">[1]</a>.
       </p>
 
       <IntroductionCryptoCustodySources />

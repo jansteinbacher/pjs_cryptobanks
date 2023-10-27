@@ -14,27 +14,31 @@ function IntroductionCryptoCustodyPart3() {
       <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 tracking-tight">
         Definition und Grundlagen der Kryptoverwahrung
       </h1>
-
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Kryptographische Schlüsse
       </h2>
-
-      <p className="mb-8">
+      <p className="mb-4 text-justify">
         Wie bereits erwähnt, kommen kryptographische Schlüssel als digitale
         Signaturen zur Durchführung von Transaktionen mit digitalen
-        Vermögenswerten zum Einsatz. Es gibt zwei Hauptkategorien von
-        Schlüsseln: öffentliche und private Schlüssel. Öffentliche Schlüssel
-        sind, wie der Name schon sagt, öffentlich zugänglich und dienen dazu,
-        Transaktionen zu empfangen. Die privaten Schlüssel hingegen sind von
-        entscheidender Bedeutung für die sichere Verwahrung von Kryptoassets.
-        Sie gewähren dem Nutzer Zugriff auf seine digitalen Vermögenswerte und
-        dienen gleichzeitig als Verifikationsmittel für Transaktionen. Aus
-        diesem Grund obliegt es sogenannten Custodians, also
-        Verwahrungsunternehmen, die privaten Schlüssel sicher aufzubewahren.
+        Vermögenswerten zum Einsatz.{' '}
+      </p>{' '}
+      <p className="mb-4 text-justify">
+        Es gibt zwei Hauptkategorien von Schlüsseln:{' '}
+        <strong>öffentliche</strong> und <strong>private Schlüssel</strong>.{' '}
+      </p>{' '}
+      <p className="mb-4 text-justify">
+        <strong>Öffentliche Schlüssel</strong> sind, wie der Name schon sagt,
+        öffentlich zugänglich und dienen dazu, Transaktionen zu empfangen.{' '}
+      </p>{' '}
+      <p className="mb-12 text-justify">
+        Die <strong>privaten Schlüssel</strong> hingegen sind von entscheidender
+        Bedeutung für die sichere Verwahrung von Kryptoassets. Sie gewähren dem
+        Nutzer Zugriff auf seine digitalen Vermögenswerte und dienen
+        gleichzeitig als Verifikationsmittel für Transaktionen. Aus diesem Grund
+        obliegt es sogenannten Custodians, also Verwahrungsunternehmen, die
+        privaten Schlüssel sicher aufzubewahren.
       </p>
-
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
-
       <IntroductionCryptoCustodySources />
     </div>
   );

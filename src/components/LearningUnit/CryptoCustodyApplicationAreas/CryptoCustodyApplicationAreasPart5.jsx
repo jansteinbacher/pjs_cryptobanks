@@ -21,23 +21,24 @@ function CryptoCustodyApplicationAreasPart5() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-8">
-        Eine Hardware-Wallet bietet ein hohes Maß an Sicherheit, indem der
-        private Schlüssel auf einem physischen Gerät, wie einer Festplatte
-        gespeichert wird und so das Risiko von Cyberangriffen verringert wird.
-        Alle Transaktionen werden hierbei im Gerät signiert, wodurch der
-        Schlüssel niemals dieses verlässt <a href="#sources">[3]</a>.
+      <p className="mb-4 text-justify">
+        Eine <strong>Hardware-Wallet</strong> bietet ein hohes Maß an
+        Sicherheit, indem der private Schlüssel auf einem physischen Gerät, wie
+        einer Festplatte gespeichert wird und so das Risiko von Cyberangriffen
+        verringert wird. Alle Transaktionen werden hierbei im Gerät signiert,
+        wodurch der Schlüssel niemals dieses verlässt <a href="#sources">[3]</a>
+        .
       </p>
 
-      <p className="mb-8">
-        Wiederum sind Hadware Sicherheitsmodule (HSMs) besonders
-        manipulationssichere physische Geräte, die zusätzlich Funktionen wie
-        Verschlüsselung, Entschlüsselung und Authentifizierung bieten. Diese
-        kommen in zwei Ausprägungen vor: Premise-HSMs und Cloud-HSMs. Die
-        Vorteile von HSMs liegen in der Einhaltung von Sicherheitsstandards,
-        starken Authentifizierung und maipulationsicheren Systemen{' '}
-        <a href="#sources">[4]</a>. Dennoch haben sie auch Nachteile, wie der
-        Bedarf an physischen Zugang, begrenzte Skalierbarkeit und
+      <p className="mb-12 text-justify">
+        Wiederum sind <strong>Hadware Sicherheitsmodule</strong> (HSMs)
+        besonders manipulationssichere physische Geräte, die zusätzlich
+        Funktionen wie Verschlüsselung, Entschlüsselung und Authentifizierung
+        bieten. Diese kommen in zwei Ausprägungen vor: Premise-HSMs und
+        Cloud-HSMs. Die Vorteile von HSMs liegen in der Einhaltung von
+        Sicherheitsstandards, starken Authentifizierung und maipulationsicheren
+        Systemen <a href="#sources">[4]</a>. Dennoch haben sie auch Nachteile,
+        wie der Bedarf an physischen Zugang, begrenzte Skalierbarkeit und
         Kompatibilitätsprobleme <a href="#sources">[5]</a>.
       </p>
 

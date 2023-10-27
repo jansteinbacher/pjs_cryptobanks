@@ -31,22 +31,28 @@ function IntroductionCryptoAssetsPart5() {
           Your browser does not support the audio element.
         </audio>
       </div>
-      <p className="mb-12 text-justify">
+      <p className="mb-4 text-justify">
         <strong>Token</strong> unterscheiden sich von <strong>Coins</strong>.
         Während der Coin primär als Zahlungsmittel verwendet wird und eine rein
         digitale Währung darstellt, haben Token breitere
         Anwendungsmöglichkeiten. Sie sind daher nicht als „klassischer“ Coin
-        einzustufen <a href="#sources">[10]</a>. <br />
+        einzustufen <a href="#sources">[10]</a>.{' '}
+      </p>
+      <p className="mb-4 text-justify">
         Die wohl bekanntesten Coins sind der Bitcoin, basierend auf der
         Bitcoin-Blockchain, und der Ethercoin, der Coin der Ethereum-Blockchain.{' '}
-        <br />
+      </p>
+      <p className="mb-4 text-justify">
         Coins, die nach der ersten Kryptowährung, dem Bitcoin, auf den Markt
         gekommen sind, bezeichnet man auch als Bitcoin Alternative oder Alt
-        Coin. <br />
+        Coin.{' '}
+      </p>
+      <p className="mb-4 text-justify">
         Token und Coin stehen in einem engen Zusammenhang, denn die
         Transaktionskosten der Token werden mit Coins gezahlt{' '}
         <a href="#sources">[11]</a>.
-        <br />
+      </p>
+      <p className="mb-12 text-justify">
         Mit einem tiefen Verständnis für den Unterschied zwischen Coins und
         Tokens setzte Bernd seinen Weg des Lernens und Entdeckens fort. Er
         wusste, dass jedes Puzzleteilchen, das er verstand, ihn näher an die

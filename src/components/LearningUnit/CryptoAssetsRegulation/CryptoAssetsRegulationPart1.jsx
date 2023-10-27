@@ -29,14 +29,6 @@ function CryptoAssetsRegulationPart1() {
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/recht-und-ordnung-gesetz-klausel-6311493/"
-        >
-          Pixabay
-        </a>
-      </div>
 
       <p className="mb-8">
         Der gegenwärtige rechtliche Rahmen ist auf Grund der Neuheit der

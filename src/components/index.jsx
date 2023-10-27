@@ -39,7 +39,8 @@ export {
   CryptoAssetsExpertInterviewModule,
 } from './LearningUnit';
 
-export { default as Myths } from './Myths';
+export { default as FactCheck } from './FactCheck';
+export { default as Credits } from './Credits';
 
 export { default as IndividualLearningPlanEnd } from './IndividualLearningPlan/IndividualLearningPlanEnd';
 export { default as IndividualLearningPlanComponent } from './IndividualLearningPlan/IndividualLearningPlanComponent';

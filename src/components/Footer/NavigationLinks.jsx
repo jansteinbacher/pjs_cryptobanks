@@ -23,6 +23,11 @@ function NavigationLinks() {
       text: 'News',
       href: '/news',
     },
+    {
+      id: 'credits',
+      text: 'Credits für Icons',
+      href: '/credits',
+    },
   ];
 
   return (

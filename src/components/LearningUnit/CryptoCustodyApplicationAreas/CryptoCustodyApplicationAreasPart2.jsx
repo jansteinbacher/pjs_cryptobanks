@@ -22,22 +22,22 @@ function CryptoCustodyApplicationAreasPart2() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-8">
-        Innerhalb des Self-Custody liegt die gesamte Verantwortung für die
-        Sicherheit und den Schutz des privaten Schlüssels beim Nutzer. Der
-        Vorteil dieses Ansatzes liegt in der uneingeschränkten Kontrolle über
-        die Kryptoassets, da keine dritte Partei involviert ist. Hingegen
-        besteht der Nachteil darin, dass bei unsachgemäßer Verwaltung des
-        privaten Schlüssels der Zugang zu den Kryptoassets unwiederbringlich
+      <p className="mb-4 text-justify">
+        Innerhalb des <strong>Self-Custody</strong> liegt die gesamte
+        Verantwortung für die Sicherheit und den Schutz des privaten Schlüssels
+        beim Nutzer. Der Vorteil dieses Ansatzes liegt in der uneingeschränkten
+        Kontrolle über die Kryptoassets, da keine dritte Partei involviert ist.
+        Hingegen besteht der Nachteil darin, dass bei unsachgemäßer Verwaltung
+        des privaten Schlüssels der Zugang zu den Kryptoassets unwiederbringlich
         verloren gehen kann <a href="#sources">[2]</a>.
       </p>
 
-      <p className="mb-8">
-        Im Gegensatz dazu wird bei der Full-Custody die Kontrolle über die
-        Kryptoassets an eine dritte Partei abgegeben. Somit hat der Nutzer
-        keinen Zugriff auf seinen eigenen privaten Schlüssel und muss
-        dementsprechend Transaktionen, Geschäfte und andere Aktivitäten über
-        einen Dritten abwickeln <a href="#sources">[2]</a>. Diese Form der
+      <p className="mb-4 text-justify">
+        Im Gegensatz dazu wird bei der <strong>Full-Custody</strong> die
+        Kontrolle über die Kryptoassets an eine dritte Partei abgegeben. Somit
+        hat der Nutzer keinen Zugriff auf seinen eigenen privaten Schlüssel und
+        muss dementsprechend Transaktionen, Geschäfte und andere Aktivitäten
+        über einen Dritten abwickeln <a href="#sources">[2]</a>. Diese Form der
         Verwahrung hat den Vorteil, dass die Verwahrer klassischerweise
         reguliert sind und dadurch eine zusätzliche Sicherheit für größere
         Mengen an Kryptoassets vorhanden ist. Dem Gegenüber besteht das Risiko,
@@ -45,8 +45,8 @@ function CryptoCustodyApplicationAreasPart2() {
         gehen können <a href="#sources">[1]</a>.
       </p>
 
-      <p className="mb-8">
-        Eine Zwischenlösung stellt die Semi-Custody dar{' '}
+      <p className="mb-12 text-justify">
+        Eine Zwischenlösung stellt die <strong>Semi-Custody</strong> dar{' '}
         <a href="#sources">[1]</a>. Diese vereint die Kontrolle und Sicherheit
         der Self-Custody mit dem Komfort sowie zusätzlichen Sicherheit der
         Full-Custody. Dabei kommen verschiedene private Schlüssel zum Einsatz –

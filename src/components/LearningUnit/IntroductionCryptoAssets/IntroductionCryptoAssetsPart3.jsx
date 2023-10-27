@@ -36,25 +36,27 @@ function IntroductionCryptoAssetsPart3() {
           Your browser does not support the audio element.
         </audio>
       </div>
-      <p className="mb-12 text-justify">
+      <p className="mb-4 text-justify">
         Mittels der Blockchain-Technologie können Daten, wie beispielweise
         Transaktionen, in einer verteilten Infrastruktur ohne eine zentrale
         Instanz nachvollziehbar und manipulationssicher verwaltet werden. Sie
         basiert auf Kryptographie, um Daten zu sichern und die Identität der
-        Anwendenden zu überprüfen.<a href="#sources">[5]</a>
-        <br />
+        Anwendenden zu überprüfen <a href="#sources">[5]</a>.
+      </p>
+      <p className="mb-4 text-justify">
         Die Blockchain-Technologie basiert auf einem{' '}
         <strong>Peer-to-Peer Netzwerk</strong>. Dies bedeutet, dass es nicht auf
         einer zentralen Behörde fundiert, welche den System verwaltet. Die
         Computer, die zu dem Peer-to-Peer Netzwerk gehören, sind meist dezentral
         verteilt und werden in der Fachliteratur teils auch als{' '}
-        <strong>Full Nodes</strong> bezeichnet.<a href="#sources">[6]</a>
-        <br />
+        <strong>Full Nodes</strong> bezeichnet <a href="#sources">[6]</a>.
+      </p>
+      <p className="mb-4 text-justify">
         Es gibt zwei verschiedene Arten der Blockchain, die{' '}
         <strong>Permissioned Blockchain</strong> und die{' '}
-        <strong>Permissionless Blockchain</strong>. <br />
-        Mehr dazu in Kapitel 2.
+        <strong>Permissionless Blockchain</strong>.{' '}
       </p>
+      <p className="mb-12 text-justify">Mehr dazu in Kapitel 2.</p>
       <IntroductionCryptoAssetsSources />
     </div>
   );

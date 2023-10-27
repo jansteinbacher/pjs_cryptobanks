@@ -19,7 +19,7 @@ function CryptoCustodyApplicationAreasPart1() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-8">
+      <p className="mb-12 text-justify">
         Die sichere Verwahrung von Kryptoassets bildet einen essenziellen
         Grundpfeiler für die sich entwickelnde Kryptoasset-Wirtschaft. Ganz
         gleich, ob es sich um Kryptowährungen, NFTs oder Security Tokens handelt
@@ -35,7 +35,7 @@ function CryptoCustodyApplicationAreasPart1() {
         <img
           src={Anwendungsbereiche}
           alt="Anwendungsbereiche"
-          className="w-full md:w-1/2"
+          className="w-full"
         />
       </div>
 
