@@ -1,32 +1,37 @@
 import FeatureCard from './FeatureCard';
 import CourseIcon from '../../images/courseIcon.png';
 import IndividuellIcon from '../../images/Individuell_Icon.png';
-import Header from '../../images/header.jpg';
 import GlossarIcon from '../../images/Glossar_Icon.png';
+import Heroimage from '../../images/heroimage.jpg';
 
 function Hero() {
   return (
     <div className="bg-white">
       <div
-        className="bg-cover bg-center relative"
+        className="bg-gradient-to-r from-[#262369] via-[#090979] to-[#611ab9] relative"
         style={{
-          backgroundImage: `url(${Header})`,
           minHeight: '60vh',
         }}
       >
-        <div className="absolute inset-0 flex flex-col justify-center items-start text-white">
-          <div
-            className="text-left mb-8 max-w-xl mx-auto"
-            style={{ marginLeft: '20%' }}
-          >
-            <h1 className="text-2xl md:text-4xl font-bold text-gray-200 mb-4 tracking-tight">
-              Kryptoinformationen für Mitarbeitende im Bankenwesen
-            </h1>
-            <p className="text-2xl text-gray-300">
-              Werde ein{' '}
-              <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>!
-              Wähle aus verschiedenen Lernmöglichkeiten!
-            </p>
+        <div className="md:flex items-center justify-content">
+          <div className="md:w-1/2 p-8">
+            <div className="text-left max-w-xl mx-auto">
+              <h1 className="text-2xl md:text-5xl font-bold text-gray-200 mb-4 tracking-tight">
+                Kryptoinformationen für Mitarbeitende im Bankenwesen
+              </h1>
+              <p className="text-2xl text-gray-300">
+                Werde ein{' '}
+                <span className="text-[#00DFA2] font-bold">Krypto-Experte</span>
+                ! Wähle aus verschiedenen Lernmöglichkeiten!
+              </p>
+            </div>
+          </div>
+          <div className="md:w-1/2 p-8">
+            <img
+              src={Heroimage}
+              alt="hero about cryptobanks"
+              className="rounded-3xl max-h-[20rem] md:max-h-[32rem]"
+            />
           </div>
         </div>
       </div>

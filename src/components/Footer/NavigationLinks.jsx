@@ -26,7 +26,7 @@ function NavigationLinks() {
   ];
 
   return (
-    <div className="flex space-x-6 text-gray-600">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-8 text-gray-600 mt-8">
       {links.map((link) => (
         <a
           key={link.id}

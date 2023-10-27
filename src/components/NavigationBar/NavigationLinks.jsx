@@ -16,9 +16,9 @@ const links = [
 
 function NavigationLinks() {
   return (
-    <div className="sm:flex flex-col mt-4 sm:flex-row sm:mt-0 sm:space-x-12">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-12">
       {links.map((link) => (
-        <NavigationLink key={link.id} to={link.to}>
+        <NavigationLink key={link.id} to={link.to} className="mt-2 sm:mt-0">
           {link.text}
         </NavigationLink>
       ))}

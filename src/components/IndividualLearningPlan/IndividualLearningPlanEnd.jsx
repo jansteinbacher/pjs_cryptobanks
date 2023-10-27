@@ -1,21 +1,41 @@
 import { Link } from 'react-router-dom';
+import { VscChecklist } from 'react-icons/vsc';
 import CelebrationVideo from '../../videos/fireworkCourseCompleted.mp4';
 import CourseIcon from '../../images/courseIcon.png';
 import Logo from '../../images/Logo.png';
+import DownloadButton from '../DownloadButton';
 
 function IndividualLearningPlanEnd() {
   return (
-    <div className="container mx-auto py-12 px-12 max-w-screen-lg">
+    <div className="container mx-auto py-12 px-12 max-w-screen-lg min-h-screen">
       <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight text-center">
         Vielen Dank für die Teilnahme an deinem individuellen Kurs!
       </h2>
-      <div className="lg:w-1/2 flex items-center justify-center">
-        <video autoPlay loop muted className="w-full">
-          <source src={CelebrationVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="lg:w-1/2 flex items-center justify-center mb-24">
+        <div>
+          <h3 className="text-xl text-center font-semibold mb-4">
+            Checkliste:
+          </h3>
+          <p className="mb-8 text-center">
+            Du möchstest direkt starten und deiner Bank helfen
+            Kryptoasset-Dienstleisungen anzubieten? Hier findest du eine
+            Checkliste für dich und deine Bank als Download.
+          </p>
+
+          <DownloadButton
+            icon={<VscChecklist />}
+            downloadLink="downloads/checklist.pdf"
+            text="Checkliste herunterladen"
+          />
+        </div>
+        <div>
+          <video autoPlay loop muted className="w-full">
+            <source src={CelebrationVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-      <div className="flex items-center justify-center space-x-12">
+      <div className="flex items-center justify-center space-x-48">
         <div className="text-center">
           <img
             src={CourseIcon}
