@@ -34,6 +34,7 @@ import {
   CryptoAssetsAdoptionModule,
   CryptoAssetsExpertInterviewModule,
   IndividualLearningPlanEnd,
+  Credits,
 } from './components';
 
 function App() {
@@ -135,6 +136,7 @@ function App() {
             path="/individual-course-end"
             element={<IndividualLearningPlanEnd />}
           />
+          <Route path="/credits" element={<Credits />} />
         </Routes>
       </Router>
       <Footer />
