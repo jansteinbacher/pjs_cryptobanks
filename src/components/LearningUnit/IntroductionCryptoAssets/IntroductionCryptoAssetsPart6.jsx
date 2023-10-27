@@ -14,17 +14,25 @@ function IntroductionCryptoAssetsPart6() {
             className="w-full md:w-1/3 mb-8 mt-12"
           />
         </div>
-        <p className="mb-12 italic text-justify">
-          <strong>Hey Du!</strong> <br />
+        <p className="mb-4 italic text-justify">
+          <strong>Hey Du!</strong>{' '}
+        </p>
+        <p className="mb-4 italic text-justify">
           Du hast inzwischen die Grundlagen zu Kryptoassets gelernt und dein
-          Wissen erweitert – das ist wirklich beeindruckend! <br />
+          Wissen erweitert – das ist wirklich beeindruckend!{' '}
+        </p>
+        <p className="mb-4 italic text-justify">
           Jetzt ist es an der Zeit, dein Können auf die Probe zu stellen. Denke
           daran, dass wahres Verstehen erst durch Anwendung erreicht wird. Das
           folgende <strong>Quiz</strong> hat zum Ziel dein Wissen zu festigen.
           Du hast nun die Gelegenheit, dein erworbenes Wissen unter Beweis zu
-          stellen. <br />
+          stellen.{' '}
+        </p>
+        <p className="mb-4 italic text-justify">
           Worauf wartest du noch? Drücke auf den “Weiter”- Button und zeige dir
-          selbst, wie viel du erreicht hast. <br />
+          selbst, wie viel du erreicht hast.{' '}
+        </p>
+        <p className="mb-4 italic text-justify">
           <strong>Wir glauben an dich! Los geht&apos;s!</strong>
         </p>
       </div>

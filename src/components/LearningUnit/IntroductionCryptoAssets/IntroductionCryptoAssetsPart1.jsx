@@ -30,30 +30,40 @@ function IntroductionCryptoAssetsPart1() {
       {isComingFromPreviousPage && (
         <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
           <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Voller Neugierde macht sich Bernd auf die Suche nach Informationen
-            zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der
-            Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu
-            dem Thema mitbekommen. <br />
-            Er hatte die beiden beauftragt sich ebenfalls mit dem Thema
-            Kryptoassets auseinanderzusetzen, um ein breites Wissen zu
-            Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung
-            für oder gegen die Integration von Kryptoassets in seine Bank zu
-            treffen. Bernd konnte nicht widerstehen, sich in das Gespräch
-            einzubringen. <br />
-            &ldquo;Entschuldigt, dass ich mich einmische, aber ich habe auch
-            viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen
-            in Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht
-            sicher, wer oder was das ist.&rdquo; <br />
-            Simone lächelte und erklärte: &ldquo;Nakamoto ist der Pseudonym
-            eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer
-            hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur, die
-            die Krypto-Revolution gestartet hat.&rdquo; <br />
-            Tobias fügte hinzu: &ldquo;Genau, Nakamoto veröffentlichte das
-            Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das
-            Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel
-            geblieben.&rdquo;
-          </p>
+          <div>
+            <p className="italic text-justify mb-4">
+              Voller Neugierde macht sich Bernd auf die Suche nach Informationen
+              zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der
+              Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu
+              dem Thema mitbekommen.{' '}
+            </p>
+            <p className="italic text-justify mb-4">
+              Er hatte die beiden beauftragt sich ebenfalls mit dem Thema
+              Kryptoassets auseinanderzusetzen, um ein breites Wissen zu
+              Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung
+              für oder gegen die Integration von Kryptoassets in seine Bank zu
+              treffen. Bernd konnte nicht widerstehen, sich in das Gespräch
+              einzubringen.{' '}
+            </p>
+            <p className="italic text-justify mb-4">
+              &ldquo;Entschuldigt, dass ich mich einmische, aber ich habe auch
+              viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen
+              Namen in Zusammenhang mit Kryptoassets gehört, aber ich bin mir
+              nicht sicher, wer oder was das ist.&rdquo;{' '}
+            </p>
+            <p className="italic text-justify mb-4">
+              Simone lächelte und erklärte: &ldquo;Nakamoto ist der Pseudonym
+              eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich,
+              wer hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur,
+              die die Krypto-Revolution gestartet hat.&rdquo;{' '}
+            </p>
+            <p className="italic text-justify mb-4">
+              Tobias fügte hinzu: &ldquo;Genau, Nakamoto veröffentlichte das
+              Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das
+              Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel
+              geblieben.&rdquo;
+            </p>
+          </div>
         </div>
       )}
       <div className="flex justify-center items-center">
@@ -70,20 +80,24 @@ function IntroductionCryptoAssetsPart1() {
         </audio>
       </div>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-4 text-justify">
         Seit der Einführung von der Kryptowährung <strong>Bitcoin</strong> (BTC)
         2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto
         skizziert wurden, hat sich die Welt der blockchainbasierten digitalen
         Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms{' '}
         <strong>Satoshi Nakamoto</strong>
-        unbekannt <a href="#sources">[1]</a>. <br />
+        unbekannt <a href="#sources">[1]</a>.{' '}
+      </p>
+      <p className="mb-4 text-justify">
         Seine Identität unterliegt vielen Mythen und Theorien. Es ist möglich,
         dass seine Identität für immer unbekannt bleibt. Inzwischen ist die Zahl
         an verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision
         Nakamotos war es traditionelle Fiatwährungen zukünftig durch
         kryptografiegestützte, digitale Währungen ­– auch Kryptowährungen
         genannt ­– zu ersetzen <a href="#sources">[1]</a>,{' '}
-        <a href="#sources">[2]</a>. <br />
+        <a href="#sources">[2]</a>.{' '}
+      </p>
+      <p className="mb-4 text-justify">
         Die ursprüngliche Vision Nakamotos hat sich mittlerweile hin zu einem
         umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die
         allgemein als Kryptoassets bezeichnet werden. Diese Kryptoassets
@@ -94,7 +108,9 @@ function IntroductionCryptoAssetsPart1() {
         <strong>Automatisierung rechtlicher Verträge</strong> (Smart Contracts)
         und sogar die Schaffung unveränderlicher{' '}
         <strong>Besitznachweise für digitale Kunst</strong> (Non-Fungible
-        Tokens, NFTs) <a href="#sources">[2]</a>.<br />
+        Tokens, NFTs) <a href="#sources">[2]</a>.{' '}
+      </p>
+      <p className="mb-12 text-justify">
         Mehr dazu in Kapitel 3 „Arten von Kryptoassets und ihre Verbindung zu
         traditionellen Finanzprodukten”.
       </p>
