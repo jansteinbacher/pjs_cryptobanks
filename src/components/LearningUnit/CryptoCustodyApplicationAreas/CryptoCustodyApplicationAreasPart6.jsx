@@ -1,8 +1,13 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart6() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Anhand der zusätzlichen Informationen durch das Browser-Plugin konnte Tobias bereits einiges über die verschiedenen Arten von Verwahrlösungen lernen. In einem weiteren Schritt möchte er nun mehr über verschiedene Technologien in Erfahrung bringen, die für die Sicherheit und den Zugang zu den Kryptoassets zuständig sind.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -12,17 +17,7 @@ function CryptoCustodyApplicationAreasPart6() {
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Technologie</h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Anhand der zusätzlichen Informationen durch das Browser-Plugin
-            konnte Tobias bereits einiges über die verschiedenen Arten von
-            Verwahrlösungen lernen. In einem weiteren Schritt möchte er nun mehr
-            über verschiedene Technologien in Erfahrung bringen, die für die
-            Sicherheit und den Zugang zu den Kryptoassets zuständig sind.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-4 text-justify">
         Bei <strong>Shamirs Secret Sharing (SSS)</strong> wird ein Geheimnis in

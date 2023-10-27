@@ -1,9 +1,15 @@
 import Image1 from '../../../images/courseAdvanced/verbesserungsvorschlaege.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart9() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const leoStory = [
+    'Zum Abschluss der Umfrage möchte sich Leo noch Verbesserungsvorschläge einholen, die ihm ein besseres Verständnis darüber geben, welche Erwartungen die potentiellen Kunden an seine Bank haben könnten.',
+    'Dies ermöglicht es ihm, den Erwartungshaltungen entgegenzukommen und Kundzufriedenheit sicherzustellen, sodass die Bank letztendlich von langfristigen Kundenbeziehungen und dem Zuwachs neuer Kunden profitiert.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,19 +17,7 @@ function CryptoAssetsAdoptionPart9() {
         Verbesserungsvorschläge
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Zum Abschluss der Umfrage möchte sich Leo noch
-            Verbesserungsvorschläge einholen, die ihm ein besseres Verständnis
-            darüber geben, welche Erwartungen die potentiellen Kunden an seine
-            Bank haben könnten. Dies ermöglicht es ihm, den Erwartungshaltungen
-            entgegenzukommen und Kundzufriedenheit sicherzustellen, sodass die
-            Bank letztendlich von langfristigen Kundenbeziehungen und dem
-            Zuwachs neuer Kunden profitiert.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStory} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image1}

@@ -1,29 +1,22 @@
 import Knockledge from '../../../images/courseAdvanced/Wissensauspraegung_Kryptoassets_1.png';
 import Knockledge2 from '../../../images/courseAdvanced/Kryptoassets_Kenntnisse.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
 
+  const leoStory = [
+    'Da die meisten jedoch schon einmal etwas von den Begriffen gehört haben, möchte Leo nun den derzeitigen Kenntnisstand zum Thema “Kryptoassets ermitteln. Dafür lässt er die Umfrageteilnehmer die Ausprägung ihres eigenen Kenntnisstands beurteilen. Darüber hinaus sollen die Teilnehmer angeben, welche Kryptoassets sie bereits kennen.',
+  ];
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight">
         Kenntnisstand Kryptoassets
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Da die meisten jedoch schon einmal etwas von den Begriffen gehört
-            haben, möchte Leo nun den derzeitigen Kenntnisstand zum Thema
-            “Kryptoassets ermitteln. Dafür lässt er die Umfrageteilnehmer die
-            Ausprägung ihres eigenen Kenntnisstands beurteilen. Darüber hinaus
-            sollen die Teilnehmer angeben, welche Kryptoassets sie bereits
-            kennen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStory} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Knockledge}

@@ -1,25 +1,21 @@
 import CryptoAssetsRegulationSources from './CryptoAssetsRegulationSources';
+import { StoryBoxSimone } from '../../StoryBox';
 
 function CryptoAssetsRegulationPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
 
+  const simoneStory = [
+    'Bei ihrem Treffen tauschen sich Simone und Julia intensiv über die Herausforderungen und Entwicklungen in der Kryptoregulierung aus. Julia zeige Simone zudem den Link zur MiCA Verordnung, wo sie sich bei Interesse zu spezifischen Thematiken weiter einlesen kann.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Europäische MiCA-Verordnung
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Bei ihrem Treffen tauschen sich Simone und Julia intensiv über die
-            Herausforderungen und Entwicklungen in der Kryptoregulierung aus.
-            Julia zeige Simone zudem den Link zur MiCA Verordnung, wo sie sich
-            bei Interesse zu spezifischen Thematiken weiter einlesen kann.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
       <div className="flex items-center justify-center mb-12">
         <a
           className="font-semibold text-sm"

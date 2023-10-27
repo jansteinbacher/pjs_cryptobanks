@@ -1,25 +1,22 @@
 import ConsensMechanism from '../../../images/courseBeginner/consensMechanism.jpg';
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionBlockchainPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Bernd ist beeindruckt von dieser Erklärung, aber er hat immer noch Fragen: “Und wie wird sichergestellt, dass die Informationen in der Blockchain echt sind?”',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Konsensmechanismus
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Bernd ist beeindruckt von dieser Erklärung, aber er hat immer noch
-            Fragen: &ldquo;Und wie wird sichergestellt, dass die Informationen
-            in der Blockchain echt sind?&rdquo;
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center items-center">
         <img
           src={ConsensMechanism}

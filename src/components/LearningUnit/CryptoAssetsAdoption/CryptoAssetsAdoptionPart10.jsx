@@ -2,7 +2,7 @@ function CryptoAssetsAdoptionPart10() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <div className="mb-8 rounded bg-blue-200 p-8">
-        <p className="text-xl font-bold">
+        <p className="text-xl font-bold mb-4">
           Das kannst du für deine Bank mitnehmen:
         </p>
 

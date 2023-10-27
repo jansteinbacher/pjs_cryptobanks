@@ -1,9 +1,14 @@
 import Bafin from '../../../images/courseExpert/bafin.png';
 import CryptoCustodyRegulationSources from './CryptoCustodyRegulationSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyRegulationPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Da Tobias mehr zu der Regulatorik zur Verwahrung von Kryptoassets herausfinden möchte, recherchiert er im Internet und trifft auf die Informationsseite der BaFin. Da er sich nicht sicher ist, welcher Artikel für ihn relevant ist entschließt er sich eine eine Mail mit seinen Anliegen an die auf der Webseite angegenene Adresse abzusenden. Am Folgetag erhält in der Antwort folgende Informationen:',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,19 +16,7 @@ function CryptoCustodyRegulationPart1() {
         Regulatorik zu Kryptoverwahrung
       </h1>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Da Tobias mehr zu der Regulatorik zur Verwahrung von Kryptoassets
-            herausfinden möchte, recherchiert er im Internet und trifft auf die
-            Informationsseite der BaFin. Da er sich nicht sicher ist, welcher
-            Artikel für ihn relevant ist entschließt er sich eine eine Mail mit
-            seinen Anliegen an die auf der Webseite angegenene Adresse
-            abzusenden. Am Folgetag erhält in der Antwort folgende
-            Informationen:
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
       <div className="flex justify-center items-center mb-8">
         <img src={Bafin} alt="Bafin Logo" className="w-full md:w-1/2" />
       </div>

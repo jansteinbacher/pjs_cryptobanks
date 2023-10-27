@@ -1,10 +1,14 @@
 import Blockchain from '../../../images/courseBeginner/blockchain.png';
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionBlockchainPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
+  const berndStory = [
+    ' Bernd hat in den letzten Wochen viel über Kryptoassets und Token gelernt, aber er hat immer noch viele Fragen zur zugrundeliegenden Technologie. Er weiß, dass die Blockchain eine entscheidende Rolle in diesem Bereich spielt, versteht jedoch nicht wirklich, wie sie funktioniert. Um sein Wissen zu vertiefen, trifft er sich gerade mit seinem Kollegen Tobias, der in seiner Hochschulzeit viel zu der Blockchain-Technologie geforscht hat.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -21,20 +25,9 @@ function IntroductionBlockchainPart1() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Funktionsweise
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Bernd hat in den letzten Wochen viel über Kryptoassets und Token
-            gelernt, aber er hat immer noch viele Fragen zur zugrundeliegenden
-            Technologie. Er weiß, dass die Blockchain eine entscheidende Rolle
-            in diesem Bereich spielt, versteht jedoch nicht wirklich, wie sie
-            funktioniert. Um sein Wissen zu vertiefen, trifft er sich gerade mit
-            seinem Kollegen Tobias, der in seiner Hochschulzeit viel zu der
-            Blockchain-Technologie geforscht hat.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <p className="mb-8">
+        {' '}
         Die Blockchain-Technologie stellt eine der grundlegenden Säulen hinter
         Kryptoassets dar. Sie ermöglicht es, Transaktionen in Kryptowährungen
         und anderen Anwendungen in einer vertrauenswürdigen und transparenten

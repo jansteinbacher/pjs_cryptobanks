@@ -1,10 +1,19 @@
 import Image1 from '../../../images/courseAdvanced/Investitionsrisiko.png';
 import Image2 from '../../../images/courseAdvanced/InstitutionKryptoasset-Investitionen.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart8() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const leoStoryPart1 = [
+    'Da einige der Befragten noch nicht in die digitalen Assets investiert haben, frägt sich Leo, woran das wohl liegen könnte. Er lässt daher die Teilnehmer beurteilen, wie sie das Risiko bei einer Investition in Kryptoassets einschätzen.',
+  ];
+
+  const leoStoryPart2 = [
+    'Leo ist auch interessiert daran zu erfahren, ob die Teilnehmer über die Bank ihre Kryptotransaktionen durchführen würden, oder andere Plattformen dafür bevorzugen. Anhand von diesen Informationen wünscht er sich einen Einblick in die Präferenzen potentieller Kunden zu erhalten und daraus Lösungsmaßnahmen und Strategien abzuleiten, die seiner Bank zugutekommen und diese weiterhin am Markt konkurrenzfähig bleibt.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -12,16 +21,7 @@ function CryptoAssetsAdoptionPart8() {
         Risikobereitschaft bei Kryptoassets
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Da einige der Befragten noch nicht in die digitalen Assets
-            investiert haben, frägt sich Leo, woran das wohl liegen könnte. Er
-            lässt daher die Teilnehmer beurteilen, wie sie das Risiko bei einer
-            Investition in Kryptoassets einschätzen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart1} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image1}
@@ -46,19 +46,7 @@ function CryptoAssetsAdoptionPart8() {
         Risken aufklärt und mittels Sicherheitsmaßnahmen gezielt den Gefahren
         entgegensteuert.
       </p>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Leo ist auch interessiert daran zu erfahren, ob die Teilnehmer über
-            die Bank ihre Kryptotransaktionen durchführen würden, oder andere
-            Plattformen dafür bevorzugen. Anhand von diesen Informationen
-            wünscht er sich einen Einblick in die Präferenzen potentieller
-            Kunden zu erhalten und daraus Lösungsmaßnahmen und Strategien
-            abzuleiten, die seiner Bank zugutekommen und diese weiterhin am
-            Markt konkurrenzfähig bleibt.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart2} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image2}

@@ -1,32 +1,23 @@
 import Safekeeping from '../../../images/courseAdvanced/cryptoassetSafekeeping.jpg';
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
+import { StoryBoxSimone } from '../../StoryBox';
 
 function CryptoAssetServicesPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
-    'from=advanced-courses',
+    'from=advanced-course',
   );
+
+  const simoneStory = [
+    'Simone hat nun eine Menge Informationen über den Erwerb von Tokens und Coins sowie die Funktion der Registerführung bei Kryptowertpapieren erhalten. Auf dieser Grundlage tauchen bei ihr Fragen auf, wie genau eigentlich die Verwahrung von Kryptoassets abläuft.',
+    'In ihrer Bank haben Kunden die Option, Schließfächer, Bankkonten oder Wertpapierdepots zu nutzen, doch wie dies für Kryptoassets funktioniert, stellt für sie noch ein Rätsel dar. Glücklicherweise stößt sie beim nächsten Stand auf eine Lösung. Die Aussteller erklären Simone ihre Krypto-Dienstleistung zur Verwahrung von Tokens.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Kryptoasset-Verwahrung
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Simone hat nun eine Menge Informationen über den Erwerb von Tokens
-            und Coins sowie die Funktion der Registerführung bei
-            Kryptowertpapieren erhalten. Auf dieser Grundlage tauchen bei ihr
-            Fragen auf, wie genau eigentlich die Verwahrung von Kryptoassets
-            abläuft. In ihrer Bank haben Kunden die Option, Schließfächer,
-            Bankkonten oder Wertpapierdepots zu nutzen, doch wie dies für
-            Kryptoassets funktioniert, stellt für sie noch ein Rätsel dar.
-            Glücklicherweise stößt sie beim nächsten Stand auf eine Lösung. Die
-            Aussteller erklären Simone ihre Krypto-Dienstleistung zur Verwahrung
-            von Tokens.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
       <div className="flex justify-center items-center">
         <img
           src={Safekeeping}

@@ -1,25 +1,20 @@
 import Staking from '../../../images/courseAdvanced/staking.jpg';
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
+import { StoryBoxSimone } from '../../StoryBox';
 
 function CryptoAssetServicesPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
 
+  const simoneStory = [
+    'Neben dem Handel von Coins und Tokens erzählen die Aussteller Simone über eine weitere Dienstleistung, mit welcher die Kunden ihr zuvor gehandelten Kryptoassets nutzen könnne, um passives Einkommen zu generieren. Gespannt hört sich Simone die weitere Kryptoasset-Dienstleistung an.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Staking</h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Neben dem Handel von Coins und Tokens erzählen die Aussteller Simone
-            über eine weitere Dienstleistung, mit welcher die Kunden ihr zuvor
-            gehandelten Kryptoassets nutzen könnne, um passives Einkommen zu
-            generieren. Gespannt hört sich Simone die weitere
-            Kryptoasset-Dienstleistung an
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
       <div className="flex justify-center items-center">
         <img src={Staking} alt="Blockchain" className="w-full md:w-1/2" />
       </div>

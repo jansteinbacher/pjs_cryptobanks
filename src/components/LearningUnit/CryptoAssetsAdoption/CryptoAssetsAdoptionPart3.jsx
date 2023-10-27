@@ -1,9 +1,14 @@
 import stateofknowledge from '../../../images/courseAdvanced/Vertiefung_Wissensstand.png';
+import { StoryBoxLeo } from '../../StoryBox';
 
 function CryptoAssetsAdoptionPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',
   );
+
+  const leoStory = [
+    'Im nächsten Abschnitt der Umfrage möchte Leo herausfinden, wie die Studenten die Informationen im Bereich “Kryptoassets” aquirieren. Dazu möchte er zunächst einmal abschätzen, ob die Studenten überhaupt daran interessiert sind ihr Wissen bezüglich Kryptoassets zu vertiefen.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,17 +16,7 @@ function CryptoAssetsAdoptionPart3() {
         Informationsaufbau im Bereich Kryptoassets
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify mb-4">
-            Im nächsten Abschnitt der Umfrage möchte Leo herausfinden, wie die
-            Studenten die Informationen im Bereich “Kryptoassets” aquirieren.
-            Dazu möchte er zunächst einmal abschätzen, ob die Studenten
-            überhaupt daran interessiert sind ihr Wissen bezüglich Kryptoassets
-            zu vertiefen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStory} />}
       <div className="flex justify-center items-center mb-8">
         <img
           src={stateofknowledge}

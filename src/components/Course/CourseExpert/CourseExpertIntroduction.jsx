@@ -5,9 +5,7 @@ function CourseExpertIntroduction() {
   return (
     <CourseIntroduction
       courseTitle="Willkommen im Experten-Kurs"
-      courseText="Du hast dich für diesen Kurs entschieden, weil du bereits über ein
-      solides Verständnis von Kryptoassets verfügst und nun bereit bist,
-      tiefer in die Welt der praktischen Anwendungsfälle einzutauchen. In
+      courseText="Hallo und herzlich willkommen im Beginner-Kurs zu Kryptoassets! In
       diesem Abschnitt werden wir uns mit einem konkreten Anwendungsfall
       befassen, der die Grundlage für viele weitere spannende Aspekte bildet:
       die Kryptoasset-Verwahrung. In diesem Kurs werden wir gemeinsam in die

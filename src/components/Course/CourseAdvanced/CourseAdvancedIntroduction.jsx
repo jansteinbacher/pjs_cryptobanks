@@ -6,15 +6,7 @@ function CourseAdvancedIntroduction() {
     <CourseIntroduction
       courseTitle="Willkommen im Fortgeschrittenen-Kurs"
       courseText="Hallo und herzlich willkommen im Fortgeschrittenen-Kurs zu Kryptoassets!
-      Du hast dich für diesen Kurs entschieden, weil du bereits über ein
-      grundlegendes Verständnis von Kryptoassets verfügst und nun tiefer in
-      die Materie eintauchen möchtest. Du möchtest verstehen, wie die
-      regulatorische Landschaft auf nationaler und internationaler Ebene
-      aussieht und wie sie Kryptoassets beeinflusst? Du interessierst dich für
-      die Vielfalt der Kryptoasset-Dienstleistungen, die auf dem Markt
-      verfügbar sind? Du möchtest einen umfassenden Einblick in die aktuellen
-      Trends und die gesellschaftliche Akzeptanz von Kryptoassets erhalten?
-      Dann bist du im Fortgeschrittenen-Kurs genau richtig. In diesem Kurs
+      In diesem Kurs
       werden wir gemeinsam in die tiefere Welt der Kryptoassets eintauchen,
       und zwar aus der Perspektive von Simone, einer Projektmanagerin der
       fiktiven Silberbach & Söhne Bank."

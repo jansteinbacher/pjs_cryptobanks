@@ -1,8 +1,14 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart2() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Tobias grübelt über die generelle Verteilung der Verantwortung bezüglich der Sicherung und des Managements seiner Kryptoassets. Als engagierter Krypto-Investor bewahrt er seine Kryptoassets in einer Wallet auf, die er über einen privaten Schlüssel kontrolliert. Hierfür setzt er ein Browser-Plugin ein, das ihm unabhängig von der besuchten Webseite Zugriff auf seine Kryptoassets ermöglicht.',
+    ' Die Tatsache, dass ein Bekannter aus seinem Krypto-Investorenkreis bereits einen solchen Schlüssel verloren hat – was zu einem Verlust des Zugangs zu seinen Kryptoassets führte –, wirft bei Tobias zusätzliche Fragen auf.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -14,22 +20,7 @@ function CryptoCustodyApplicationAreasPart2() {
         Verantwortung
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Tobias grübelt über die generelle Verteilung der Verantwortung
-            bezüglich der Sicherung und des Managements seiner Kryptoassets. Als
-            engagierter Krypto-Investor bewahrt er seine Kryptoassets in einer
-            Wallet auf, die er über einen privaten Schlüssel kontrolliert.
-            Hierfür setzt er ein Browser-Plugin ein, das ihm unabhängig von der
-            besuchten Webseite Zugriff auf seine Kryptoassets ermöglicht. Die
-            Tatsache, dass ein Bekannter aus seinem Krypto-Investorenkreis
-            bereits einen solchen Schlüssel verloren hat – was zu einem Verlust
-            des Zugangs zu seinen Kryptoassets führte –, wirft bei Tobias
-            zusätzliche Fragen auf.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-4 text-justify">
         Innerhalb des <strong>Self-Custody</strong> liegt die gesamte

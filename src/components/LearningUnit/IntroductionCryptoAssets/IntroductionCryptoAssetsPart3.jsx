@@ -1,35 +1,24 @@
-import Bernd from '../../../images/courseBeginner/charakterBernd.png';
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter13Audio from '../../../audio/chapter13.mp3';
 import Blockchain from '../../../images/courseBeginner/Blockchain.jpg';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionCryptoAssetsPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Während seiner Recherche stößt Bernd auf den Bergriff Blockchain. Doch was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß Bernd inzwischen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in dem Whitepaper beschrieben wurde.',
+    'Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden [1], [4].',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Blockchain - Was ist das?
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
-          <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Während seiner Recherche stößt Bernd auf den Bergriff Blockchain.
-            Doch was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß
-            Bernd inzwischen, dass die Blockchain-Technologie von mutmaßlich
-            einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in
-            dem Whitepaper beschrieben wurde. Es wird darin dargestellt, wie
-            Transaktionen, Hashes und Nonces zu einer blockbasierten
-            Datenstruktur zusammengefasst werden können. Innerhalb dieser
-            Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines
-            vorherigen Blocks miteinander verknüpft werden{' '}
-            <a href="#sources">[1]</a>, <a href="#sources">[4]</a>.{' '}
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center items-center">
         <img
           src={Blockchain}

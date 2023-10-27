@@ -1,8 +1,13 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart3() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Nachdem Tobias einiges über die Verantwortung für die Sicherung und das Management von Kryptoassets gelernt hat, möchte er genauer die Art und Weise verstehen, inwiefern das Eigentum und die Kontrolle über die Vermögenswerte auf verschiedene Unternehmen verteilt sind.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -12,16 +17,7 @@ function CryptoCustodyApplicationAreasPart3() {
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Verteilung</h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Nachdem Tobias einiges über die Verantwortung für die Sicherung und
-            das Management von Kryptoassets gelernt hat, möchte er genauer die
-            Art und Weise verstehen, inwiefern das Eigentum und die Kontrolle
-            über die Vermögenswerte auf verschiedene Unternehmen verteilt sind.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-4 text-justify">
         Bei der <strong>zentralisierten Kryptoasset-Verwahrlösung</strong> hat

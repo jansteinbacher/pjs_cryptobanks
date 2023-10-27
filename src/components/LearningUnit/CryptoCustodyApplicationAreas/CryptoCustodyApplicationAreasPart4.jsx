@@ -1,8 +1,14 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart4() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Einerseits profitiert Tobias von der Benutzerfreundlichkeit, die ihm das Browser-Plugin für den bequemen Zugriff auf seine Kryptoassets bietet. Andererseits hegt er wiederholt Bedenken hinsichtlich der potenziellen Gefahr von Cyberangriffen aufgrund der ständigen Internetverbindung.',
+    'In Anbetracht dieser Überlegungen stellt er sich die Frage nach den vielfältigen Optionen für den Zugriff auf Kryptoassets.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -14,19 +20,7 @@ function CryptoCustodyApplicationAreasPart4() {
         Konnektivität
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Einerseits profitiert Tobias von der Benutzerfreundlichkeit, die ihm
-            das Browser-Plugin für den bequemen Zugriff auf seine Kryptoassets
-            bietet. Andererseits hegt er wiederholt Bedenken hinsichtlich der
-            potenziellen Gefahr von Cyberangriffen aufgrund der ständigen
-            Internetverbindung. In Anbetracht dieser Überlegungen stellt er sich
-            die Frage nach den vielfältigen Optionen für den Zugriff auf
-            Kryptoassets
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-4 text-justify">
         Eine <strong>Hot Wallet</strong> ist direkt mit dem Internet verbunden

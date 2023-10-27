@@ -1,29 +1,24 @@
 import CryptoAssetsDefinition from '../../../images/courseBeginner/CryptoAssetsDefinition.png';
-import Bernd from '../../../images/courseBeginner/charakterBernd.png';
+
 import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter12Audio from '../../../audio/chapter12.mp3';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionCryptoAssetsPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Nach der Pause öffnete Bernd seinen Laptop und beginnt mit einer simplen Google-Suche: “Was sind Kryptoassets?” Innerhalb von Sekunden erschienen zahlreiche Ergebnisse. Er stößt auf eine Definition, die ihm einen klaren Überblick verschaffte.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Definition Kryptoassets
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
-          <img src={Bernd} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-          <p className="italic text-justify flex-grow">
-            Nach der Pause öffnete Bernd seinen Laptop und beginnt mit einer
-            simplen Google-Suche: &ldquo;Was sind Kryptoassets?&rdquo; Innerhalb
-            von Sekunden erschienen zahlreiche Ergebnisse. Er stößt auf eine
-            Definition, die ihm einen klaren Überblick verschaffte.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center items-center">
         <img
           src={CryptoAssetsDefinition}

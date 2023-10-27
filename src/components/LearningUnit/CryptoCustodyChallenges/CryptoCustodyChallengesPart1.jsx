@@ -1,9 +1,15 @@
 import Challenge from '../../../images/courseExpert/challengequestion.png';
 import CryptoCustodyChallengesSources from './CryptoCustodyChallengesSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyChallengesPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Tobias begibt sich zusammen mit Simone auf eine Konferenz. Hier erfährt er einiges über die Verwahrung von Kryptoassets. Er stellt sich dennoch die Fragen welche Herausforderungen die Kryptoverwahrung mit sich bringt und wie es in der Zukunft mit der Verwahrung von Kryptoassets aussieht.',
+    'Um Antworten diese Fragen zu bekommen, beginnt er Gespräche mit den Experten auf der Konferenz zu führen. Er kann hierbei ebenfalls einige Informationen für sich mitnehmen:',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -11,20 +17,7 @@ function CryptoCustodyChallengesPart1() {
         Herausforderungen & Zukunftsaussichten
       </h1>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Tobias begibt sich zusammen mit Simone auf eine Konferenz. Hier
-            erfährt er einiges über die Verwahrung von Kryptoassets. Er stellt
-            sich dennoch die Fragen welche Herausforderungen die
-            Kryptoverwahrung mit sich bringt und wie es in der Zukunft mit der
-            Verwahrung von Kryptoassets aussieht. Um Antworten diese Fragen zu
-            bekommen, beginnt er Gespräche mit den Experten auf der Konferenz zu
-            führen. Er kann hierbei ebenfalls einige Informationen für sich
-            mitnehmen:
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Herausforderungen

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CryptoSecurity from '../../../images/courseBeginner/ewpg.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsPart4() {
   const [hovered, setHovered] = useState(false);
@@ -17,26 +18,17 @@ function TypesOfCryptoAssetsPart4() {
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Auf seiner weiteren Recherche begibt sich Bernd auf die Webseite von der Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin). Bereits zu traditionellen Finanzprodukten hatte er zahlreiche Informationen von dort bezogen, vielleicht hat er auch Glück und findet etwas zu Kryptoassets.',
+    'Auf der Webseite entdeckt er unter anderem eine Liste von Kryptowertpapieren, welche bei der Bundesanstalt registriert sind. Mit traditionellen Wertpapieren konnte Bernd bereits viel Erfahrung sammeln, daher fragt er sich, inwiefern sich Kryptowertpapiere in Kryptoassets einordnen lassen.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Security Token
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Auf seiner weiteren Recherche begibt sich Bernd auf die Webseite von
-            der Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin). Bereits
-            zu traditionellen Finanzprodukten hatte er zahlreiche Informationen
-            von dort bezogen, vielleicht hat er auch Glück und findet etwas zu
-            Kryptoassets. Auf der Webseite entdeckt er unter anderem eine Liste
-            von Kryptowertpapieren, welche bei der Bundesanstalt registriert
-            sind. Mit traditionellen Wertpapieren konnte Bernd bereits viel
-            Erfahrung sammeln, daher fragt er sich, inwiefern sich
-            Kryptowertpapiere in Kryptoassets einordnen lassen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!
       </p>

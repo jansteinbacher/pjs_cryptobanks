@@ -1,26 +1,21 @@
 import TypesOfBlockchain from '../../../images/courseBeginner/typesOfBlockchain.jpg';
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionBlockchainPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
+  const berndStory = [
+    'Während sie gemeinsam eine Tasse Kaffee genießen, fragt Bernd Tobias: „Tobias, ich habe gehört, dass es verschiedene Arten von Blockchains gibt. Kannst du mir erklären, was den Unterschied zwischen ihnen ausmacht?”',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Permissioned vs. Permissionless
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-8 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Während sie gemeinsam eine Tasse Kaffee genießen, fragt Bernd
-            Tobias: &ldquo;Tobias, ich habe gehört, dass es verschiedene Arten
-            von Blockchains gibt. Kannst du mir erklären, was den Unterschied
-            zwischen ihnen ausmacht?&rdquo;
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <div className="flex justify-center items-center">
         <img
           src={TypesOfBlockchain}

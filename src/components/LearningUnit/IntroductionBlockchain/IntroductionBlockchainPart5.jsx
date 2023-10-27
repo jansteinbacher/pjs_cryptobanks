@@ -1,26 +1,21 @@
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function IntroductionBlockchainPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Während seiner Recherche zu Blochchain trifft Bernd häufig auf den Bergriff Distributed Ledger Technology (DLT). Ist Blockchain und DLT das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT Anwendung? Wird es auch in seiner Branche, der Finanzbranche verwendet?',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Anwendungsbereiche
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Während Bernd sich intensiv mit dem Thema Blockchain
-            auseinandersetzt, stolpert er immer wieder über den Begriff
-            &ldquo;Distributed Ledger Technology&rdquo; (DLT). Er ist sich nicht
-            sicher, ob Blockchain und DLT dasselbe sind, und beschließt, Tobias
-            nach dessen Meinung zu fragen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Tokenisierung
       </h3>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import UtlityToken from '../../../images/courseBeginner/sand.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsPart3() {
   const [hovered, setHovered] = useState(false);
@@ -17,23 +18,17 @@ function TypesOfCryptoAssetsPart3() {
     'from=beginner-course',
   );
 
+  const berndStory = [
+    'Nachdem Bernd sich mehrere Kryptowährungen (Payment Tokens) angeschaut hat, stößt er auf ein Kryptoasset, welches sich von denen zuvor unterscheidet.',
+    'Er fragt sich, unter welcher Kategorie der Token The Sandbox fällt. Laut der Beschreibung kann der Eigentümer damit an den Entscheidungen über den Betrieb der gleichnamigen Plattform “The Sandbox” teilnehmen.',
+  ];
+
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Utility Token
       </h2>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Nachdem Bernd sich mehrere Kryptowährungen (Payment Tokens)
-            angeschaut hat, stößt er auf ein Kryptoasset, welches sich von denen
-            zuvor unterscheidet. Er fragt sich, unter welcher Kategorie der
-            Token The Sandbox fällt. Laut der Beschreibung kann der Eigentümer
-            damit an den Entscheidungen über den Betrieb der gleichnamigen
-            Plattform “The Sandbox” teilnehmen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
       <p className="mb-8 font-bold">
         Fahre mit deiner Maus über das Bild und erfahre mehr!
       </p>

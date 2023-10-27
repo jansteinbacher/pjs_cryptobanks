@@ -1,10 +1,16 @@
 import Challenges from '../../../images/courseBeginner/challenges.png';
 import OpportunitiesAndChallengesCryptoAssetsSources from './OpportunitiesAndChallengesCryptoAssetsSources';
+import { StoryBoxBernd } from '../../StoryBox';
 
 function TypesOfCryptoAssetsSources() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',
   );
+
+  const berndStory = [
+    'Bernd ist sich nach all den bisher erlangten Informationen jedoch noch nicht sicher welche Unsicherheiten bzw. Risiken Kryptoassets mit sich bringen und ob es sich für die Zukunft lohnt, sich weiter mit dem Thema auseinanderzusetzen. Seine Kollegin Simone erzählt ihm von einer Diskussionsrunde, bei welcher verschiedene Experten ihre Standpunkte teilen.',
+    'Gespannt darauf, reserviert Bernd sich einen Platz und freut sich auf die Gelegenheit, mehr Klarheit über die Risiken und Chancen von Kryptoassets zu erhalten. Während der Diskussion hört er aufmerksam zu, wie die Experten ihre Perspektiven teilen.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -16,22 +22,7 @@ function TypesOfCryptoAssetsSources() {
         <li>Herausforderungen von Kryptoassets</li>
         <li>Zukunftsaussichten von Kryptoassets</li>
       </ul>
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className="italic text-justify">
-            Bernd ist sich nach all den bisher erlangten Informationen jedoch
-            noch nicht sicher welche Unsicherheiten bzw. Risiken Kryptoassets
-            mit sich bringen und ob es sich für die Zukunft lohnt, sich weiter
-            mit dem Thema auseinanderzusetzen. Seine Kollegin Simone erzählt ihm
-            von einer Diskussionsrunde, bei welcher verschiedene Experten ihre
-            Standpunkte teilen. Gespannt darauf, reserviert Bernd sich einen
-            Platz und freut sich auf die Gelegenheit, mehr Klarheit über die
-            Risiken und Chancen von Kryptoassets zu erhalten. Während der
-            Diskussion hört er aufmerksam zu, wie die Experten ihre Perspektiven
-            teilen.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Herausforderungen von Kryptoassets

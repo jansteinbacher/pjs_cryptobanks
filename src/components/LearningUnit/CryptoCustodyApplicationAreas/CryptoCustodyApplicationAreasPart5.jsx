@@ -1,8 +1,13 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
+import { StoryBoxTobias } from '../../StoryBox';
 
 function CryptoCustodyApplicationAreasPart5() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
+
+  const tobiasStory = [
+    'Tobias weiß nun, dass er seinen privaten Schlüssel bisher nur in einer Software Wallet gespeichert hat, die leider auch anfällig für Cyberangriffen sein können. Aus diesem Grund möchte er weitere Methoden der Lagerung des Schlüssels kennenlernen, um zukünftig sicherer aufgestellt zu sein.',
+  ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
@@ -14,17 +19,7 @@ function CryptoCustodyApplicationAreasPart5() {
         Schlüssel-Lagerung
       </h2>
 
-      {isComingFromPreviousPage && (
-        <div className="p-4 mb-12 bg-green-200 rounded-lg">
-          <p className=" italic text-justify">
-            Tobias weiß nun, dass er seinen privaten Schlüssel bisher nur in
-            einer Software Wallet gespeichert hat, die leider auch anfällig für
-            Cyberangriffen sein können. Aus diesem Grund möchte er weitere
-            Methoden der Lagerung des Schlüssels kennenlernen, um zukünftig
-            sicherer aufgestellt zu sein.
-          </p>
-        </div>
-      )}
+      {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
       <p className="mb-4 text-justify">
         Eine <strong>Hardware-Wallet</strong> bietet ein hohes Maß an
