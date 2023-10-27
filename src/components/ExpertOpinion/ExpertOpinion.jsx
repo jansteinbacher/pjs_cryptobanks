@@ -13,12 +13,12 @@ function ExpertOpinion({ showFootnote, showHeadline, paragraphs }) {
           Expertenmeinungen{showFootnote ? '*' : ''}
         </h3>
         {paragraphs.map((text) => (
-          <p className="italic text-justify mb-4" key={text}>
+          <p className="italic mb-4" key={text}>
             {text}
           </p>
         ))}
         {showFootnote && (
-          <p className="text-sm italic text-justify">
+          <p className="text-sm italic ">
             *Die Expertenmeinungen entstammen aus vom Projektseminar-Team
             geführten Interviews mit Experten aus dem Finanzsektor, welche im
             Reiter Experteninterviews zu finden sind.

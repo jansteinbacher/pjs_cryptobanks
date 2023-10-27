@@ -5,7 +5,7 @@ function StoryBox({ imageSrc, paragraphs }) {
   return (
     <div className="p-4 mb-8 bg-green-200 rounded-lg flex items-start">
       <img src={imageSrc} alt="Charakterbild" className="w-1/12 h-auto mr-4" />
-      <div className="italic text-justify flex-grow">
+      <div className="italic flex-grow">
         {paragraphs.map((paragraph) => (
           <p key={uuidv4()} className="mb-4">
             {paragraph}
