@@ -5,7 +5,7 @@ function CourseBeginnerIntroduction() {
   return (
     <CourseIntroduction
       courseTitle="Willkommen im Beginner-Kurs"
-      courseText="Hallo und herzlich willkommen im Beginner-Kurs zu Kryptoassets! Du hast dich für diesen Kurs entschieden, da du ein grundlegendes Verständnis zum Thema Kryptoassets erhalten möchtest? Zudem interessierst du dich für die Einbindung von Kryptoassets in traditionelle Finanzprodukte und möchtest Kundenbedürfnisse im Bereich Kryptoassets verstehen?..."
+      courseText="Hallo und herzlich willkommen im Beginner-Kurs zu Kryptoassets! Aus der Perspeltive von Bernd, dem Geschäftsführer der fikitven Silberbach & Söhne Bank tauchst du in die Welt der Kryptoassets ein."
       characterTitle="Bernds Entdeckung der Krypto-Welt: Ein Blick über den Horizont der
       Tradition"
       characterText="Bernd ist seit über zwei Jahrzehnten ein fester Bestandteil der
