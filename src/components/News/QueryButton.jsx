@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 function QueryButton({ query, setQuery, text, activeQuery }) {
   const isActive = query === activeQuery;
   const buttonClass = isActive
-    ? 'bg-green-500 text-white'
-    : 'bg-gray-300 text-gray-700';
+    ? 'bg-green-300 text-black'
+    : 'bg-gray-100 text-gray-700';
 
   const handleClick = () => {
     if (!isActive) {
