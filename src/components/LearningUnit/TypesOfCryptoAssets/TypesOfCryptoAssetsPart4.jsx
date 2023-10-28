@@ -44,16 +44,17 @@ function TypesOfCryptoAssetsPart4() {
         />
 
         {hovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <div className="ml-4 mr-4">
-              <p className="text-left mb-8 mr-4 font-semibold text-gray-800">
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
+            <div className="ml-4 mr-4 text-black">
+              <p className="mb-8 mr-4 text-gray-800">
                 Im Gegensatz zu Utility Token handelt es sich bei Security Token
-                um Vermögenswerte. Die regulatorischen Bestimmungen von Security
-                Token sind vergleichbar mit denen der traditionellen
-                Wertpapiere. Somit unterliegen sie den Kriterien des
-                Wertpapierhandelsgesetz. Diese sind:
+                um <strong>Vermögenswerte</strong>. Die{' '}
+                <strong>regulatorischen Bestimmungen</strong> von Security Token
+                sind vergleichbar mit denen der traditionellen Wertpapiere.
+                Somit unterliegen sie den Kriterien des
+                <strong>Wertpapierhandelsgesetz</strong>. Diese sind:
               </p>
-              <ul className="mb-8 font-semibold list-disc ml-8">
+              <ul className="mb-8 list-disc ml-8">
                 <li>
                   Ein Token gilt als Wertpapier nach § 2 Abs. 1 WpHG, wenn es
                   ein verbrieftes Recht darstellt und dem Inhaber einen Anspruch
@@ -70,12 +71,15 @@ function TypesOfCryptoAssetsPart4() {
                   Wertpapiers
                 </li>
               </ul>
-              <p className="font-semibold">
+              <p>
                 Zu den Security Token gehören die Unterarten Equity Token und
-                Asset-Backed Token. Von Equity Token spricht man, wenn reale
-                Vermögenswerte tokenisiert werden. Asset-Backed Token sind an
-                ein Anlagegut (Asset) gebunden. Sie gewähren den Anspruch an
-                einem physischen Vermögenswert <a href="#sources">[9]</a>.
+                Asset-Backed Token. Von <strong>Equity Token</strong> spricht
+                man, wenn{' '}
+                <strong>reale Vermögenswerte tokenisiert werden</strong>.{' '}
+                <strong>Asset-Backed Token</strong> sind an ein{' '}
+                <strong>Anlagegut (Asset) gebunden</strong>. Sie gewähren den
+                Anspruch an einem physischen Vermögenswert{' '}
+                <a href="#sources">[9]</a>.
               </p>
             </div>
           </div>

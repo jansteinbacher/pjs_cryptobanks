@@ -39,11 +39,11 @@ function CryptoAssetServicesPart1() {
       {isComingFromPreviousPage && (
         <StoryBoxSimone paragraphs={simoneStoryPart2} />
       )}
-      <p className="mb-8">
-        Die Bank bietet den Handel von führenden Kryptoassets an. Neben
-        klassischen Coins, wie Bitcoin (BTC) oder Ethereum (ETH) werden auch
-        Token, wie Cardano (ADA) oder Polkadot (DOT). Die Kryptoassets können
-        mittels Euro, US-Dollar und Schweizer Franken gekauft werden{' '}
+      <p className="mb-12">
+        Die Bank bietet den <strong>Handel von führenden Kryptoassets</strong>{' '}
+        an. Neben klassischen Coins, wie Bitcoin (BTC) oder Ethereum (ETH)
+        werden auch Token, wie Cardano (ADA) oder Polkadot (DOT). Die
+        Kryptoassets können mittels Fiat-Währungen getauscht werden{' '}
         <a href="#sources">[1]</a>.
       </p>
 

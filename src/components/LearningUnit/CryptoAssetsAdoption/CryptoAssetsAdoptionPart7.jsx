@@ -26,25 +26,43 @@ function CryptoAssetsAdoptionPart7() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Von 23 Teilnehmern, die angegeben haben bereits in Kryptoassets zu
         investieren, fallen Bitcoin mit 37% und Ethereum mit 33% unter die
-        beliebtesten digitalen Assets. 20% davon legen Altcoins an. Nur sehr
-        wenige der Befragten haben angegeben auch in NFTs (4%) oder in andere
-        Kryptoassets (6%) zu investieren.
+        beliebtesten digitalen Assets.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
-        Der Fokus deiner Bank sollte vor allem auf der Bereitstellung von
-        Dienstleistungen in Bezug auf die Kryptowährungen “Bitcoin” und
-        “Ethereum” liegen. Da auch einige in Altcoins investieren, sollte deine
-        Bank sich ebenso Gedanken machen, diese in ihr Portfolio aufzunehmen.
-        Zunächst einmal sollte deine Bank ihr Angebot allerdings sorgfältig
-        auswählen und eher reduziert halten, um den Kunden einen reibungslosen
-        Umgang damit zu gewährleisten. Nichtsdestotrotz besteht für deine Bank
-        die Option über andere digitale Assets, wie bspw. NFTs, Informationen
-        bereitzustellen.
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          <strong>20%</strong> davon legen <strong>Altcoins</strong> an.
+        </li>
+        <li>
+          Nur sehr wenige der Befragten haben angegeben auch in{' '}
+          <strong>NFTs (4%)</strong> oder in{' '}
+          <strong>andere Kryptoassets (6%)</strong> zu investieren.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-4">
+        Der <strong>Fokus</strong> deiner Bank sollte vor allem auf der
+        Bereitstellung von Dienstleistungen in Bezug auf die Kryptowährungen{' '}
+        <strong>“Bitcoin” und “Ethereum”</strong> liegen.
+      </p>
+      <p className="mb-4">
+        Da auch einige in Altcoins investieren, sollte deine Bank sich ebenso
+        Gedanken machen, diese in ihr Portfolio aufzunehmen.
+      </p>
+      <p className="mb-4">
+        Zunächst einmal sollte deine Bank ihr{' '}
+        <strong>Angebot allerdings sorgfältig auswählen</strong> und eher
+        reduziert halten, um den Kunden einen reibungslosen Umgang damit zu
+        gewährleisten.
+      </p>
+      <p className="mb-12">
+        Nichtsdestotrotz besteht für deine Bank die{' '}
+        <strong>Option über andere digitale Assets</strong>, wie{' '}
+        <strong>bspw. NFTs</strong>, Informationen bereitzustellen.
       </p>
       <div className="flex justify-center items-center mb-8">
         <img
@@ -53,25 +71,46 @@ function CryptoAssetsAdoptionPart7() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Die meisten Befragten, nämlich 57%, beurteilen ihre getätigten
-        investitionen in Kryptoassets als positiv oder sogar sehr positiv. 26%
-        stehen dem neutral gegenüber, während lediglich 17% eine eher negative
-        Erfahrung mit Investitionen in Kryptoassets gemacht haben.
-        Interessanterweise hat jedoch keiner der Teilnehmer eine sehr negative
-        Erfahrung damit erlebt.
+        Investitionen in Kryptoassets als positiv oder sogar sehr positiv.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          <strong>26%</strong> stehen dem <strong>neutral</strong> gegenüber.
+        </li>
+        <li>
+          Lediglich <strong>17%</strong> haben eine eher{' '}
+          <strong>negative Erfahrung</strong> mit Investitionen in Kryptoassets
+          gemacht.
+        </li>
+        <li>
+          Interessanterweise hat jedoch{' '}
+          <strong>keiner der Teilnehmer eine sehr negative Erfahrung</strong>{' '}
+          damit erlebt.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-4">
         Da die Mehrheit positive Erfahrungen mit der Investition in Kryptoassets
-        gemacht hat, könnte deine Bank diese Chance nutzen, das Kundenklientel
-        weiterhin zu assistieren und somit an sich zu binden. Vor allem aber
-        sollte sie bei den Kunden, die dem Ganzen eher neutral gegenüberstehen
-        oder schlechte Erfahrungen gemacht haben, mittels qualitativ
-        hochwertiger Informationsbereitstellung und eines attraktiven Angebots
-        an Dienstleistungen Sicherheit und Vertrauen aufbauen, um diese
-        ebenfalls von einer Investition zu überzeugen.
+        gemacht hat, könnte deine Bank diese{' '}
+        <strong>
+          Chance nutzen, das Kundenklientel weiterhin zu assistieren und somit
+          an sich zu binden
+        </strong>
+        .
+      </p>
+      <p className="mb-12">
+        Vor allem aber sollte sie bei den Kunden, die dem Ganzen eher neutral
+        gegenüberstehen oder schlechte Erfahrungen gemacht haben, mittels
+        qualitativ{' '}
+        <strong>
+          hochwertiger Informationsbereitstellung und eines attraktiven Angebots
+          an Dienstleistungen Sicherheit und Vertrauen aufbauen
+        </strong>
+        , um diese ebenfalls von einer Investition zu überzeugen.
       </p>
     </div>
   );

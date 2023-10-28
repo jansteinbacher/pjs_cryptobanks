@@ -25,41 +25,63 @@ function CryptoAssetsRegulationPart2() {
         </a>
       </div>
 
-      <p className="mb-8">
+      <p className="mb-4">
         Dank der Einigung auf den MiCA-Entwurf wird dieser zukünftig die oben
         genannten Initiativen mehr unterstützen. MiCA wird Unklarkeiten mindern,
         gemeinsame Definitionen liefern sowie &ldquo;Grauzonen&rdquo;
-        ausschließen. Mittels MiCA werden die regulatorischen Anforderungen
-        vereint, sodass nationale Vorschriften ersetzt werden können. Es wird
-        eine Art &ldquo;Passporting&rdquo; für EU-weites Handeln eingeführt,
-        sodass eine nationale Registierung obsolet wird. Weitere potenzielle
-        Vorteile der Verordnung sind die Verbesserung des Marktes hin zu einem
-        sicheren Umfeld für Anbieter und Nutzer, die Optimierung des
-        Verbraucherschutz sowie die strenger Regulierung mit dem Ziel der
-        Reduktion des Marktmissbrauch. Die grundlegenden Anforderungen gelten
-        für die Ausgabe aller Kryptoassets. Für die Ausgabe von Stablecoins
-        gelten strengere Anforderungen. Die Geldwäsche- und
-        Terrorismusbekämpfungs-Gesetzgebung (AML/CTF) ist in MiCA nicht
-        enthalten, daher ist die bereits bestehende AML/CTF-Gesetzgebung auf
-        Krypto-Vermögensdienstleister (KVDs) anwendbar. Dies verschafft
-        traditionellen Finanzdienstleistungsunternehmen (FSIs) aufgrund ihrer
-        Compliance-Erfahrung einen Vorteil. Emittenten von
-        Kryptoasset-Dienstleister werden mehreren Verpflichtungen unterliegen.
-        Darunter fällt beispielsweise die Verpflichtung, vor der Emission ein
-        Whitepaper zu erstellen, einschließlich der Haftung für den Inhalt des
-        Whitepapers, der Eintragung als juristische Person und der Genehmigung
-        durch eine Aufsichtsbehörde. KVDs müssen auch Standardanforderungen und
-        dienstleistungsspezifische Anforderungen erfüllen{' '}
-        <a href="#sources">[2]</a>. Außerdem ist mit Hilfe von MiCA zukünftig
-        eine risikogerechte Regulierung von Kryptoassets möglich. MiCA sorgt für
-        eine risikogerechte Regulierung. Die Absicht besteht darin, die
-        Sicherheit von Anlegern zu erhöhen und zur reibungslosen Funktion der
-        Märkte beizutragen. Die Verordnung gewährleistet Rechtssicherheit für
-        Innovationen im Bereich der DLT. Bestimmungen für Kryptowerte, die sich
-        auf Vermögenswerte und E-Geld-Token (auch als Stablecoins bekannt)
-        beziehen, sollen voraussichtlich ab Juli 2024 wirksam werden. Der
-        Großteil der MiCA-Verordnung tritt vorraussichtlich erst zu Beginn des
-        Jahres 2025 in Kraft <a href="#sources">[3]</a>.
+        ausschließen.
+      </p>
+      <p className="mb-4">
+        Mittels MiCA werden die regulatorischen Anforderungen vereint, sodass
+        nationale Vorschriften ersetzt werden können. Es wird eine Art{' '}
+        <strong>&ldquo;Passporting&rdquo; für EU-weites Handeln</strong>{' '}
+        eingeführt, sodass eine nationale Registierung obsolet wird.
+      </p>
+      <p className="mb-4">
+        Weitere potenzielle Vorteile der Verordnung sind die Verbesserung des
+        Marktes hin zu einem sicheren Umfeld für Anbieter und Nutzer, die{' '}
+        <strong>Optimierung des Verbraucherschutz</strong> sowie die strenger
+        Regulierung mit dem Ziel der{' '}
+        <strong>Reduktion des Marktmissbrauch</strong>.
+      </p>
+      <p className="mb-4">
+        Die grundlegenden Anforderungen gelten für die Ausgabe aller
+        Kryptoassets. Für die Ausgabe von{' '}
+        <strong>Stablecoins gelten strengere Anforderungen</strong>. Die{' '}
+        <strong>
+          Geldwäsche- und Terrorismusbekämpfungs-Gesetzgebung (AML/CTF)
+        </strong>{' '}
+        ist in MiCA <strong>nicht enthalten</strong>, daher ist die bereits
+        bestehende AML/CTF-Gesetzgebung auf Krypto-Vermögensdienstleister (KVDs)
+        anwendbar. Dies verschafft traditionellen
+        Finanzdienstleistungsunternehmen (FSIs) aufgrund ihrer
+        Compliance-Erfahrung einen Vorteil.
+      </p>
+      <p className="mb-4">
+        Emittenten von Kryptoasset-Dienstleister werden mehreren Verpflichtungen
+        unterliegen. Darunter fällt beispielsweise die{' '}
+        <strong>
+          Verpflichtung, vor der Emission ein Whitepaper zu erstellen ,
+          einschließlich der Haftung für den Inhalt des Whitepapers, der
+          Eintragung als juristische Person und der Genehmigung durch eine
+          Aufsichtsbehörde.
+        </strong>{' '}
+        KVDs müssen auch Standardanforderungen und dienstleistungsspezifische
+        Anforderungen erfüllen <a href="#sources">[2]</a>.
+      </p>
+      <p className="mb-12">
+        Außerdem ist mit Hilfe von MiCA zukünftig eine risikogerechte
+        Regulierung von Kryptoassets möglich. MiCA sorgt für eine risikogerechte
+        Regulierung. Die Absicht besteht darin, die{' '}
+        <strong>Sicherheit von Anlegern zu erhöhen</strong> und zur{' '}
+        <strong>reibungslosen Funktion der Märkte beizutragen</strong>. Die
+        Verordnung gewährleistet Rechtssicherheit für Innovationen im Bereich
+        der DLT. Bestimmungen für Kryptowerte, die sich auf Vermögenswerte und
+        E-Geld-Token (auch als Stablecoins bekannt) beziehen, sollen
+        voraussichtlich <strong>ab Juli 2024</strong> wirksam werden. Der{' '}
+        <strong>Großteil der MiCA-Verordnung</strong> tritt vorraussichtlich
+        erst zu <strong>Beginn des Jahres 2025</strong> in Kraft{' '}
+        <a href="#sources">[3]</a>.
       </p>
 
       <CryptoAssetsRegulationSources />

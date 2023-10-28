@@ -25,12 +25,18 @@ function CryptoAssetsAdoptionPart6() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         23 der 58 Teilnehmer, also ca. 40%, haben schon einmal in Kryptoassets
-        investiert. Die Frage, ob grundsätzlich in der Zukunft Interesse an
-        einer Investition in Kryptoassets besteht, haben 30 Studenten (52%)
-        bejaht. Die Mehrheit würde also zukünftig in Kryptoassets investieren.
+        investiert.
       </p>
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          Die Frage, ob grundsätzlich in der Zukunft{' '}
+          <strong>Interesse an einer Investition in Kryptoassets</strong>{' '}
+          besteht, haben <strong>30 (52%)</strong> bejaht.
+        </li>
+        <li>Die Mehrheit würde also zukünftig in Kryptoassets investieren.</li>
+      </ul>
       <div className="flex justify-center items-center mb-8">
         <img
           src={Image2}
@@ -38,20 +44,23 @@ function CryptoAssetsAdoptionPart6() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="mb-12 font-bold">
         Von den 35 Teilnehmern, die derzeitig noch nicht Kryptoassets anlegen,
         haben 16 Personen (46%) angegeben, in Zukunft darin investieren zu
         wollen.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-12">
         Das Interesse in Kryptoassets zu investieren wächst. Deine Bank sollte
-        auf diese steigende Nachfrage reagieren, indem sie ihr
-        Informationsangebot zu Kryptoassets erweitert und entsprechende
-        Dienstleistungen anbietet. Deine Bank kann dem Kunden somit in seinen
-        Investitionsentscheidungen unterstützen und dadurch für mehr
-        Kundenzufriedenheit sorgen.
+        auf diese <strong>steigende Nachfrage reagieren</strong>, indem sie ihr
+        <strong>
+          Informationsangebot zu Kryptoassets erweitert und entsprechende
+          Dienstleistungen anbietet
+        </strong>
+        . Deine Bank kann dem Kunden somit in seinen Investitionsentscheidungen
+        unterstützen und dadurch für mehr Kundenzufriedenheit sorgen.
       </p>
     </div>
   );

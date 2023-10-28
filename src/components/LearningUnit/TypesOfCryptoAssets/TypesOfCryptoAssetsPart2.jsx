@@ -51,18 +51,25 @@ function TypesOfCryptoAssetsPart2() {
         />
 
         {hovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
-              Unter Payment Token versteht man sogenannte Zahlungstoken. Mittels
-              dieser können Finanztransaktionen durchgeführt werden.
-              Kryptowährungen zählen zu den weltweit bekanntesten Payment Token.
-              Mittlerweile gibt es eine Vielzahl an Kryptowährungen. Die wohl
-              Bekanntesten sind Bitcoin und Ethereum. Zentralbanken, wie die
-              EZB, sind außerdem gerade dabei über die Einführung einer
-              virtuellen Zentralbankwährung (Central Bank Digital Currency -
-              CBDC), wie den digitalen Euro, zu diskutieren{' '}
-              <a href="#sources">[3]</a>, <a href="#sources">[4]</a>.
-            </p>
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
+            <div className="ml-4 mr-4 text-black">
+              <p className="mb-4">
+                Unter Payment Token versteht man sogenannte{' '}
+                <strong>Zahlungstoken</strong>. Mittels dieser können{' '}
+                <strong>Finanztransaktionen</strong> durchgeführt werden.{' '}
+                <strong>Kryptowährungen</strong> zählen zu den weltweit
+                bekanntesten Payment Token. Mittlerweile gibt es eine Vielzahl
+                an Kryptowährungen. Die wohl Bekanntesten sind{' '}
+                <strong>Bitcoin und Ethereum</strong>. Zentralbanken, wie die
+                EZB, sind außerdem gerade dabei über die Einführung einer{' '}
+                <strong>
+                  virtuellen Zentralbankwährung (Central Bank Digital Currency -
+                  CBDC)
+                </strong>
+                , wie den <strong>digitalen Euro</strong>, zu diskutieren{' '}
+                <a href="#sources">[3]</a>, <a href="#sources">[4]</a>.
+              </p>
+            </div>
           </div>
         )}
       </div>
@@ -89,19 +96,39 @@ function TypesOfCryptoAssetsPart2() {
         />
 
         {hovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
-              Im Unterschied zu Kryptowährungen ist die Wertentwicklung von
-              Stablecoins an einen externen Vermögenswert gebunden, wie etwa
-              gesetzliche Zahlungsmittel (z. B. US-Dollar oder Euro) oder andere
-              Vermögenswerte (z.B. Gold, Wertpapiere, andere Kryptoassets oder
-              eine beliebige Mischung hiervon). Der Hauptzweck von Stablecoins
-              liegt darin, volatiles Krypto-Vermögen in einen Stablecoin
-              umzuwandeln, ohne das Krypto-Ökosystem verlassen zu müssen.
-              Insbesondere angesichts der starken Schwankungen von Kryptoassets
-              wie Bitcoin ist das Ziel von Stablecoins Preisstabilität zu
-              erreichen <a href="#sources">[1]</a>.
-            </p>
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
+            <div className="ml-4 mr-4 text-black">
+              <p className="mb-4">
+                Im Unterschied zu Kryptowährungen ist die{' '}
+                <strong>
+                  Wertentwicklung von Stablecoins an einen externen
+                  Vermögenswert gebunden
+                </strong>
+                , wie etwa{' '}
+                <strong>
+                  gesetzliche Zahlungsmittel (z. B. US-Dollar oder Euro)
+                </strong>{' '}
+                oder{' '}
+                <strong>
+                  andere Vermögenswerte (z.B. Gold, Wertpapiere, andere
+                  Kryptoassets oder eine beliebige Mischung hiervon)
+                </strong>
+                .
+              </p>
+              <p className="mb-4">
+                Der Hauptzweck von Stablecoins liegt darin,{' '}
+                <strong>
+                  volatiles Krypto-Vermögen in einen Stablecoin umzuwandeln,
+                  ohne das Krypto-Ökosystem verlassen zu müssen
+                </strong>
+                . Insbesondere angesichts der starken Schwankungen von
+                Kryptoassets wie Bitcoin ist das{' '}
+                <strong>
+                  Ziel von Stablecoins Preisstabilität zu erreichen
+                </strong>{' '}
+                <a href="#sources">[1]</a>.
+              </p>
+            </div>
           </div>
         )}
       </div>

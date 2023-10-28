@@ -25,28 +25,66 @@ function CryptoAssetsAdoptionPart9() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
-        10 der 58 Teilnehmer haben Verbesserungsvorschläge angegeben. So gab es
-        Empfehlungen für eine verbesserte Aufklärung in Bezug auf die Risiken,
-        die die digitalen Assets mit sich bringen. Außerdem sollte Klarheit über
-        die Regulierungen bezüglich Kryptoassets geschaffen bzw. grundsätzlich
-        besser reguliert werden. Generell sollte eine erhöhte Transparenz
-        dargeboten werden. Ein Teilnehmer weist darauf hin, dass eine Bank
-        Dienstleistungen zum Anlegen von Bitcoin anbieten sollte. Ein Weiterer
-        schlägt eine KI-basierte App vor, die den Verlust von einer großen Menge
-        an Geld verhindert, da diese als benutzerfreundlich betrachtet wird.
-        Darüber hinaus sollte eine Bank für Neukunden ein leichtes Onboarding
-        und ausführliche Informationen zur Kryptoverwahrung, sowie den Vor- und
-        Nachteilen von Wallet-Lösungen zur Verfügung stellen. Zwei der 10
-        Rückmeldungen deuten darauf hin, dass eine Investition in Kryptoasset
-        als nicht sinnvoll erachtet wird.
+
+      <p className="font-bold mb-4">
+        10 der 58 Teilnehmer haben Verbesserungsvorschläge angegeben.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          So gab es Empfehlungen für eine{' '}
+          <strong>verbesserte Aufklärung in Bezug auf die Risiken</strong>, die
+          die digitalen Assets mit sich bringen.
+        </li>
+        <li>
+          Außerdem sollte{' '}
+          <strong>
+            Klarheit über die Regulierungen bezüglich Kryptoassets geschaffen
+            bzw. grundsätzlich besser reguliert
+          </strong>{' '}
+          werden.
+        </li>
+        <li>
+          Generell sollte eine <strong>erhöhte Transparenz</strong> dargeboten
+          werden.
+        </li>
+        <li>
+          Ein Teilnehmer weist darauf hin, dass eine{' '}
+          <strong>Bank Dienstleistungen zum Anlegen von Bitcoin</strong>{' '}
+          anbieten sollte.
+        </li>
+        <li>
+          Ein Weiterer schlägt eine{' '}
+          <strong>
+            KI-basierte App vor, die den Verlust von einer großen Menge an Geld
+            verhindert
+          </strong>
+          , da diese als benutzerfreundlich betrachtet wird.
+        </li>
+        <li>
+          Darüber hinaus sollte eine Bank{' '}
+          <strong>
+            für Neukunden ein leichtes Onboarding und ausführliche Informationen
+            zur Kryptoverwahrung, sowie den Vor- und Nachteilen von
+            Wallet-Lösungen
+          </strong>{' '}
+          zur Verfügung stellen.
+        </li>
+        <li>
+          <strong>Zwei der 10 Rückmeldungen</strong> deuten darauf hin, dass
+          eine <strong>Investition in Kryptoassets als nicht sinnvoll</strong>{' '}
+          erachtet wird.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-12">
         Diese Vorschläge bieten deiner Bank einen wertvollen Einblick in die
-        Präferenzen der potentiellen Anleger. Eine Umsetzung dieser kann beim
-        Kunden Vertrauen schaffen und deine Bank konkurrenzstark machen.
+        Präferenzen der potentiellen Anleger. Eine Umsetzung dieser kann{' '}
+        <strong>
+          beim Kunden Vertrauen schaffen und deine Bank konkurrenzstark machen
+        </strong>
+        .
       </p>
     </div>
   );

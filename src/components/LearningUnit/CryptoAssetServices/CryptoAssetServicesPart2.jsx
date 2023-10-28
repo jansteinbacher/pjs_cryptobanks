@@ -19,13 +19,16 @@ function CryptoAssetServicesPart2() {
         <img src={Staking} alt="Blockchain" className="w-full md:w-1/2" />
       </div>
 
-      <p className="mb-8">
-        Der Staking-Service ermöglicht es den Kunden der Bank, passive Einkommen
-        durch das Halten von Kryptowährungen zu generieren. Dieser Service
-        ermöglicht es den Kunden, Belohnungen in Form von neu generierten
-        Kryptoassets zu erhalten, indem sie ihre Kryptowährungen bei der Bank
-        halten. Ähnlich wie bei einem Sparkonto können Kunden passive Einkommen
-        generieren <a href="#sources">[2]</a>.
+      <p className="mb-12">
+        Der Staking-Service ermöglicht es den Kunden der Bank,{' '}
+        <strong>
+          passive Einkommen durch das Halten von Kryptowährungen zu generieren
+        </strong>
+        . Dieser Service ermöglicht es den Kunden,{' '}
+        <strong>Belohnungen in Form von neu generierten Kryptoassets</strong> zu
+        erhalten, indem sie ihre Kryptowährungen bei der Bank halten. Ähnlich
+        wie bei einem Sparkonto können Kunden passive Einkommen generieren{' '}
+        <a href="#sources">[2]</a>.
       </p>
 
       <CryptoAssetServicesSources />
