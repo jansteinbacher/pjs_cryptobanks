@@ -1,8 +1,7 @@
-// Import PropTypes library to define prop types for the component
 import PropTypes from 'prop-types';
 
-// PersonCharacteristics component displays a person's name, image, and characteristics
-function PersonCharacteristics({ name, imageSrc, characteristics }) {
+// ExpertCharacteristics component displays a person's name, image, and characteristics
+function ExpertCharacteristics({ name, imageSrc, characteristics }) {
   return (
     <div className="person-container mb-16">
       <img
@@ -18,11 +17,11 @@ function PersonCharacteristics({ name, imageSrc, characteristics }) {
   );
 }
 
-// Define the expected prop types for the PersonCharacteristics component
-PersonCharacteristics.propTypes = {
+// Define the expected prop types for the ExpertCharacteristics component
+ExpertCharacteristics.propTypes = {
   name: PropTypes.string.isRequired, // Requires a string for the name
   imageSrc: PropTypes.string.isRequired, // Requires a string for the image source
   characteristics: PropTypes.string.isRequired, // Requires a string for the characteristics
 };
 
-export default PersonCharacteristics; // Export the PersonCharacteristics component
+export default ExpertCharacteristics; // Export the ExpertCharacteristics component

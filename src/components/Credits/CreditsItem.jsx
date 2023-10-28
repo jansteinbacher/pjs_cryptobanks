@@ -1,8 +1,7 @@
-// Import PropTypes library to define prop types for the component
 import PropTypes from 'prop-types';
 
-// CreditItem component displays an HTML list item with a link
-function CreditItem({ href, title, text }) {
+// CreditsItem component displays an HTML list item with a link
+function CreditsItem({ href, title, text }) {
   return (
     <li>
       <a href={href} title={title}>
@@ -12,11 +11,11 @@ function CreditItem({ href, title, text }) {
   );
 }
 
-// Define the expected prop types for the CreditItem component
-CreditItem.propTypes = {
+// Define the expected prop types for the CreditsItem component
+CreditsItem.propTypes = {
   href: PropTypes.string.isRequired, // Requires a string for the link href
   title: PropTypes.string.isRequired, // Requires a string for the link title
   text: PropTypes.string.isRequired, // Requires a string for the link text
 };
 
-export default CreditItem; // Export the CreditItem component
+export default CreditsItem;

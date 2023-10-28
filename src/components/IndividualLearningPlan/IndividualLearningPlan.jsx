@@ -1,5 +1,6 @@
 import DecisionTree from './DecisionTree';
 
+// This component represents the Individual Learning Plan page
 function IndividualLearningPlan() {
   return (
     <div className="container mx-auto mt-10 p-4">

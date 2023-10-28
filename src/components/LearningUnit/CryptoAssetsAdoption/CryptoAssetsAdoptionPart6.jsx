@@ -2,6 +2,12 @@ import Image1 from '../../../images/courseAdvanced/Investition_Kryptoassets.png'
 import Image2 from '../../../images/courseAdvanced/Investition2.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 6 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on survey participants' past and future investments in Cryptoassets.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart6() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

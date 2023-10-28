@@ -2,6 +2,12 @@ import Safekeeping from '../../../images/courseAdvanced/cryptoassetSafekeeping.j
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the fourth part of the Crypto Asset Services module.
+ * It discusses Kryptoasset-Verwahrung (crypto asset safekeeping) and the importance of safeguarding cryptographic keys for accessing crypto assets.
+ * The regulatory aspects related to Kryptoverwahrung (crypto custody) under the Kreditwesengesetz (KWG) are also explained.
+ */
+
 function CryptoAssetServicesPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

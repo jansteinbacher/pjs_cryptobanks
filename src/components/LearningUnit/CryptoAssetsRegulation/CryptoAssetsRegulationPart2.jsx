@@ -1,6 +1,12 @@
 import CryptoAssetsRegulationSources from './CryptoAssetsRegulationSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the Crypto Assets Regulation section.
+ * It provides information about the European MiCA Regulation, its impact on the crypto market,
+ * and its potential benefits, including regulatory clarity, consumer protection, and reduction of market abuse.
+ */
+
 function CryptoAssetsRegulationPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

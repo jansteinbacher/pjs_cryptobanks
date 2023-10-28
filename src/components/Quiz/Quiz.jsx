@@ -4,7 +4,9 @@ import QuizQuestion from './QuizQuestion';
 import QuizResult from './QuizResult';
 import QuizProgress from './QuizProgress';
 
+// This component manages a quiz, including questions, answers, and user progress.
 function Quiz({ questions }) {
+  // State variables to manage the quiz.
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState(
     Array(questions.length).fill(null),
@@ -16,7 +18,9 @@ function Quiz({ questions }) {
   );
   const numPairs = (questions[currentQuestionIndex]?.pairs || []).length;
 
+  // Function to handle user answer selection.
   const handleAnswerSelect = (answerIndex) => {
+    // Logic to update user answers and progress based on user's selection.
     if (!answered) {
       const newUserAnswers = [...userAnswers];
       newUserAnswers[currentQuestionIndex] = answerIndex;
@@ -34,7 +38,9 @@ function Quiz({ questions }) {
     }
   };
 
+  // Function to check answers for pair questions.
   const checkPairAnswers = () => {
+    // Logic to check and update results for pair questions.
     const newPairResults = [...pairResults];
     newPairResults[currentQuestionIndex] = questions[
       currentQuestionIndex
@@ -55,7 +61,9 @@ function Quiz({ questions }) {
     }, 10);
   };
 
+  // Calculate the number of correct answers.
   const numCorrectAnswers = userAnswers.reduce((acc, userAnswer, index) => {
+    // Logic to calculate the number of correct answers based on user responses.
     if (questions[index].options) {
       return acc + (userAnswer === questions[index].correctAnswerIndex ? 1 : 0);
     }
@@ -66,9 +74,12 @@ function Quiz({ questions }) {
     return acc + trueCount / numPairs;
   }, 0);
 
+  // Calculate the percentage of correct answers.
   const percentageCorrect = (numCorrectAnswers / questions.length) * 100;
 
+  // Function to restart the quiz.
   const restartQuiz = () => {
+    // Logic to reset the quiz to its initial state.
     setCurrentQuestionIndex(0);
     setUserAnswers(Array(questions.length).fill(null));
     setAnswered(false);
@@ -76,7 +87,9 @@ function Quiz({ questions }) {
     setPairResults(Array(questions.length).fill([]));
   };
 
+  // useEffect to handle the end of the quiz.
   useEffect(() => {
+    // Logic to handle quiz ending and reset when all questions are answered.
     if (currentQuestionIndex === questions.length) {
       setAnswered(false);
       setQuizFinished(true);
@@ -130,20 +143,21 @@ function Quiz({ questions }) {
   );
 }
 
+// PropTypes for documenting the expected props.
 Quiz.propTypes = {
   questions: PropTypes.arrayOf(
     PropTypes.shape({
-      question: PropTypes.string.isRequired,
+      question: PropTypes.string.isRequired, // The text of the quiz question.
       options: PropTypes.arrayOf(
         PropTypes.shape({
-          text: PropTypes.string.isRequired,
-          id: PropTypes.number.isRequired,
+          text: PropTypes.string.isRequired, // The text of the answer option.
+          id: PropTypes.number.isRequired, // A unique identifier for the option.
         }),
-      ).isRequired,
-      correctAnswerIndex: PropTypes.number.isRequired,
-      pairs: PropTypes.arrayOf(PropTypes.shape({})),
+      ).isRequired, // An array of answer options.
+      correctAnswerIndex: PropTypes.number.isRequired, // The index of the correct answer option.
+      pairs: PropTypes.arrayOf(PropTypes.shape({})), // An optional array of pair-based questions and answers.
     }),
-  ).isRequired,
+  ).isRequired, // An array of quiz questions and related information.
 };
 
 export default Quiz;

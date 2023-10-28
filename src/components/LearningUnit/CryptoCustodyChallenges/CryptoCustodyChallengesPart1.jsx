@@ -2,6 +2,12 @@ import Challenge from '../../../images/courseExpert/challengequestion.png';
 import CryptoCustodyChallengesSources from './CryptoCustodyChallengesSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Herausforderungen & Zukunftsaussichten" (Challenges & Future Prospects) section for crypto custody.
+ * It discusses the challenges faced in crypto asset custody, including regulation, data privacy, costs, security, insurance, scalability, and transparency.
+ * This component also includes an image illustrating the concept of challenges in crypto custody.
+ */
+
 function CryptoCustodyChallengesPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

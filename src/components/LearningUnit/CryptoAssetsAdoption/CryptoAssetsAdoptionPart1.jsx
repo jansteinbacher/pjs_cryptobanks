@@ -1,6 +1,12 @@
 import Popularity from '../../../images/courseAdvanced/Bekanntheitsgrad Kryptoassets und Blockchain 1.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 1 of a section related to the adoption of Cryptoassets in society.
+ * This section presents demographic aspects and the popularity of cryptoassets among surveyed students.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

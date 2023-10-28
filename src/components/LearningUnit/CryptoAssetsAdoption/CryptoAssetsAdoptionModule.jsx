@@ -11,7 +11,9 @@ import CryptoAssetsAdoptionPart9 from './CryptoAssetsAdoptionPart9';
 import CryptoAssetsAdoptionPart10 from './CryptoAssetsAdoptionPart10';
 import CryptoAssetsAdoptionQuiz from './CryptoAssetsAdoptionQuiz';
 
+// CryptoAssetAdoptionModule component organizes sections related to crypto asset adoption
 function CryptoAssetAdoptionModule() {
+  // Define an array of sections to be included in this module
   const sections = [
     CryptoAssetsAdoptionPart1,
     CryptoAssetsAdoptionPart2,
@@ -26,6 +28,7 @@ function CryptoAssetAdoptionModule() {
     CryptoAssetsAdoptionQuiz,
   ];
 
+  // Render the Module component with the defined sections and page path
   return <Module sections={sections} pagePath="/crypto-asset-adoption" />;
 }
 

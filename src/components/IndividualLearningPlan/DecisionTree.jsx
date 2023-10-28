@@ -68,10 +68,21 @@ import {
   CryptoCustodyChallengesPart2,
 } from '../LearningUnit';
 
+/**
+ * The DecisionTree component controls the flow of a user's learning journey,
+ * offering a series of questions with answers to guide them through different sections
+ * related to crypto assets and blockchain topics. Based on the user's responses,
+ * relevant sections are dynamically added to the learning module, resulting in a personalized
+ * learning experience. This component utilizes React state management to keep track
+ * of the current question and the sections to display, offering a flexible and interactive
+ * way to explore educational content.
+ */
+
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [sections, setSections] = useState([IndividualLearningIntroduction]);
 
+  // Define an array of questions, each with possible answers and associated state key.
   const questions = [
     {
       question: 'Möchtest du eine Übersicht zu Kryptoassets bekommen?',
@@ -140,8 +151,11 @@ function DecisionTree() {
     },
   ];
 
+  // Handle the update when an answer is selected.
   const handleAnswerUpdate = (stateKey, answer) => {
+    // Increment the current question.
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+    // Depending on the selected answer and stateKey, add relevant sections to the list of sections.
     if (answer === 'Ja' && stateKey === 'cryptoAssets') {
       const newSections = [
         ...sections,
@@ -276,6 +290,7 @@ function DecisionTree() {
     }
   };
 
+  // Get the current question data based on the current question index.
   const currentQuestionData = questions[currentQuestion];
 
   return (

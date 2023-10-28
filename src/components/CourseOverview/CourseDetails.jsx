@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-// display the course details (description, time, video) depending on selected Course
 
+// display the course details (description, time, video) depending on selected Course
 function CourseDetails({ selectedCourse }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

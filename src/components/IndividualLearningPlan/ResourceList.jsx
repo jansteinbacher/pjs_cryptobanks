@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+// ResourceListComponent component can be used to display a list of resources with titles, links, and durations
 function ResourceListComponent({ title, links }) {
   return (
     <li className="mb-8">
@@ -18,16 +19,17 @@ function ResourceListComponent({ title, links }) {
   );
 }
 
+// Define the expected prop types for the ResourceListComponent component
 ResourceListComponent.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired, // Requires a string for the title
   links: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-      to: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      duration: PropTypes.string.isRequired,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired, // Requires an ID which can be a string or number
+      to: PropTypes.string.isRequired, // Requires a string for the link destination
+      label: PropTypes.string.isRequired, // Requires a string for the link label
+      duration: PropTypes.string.isRequired, // Requires a string for the duration
     }),
   ).isRequired,
 };
 
-export default ResourceListComponent;
+export default ResourceListComponent; // Export the ResourceListComponent component

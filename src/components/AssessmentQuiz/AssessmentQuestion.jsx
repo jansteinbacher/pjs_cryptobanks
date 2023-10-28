@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// This component represents an assessment question with answer options.
 function AssessmentQuestion({
   question,
   options,
@@ -31,12 +32,12 @@ function AssessmentQuestion({
   );
 }
 
-// Define the expected prop types for the AssessmentQuestion component
+// PropTypes for documenting the expected props.
 AssessmentQuestion.propTypes = {
-  question: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  handleAnswerSelect: PropTypes.func.isRequired,
-  answered: PropTypes.bool.isRequired,
+  question: PropTypes.string.isRequired, // The assessment question text.
+  options: PropTypes.arrayOf(PropTypes.string).isRequired, // An array of answer options.
+  handleAnswerSelect: PropTypes.func.isRequired, // The function to handle answer selection.
+  answered: PropTypes.bool.isRequired, // A flag indicating whether the question has been answered.
 };
 
 export default AssessmentQuestion;

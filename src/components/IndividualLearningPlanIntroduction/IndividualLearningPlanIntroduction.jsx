@@ -1,3 +1,4 @@
+// IndividualLearningPlanIntroduction component displays an introduction to the individual learning plan
 function IndividualLearningPlanIntroduction() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

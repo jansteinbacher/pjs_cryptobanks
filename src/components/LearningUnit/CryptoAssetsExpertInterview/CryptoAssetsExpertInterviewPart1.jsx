@@ -1,5 +1,10 @@
 import ExpertInterviewIntroductionVideo from '../../../videos/expertInterviewIntroduction.mp4';
 
+/**
+ * Component representing the first part of the Crypto Assets Expert Interview section.
+ * It provides an introduction to expert interviews and includes a video component.
+ */
+
 function CryptoAssetsExpertInterviewPart1() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

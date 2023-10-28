@@ -2,6 +2,12 @@ import CryptoSet from '../../../images/courseAdvanced/cryptoSet.jpg';
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the Crypto Asset Services module.
+ * It discusses potential crypto services with a focus on crypto trading.
+ * It includes a story about Simone and references external sources.
+ */
+
 function CryptoAssetServicesPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

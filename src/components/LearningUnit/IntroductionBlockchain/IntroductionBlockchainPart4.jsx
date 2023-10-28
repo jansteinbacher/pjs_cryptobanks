@@ -1,6 +1,10 @@
-import dltvideo from '../../../images/courseBeginner/DLT.mp4';
+import dltvideo from '../../../videos/DLT.mp4';
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 import { StoryBoxBernd } from '../../StoryBox';
+
+/**
+ * Component representing the third part of the "Blockchain-Technologie" (Blockchain Technology) section. In this part, the distinction between blockchain technology and Distributed Ledger Technology (DLT) is explained. It highlights the similarities and differences between blockchain and DLT, focusing on their approaches to decentralized data management, transaction transparency, and consensus mechanisms. The component features a video to enhance the understanding of the topic. Bernd's questions about DLT are addressed to provide context and real-world relevance.
+ */
 
 function IntroductionBlockchainPart3() {
   const isComingFromPreviousPage = window.location.search.includes(

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-// styling of fact that is displayed on fact check page. element expands if clicked on it
 
+// styling of fact that is displayed on fact check page. element expands if clicked on it
 function FactCheckMyth({ myth, onToggle }) {
   return (
     <div className="sources border border-gray-400 rounded p-4 mb-12">

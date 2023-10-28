@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import AssessmentQuestion from './AssessmentQuestion';
 import AssessmentProgress from './AssessmentProgress';
 import AssessmentSummary from './AssessmentSummary';
-//Assessment Quiz on Course Overview Page to check which course fits to you
 
+//  Assessment Quiz on Course Overview Page to check which course fits to you
 function AssessmentQuiz() {
-  //Array of questions displayed in assessment quiz
+  //  Array of questions displayed in assessment quiz
   const questions = [
     {
       question: 'Was versteht man unter Kryptowährungen?',
@@ -68,7 +68,7 @@ function AssessmentQuiz() {
   const [answered, setAnswered] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
 
-  //get the chosen answer of user and check is it is true, then display next question
+  //  get the chosen answer of user and check is it is true, then display next question
   const handleAnswerSelect = (answerIndex) => {
     if (!answered) {
       const newUserAnswers = [...userAnswers];
@@ -88,7 +88,7 @@ function AssessmentQuiz() {
     }
   };
 
-  //number of correct answers
+  //  number of correct answers
   const numCorrectAnswers = userAnswers.filter(
     (userAnswer, index) => userAnswer === questions[index].correctAnswerIndex,
   ).length;

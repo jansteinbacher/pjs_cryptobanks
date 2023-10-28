@@ -1,7 +1,7 @@
 import CourseIntroduction from '../../CourseIntroduction';
 import SimoneVideo from '../../../videos/characterSimoneIntroduction.mp4';
-// fill the introduction page of the advanced course with content
 
+// fill the introduction page of the advanced course with content
 function CourseAdvancedIntroduction() {
   return (
     <CourseIntroduction

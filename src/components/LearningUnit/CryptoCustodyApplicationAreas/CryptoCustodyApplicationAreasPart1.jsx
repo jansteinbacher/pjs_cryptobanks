@@ -2,6 +2,12 @@ import Anwendungsbereiche from '../../../images/courseExpert/overviewAnwendungsb
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the Crypto Custody Application Areas section.
+ * It provides an overview of different types of crypto custody solutions and their importance
+ * in the crypto asset ecosystem, emphasizing security, private key storage, and transaction authorization.
+ */
+
 function CryptoCustodyApplicationAreasPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

@@ -6,6 +6,11 @@ import Marc from '../../../images/experts/marc.jpeg';
 import Placeholder from '../../../images/experts/placeholder.jpg';
 import './CryptoAssetsExpertInterview.css';
 
+/**
+ * Component representing the second part of the Crypto Assets Expert Interview section.
+ * It displays images and details of the experts involved in the interviews.
+ */
+
 function CryptoAssetsExpertInterviewPart2() {
   // An array of image objects with unique IDs
   const imageList = [

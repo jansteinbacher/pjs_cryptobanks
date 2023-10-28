@@ -8,6 +8,11 @@ import Placeholder from '../../../images/experts/placeholder.jpg';
 import ExpertCharacteristics from '../../ExpertCharacteristics';
 import CryptoAssetsExpertInterviewSources from './CryptoAssetsExpertInterviewSources';
 
+/**
+ * Component representing the expert profiles for the Crypto Assets Expert Interview section.
+ * It displays information about various experts, including their names, images, and characteristics.
+ */
+
 function CryptoAssetsExpertInterviewPart8() {
   const expertData = [
     {

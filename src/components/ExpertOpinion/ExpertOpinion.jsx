@@ -9,7 +9,9 @@ function ExpertOpinion({ showFootnote, showHeadline, paragraphs }) {
           Aus diesem Grund ist für dich und deine Bank das Thema relevant:
         </h2>
       )}
-      <div className="p-6 mb-12 bg-indigo-200 rounded-lg"> {/* Blue background for the expert opinion */}
+      <div className="p-6 mb-12 bg-indigo-200 rounded-lg">
+        {' '}
+        {/* Blue background for the expert opinion */}
         <h3 className="text-xl font-semibold text-gray-800 mb-4 underline">
           Expertenmeinungen{showFootnote ? '*' : ''}
         </h3>

@@ -3,6 +3,10 @@ import CryptoSecurity from '../../../images/courseBeginner/ewpg.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the fourth part of the "Types of Crypto Assets and Their Connection to Traditional Financial Products" section. This part introduces Security Tokens, provides an image with interactive hover functionality to reveal additional information about this crypto asset category, and includes a story element for context.
+ */
+
 function TypesOfCryptoAssetsPart4() {
   const [hovered, setHovered] = useState(false);
 

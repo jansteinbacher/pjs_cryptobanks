@@ -2,6 +2,12 @@ import Handshake from '../../../images/courseAdvanced/handshake.jpg';
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the sixth part of the Crypto Asset Services module.
+ * It discusses Krypto-Kredite (crypto loans) and how they differ from traditional loans.
+ * The use of collateral in the form of Kryptoassets and the potential liquidation of collateral is explained.
+ */
+
 function CryptoAssetServicesPart6() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

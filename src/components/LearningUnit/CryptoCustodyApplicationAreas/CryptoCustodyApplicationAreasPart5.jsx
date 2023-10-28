@@ -1,6 +1,12 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the fifth part of the Crypto Custody Application Areas section.
+ * It provides information about various methods of key storage, including Hardware Wallets and Hardware Security Modules (HSMs),
+ * discussing their advantages in enhancing security and their potential limitations.
+ */
+
 function CryptoCustodyApplicationAreasPart5() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

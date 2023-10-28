@@ -2,6 +2,12 @@ import Knockledge from '../../../images/courseAdvanced/Wissensauspraegung_Krypto
 import Knockledge2 from '../../../images/courseAdvanced/Kryptoassets_Kenntnisse.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 2 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on assessing the knowledge level of surveyed students regarding cryptoassets and which specific cryptoassets they are familiar with.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

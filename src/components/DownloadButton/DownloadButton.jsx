@@ -1,4 +1,3 @@
-// Import React, PropTypes, and the FaFilePdf icon from react-icons
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FaFilePdf } from 'react-icons/fa';

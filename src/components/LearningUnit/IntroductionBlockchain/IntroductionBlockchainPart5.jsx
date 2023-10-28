@@ -1,6 +1,10 @@
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the fifth part of the "Blockchain-Technologie" (Blockchain Technology) section. In this part, the focus is on the practical applications of blockchain technology. The component covers topics such as tokenization, smart contracts, decentralized finance, and their impact on various industries, including the transport and supply chain management sectors. Bernd's curiosity about the applications of blockchain and Distributed Ledger Technology (DLT) is addressed, providing real-world relevance to the content.
+ */
+
 function IntroductionBlockchainPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

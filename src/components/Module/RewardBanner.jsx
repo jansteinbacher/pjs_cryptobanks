@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// RewardBanner component to display an achievement message
 function RewardBanner({ sectionIndex }) {
   return (
     <div className="reward-banner">
@@ -11,8 +12,9 @@ function RewardBanner({ sectionIndex }) {
   );
 }
 
+// Define prop types for the RewardBanner component
 RewardBanner.propTypes = {
-  sectionIndex: PropTypes.number.isRequired,
+  sectionIndex: PropTypes.number.isRequired, // The index of the completed section
 };
 
 export default RewardBanner;

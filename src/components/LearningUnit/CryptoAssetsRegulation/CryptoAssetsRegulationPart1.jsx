@@ -2,6 +2,12 @@ import Regulation from '../../../images/courseAdvanced/regulation.jpg';
 import CryptoAssetsRegulationSources from './CryptoAssetsRegulationSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the Crypto Assets Regulation section.
+ * It provides information about the regulatory landscape for crypto assets
+ * and includes content about the current legal framework, compliance issues, and the need for increased regulation.
+ */
+
 function CryptoAssetsRegulationPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

@@ -3,8 +3,8 @@ import { PiCertificate } from 'react-icons/pi';
 import { VscChecklist } from 'react-icons/vsc';
 import PropTypes from 'prop-types';
 import DownloadButton from '../DownloadButton';
-// Display the Icons and Links to get Certificate, Summary and the Checklist, Usage of DownloadButton Component
 
+// Display the Icons and Links to get Certificate, Summary and the Checklist, Usage of DownloadButton Component
 function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
   return (
     <div className="lg:w-1/2 mx-auto px-40">

@@ -4,6 +4,10 @@ import AssetCategories from '../../../images/courseBeginner/assetcategories.png'
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Types of Crypto Assets and Their Connection to Traditional Financial Products" section. This part introduces various types of crypto assets and their connection to traditional financial products. It provides an image with interactive hover functionality to reveal additional information about the asset categories.
+ */
+
 function TypesOfCryptoAssetsPart1() {
   const [hovered, setHovered] = useState(false);
 

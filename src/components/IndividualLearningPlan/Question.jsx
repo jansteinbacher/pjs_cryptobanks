@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// Question component displays a question and answer buttons
 function Question({ question, answers, updateAnswer }) {
   return (
     <div
@@ -22,10 +23,11 @@ function Question({ question, answers, updateAnswer }) {
     </div>
   );
 }
+// Define the expected prop types for the Question component
 Question.propTypes = {
-  question: PropTypes.string.isRequired,
-  answers: PropTypes.arrayOf(PropTypes.string).isRequired,
-  updateAnswer: PropTypes.func.isRequired,
+  question: PropTypes.string.isRequired, // Requires a string for the question
+  answers: PropTypes.arrayOf(PropTypes.string).isRequired, // Requires an array of strings for answers
+  updateAnswer: PropTypes.func.isRequired, // Requires a function to handle answer updates
 };
 
 export default Question;

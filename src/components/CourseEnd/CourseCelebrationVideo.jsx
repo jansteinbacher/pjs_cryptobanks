@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-// display the course celebration Video on the End Page of the Courses in a muted loop
 
+// display the course celebration Video on the End Page of the Courses in a muted loop
 function CourseCelebrationVideo({ videoSource }) {
   return (
     <div className="lg:w-1/2">

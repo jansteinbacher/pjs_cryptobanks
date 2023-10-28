@@ -2,6 +2,12 @@ import Image1 from '../../../images/courseAdvanced/Art_WeiseBankberatung.png';
 import Image2 from '../../../images/courseAdvanced/Aufbereitung_Informationen.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 5 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on the desired bank advisory services and information presentation preferences of the survey participants.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

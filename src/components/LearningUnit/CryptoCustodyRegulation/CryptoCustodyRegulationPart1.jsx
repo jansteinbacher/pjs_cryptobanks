@@ -2,6 +2,11 @@ import Bafin from '../../../images/courseExpert/bafin.png';
 import CryptoCustodyRegulationSources from './CryptoCustodyRegulationSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Regulatorik zu Kryptoverwahrung" (Regulation for Crypto Custody) section, which provides information on the regulation of crypto custody in Germany. The content includes definitions, applicable IFRS standards, criteria for asset separation, valuation, disclosure, and future developments. The information is based on responses received from BaFin (Federal Financial Supervisory Authority) as part of Tobias's exploration of crypto custody regulation.
+ * This component also includes an image of the BaFin logo.
+ */
+
 function CryptoCustodyRegulationPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

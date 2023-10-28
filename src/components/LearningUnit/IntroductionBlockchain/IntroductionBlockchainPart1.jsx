@@ -2,6 +2,11 @@ import Blockchain from '../../../images/courseBeginner/blockchain.png';
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Blockchain-Technologie" (Blockchain Technology) section. This part introduces the fundamental concepts of blockchain technology, including its underlying principles and key characteristics. It highlights the functionality of blockchain, different consensus mechanisms like PoW (Proof of Work) and PoS (Proof of Stake), and the distinction between blockchain and Distributed Ledger Technology (DLT). The application areas and historical context of blockchain are also briefly discussed. Additionally, it features a story involving Bernd and his colleague Tobias to enhance the learning experience.
+ * This component includes an image depicting the structure of a blockchain.
+ */
+
 function IntroductionBlockchainPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

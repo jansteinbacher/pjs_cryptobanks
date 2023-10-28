@@ -1,3 +1,7 @@
+/**
+ * Component for summarizing key takeaways from the section on Cryptoassets adoption. It provides insights into customer sentiments and suggests that banks need to carefully analyze survey results and develop strategies to establish a strong presence in the cryptocurrency market.
+ */
+
 function CryptoAssetsAdoptionPart10() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

@@ -5,6 +5,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import SearchBox from './SearchBox';
 import LearningUnitTile from './LearningUnitTile';
 
+// Define an array of learning units with term, explanation, link, and level.
 function Overview() {
   const learningUnits = [
     {

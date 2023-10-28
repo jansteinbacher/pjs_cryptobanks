@@ -2,6 +2,10 @@ import Regulation from '../../../images/courseAdvanced/cryptoassetSafekeeping.jp
 import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Definition und Grundlagen der Kryptoverwahrung" (Definition and Basics of Crypto Custody) section. This part introduces the concept of crypto custody and its importance in the secure management of crypto assets. It also touches upon the challenges related to balancing customer needs and security.
+ */
+
 function IntroductionCryptoCustodyPart1() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

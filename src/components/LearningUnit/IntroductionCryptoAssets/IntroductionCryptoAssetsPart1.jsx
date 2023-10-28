@@ -4,6 +4,10 @@ import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter1Audio from '../../../audio/chapter11.mp3';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the first part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. In this part, the component provides historical context about Kryptoassets, specifically focusing on the enigmatic creator of Bitcoin, Satoshi Nakamoto. Bernd's curiosity and questions about Nakamoto's identity are addressed, shedding light on the origins of cryptocurrency and its evolution into a broader ecosystem of cryptographic assets, including digital currency, smart contracts, and NFTs. The component includes an audio element for listening convenience.
+ */
+
 function IntroductionCryptoAssetsPart1() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

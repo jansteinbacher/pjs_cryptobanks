@@ -1,5 +1,10 @@
 import Sources from '../../Sources/Sources';
 
+/**
+ * Component for displaying sources of information related to Crypto Assets Expert Interviews.
+ * It provides a list of sources with links to external websites where additional information can be found.
+ */
+
 const sources = [
   {
     id: '1',

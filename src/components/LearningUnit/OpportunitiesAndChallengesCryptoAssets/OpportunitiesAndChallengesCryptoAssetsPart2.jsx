@@ -1,5 +1,9 @@
 import OpportunitiesAndChallengesCryptoAssetsSources from './OpportunitiesAndChallengesCryptoAssetsSources';
 
+/**
+ * Component representing the second part of the "Opportunities and Challenges of Crypto Assets" section. This part focuses on the future prospects of crypto assets, including the potential for new forms of capital raising, tokenization, and the use of smart contracts. It discusses how security token offerings (STOs), non-fungible tokens (NFTs), and smart contracts can transform the financial landscape.
+ */
+
 function OpportunitiesAndChallengesPart2() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

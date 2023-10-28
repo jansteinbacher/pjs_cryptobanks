@@ -5,6 +5,7 @@ import CourseIcon from '../../images/courseIcon.png';
 import Logo from '../../images/Logo.png';
 import DownloadButton from '../DownloadButton';
 
+// IndividualLearningPlanEnd component displays a summary and options after completing an individual course
 function IndividualLearningPlanEnd() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg min-h-screen">
@@ -23,9 +24,9 @@ function IndividualLearningPlanEnd() {
           </p>
 
           <DownloadButton
-            icon={<VscChecklist />}
-            downloadLink="downloads/checklist.pdf"
-            text="Checkliste herunterladen"
+            icon={<VscChecklist />} // Display the VscChecklist icon
+            downloadLink="downloads/checklist.pdf" // Provide the download link
+            text="Checkliste herunterladen" // Display the button text
           />
         </div>
         <div>

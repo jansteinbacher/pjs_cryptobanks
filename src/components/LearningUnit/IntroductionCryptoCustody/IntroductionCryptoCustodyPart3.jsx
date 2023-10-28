@@ -1,6 +1,10 @@
 import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the third part of the "Definition und Grundlagen der Kryptoverwahrung" (Definition and Basics of Crypto Custody) section. This part introduces the concept of "Kryptographische Schlüsse" (Cryptographic Keys) in the context of crypto custody. It explains the two main categories of keys: public keys and private keys and their role in transactions and secure custody of crypto assets.
+ */
+
 function IntroductionCryptoCustodyPart3() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');
