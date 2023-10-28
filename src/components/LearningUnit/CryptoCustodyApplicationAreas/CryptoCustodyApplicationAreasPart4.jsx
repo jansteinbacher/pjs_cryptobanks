@@ -22,7 +22,7 @@ function CryptoCustodyApplicationAreasPart4() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Eine <strong>Hot Wallet</strong> ist direkt mit dem Internet verbunden
         und ermöglicht somit einen bequemen und sofortigen Zugriff auf
         Kryptoassets. Dieser Verbindungstyp wird typischerweise für alltägliche
@@ -36,7 +36,7 @@ function CryptoCustodyApplicationAreasPart4() {
         <a href="#sources">[3]</a>.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Im Kontrast dazu ist die <strong>Cold Wallet</strong> nicht mit dem
         Internet verbunden und daher im Vergleich zu Hot Wallets sicherer vor
         potenziellen Cyberangriffen. Aus diesem Grund werden Cold Wallets
@@ -48,7 +48,7 @@ function CryptoCustodyApplicationAreasPart4() {
         Schlüssels auf einem Stück Papier <a href="#sources">[3]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Eine Zwischenlösung stellt die <strong>Warm Wallet</strong> dar. Diese
         vereint die Zugänglichkeit von Hot Wallet mit der Sicherheit der Cold
         Wallet. Demnach sind diese Verwahrlösungen mit dem Internet verbunden,

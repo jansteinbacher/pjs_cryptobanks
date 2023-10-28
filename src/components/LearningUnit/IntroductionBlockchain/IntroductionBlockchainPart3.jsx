@@ -37,7 +37,7 @@ function IntroductionBlockchainPart2() {
         Proof of Work
       </h3>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Proof of Work (PoW) ist ein Konsensmechanismus, der zum Beispiel im
         Bitcoin-Netzwerk verwendet wird. Miner lösen komplexe mathematische
         Rätsel, um neue Blöcke zur Blockchain hinzuzufügen. Dies erfordert
@@ -49,7 +49,7 @@ function IntroductionBlockchainPart2() {
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Proof of Stake
       </h3>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Proof of Stake (PoS) wird in Kryptowährungen wie Ethereum und Cardano
         eingesetzt. Statt Rechenleistung setzen Teilnehmer Kryptowährung als
         Stake ein. Zum Beispiel können Inhaber von Ethereum Token ihre Coins als

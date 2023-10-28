@@ -19,7 +19,7 @@ function CryptoCustodyApplicationAreasPart6() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Bei <strong>Shamirs Secret Sharing (SSS)</strong> wird ein Geheimnis in
         mehrere Teile, gennant “Shares” unter eine Gruppe von Teilnehmern
         verteilt, wobei nur eine spezifische Teilmenge von Teilnehmern das
@@ -29,7 +29,7 @@ function CryptoCustodyApplicationAreasPart6() {
         genügenden Shares besitzen <a href="#sources">[6].</a>
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Im Gegensatz dazu erfordert <strong>Multi Signature (MultiSig)</strong>{' '}
         mehrere private Schlüssel, um eine Transaktion zu autorisieren. Dieses
         Verfahren ermöglicht mehrere Anwendungen, unter anderem die Aufteilung
@@ -39,7 +39,7 @@ function CryptoCustodyApplicationAreasPart6() {
         (Seeds) <a href="#sources">[7]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die <strong>Treshhold-Signature</strong> lässt sich nochmal weiter
         untergliedern in die
         <strong>“Threshold Cryptography”</strong> und die{' '}

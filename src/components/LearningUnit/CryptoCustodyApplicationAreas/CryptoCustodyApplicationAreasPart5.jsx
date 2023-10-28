@@ -21,7 +21,7 @@ function CryptoCustodyApplicationAreasPart5() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Eine <strong>Hardware-Wallet</strong> bietet ein hohes Maß an
         Sicherheit, indem der private Schlüssel auf einem physischen Gerät, wie
         einer Festplatte gespeichert wird und so das Risiko von Cyberangriffen
@@ -30,7 +30,7 @@ function CryptoCustodyApplicationAreasPart5() {
         .
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Wiederum sind <strong>Hadware Sicherheitsmodule</strong> (HSMs)
         besonders manipulationssichere physische Geräte, die zusätzlich
         Funktionen wie Verschlüsselung, Entschlüsselung und Authentifizierung

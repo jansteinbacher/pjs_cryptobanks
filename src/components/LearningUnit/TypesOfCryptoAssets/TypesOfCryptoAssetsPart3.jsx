@@ -41,7 +41,7 @@ function TypesOfCryptoAssetsPart3() {
 
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-justify font-semibold ml-4 mr-4 text-gray-800">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
               Utility Token werden auch als “App-Token” bzw. “Nutzungstoken”
               bezeichnet. Dabei wird dem Investor ein bestimmtes Nutzungsrecht
               zur Verfügung gestellt. Er kann also mithilfe des Tokens eine

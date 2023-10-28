@@ -17,20 +17,20 @@ function IntroductionCryptoCustodyPart3() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Kryptographische Schlüsse
       </h2>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Wie bereits erwähnt, kommen kryptographische Schlüssel als digitale
         Signaturen zur Durchführung von Transaktionen mit digitalen
         Vermögenswerten zum Einsatz.{' '}
       </p>{' '}
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Es gibt zwei Hauptkategorien von Schlüsseln:{' '}
         <strong>öffentliche</strong> und <strong>private Schlüssel</strong>.{' '}
       </p>{' '}
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong>Öffentliche Schlüssel</strong> sind, wie der Name schon sagt,
         öffentlich zugänglich und dienen dazu, Transaktionen zu empfangen.{' '}
       </p>{' '}
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die <strong>privaten Schlüssel</strong> hingegen sind von entscheidender
         Bedeutung für die sichere Verwahrung von Kryptoassets. Sie gewähren dem
         Nutzer Zugriff auf seine digitalen Vermögenswerte und dienen

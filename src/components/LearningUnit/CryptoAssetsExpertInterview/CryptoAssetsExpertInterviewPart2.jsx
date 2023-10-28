@@ -40,7 +40,7 @@ function CryptoAssetsExpertInterviewPart2() {
         Weitere Interviewpartner ohne Bild:
         <br /> Stefan Teis und Matthias Niemietz
       </p>
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Jeder unserer Interviewpartner verfügt über eine einzigartige
         Perspektive und bietet wertvolle Einsichten in die Welt der
         Kryptoassets. Ihre Erfahrungen, Meinungen und Prognosen sind von
@@ -51,7 +51,7 @@ function CryptoAssetsExpertInterviewPart2() {
         Persönlichkeiten sind maßgeblich an der Gestaltung der Zukunft der
         Finanzwelt beteiligt und teilen gerne ihr Wissen und ihre Einblicke.
       </p>
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Die Aufrechterhaltung der Anonymität unserer Experten liegt uns am
         Herzen. Daher findest du folgend anonymiserte Kernaussagen aus den von
         uns geführten Interviews zu den Themen: Auswirkungen von Kryptoassets
@@ -63,7 +63,7 @@ function CryptoAssetsExpertInterviewPart2() {
         Bankenbranche in Bezug auf Kryptoassets.
       </p>
       <p>
-        <span className="font-bold text-justify">
+        <span className="font-bold text-left">
           Steckbriefe zu unseren Interviewpartnern
         </span>{' '}
         findest du am Ende unserer Interviewreihe.

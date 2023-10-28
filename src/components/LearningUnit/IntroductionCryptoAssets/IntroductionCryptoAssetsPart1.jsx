@@ -51,7 +51,7 @@ function IntroductionCryptoAssetsPart1() {
         </audio>
       </div>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Seit der Einführung von der Kryptowährung <strong>Bitcoin</strong> (BTC)
         2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto
         skizziert wurden, hat sich die Welt der blockchainbasierten digitalen
@@ -59,7 +59,7 @@ function IntroductionCryptoAssetsPart1() {
         <strong>Satoshi Nakamoto</strong>
         unbekannt <a href="#sources">[1]</a>.{' '}
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Seine Identität unterliegt vielen Mythen und Theorien. Es ist möglich,
         dass seine Identität für immer unbekannt bleibt. Inzwischen ist die Zahl
         an verschiedenen Token weltweit auf über 22.000 angewachsen. Die Vision
@@ -68,7 +68,7 @@ function IntroductionCryptoAssetsPart1() {
         genannt ­– zu ersetzen <a href="#sources">[1]</a>,{' '}
         <a href="#sources">[2]</a>.{' '}
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Die ursprüngliche Vision Nakamotos hat sich mittlerweile hin zu einem
         umfassenden Ökosystem kryptografischer Vermögenswerte entwickelt, die
         allgemein als Kryptoassets bezeichnet werden. Diese Kryptoassets
@@ -81,7 +81,7 @@ function IntroductionCryptoAssetsPart1() {
         <strong>Besitznachweise für digitale Kunst</strong> (Non-Fungible
         Tokens, NFTs) <a href="#sources">[2]</a>.{' '}
       </p>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Mehr dazu in Kapitel 3 „Arten von Kryptoassets und ihre Verbindung zu
         traditionellen Finanzprodukten”.
       </p>

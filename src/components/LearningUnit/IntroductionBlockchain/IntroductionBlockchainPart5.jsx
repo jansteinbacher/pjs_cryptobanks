@@ -19,7 +19,7 @@ function IntroductionBlockchainPart5() {
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Tokenisierung
       </h3>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die Tokenisierung ist eine Anwendung der Blockchain-Technologie, bei der
         digitale Vermögenswerte in tokenisierter Form auf einer dezentralen
         Blockchain-Plattform erstellt und verwaltet werden. Dies ermöglicht die
@@ -33,7 +33,7 @@ function IntroductionBlockchainPart5() {
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Smarte Verträge und dezentrales Finanzwesen
       </h3>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Mit dem Aufkommen vieler neuerer Blockchains wie Ethereum ist es
         möglich, Anwendungen auf der Blockchain mithilfe von sogenannten Smart
         Contracts zu erstellen. Ein Smart Contract ist ein selbstausführender
@@ -48,7 +48,7 @@ function IntroductionBlockchainPart5() {
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Transportwesen und Supply-Chain-Management
       </h3>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Im Transportwesen und im Supply-Chain Management ermöglicht die
         Blockchain-Technologie die lückenlose Nachverfolgung von Produkten
         entlang der Lieferkette, was zu erhöhter Transparenz und Authentizität

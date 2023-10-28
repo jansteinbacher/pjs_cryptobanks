@@ -46,7 +46,7 @@ function TypesOfCryptoAssetsPart4() {
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
             <div className="ml-4 mr-4">
-              <p className="text-justify mb-8 mr-4 font-semibold text-gray-800">
+              <p className="text-left mb-8 mr-4 font-semibold text-gray-800">
                 Im Gegensatz zu Utility Token handelt es sich bei Security Token
                 um Vermögenswerte. Die regulatorischen Bestimmungen von Security
                 Token sind vergleichbar mit denen der traditionellen

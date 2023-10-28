@@ -41,7 +41,7 @@ function TypesOfCryptoAssetsPart5() {
 
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-justify font-semibold ml-4 mr-4 text-gray-800">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
               NFTs sind Non-fungible Token. Das Besondere an diesen Token ist,
               dass jeder NFT einzigartig ist. Ein NFT stellt also das Eigentum
               an einem Vermögensgegenstand mit bestimmten Eigenschaften dar, wie

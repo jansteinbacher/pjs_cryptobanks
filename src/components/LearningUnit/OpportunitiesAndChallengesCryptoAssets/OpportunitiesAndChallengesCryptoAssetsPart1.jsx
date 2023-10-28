@@ -28,7 +28,7 @@ function TypesOfCryptoAssetsSources() {
         Herausforderungen von Kryptoassets
       </h2>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Eine der bisher größten Herausforderungen der Blockchain-Technologie ist
         die Handhabung mit einer erhöhten Netzwerkauslastung. Durch erhöhtes
         Datenvolumen kann es zu einer Verzögerung von Transaktionen kommen.
@@ -38,7 +38,7 @@ function TypesOfCryptoAssetsSources() {
         und höheren Kosten einher <a href="#sources">[1]</a>.
       </p>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Des Weiteren sind{' '}
         <span className="font-bold">fehlende Regulatorien</span> eine weitere
         Herausforderung von Kryptoassets. So sind beispielsweise aufgrund von
@@ -51,7 +51,7 @@ function TypesOfCryptoAssetsSources() {
         viele Investoren Geld verloren<a href="#sources">[3]</a>.
       </p>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Auch die <span className="font-bold">hohe Volatilität</span> bei
         Kryptowährungen stellt eine Herausforderung dar. Jede Veränderung am
         Markt oder in der Regulatorik bringt starke Preisschwankungen mit sich{' '}
@@ -67,7 +67,7 @@ function TypesOfCryptoAssetsSources() {
         <a href="#sources">[4]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Besonders der <span className="font-bold">hohe Energieverbrauch</span>{' '}
         des Konsensmechanismus Proof of Work wird heiß diskutiert. Alleine das
         minen nach neuen Bitcoins könnte schätzungsweise für für 65,4 Megatonnen

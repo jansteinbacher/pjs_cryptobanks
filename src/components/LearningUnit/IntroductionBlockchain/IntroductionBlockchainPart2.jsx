@@ -31,7 +31,7 @@ function IntroductionBlockchainPart2() {
           Bild von rawpixel.com auf Freepik
         </a>
       </div>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die Blockchain-Technologie umfasst Permissioned und Permissionless
         Blockchains. Beide sind dezentral und transparent. Permissioned
         Blockchains erfordern Zugriffsberechtigungen, während Permissionless

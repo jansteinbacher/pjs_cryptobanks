@@ -21,7 +21,7 @@ function CryptoCustodyRegulationPart1() {
         <img src={Bafin} alt="Bafin Logo" className="w-full md:w-1/2" />
       </div>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Das Kryptoverwahrgeschäft bezieht sich auf eine Finanzdienstleistung,
         bei der es um die sichere Aufbewahrung, Verwaltung und Sicherung von
         Kryptowerten und den zugehörigen privaten kryptografischen Schlüsseln
@@ -30,12 +30,12 @@ function CryptoCustodyRegulationPart1() {
         &ldquo;Krypto-Custodians&rdquo; bezeichnet, angeboten.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Das Kryptoverwahrgeschäft wird nach § 1 Abs. 1a Satz 2 Nr. 6 des
         Gesetzes über das Kreditwesen (Kreditwesengesetz - KWG) definiert als:
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         “Die jeweils für andere erbrachte Verwahrung, Verwaltung und Sicherung
         von Kryptowerten oder privaten kryptografischen Schlüsseln, die dazu
         dienen, Kryptowerte zu halten, zu speichern oder darüber zu verfügen,
@@ -44,7 +44,7 @@ function CryptoCustodyRegulationPart1() {
         <a href="#sources">[1]</a>.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Tatsächlich stellt die Bilanzierung von Kryptoassets für Banken und
         Finanzinstitute eine komplexe Herausforderung dar, da die bestehenden
         IFRS-Standards nicht explizit auf diese Art von Vermögenswerten
@@ -52,7 +52,7 @@ function CryptoCustodyRegulationPart1() {
         <a href="#sources">[2]</a> :
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong className="text-bold">Anwendbare IFRS-Standards: </strong>
         Kryptoassets könnten je nach den spezifischen Eigenschaften als
         immaterielle Vermögenswerte oder Vorräte behandelt werden, was zu einer
@@ -60,7 +60,7 @@ function CryptoCustodyRegulationPart1() {
         (Vorräte) führen könnte.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong className="text-bold">Separierungskritierien: </strong>
         Da Kryptoassets digital sind und oft von verschiedenen Nutzern oder
         Kunden verwahrt werden, ist die Abgrenzung zwischen eigenen
@@ -70,7 +70,7 @@ function CryptoCustodyRegulationPart1() {
         die Bilanzierung korrekt erfolgt.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong className="text-bold">Bewertung: </strong>
         Die Bewertung von Kryptoassets ist ebenfalls kompliziert, da der Markt
         oft volatil ist und es keine etablierten Preise gibt. Eine angemessene
@@ -78,7 +78,7 @@ function CryptoCustodyRegulationPart1() {
         relevanter Faktoren vorgenommen werden.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong className="text-bold">Offenlegung: </strong>
         IFRS erfordern umfassende Offenlegungen, insbesondere bei komplexen oder
         ungewöhnlichen Transaktionen. Banken müssen daher klare Angaben zur
@@ -86,14 +86,14 @@ function CryptoCustodyRegulationPart1() {
         machen.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong className="text-bold">Weiterentwicklung: </strong>
         Da die Welt der Kryptoassets sich schnell entwickelt, könnten zukünftig
         spezifische IFRS-Standards oder -Leitlinien entwickelt werden, um die
         Bilanzierung dieser Vermögenswerte genauer zu regeln.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die <strong>Definition von Kryptowerten</strong> im Rahmen des
         Kreditwesengesetzes (KWG) umfasst digitale Darstellungen von Werten, die
         nicht von Zentralbanken emittiert oder garantiert werden, jedoch von

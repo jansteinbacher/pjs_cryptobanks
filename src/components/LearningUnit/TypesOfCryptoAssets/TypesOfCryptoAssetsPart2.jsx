@@ -52,7 +52,7 @@ function TypesOfCryptoAssetsPart2() {
 
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-justify font-semibold ml-4 mr-4 text-gray-800">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
               Unter Payment Token versteht man sogenannte Zahlungstoken. Mittels
               dieser können Finanztransaktionen durchgeführt werden.
               Kryptowährungen zählen zu den weltweit bekanntesten Payment Token.
@@ -90,7 +90,7 @@ function TypesOfCryptoAssetsPart2() {
 
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-justify font-semibold ml-4 mr-4 text-gray-800">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
               Im Unterschied zu Kryptowährungen ist die Wertentwicklung von
               Stablecoins an einen externen Vermögenswert gebunden, wie etwa
               gesetzliche Zahlungsmittel (z. B. US-Dollar oder Euro) oder andere

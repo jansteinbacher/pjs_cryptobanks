@@ -31,29 +31,29 @@ function IntroductionCryptoAssetsPart4() {
           Your browser does not support the audio element.
         </audio>
       </div>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         <strong>Tokenisierung</strong> wird als der Digitalisierungsprozess
         eines materiellen oder immateriellen Vermögenswertes definiert. Es
         besteht die Möglichkeit jeden Vermögenswert oder jedes Recht in Form
         eines Token zu speichern.
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Dieser Token wird algorithmisch erzeugt, digital dargestellt und kann
         über ein Blockchain-Netzwerk gehandelt werden <a href="#sources">[7]</a>
         ,<a href="#sources">[8]</a>.
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Wichtig ist jedoch, dass hierbei die unterschiedlichen Rechtslagen und
         Rahmenbedingungen eines Landes zu berücksichtigen ist, in dem der Token
         den Vermögenswert darstellt.
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         {' '}
         Nur wenn die zuständigen Landesbehörden das Konzept der Tokenisierung
         anerkennen, kann dieser unter gesetzlichem Rahmen wirksam sein{' '}
         <a href="#sources">[9]</a>.{' '}
       </p>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         <strong>Ethereum Request for Comments (ERC)</strong> ist ein bekannter
         Standard für die Erstellung tokenisierter Formen virtueller
         Vermögenswerte <a href="#sources">[10]</a>.

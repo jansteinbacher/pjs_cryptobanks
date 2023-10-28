@@ -50,7 +50,7 @@ function TypesOfCryptoAssetsPart1() {
 
         {hovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-justify font-semibold ml-4 mr-4 text-gray-800">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
               Es existiert eine vielfältige Auswahl an Kryptoassets. Zu den
               prominentesten zählen Kryptowährungen, NFTs (Non-Fungible Tokens)
               sowie Stablecoins – um nur einige zu nennen. Diese Kryptoassets
