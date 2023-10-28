@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import Sources from './Sources';
-import FactCheckPic from '../images/FactCheck.jpg';
+import Sources from '../Sources';
+import FactCheckPic from '../../images/FactCheck.jpg';
+import FactCheckMyth from './FactCheckMyth';
 
 function FactCheck() {
   const articlesources = [
@@ -47,12 +48,6 @@ function FactCheck() {
     setMyths(updatedMyths);
   };
 
-  const handleKeyPress = (event, index) => {
-    if (event.key === 'Enter') {
-      toggleMyth(index);
-    }
-  };
-
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <div className="flex items-center justify-content mb-12">
@@ -78,22 +73,16 @@ function FactCheck() {
           />
         </div>
       </div>
+      <p className="mb-8 font-bold">
+        Klicke auf die Kachel, um die Überprüfung zu lesen!
+      </p>
 
       {myths.map((myth) => (
-        <div
-          className="sources border border-gray-400 rounded p-4 mb-12"
+        <FactCheckMyth
           key={myth.id}
-        >
-          <button
-            type="button"
-            className="text-lg font-semibold text-gray-800 mb-4 cursor-pointer hover:underline"
-            onClick={() => toggleMyth(myth.id)}
-            onKeyPress={(e) => handleKeyPress(e, myth.id)}
-          >
-            {myth.title} {myth.isOpen ? '↓' : '→'}
-          </button>
-          {myth.isOpen && <p className="text-justify">{myth.content}</p>}
-        </div>
+          myth={myth}
+          onToggle={() => toggleMyth(myth.id)}
+        />
       ))}
 
       {/* Sources */}

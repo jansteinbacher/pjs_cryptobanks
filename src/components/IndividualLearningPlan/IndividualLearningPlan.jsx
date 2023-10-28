@@ -1,6 +1,6 @@
 import DecisionTree from './DecisionTree';
 
-function IndividualLearningPlanComponent() {
+function IndividualLearningPlan() {
   return (
     <div className="container mx-auto mt-10 p-4">
       <h1 className="text-2xl font-bold mb-4">Individueller Lernplan</h1>
@@ -14,4 +14,4 @@ function IndividualLearningPlanComponent() {
   );
 }
 
-export default IndividualLearningPlanComponent;
+export default IndividualLearningPlan;

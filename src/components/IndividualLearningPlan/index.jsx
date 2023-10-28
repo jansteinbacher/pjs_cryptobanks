@@ -1,3 +1,3 @@
-import IndividualLearningPlanComponent from './IndividualLearningPlanComponent';
+import IndividualLearningPlan from './IndividualLearningPlan';
 
-export default IndividualLearningPlanComponent;
+export default IndividualLearningPlan;

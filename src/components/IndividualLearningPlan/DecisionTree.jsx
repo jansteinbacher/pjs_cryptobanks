@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Question from './Question';
 import Module from '../Module';
-import IndividualLearningStart from './IndividualLearningStart';
+import IndividualLearningIntroduction from '../IndividualLearningPlanIntroduction';
 import {
   IntroductionCryptoAssetsPart1,
   IntroductionCryptoAssetsPart2,
@@ -70,7 +70,7 @@ import {
 
 function DecisionTree() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [sections, setSections] = useState([IndividualLearningStart]);
+  const [sections, setSections] = useState([IndividualLearningIntroduction]);
 
   const questions = [
     {
