@@ -39,7 +39,7 @@ function IndividualLearningPlanEnd() {
         <div className="text-center">
           <img
             src={CourseIcon}
-            alt="Business Model"
+            alt="Course Icon"
             className="w-32 md:w-32 rounded-lg mx-auto mt-4"
           />
           <Link to="/course-overview">

@@ -1,4 +1,4 @@
-function IndividualLearningStart() {
+function IndividualLearningPlanIntroduction() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h1 className="text-xl md:text-4xl font-bold text-gray-800 mb-8 tracking-tight">
@@ -22,4 +22,4 @@ function IndividualLearningStart() {
   );
 }
 
-export default IndividualLearningStart;
+export default IndividualLearningPlanIntroduction;

@@ -22,7 +22,7 @@ export {
   CourseExpertEnd,
 } from './Course';
 
-export { default as AssessmentQuiz } from './AssessmentQuiz/AssessmentQuiz';
+export { default as AssessmentQuiz } from './AssessmentQuiz';
 
 export {
   IntroductionCryptoAssetsModule,
@@ -42,5 +42,5 @@ export {
 export { default as FactCheck } from './FactCheck';
 export { default as Credits } from './Credits';
 
-export { default as IndividualLearningPlanEnd } from './IndividualLearningPlan/IndividualLearningPlanEnd';
-export { default as IndividualLearningPlanComponent } from './IndividualLearningPlan/IndividualLearningPlanComponent';
+export { default as IndividualLearningPlanEnd } from './IndividualLearningPlanEnd';
+export { default as IndividualLearningPlan } from './IndividualLearningPlan';
