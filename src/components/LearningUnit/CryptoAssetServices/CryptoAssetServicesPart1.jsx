@@ -28,21 +28,14 @@ function CryptoAssetServicesPart1() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-12">
         Handel mit Kryptoassets
       </h2>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={CryptoSet}
           alt="Verschiedene Kryptoassets"
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://www.freepik.com/free-vector/popular-cryptocurrency-logos-set_23678052.htm#query=crypto%20currencies&position=0&from_view=search&track=ais"
-        >
-          Bild von myriammira auf Freepik
-        </a>
-      </div>
+
       {isComingFromPreviousPage && (
         <StoryBoxSimone paragraphs={simoneStoryPart2} />
       )}

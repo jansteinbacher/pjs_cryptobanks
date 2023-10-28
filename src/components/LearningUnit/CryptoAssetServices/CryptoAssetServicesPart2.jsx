@@ -15,16 +15,8 @@ function CryptoAssetServicesPart2() {
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Staking</h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img src={Staking} alt="Blockchain" className="w-full md:w-1/2" />
-      </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://www.freepik.com/free-vector/flat-design-staking-illustration_25760032.htm#query=proof%20of%20stake&position=0&from_view=search&track=ais"
-        >
-          Freepik{' '}
-        </a>
       </div>
 
       <p className="mb-8">

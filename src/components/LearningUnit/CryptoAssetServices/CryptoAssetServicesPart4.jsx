@@ -18,20 +18,12 @@ function CryptoAssetServicesPart4() {
         Kryptoasset-Verwahrung
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={Safekeeping}
           alt="Crypto Assets Safekeeping"
           className="w-full md:w-1/2"
         />
-      </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/tresor-safe-sicherheit-wohlstand-1904759/"
-        >
-          Pixabay
-        </a>
       </div>
 
       <p className="mb-8">

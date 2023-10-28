@@ -22,7 +22,7 @@ function CryptoAssetsRegulationPart1() {
         Regulatorische Landschaft
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={Regulation}
           alt="Regulation of Crypto Assets"
