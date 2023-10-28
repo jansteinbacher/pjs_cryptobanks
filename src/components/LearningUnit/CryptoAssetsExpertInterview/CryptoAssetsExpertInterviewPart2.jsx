@@ -22,7 +22,7 @@ function CryptoAssetsExpertInterviewPart2() {
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Experten</h2>
 
-      <div className="image-container flex mb-8">
+      <div className="image-container overflow-x-auto flex mb-8">
         {imageList.map((image) => (
           <img
             key={image.id}
@@ -34,9 +34,9 @@ function CryptoAssetsExpertInterviewPart2() {
         ))}
       </div>
       <p className="mb-8 text-center">
-        von links nach rechts: <br />
-        Maria-Therese Bless, Marc Henniges, Jonathan Leßmann, Niclas Voigt, Adam
-        Zgraja <br />
+        Von links nach rechts: <br />
+        Adam Zgraja, Maria-Therese Bless, Marc Henniges, Jonathan Leßmann,
+        Niclas Voigt <br />
         Weitere Interviewpartner ohne Bild:
         <br /> Stefan Teis und Matthias Niemietz
       </p>

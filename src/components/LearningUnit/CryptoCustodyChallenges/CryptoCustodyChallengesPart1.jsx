@@ -19,10 +19,10 @@ function CryptoCustodyChallengesPart1() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">
+      <h2 className="text-xl font-semibold text-gray-800 mb-8">
         Herausforderungen
       </h2>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img src={Challenge} alt="Challenge" className="w-full md:w-1/2" />
       </div>
 

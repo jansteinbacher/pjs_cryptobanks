@@ -10,45 +10,45 @@ import './CourseOverview.css';
 const courses = [
   {
     id: 1,
-    name: 'Beginner',
+    name: 'Beginner 🧑‍🏫',
     points: [
-      'Bekomme ein Grundverständnis für Kryptoassets',
-      'Lerne die zugrundeliegende Blockchain-Technologie kennen',
-      'Erhalte einen Einblick in verschiedene Arten von Kryptoassets',
-      'Setze dich mit den Herausforderungen und Zukunftsaussichten von Kryptoassets auseinander',
-      'Überprüfung des Gelerneten mithilfe eines Quiz',
+      'Grundverständnis für Kryptoassets',
+      'Grundverständnis der Blockchain-Technologie',
+      'Einblick in verschiedene Arten von Kryptoassets',
+      'Herausforderungen und Zukunftsaussichten von Kryptoassets',
+      'Überprüfung des Gelerneten mithilfe eines Quiz 💡',
     ],
-    duration: '2 Stunden',
-    lastUpdated: 'August 10, 2023',
+    duration: '2,5 Stunden',
+    lastUpdated: 'Oktober 25, 2023',
     course_link: '/course-beginner-introduction',
     video_link: BeginnerVideo,
   },
   {
     id: 2,
-    name: 'Fortgeschrittener',
+    name: 'Fortgeschrittener 👩‍🎓',
     points: [
-      'Bekomme ein Verständnis für die regulatorische Landschaft auf nationaler und internationaler Ebene ',
-      'Lernen potenzielle Kryptoasset-Diensleistungen kennen',
-      'Erhalte einen Einblick in die Adoption und Trends von Kryptoassets in der Gesellschaft',
-      'Überprüfung des Gelerneten mithilfe eines Quiz',
+      'Nationale und internationale Regulatorik für Kryptoassets',
+      'Arten von Kryptoasset-Diensleistungen',
+      'Adaption und Trends von Kryptoassets in der Gesellschaft',
+      'Überprüfung des Gelerneten mithilfe eines Quiz 💡',
     ],
     duration: '2 Stunden',
-    lastUpdated: 'August 10, 2023',
+    lastUpdated: 'Oktober 25, 2023',
     course_link: '/course-advanced-introduction',
     video_link: AdvancedVideo,
   },
   {
     id: 3,
-    name: 'Experte',
+    name: 'Experte 🔬',
     points: [
-      'Lerne die Grundlagen der Kryptoasset-Verwahrung kennen',
-      'Bekomme ein Verständnis für verschiedene Arten von Verwahrlösungen',
-      'Erhalte einen Einblick in die Regulatorik zur Kryptoverwahrung',
-      'Setze dich mit den Herausforderungen und Zukunftsaussichten der Kryptoverwahrung auseinander',
-      'Überprüfung des Gelerneten mithilfe eines Quiz',
+      'Grundlagen der Kryptoasset-Verwahrung',
+      'Arten von Verwahrlösungen',
+      'Regulatorik zur Kryptoverwahrung',
+      'Herausforderungen und Zukunftsaussichten der Kryptoverwahrung',
+      'Überprüfung des Gelerneten mithilfe eines Quiz 💡',
     ],
-    duration: '2 Stunden',
-    lastUpdated: 'August 10, 2023',
+    duration: '1,5 Stunden',
+    lastUpdated: 'Oktober 25, 2023',
     course_link: '/course-expert-introduction',
     video_link: ExpertVideo,
   },
@@ -58,7 +58,7 @@ function CourseOverview() {
   const [selectedCourse, setSelectedCourse] = useState(courses[0]);
 
   return (
-    <div className="bg-white h-screen w-screen">
+    <div className="bg-white min-h-screen">
       <div className="max-w-screen-lg mx-auto mb-12 py-12 px-4 md:px-0">
         <div className="flex flex-col items-center justify-center space-y-4 mb-8">
           <h1 className="text-3xl font-bold text-center text-gray-800">
