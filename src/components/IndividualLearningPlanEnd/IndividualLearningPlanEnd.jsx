@@ -11,7 +11,7 @@ function IndividualLearningPlanEnd() {
       <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight text-center">
         Vielen Dank für die Teilnahme an deinem individuellen Kurs!
       </h2>
-      <div className="lg:w-1/2 flex items-center justify-center mb-24">
+      <div className="flex items-center justify-center mb-24">
         <div>
           <h3 className="text-xl text-center font-semibold mb-4">
             Checkliste:
