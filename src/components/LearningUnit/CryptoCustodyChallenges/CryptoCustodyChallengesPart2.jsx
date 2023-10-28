@@ -1,6 +1,12 @@
 import Future from '../../../images/courseExpert/futurebitcoin.png';
 import CryptoCustodyChallengesSources from './CryptoCustodyChallengesSources';
 
+/**
+ * Component representing the second part of the "Herausforderungen & Zukunftsaussichten" (Challenges & Future Prospects) section for crypto custody.
+ * It discusses regulatory clarity, future prospects, and the balance between security and user-friendliness in crypto custody. It also provides a list of potential future developments in the industry.
+ * This component includes an image illustrating the future of Bitcoin.
+ */
+
 function CryptoCustodyChallengesPart2() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

@@ -1,5 +1,6 @@
 import Sources from '../../Sources/Sources';
 
+// Define an array of sources with unique IDs, text content, and source URLs.
 const sources = [
   {
     id: '1',

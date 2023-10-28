@@ -2,6 +2,12 @@ import Image1 from '../../../images/courseAdvanced/Informationsakquise_Kryptoass
 import Image2 from '../../../images/courseAdvanced/Bank-Beratungsangebote.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 4 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on the methods students use to acquire information about cryptoassets and their interest in bank advisory services related to cryptoassets.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

@@ -1,6 +1,12 @@
 import stateofknowledge from '../../../images/courseAdvanced/Vertiefung_Wissensstand.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 3 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on assessing students' interest in deepening their knowledge about cryptoassets and how they acquire information on this topic.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

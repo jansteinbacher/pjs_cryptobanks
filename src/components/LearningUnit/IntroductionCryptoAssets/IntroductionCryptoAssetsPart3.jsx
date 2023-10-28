@@ -3,6 +3,10 @@ import Chapter13Audio from '../../../audio/chapter13.mp3';
 import Blockchain from '../../../images/courseBeginner/Blockchain.jpg';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the third part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. In this part, the component explains what a blockchain is and its key attributes. Bernd's quest for knowledge continues as he explores the concept of blockchain technology, its decentralized nature, and its role in the world of Kryptoassets. The component includes an audio element for listening convenience.
+ */
+
 function IntroductionCryptoAssetsPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

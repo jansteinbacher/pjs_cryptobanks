@@ -1,6 +1,12 @@
 import Image1 from '../../../images/courseAdvanced/verbesserungsvorschlaege.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 9 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on gathering improvement suggestions from survey participants, providing insights into potential customer expectations.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart9() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

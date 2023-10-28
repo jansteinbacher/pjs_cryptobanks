@@ -4,6 +4,7 @@ import Survey from '../../images/survey.png';
 import News from '../../images/news.png';
 import Myth from '../../images/myth.png';
 
+// This component represents the homepage of the website, featuring sections with various content.
 function Homepage() {
   return (
     <div className="bg-white">

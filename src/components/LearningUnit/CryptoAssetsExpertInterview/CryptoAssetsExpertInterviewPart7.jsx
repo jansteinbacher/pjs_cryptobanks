@@ -1,6 +1,11 @@
 import ExpertInsights from '../../ExpertInsights';
 import ExpertOpinion from '../../ExpertOpinion';
 
+/**
+ * Component displaying expert opinions and insights related to knowledge management within the banking industry regarding crypto assets.
+ * This component is part of the Crypto Assets Expert Interview section and provides expert commentary on internal knowledge development, knowledge acquisition, and the identification of existing knowledge levels in banks.
+ */
+
 function CryptoAssetsExpertInterviewPart7() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

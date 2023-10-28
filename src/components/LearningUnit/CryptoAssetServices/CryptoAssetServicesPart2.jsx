@@ -2,6 +2,12 @@ import Staking from '../../../images/courseAdvanced/staking.jpg';
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the Crypto Asset Services module.
+ * It discusses the Staking service, allowing customers to generate passive income by holding cryptocurrencies.
+ * It includes a story about Simone and references external sources.
+ */
+
 function CryptoAssetServicesPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

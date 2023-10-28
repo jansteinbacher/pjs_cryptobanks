@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// This component represents a search input box with search suggestions.
 function SearchBox({
   searchQuery,
   handleSearch,
@@ -46,13 +47,14 @@ function SearchBox({
   );
 }
 
+// PropTypes for documenting the expected props.
 SearchBox.propTypes = {
-  searchQuery: PropTypes.string.isRequired,
-  handleSearch: PropTypes.func.isRequired,
-  searchSuggestions: PropTypes.arrayOf(PropTypes.string).isRequired,
-  showSuggestions: PropTypes.bool.isRequired,
-  setSearchQuery: PropTypes.func.isRequired,
-  setShowSuggestions: PropTypes.func.isRequired,
+  searchQuery: PropTypes.string.isRequired, // The current search query.
+  handleSearch: PropTypes.func.isRequired, // The function to handle search input.
+  searchSuggestions: PropTypes.arrayOf(PropTypes.string).isRequired, // An array of search suggestions.
+  showSuggestions: PropTypes.bool.isRequired, // Flag to show/hide search suggestions.
+  setSearchQuery: PropTypes.func.isRequired, // The function to set the search query.
+  setShowSuggestions: PropTypes.func.isRequired, // The function to set the showSuggestions flag.
 };
 
 export default SearchBox;

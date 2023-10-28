@@ -3,6 +3,10 @@ import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter15Audio from '../../../audio/chapter15.mp3';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the fifth part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. In this part, the difference between coins and tokens is explained. Bernd's ongoing journey of learning and exploration is highlighted as he seeks to understand the intricacies of the world of crypto assets. The component includes an audio element for listening convenience.
+ */
+
 function IntroductionCryptoAssetsPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

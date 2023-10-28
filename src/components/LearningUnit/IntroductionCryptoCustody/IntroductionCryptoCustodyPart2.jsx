@@ -1,6 +1,10 @@
 import Wallet from '../../../images/courseExpert/wallet.png';
 import IntroductionCryptoCustodySources from './IntroductionCryptoCustodySources';
 
+/**
+ * Component representing the second part of the "Definition und Grundlagen der Kryptoverwahrung" (Definition and Basics of Crypto Custody) section. This part introduces the concept of a "Wallet" in the context of crypto custody. It explains that a wallet is a financial application that allows the management of digital assets and mentions the use of digital signatures for transaction verification.
+ */
+
 function IntroductionCryptoCustodyPart2() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

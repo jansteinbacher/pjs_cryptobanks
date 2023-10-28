@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import NewsHeader from './NewsHeader';
 import NewsArticle from './NewsArticle';
 
+// News component for displaying news articles based on a search query
 function News() {
+  // State for storing the news articles and the search query
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState('crypto&lang=en');
 
+  // Use useEffect to fetch news articles based on the query
   useEffect(() => {
     fetch(
       `https://gnews.io/api/v4/search?q=${query}&token=5247b3e888209f2ccee89baa0b2d86c0`,

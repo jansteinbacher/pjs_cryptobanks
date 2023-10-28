@@ -1,4 +1,3 @@
-// Import PropTypes library to define prop types for the component
 import PropTypes from 'prop-types';
 
 // CourseButton component is used for course level and its design is based on the isSelected attribute

@@ -3,6 +3,10 @@ import NFT from '../../../images/courseBeginner/nft.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the fifth part of the "Types of Crypto Assets and Their Connection to Traditional Financial Products" section. This part introduces Non-Fungible Tokens (NFTs), provides an image with interactive hover functionality to reveal additional information about this crypto asset category, and includes a story element for context.
+ */
+
 function TypesOfCryptoAssetsPart5() {
   const [hovered, setHovered] = useState(false);
 

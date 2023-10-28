@@ -10,6 +10,7 @@ import CryptoAssetsExpertInterviewPart8 from './CryptoAssetsExpertInterviewPart8
 import CryptoAssetsExpertInterviewPart9 from './CryptoAssetsExpertInterviewPart9';
 
 function CryptoCustodyRegulationModule() {
+  // Define an array of sections that will be included in this module
   const sections = [
     CryptoAssetsExpertInterviewPart1,
     CryptoAssetsExpertInterviewPart2,

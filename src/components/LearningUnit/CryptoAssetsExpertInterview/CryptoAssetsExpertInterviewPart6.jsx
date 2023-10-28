@@ -1,6 +1,11 @@
 import ExpertInsights from '../../ExpertInsights';
 import ExpertOpinion from '../../ExpertOpinion';
 
+/**
+ * Component displaying expert opinions and insights related to regulatory optimization potential and international comparisons in the context of crypto assets.
+ * This component is part of the Crypto Assets Expert Interview section and provides expert commentary on regulatory aspects and international regulatory frameworks.
+ */
+
 function CryptoAssetsExpertInterviewPart6() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

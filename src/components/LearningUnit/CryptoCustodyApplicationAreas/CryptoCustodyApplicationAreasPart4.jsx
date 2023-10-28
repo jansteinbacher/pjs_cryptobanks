@@ -1,6 +1,12 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the fourth part of the Crypto Custody Application Areas section.
+ * It provides information about different types of wallet connectivity in crypto asset storage,
+ * including Hot Wallets, Cold Wallets, and Warm Wallets, discussing their advantages and potential risks.
+ */
+
 function CryptoCustodyApplicationAreasPart4() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

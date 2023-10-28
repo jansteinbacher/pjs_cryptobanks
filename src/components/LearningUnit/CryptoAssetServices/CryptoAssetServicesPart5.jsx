@@ -1,6 +1,12 @@
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the fifth part of the Crypto Asset Services module.
+ * It discusses Stablecoins and their role in decentralized networks and programmable business processes.
+ * Various use cases for Stablecoins, including On-Chain DvP transactions and cryptocurrency trading, are explained.
+ */
+
 function CryptoAssetServicesPart5() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

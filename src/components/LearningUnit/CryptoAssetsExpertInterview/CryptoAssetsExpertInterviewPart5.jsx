@@ -1,6 +1,11 @@
 import ExpertInsights from '../../ExpertInsights';
 import ExpertOpinion from '../../ExpertOpinion';
 
+/**
+ * Component displaying expert opinions and insights related to potential acceptance barriers of crypto assets.
+ * This component is part of the Crypto Assets Expert Interview section and provides expert commentary on technological, legal, security, trust, education, and financial barriers.
+ */
+
 function CryptoAssetsExpertInterviewPart5() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

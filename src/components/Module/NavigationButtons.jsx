@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// NavigationButtons component for navigating between sections in a module
 function NavigationButtons({
   isFirstSection,
   isLastSection,
@@ -9,6 +10,7 @@ function NavigationButtons({
 }) {
   return (
     <div className="flex flex-col md:flex-row justify-center mt-4 space-y-2 md:space-y-0 md:space-x-2">
+      {/* Display a "Zurück" (Back) button if it's not the first section */}
       {!isFirstSection && (
         <button
           type="button"
@@ -18,6 +20,8 @@ function NavigationButtons({
           Zurück
         </button>
       )}
+      {/* Display an "Abschließen" (Complete) button if it's the last section, 
+      otherwise, display a "Weiter" (Next) button */}
       {isLastSection ? (
         <a
           href={buttonDestination}
@@ -38,12 +42,13 @@ function NavigationButtons({
   );
 }
 
+// Define prop types for the NavigationButtons component
 NavigationButtons.propTypes = {
-  isFirstSection: PropTypes.bool.isRequired,
-  isLastSection: PropTypes.bool.isRequired,
-  handlePreviousSection: PropTypes.func.isRequired,
-  handleNextSection: PropTypes.func.isRequired,
-  buttonDestination: PropTypes.string.isRequired,
+  isFirstSection: PropTypes.bool.isRequired, // Indicates if it's the first section
+  isLastSection: PropTypes.bool.isRequired, // Indicates if it's the last section
+  handlePreviousSection: PropTypes.func.isRequired, // Function to go to the previous section
+  handleNextSection: PropTypes.func.isRequired, // Function to go to the next section
+  buttonDestination: PropTypes.string.isRequired, // URL for the completion button
 };
 
 export default NavigationButtons;

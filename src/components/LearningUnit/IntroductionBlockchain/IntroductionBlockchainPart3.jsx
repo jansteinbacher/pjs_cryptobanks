@@ -2,6 +2,10 @@ import ConsensMechanism from '../../../images/courseBeginner/consensMechanism.jp
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the "Blockchain-Technologie" (Blockchain Technology) section. In this part, the concept of consensus mechanisms, specifically Proof of Work (PoW) and Proof of Stake (PoS), is explained. The component discusses how these consensus mechanisms work and their use in blockchain networks like Bitcoin, Ethereum, and Cardano. It includes an image illustrating the topic and features a conversation between Bernd and his colleague Tobias to enhance the learning experience. This part aims to help the audience understand how information integrity is ensured in blockchain technology.
+ */
+
 function IntroductionBlockchainPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

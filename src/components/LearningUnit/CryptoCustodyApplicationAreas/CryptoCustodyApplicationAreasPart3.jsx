@@ -1,6 +1,12 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the third part of the Crypto Custody Application Areas section.
+ * It provides information about the distribution of ownership and control of crypto assets
+ * through centralized and decentralized custody solutions, and explores the use of Distributed Ledger Technology.
+ */
+
 function CryptoCustodyApplicationAreasPart3() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

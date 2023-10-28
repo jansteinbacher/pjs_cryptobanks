@@ -2,6 +2,12 @@ import Image1 from '../../../images/courseAdvanced/Investitionsrisiko.png';
 import Image2 from '../../../images/courseAdvanced/InstitutionKryptoasset-Investitionen.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 8 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on survey participants' perceptions of the risk associated with investing in Cryptoassets and their preferred platforms for conducting Kryptoasset transactions.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart8() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

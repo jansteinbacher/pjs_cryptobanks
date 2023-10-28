@@ -2,6 +2,10 @@ import Challenges from '../../../images/courseBeginner/challenges.png';
 import OpportunitiesAndChallengesCryptoAssetsSources from './OpportunitiesAndChallengesCryptoAssetsSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the "Herausforderungen und Zukunftsaussichten von Kryptoassets" (Challenges and Future Prospects of Crypto Assets) section. This part discusses the challenges faced by crypto assets, including scalability issues, regulatory concerns, volatility, and energy consumption. It also covers potential future prospects of crypto assets.
+ */
+
 function TypesOfCryptoAssetsSources() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

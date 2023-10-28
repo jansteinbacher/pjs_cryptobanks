@@ -1,3 +1,4 @@
+// This component returns a redirect URL based on the 'fromParam' value
 function getCompletionRedirectURL(fromParam) {
   if (fromParam === 'decisiontree') {
     return '/decisiontree';

@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 
+// This component displays a summary of assessment results with a recommendation and buttons for recommended courses.
 function AssessmentSummary({
-  recommendationText,     // The text of the recommendation
-  recommendedCourseLink,  // The link to the recommended course
-  recommendedCourseText,  // The text for the recommended course button
+  recommendationText,
+  recommendedCourseLink,
+  recommendedCourseText,
 }) {
   return (
     <>
@@ -30,11 +31,11 @@ function AssessmentSummary({
   );
 }
 
-// Define the expected prop types for the AssessmentSummary component
+// PropTypes for documenting the expected props.
 AssessmentSummary.propTypes = {
-  recommendationText: PropTypes.string.isRequired,
-  recommendedCourseLink: PropTypes.string.isRequired,
-  recommendedCourseText: PropTypes.string.isRequired,
+  recommendationText: PropTypes.string.isRequired, // The text of the assessment recommendation.
+  recommendedCourseLink: PropTypes.string.isRequired, // The link to the recommended course.
+  recommendedCourseText: PropTypes.string.isRequired, // The text for the recommended course button.
 };
 
 export default AssessmentSummary; // Export the AssessmentSummary component

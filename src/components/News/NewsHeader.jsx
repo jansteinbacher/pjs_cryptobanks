@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import QueryButton from './QueryButton';
 
+// NewsHeader component for displaying the news section title and query buttons
 function NewsHeader({ query, setQuery }) {
   return (
     <div>
@@ -23,9 +24,10 @@ function NewsHeader({ query, setQuery }) {
   );
 }
 
+// Define prop types for the NewsHeader component
 NewsHeader.propTypes = {
-  query: PropTypes.string.isRequired,
-  setQuery: PropTypes.func.isRequired,
+  query: PropTypes.string.isRequired, // The current search query
+  setQuery: PropTypes.func.isRequired, // Function to update the search query
 };
 
 export default NewsHeader;

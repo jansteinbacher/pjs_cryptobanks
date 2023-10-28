@@ -1,6 +1,11 @@
 import ExpertInsights from '../../ExpertInsights';
 import ExpertOpinion from '../../ExpertOpinion';
 
+/**
+ * Component displaying expert opinions and insights related to the types of crypto asset services and the challenges they pose.
+ * This component is part of the Crypto Assets Expert Interview section and provides expert commentary and key insights.
+ */
+
 function CryptoAssetsExpertInterviewPart4() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

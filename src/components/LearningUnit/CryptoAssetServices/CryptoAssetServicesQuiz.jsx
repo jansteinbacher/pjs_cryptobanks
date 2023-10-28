@@ -1,5 +1,7 @@
 import Quiz from '../../Quiz';
 
+// Define an array of quiz questions, each with a question, answer options, and the correct answer index.
+
 const questions = [
   {
     question:

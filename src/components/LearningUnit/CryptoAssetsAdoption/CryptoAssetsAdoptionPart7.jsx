@@ -2,6 +2,12 @@ import Image1 from '../../../images/courseAdvanced/Getaetigte_Investitionen.png'
 import Image2 from '../../../images/courseAdvanced/EigeneErfahrungKryptoassets.png';
 import { StoryBoxLeo } from '../../StoryBox';
 
+/**
+ * Component for displaying part 7 of a section related to the adoption of Cryptoassets in society.
+ * This section focuses on survey participants' past investments in Cryptoassets, their preferences for specific digital assets (e.g., Bitcoin, Ethereum), and their experiences with those investments.
+ * Depending on user navigation, it may include Leo's story as well.
+ */
+
 function CryptoAssetsAdoptionPart7() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

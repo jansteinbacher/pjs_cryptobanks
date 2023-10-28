@@ -1,7 +1,7 @@
 import CourseEnd from '../../CourseEnd';
 import CourseCompletedVideo from '../../../videos/fireworkCourseCompleted.mp4';
-// fill the end page of the advanced course with content
 
+// fill the end page of the advanced course with content
 function CourseAdvancedEnd() {
   return (
     <CourseEnd

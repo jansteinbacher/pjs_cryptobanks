@@ -1,5 +1,9 @@
 import Rocket from '../../../images/courseBeginner/rocket.jpg';
 
+/**
+ * Component representing the sixth part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. This part introduces a knowledge challenge in the form of a quiz to solidify the learned concepts about crypto assets. The component encourages the reader to apply their knowledge and test their understanding.
+ */
+
 function IntroductionCryptoAssetsPart6() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

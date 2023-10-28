@@ -1,6 +1,12 @@
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
 
+/**
+ * Component representing the third part of the Crypto Asset Services module.
+ * It discusses Kryptowertpapiere (cryptosecurities) and the role of the bank in handling cryptocurrency securities transactions.
+ * It mentions the direct bilateral trading and the choice for investors to manage these securities in their own wallets or use the bank's traditional security deposit service.
+ */
+
 function CryptoAssetServicesPart3() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=advanced-course',

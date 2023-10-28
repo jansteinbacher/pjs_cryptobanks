@@ -2,6 +2,11 @@ import TypesOfBlockchain from '../../../images/courseBeginner/typesOfBlockchain.
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the "Blockchain-Technologie" (Blockchain Technology) section. In this part, the concept of permissioned vs. permissionless blockchains is discussed. The component highlights the differences between these two types of blockchains, including access permissions, consensus mechanisms, scalability, and privacy. It mentions the suitability of permissioned blockchains for closed environments like enterprise applications and permissionless blockchains for open, decentralized applications like cryptocurrencies and DeFi. The component also features a story involving Bernd and his colleague Tobias to enhance the learning experience.
+ * This component includes an image illustrating the differences between permissioned and permissionless blockchains.
+ */
+
 function IntroductionBlockchainPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

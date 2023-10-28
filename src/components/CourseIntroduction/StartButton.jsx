@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-//Display the start button on the intro page
 
 function StartButton({ link }) {
+  //  Display the start button on the intro page
   return (
     <div className="flex justify-center items-center">
       <a href={link}>

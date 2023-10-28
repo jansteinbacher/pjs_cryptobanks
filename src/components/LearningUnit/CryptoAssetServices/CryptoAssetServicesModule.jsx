@@ -7,6 +7,7 @@ import CryptoAssetServicesPart5 from './CryptoAssetServicesPart5';
 import CryptoAssetServicesPart6 from './CryptoAssetServicesPart6';
 import CryptoAssetServicesQuiz from './CryptoAssetServicesQuiz';
 
+// This module is related to crypto asset services.
 function CryptoAssetServicesModule() {
   const sections = [
     CryptoAssetServicesPart1,

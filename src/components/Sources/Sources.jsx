@@ -2,9 +2,11 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import SourcesList from './SourcesList';
 
+// This component displays a list of sources and allows users to toggle their visibility.
 function Sources({ sources }) {
   const [showSources, setShowSources] = useState(false);
 
+  // Function to toggle the visibility of sources.
   const toggleSources = () => {
     setShowSources(!showSources);
   };
@@ -17,14 +19,14 @@ function Sources({ sources }) {
         id="sources"
         onClick={toggleSources}
       >
-        Quellen {showSources ? 'ausblenden' : 'anzeigen'}{' '}
-        {showSources ? '↓' : '→'}
+        Sources {showSources ? 'Hide' : 'Show'} {showSources ? '↓' : '→'}
       </button>
       {showSources && <SourcesList sources={sources} />}
     </div>
   );
 }
 
+// PropTypes for documenting the expected props.
 Sources.propTypes = {
   sources: PropTypes.arrayOf(
     PropTypes.shape({

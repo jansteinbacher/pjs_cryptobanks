@@ -1,5 +1,10 @@
 import ExpertOpinion from '../../ExpertOpinion';
 
+/**
+ * Component displaying expert opinions and insights related to the impact of crypto assets on traditional banking.
+ * This component forms part of the Crypto Assets Expert Interview section, showcasing key points and expert commentary.
+ */
+
 function CryptoAssetsExpertInterviewPart3() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

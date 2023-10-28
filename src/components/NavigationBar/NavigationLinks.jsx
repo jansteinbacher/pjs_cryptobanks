@@ -1,5 +1,6 @@
 import NavigationLink from './NavigationLink';
 
+// Define an array of navigation links
 const links = [
   { id: 1, to: '/course-overview', text: 'Kurse' },
   {
@@ -14,6 +15,7 @@ const links = [
   { id: 7, to: '/#about', text: 'Über das Projekt' },
 ];
 
+// NavigationLinks component for rendering a list of navigation links
 function NavigationLinks() {
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-12">

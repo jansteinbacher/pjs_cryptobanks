@@ -3,6 +3,10 @@ import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter14Audio from '../../../audio/chapter14.mp3';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the fourth part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. In this part, the concept of tokenization is explained. Bernd's quest for knowledge leads him to explore tokenization, its definition, and the process of digitizing various types of assets using tokens. The component includes an audio element for listening convenience.
+ */
+
 function IntroductionCryptoAssetsPart4() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

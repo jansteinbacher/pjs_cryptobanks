@@ -1,5 +1,5 @@
+//  fill the beginner course with articles from the learning unit folder
 import Module from '../../Module';
-//fill the beginner course with articles from the learning unit folder
 
 import {
   IntroductionCryptoAssetsPart1,

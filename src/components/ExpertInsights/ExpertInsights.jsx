@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 
+// This component displays expert insights with a title.
 function ExpertInsights({ title, items }) {
   return (
     <div>
@@ -13,10 +14,11 @@ function ExpertInsights({ title, items }) {
     </div>
   );
 }
-// Define the expected prop types for the ExpertInsights component
+
+// PropTypes for documenting the expected props.
 ExpertInsights.propTypes = {
-  title: PropTypes.string.isRequired, // Requires a string for the title
-  items: PropTypes.arrayOf(PropTypes.string).isRequired, // Requires an array of strings for items
+  title: PropTypes.string.isRequired, // The title for the expert insights.
+  items: PropTypes.arrayOf(PropTypes.string).isRequired, // An array of strings representing expert insights.
 };
 
-export default ExpertInsights;
+export default ExpertInsights; // Export the ExpertInsights component

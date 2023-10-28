@@ -4,6 +4,10 @@ import CurrencyPrices from '../../../images/courseBeginner/currencyprices.png';
 import TypesOfCryptoAssetsSources from './TypesOfCryptoAssetsSources';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the "Types of Crypto Assets and Their Connection to Traditional Financial Products" section. This part introduces Payment Tokens and Stablecoins, providing an image with interactive hover functionality to reveal additional information about these crypto asset categories.
+ */
+
 function TypesOfCryptoAssetsPart2() {
   const [hovered, setHovered] = useState(false);
 

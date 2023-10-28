@@ -1,6 +1,11 @@
 import Bitcoinhold from '../../../images/courseExpert/bitcoinhold.png';
 import CryptoCustodyRegulationSources from './CryptoCustodyRegulationSources';
 
+/**
+ * Component representing the second part of the "Regulatorik zu Kryptoverwahrung" (Regulation for Crypto Custody) section. This part discusses the regulatory definitions related to managing, safeguarding, and securing crypto assets and private cryptographic keys. It explains what constitutes custody, management, and security of crypto assets, and clarifies the scope of the regulations. It also addresses the potential consequences of not adhering to the regulatory requirements.
+ * This component includes an image depicting a person holding Bitcoin.
+ */
+
 function CryptoCustodyRegulationPart2() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

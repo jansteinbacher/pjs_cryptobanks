@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// NavigationLogo component for rendering the application's logo
 function NavigationLogo({ logoSource }) {
   return (
     <a href="/" className="mb-4 sm:mb-0">
@@ -11,8 +12,9 @@ function NavigationLogo({ logoSource }) {
   );
 }
 
+// Define prop types for the NavigationLogo component
 NavigationLogo.propTypes = {
-  logoSource: PropTypes.string.isRequired,
+  logoSource: PropTypes.string.isRequired, // The source URL of the logo image
 };
 
 export default NavigationLogo;

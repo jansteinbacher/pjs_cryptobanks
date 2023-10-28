@@ -4,6 +4,10 @@ import IntroductionCryptoAssetsSources from './IntroductionCryptoAssetsSources';
 import Chapter12Audio from '../../../audio/chapter12.mp3';
 import { StoryBoxBernd } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the "Grundverständnis zu Kryptoassets" (Understanding Crypto Assets) section. In this part, the component delves into the definition of Kryptoassets, as per § 1 Abs. 11 S. 4 KWG and the EU Regulation on Markets in Crypto Assets (MiCA). Bernd's quest for knowledge leads him to perform a Google search, revealing the legal definition and attributes of Kryptoassets. The component includes an audio element for listening convenience.
+ */
+
 function IntroductionCryptoAssetsPart2() {
   const isComingFromPreviousPage = window.location.search.includes(
     'from=beginner-course',

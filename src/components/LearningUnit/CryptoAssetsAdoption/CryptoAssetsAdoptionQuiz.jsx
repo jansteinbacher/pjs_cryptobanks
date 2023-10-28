@@ -1,5 +1,9 @@
 import Quiz from '../../Quiz';
 
+/**
+ * Component that renders a quiz related to Cryptoassets adoption. It includes multiple-choice questions and provides feedback on the user's answers.
+ */
+
 const questions = [
   {
     question:

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-// display the Course title
 
+// display the Course title
 function CourseTitle({ title, text }) {
   return (
     <div>

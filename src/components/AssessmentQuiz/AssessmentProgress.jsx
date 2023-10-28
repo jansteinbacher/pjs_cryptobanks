@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 // Display the progress of the Quiz with number of answered questions, right answers and remaining questions
-
 function AssessmentProgress({ numAnswered, numCorrect, remainingQuestions }) {
   return (
     <div className="bg-gray-200 p-4 rounded">

@@ -1,5 +1,6 @@
 import Quiz from '../../Quiz';
 
+// Array of questions for the CryptoAssets Regulation Quiz
 const questions = [
   {
     question:
@@ -71,6 +72,7 @@ const questions = [
   },
 ];
 
+// Component for the CryptoAssets Regulation Quiz
 function CryptoAssetsRegulationQuiz() {
   return (
     <div className="App">

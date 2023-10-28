@@ -1,6 +1,5 @@
+//  About Section for Startpage
 function About() {
-
-  //About Section for Startpage
   return (
     <div
       id="about"

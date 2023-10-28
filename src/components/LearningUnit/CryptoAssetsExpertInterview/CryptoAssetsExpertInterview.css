@@ -1,3 +1,4 @@
+/* Apply rounded border to create a circular image */
 .rounded-image {
     border-radius: 50%;
   }

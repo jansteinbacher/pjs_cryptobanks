@@ -1,6 +1,12 @@
 import CryptoCustodyApplicationAreasSources from './CryptoCustodyApplicationAreasSources';
 import { StoryBoxTobias } from '../../StoryBox';
 
+/**
+ * Component representing the second part of the Crypto Custody Application Areas section.
+ * It provides information about different approaches to custody solutions, including Self-Custody, Full-Custody,
+ * and Semi-Custody, and discusses the responsibilities and advantages of each approach in securing crypto assets.
+ */
+
 function CryptoCustodyApplicationAreasPart2() {
   const isComingFromPreviousPage =
     window.location.search.includes('from=expert-course');

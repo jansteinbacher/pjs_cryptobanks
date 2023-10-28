@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// NewsArticle component for rendering an individual news article
 function NewsArticle({ article }) {
   return (
     <a
@@ -21,15 +22,16 @@ function NewsArticle({ article }) {
   );
 }
 
+// Define prop types for the NewsArticle component
 NewsArticle.propTypes = {
   article: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string,
+    url: PropTypes.string.isRequired, // URL of the news article
+    title: PropTypes.string.isRequired, // Title of the article
+    description: PropTypes.string, // Description of the article (optional)
     source: PropTypes.shape({
-      name: PropTypes.string,
+      name: PropTypes.string, // Name of the news source
     }),
-    publishedAt: PropTypes.string,
+    publishedAt: PropTypes.string, // Date and time the article was published
   }).isRequired,
 };
 

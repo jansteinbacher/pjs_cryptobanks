@@ -6,8 +6,8 @@ import CourseCelebrationVideo from './CourseCelebrationVideo';
 import BackToCourseOverviewLink from './BackToCourseOverviewLink';
 import NextCourseLink from './NextCourseLink';
 import IndividualLearningPlanLink from './IndividualLearningPlanLink';
-// CourseEnd page which uses the other components from the folder to create the page
 
+// display the course celebration Video on the End Page of the Courses in a muted loop
 function CourseEnd({
   summaryDownloadLink,
   certificateDownloadLink,

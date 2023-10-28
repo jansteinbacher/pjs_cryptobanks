@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// This component displays the result of the quiz, including the percentage of correct answers and options for restarting the quiz.
 function QuizResult({
   percentageCorrect,
   numCorrectAnswers,
@@ -8,24 +9,24 @@ function QuizResult({
 }) {
   return (
     <div>
-      <h3 className="text-xl font-bold mb-8">🏆 Quiz beendet!</h3>
+      <h3 className="text-xl font-bold mb-8">🏆 Quiz Completed!</h3>
       {percentageCorrect >= 50 ? (
         <p>
-          Herzlichen Glückwunsch! Du hast {numCorrectAnswers} von{' '}
-          {questions.length} Fragen richtig beantwortet. 🎉🥳
+          Congratulations! You answered {numCorrectAnswers} out of{' '}
+          {questions.length} questions correctly. 🎉🥳
         </p>
       ) : (
         <>
           <p>
-            Versuche es noch einmal. Du hast {numCorrectAnswers} von{' '}
-            {questions.length} Fragen richtig beantwortet. 🙌
+            Try again. You answered {numCorrectAnswers} out of{' '}
+            {questions.length} questions correctly. 🙌
           </p>
           <button
             type="button"
             className="bg-green-500 hover-bg-green-700 text-white font-bold py-3 px-4 rounded"
             onClick={restartQuiz}
           >
-            Quiz neu starten
+            Restart Quiz
           </button>
         </>
       )}
@@ -33,23 +34,24 @@ function QuizResult({
   );
 }
 
+// PropTypes for documenting the expected props.
 QuizResult.propTypes = {
-  percentageCorrect: PropTypes.number.isRequired,
-  numCorrectAnswers: PropTypes.number.isRequired,
+  percentageCorrect: PropTypes.number.isRequired, // The percentage of correct answers.
+  numCorrectAnswers: PropTypes.number.isRequired, // The number of correct answers.
   questions: PropTypes.arrayOf(
     PropTypes.shape({
-      question: PropTypes.string.isRequired,
+      question: PropTypes.string.isRequired, // The text of the quiz question.
       options: PropTypes.arrayOf(
         PropTypes.shape({
-          text: PropTypes.string.isRequired,
-          id: PropTypes.number.isRequired,
+          text: PropTypes.string.isRequired, // The text of the answer option.
+          id: PropTypes.number.isRequired, // A unique identifier for the option.
         }),
-      ).isRequired,
-      correctAnswerIndex: PropTypes.number.isRequired,
-      pairs: PropTypes.arrayOf(PropTypes.shape({})),
+      ).isRequired, // An array of answer options.
+      correctAnswerIndex: PropTypes.number.isRequired, // The index of the correct answer option.
+      pairs: PropTypes.arrayOf(PropTypes.shape({})), // An optional array of pair-based questions and answers.
     }),
-  ).isRequired,
-  restartQuiz: PropTypes.func.isRequired,
+  ).isRequired, // An array of quiz questions.
+  restartQuiz: PropTypes.func.isRequired, // A function to restart the quiz.
 };
 
 export default QuizResult;

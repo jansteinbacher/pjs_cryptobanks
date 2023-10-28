@@ -2,6 +2,11 @@ import { FaFilePdf } from 'react-icons/fa';
 import { VscChecklist } from 'react-icons/vsc';
 import DownloadButton from '../../DownloadButton';
 
+/**
+ * Component displaying options for downloading PDF documents related to Crypto Assets Expert Interviews.
+ * It provides links to download the full anonymous interviews as a PDF and a checklist for banks interested in offering crypto asset services.
+ */
+
 function CryptoAssetsExpertInterviewPart9() {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">

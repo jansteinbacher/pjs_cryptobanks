@@ -1,7 +1,5 @@
-// Import PropTypes library to define prop types for the component
 import PropTypes from 'prop-types';
 
-// Import other components from the folder
 import CourseTitle from './CourseTitle';
 import CharacterSection from './CharacterSection';
 import StartButton from './StartButton';
@@ -46,4 +44,4 @@ CourseIntroduction.propTypes = {
   courseLink: PropTypes.string.isRequired, // Requires a string for course link
 };
 
-export default CourseIntroduction; // Export the CourseIntroduction component
+export default CourseIntroduction;
