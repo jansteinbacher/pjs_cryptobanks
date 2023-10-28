@@ -40,7 +40,6 @@ function TypesOfCryptoAssetsPart5() {
         <img src={NFT} alt="nft" className="w-full md:w-7/8 mb-4" />
 
         {hovered && (
-<<<<<<< HEAD
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
             <div className="ml-4 mr-4 text-black">
               <p className="mb-4">
@@ -65,21 +64,6 @@ function TypesOfCryptoAssetsPart5() {
                 nicht handelbar [11].
               </p>
             </div>
-=======
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
-            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
-              NFTs sind Non-fungible Token. Das Besondere an diesen Token ist,
-              dass jeder NFT einzigartig ist. Ein NFT stellt also das Eigentum
-              an einem Vermögensgegenstand mit bestimmten Eigenschaften dar, wie
-              z. B. ein digitales Kunstwerk. NFTs werden unterteilt in
-              transferable oder non-transferable Token. Es wird demnach zwischen
-              handelbaren und nicht-handelbaren Token unterschieden. Ein
-              Beispiel für einen nicht-handelbaren Token ist die Darstellung der
-              Reputation einer Firma. Dieser Ruf kann nicht an andere
-              Unternehmen veräußert werden und ist dementsprechend nicht
-              handelbar <a href="#sources">[11]</a>.
-            </p>
->>>>>>> main
           </div>
         )}
       </div>
