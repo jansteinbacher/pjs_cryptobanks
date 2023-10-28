@@ -3,6 +3,7 @@ import { PiCertificate } from 'react-icons/pi';
 import { VscChecklist } from 'react-icons/vsc';
 import PropTypes from 'prop-types';
 import DownloadButton from '../DownloadButton';
+// Display the Icons and Links to get Certificate, Summary and the Checklist, Usage of DownloadButton Component
 
 function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
   return (
@@ -37,6 +38,7 @@ function SummarySection({ summaryDownloadLink, certificateDownloadLink }) {
   );
 }
 
+// Define the expected prop types for the SummarySection component
 SummarySection.propTypes = {
   summaryDownloadLink: PropTypes.string.isRequired,
   certificateDownloadLink: PropTypes.string.isRequired,

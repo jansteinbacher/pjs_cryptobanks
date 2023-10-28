@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Display the Link and Icon on the End Pages of the Courses to get to the Individual Course Page
 
 function IndividualLearningPlanLink() {
   return (

@@ -1,5 +1,6 @@
 import CourseIntroduction from '../../CourseIntroduction';
 import TobiasVideo from '../../../videos/characterTobiasIntroduction.mp4';
+// fill the introduction page of the expert course with content
 
 function CourseExpertIntroduction() {
   return (

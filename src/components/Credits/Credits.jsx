@@ -1,6 +1,8 @@
 import CreditItem from './CreditsItem';
+// code for /credits page to attribute to creators of icons used on website
 
 function Credits() {
+  // array of iconcredits displayed on page
   const iconCredits = [
     {
       id: 1,

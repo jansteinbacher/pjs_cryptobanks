@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import NextCourseIcon from '../../images/nextCourseIcon.png';
+// Display the Link and Icon on the End Pages of the Courses to get to the next recommended course 
+//with the attributes from followingCourseLink, followingCourseDescription
 
 function NextCourseLink({ followingCourseLink, followingCourseDescription }) {
   return (
@@ -23,6 +25,7 @@ function NextCourseLink({ followingCourseLink, followingCourseDescription }) {
   );
 }
 
+// Define the expected prop types for the NextCourseLink component
 NextCourseLink.propTypes = {
   followingCourseLink: PropTypes.string.isRequired,
   followingCourseDescription: PropTypes.string.isRequired,

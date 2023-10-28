@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+// Display the progress of the Quiz with number of answered questions, right answers and remaining questions
+
 function AssessmentProgress({ numAnswered, numCorrect, remainingQuestions }) {
   return (
     <div className="bg-gray-200 p-4 rounded">
@@ -11,10 +13,11 @@ function AssessmentProgress({ numAnswered, numCorrect, remainingQuestions }) {
   );
 }
 
+// Define the expected prop types for the AssessmentProgress component
 AssessmentProgress.propTypes = {
-  numAnswered: PropTypes.number.isRequired,
-  numCorrect: PropTypes.number.isRequired,
-  remainingQuestions: PropTypes.number.isRequired,
+  numAnswered: PropTypes.number.isRequired, // Requires a number for numAnswered
+  numCorrect: PropTypes.number.isRequired, // Requires a number for numCorrect
+  remainingQuestions: PropTypes.number.isRequired, // Requires a number for remainingQuestions
 };
 
 export default AssessmentProgress;

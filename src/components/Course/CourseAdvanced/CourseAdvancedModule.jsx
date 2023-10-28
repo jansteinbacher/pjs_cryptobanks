@@ -1,4 +1,5 @@
 import Module from '../../Module';
+//fill the advanced course with articles from the learning unit folder
 
 import {
   CryptoAssetsRegulationPart1,

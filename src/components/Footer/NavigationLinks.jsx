@@ -1,4 +1,6 @@
+// NavigationLinks component displays navigation links in the footer
 function NavigationLinks() {
+  // Define an array of navigation links
   const links = [
     { id: 'home', text: 'Home', href: '/' },
     { id: 'courses', text: 'Kurse', href: '/course-overview' },
@@ -45,4 +47,4 @@ function NavigationLinks() {
   );
 }
 
-export default NavigationLinks;
+export default NavigationLinks; // Export the NavigationLinks component

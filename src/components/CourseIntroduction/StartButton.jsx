@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+//Display the start button on the intro page
 
 function StartButton({ link }) {
   return (
@@ -15,8 +16,9 @@ function StartButton({ link }) {
   );
 }
 
+// Define the expected prop type for the StartButton component
 StartButton.propTypes = {
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired, // Requires a string for the link
 };
 
 export default StartButton;

@@ -3,6 +3,8 @@ import CourseIcon from '../../images/courseIcon.png';
 import IndividuellIcon from '../../images/Individuell_Icon.png';
 import GlossarIcon from '../../images/Glossar_Icon.png';
 import Heroimage from '../../images/heroimage.jpg';
+// hero element with headline and image, gradient background
+// under it are the cards from the FeatureCard component 
 
 function Hero() {
   return (

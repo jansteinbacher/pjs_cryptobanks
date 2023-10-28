@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// display the course details (description, time, video) depending on selected Course
 
 function CourseDetails({ selectedCourse }) {
   return (
@@ -41,13 +42,14 @@ function CourseDetails({ selectedCourse }) {
   );
 }
 
+// Define the expected prop types for the CourseDetails component
 CourseDetails.propTypes = {
   selectedCourse: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    points: PropTypes.arrayOf(PropTypes.string).isRequired,
-    duration: PropTypes.string.isRequired,
-    video_link: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired, // Requires a number for id
+    name: PropTypes.string.isRequired, // Requires a string for name
+    points: PropTypes.arrayOf(PropTypes.string).isRequired, // Requires an array of strings for points
+    duration: PropTypes.string.isRequired, // Requires a string for duration
+    video_link: PropTypes.string.isRequired, // Requires a string for video link
   }).isRequired,
 };
 

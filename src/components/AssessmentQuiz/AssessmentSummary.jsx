@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
 function AssessmentSummary({
-  recommendationText,
-  recommendedCourseLink,
-  recommendedCourseText,
+  recommendationText,     // The text of the recommendation
+  recommendedCourseLink,  // The link to the recommended course
+  recommendedCourseText,  // The text for the recommended course button
 }) {
   return (
     <>
@@ -30,10 +30,11 @@ function AssessmentSummary({
   );
 }
 
+// Define the expected prop types for the AssessmentSummary component
 AssessmentSummary.propTypes = {
   recommendationText: PropTypes.string.isRequired,
   recommendedCourseLink: PropTypes.string.isRequired,
   recommendedCourseText: PropTypes.string.isRequired,
 };
 
-export default AssessmentSummary;
+export default AssessmentSummary; // Export the AssessmentSummary component

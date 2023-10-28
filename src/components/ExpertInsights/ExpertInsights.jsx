@@ -13,9 +13,10 @@ function ExpertInsights({ title, items }) {
     </div>
   );
 }
+// Define the expected prop types for the ExpertInsights component
 ExpertInsights.propTypes = {
-  title: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired, // Requires a string for the title
+  items: PropTypes.arrayOf(PropTypes.string).isRequired, // Requires an array of strings for items
 };
 
 export default ExpertInsights;

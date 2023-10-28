@@ -1,4 +1,5 @@
 function AssessmentQuizButton() {
+  // display the button to the assessment quiz that links to the page of the assessment quiz
   return (
     <div className="flex justify-center items-center space-x-8 mt-4 mb-8">
       <p>Du bist dir nicht sicher über deinen Kenntnisstand?</p>

@@ -1,8 +1,12 @@
+// Import PropTypes library to define prop types for the component
 import PropTypes from 'prop-types';
+
+// Import other components from the folder
 import CourseTitle from './CourseTitle';
 import CharacterSection from './CharacterSection';
 import StartButton from './StartButton';
 
+// CourseIntroduction component is used to display the CourseIntroduction page at the beginning of each course
 function CourseIntroduction({
   courseTitle,
   courseText,
@@ -14,26 +18,32 @@ function CourseIntroduction({
 }) {
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
+      {/* Display the CourseTitle component with title and text */}
       <CourseTitle title={courseTitle} text={courseText} />
+
+      {/* Display the CharacterSection component with title, text, invitation, and video source */}
       <CharacterSection
         title={characterTitle}
         text={characterText}
         invitation={courseInvitation}
         videoSource={videoSource}
       />
+
+      {/* Display the StartButton component with a link to start the course */}
       <StartButton link={courseLink} />
     </div>
   );
 }
 
+// Define the expected prop types for the CourseIntroduction component
 CourseIntroduction.propTypes = {
-  courseTitle: PropTypes.string.isRequired,
-  courseText: PropTypes.string.isRequired,
-  characterTitle: PropTypes.string.isRequired,
-  characterText: PropTypes.string.isRequired,
-  courseInvitation: PropTypes.string.isRequired,
-  videoSource: PropTypes.string.isRequired,
-  courseLink: PropTypes.string.isRequired,
+  courseTitle: PropTypes.string.isRequired, // Requires a string for course title
+  courseText: PropTypes.string.isRequired, // Requires a string for course text
+  characterTitle: PropTypes.string.isRequired, // Requires a string for character title
+  characterText: PropTypes.string.isRequired, // Requires a string for character text
+  courseInvitation: PropTypes.string.isRequired, // Requires a string for course invitation
+  videoSource: PropTypes.string.isRequired, // Requires a string for video source
+  courseLink: PropTypes.string.isRequired, // Requires a string for course link
 };
 
-export default CourseIntroduction;
+export default CourseIntroduction; // Export the CourseIntroduction component

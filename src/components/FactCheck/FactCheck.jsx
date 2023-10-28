@@ -3,6 +3,7 @@ import Sources from '../Sources';
 import FactCheckPic from '../../images/FactCheck.jpg';
 import FactCheckMyth from './FactCheckMyth';
 
+// Fact Check page that displays a header, text, and image, and lists and dispels common myths about cryptoassets
 function FactCheck() {
   const articlesources = [
     // Your source URLs
@@ -42,6 +43,7 @@ function FactCheck() {
     // Add more myths as needed...
   ]);
 
+  // Function to toggle the display of myth content
   const toggleMyth = (index) => {
     const updatedMyths = [...myths];
     updatedMyths[index].isOpen = !updatedMyths[index].isOpen;

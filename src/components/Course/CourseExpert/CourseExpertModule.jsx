@@ -1,4 +1,5 @@
 import Module from '../../Module';
+//fill the expert course with articles from the learning unit folder
 
 import {
   IntroductionCryptoCustodyPart1,

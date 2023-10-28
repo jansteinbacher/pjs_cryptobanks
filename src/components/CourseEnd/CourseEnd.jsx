@@ -6,6 +6,7 @@ import CourseCelebrationVideo from './CourseCelebrationVideo';
 import BackToCourseOverviewLink from './BackToCourseOverviewLink';
 import NextCourseLink from './NextCourseLink';
 import IndividualLearningPlanLink from './IndividualLearningPlanLink';
+// CourseEnd page which uses the other components from the folder to create the page
 
 function CourseEnd({
   summaryDownloadLink,
@@ -18,6 +19,7 @@ function CourseEnd({
   const [isSummaryVisible, setSummaryVisible] = useState(true);
   const [isCourseMaterialVisible, setCourseMaterialVisible] = useState(false);
 
+  // handle which section is visible on the page "Zusammenfassung" or "weiter Infosmationsquellen"
   const handleButtonSectionVisibility1 = () => {
     setSummaryVisible(false);
     setCourseMaterialVisible(true);
@@ -81,6 +83,7 @@ function CourseEnd({
   );
 }
 
+// Define the expected prop types for the CourseEnd component
 CourseEnd.propTypes = {
   summaryDownloadLink: PropTypes.string.isRequired,
   certificateDownloadLink: PropTypes.string.isRequired,

@@ -1,5 +1,6 @@
 import CourseIntroduction from '../../CourseIntroduction';
 import BerndVideo from '../../../videos/characterBerndIntroduction.mp4';
+// fill the introduction page of the beginner course with content
 
 function CourseBeginnerIntroduction() {
   return (

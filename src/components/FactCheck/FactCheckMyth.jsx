@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// styling of fact that is displayed on fact check page. element expands if clicked on it
 
 function FactCheckMyth({ myth, onToggle }) {
   return (

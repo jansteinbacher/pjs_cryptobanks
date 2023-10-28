@@ -31,6 +31,7 @@ function AssessmentQuestion({
   );
 }
 
+// Define the expected prop types for the AssessmentQuestion component
 AssessmentQuestion.propTypes = {
   question: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(PropTypes.string).isRequired,

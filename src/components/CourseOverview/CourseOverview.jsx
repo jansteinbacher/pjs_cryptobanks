@@ -6,7 +6,8 @@ import BeginnerVideo from '../../videos/courseBeginnerIntroduction.mp4';
 import AdvancedVideo from '../../videos/courseAdvancedIntroduction.mp4';
 import ExpertVideo from '../../videos/courseExpertIntroduction.mp4';
 import './CourseOverview.css';
-
+// with the usage of other components in folder creation of course overview page
+//data to courses filled with this array
 const courses = [
   {
     id: 1,

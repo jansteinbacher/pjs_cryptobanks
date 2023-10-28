@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import CourseIcon from '../../images/courseIcon.png';
+// Display the Link and Icon on the End Pages of the Courses to get back to the Course Overview Page
 
 function BackToCourseOverviewLink() {
   return (

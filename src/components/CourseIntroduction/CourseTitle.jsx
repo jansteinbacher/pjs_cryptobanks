@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// display the Course title
 
 function CourseTitle({ title, text }) {
   return (
@@ -11,9 +12,10 @@ function CourseTitle({ title, text }) {
   );
 }
 
+// Define the expected prop types for the CourseTitle component
 CourseTitle.propTypes = {
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired, // Requires a string for the title
+  text: PropTypes.string.isRequired, // Requires a string for the text
 };
 
 export default CourseTitle;
