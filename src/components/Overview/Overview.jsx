@@ -9,71 +9,85 @@ function Overview() {
   const learningUnits = [
     {
       term: 'Kryptoasset-Dienstleistungen',
-      explanation: 'Lerne potenzielle Kryptoasset-Dienstleistungen kennen.',
+      explanation:
+        'Lerne potenzielle Kryptoasset-Dienstleistungen kennen. (Grundkenntnisse nötig)',
       link: '/crypto-asset-services?from=overview',
+      level: 'advanced',
     },
     {
       term: 'Blockchain und Distributed-Ledger-Technologie',
       explanation:
         'Erfahre mehr über die zugrunde liegende Technologie für Kryptoassets.',
       link: '/introduction-blockchain?from=overview',
+      level: 'beginner',
     },
     {
       term: 'Herausforderungen und Zukunftsaussichten',
       explanation:
         'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Einführung von Kryptoassets auf.',
       link: '/opportunities-challenges-crypto-assets?from=overview',
+      level: 'beginner',
     },
     {
       term: 'Kryptoassets',
       explanation: 'Baue ein Grundverständnis für Kryptoassets auf.',
       link: '/introduction-crypto-assets?from=overview',
+      level: 'beginner',
     },
     {
       term: 'Arten von Kryptoassets',
       explanation: 'Lerne verschiedene Arten von Kryptoassets kennen.',
       link: '/types-of-crypto-assets?from=overview',
+      level: 'beginner',
     },
     {
       term: 'Regulatorik',
       explanation:
-        'Bekomme einen Überblick über die Regulatorik auf nationaler und internationaler Ebene.',
+        'Bekomme einen Überblick über die Regulatorik auf nationaler und internationaler Ebene. (Grundkenntnisse nötig)',
       link: '/crypto-asset-regulation?from=overview',
+      level: 'advanced',
     },
     {
       term: 'Trend und Adoption in der Gesellschaft',
       explanation:
-        'Erhalte einen Einblick in die Adoption von Kryptoassets unter Studierenden.',
+        'Erhalte einen Einblick in die Adoption von Kryptoassets unter Studierenden. (Grundkenntnisse nötig)',
       link: '/crypto-assets-adoption?from=overview',
+      level: 'advanced',
     },
     {
       term: 'Grundlagen der Kryptoassets-Verwahrung',
       explanation:
-        'Bekomme ein Verständnis für die Grundlagen der Kryptoasset-Verwahrung.',
+        'Bekomme ein Verständnis für die Grundlagen der Kryptoasset-Verwahrung. (Grundkenntnisse nötig)',
       link: '/introduction-crypto-custody?from=overview',
+      level: 'expert',
     },
     {
       term: 'Arten von Kryptoasset-Verwahrlösungen',
-      explanation: 'Lerne verschiedene Kryptoasset-Verwahrlösungen kennen.',
+      explanation:
+        'Lerne verschiedene Kryptoasset-Verwahrlösungen kennen. (Grundkenntnisse nötig)',
       link: '/crypto-custody-application-areas?from=overview',
+      level: 'expert',
     },
     {
       term: 'Regulatorik zur Kryptoasset-Verwahrung',
       explanation:
-        'Erhalte einen Einblick in die Regulatorik zur Kryptoasset-Verwahrung.',
+        'Erhalte einen Einblick in die Regulatorik zur Kryptoasset-Verwahrung. (Grundkenntnisse nötig)',
       link: '/crypto-custody-regulation?from=overview',
+      level: 'expert',
     },
     {
       term: 'Herausforderungen und Zukunftsaussichten zur Kryptoasset-Verwahrung',
       explanation:
-        'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Kryptoasset-Verwahrung.',
+        'Baue ein Verständnis für die Herausforderungen und Zukunftsaussichten im Zusammenhang mit der Kryptoasset-Verwahrung. (Grundkenntnisse nötig)',
       link: '/crypto-custody-challenges?from=overview',
+      level: 'expert',
     },
     {
       term: 'Expertenmeinungen zur Integration von Kryptoassets ins Bankwesen',
       explanation:
-        'Erfahre mehr über die Meinungen von Experten zur Integration von Kryptoassets ins traditionelle Bankwesen',
+        'Erfahre mehr über die Meinungen von Experten zur Integration von Kryptoassets ins traditionelle Bankwesen.',
       link: '/crypto-assets-expert-interview?from=overview',
+      level: 'beginner',
     },
   ];
 
@@ -166,6 +180,7 @@ function Overview() {
               term={item.term}
               explanation={item.explanation}
               link={item.link}
+              level={item.level}
             />
           ))}
         </div>

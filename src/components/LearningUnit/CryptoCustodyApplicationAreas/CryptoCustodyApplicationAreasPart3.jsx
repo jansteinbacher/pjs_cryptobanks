@@ -19,13 +19,13 @@ function CryptoCustodyApplicationAreasPart3() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Bei der <strong>zentralisierten Kryptoasset-Verwahrlösung</strong> hat
         eine einzelne Entität den vollen Zugriff auf die Kryptoassets und
         übernimmt die Sicherheit <a href="#sources">[1]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Wiederum die <strong>dezentrale Kryptoasset-Verwahrlösung</strong>{' '}
         verteilt die Kontrolle und das Management der Kryptoassets auf
         verschiedene Entitäten. Hierfür wird unter anderem die

@@ -14,7 +14,7 @@ function IntroductionCryptoCustodyPart2() {
         <img src={Wallet} alt="Wallet" className="w-full md:w-1/2" />
       </div>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Unter einer <strong>Wallet</strong> versteht man eine Finanzanwendung,
         die die Verwaltung digitaler Assets ermöglicht. Um eine Transaktion
         durchzuführen muss innerhalb der Wallet eine{' '}

@@ -22,7 +22,7 @@ function CryptoCustodyApplicationAreasPart2() {
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Innerhalb des <strong>Self-Custody</strong> liegt die gesamte
         Verantwortung für die Sicherheit und den Schutz des privaten Schlüssels
         beim Nutzer. Der Vorteil dieses Ansatzes liegt in der uneingeschränkten
@@ -32,7 +32,7 @@ function CryptoCustodyApplicationAreasPart2() {
         verloren gehen kann <a href="#sources">[2]</a>.
       </p>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Im Gegensatz dazu wird bei der <strong>Full-Custody</strong> die
         Kontrolle über die Kryptoassets an eine dritte Partei abgegeben. Somit
         hat der Nutzer keinen Zugriff auf seinen eigenen privaten Schlüssel und
@@ -45,7 +45,7 @@ function CryptoCustodyApplicationAreasPart2() {
         gehen können <a href="#sources">[1]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Eine Zwischenlösung stellt die <strong>Semi-Custody</strong> dar{' '}
         <a href="#sources">[1]</a>. Diese vereint die Kontrolle und Sicherheit
         der Self-Custody mit dem Komfort sowie zusätzlichen Sicherheit der

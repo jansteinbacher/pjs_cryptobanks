@@ -17,27 +17,19 @@ function IntroductionBlockchainPart2() {
         Konsensmechanismus
       </h2>
       {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={ConsensMechanism}
           alt="Regulation of Crypto Assets"
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://www.freepik.com/free-vector/effective-coworking-colleagues-togetherness-workers-collaboration-teamwork-regulation-workflow-efficiency-increase-team-members-arranging-mechanism_11667074.htm#query=consens%20mechanism&position=11&from_view=search&track=ais"
-        >
-          Bild von vectorjuice auf Freepik
-        </a>
-      </div>
 
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Proof of Work
       </h3>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Proof of Work (PoW) ist ein Konsensmechanismus, der zum Beispiel im
         Bitcoin-Netzwerk verwendet wird. Miner lösen komplexe mathematische
         Rätsel, um neue Blöcke zur Blockchain hinzuzufügen. Dies erfordert
@@ -49,7 +41,7 @@ function IntroductionBlockchainPart2() {
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Proof of Stake
       </h3>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Proof of Stake (PoS) wird in Kryptowährungen wie Ethereum und Cardano
         eingesetzt. Statt Rechenleistung setzen Teilnehmer Kryptowährung als
         Stake ein. Zum Beispiel können Inhaber von Ethereum Token ihre Coins als

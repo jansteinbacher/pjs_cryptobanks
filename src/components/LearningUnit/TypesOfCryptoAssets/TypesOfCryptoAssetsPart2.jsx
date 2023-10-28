@@ -51,6 +51,7 @@ function TypesOfCryptoAssetsPart2() {
         />
 
         {hovered && (
+<<<<<<< HEAD
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
             <div className="ml-4 mr-4 text-black">
               <p className="mb-4">
@@ -70,6 +71,20 @@ function TypesOfCryptoAssetsPart2() {
                 <a href="#sources">[3]</a>, <a href="#sources">[4]</a>.
               </p>
             </div>
+=======
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
+              Unter Payment Token versteht man sogenannte Zahlungstoken. Mittels
+              dieser können Finanztransaktionen durchgeführt werden.
+              Kryptowährungen zählen zu den weltweit bekanntesten Payment Token.
+              Mittlerweile gibt es eine Vielzahl an Kryptowährungen. Die wohl
+              Bekanntesten sind Bitcoin und Ethereum. Zentralbanken, wie die
+              EZB, sind außerdem gerade dabei über die Einführung einer
+              virtuellen Zentralbankwährung (Central Bank Digital Currency -
+              CBDC), wie den digitalen Euro, zu diskutieren{' '}
+              <a href="#sources">[3]</a>, <a href="#sources">[4]</a>.
+            </p>
+>>>>>>> main
           </div>
         )}
       </div>

@@ -22,7 +22,7 @@ function CryptoAssetsExpertInterviewPart2() {
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Experten</h2>
 
-      <div className="image-container flex mb-8">
+      <div className="image-container overflow-x-auto flex mb-8">
         {imageList.map((image) => (
           <img
             key={image.id}
@@ -34,13 +34,13 @@ function CryptoAssetsExpertInterviewPart2() {
         ))}
       </div>
       <p className="mb-8 text-center">
-        von links nach rechts: <br />
-        Maria-Therese Bless, Marc Henniges, Jonathan Leßmann, Niclas Voigt, Adam
-        Zgraja <br />
+        Von links nach rechts: <br />
+        Adam Zgraja, Maria-Therese Bless, Marc Henniges, Jonathan Leßmann,
+        Niclas Voigt <br />
         Weitere Interviewpartner ohne Bild:
         <br /> Stefan Teis und Matthias Niemietz
       </p>
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Jeder unserer Interviewpartner verfügt über eine einzigartige
         Perspektive und bietet wertvolle Einsichten in die Welt der
         Kryptoassets. Ihre Erfahrungen, Meinungen und Prognosen sind von
@@ -51,7 +51,7 @@ function CryptoAssetsExpertInterviewPart2() {
         Persönlichkeiten sind maßgeblich an der Gestaltung der Zukunft der
         Finanzwelt beteiligt und teilen gerne ihr Wissen und ihre Einblicke.
       </p>
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Die Aufrechterhaltung der Anonymität unserer Experten liegt uns am
         Herzen. Daher findest du folgend anonymiserte Kernaussagen aus den von
         uns geführten Interviews zu den Themen: Auswirkungen von Kryptoassets
@@ -63,7 +63,7 @@ function CryptoAssetsExpertInterviewPart2() {
         Bankenbranche in Bezug auf Kryptoassets.
       </p>
       <p>
-        <span className="font-bold text-justify">
+        <span className="font-bold text-left">
           Steckbriefe zu unseren Interviewpartnern
         </span>{' '}
         findest du am Ende unserer Interviewreihe.

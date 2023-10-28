@@ -14,7 +14,7 @@ function CryptoAssetsExpertInterviewPart1() {
         </video>
       </div>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Die folgenden Experteninterviews dienen dir als Quelle für fundierte
         Einblicke, Analysen und Meinungen von Branchenführern, Visionären und
         Fachleuten, die in der Welt der Kryptoassets tätig sind. Du erhältst

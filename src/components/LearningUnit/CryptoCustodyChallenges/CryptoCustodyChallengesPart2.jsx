@@ -31,7 +31,7 @@ function CryptoCustodyChallengesPart2() {
         Zukunftsaussichten
       </h2>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Das Hauptziel bei der Kryptoverwahrung ist es die richtige Balance
         zwischen Sicherheit und Nutzerfreundlichkeit zu finden. Für die Zukunkft
         soll eine sichere Verwahrungslösung den Grundbaustein für das
@@ -44,7 +44,7 @@ function CryptoCustodyChallengesPart2() {
         <img src={Future} alt="FutureBitcoin" className="w-full md:w-1/2" />
       </div>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Der Grundbaustein einer in Zukunft großen Auswahl an Dienstleistungen
         für digitale Vermögenswerte wird gelegt, indem
         <strong>
@@ -56,7 +56,7 @@ function CryptoCustodyChallengesPart2() {
         <a href="#sources">[2]</a>.
       </p>
 
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Durch den Gesetzesentwurf <strong>“Keep Your Coins Act of 2023“</strong>{' '}
         soll dem Inhaber von Kryptowährungen ermöglicht werden, diese in eigenen
         Wallets zu verwahren. Damit soll dem Nutzer die Macht und Privatsphäre

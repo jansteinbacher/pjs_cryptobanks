@@ -6,7 +6,7 @@ function OpportunitiesAndChallengesPart2() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Zukunftsaussichten von Kryptoassets
       </h2>
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         Kryptoassets, wie <strong>Security Token Offerings (STOs)</strong>{' '}
         bieten die Möglichkeit einer{' '}
         <strong>neuen Art von Kapitalbeschaffung</strong>. Daneben können{' '}
@@ -17,7 +17,7 @@ function OpportunitiesAndChallengesPart2() {
         <a href="#sources">[6]</a>.
       </p>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         <strong>
           Tokenisierung ermöglicht die digitale Darstellung und Aufteilung von
           Vermögenswerten
@@ -28,7 +28,7 @@ function OpportunitiesAndChallengesPart2() {
         Inhabern der Tokens aufgeteilt werden <a href="#sources">[6]</a>.
       </p>
 
-      <p className="mb-8 text-justify">
+      <p className="mb-8 text-left">
         <strong>
           Smart Contracts können bestimmte Aufgaben im MBO (Mid- and
           Back-Office) automatisieren und deutlich beschleunigen

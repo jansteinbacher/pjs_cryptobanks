@@ -17,25 +17,17 @@ function IntroductionCryptoCustodyPart1() {
       </h1>
 
       {isComingFromPreviousPage && <StoryBoxTobias paragraphs={tobiasStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={Regulation}
           alt="Regulation of Crypto Assets"
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/recht-und-ordnung-gesetz-klausel-6311493/"
-        >
-          Pixabay
-        </a>
-      </div>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Definition</h2>
 
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Bei der Verwendung von Kryptoassets spielt die sichere{' '}
         <strong>Verwahrung</strong> eine bedeutende Rolle. Um den Schutz der
         Assets vor Verlust, Manipulation oder Diebstahl zu gewährleisten bieten
@@ -43,14 +35,14 @@ function IntroductionCryptoCustodyPart1() {
         privaten Schlüssel der Nutzer aufzubewahren und Transaktionen zu
         genehmigen <a href="#sources">[1]</a>,<a href="#sources">[2]</a>.{' '}
       </p>
-      <p className="mb-4 text-justify">
+      <p className="mb-4 text-left">
         Aufgrund der Risiken und Komplexität die Kryptoassets mit sich bringen,
         müssen neue Prozesse, Verfahren und eine{' '}
         <strong>neue Infrastruktur</strong> geschaffen werden, um
         Kundenbedürfnisse zu befriedigen und Sicherheit zu garantieren
         <a href="#sources">[3]</a>,<a href="#sources">[1]</a>.{' '}
       </p>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Zwischen den Kundenbedürfnissen und der Sicherheit soll infolgedessen
         die richtige Balance hergestellt werden. Die Sicherstellung des{' '}
         <strong>privaten Schlüssels </strong> bringt jedoch auch Probleme in

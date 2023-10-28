@@ -16,7 +16,7 @@ function News() {
   }, [query]);
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center py-8 px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center py-8 px-4">
       <div className="mb-8">
         <NewsHeader query={query} setQuery={setQuery} />
       </div>

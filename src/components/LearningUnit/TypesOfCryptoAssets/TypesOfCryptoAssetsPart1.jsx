@@ -49,6 +49,7 @@ function TypesOfCryptoAssetsPart1() {
         />
 
         {hovered && (
+<<<<<<< HEAD
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
             <div className=" ml-4 mr-4 text-black">
               <p className="mb-4">
@@ -76,6 +77,27 @@ function TypesOfCryptoAssetsPart1() {
                 Kategorien von Kryptoassets <a href="#sources">[1]</a>.
               </p>
             </div>
+=======
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
+              Es existiert eine vielfältige Auswahl an Kryptoassets. Zu den
+              prominentesten zählen Kryptowährungen, NFTs (Non-Fungible Tokens)
+              sowie Stablecoins – um nur einige zu nennen. Diese Kryptoassets
+              lassen sich grundlegend in zwei Kategorien unterteilen: fungibel
+              und nicht-fungibel <a href="#sources">[1]</a>.
+              <br />
+              <br />
+              Fungible Tokens sind in ihrer Funktion identisch und können
+              nahtlos untereinander ausgetauscht werden. Demgegenüber sind
+              nicht-fungible Tokens einzigartig und individuell. Innerhalb der
+              fungiblen Tokens lassen sich Utility Tokens, Security Tokens und
+              Payment Tokens unterscheiden. Im Bereich der nicht-fungiblen
+              Tokens gibt es wiederum jene, die übertragbar sind, sowie solche,
+              die es nicht sind. Zur besseren Übersicht veranschaulicht die
+              nachfolgende Abbildung die verschiedenen Kategorien von
+              Kryptoassets <a href="#sources">[1]</a>.
+            </p>
+>>>>>>> main
           </div>
         )}
       </div>

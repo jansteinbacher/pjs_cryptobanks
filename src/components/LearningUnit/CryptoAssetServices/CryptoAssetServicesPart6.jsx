@@ -18,16 +18,8 @@ function CryptoAssetServicesPart6() {
         Krypto-Kredite
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img src={Handshake} alt="Handschlag" className="w-full md:w-1/2" />
-      </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://www.freepik.com/free-photo/closeup-shot-business-handshake-cropped-shot-two-people-wearing-formal-suits-shaking-hands-business-handshake-concept_5546352.htm#query=handshake&from_query=handschlag&position=1&from_view=search&track=sph"
-        >
-          Bild von katemangostar auf Freepik{' '}
-        </a>
       </div>
 
       <p className="mb-8">

@@ -36,7 +36,7 @@ function IntroductionCryptoAssetsPart2() {
           Your browser does not support the audio element.
         </audio>
       </div>
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Nach § 1 Abs. 11 S. 4 KWG ist ein Kryptowert ein digitaler, von keiner
         öffentlichen Stelle unterstützter Wert ohne gesetzlichen Status einer
         Währung, der gleichwohl als Tausch-, Zahlungs- oder Anlagegegenstand

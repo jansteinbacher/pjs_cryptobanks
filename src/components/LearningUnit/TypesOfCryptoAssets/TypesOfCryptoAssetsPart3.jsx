@@ -40,6 +40,7 @@ function TypesOfCryptoAssetsPart3() {
         <img src={UtlityToken} alt="sand" className="w-full md:w-7/8 mb-4" />
 
         {hovered && (
+<<<<<<< HEAD
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-90">
             <div className="ml-4 mr-4 text-black">
               <p className="mb-4 font-bold">
@@ -61,6 +62,19 @@ function TypesOfCryptoAssetsPart3() {
                 <a href="#sources">[7]</a>.
               </p>
             </div>
+=======
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-200 opacity-90">
+            <p className="text-left font-semibold ml-4 mr-4 text-gray-800">
+              Utility Token werden auch als “App-Token” bzw. “Nutzungstoken”
+              bezeichnet. Dabei wird dem Investor ein bestimmtes Nutzungsrecht
+              zur Verfügung gestellt. Er kann also mithilfe des Tokens eine
+              bestimmte Blockchain-Anwendung durchführen. Ein konkretes Beispiel
+              wäre der Exchange Token, der auf der Krypto-Börse für die
+              permanente Reduzierung der Handelsgebühren sorgt. Aufgrund der
+              vielfältigen Anwendungsmöglichkeiten von Utility Token, ist es
+              schwierig diese zu kategorisieren <a href="#sources">[7]</a>.
+            </p>
+>>>>>>> main
           </div>
         )}
       </div>

@@ -17,7 +17,7 @@ function IntroductionBlockchainPart3() {
         Abgrenzung zur Distributed-Ledger-Technologie
       </h2>
       {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
-      <p className="mb-12 text-justify">
+      <p className="mb-12 text-left">
         Die Blockchain-Technologie und die Distributed Ledger Technology (DLT)
         teilen den Ansatz der dezentralisierten Datenverwaltung, bieten jedoch
         unterschiedliche Umsetzungen. Beide ermöglichen verteilte

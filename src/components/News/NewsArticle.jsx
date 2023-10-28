@@ -6,7 +6,7 @@ function NewsArticle({ article }) {
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-white rounded-lg shadow-md p-4 mb-4 block hover-bg-green-100 transition duration-300"
+      className="bg-white rounded-lg shadow-md p-4 mb-4 block border border-gray-300 hover:bg-green-100 transition duration-300"
     >
       <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
       <p className="text-gray-600">{article.description}</p>

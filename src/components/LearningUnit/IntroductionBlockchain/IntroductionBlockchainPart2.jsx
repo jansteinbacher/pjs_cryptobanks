@@ -16,22 +16,15 @@ function IntroductionBlockchainPart2() {
         Permissioned vs. Permissionless
       </h2>
       {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={TypesOfBlockchain}
           alt="Regulation of Crypto Assets"
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://www.freepik.com/free-vector/security-concept-illustration-people-holding-chain_3226083.htm#query=permissioned%20vs%20permissionless%20blockchain&position=1&from_view=search&track=ais"
-        >
-          Bild von rawpixel.com auf Freepik
-        </a>
-      </div>
-      <p className="mb-12 text-justify">
+
+      <p className="mb-12 text-left">
         Die Blockchain-Technologie umfasst Permissioned und Permissionless
         Blockchains. Beide sind dezentral und transparent. Permissioned
         Blockchains erfordern Zugriffsberechtigungen, während Permissionless
