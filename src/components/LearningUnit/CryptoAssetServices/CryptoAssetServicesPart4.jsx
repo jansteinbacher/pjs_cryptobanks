@@ -18,32 +18,31 @@ function CryptoAssetServicesPart4() {
         Kryptoasset-Verwahrung
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={Safekeeping}
           alt="Crypto Assets Safekeeping"
           className="w-full md:w-1/2"
         />
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/tresor-safe-sicherheit-wohlstand-1904759/"
-        >
-          Pixabay
-        </a>
-      </div>
 
-      <p className="mb-8">
-        Bei der Token-Verwahrung handelt es sich genauer gesagt, um die
-        Aufbewahrung des kryptographischen Schlüssel, der als Zugang zu den
-        Kryptoassets dient. Dadurch kann auf die gekauften Kryptowährungen,
-        Token sowie Kryptowertpapiere zugegriffen werden. Die Dienstleistung ist
-        aktuell durch die im Kreditwesengesetz (KWG) <a href="#sources">[6]</a>{' '}
-        geregelte Kryptoverwahrung reguliert. Dadurch bietet die Bank einen
-        beaufsichtigten Zugang zu den Kryptoassets. Zusätzlich bietet die Bank
-        eine Verknüpfung zu regulierten und lizensierten Handelspartner für
-        Kryptowährungen <a href="#sources">[7]</a>
+      <p className="mb-4">
+        Bei der Token-Verwahrung handelt es sich genauer gesagt, um die{' '}
+        <strong>Aufbewahrung des kryptographischen Schlüssel</strong>, der als
+        Zugang zu den Kryptoassets dient. Dadurch kann auf die gekauften
+        Kryptowährungen, Token sowie Kryptowertpapiere zugegriffen werden.
+      </p>
+      <p className="mb-12">
+        Die Dienstleistung ist aktuell durch die im{' '}
+        <strong>
+          Kreditwesengesetz (KWG) <a href="#sources">[6]</a> geregelte
+          Kryptoverwahrung
+        </strong>{' '}
+        reguliert. Dadurch bietet die Bank einen{' '}
+        <strong>beaufsichtigten Zugang</strong> zu den Kryptoassets. Zusätzlich
+        bietet die Bank eine Verknüpfung zu <strong>regulierten</strong> und{' '}
+        <strong>lizensierten Handelspartner für Kryptowährungen</strong>{' '}
+        <a href="#sources">[7]</a>
       </p>
 
       <CryptoAssetServicesSources />

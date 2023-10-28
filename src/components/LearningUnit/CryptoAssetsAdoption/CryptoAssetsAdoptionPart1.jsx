@@ -21,23 +21,43 @@ function CryptoAssetsAdoptionPart1() {
         Adaption von Kryptoassets in der Gesellschaft: Studie unter Studierenden
       </h1>
 
-      <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight">
+      <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-12 tracking-tight">
         Bekanntheitsgrad von Kryptoassets
       </h2>
 
       {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart1} />}
-      <p className="mb-8">
-        <strong>Demographische Aspekte:</strong>
-        <br />
-        An der Umfrage haben insgesamt 58 Studenten teilgenommen, wobei der
-        Großteil aus den wirtschaftlichen Studiengängen kommen. 55% der
-        Befragten sind in den Studiengängen Management oder
-        Wirtschaftswissenschaften eingeschrieben, gefolgt von
-        Wirtschaftsinformatik bzw. Information Systems oder Informatik mit 38%.
-        4% haben angegeben in einem anderen Studiengang immatrikuliert zu sein.
-        Die Mehrheit, 66%, gab an männlich zu sein, während 34% davon weilblich
-        sind.
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Demographische Aspekte:
+      </h3>
+      <p className="font-bold mb-4">
+        An der Umfrage haben insgesamt 58 Studenten teilgenommen.
       </p>
+
+      <ul className="mb-12 list-disc ml-4">
+        <li>Der Großteil kommt aus den wirtschaftlichen Studiengängen.</li>
+        <li>
+          <strong>55%</strong> der Befragten sind in den Studiengängen{' '}
+          <strong>Management</strong> oder{' '}
+          <strong>Wirtschaftswissenschaften</strong> eingeschrieben.
+        </li>
+        <li>
+          <strong>38%</strong> sind in den Studiengängen{' '}
+          <strong>Wirtschaftsinformatik</strong> bzw.{' '}
+          <strong>Information Systems</strong> oder <strong>Informatik</strong>{' '}
+          eingeschrieben.
+        </li>
+        <li>
+          <strong>4%</strong> haben angegeben in einem{' '}
+          <strong>anderen Studiengang</strong> immatrikuliert zu sein.
+        </li>
+        <li>
+          Die Mehrheit, <strong>66%</strong>, gab an <strong>männlich</strong>{' '}
+          zu sein.
+        </li>
+        <li>
+          <strong>34%</strong> davon sind <strong>weiblich</strong>.
+        </li>
+      </ul>
       {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart2} />}
       <div className="flex justify-center items-center mb-8">
         <img
@@ -46,27 +66,50 @@ function CryptoAssetsAdoptionPart1() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Unter den 58 Befragten hat die Mehrheit angegeben, bereits schon einmal
         die Begriffe “Blockchain” und “Kryptoassets” gehört zu haben. Auffällig
         ist, dass der Begriff “Blockchain”, also die dahinterliegende
-        Technologie, unter den Studenten etwas bekannter ist. Nur sehr wenige
-        sind mit den Begriffen jedoch noch nicht vertraut. So kennt nur eine
-        Person aus den 58 Teilnehmern beide Begriffe nicht. Die weiteren sechs
-        Personen sind nur mit dem “Kryptoassets”-Begriff nicht vertraut. Dennoch
-        ist zu erkennen, dass Kryptoassets im Vergleich noch unbekannter sind.
+        Technologie, unter den Studenten etwas bekannter ist.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          Nur sehr wenige sind mit den Begriffen jedoch noch nicht vertraut.
+        </li>
+        <li>
+          So kennt{' '}
+          <strong>
+            nur eine Person aus den 58 Teilnehmern beide Begriffe nicht
+          </strong>
+          .
+        </li>
+        <li>
+          Die weiteren sechs Personen sind{' '}
+          <strong>nur mit dem “Kryptoassets”-Begriff nicht vertraut</strong>.
+        </li>
+        <li>
+          Dennoch ist zu erkennen, dass{' '}
+          <strong>Kryptoassets im Vergleich noch unbekannter sind</strong>.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-4">
         Aus den durchgeführten Interviews mit den Experten wurde schnell
         deutlich, dass der Terminus &quot;Kryptoassets&quot; noch nicht klar
-        definiert ist (Zitat einfügen). Einige verstehen unter dem Begriff
-        &quot;Kryptoassets&quot; ausschließlich Kryptowährungen, während andere
-        ihn als Oberbegriff für verschiedene Vermögenswerte wie Kryptowährungen,
-        Utility Token, NFTs usw. betrachten. Dies kann schnell für Verwirrung
-        sorgen. Falls deine Bank, beabsichtigt, Kryptoassets anzubieten, ist es
-        somit entscheidend, bereits zu Beginn eine klare Definition darzulegen.
+        definiert ist.
+      </p>
+      <p className="mb-4">
+        Einige verstehen unter dem Begriff &quot;Kryptoassets&quot;
+        ausschließlich Kryptowährungen, während andere ihn als Oberbegriff für
+        verschiedene Vermögenswerte wie Kryptowährungen, Utility Token, NFTs
+        usw. betrachten.
+      </p>
+      <p className="mb-12">
+        Dies kann schnell für Verwirrung sorgen. Falls deine Bank, beabsichtigt,
+        Kryptoassets anzubieten, ist es somit entscheidend, bereits zu Beginn
+        eine <strong>klare Definition</strong> darzulegen.
       </p>
     </div>
   );

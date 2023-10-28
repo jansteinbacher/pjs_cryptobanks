@@ -29,22 +29,36 @@ function CryptoAssetsAdoptionPart8() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Auffällig ist, dass jeder der 58 Befragten, der Investition in
-        Kryptoassets ein gewisses Risiko zuordnet. So schätzen 33% das
-        Investitionsrisiko als sehr hoch, 53% als hoch und 14% als mittelmäßig
-        ein. Keiner der Befragten ordnet der Investition in die digitalen Assets
-        ein niedriges Risiko zu.
+        Kryptoassets ein gewisses Risiko zuordnet.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          So schätzen <strong>33%</strong> das Investitionsrisiko als{' '}
+          <strong>sehr hoch</strong>, <strong>53%</strong> als{' '}
+          <strong>hoch</strong> und <strong>14%</strong> als{' '}
+          <strong>mittelmäßig</strong> ein.
+        </li>
+        <li>
+          <strong>Keiner der Befragten</strong> ordnet der Investition in die
+          digitalen Assets ein <strong>niedriges Risiko</strong> zu.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-12">
         Angesichts der Tatsache, dass eine Investition in Kryptoassets unter
         allen Befragten als risikoreich eingestuft wird, sollte deine Bank
         darauf abzielen Sicherheit zu gewährleisten. Dies könnte sie umsetzen,
-        indem sie Transparenz schafft, Beratung anbietet, über potentielle
-        Risken aufklärt und mittels Sicherheitsmaßnahmen gezielt den Gefahren
-        entgegensteuert.
+        indem sie{' '}
+        <strong>
+          Transparenz schafft, Beratung anbietet, über potentielle Risken
+          aufklärt und mittels Sicherheitsmaßnahmen gezielt den Gefahren
+          entgegensteuert
+        </strong>
+        .
       </p>
       {isComingFromPreviousPage && <StoryBoxLeo paragraphs={leoStoryPart2} />}
       <div className="flex justify-center items-center mb-8">
@@ -54,22 +68,38 @@ function CryptoAssetsAdoptionPart8() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Bei der Frage, wo die Befragten grundsätzlich in Kryptoassets
-        investieren würden, wurden folgende Ergebnisse angezeigt. Die Mehrheit,
-        45%, würde über Kryptobörsen, wie bspw. Coinbase, ihre Kryptoassets
-        handeln. 33% würden über Neo Broker investieren und 17% würden das
-        Angebot von Banken wahrnehmen.
+        investieren würden, wurden folgende Ergebnisse angezeigt.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          Die Mehrheit, <strong>45%</strong>, würde über{' '}
+          <strong>Kryptobörsen</strong>, wie bspw. Coinbase, ihre Kryptoassets
+          handeln.
+        </li>
+        <li>
+          <strong>33%</strong> würden über <strong>Neo Broker</strong>{' '}
+          investieren.
+        </li>
+        <li>
+          <strong>17%</strong> würden das Angebot von <strong>Banken</strong>{' '}
+          wahrnehmen.
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-12">
         Um die Wettbewerbsfähigkeit deiner Bank zu gewährleisten, ist es von
-        großer Bedeutung, dass diese ihre Informationen und Dienstleistungen
-        gezielt anpasst, um mit den Neo Brokern oder Kryptobörsen mithalten zu
-        können. Anhand von innovativen Geschäftsmodellen, Kooperationen zu
-        Kryptobörsen und einer sorgfältigen Auswahl an Beratungsangeboten, kann
-        deine Bank neben der Bindung ihrer derzeitigen Kunden auch
+        großer Bedeutung, dass diese ihre{' '}
+        <strong>Informationen und Dienstleistungen gezielt anpasst</strong>, um
+        mit den Neo Brokern oder Kryptobörsen mithalten zu können. Anhand von{' '}
+        <strong>
+          innovativen Geschäftsmodellen, Kooperationen zu Kryptobörsen und einer
+          sorgfältigen Auswahl an Beratungsangeboten
+        </strong>
+        , kann deine Bank neben der Bindung ihrer derzeitigen Kunden auch
         Neukundengewinnung garantieren.
       </p>
     </div>

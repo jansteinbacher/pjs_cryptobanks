@@ -33,10 +33,13 @@ function CryptoAssetServicesPart6() {
       <p className="mb-8">
         Der Unterschied zu einem herkömmlichen Kredit liegt in der
         Berücksichtigung der Kreditwürdigkeit. Bei den Krediten auf der
-        Blockchain-Infrastruktur wird ein gewisser Teil der Kryptoassets des
-        Kreditnehmers als Collateral hinterlegt. Im Falle einer nicht
-        fristgerechten Zurückzahlung des angegebenen Betrags, kann der
-        Kreditgeber, die hinterlegten Kryptoassets liquidieren{' '}
+        Blockchain-Infrastruktur wird ein{' '}
+        <strong>
+          gewisser Teil der Kryptoassets des Kreditnehmers als Collateral
+          hinterlegt
+        </strong>
+        . Im Falle einer nicht fristgerechten Zurückzahlung des angegebenen
+        Betrags, kann der Kreditgeber, die hinterlegten Kryptoassets liquidieren{' '}
         <a href="#sources">[11]</a>.
       </p>
 

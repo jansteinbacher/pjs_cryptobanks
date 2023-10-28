@@ -22,7 +22,7 @@ function CryptoAssetsRegulationPart1() {
         Regulatorische Landschaft
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-12">
         <img
           src={Regulation}
           alt="Regulation of Crypto Assets"
@@ -30,27 +30,40 @@ function CryptoAssetsRegulationPart1() {
         />
       </div>
 
-      <p className="mb-8">
+      <p className="mb-4">
         Der gegenwärtige rechtliche Rahmen ist auf Grund der Neuheit der
         Thematik noch in einem unausgereiften Zustand. Dies ermöglicht
-        nationalen Regulierungsbehörden, wie in Deutschland bspw. die BaFin,
-        uneinheitlich zu handeln und führt zu erhöhten Compliance-Kosten. Die
-        derzeitigen Gesetze fokussieren sich hauptsächlich auf die Bekämpfung
-        von Geldwäsche und Terrorismusfinanzierung (AML/CTF), während Aspekte
-        des Verbraucherschutzes und der Prävention von Marktmissbrauch
-        vergleichsweise noch weniger Berücksichtigung finden. Angesichts der
-        wachsenden Popularität des Krypto-Asset-Marktes gibt es des Weiteren
-        einen zunehmenden Bedarf und Wunsch nach verstärkter Regulierung, um die
-        wirtschaftliche Stabilität zu gewährleisten. Obgleich der
-        regulatorischen Komplexität des Marktumfelds sind bereits zahlreiche
-        Marktteilnehmer im Bereich der Kryptoassets in Europa und weltweit
-        aktiv. Einige Banken experimentieren mit der Ausgabe von
-        On-Chain-Anleihe-Token. Ein Bankenkonsortium hat eine Infrastruktur
-        geschaffen, die es anderen Plattformen ermöglicht, ihre
-        Krypto-Vermögenswerte nach Abschluss des Handels zu verwalten. Einige
-        Privatbanken bieten separate Dienste an, die es ihren Kunden erlauben,
-        Krypto-Vermögenswerte zu kaufen und zu verkaufen{' '}
-        <a href="#sources">[1]</a>.
+        nationalen Regulierungsbehörden, wie in Deutschland bspw. die{' '}
+        <strong>BaFin</strong>, uneinheitlich zu handeln und führt zu erhöhten{' '}
+        <strong>Compliance-Kosten</strong>.
+      </p>
+      <p className="mb-4">
+        Die derzeitigen Gesetze fokussieren sich hauptsächlich auf die
+        <strong>
+          {' '}
+          Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CTF)
+        </strong>
+        , während Aspekte des <strong>Verbraucherschutzes</strong> und der{' '}
+        <strong>Prävention von Marktmissbrauch</strong> vergleichsweise noch
+        weniger Berücksichtigung finden.
+      </p>
+      <p className="mb-4">
+        Angesichts der wachsenden Popularität des Krypto-Asset-Marktes gibt es
+        des Weiteren einen zunehmenden Bedarf und{' '}
+        <strong>Wunsch nach verstärkter Regulierung</strong>, um die
+        wirtschaftliche Stabilität zu gewährleisten.
+      </p>
+      <p className="mb-12">
+        Obgleich der regulatorischen Komplexität des Marktumfelds sind{' '}
+        <strong>bereits zahlreiche Marktteilnehmer</strong> im Bereich der
+        Kryptoassets in Europa und <strong>weltweit aktiv</strong>. Einige
+        Banken experimentieren mit der Ausgabe von{' '}
+        <strong>On-Chain-Anleihe-Token</strong>. Ein{' '}
+        <strong>Bankenkonsortium</strong> hat eine Infrastruktur geschaffen, die
+        es anderen Plattformen ermöglicht, ihre Krypto-Vermögenswerte nach
+        Abschluss des Handels zu verwalten. Einige Privatbanken bieten separate
+        Dienste an, die es ihren Kunden erlauben, Krypto-Vermögenswerte zu
+        kaufen und zu verkaufen <a href="#sources">[1]</a>.
       </p>
 
       <CryptoAssetsRegulationSources />

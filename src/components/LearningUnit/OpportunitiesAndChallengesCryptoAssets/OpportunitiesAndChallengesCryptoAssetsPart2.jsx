@@ -7,31 +7,38 @@ function OpportunitiesAndChallengesPart2() {
         Zukunftsaussichten von Kryptoassets
       </h2>
       <p className="mb-8 text-justify">
-        Kryptoassets, wie Security Token Offerings (STOs) bieten die Möglichkeit
-        einer neuen Art von Kapitalbeschaffung. Daneben können Non-Fungible
-        Tokens (NFTs) den Handel und Investition in reale oder bisher illiquide
-        Vermögenswerte ermöglichen. Zudem eröffnet es die Tür für Investitionen
-        in neu gegründete kleine und mittlere Unternehmen (KMU) durch den Kauf
-        von tokenisierten Anleihen oder Aktien <a href="#sources">[6]</a>.
-      </p>
-
-      <p className="mb-8 text-justify">
-        Tokenisierung ermöglicht die digitale Darstellung und Aufteilung von
-        Vermögenswerten. Dabei können die Nennwerte der Tokens flexibel
-        angepasst werden, um den Bedürfnissen der Investoren besser gerecht zu
-        werden. Außerdem können die Einnahmeströme aus Vermögenswerten
-        automatisch unter den Inhabern der Tokens aufgeteilt werden{' '}
+        Kryptoassets, wie <strong>Security Token Offerings (STOs)</strong>{' '}
+        bieten die Möglichkeit einer{' '}
+        <strong>neuen Art von Kapitalbeschaffung</strong>. Daneben können{' '}
+        Non-Fungible Tokens (NFTs) den Handel und Investition in reale oder
+        bisher illiquide Vermögenswerte ermöglichen . Zudem eröffnet es die Tür
+        für Investitionen in neu gegründete kleine und mittlere Unternehmen
+        (KMU) durch den Kauf von tokenisierten Anleihen oder Aktien{' '}
         <a href="#sources">[6]</a>.
       </p>
 
       <p className="mb-8 text-justify">
-        Smart Contracts können bestimmte Aufgaben im MBO (Mid- and Back-Office)
-        automatisieren und deutlich beschleunigen. Gleichzeitig kann der Bedarf
-        an Intermediäre, wie zentralen Clearingstellen, reduziert werden. Des
-        Weiteren führen atomare Trades zu einer erheblichen Reduzierung des
-        Gegenparteirisikos. Dabei ermöglichen Smart Contracts den Austausch von
-        Vermögenswerten (Security Tokens) mit Zahlungsmittel (Payment Tokens) in
-        Echtzeit <a href="#sources">[6]</a>.
+        <strong>
+          Tokenisierung ermöglicht die digitale Darstellung und Aufteilung von
+          Vermögenswerten
+        </strong>
+        . Dabei können die Nennwerte der Tokens flexibel angepasst werden, um
+        den Bedürfnissen der Investoren besser gerecht zu werden. Außerdem
+        können die Einnahmeströme aus Vermögenswerten automatisch unter den
+        Inhabern der Tokens aufgeteilt werden <a href="#sources">[6]</a>.
+      </p>
+
+      <p className="mb-8 text-justify">
+        <strong>
+          Smart Contracts können bestimmte Aufgaben im MBO (Mid- and
+          Back-Office) automatisieren und deutlich beschleunigen
+        </strong>
+        . Gleichzeitig kann der Bedarf an Intermediäre, wie zentralen
+        Clearingstellen, reduziert werden. Des Weiteren führen atomare Trades zu
+        einer <strong>erheblichen Reduzierung des Gegenparteirisikos</strong>.
+        Dabei ermöglichen Smart Contracts den <strong>Austausch</strong> von
+        Vermögenswerten (Security Tokens) mit Zahlungsmittel (Payment Tokens){' '}
+        <strong>in Echtzeit</strong> <a href="#sources">[6]</a>.
       </p>
 
       <OpportunitiesAndChallengesCryptoAssetsSources />

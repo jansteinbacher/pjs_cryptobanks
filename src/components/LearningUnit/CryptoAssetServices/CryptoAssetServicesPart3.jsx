@@ -17,25 +17,27 @@ function CryptoAssetServicesPart3() {
         Kryptowertpapiere
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/recht-und-ordnung-gesetz-klausel-6311493/"
-        >
-          Bild folgt noch
-        </a>
-      </div>
 
-      <p className="mb-8">
-        Die Bank übernimmt bei der Abwicklung von Kryptowertpapier-Transaktionen
-        die Rolle des Registerführers und der Zahlstelle. Gemäß den rechtlichen
-        Vorgaben für elektronische Wertpapiere <a href="#sources">[3]</a>{' '}
-        erfolgt die Registrierung des Papiers in einem dezentralen
-        Blockchain-Register. Im Unterschied zur Emission herkömmlicher
-        Wertpapiere ist kein Zentralverwahrer oder weitere Zwischeninstanz
-        erforderlich. Dies ermöglicht den Parteien den direkten bilateralen
-        Handel. Darüber hinaus steht den Anlegern die Entscheidung offen, ob sie
-        ihre Kryptowertpapiere als ERC-20-Token in ihrer Blockchain-Wallet
+      <p className="mb-4">
+        <strong>
+          Die Bank übernimmt bei der Abwicklung von
+          Kryptowertpapier-Transaktionen die Rolle des Registerführers und der
+          Zahlstelle.
+        </strong>
+      </p>
+      <p className="mb-4">
+        Gemäß den rechtlichen Vorgaben für{' '}
+        <strong>elektronische Wertpapiere</strong> <a href="#sources">[3]</a>{' '}
+        erfolgt die Registrierung des Papiers in einem{' '}
+        <strong>dezentralen Blockchain-Register</strong>. Im Unterschied zur
+        Emission herkömmlicher Wertpapiere ist{' '}
+        <strong>kein Zentralverwahrer</strong> oder weitere Zwischeninstanz
+        erforderlich. Dies ermöglicht den Parteien den{' '}
+        <strong>direkten bilateralen Handel</strong>.
+      </p>
+      <p className="mb-12">
+        Darüber hinaus steht den Anlegern die Entscheidung offen, ob sie ihre
+        Kryptowertpapiere als ERC-20-Token in ihrer Blockchain-Wallet
         eigenständig verwalten oder die konventionellen Wertpapierdepots der
         Bank in Anspruch nehmen möchten <a href="#sources">[4]</a>,{' '}
         <a href="#sources">[5]</a>.

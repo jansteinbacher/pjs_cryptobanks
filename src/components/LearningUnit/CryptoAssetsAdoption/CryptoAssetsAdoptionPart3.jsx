@@ -24,19 +24,32 @@ function CryptoAssetsAdoptionPart3() {
           className="w-full md:w-3/4"
         />
       </div>
-      <p className="mb-8">
+      <p className="font-bold mb-4">
         Die Hälfte der befragten Studenten, etwa 50%, ist daran interessiert,
-        sich vermehrt mit dem Thema Kryptoassets auseinanderzusetzen. 22% sind
-        sich diesbezüglich noch unsicher. Ca. 28% sind nicht daran interessiert,
-        ihre bisherigen Kentnisse weiter zu vertiefen.
+        sich vermehrt mit dem Thema Kryptoassets auseinanderzusetzen.
       </p>
-      <p className="mb-8">
-        <strong>Was bedeutet dies für deine Bank:</strong>
-        <br />
-        Deine Bank sollte versuchen mithilfe von einfacher und ausführlicher
-        Informationsdarstellung noch weitere Individuen, die derzeit von der
-        Thematik noch überwältigt bzw. abgeschreckt sind, abzuholen. Wie sie das
-        tun kann, wird im Folgenden aufgezeigt.
+      <ul className="mb-12 list-disc ml-4">
+        <li>
+          <strong>22%</strong> sind sich diesbezüglich{' '}
+          <strong>noch unsicher</strong>.
+        </li>
+        <li>
+          Ca. <strong>28%</strong> sind nicht{' '}
+          <strong>daran interessiert</strong>, ihre bisherigen{' '}
+          <strong>Kenntnisse weiter zu vertiefen.</strong>
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 tracking-tight">
+        Was bedeutet dies für deine Bank:
+      </h3>
+      <p className="mb-4">
+        Deine Bank sollte versuchen mithilfe von{' '}
+        <strong>einfacher und ausführlicher Informationsdarstellung</strong>{' '}
+        noch weitere Individuen, die derzeit von der Thematik noch überwältigt
+        bzw. abgeschreckt sind, abzuholen.
+      </p>
+      <p className="mb-12">
+        Wie sie das tun kann, wird im Folgenden aufgezeigt.
       </p>
     </div>
   );
