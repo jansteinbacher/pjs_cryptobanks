@@ -65,7 +65,7 @@ function CryptoAssetsAdoptionPart6() {
           Informationsangebot zu Kryptoassets erweitert und entsprechende
           Dienstleistungen anbietet
         </strong>
-        . Deine Bank kann dem Kunden somit in seinen Investitionsentscheidungen
+        . Deine Bank kann den Kunden somit in seinen Investitionsentscheidungen
         unterstützen und dadurch für mehr Kundenzufriedenheit sorgen.
       </p>
     </div>

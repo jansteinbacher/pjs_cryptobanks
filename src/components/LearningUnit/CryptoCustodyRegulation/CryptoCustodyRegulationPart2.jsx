@@ -27,8 +27,8 @@ function CryptoCustodyRegulationPart2() {
 
       <p className="mb-4 text-left">
         Diese Regelungen beziehen sich auf das Verwalten, Verwahren und Sichern
-        von Kryptowerten sowie privaten kryptografischen Schlüsseln, die für die
-        Aufbewahrung, Speicherung oder Übertragung von Kryptowerten genutzt
+        von Kryptowerten sowie privaten kryptographischen Schlüsseln, die für
+        die Aufbewahrung, Speicherung oder Übertragung von Kryptowerten genutzt
         werden.{' '}
       </p>
       <p className="mb-4 text-left">
@@ -41,16 +41,16 @@ function CryptoCustodyRegulationPart2() {
         <strong>Verwahrung</strong> impliziert die Aufbewahrung von Kryptowerten
         für Dritte als Dienstleistung. Dies betrifft insbesondere Anbieter, die
         Kryptowerte ihrer Kunden gesammelt aufbewahren, ohne dass die Kunden
-        selbst über die kryptografischen Schlüssel informiert sind.{' '}
+        selbst über die kryptographischen Schlüssel informiert sind.{' '}
       </p>
       <p className="mb-4 text-left">
-        <strong>Verwalten</strong>
+        <strong>Verwalten </strong>
         umfasst die kontinuierliche Ausübung der Rechte im Zusammenhang mit den
         Kryptowerten.{' '}
       </p>
       <p className="mb-4 text-left">
         Unter <strong>Sicherung</strong> fällt sowohl die digitale Speicherung
-        der privaten kryptografischen Schlüssel Dritter als Dienstleistung als
+        der privaten kryptographischen Schlüssel Dritter als Dienstleistung als
         auch die physische Aufbewahrung von Datenträgern (z. B. USB-Sticks oder
         Papiere), auf denen solche Schlüssel gespeichert sind. Reiner
         Speicherplatz ohne explizite Dienstleistung zur Schlüsselspeicherung,
@@ -63,7 +63,7 @@ function CryptoCustodyRegulationPart2() {
         Zugriff auf die verwahrten Kryptowerte oder Schlüssel haben.
         Entscheidend ist die Möglichkeit des Zugriffs auf öffentliche Adressen,
         unter denen Kryptowerte dezentral gespeichert sind, durch die Verwahrung
-        der privaten kryptografischen Schlüssel <a href="#sources">[3]</a>.
+        der privaten kryptographischen Schlüssel <a href="#sources">[3]</a>.
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Ausblick</h2>

@@ -16,8 +16,8 @@ function IntroductionCryptoAssetsPart1() {
   const berndStory = [
     'Voller Neugierde macht sich Bernd auf die Suche nach Informationen zum Thema Kryptoassets, um seinen Wissensdurst zu stillen. In der Betriebskantine hat er ein Gespräch zwischen Simone und Tobias zu dem Thema mitbekommen.',
     'Er hatte die beiden beauftragt sich ebenfalls mit dem Thema Kryptoassets auseinanderzusetzen, um ein breites Wissen zu Kryptoassets zu bekommen und letztlich eine fundierte Entscheidung für oder gegen die Integration von Kryptoassets in seine Bank zu treffen. Bernd konnte nicht widerstehen, sich in das Gespräch einzubringen.',
-    '"Entschuldigt, dass ich mich einmische, aber ich habe auch viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen in Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht sicher, wer oder was das ist."',
-    'Simone lächelte und erklärte: "Nakamoto ist der Pseudonym eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur, die die Krypto-Revolution gestartet hat."',
+    '"Entschuldigt, dass ich mich einmische, aber ich habe auch viele Fragen. Zum Beispiel, wer ist Nakamoto? Ich habe diesen Namen im Zusammenhang mit Kryptoassets gehört, aber ich bin mir nicht sicher, wer oder was das ist."',
+    'Simone lächelte und erklärte: "Nakamoto ist das Pseudonym eines unbekannten Schöpfers von Bitcoin. Niemand weiß wirklich, wer hinter diesem Namen steckt. Es ist wie eine mysteriöse Figur, die die Krypto-Revolution gestartet hat."',
     'Tobias fügte hinzu: "Genau, Nakamoto veröffentlichte das Whitepaper für Bitcoin im Jahr 2008 und startete 2009 das Bitcoin-Netzwerk. Aber seitdem ist seine Identität ein Rätsel geblieben."',
   ];
 
@@ -56,11 +56,11 @@ function IntroductionCryptoAssetsPart1() {
       </div>
 
       <p className="mb-4 text-left">
-        Seit der Einführung von der Kryptowährung <strong>Bitcoin</strong> (BTC)
+        Seit der Einführung der Kryptowährung <strong>Bitcoin</strong> (BTC)
         2009, basierend auf Konzepten, die im Whitepaper von Satoshi Nakamoto
         skizziert wurden, hat sich die Welt der blockchainbasierten digitalen
         Token rasant entwickelt. Bis heute ist die Identität des Pseudonyms{' '}
-        <strong>Satoshi Nakamoto</strong>
+        <strong>Satoshi Nakamoto </strong>
         unbekannt <a href="#sources">[1]</a>.{' '}
       </p>
       <p className="mb-4 text-left">

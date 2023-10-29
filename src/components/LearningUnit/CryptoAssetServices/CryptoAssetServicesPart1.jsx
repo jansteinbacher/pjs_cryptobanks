@@ -14,13 +14,13 @@ function CryptoAssetServicesPart1() {
   );
 
   const simoneStoryPart1 = [
-    'Randvoll mit umfassendem regulatorischem Wissen stellt sich Simone die Frage, welche potenziellen Anwendungen von Kryptoassets im Bankensektor bestehen könnten. Durch eine Unterhaltung mit ihrer Freundin erfährt sie von der bevorstehenden Digital Asset Conference in Frankfurt, auf der sie hoffentlich Antworten auf ihre Frage finden kann.',
+    'Simone, die über ein umfassendes regulatorisches Wissen verfügt, interessiert sich dafür, welche möglichen Einsatzmöglichkeiten von Kryptoassets im Bereich des Bankwesens denkbar sind. Durch eine Unterhaltung mit ihrer Freundin erfährt sie von der bevorstehenden Digital Asset Conference in Frankfurt, auf der sie hoffentlich Antworten auf ihre Frage finden kann.',
     'Fasziniert von dieser Idee, entschließt sich Simone dazu, zwei Wochen später an dieser Konferenz teilzunehmen.Nach ihrer Ankunft auf der Konferenz entdeckt sie zahlreiche Stände verschiedener Unternehmen. Mit wachsender Begeisterung nähert sich Simone Stand um Stand, während die Mitarbeiter der Unternehmen ihr ihre jeweiligen Krypto-Dienstleistungen erläutern.',
     'Nach ihrer Ankunft auf der Konferenz entdeckt sie zahlreiche Stände verschiedener Unternehmen. Mit wachsender Begeisterung nähert sich Simone Stand um Stand, während die Mitarbeiter der Unternehmen ihr ihre jeweiligen Krypto-Dienstleistungen erläutern.',
   ];
 
   const simoneStoryPart2 = [
-    'Am ersten Stand präsentieren die Aussteller Simone den Krypto-Handel, die es Investoren ermöglicht, Kryptowährungen mühelos zu erwerben und zu veräußern. Dies erinnert Simone an ein vergangenes Projekt, bei dem sie aktiv an der Integration von Kauf- und Verkaufsoptionen für ETFs in einer Online-Banking-App beteiligt war. Gespannt verfolgt sie aufmerksam die Ausführungen der Unternehmensvertreter.',
+    'Am ersten Stand präsentieren die Aussteller Simone den Krypto-Handel, der es Investoren ermöglicht, Kryptowährungen mühelos zu erwerben und zu veräußern. Dies erinnert Simone an ein vergangenes Projekt, bei dem sie aktiv an der Integration von Kauf- und Verkaufsoptionen für ETFs in einer Online-Banking-App beteiligt war. Gespannt verfolgt sie aufmerksam die Ausführungen der Unternehmensvertreter.',
   ];
 
   return (

@@ -12,7 +12,7 @@ function CryptoCustodyApplicationAreasPart5() {
     window.location.search.includes('from=expert-course');
 
   const tobiasStory = [
-    'Tobias weiß nun, dass er seinen privaten Schlüssel bisher nur in einer Software Wallet gespeichert hat, die leider auch anfällig für Cyberangriffen sein können. Aus diesem Grund möchte er weitere Methoden der Lagerung des Schlüssels kennenlernen, um zukünftig sicherer aufgestellt zu sein.',
+    'Tobias weiß nun, dass er seinen privaten Schlüssel bisher nur in einer Software Wallet gespeichert hat, die leider auch anfällig für Cyberangriffe sein können. Aus diesem Grund möchte er weitere Methoden der Lagerung des Schlüssels kennenlernen, um zukünftig sicherer aufgestellt zu sein.',
   ];
 
   return (

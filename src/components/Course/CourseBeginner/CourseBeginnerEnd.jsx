@@ -7,7 +7,7 @@ function CourseBeginnerEnd() {
     <CourseEnd
       summaryDownloadLink="/downloads/courseSummaries/summaryBeginnerCourse.pdf"
       certificateDownloadLink="/downloads/certificates/certificateBeginnerCourse.pdf"
-      followingCourseLink="/course-beginner-introduction"
+      followingCourseLink="/course-advanced-introduction"
       followingCourseDescription="Zum Fortgeschrittenenkurs"
       celebrationVideoSource={CourseCompletedVideo}
       furtherContent={

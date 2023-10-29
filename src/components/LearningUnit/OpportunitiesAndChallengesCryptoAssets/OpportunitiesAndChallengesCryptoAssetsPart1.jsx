@@ -50,7 +50,7 @@ function TypesOfCryptoAssetsSources() {
         nicht geschützt, was somit ein großes Risiko für das System darstellt{' '}
         <a href="#sources">[2]</a>. Besonders ins Gewicht fällt der Skandal von
         FTX. Hierbei kam es zur unsachgemäßen Handhabung der Kundengelder, indem
-        die Einzahlungen der Nutzer zur weiteren Investitionen verwendet wurde.
+        die Einzahlungen der Nutzer zu weiteren Investitionen verwendet wurde.
         Mit Offenlegung der dubiosen Geschäfte kam es zum Zusammenbruch, wodurch
         viele Investoren Geld verloren<a href="#sources">[3]</a>.
       </p>
@@ -59,15 +59,15 @@ function TypesOfCryptoAssetsSources() {
         Auch die <span className="font-bold">hohe Volatilität</span> bei
         Kryptowährungen stellt eine Herausforderung dar. Jede Veränderung am
         Markt oder in der Regulatorik bringt starke Preisschwankungen mit sich{' '}
-        <a href="#sources">[1]</a>. Beispielsweise können die die drei
-        verschiedenen Kryptowinter genannt werden. Der Begriff Kryptowinter
-        bezieht sich dabei auf ein extremes Tief auf dem gesamten
-        Kryptowährungsmarkt. Die fallenden Preise des letzten Kryptowinter
-        führten zu Probleme eines großen Krypto-Hedgefonds und einem Bank Run
-        auf verschiedene Kryptounternehmen. Diese Entwicklung führte zur
-        Insolvenz mehrerer großer Kryptounternehmen, was sowohl Haushalte als
-        auch Unternehmen Verluste in Milliardenhöhe bescherte. Die Auswirkungen
-        dieses Ereignisses sind lange für Krypto-Investoren spürbar{' '}
+        <a href="#sources">[1]</a>. Beispielsweise können die drei verschiedenen
+        Kryptowinter genannt werden. Der Begriff Kryptowinter bezieht sich dabei
+        auf ein extremes Tief auf dem gesamten Kryptowährungsmarkt. Die
+        fallenden Preise des letzten Kryptowinter führten zu Problemen bei einem
+        großen Krypto-Hedgefond und einem Bank Run auf verschiedene
+        Kryptounternehmen. Diese Entwicklung führte zur Insolvenz mehrerer
+        großer Kryptounternehmen, was sowohl Haushalte als auch Unternehmen
+        Verluste in Milliardenhöhe bescherte. Die Auswirkungen dieses
+        Ereignisses sind lange für Krypto-Investoren spürbar{' '}
         <a href="#sources">[4]</a>.
       </p>
 
@@ -76,7 +76,7 @@ function TypesOfCryptoAssetsSources() {
         des Konsensmechanismus Proof of Work wird heiß diskutiert. Alleine das
         minen nach neuen Bitcoins könnte schätzungsweise für für 65,4 Megatonnen
         CO2 (MtCO2) pro Jahr verantwortlich sein, was vergleichbar ist mit den
-        Länderemissionen, wie Griechenland <a href="#sources">[5]</a>.
+        Länderemissionen, wie deren Griechenlands <a href="#sources">[5]</a>.
       </p>
 
       <div className="flex justify-center items-center">

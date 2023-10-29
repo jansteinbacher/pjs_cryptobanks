@@ -59,7 +59,8 @@ function TypesOfCryptoAssetsPart1() {
                 <strong>
                   Es existiert eine vielfältige Auswahl an Kryptoassets.
                 </strong>{' '}
-                Zu den prominentesten zählen <strong>Kryptowährungen</strong>,{' '}
+                Zu den prominentesten Assets zählen{' '}
+                <strong>Kryptowährungen</strong>,{' '}
                 <strong>NFTs (Non-Fungible Tokens)</strong> sowie{' '}
                 <strong>Stablecoins</strong> – um nur einige zu nennen. Diese
                 Kryptoassets lassen sich grundlegend in zwei Kategorien
@@ -76,8 +77,8 @@ function TypesOfCryptoAssetsPart1() {
                 <strong>Payment Tokens</strong> unterscheiden. Im Bereich der
                 nicht-fungiblen Tokens gibt es wiederum jene, die übertragbar
                 sind, sowie solche, die es nicht sind. Zur besseren Übersicht
-                veranschaulicht die nachfolgende Abbildung die verschiedenen
-                Kategorien von Kryptoassets <a href="#sources">[1]</a>.
+                veranschaulicht die Abbildung die verschiedenen Kategorien von
+                Kryptoassets <a href="#sources">[1]</a>.
               </p>
             </div>
           </div>

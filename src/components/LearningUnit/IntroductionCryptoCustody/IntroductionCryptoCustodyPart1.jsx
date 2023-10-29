@@ -44,7 +44,7 @@ function IntroductionCryptoCustodyPart1() {
         müssen neue Prozesse, Verfahren und eine{' '}
         <strong>neue Infrastruktur</strong> geschaffen werden, um
         Kundenbedürfnisse zu befriedigen und Sicherheit zu garantieren
-        <a href="#sources">[3]</a>,<a href="#sources">[1]</a>.{' '}
+        <a href="#sources"> [3]</a>,<a href="#sources">[1]</a>.{' '}
       </p>
       <p className="mb-12 text-left">
         Zwischen den Kundenbedürfnissen und der Sicherheit soll infolgedessen

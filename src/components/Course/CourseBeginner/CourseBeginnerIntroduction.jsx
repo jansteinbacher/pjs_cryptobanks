@@ -10,7 +10,7 @@ function CourseBeginnerIntroduction() {
       characterTitle="Bernds Entdeckung der Krypto-Welt: Ein Blick über den Horizont der
       Tradition"
       characterText="Bernd ist seit über zwei Jahrzehnten ein fester Bestandteil der
-      traditionellen, lokalen Silberbach & Söhne Bank. Er kennt die Welt der
+      traditionellen, fiktiven Silberbach & Söhne Bank. Er kennt die Welt der
       klassischen Finanzprodukte in- und auswendig. Doch tief in ihm regt
       sich Neugier, als er von der aufkommenden Welt der Kryptoassets hört.
       Ein Bereich, der weit über seine bisherigen Kenntnisse hinausgeht und

@@ -29,7 +29,7 @@ function TypesOfCryptoAssetsPart2() {
   ];
 
   const berndStoryPart2 = [
-    'Bernd klickt sich weiter durch die einzelnen Reiter der Handelsbörse und stößt auf den Begriff Stablecoins. Er wundert sich, inwiefern sich diese von den Kryptowährungen unterscheidet.',
+    'Bernd klickt sich weiter durch die einzelnen Reiter der Handelsbörse und stößt auf den Begriff Stablecoins. Er wundert sich, inwiefern sich diese von den Kryptowährungen unterscheiden.',
   ];
 
   return (

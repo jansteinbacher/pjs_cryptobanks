@@ -12,7 +12,7 @@ function Homepage() {
         <HomepageSection
           image={ExpertInterview}
           title="Experteninterviews"
-          description="Wichtig ist das richtige Risikomanagement!"
+          description="Erhalte tiefgehende Einblicke in die aktuelle Situation vonKryptoassets im Bankenumfeld."
           linkText="Zu den Experteninterviews"
           linkUrl="/crypto-assets-expert-interview"
           width="32"
@@ -20,7 +20,7 @@ function Homepage() {
         <HomepageSection
           image={Survey}
           title="Umfrage"
-          description="Umfrage unter Studierenden zum Thema Kryptoassets"
+          description="Umfrage unter Studierenden zum Thema Kryptoassets."
           linkText="Zur Umfrage"
           linkUrl="/crypto-assets-adoption"
           width="32"

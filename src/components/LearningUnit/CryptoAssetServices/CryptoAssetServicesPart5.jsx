@@ -1,5 +1,6 @@
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
+import Stablecoins from '../../../images/courseAdvanced/Stablecoins.jpg';
 
 /**
  * Component representing the fifth part of the Crypto Asset Services module.
@@ -13,20 +14,19 @@ function CryptoAssetServicesPart5() {
   );
 
   const simoneStory = [
-    'Einen Stand weiter erfährt Simone von der Einführung eines Stablecoins, welcher entscheidend für die Zahlungsabwicklung in dezentalisierten Netzwerken in programmierbarer Form ist. Fasziniert lauscht sie gespannt auf die weiteren Details.',
+    'Einen Stand weiter erfährt Simone von der Einführung eines Stablecoins, welcher entscheidend für die Zahlungsabwicklung in dezentalisierten Netzwerken in programmierbarer Form ist. Fasziniert lauscht sie gespannt nach weiteren Details.',
   ];
 
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">Stablecoins</h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/recht-und-ordnung-gesetz-klausel-6311493/"
-        >
-          Bild folgt noch
-        </a>
+      <div className="flex justify-center items-center mb-12">
+        <img
+          src={Stablecoins}
+          alt="Verschiedene Kryptoassets"
+          className="w-full md:w-1/2"
+        />
       </div>
 
       <p className="mb-4">

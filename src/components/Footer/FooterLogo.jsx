@@ -6,7 +6,7 @@ function FooterLogo({ logoSource }) {
     <a href="/" className="text-xl flex items-center mb-4 md:mb-0">
       <img className="w-12 h-auto mr-4" src={logoSource} alt="Logo" />{' '}
       {/* Display the logo */}
-      <span className="font-semibold">Cryptobanks</span>{' '}
+      <span className="font-semibold">CryptoBanks</span>{' '}
       {/* Display the text "Cryptobanks" */}
     </a>
   );

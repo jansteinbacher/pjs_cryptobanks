@@ -6,7 +6,7 @@ import NextCourseIcon from '../../images/nextCourseIcon.png';
 function NextCourseLink({ followingCourseLink, followingCourseDescription }) {
   return (
     <div className="text-center lg:w-2/3">
-      <h3 className="text-xl font-semibold">Werde zum Krypto-Experte</h3>
+      <h3 className="text-xl font-semibold">Werde zum Krypto-Experten</h3>
       <img
         src={NextCourseIcon}
         alt="Regulation"

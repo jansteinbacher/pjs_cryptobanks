@@ -14,7 +14,7 @@ function CryptoAssetServicesPart2() {
   );
 
   const simoneStory = [
-    'Neben dem Handel von Coins und Tokens erzählen die Aussteller Simone über eine weitere Dienstleistung, mit welcher die Kunden ihr zuvor gehandelten Kryptoassets nutzen könnne, um passives Einkommen zu generieren. Gespannt hört sich Simone die weitere Kryptoasset-Dienstleistung an.',
+    'Neben dem Handel von Coins und Token erzählen die Aussteller Simone über eine weitere Dienstleistung, mit welcher die Kunden ihr zuvor gehandelten Kryptoassets nutzen könnne, um passives Einkommen zu generieren. Gespannt hört sich Simone die weitere Kryptoasset-Dienstleistung an.',
   ];
 
   return (

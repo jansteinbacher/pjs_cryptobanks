@@ -31,7 +31,7 @@ function CryptoCustodyApplicationAreasPart1() {
         gleich, ob es sich um Kryptowährungen, NFTs oder Security Tokens handelt
         – die Gewährleistung einer sicheren Aufbewahrung des privaten Schlüssels
         sowie die authentifizierte Genehmigung und Signierung von Transaktionen
-        sind grundlegend. Die Kryptoasset-Verwahrlösungen können in mehrerer
+        sind grundlegend. Die Kryptoasset-Verwahrlösungen können in mehrere
         Klassen eingeteilt werden, basierend auf fünf Schlüsseldimensionen oder
         Perspektiven <a href="#sources">[1]</a>. Im Folgenden werden die
         einzelnen Klassen näher beleuchtet.

@@ -13,7 +13,7 @@ function CryptoAssetsAdoptionPart3() {
   );
 
   const leoStory = [
-    'Im nächsten Abschnitt der Umfrage möchte Leo herausfinden, wie die Studenten die Informationen im Bereich “Kryptoassets” aquirieren. Dazu möchte er zunächst einmal abschätzen, ob die Studenten überhaupt daran interessiert sind ihr Wissen bezüglich Kryptoassets zu vertiefen.',
+    'Im nächsten Abschnitt der Umfrage möchte Leo herausfinden, wie die Studenten die Informationen im Bereich “Kryptoassets” akquirieren. Dazu möchte er zunächst einmal abschätzen, ob die Studenten überhaupt daran interessiert sind ihr Wissen bezüglich Kryptoassets zu vertiefen.',
   ];
 
   return (

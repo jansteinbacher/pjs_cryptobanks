@@ -39,7 +39,7 @@ function CryptoCustodyChallengesPart2() {
 
       <p className="mb-12 text-left">
         Das Hauptziel bei der Kryptoverwahrung ist es die richtige Balance
-        zwischen Sicherheit und Nutzerfreundlichkeit zu finden. Für die Zukunkft
+        zwischen Sicherheit und Nutzerfreundlichkeit zu finden. Für die Zukunft
         soll eine sichere Verwahrungslösung den Grundbaustein für das
         tokenisierte Wirtschaftssystem bilden. Während die Gewährleistung von
         Sicherheit garantiert werden soll, soll auch eine maximale Effizienz bei
@@ -52,10 +52,8 @@ function CryptoCustodyChallengesPart2() {
 
       <p className="mb-4 text-left">
         Der Grundbaustein einer in Zukunft großen Auswahl an Dienstleistungen
-        für digitale Vermögenswerte wird gelegt, indem
-        <strong>
-          Verwahrungsdienstleistungen für Bitcoin und Ethereum
-        </strong>{' '}
+        für digitale Vermögenswerte wird gelegt, indem{' '}
+        <strong>Verwahrungsdienstleistungen für Bitcoin und Ethereum</strong>{' '}
         zur Verfügung gestellt wird. Das Finanzdienstleistungsunternehmen Nasdaq
         stellt sich dabei der Aufgabe die notwendigen technologischen Strukturen
         und regulatorischen Einwilligungen zu erlangen{' '}

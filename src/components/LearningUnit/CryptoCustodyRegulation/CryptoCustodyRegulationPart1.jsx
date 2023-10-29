@@ -12,7 +12,7 @@ function CryptoCustodyRegulationPart1() {
     window.location.search.includes('from=expert-course');
 
   const tobiasStory = [
-    'Da Tobias mehr zu der Regulatorik zur Verwahrung von Kryptoassets herausfinden möchte, recherchiert er im Internet und trifft auf die Informationsseite der BaFin. Da er sich nicht sicher ist, welcher Artikel für ihn relevant ist entschließt er sich eine eine Mail mit seinen Anliegen an die auf der Webseite angegenene Adresse abzusenden. Am Folgetag erhält in der Antwort folgende Informationen:',
+    'Da Tobias mehr zu der Regulatorik zur Verwahrung von Kryptoassets herausfinden möchte, recherchiert er im Internet und trifft auf die Informationsseite der BaFin. Weil er sich nicht sicher ist, welcher Artikel für ihn relevant ist entschließt er sich eine eine Mail mit seinen Anliegen an die auf der Webseite angegebene Adresse abzusenden. Am Folgetag erhält er eine Antwort mit folgenden Informationen:',
   ];
 
   return (
@@ -29,7 +29,7 @@ function CryptoCustodyRegulationPart1() {
       <p className="mb-4 text-left">
         Das Kryptoverwahrgeschäft bezieht sich auf eine Finanzdienstleistung,
         bei der es um die sichere Aufbewahrung, Verwaltung und Sicherung von
-        Kryptowerten und den zugehörigen privaten kryptografischen Schlüsseln
+        Kryptowerten und den zugehörigen privaten kryptographischen Schlüsseln
         geht. Dieser Service wird in der Regel von spezialisierten Unternehmen,
         oft als &ldquo;Krypto-Wallet-Anbieter&rdquo; oder
         &ldquo;Krypto-Custodians&rdquo; bezeichnet, angeboten.

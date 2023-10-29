@@ -7,8 +7,8 @@ function CourseAdvancedEnd() {
     <CourseEnd
       summaryDownloadLink="/downloads/courseSummaries/summaryAdvancedCourse.pdf"
       certificateDownloadLink="/downloads/certificates/certificateAdvancedCourse.pdf"
-      followingCourseLink="/course-advanced-introduction"
-      followingCourseDescription="Zum Fortgeschrittenenkurs"
+      followingCourseLink="/course-expert-introduction"
+      followingCourseDescription="Zum Expertenkurs"
       celebrationVideoSource={CourseCompletedVideo}
       furtherContent={
         <div>

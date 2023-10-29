@@ -48,7 +48,7 @@ function IntroductionCryptoAssetsPart4() {
       </p>
       <p className="mb-4 text-left">
         Wichtig ist jedoch, dass hierbei die unterschiedlichen Rechtslagen und
-        Rahmenbedingungen eines Landes zu berücksichtigen ist, in dem der Token
+        Rahmenbedingungen eines Landes zu berücksichtigen sind, in dem der Token
         den Vermögenswert darstellt.
       </p>
       <p className="mb-4 text-left">

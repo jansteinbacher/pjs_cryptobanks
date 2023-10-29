@@ -23,7 +23,7 @@ function TypesOfCryptoAssetsPart5() {
   );
 
   const berndStory = [
-    'Nach Stunden der Recherche erinnert sich Bernd an ein Gespräch mit seinem Freund Heiko, der als Künstler sein Lebensunterhalt verdient. Dieser hatte ihm von digitalen Kunstwerken erzählt, die ausschließlich durch den Computer erschaffen werden. Zudem mache er sich Sorgen, dass er dadurch sein Job als Künstler an den Nagel hängen müsse.',
+    'Nach Stunden der Recherche erinnert sich Bernd an ein Gespräch mit seinem Freund Heiko, der als Künstler seinen Lebensunterhalt verdient. Dieser hatte ihm von digitalen Kunstwerken erzählt, die ausschließlich durch den Computer erschaffen werden. Zudem mache er sich Sorgen, dass er dadurch seinen Job als Künstler an den Nagel hängen müsse.',
     'Bernd macht sich auf die Suche nach diesen digitalen Kunstwerken und findet diese auf einer Überssichtsseite unter dem Reiter “NFT”. Als ihm Bilder von Affenköpfen entgegenblicken, fragt er sich, was nun so spannend daran sein soll.',
   ];
 

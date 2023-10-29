@@ -66,7 +66,7 @@ function CryptoAssetsAdoptionPart4() {
           Befragten die{' '}
           <strong>
             von Banken zur Verfügung gestellten Informationen als inhaltlich
-            unzureichend angesehen
+            unzureichend ansehen
           </strong>{' '}
           werden und deshalb lieber auf andere Informationsquellen
           zurückgegriffen wird.

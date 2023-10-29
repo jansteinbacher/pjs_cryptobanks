@@ -13,7 +13,7 @@ function IntroductionCryptoAssetsPart3() {
   );
 
   const berndStory = [
-    'Während seiner Recherche stößt Bernd auf den Bergriff Blockchain. Doch was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß Bernd inzwischen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in dem Whitepaper beschrieben wurde.',
+    'Während seiner Recherche stößt Bernd auf den Begriff Blockchain. Doch was ist das nochmal? Als aufmerksamer Leser und Zuhörer weiß Bernd inzwischen, dass die Blockchain-Technologie von mutmaßlich einer oder mehreren Personen unter dem Pseudonym Satoshi Nakamoto in dem Whitepaper beschrieben wurde.',
     'Es wird darin dargestellt, wie Transaktionen, Hashes und Nonces zu einer blockbasierten Datenstruktur zusammengefasst werden können. Innerhalb dieser Datenstruktur können die separaten Blöcke mit Hilfe des Hashes eines vorherigen Blocks miteinander verknüpft werden [1], [4].',
   ];
 
@@ -50,7 +50,7 @@ function IntroductionCryptoAssetsPart3() {
       <p className="mb-4 text-left">
         Die Blockchain-Technologie basiert auf einem{' '}
         <strong>Peer-to-Peer Netzwerk</strong>. Dies bedeutet, dass es nicht auf
-        einer zentralen Behörde fundiert, welche den System verwaltet. Die
+        einer zentralen Behörde fundiert, welche das System verwaltet. Die
         Computer, die zu dem Peer-to-Peer Netzwerk gehören, sind meist dezentral
         verteilt und werden in der Fachliteratur teils auch als{' '}
         <strong>Full Nodes</strong> bezeichnet <a href="#sources">[6]</a>.

@@ -19,7 +19,7 @@ function IntroductionCryptoCustodyPart3() {
         Definition und Grundlagen der Kryptoverwahrung
       </h1>
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-        Kryptographische Schlüsse
+        Kryptographische Schlüssel
       </h2>
       <p className="mb-4 text-left">
         Wie bereits erwähnt, kommen kryptographische Schlüssel als digitale

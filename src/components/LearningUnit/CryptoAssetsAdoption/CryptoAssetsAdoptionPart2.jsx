@@ -83,11 +83,10 @@ function CryptoAssetsAdoptionPart2() {
         Was bedeutet dies für deine Bank:
       </h3>
       <p className="mb-4">
-        Noch ist das{' '}
-        <strong>Wissen von potentiellen Kunden geringer gehalten</strong>.
+        Noch ist das <strong>Wissen von potentiellen Kunden gering</strong>.
       </p>
       <p className="mb-4">
-        <strong>Am Bekanntesten sind derzeit die Kryptowährungen</strong>, die,
+        <strong>Am bekanntesten sind derzeit die Kryptowährungen</strong>, die,
         wie bereits vorher festgestellt wurde, häufig mit dem Oberbegriff
         &quot;Kryptoassets&quot; verwechselt werden.
       </p>

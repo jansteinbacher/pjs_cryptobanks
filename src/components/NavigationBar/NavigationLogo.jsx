@@ -6,7 +6,7 @@ function NavigationLogo({ logoSource }) {
     <a href="/" className="mb-4 sm:mb-0">
       <div className="text-xl flex items-center">
         <img className="w-12 h-auto mr-4" src={logoSource} alt="Logo" />
-        <span className="text-center tracking-tight">Cryptobanks</span>
+        <span className="text-center tracking-tight">CryptoBanks</span>
       </div>
     </a>
   );

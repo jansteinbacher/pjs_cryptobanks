@@ -19,7 +19,8 @@ function Sources({ sources }) {
         id="sources"
         onClick={toggleSources}
       >
-        Sources {showSources ? 'Hide' : 'Show'} {showSources ? '↓' : '→'}
+        Quellen {showSources ? 'einklappen' : 'anzeigen'}{' '}
+        {showSources ? '↓' : '→'}
       </button>
       {showSources && <SourcesList sources={sources} />}
     </div>

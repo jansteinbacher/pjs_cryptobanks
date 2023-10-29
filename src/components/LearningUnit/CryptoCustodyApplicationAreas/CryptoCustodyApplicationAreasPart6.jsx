@@ -29,10 +29,11 @@ function CryptoCustodyApplicationAreasPart6() {
         Bei <strong>Shamirs Secret Sharing (SSS)</strong> wird ein Geheimnis in
         mehrere Teile, gennant “Shares” unter eine Gruppe von Teilnehmern
         verteilt, wobei nur eine spezifische Teilmenge von Teilnehmern das
-        Geheimnis rekonstruieren können. Für die Rekonstruktion des Geheimnis
+        Geheimnis rekonstruieren können. Für die Rekonstruktion des Geheimnisses
         benötigt es eine bestimmte Anzahl an Shares, die “Schwelle”. Dabei wird
         die Schwelle so gewählt, dass nur qualifizierte Teilnehmer, die
-        genügenden Shares besitzen <a href="#sources">[6].</a>
+        genügenden Shares besitzen zur Rekonstruktion beitragen können{' '}
+        <a href="#sources">[6] .</a>
       </p>
 
       <p className="mb-4 text-left">
@@ -40,7 +41,7 @@ function CryptoCustodyApplicationAreasPart6() {
         mehrere private Schlüssel, um eine Transaktion zu autorisieren. Dieses
         Verfahren ermöglicht mehrere Anwendungen, unter anderem die Aufteilung
         der Verantwortung für den Besitz von Kryptoassets unter meheren
-        Personen, die Vermeidung eines einzelnen Angriffspunkt und die
+        Personen, die Vermeidung eines einzelnen Angriffspunkts und die
         Möglichkeit der Wiederherstellung bei Verlust eines privaten Schlüssels
         (Seeds) <a href="#sources">[7]</a>.
       </p>

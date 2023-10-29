@@ -18,7 +18,7 @@ function CourseDetails({ selectedCourse }) {
       </div>
       <div className="p-4 bg-gray-100 rounded-lg">
         <h2 className="mb-4 font-bold text-xl text-gray-800">
-          Was Du in diesem Video lernen wirst:
+          Was Du in diesem Kurs lernen wirst:
         </h2>
         <div className="md:w-full h-64 md:h-auto">
           {/* eslint-disable jsx-a11y/media-has-caption */}
@@ -33,7 +33,7 @@ function CourseDetails({ selectedCourse }) {
         </div>
         <div className="mt-4 text-gray-700">
           <p>
-            <span className="font-semibold">Dauer:</span>{' '}
+            <span className="font-semibold">Dauer des Kurses:</span>{' '}
             {selectedCourse.duration}
           </p>
         </div>

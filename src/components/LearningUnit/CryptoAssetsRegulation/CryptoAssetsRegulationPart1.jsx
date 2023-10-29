@@ -54,13 +54,13 @@ function CryptoAssetsRegulationPart1() {
         weniger Berücksichtigung finden.
       </p>
       <p className="mb-4">
-        Angesichts der wachsenden Popularität des Krypto-Asset-Marktes gibt es
+        Angesichts der wachsenden Popularität des Kryptoasset-Marktes gibt es
         des Weiteren einen zunehmenden Bedarf und{' '}
         <strong>Wunsch nach verstärkter Regulierung</strong>, um die
         wirtschaftliche Stabilität zu gewährleisten.
       </p>
       <p className="mb-12">
-        Obgleich der regulatorischen Komplexität des Marktumfelds sind{' '}
+        Trotz der regulatorischen Komplexität des Marktumfelds sind{' '}
         <strong>bereits zahlreiche Marktteilnehmer</strong> im Bereich der
         Kryptoassets in Europa und <strong>weltweit aktiv</strong>. Einige
         Banken experimentieren mit der Ausgabe von{' '}

@@ -7,8 +7,8 @@ function CourseExpertEnd() {
     <CourseEnd
       summaryDownloadLink="/downloads/courseSummaries/summaryExpertCourse.pdf"
       certificateDownloadLink="/downloads/certificates/certificateExpertCourse.pdf"
-      followingCourseLink="/course-expert-introduction"
-      followingCourseDescription="Wiederhole den Expertenkurs"
+      followingCourseLink="/crypto-assets-expert-interview"
+      followingCourseDescription="Zu den Experteninterviews"
       celebrationVideoSource={CourseCompletedVideo}
       furtherContent={
         <div>

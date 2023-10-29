@@ -1,25 +1,16 @@
 import IntroductionBlockchainSources from './IntroductionBlockchainSources';
-import { StoryBoxBernd } from '../../StoryBox';
 
 /**
  * Component representing the fifth part of the "Blockchain-Technologie" (Blockchain Technology) section. In this part, the focus is on the practical applications of blockchain technology. The component covers topics such as tokenization, smart contracts, decentralized finance, and their impact on various industries, including the transport and supply chain management sectors. Bernd's curiosity about the applications of blockchain and Distributed Ledger Technology (DLT) is addressed, providing real-world relevance to the content.
  */
 
 function IntroductionBlockchainPart5() {
-  const isComingFromPreviousPage = window.location.search.includes(
-    'from=beginner-course',
-  );
-
-  const berndStory = [
-    'Während seiner Recherche zu Blochchain trifft Bernd häufig auf den Bergriff Distributed Ledger Technology (DLT). Ist Blockchain und DLT das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT Anwendung? Wird es auch in seiner Branche, der Finanzbranche verwendet?',
-  ];
-
   return (
     <div className="container mx-auto py-12 px-12 max-w-screen-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-8">
         Anwendungsbereiche
       </h2>
-      {isComingFromPreviousPage && <StoryBoxBernd paragraphs={berndStory} />}
+
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
         Tokenisierung
       </h3>
@@ -27,15 +18,15 @@ function IntroductionBlockchainPart5() {
         Die Tokenisierung ist eine Anwendung der Blockchain-Technologie, bei der
         digitale Vermögenswerte in tokenisierter Form auf einer dezentralen
         Blockchain-Plattform erstellt und verwaltet werden. Dies ermöglicht die
-        Umwandlung physischer oder virtueller Vermögenswerte in digitale Tokens,
+        Umwandlung physischer oder virtueller Vermögenswerte in digitale Token,
         die in der Blockchain registriert und nachverfolgt werden können. Diese
         Technologie steigert auch die Liquidität und den Handel erheblich. Zum
-        Beispiel kann eine Immobilie in viele kleine Tokens aufgeteilt werden,
+        Beispiel kann eine Immobilie in viele kleine Token aufgeteilt werden,
         wodurch Anleger Bruchteile dieser Vermögenswerte kaufen und verkaufen
         können<a href="#sources"> [1]</a>.
       </p>
       <h3 className="text-xl font-semibold text-gray-800 mb-4">
-        Smarte Verträge und dezentrales Finanzwesen
+        Smart Contracts und dezentrales Finanzwesen
       </h3>
       <p className="mb-12 text-left">
         Mit dem Aufkommen vieler neuerer Blockchains wie Ethereum ist es

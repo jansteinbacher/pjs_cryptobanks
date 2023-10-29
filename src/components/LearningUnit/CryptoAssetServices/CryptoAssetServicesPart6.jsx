@@ -15,7 +15,6 @@ function CryptoAssetServicesPart6() {
 
   const simoneStory = [
     'Durch intensive Gespräche mit den Ausstellern hat Simone bereits wertvolle Einblicke in potenzielle Krypto-Dienstleistungen gewonnen. Während sie auf dem Weg zum Restaurant ist, fällt ihr Blick auf einen weiteren Stand, der ihre Aufmerksamkeit sofort einfängt.',
-    'Durch intensive Gespräche mit den Ausstellern hat Simone bereits wertvolle Einblicke in potenzielle Krypto-Dienstleistungen gewonnen. Während sie auf dem Weg zum Restaurant ist, fällt ihr Blick auf einen weiteren Stand, der ihre Aufmerksamkeit sofort einfängt.',
   ];
 
   return (
@@ -37,7 +36,7 @@ function CryptoAssetServicesPart6() {
           hinterlegt
         </strong>
         . Im Falle einer nicht fristgerechten Zurückzahlung des angegebenen
-        Betrags, kann der Kreditgeber, die hinterlegten Kryptoassets liquidieren{' '}
+        Betrags, kann der Kreditgeber die hinterlegten Kryptoassets liquidieren{' '}
         <a href="#sources">[11]</a>.
       </p>
 

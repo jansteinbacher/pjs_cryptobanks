@@ -29,7 +29,7 @@ const courses = [
     name: 'Fortgeschrittener 👩‍🎓',
     points: [
       'Nationale und internationale Regulatorik für Kryptoassets',
-      'Arten von Kryptoasset-Diensleistungen',
+      'Arten von Kryptoasset-Dienstleistungen',
       'Adaption und Trends von Kryptoassets in der Gesellschaft',
       'Überprüfung des Gelerneten mithilfe eines Quiz 💡',
     ],

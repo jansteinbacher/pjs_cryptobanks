@@ -1,5 +1,6 @@
 import CryptoAssetServicesSources from './CryptoAssetServicesSources';
 import { StoryBoxSimone } from '../../StoryBox';
+import CryptoStocks from '../../../images/courseAdvanced/CryptoStocks.jpg';
 
 /**
  * Component representing the third part of the Crypto Asset Services module.
@@ -14,7 +15,7 @@ function CryptoAssetServicesPart3() {
 
   const simoneStory = [
     'Am benachbarten Stand erfährt Simone von den Ausstellern, dass sie eine digitale Infrastruktur zur Integration des Wertpapierhandels auf blockchainbasierten Systemen entwickelt haben.',
-    'Dank ihrer Unterhaltung mit ihrer Freundin ist Simone bereits darüber informiert, dass die rechtlichen Rahmenbedingungen für elektronische Wertpapiere in Deutschland bereits fortgeschritten sind. Mit großer Neugier lauscht sie gespannt weiter.',
+    'Dank ihrer Unterhaltung mit ihrer Freundin ist Simone bereits darüber informiert, dass die rechtlichen Rahmenbedingungen für elektronische Wertpapiere in Deutschland schon fortgeschritten sind. Mit großer Neugier lauscht sie gespannt weiter.',
   ];
 
   return (
@@ -23,6 +24,13 @@ function CryptoAssetServicesPart3() {
         Kryptowertpapiere
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
+      <div className="flex justify-center items-center mb-12">
+        <img
+          src={CryptoStocks}
+          alt="Verschiedene Kryptoassets"
+          className="w-full md:w-1/2"
+        />
+      </div>
 
       <p className="mb-4">
         <strong>

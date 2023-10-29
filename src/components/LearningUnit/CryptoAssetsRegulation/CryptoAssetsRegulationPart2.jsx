@@ -1,5 +1,6 @@
 import CryptoAssetsRegulationSources from './CryptoAssetsRegulationSources';
 import { StoryBoxSimone } from '../../StoryBox';
+import Regulation from '../../../images/courseAdvanced/MICA_Regulation.jpg';
 
 /**
  * Component representing the second part of the Crypto Assets Regulation section.
@@ -22,13 +23,12 @@ function CryptoAssetsRegulationPart2() {
         Europäische MiCA-Verordnung
       </h2>
       {isComingFromPreviousPage && <StoryBoxSimone paragraphs={simoneStory} />}
-      <div className="flex items-center justify-center mb-12">
-        <a
-          className="font-semibold text-sm"
-          href="https://pixabay.com/de/illustrations/recht-und-ordnung-gesetz-klausel-6311493/"
-        >
-          Bild folgt noch
-        </a>
+      <div className="flex justify-center items-center mb-12">
+        <img
+          src={Regulation}
+          alt="Regulation of Crypto Assets"
+          className="w-full md:w-1/2"
+        />
       </div>
 
       <p className="mb-4">
@@ -46,7 +46,7 @@ function CryptoAssetsRegulationPart2() {
       <p className="mb-4">
         Weitere potenzielle Vorteile der Verordnung sind die Verbesserung des
         Marktes hin zu einem sicheren Umfeld für Anbieter und Nutzer, die{' '}
-        <strong>Optimierung des Verbraucherschutz</strong> sowie die strenger
+        <strong>Optimierung des Verbraucherschutz</strong> sowie die strengere
         Regulierung mit dem Ziel der{' '}
         <strong>Reduktion des Marktmissbrauch</strong>.
       </p>

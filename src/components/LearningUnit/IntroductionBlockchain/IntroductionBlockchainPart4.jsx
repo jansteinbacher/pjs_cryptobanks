@@ -12,7 +12,7 @@ function IntroductionBlockchainPart3() {
   );
 
   const berndStory = [
-    'Während seiner Recherche zu Blochchain trifft Bernd häufig auf den Bergriff Distributed Ledger Technology (DLT). Ist Blockchain und DLT das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT Anwendung? Wird es auch in seiner Branche, der Finanzbranche verwendet?',
+    'Während seiner Recherche zu Blochchain trifft Bernd häufig auf den Begriff Distributed Ledger Technology (DLT). Sind Blockchain und DLT das Gleiche? Wenn nein, worin liegt der Unterschied? Wo findet DLT Anwendung? Wird es auch in seiner Branche, der Finanzbranche, verwendet?',
   ];
 
   return (

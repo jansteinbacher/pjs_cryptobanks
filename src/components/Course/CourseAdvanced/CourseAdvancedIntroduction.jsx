@@ -11,7 +11,7 @@ function CourseAdvancedIntroduction() {
       werden wir gemeinsam in die tiefere Welt der Kryptoassets eintauchen,
       und zwar aus der Perspektive von Simone, einer Projektmanagerin der
       fiktiven Silberbach & Söhne Bank."
-      characterTitle="Ein Blick in die Anwendungsmöglichkeiten von Kryptoassets"
+      characterTitle="Ein Blick auf die Anwendungsmöglichkeiten von Kryptoassets"
       characterText="Simone, Bernds Mitarbeiterin, arbeitet bereits seit 5 Jahren als
       Projektmanagerin bei der Bank. Bernd hat Simone die Aufgabe gegeben,
       Anwendungsmöglichkeiten von Kryptoassets als potentiell neuen

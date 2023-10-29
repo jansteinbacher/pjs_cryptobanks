@@ -103,13 +103,13 @@ function DecisionTree() {
     },
     {
       question:
-        'Möchtest du mehr über die Herausforderungen und Zukunftsaussichten von Kryptoassetes erfahren?',
+        'Möchtest du mehr über die Herausforderungen und Zukunftsaussichten von Kryptoassets erfahren?',
       answers: ['Ja', 'Nein'],
       stateKey: 'opportunitiesAndChallengesCryptoAssets',
     },
     {
       question:
-        'Möchtest du mehr über die Regulatorik von Kryptoassetes erfahren? (Vorkenntnisse benötigt)',
+        'Möchtest du mehr über die Regulatorik von Kryptoassets erfahren? (Vorkenntnisse benötigt)',
       answers: ['Ja', 'Nein'],
       stateKey: 'cryptoAssetsRegulation',
     },
