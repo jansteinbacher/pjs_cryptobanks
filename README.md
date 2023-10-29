@@ -20,7 +20,7 @@
 Die E-Learning-Plattform ist ein Projektseminar am Lehrstuhl für BWL und Wirtschaftsinformatik von Prof. Dr. A. Winkelmann an der Universität Würzburg. Sie hat zum Ziel, Bankmitarbeiter ein umfassendes Verständnis für die Integration von Kryptoassets in herkömmliche Bankensysteme zu vermitteln. 
 Zur Erstellung der Webseite wurden [React](https://react.dev), [TailwindCSS](https://tailwindcss.com), [Airbnb Sytle Guide](https://airbnb.io/javascript/react/), [husky](https://typicode.github.io/husky/), [Prettier](https://prettier.io), [EsLint](https://eslint.org), [GNews API](https://gnews.io), [Netlify](https://www.netlify.com), [Dall-E 3](https://openai.com/dall-e-3) und [ElevenLabs](https://elevenlabs.io) verwendet.
 
-## Übersicht über die Projektstruktur
+## Übersicht über die wichtigsten Komponenten:
 
 - [App.jsx](src/App.jsx): Enthält alle permanenten Elemente (NavigationBar & Footer), sowie die Links zu den jeweiligen Seiten.
 - [components](src/components): Enthält alle Komponenten der Webseite.
