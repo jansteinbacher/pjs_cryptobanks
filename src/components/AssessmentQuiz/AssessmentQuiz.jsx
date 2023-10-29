@@ -10,12 +10,12 @@ function AssessmentQuiz() {
     {
       question: 'Was versteht man unter Kryptowährungen?',
       options: [
-        'Digitale Währungen, die auf Kryptografie basieren',
         'Physische Münzen mit eingebauter Technologie',
+        'Digitale Währungen, die auf Kryptografie basieren',
         'Ein Börsenindex für den Handel mit Aktien',
         'Eine Art Kreditkarte für internationale Zahlungen',
       ],
-      correctAnswerIndex: 0,
+      correctAnswerIndex: 1,
     },
     {
       question: 'Was ist Bitcoin?',
@@ -30,23 +30,23 @@ function AssessmentQuiz() {
     {
       question: 'Was sind Token im Zusammenhang mit Blockchain?',
       options: [
-        'Digitale Vermögenswerte, die auf einer bestehenden Blockchain ausgegeben werden',
         'Physische Gegenstände, die in der virtuellen Realität gehandelt werden',
         'Ein Index für den Handel mit Kryptowährungen',
+        'Digitale Vermögenswerte, die auf einer bestehenden Blockchain ausgegeben werden',
         'Eine Art geheime Passwörter für die Authentifizierung',
       ],
-      correctAnswerIndex: 0,
+      correctAnswerIndex: 2,
     },
     {
       question:
         'Wie wird eine Bitcoin-Transaktion verifiziert und in die Blockchain eingefügt?',
       options: [
-        'Durch Mining, bei dem Rechenleistung verwendet wird, um komplexe mathematische Probleme zu lösen',
         'Durch die physische Übergabe von Bitcoin-Münzen',
+        'Durch Mining, bei dem Rechenleistung verwendet wird, um komplexe mathematische Probleme zu lösen',
         'Durch den Kauf von Bitcoin-Aktien an der Börse',
         'Durch das Drucken einer physischen Quittung für die Transaktion',
       ],
-      correctAnswerIndex: 0,
+      correctAnswerIndex: 1,
     },
     {
       question:

@@ -27,7 +27,7 @@ function NavigationLinks() {
     },
     {
       id: 'credits',
-      text: 'Credits für Icons',
+      text: 'Credits Icons/Videos',
       href: '/credits',
     },
   ];

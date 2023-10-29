@@ -61,7 +61,7 @@ function Credits() {
       </h1>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-8">
-        Credits for Icons:
+        Credits für Icons:
       </h2>
 
       <ul className="mb-12 list-disc ml-4">
@@ -73,6 +73,32 @@ function Credits() {
             key={credit.id}
           />
         ))}
+      </ul>
+
+      <h2 className="text-xl font-semibold text-gray-800 mb-8">
+        Quellen für Elemente der Videos:
+      </h2>
+
+      <ul className="mb-12 list-disc ml-4">
+        <li>Intro und Outro: Canva</li>
+        <li>Video: Adobe Charakter Animator</li>
+        <li>
+          Musik:{' '}
+          <a
+            href="http://NCS.lnk.to/dd-royaltyAT/youtube"
+            className="hover:underline cursor-pointer"
+          >
+            Egzod & Maestro Chives - Royalty (Don Diablo Remix) [NCS Release]
+          </a>{' '}
+          (Music provided by{' '}
+          <a
+            href="http://ncs.io/dd-royalty"
+            className="hover:underline cursor-pointer"
+          >
+            NoCopyrightSounds
+          </a>
+          )
+        </li>
       </ul>
     </div>
   );
