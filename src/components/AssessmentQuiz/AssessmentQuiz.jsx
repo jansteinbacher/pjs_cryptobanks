@@ -59,6 +59,112 @@ function AssessmentQuiz() {
       ],
       correctAnswerIndex: 0,
     },
+    {
+      question:
+        'Was stellt eine potenzielle Krypto-Dienstleistung für Banken dar?',
+      options: [
+        'Das Minen von neuen Kryptowährungen.',
+        'Teilnahme in einer Blockchain.',
+        'Ausgabe von Kryptowertpapieren.',
+        'Alle oben genannten Punkte.',
+      ],
+      correctAnswerIndex: 2,
+    },
+    {
+      question: 'Wie zeichnen sich Kredite auf der Blockchain-Technologie aus?',
+      options: [
+        'Kredite auf der Blockchain-Technologie benötigen keine Besicherung.',
+        'Bei Krediten auf der Blockchain-Technologie erfolgt die Berücksichtigung der Kreditwürdigkeit durch das Hinterlegen von Kryptoassets als Besicherung.',
+        'Sie sind 1:1 mit traditionellen Krediten vergleichbar.',
+        'Keine der oben genannten Punkte.',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question:
+        'Wie fortgeschritten ist die Regulatorische Landschaft im Bezug auf Kryptoassets?',
+      options: [
+        'Es gibt bisher noch keine Gesetze.',
+        'Die derzeitigen Gesetze konzentrieren sich hauptsächlich auf die Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CTF).',
+        'Ein EU-Regulierungsrahmen ist bereits in Kraft getreten.',
+        'Regulatorik ist in der Philosophie von Kryptoassets ausgeschlossen und findet daher keine Anwendung.',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question:
+        'Welche Regulatorik tritt bereits oder in naher Zukunft in Kraft?',
+      options: [
+        'MiFID II / MiFIR.t',
+        'MiCA',
+        'eWpG',
+        'Alle oben genannten Punkte.',
+      ],
+      correctAnswerIndex: 3,
+    },
+    {
+      question: 'Wozu dient die MiCA-Verordnung?',
+      options: [
+        'Mit MiCA wird ein ganzheitlicher Regulierungsrahmen in der EU geschaffen.',
+        'MiCA stellt eine weitere deutsche Verordnung dar.',
+        'Mit MiCA unterliegen Kryptoasset-Dienstleister weniger Verpflichtungen.',
+        'Alle oben genannten Punkte.',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question: 'Warum sind private Schlüssel bei Krypto-Assets wichtig?',
+      options: [
+        'Sie ermöglichen den Zugang zu Zentralbankreserven.',
+        'Sie sind erforderlich, um Krypto-Assets zu erzeugen.',
+        'Private Schlüssel ermöglichen den Zugang und die Verfügungsgewalt über Kryptoassets.',
+        'Private Schlüssel dienen als Identifikationsmerkmal für Steuerzwecke.',
+      ],
+      correctAnswerIndex: 2,
+    },
+    {
+      question:
+        'Was muss erfüllt sein, damit ein Kryptoverwahrgeschäft rechtlich definiert ist?',
+      options: [
+        'Die Nutzung von Kryptoassets als Zahlungsmittel.',
+        'Die Speicherung von Kryptoassets auf persönlichen Computern.',
+        'Die Aufbewahrung, Verwaltung und Sicherung von Kryptoassets oder geheimen kryptografischen Schlüsseln im Auftrag von Dritten.',
+        'Die Verwendung von Kryptoassets für den Tausch von physischen Gütern.',
+      ],
+      correctAnswerIndex: 2,
+    },
+    {
+      question:
+        'Was umfasst die Definition von Kryptowerten im Kreditwesengesetz?',
+      options: [
+        'Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden.',
+        'Digitale Darstellungen von Werten, die von natürlichen oder juristischen Personen garantiert werden.',
+        'Digitale Darstellungen von Werten, die von Zentralbanken emittiert werden und von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.',
+        'Digitale Darstellungen von Werten, die nicht von Zentralbanken emittiert oder garantiert werden, jedoch von natürlichen oder juristischen Personen als Tauschmittel akzeptiert werden können.',
+      ],
+      correctAnswerIndex: 3,
+    },
+    {
+      question:
+        'Was kennzeichnet den Ansatz des Self-Custody bei der Aufbewahrung von Kryptoassets?',
+      options: [
+        'Die Kontrolle über private Schlüssel wird an eine dritte Partei abgegeben.',
+        'Es gibt keine Notwendigkeit, private Schlüssel zu verwenden.',
+        'Der Nutzer trägt die gesamte Verantwortung für die Sicherheit des privaten Schlüssels.',
+        'Kryptoassets werden automatisch verschlüsselt und geschützt.',
+      ],
+      correctAnswerIndex: 2,
+    },
+    {
+      question: 'Welche Verwendungssituation ist typisch für Hot Wallets?',
+      options: [
+        'Langfristige Speicherung von Kryptoassets.',
+        'Gelegentliche Transaktionen mit größerem Vermögen.',
+        'Sicherung großer Mengen an Kryptoassets.',
+        'Hochsichere Verwahrung von Kryptoassets.',
+      ],
+      correctAnswerIndex: 1,
+    },
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

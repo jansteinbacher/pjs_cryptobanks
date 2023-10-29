@@ -43,7 +43,7 @@ const questions = [
       },
       {
         id: 3,
-        text: 'Keines der oben genannten Punkte.',
+        text: 'Keine der oben genannten Punkte.',
       },
     ],
     correctAnswerIndex: 1,
