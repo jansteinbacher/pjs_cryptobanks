@@ -52,24 +52,6 @@ function Credits() {
       title: 'goal icons',
       text: 'Goal icons created by Freepik - Flaticon',
     },
-    {
-      id: 9,
-      href: 'https://www.canva.com/de_de/',
-      title: 'intro outro',
-      text: 'Intro und Outro of videos created with Canva',
-    },
-    {
-      id: 10,
-      href: 'https://www.adobe.com/de/products/character-animator.html',
-      title: 'video',
-      text: 'Videos created with Adobe Charakter Animator',
-    },
-    {
-      id: 11,
-      href: 'http://ncs.io/dd-royalty',
-      title: 'intro outro',
-      text: 'Music in videos: Egzod & Maestro Chives - Royalty (Don Diablo Remix) [NCS Release] Music provided by NoCopyrightSounds',
-    },
   ];
 
   return (
