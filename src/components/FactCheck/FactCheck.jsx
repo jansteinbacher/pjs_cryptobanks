@@ -1,14 +1,9 @@
 import { useState } from 'react';
-import Sources from '../Sources';
 import FactCheckPic from '../../images/FactCheck.jpg';
 import FactCheckMyth from './FactCheckMyth';
 
 // Fact Check page that displays a header, text, and image, and lists and dispels common myths about cryptoassets
 function FactCheck() {
-  const articlesources = [
-    // Your source URLs
-  ];
-
   const [myths, setMyths] = useState([
     {
       id: 0,
@@ -86,9 +81,6 @@ function FactCheck() {
           onToggle={() => toggleMyth(myth.id)}
         />
       ))}
-
-      {/* Sources */}
-      <Sources sources={articlesources} />
     </div>
   );
 }
