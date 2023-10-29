@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // CreditsItem component displays an HTML list item with a link
 function CreditsItem({ href, title, text }) {
   return (
-    <li>
+    <li className="text-blue-600 underline">
       <a href={href} title={title}>
         {text}
       </a>
